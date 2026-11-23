@@ -1,0 +1,129 @@
+{
+  "recorded_at": "2026-11-23T11:39:02.556Z",
+  "status": "failed",
+  "checks": [
+    {
+      "name": "Original pricing layout at 320",
+      "status": "passed"
+    },
+    {
+      "name": "Original pricing layout at 390",
+      "status": "passed"
+    },
+    {
+      "name": "Original pricing layout at 768",
+      "status": "passed"
+    },
+    {
+      "name": "Original pricing layout at 1440",
+      "status": "passed"
+    },
+    {
+      "name": "Pricing selected accessibility rules at 390",
+      "status": "passed"
+    },
+    {
+      "name": "Pricing selected accessibility rules at 1440",
+      "status": "passed"
+    },
+    {
+      "name": "Independent monthly example exposes every subtotal",
+      "status": "passed"
+    },
+    {
+      "name": "Per-hour display leaves duration and monthly fees unchanged",
+      "status": "passed"
+    },
+    {
+      "name": "Edits invalidate old estimates until recalculated",
+      "status": "passed"
+    },
+    {
+      "name": "Decimal runtime is preserved and precision errors remain editable",
+      "status": "passed"
+    },
+    {
+      "name": "Blank, negative, scientific and markup inputs do not produce a stale total",
+      "status": "passed"
+    },
+    {
+      "name": "Maximum supported workload is finite and exact on screen",
+      "status": "passed"
+    },
+    {
+      "name": "CPU-only allocation excludes accelerator charges and preserves its prior count",
+      "status": "passed"
+    },
+    {
+      "name": "Zero compute retains applicable workspace and storage costs",
+      "status": "passed"
+    },
+    {
+      "name": "Unknown custom workspace fee leaves the grand total unknown",
+      "status": "passed"
+    },
+    {
+      "name": "Mobile comparison supports roving keys and leaves the workload plan alone",
+      "status": "passed"
+    },
+    {
+      "name": "Changing comparison layout never strands focus in hidden content",
+      "status": "passed"
+    },
+    {
+      "name": "Reset clears invalid inputs and restores the original workload",
+      "status": "failed",
+      "error": "expect(locator).toHaveValue(expected) failed\n\nLocator:  locator('#runtime')\nExpected: \"2.5\"\nReceived: \"-2\"\nTimeout:  5000ms\n\nCall log:\n  - Expect \"toHaveValue\" locator('#runtime') with timeout 5000ms\n  - waiting for locator('#runtime')\n    14 × locator resolved to <input type=\"text\" value=\"2.5\" id=\"runtime\" name=\"runtime\" inputmode=\"decimal\" aria-invalid=\"true\" aria-describedby=\"runtime-error\"/>\n       - unexpected value \"-2\"\n"
+    },
+    {
+      "name": "Review uses the current estimate and Escape restores its trigger",
+      "status": "passed"
+    },
+    {
+      "name": "No-script page retains all plans, units and the complete static example",
+      "status": "passed"
+    },
+    {
+      "name": "Missing contract retains an honest static path and blocks estimate controls",
+      "status": "passed"
+    },
+    {
+      "name": "No external requests, form submissions or uncaught errors",
+      "status": "failed",
+      "error": "expect(received).toEqual(expected) // deep equality\n\n- Expected  - 1\n+ Received  + 3\n\n- Array []\n+ Array [\n+   \"form.reset is not a function\",\n+ ]"
+    }
+  ],
+  "accessibility": [
+    {
+      "width": 390,
+      "violations": []
+    },
+    {
+      "width": 1440,
+      "violations": []
+    }
+  ],
+  "screenshots": [
+    "research/pricing_skill_validation/screenshots/pricing-390.png",
+    "research/pricing_skill_validation/screenshots/pricing-1440.png"
+  ],
+  "errors": [
+    "form.reset is not a function"
+  ],
+  "external_requests": [],
+  "environment": {
+    "platform": "win32",
+    "node": "v24.14.0",
+    "browser": "159.0.8154.6",
+    "viewport_widths": [
+      320,
+      390,
+      768,
+      1440
+    ]
+  },
+  "limitations": [
+    "Original fictional tariff and interface only; not source billing reconstruction",
+    "No real checkout, provider-price acceptance, physical-device, Safari/Firefox or full assistive-technology acceptance"
+  ]
+}

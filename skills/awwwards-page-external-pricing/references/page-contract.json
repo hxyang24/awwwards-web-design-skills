@@ -1,0 +1,406 @@
+{
+  "schema_version": "3.0",
+  "id": "external-pricing",
+  "skill": "awwwards-page-external-pricing",
+  "title": "获奖来源外站定价、套餐比较与用量估算",
+  "kind": "pricing",
+  "scope": "Awwwards-linked external inner page; specific award status requires official evidence",
+  "source_families": [
+    "external.pricing"
+  ],
+  "goal": "理解计费周期和权益限制，再审阅明确的方案。",
+  "regions": [
+    "计费口径",
+    "套餐与月费",
+    "权益比较",
+    "计算单位",
+    "用量输入",
+    "估算明细",
+    "假设与恢复",
+    "审阅"
+  ],
+  "workflow": [
+    "把月费、资源费率和实际工作量的单位分别建模；切换单价展示不能改变工作量或最终估算。",
+    "对请求数、运行时长、硬件及分配量给出明确精度和边界；小数、空值、负数或超限不能静默改写。",
+    "逐项计算并公开舍入口径和未计成本；未知自定义月费时保留未知总价，已知用量可以单独显示。",
+    "手机比较选项卡独立于估算套餐选择，提供键盘、宽屏表格和无脚本的全部内容。",
+    "审阅显示当前有效估算及假设；本地蓝本不创建真实账户、报价、购买或订单。"
+  ],
+  "data_fields": [
+    "tariff_version",
+    "currency",
+    "workspace_plan",
+    "base_fee",
+    "rate_unit",
+    "requests_per_month",
+    "active_seconds",
+    "hardware",
+    "resource_counts",
+    "storage",
+    "rounding",
+    "known_usage",
+    "unknown_costs"
+  ],
+  "failure_recovery": "输入变化后旧估算不可冒充当前值；错误定位至相应字段并可恢复；源数据失败保留静态示例、全部套餐与单位说明。",
+  "motion_contract": "不依赖动效解释价格变化；单位切换只更新可读数值与说明，移动比较切换和断点重排保持焦点。",
+  "evidence_level": "rendered_source_observations",
+  "source_relationship_note": "An outbound work-detail association does not certify that every current inner page won an award or matches a historical version.",
+  "evidence_note": "Only recorded observations are facts. DOM structure does not prove visual composition, hidden state, source code, backend behavior or licenses. The runnable blueprint is an original recipe, not a source-site clone.",
+  "sources": [
+    {
+      "id": "a955e8342ff580e5",
+      "url": "https://cerebrium.ai/pricing",
+      "family": "external.pricing",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T09:45:42.896551+00:00",
+      "source_sha256": "ae7196b0e4e7cfeb7ac4f8f8ed38d1268173bf16fc949db5630ca0d0a9d7cb1e",
+      "structure": {
+        "headings": {
+          "h1": 1,
+          "h2": 25,
+          "h3": 18
+        },
+        "forms": 0,
+        "input_types": {
+          "text": 2,
+          "range": 4
+        },
+        "navigation_regions": 2,
+        "main_regions": 1,
+        "sections": 2,
+        "articles": 0,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 0,
+        "roles": {
+          "tablist": 2,
+          "tabpanel": 3,
+          "list": 12
+        },
+        "anchor_count": 91
+      }
+    },
+    {
+      "id": "f1c101ebc1317a35",
+      "url": "https://happenboard.com/pricing/",
+      "family": "external.pricing",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T11:23:57.769456+00:00",
+      "source_sha256": "1597f6be6723e6bc168be002cb0f25429465da76edd2317d8641f8568e437496",
+      "structure": {
+        "headings": {
+          "h1": 1,
+          "h2": 13,
+          "h3": 9
+        },
+        "forms": 2,
+        "input_types": {
+          "checkbox": 2,
+          "email": 1,
+          "hidden": 2,
+          "search": 1
+        },
+        "navigation_regions": 7,
+        "main_regions": 1,
+        "sections": 8,
+        "articles": 1,
+        "tables": 3,
+        "dialogs": 1,
+        "canvases": 0,
+        "videos": 0,
+        "roles": {
+          "img": 1,
+          "tooltip": 25,
+          "dialog": 2,
+          "search": 1,
+          "combobox": 1,
+          "listbox": 1,
+          "status": 1
+        },
+        "anchor_count": 123
+      }
+    },
+    {
+      "id": "b93042166bda8f11",
+      "url": "https://humanz.net.au/pricing",
+      "family": "external.pricing",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T11:39:50.261015+00:00",
+      "source_sha256": "6d4502c19d46b1f00558ee0bc4da1747a347519764ba2a9c3efe8130f48f8005",
+      "structure": {
+        "headings": {
+          "h1": 1,
+          "h2": 5,
+          "h3": 14
+        },
+        "forms": 0,
+        "input_types": {},
+        "navigation_regions": 2,
+        "main_regions": 1,
+        "sections": 6,
+        "articles": 0,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 0,
+        "roles": {},
+        "anchor_count": 83
+      }
+    },
+    {
+      "id": "b99baf0fead6583d",
+      "url": "https://reapi.ai/blog/category/pricing",
+      "family": "external.pricing",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T11:20:42.759048+00:00",
+      "source_sha256": "3f753e68f2a7de687aad399c2940c6902c83cce39c790fe924ccf0a5acb18862",
+      "structure": {
+        "headings": {
+          "h1": 1,
+          "h2": 5,
+          "h3": 30
+        },
+        "forms": 0,
+        "input_types": {},
+        "navigation_regions": 6,
+        "main_regions": 1,
+        "sections": 2,
+        "articles": 0,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 1,
+        "videos": 0,
+        "roles": {
+          "group": 1,
+          "radio": 4,
+          "navigation": 1
+        },
+        "anchor_count": 206
+      }
+    },
+    {
+      "id": "384e155576ddc242",
+      "url": "https://reapi.ai/blog/category/pricing/page/2",
+      "family": "external.pricing",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T11:37:51.233314+00:00",
+      "source_sha256": "c365be224605b88900ad614e3e28c871ded96f966dbe25133acd4c4229d01a59",
+      "structure": {
+        "headings": {
+          "h1": 1,
+          "h2": 5,
+          "h3": 7
+        },
+        "forms": 0,
+        "input_types": {},
+        "navigation_regions": 6,
+        "main_regions": 1,
+        "sections": 2,
+        "articles": 0,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 1,
+        "videos": 0,
+        "roles": {
+          "group": 1,
+          "radio": 4,
+          "navigation": 1
+        },
+        "anchor_count": 183
+      }
+    },
+    {
+      "id": "0c00a7d46bac06df",
+      "url": "https://vault.hyperiux.com/pricing",
+      "family": "external.pricing",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T11:41:49.670698+00:00",
+      "source_sha256": "7bce80ffe25fb23fe0a089bdf4c120a9b5548e34f50b22239e0ceb4957b256af",
+      "structure": {
+        "headings": {
+          "h1": 1,
+          "h2": 6,
+          "h3": 15
+        },
+        "forms": 1,
+        "input_types": {
+          "range": 2,
+          "email": 1
+        },
+        "navigation_regions": 1,
+        "main_regions": 1,
+        "sections": 6,
+        "articles": 5,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 3,
+        "videos": 0,
+        "roles": {
+          "status": 3,
+          "radiogroup": 2,
+          "radio": 4,
+          "table": 1,
+          "row": 11,
+          "columnheader": 3,
+          "rowheader": 10,
+          "cell": 20,
+          "button": 6,
+          "region": 6
+        },
+        "anchor_count": 60
+      }
+    }
+  ],
+  "visual_metrics": [],
+  "source_state_observations": [
+    {
+      "id": "cerebrium-pricing-390",
+      "source_id": "a955e8342ff580e5",
+      "url": "https://cerebrium.ai/pricing",
+      "official_detail": "https://www.awwwards.com/sites/cerebrium",
+      "award_relationship": "Official detail observed as SOTD; this current inner page is not independently awarded",
+      "observed_at": "2026-11-23T11:23:15.838Z",
+      "viewport": {
+        "width": 390,
+        "height": 1000,
+        "device_scale_factor": 1
+      },
+      "status": "rendered_content_signals_observed",
+      "visual_review": "Private calculator-region screenshot reviewed; not a full-page or hidden-state audit",
+      "private_screenshot_sha256": "21752c33eea37870f6c63aec960d2a7eccdcdf7ca46420fc4bd15dcb5c0e79ad",
+      "source_media_redistributed": false,
+      "facts": [
+        "Per-second/per-hour tabs were operated; the selected tab changed.",
+        "Runtime increase changed the local value from 2 to 3, and the estimated-result text changed.",
+        "In this sample, filling 2.5 seconds was displayed as 25; this is an observed parsing behavior, not a recommended rule.",
+        "A workload edit changed the local estimate. No account, purchase or billing was submitted.",
+        "Mobile plan-comparison Standard tab and a pricing FAQ were opened."
+      ],
+      "actions": [
+        {
+          "name": "Increase runtime",
+          "observable_state_changed": true,
+          "before_runtime": "2",
+          "after_runtime": "3",
+          "result_text_changed": true
+        },
+        {
+          "name": "Edit local workload",
+          "observable_state_changed": true,
+          "entered_runtime": "2.5",
+          "observed_runtime": "25",
+          "result_text_changed": true
+        }
+      ],
+      "normal_source_experience_fully_validated": false,
+      "not_tested": [
+        "All hardware options and allocation ranges",
+        "All plan terms or live billing",
+        "Real device and assistive technology",
+        "Source cost precision and backend implementation"
+      ]
+    },
+    {
+      "id": "cerebrium-pricing-1440",
+      "source_id": "a955e8342ff580e5",
+      "url": "https://cerebrium.ai/pricing",
+      "official_detail": "https://www.awwwards.com/sites/cerebrium",
+      "award_relationship": "Official detail observed as SOTD; this current inner page is not independently awarded",
+      "observed_at": "2026-11-23T11:23:24.403Z",
+      "viewport": {
+        "width": 1440,
+        "height": 1000,
+        "device_scale_factor": 1
+      },
+      "status": "rendered_content_signals_observed",
+      "visual_review": "Private calculator-region screenshot reviewed; not a full-page or hidden-state audit",
+      "private_screenshot_sha256": "df99c41fb3e9752a20c0edf2e5965c1b5ec59bc5f5bce5b33ba018dfed86cacb",
+      "source_media_redistributed": false,
+      "facts": [
+        "Per-second/per-hour tabs were operated; the selected tab changed.",
+        "Runtime increase changed the local value from 2 to 3, and the estimated-result text changed.",
+        "In this sample, filling 2.5 seconds was displayed as 25; this is an observed parsing behavior, not a recommended rule.",
+        "A workload edit changed the local estimate. No account, purchase or billing was submitted.",
+        "Wide view shows inputs beside a separate estimate panel; this is a specific region observation."
+      ],
+      "actions": [
+        {
+          "name": "Increase runtime",
+          "observable_state_changed": true,
+          "before_runtime": "2",
+          "after_runtime": "3",
+          "result_text_changed": true
+        },
+        {
+          "name": "Edit local workload",
+          "observable_state_changed": true,
+          "entered_runtime": "2.5",
+          "observed_runtime": "25",
+          "result_text_changed": true
+        }
+      ],
+      "normal_source_experience_fully_validated": false,
+      "not_tested": [
+        "All hardware options and allocation ranges",
+        "All plan terms or live billing",
+        "Real device and assistive technology",
+        "Source cost precision and backend implementation"
+      ]
+    }
+  ],
+  "source_coverage": "observed_examples",
+  "original_blueprint": true,
+  "business_mode": "local_preview",
+  "states": [
+    "default",
+    "loading",
+    "empty",
+    "error",
+    "success_preview",
+    "disabled",
+    "keyboard_focus",
+    "reduced_motion",
+    "narrow_view"
+  ],
+  "acceptance": [
+    "理解计费周期和权益限制，再审阅明确的方案。",
+    "输入变化后旧估算不可冒充当前值；错误定位至相应字段并可恢复；源数据失败保留静态示例、全部套餐与单位说明。",
+    "不依赖动效解释价格变化；单位切换只更新可读数值与说明，移动比较切换和断点重排保持焦点。",
+    "320、390、768、1440 宽度不出现整页横溢出；必要表格在独立区域滚动。",
+    "键盘可进入、操作、关闭对话框并返回触发点；错误不只靠颜色。",
+    "本地预览不得暗示真实支付、投稿、消息、账户或预约已生效。",
+    "单位切换不改变工作量或月度总额；月费与存储始终按月标记。",
+    "小数不可静默删除或重新解释；错误可编辑恢复，旧估算在输入变化后失效。",
+    "比较套餐与估算套餐独立；断点变化不能让焦点留在隐藏内容。",
+    "未知月费不得显示为零或已知总额；无脚本和数据失败仍可读全部套餐与静态示例。"
+  ],
+  "limitations": [
+    "Source interaction audit is not automatically performed",
+    "Source assets are not bundled",
+    "Real backend, production and physical-device acceptance are not included"
+  ],
+  "estimate_contract": {
+    "implementation": "Original fictional tariff; never source provider prices or live billing",
+    "amount_precision": "BigInt integer cents; aggregate each monthly component before half-up rounding",
+    "runtime_precision": "Milliseconds, at most three decimal places",
+    "display_basis": "Per second or per hour; changing display cannot change workload or total",
+    "unknown_fee": "Preserve null base and total for custom workspace fees; known usage remains visible",
+    "edit_policy": "Invalidate old estimate on edits; require recalculation before review",
+    "limits": {
+      "requests": 10000000,
+      "active_seconds": 3600,
+      "accelerators": 8,
+      "vcpus": 64,
+      "memory_gb": 256,
+      "storage_gb": 100000
+    },
+    "excluded_costs": [
+      "Tax",
+      "Transfer",
+      "Idle allocation",
+      "Discounts and commitments",
+      "Currency conversion"
+    ]
+  }
+}

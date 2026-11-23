@@ -1,8 +1,8 @@
 {
   "schema_version": "3.0",
-  "generated_at": "2026-11-23T11:16:55.917491+00:00",
+  "generated_at": "2026-11-23T11:43:10.326460+00:00",
   "core_skills_preserved": 24,
-  "page_skills": 44,
+  "page_skills": 45,
   "status": "in_progress",
   "scope": "Awwwards main pages and awarded external-site inner pages, organized into reusable task-specific skills",
   "not_claimed": [
@@ -716,6 +716,22 @@
       "evidence_level": "rendered_source_observations",
       "path": "skills/awwwards-page-external-prompt-detail",
       "demo": "skills/awwwards-page-external-prompt-detail/assets/",
+      "browser_validation": "See validation evidence; not inferred from generation"
+    },
+    {
+      "id": "external-pricing",
+      "skill": "awwwards-page-external-pricing",
+      "title": "获奖来源外站定价、套餐比较与用量估算",
+      "kind": "pricing",
+      "runtime_variant": "business-pricing",
+      "source_families": [
+        "external.pricing"
+      ],
+      "source_coverage": "observed_examples",
+      "source_count": 6,
+      "evidence_level": "rendered_source_observations",
+      "path": "skills/awwwards-page-external-pricing",
+      "demo": "skills/awwwards-page-external-pricing/assets/",
       "browser_validation": "See validation evidence; not inferred from generation"
     }
   ]

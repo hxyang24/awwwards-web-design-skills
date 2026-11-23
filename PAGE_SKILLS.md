@@ -1,8 +1,8 @@
 # 页面专项 Skills · 整理进行中
 
-现有 24 套核心技能继续保留；新增 44 套可单独安装的页面技能，再新增 4 套具体交互机制技能，共 72 套。页面技能中 44 套有当前页面来源，0 套仍需补来源。**这不是全站已经完成的声明。**
+现有 24 套核心技能继续保留；新增 45 套可单独安装的页面技能，再新增 4 套具体交互机制技能，共 73 套。页面技能中 45 套有当前页面来源，0 套仍需补来源。**这不是全站已经完成的声明。**
 
-已记录 3829 个页面结果，其中 1970 个完整读取 HTTP DOM；已发现 304 个作品关联外站主机。尚有 17661 个已发现地址待观察，发现范围仍可能增长。
+已记录 4632 个页面结果，其中 2333 个完整读取 HTTP DOM；已发现 358 个作品关联外站主机。尚有 20050 个已发现地址待观察，发现范围仍可能增长。
 
 网址数用于审计来源；每套技能都有任务、页面结构、数据字段、交互状态、恢复路径、响应式、动效、版权边界、独立蓝本和验收要求。网页 DOM、浏览器视觉度量、原创蓝本测试、原站交互验证分别记录，不混为同一种完成。
 
@@ -52,6 +52,7 @@
 | `awwwards-page-external-story-index` | 获奖来源外站叙事章节索引 | rendered_source_observations / 1 来源 | [external-story-index](skills/awwwards-page-external-story-index/SKILL.md) | [HTML](skills/awwwards-page-external-story-index/assets/index.html) |
 | `awwwards-page-external-story-chapter` | 获奖来源外站交互叙事章节 | rendered_source_observations / 3 来源 | [external-story-chapter](skills/awwwards-page-external-story-chapter/SKILL.md) | [HTML](skills/awwwards-page-external-story-chapter/assets/index.html) |
 | `awwwards-page-external-prompt-detail` | 参照外站提示词与字体效果详情 | rendered_source_observations / 1 来源 | [external-prompt-detail](skills/awwwards-page-external-prompt-detail/SKILL.md) | [HTML](skills/awwwards-page-external-prompt-detail/assets/index.html) |
+| `awwwards-page-external-pricing` | 获奖来源外站定价、套餐比较与用量估算 | rendered_source_observations / 6 来源 | [external-pricing](skills/awwwards-page-external-pricing/SKILL.md) | [HTML](skills/awwwards-page-external-pricing/assets/index.html) |
 
 ## 独立交互机制 Skills
 

@@ -9,6 +9,10 @@ from install_all_skills import install
 def load(path,name):
  spec=importlib.util.spec_from_file_location(name,path);m=importlib.util.module_from_spec(spec);spec.loader.exec_module(m);return m
 class PageSkills(unittest.TestCase):
+ def test_pricing_page_candidates_keep_localized_inner_page_identity(self):
+  for url in ['https://example.com/pricing','https://example.com/en/pricing','https://example.com/plans/team']:
+   self.assertEqual(family(url),'external.pricing')
+  self.assertEqual(family('https://example.com/pricing-guide'),'external.other')
  def test_each_authored_skill_is_standalone_and_exports_without_overwriting(self):
   registry=json.loads((R/'page_skills/registry.json').read_text(encoding='utf-8'));self.assertEqual(len(registry['skills']),len(definitions()))
   with tempfile.TemporaryDirectory() as d:

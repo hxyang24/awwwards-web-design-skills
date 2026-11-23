@@ -16,7 +16,7 @@ def build():
   c=json.loads((R/s['path']/'references/page-contract.json').read_text(encoding='utf-8'))
   for source in c['sources']:selected.setdefault(source['id'],[]).append(s['skill'])
  evidence={};variants={}
- for filename,key in [('visual-observations.json','observations'),('interaction-observations.json','observations'),('creative-page-observations.json','observations')]:
+ for filename,key in [('visual-observations.json','observations'),('interaction-observations.json','observations'),('creative-page-observations.json','observations'),('pricing-page-observations.json','observations')]:
   file=R/'research/live_pages'/filename
   if not file.exists():continue
   file.stat()

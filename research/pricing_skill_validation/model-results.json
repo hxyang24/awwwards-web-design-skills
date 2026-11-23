@@ -1,0 +1,47 @@
+{
+  "recorded_at": "2026-11-23T11:44:30.704Z",
+  "status": "passed",
+  "checks": [
+    {
+      "name": "Independent example has separately rounded compute, storage and workspace costs",
+      "status": "passed"
+    },
+    {
+      "name": "Request and duration units produce equivalent workloads",
+      "status": "passed"
+    },
+    {
+      "name": "Rate display conversion does not alter monthly estimation",
+      "status": "passed"
+    },
+    {
+      "name": "Malformed, empty, grouped and excessive precision inputs are rejected without rewriting",
+      "status": "passed"
+    },
+    {
+      "name": "Maximum supported workload remains exact beyond floating-point products",
+      "status": "passed"
+    },
+    {
+      "name": "No compute usage retains applicable storage and workspace fees",
+      "status": "passed"
+    },
+    {
+      "name": "CPU-only mode excludes accelerator allocation without inventing a free total",
+      "status": "passed"
+    },
+    {
+      "name": "Unknown custom workspace fees preserve known usage and unknown total",
+      "status": "passed"
+    },
+    {
+      "name": "Half-cent rounding occurs after aggregate monthly resource usage",
+      "status": "passed"
+    },
+    {
+      "name": "Unknown identifiers and invalid display values cannot become costs",
+      "status": "passed"
+    }
+  ],
+  "scope": "Original demonstration tariff arithmetic, precision, unknown fees and input boundaries; not source billing or provider price acceptance"
+}

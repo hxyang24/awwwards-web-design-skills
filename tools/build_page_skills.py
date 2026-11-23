@@ -24,12 +24,14 @@ def generate():
  visual_file=R/'research/live_pages/visual-observations.json';visual=json.loads(visual_file.read_text(encoding='utf-8')).get('observations',[]) if visual_file.exists() else []
  patterns=json.loads((R/'interaction_skills/registry.json').read_text(encoding='utf-8'))['skills']
  creative_file=R/'research/live_pages/creative-page-observations.json';creative=json.loads(creative_file.read_text(encoding='utf-8')).get('observations',[]) if creative_file.exists() else []
+ business_file=R/'research/live_pages/pricing-page-observations.json';creative+=json.loads(business_file.read_text(encoding='utf-8')).get('observations',[]) if business_file.exists() else []
  registry=[]
  for id,families,title,kind,regions,workflow,fields,recovery,motion in definitions():
   name='awwwards-page-'+id;folder=R/'skills'/name
   observed=[s for s in sources if s['family'] in families and s['inspection_level']=='http_dom' and (kind=='notfound' or s.get('content_state_hint','unclassified')=='unclassified') and (kind=='notfound' or not any(x in s.get('title','').lower() for x in ['not found','just a moment','404']))]
   if id=='external-careers':
    observed=sorted(observed,key=lambda s:(any(x in s.get('title','').lower() for x in ['accessibility','accommodation','choose your country']),len(s['url'])))
+  if id=='external-pricing':observed.sort(key=lambda s:s['id']!='a955e8342ff580e5')
   if id=='external-prompt-detail':observed.sort(key=lambda s:s['id']!='619b8560ee5995dd')
   selected=observed[:6];source_ids={s['id'] for s in selected};views=[v for v in visual if v['source_id'] in source_ids and v['status']=='rendered_observed']
   state_views=[v for v in creative if v['source_id'] in source_ids]
@@ -37,6 +39,9 @@ def generate():
   goal={'story-index':'选择可用章节，理解阅读顺序并按需恢复已保存的位置。','story':'以明确顺序阅读当前章节，并能切换阅读方式、继续或退出。','prompt':'审阅并编辑分层提示词，理解样例来源并可靠复制原创配方。','careers':'理解雇主理念、工作方式和岗位入口，再审阅符合条件的角色。','gallery':'按主题浏览视觉作品，用可访问的查看器审阅并返回索引。','experiment':'理解输入方式并可控地体验、暂停和退出互动实验。','notfound':'理解资源不可达的原因，并通过有效入口恢复任务。','listing':'帮助用户在完整结果中定位条目，并进入详情或恢复空结果。','directory':'根据实体身份和明确筛选找到合适的对象。','portal':'让用户理解内容层级，并进入当前最重要的任务。','award':'理解作品、奖项与来源，并安全进入原站或相关内容。','pricing':'理解计费周期和权益限制，再审阅明确的方案。','wizard':'分步收集最少必要输入，在最终行动前审阅和确认。','course':'理解课程与大纲，明确公开预览和访问权限。','product':'核对产品、规格、许可与费用，完成可核实的选择。','job':'理解岗位及申请条件，进入明确的申请路径。','contact':'完成可恢复的询问表单并理解提交的实际状态。','faq':'找到相关答案，理解下一步及帮助渠道。','event':'理解活动时间、议程、地点与参与条件。','article':'按章节持续阅读并追溯事实、版本和引用。','profile':'理解身份、贡献、作品与公开联系边界。','project':'理解项目问题、过程、贡献和有证据的成果。','about':'理解主体、团队和可核实的背景。','service':'判断服务与当前问题的适配性，并进入咨询。'}[kind]
   contract={'schema_version':'3.0','id':id,'skill':name,'title':title,'kind':kind,'scope':'Awwwards-linked external inner page; specific award status requires official evidence' if id.startswith('external-') else 'Awwwards main-site page family','source_families':families,'goal':goal,'regions':regions.split('、'),'workflow':workflow,'data_fields':fields,'failure_recovery':recovery,'motion_contract':motion,'evidence_level':level,'source_relationship_note':'An outbound work-detail association does not certify that every current inner page won an award or matches a historical version.','evidence_note':'Only recorded observations are facts. DOM structure does not prove visual composition, hidden state, source code, backend behavior or licenses. The runnable blueprint is an original recipe, not a source-site clone.','sources':[{'id':s['id'],'url':s['url'],'family':s['family'],'inspection_level':s['inspection_level'],'observed_at':s['observed_at'],'source_sha256':s.get('source_sha256'),'structure':s['structure']} for s in selected],'visual_metrics':views,'source_state_observations':state_views,'source_coverage':'observed_examples' if selected else 'needs_source_inspection','original_blueprint':True,'business_mode':'local_preview','states':['default','loading','empty','error','success_preview','disabled','keyboard_focus','reduced_motion','narrow_view'],'acceptance':[goal,recovery,motion,'320、390、768、1440 宽度不出现整页横溢出；必要表格在独立区域滚动。','键盘可进入、操作、关闭对话框并返回触发点；错误不只靠颜色。','本地预览不得暗示真实支付、投稿、消息、账户或预约已生效。'],'limitations':['Source interaction audit is not automatically performed','Source assets are not bundled','Real backend, production and physical-device acceptance are not included']}
   if id=='external-prompt-detail':contract['reference_eligibility_note']='The AIFont official work-detail title was Nominee at the recorded observation. This is a supplementary reference, not counted as a confirmed awarded-site case; a later live read was HTTP 403.'
+  if id=='external-pricing':
+   contract['estimate_contract']={'implementation':'Original fictional tariff; never source provider prices or live billing','amount_precision':'BigInt integer cents; aggregate each monthly component before half-up rounding','runtime_precision':'Milliseconds, at most three decimal places','display_basis':'Per second or per hour; changing display cannot change workload or total','unknown_fee':'Preserve null base and total for custom workspace fees; known usage remains visible','edit_policy':'Invalidate old estimate on edits; require recalculation before review','limits':{'requests':10000000,'active_seconds':3600,'accelerators':8,'vcpus':64,'memory_gb':256,'storage_gb':100000},'excluded_costs':['Tax','Transfer','Idle allocation','Discounts and commitments','Currency conversion']}
+   contract['acceptance']+=['单位切换不改变工作量或月度总额；月费与存储始终按月标记。','小数不可静默删除或重新解释；错误可编辑恢复，旧估算在输入变化后失效。','比较套餐与估算套餐独立；断点变化不能让焦点留在隐藏内容。','未知月费不得显示为零或已知总额；无脚本和数据失败仍可读全部套餐与静态示例。']
   write(folder/'references/page-contract.json',json.dumps(contract,ensure_ascii=False,indent=2)+'\n')
   source_list='\n'.join('- '+s['url']+'（'+s['inspection_level']+'；'+s['observed_at']+'）' for s in selected) or '- 本轮尚未读取到该页面族的完整来源。保持 needs_source_inspection；不得声称已从原站提炼完整设计。'
   text=f'''---
@@ -82,6 +87,7 @@ python scripts/scaffold.py --output YOUR_EMPTY_PROJECT_DIRECTORY
 '''
   companions=[x['skill'] for x in patterns if name in x['supports_page_skills']]
   if companions:text+='\n## 可组合的具体机制\n'+''.join('- `'+x+'`：读取其机制契约和实际测试边界后按需组合。\n' for x in companions)
+  if id=='external-pricing':text+='\n## 定价专项实施\n读取 `assets/pricing-model.mjs` 和契约中的 `estimate_contract`。它们是独立原创虚构费率模型，不是源站计费实现。以整数金额汇总和舍入，明确单位、输入精度、未知费用和旧估算失效。源站小数输入的具体观察不能被当成建议规则。按这些边界操作所有核心路径，再接真实服务端费率和购买接口。\n'
   write(folder/'SKILL.md',text)
   write(folder/'assets/contract.json',json.dumps(contract,ensure_ascii=False,indent=2)+'\n')
   write(folder/'assets/index.html','<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Original task-specific page skill blueprint with fictional local data."><title>'+id+' · Page skill blueprint</title><link rel="icon" href="data:,"><link rel="stylesheet" href="style.css"></head><body><a class="skip" href="#main">Skip to content</a><div id="app"><main id="main"><h1>Original page skill blueprint</h1><p>Read the page contract for the structure, states and source boundaries. JavaScript enables the local interaction example.</p></main></div><noscript>Interactive local previews require JavaScript. The page contract and skill instructions remain readable.</noscript><script type="module" src="main.mjs"></script></body></html>')
@@ -109,6 +115,10 @@ if __name__=='__main__':
   if kind in ['story','story-index','prompt']:
    runtime_variant='creative-story' if kind.startswith('story') else 'creative-prompt'
    source=R/'page_skills/creative'/('story' if kind.startswith('story') else 'prompt')
+   for source_file in source.iterdir():
+    if source_file.is_file():shutil.copy2(source_file,folder/'assets'/source_file.name)
+  if id=='external-pricing':
+   runtime_variant='business-pricing';source=R/'page_skills/business/pricing'
    for source_file in source.iterdir():
     if source_file.is_file():shutil.copy2(source_file,folder/'assets'/source_file.name)
   registry.append({'id':id,'skill':name,'title':title,'kind':kind,'runtime_variant':runtime_variant,'source_families':families,'source_coverage':contract['source_coverage'],'source_count':len(selected),'evidence_level':level,'path':folder.relative_to(R).as_posix(),'demo':folder.relative_to(R).as_posix()+'/assets/','browser_validation':'See validation evidence; not inferred from generation'})

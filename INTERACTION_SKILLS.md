@@ -11,7 +11,7 @@
 
 例如指定“使用 `awwwards-page-external-careers` 和 `awwwards-pattern-careers-culture`，制作有品牌叙事、岗位过滤和减少动画路径的招聘页面”，先读取两者契约，再按项目的品牌与真实服务实现。示例中的虚构岗位不能充当实况，也不能显示真实申请成功。
 
-在仓库根目录安装全部 72 套技能，或者单独导出一个机制蓝本：
+在仓库根目录安装全部 73 套技能，或者单独导出一个机制蓝本：
 
 ```text
 python tools/install_all_skills.py --target YOUR_SKILLS_DIRECTORY
@@ -24,7 +24,7 @@ python skills/awwwards-pattern-careers-culture/scripts/scaffold.py --output YOUR
 
 Windows Chromium 下 37 组通用机制检查通过，包括四套蓝本在 320/390/768/1440 的溢出检查、八次选定无障碍规则扫描、导航焦点、空结果恢复、画廊、动效停止、软件 WebGL 的实际上下文丢失和资源清理。另有物理模型 8 项及物理浏览器专项 16 组通过，详见 [物理与来源采样说明](PHYSICS_AND_SOURCE_AUDIT.md)。首轮失败与当前通过记录均保留。
 
-工具另有 5 项检查，覆盖独立导出、拒绝覆盖、来源引用、第三方许可、72 套安装清单与独立招聘实现。测试对象是原创蓝本，未据此宣称原站逐像素重建、全部源站交互或全部页面已完成。
+工具另有 5 项检查，覆盖独立导出、拒绝覆盖、来源引用、第三方许可、73 套安装清单与独立招聘实现。测试对象是原创蓝本，未据此宣称原站逐像素重建、全部源站交互或全部页面已完成。
 
 查看 [浏览器回执](research/interaction_skill_validation/browser-results.json)、[工具回执](research/interaction_skill_validation/unit-results.json)、[来源状态观察](research/live_pages/interaction-observations.json)、[来源到技能的候选映射](research/skill_extraction/coverage.json)。候选映射也不算逐页设计审阅完成。
 

@@ -1,0 +1,101 @@
+{
+  "schema_version": "1.0",
+  "purpose": "Limited source evidence for an independently authored pricing skill",
+  "observations": [
+    {
+      "id": "cerebrium-pricing-390",
+      "source_id": "a955e8342ff580e5",
+      "url": "https://cerebrium.ai/pricing",
+      "official_detail": "https://www.awwwards.com/sites/cerebrium",
+      "award_relationship": "Official detail observed as SOTD; this current inner page is not independently awarded",
+      "observed_at": "2026-11-23T11:23:15.838Z",
+      "viewport": {
+        "width": 390,
+        "height": 1000,
+        "device_scale_factor": 1
+      },
+      "status": "rendered_content_signals_observed",
+      "visual_review": "Private calculator-region screenshot reviewed; not a full-page or hidden-state audit",
+      "private_screenshot_sha256": "21752c33eea37870f6c63aec960d2a7eccdcdf7ca46420fc4bd15dcb5c0e79ad",
+      "source_media_redistributed": false,
+      "facts": [
+        "Per-second/per-hour tabs were operated; the selected tab changed.",
+        "Runtime increase changed the local value from 2 to 3, and the estimated-result text changed.",
+        "In this sample, filling 2.5 seconds was displayed as 25; this is an observed parsing behavior, not a recommended rule.",
+        "A workload edit changed the local estimate. No account, purchase or billing was submitted.",
+        "Mobile plan-comparison Standard tab and a pricing FAQ were opened."
+      ],
+      "actions": [
+        {
+          "name": "Increase runtime",
+          "observable_state_changed": true,
+          "before_runtime": "2",
+          "after_runtime": "3",
+          "result_text_changed": true
+        },
+        {
+          "name": "Edit local workload",
+          "observable_state_changed": true,
+          "entered_runtime": "2.5",
+          "observed_runtime": "25",
+          "result_text_changed": true
+        }
+      ],
+      "normal_source_experience_fully_validated": false,
+      "not_tested": [
+        "All hardware options and allocation ranges",
+        "All plan terms or live billing",
+        "Real device and assistive technology",
+        "Source cost precision and backend implementation"
+      ]
+    },
+    {
+      "id": "cerebrium-pricing-1440",
+      "source_id": "a955e8342ff580e5",
+      "url": "https://cerebrium.ai/pricing",
+      "official_detail": "https://www.awwwards.com/sites/cerebrium",
+      "award_relationship": "Official detail observed as SOTD; this current inner page is not independently awarded",
+      "observed_at": "2026-11-23T11:23:24.403Z",
+      "viewport": {
+        "width": 1440,
+        "height": 1000,
+        "device_scale_factor": 1
+      },
+      "status": "rendered_content_signals_observed",
+      "visual_review": "Private calculator-region screenshot reviewed; not a full-page or hidden-state audit",
+      "private_screenshot_sha256": "df99c41fb3e9752a20c0edf2e5965c1b5ec59bc5f5bce5b33ba018dfed86cacb",
+      "source_media_redistributed": false,
+      "facts": [
+        "Per-second/per-hour tabs were operated; the selected tab changed.",
+        "Runtime increase changed the local value from 2 to 3, and the estimated-result text changed.",
+        "In this sample, filling 2.5 seconds was displayed as 25; this is an observed parsing behavior, not a recommended rule.",
+        "A workload edit changed the local estimate. No account, purchase or billing was submitted.",
+        "Wide view shows inputs beside a separate estimate panel; this is a specific region observation."
+      ],
+      "actions": [
+        {
+          "name": "Increase runtime",
+          "observable_state_changed": true,
+          "before_runtime": "2",
+          "after_runtime": "3",
+          "result_text_changed": true
+        },
+        {
+          "name": "Edit local workload",
+          "observable_state_changed": true,
+          "entered_runtime": "2.5",
+          "observed_runtime": "25",
+          "result_text_changed": true
+        }
+      ],
+      "normal_source_experience_fully_validated": false,
+      "not_tested": [
+        "All hardware options and allocation ranges",
+        "All plan terms or live billing",
+        "Real device and assistive technology",
+        "Source cost precision and backend implementation"
+      ]
+    }
+  ],
+  "raw_source_screenshots": "not distributed"
+}
