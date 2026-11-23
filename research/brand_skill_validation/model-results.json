@@ -1,0 +1,62 @@
+{
+  "date": "2026-11-23T17:56:16.017Z",
+  "status": "passed",
+  "checks": [
+    {
+      "name": "Only opaque six-digit sRGB is accepted and canonicalized",
+      "status": "passed"
+    },
+    {
+      "name": "Authored guide has bounded independent records and narrowed fields",
+      "status": "passed"
+    },
+    {
+      "name": "Bad identities duplicate tokens and unbounded records are rejected",
+      "status": "passed"
+    },
+    {
+      "name": "Motion and symbol values cannot introduce arbitrary styles",
+      "status": "passed"
+    },
+    {
+      "name": "Luminance black white and primary weights follow the W3C equation",
+      "status": "passed"
+    },
+    {
+      "name": "Both sides of the current .04045 sRGB branch are covered",
+      "status": "passed"
+    },
+    {
+      "name": "Extremes identity and pair symmetry retain raw values",
+      "status": "passed"
+    },
+    {
+      "name": "Normal text threshold uses raw values on either side of 4.5",
+      "status": "passed"
+    },
+    {
+      "name": "Large text ratio is distinct from eligibility and other conformance",
+      "status": "passed"
+    },
+    {
+      "name": "Display never rounds a failing threshold up",
+      "status": "passed"
+    },
+    {
+      "name": "Static CSS and JSON exports match the executable model",
+      "status": "passed"
+    },
+    {
+      "name": "Symbol rotations preserve unique original identities and user count",
+      "status": "passed"
+    },
+    {
+      "name": "Contrast report contains the actual pair raw ratio version and scope",
+      "status": "passed"
+    }
+  ],
+  "reference": "https://www.w3.org/TR/WCAG22/#dfn-relative-luminance",
+  "limitations": [
+    "Numeric model fixtures are not full WCAG conformance or source-site reconstruction"
+  ]
+}

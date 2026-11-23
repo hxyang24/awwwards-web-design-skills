@@ -1,0 +1,167 @@
+{
+  "date": "2026-11-23T17:56:41.691Z",
+  "status": "passed",
+  "checks": [
+    {
+      "name": "Brand guide fits and retains all sections 320",
+      "status": "passed"
+    },
+    {
+      "name": "Brand guide fits and retains all sections 390",
+      "status": "passed"
+    },
+    {
+      "name": "Brand guide fits and retains all sections 768",
+      "status": "passed"
+    },
+    {
+      "name": "Brand guide fits and retains all sections 1440",
+      "status": "passed"
+    },
+    {
+      "name": "Selected brand accessibility rules 390",
+      "status": "passed"
+    },
+    {
+      "name": "Selected brand accessibility rules 1440",
+      "status": "passed"
+    },
+    {
+      "name": "Mobile navigation Escape restores trigger focus and expanded state",
+      "status": "passed"
+    },
+    {
+      "name": "Menu chapter choice focuses the destination and Back restores address",
+      "status": "passed"
+    },
+    {
+      "name": "Resizing an open menu recovers focus in the desktop navigation",
+      "status": "passed"
+    },
+    {
+      "name": "Black white calculation and download use the checked raw pair",
+      "status": "passed"
+    },
+    {
+      "name": "A near threshold failing pair is never displayed as a pass",
+      "status": "passed"
+    },
+    {
+      "name": "Editing invalidates old calculation and revokes its download",
+      "status": "passed"
+    },
+    {
+      "name": "Unsupported color fails safely then a valid pair recovers",
+      "status": "passed"
+    },
+    {
+      "name": "Swap changes inputs without presenting an unchecked result",
+      "status": "passed"
+    },
+    {
+      "name": "Copy reports success only after device completion",
+      "status": "passed"
+    },
+    {
+      "name": "Denied copy exposes exact manual CSS and restores trigger focus",
+      "status": "passed"
+    },
+    {
+      "name": "Missing clipboard still provides a complete JSON copy path",
+      "status": "passed"
+    },
+    {
+      "name": "Timed out clipboard confirmation stays manual after late completion",
+      "status": "passed"
+    },
+    {
+      "name": "Older copy completion cannot overwrite a newer manual result",
+      "status": "passed"
+    },
+    {
+      "name": "Symbol rearrangement and count preserve unique authored identities",
+      "status": "passed"
+    },
+    {
+      "name": "Reduced motion is static by default with no autoplay",
+      "status": "passed"
+    },
+    {
+      "name": "Explicit motion can pause resume finish and reset",
+      "status": "passed"
+    },
+    {
+      "name": "Reduced motion opt-in and changed system preference cancel owned motion",
+      "status": "passed"
+    },
+    {
+      "name": "Viewport and preset changes cancel obsolete transition callbacks",
+      "status": "passed"
+    },
+    {
+      "name": "Native mark CSS and JSON downloads contain only authored study assets",
+      "status": "passed"
+    },
+    {
+      "name": "No script retains all guide content native downloads and visible navigation",
+      "status": "passed"
+    },
+    {
+      "name": "Network failure keeps complete fallback and retry enables controls",
+      "status": "passed"
+    },
+    {
+      "name": "Data drift requires regeneration and does not mix static and changed tokens",
+      "status": "passed"
+    },
+    {
+      "name": "Dispose cancels motion URLs and late copies without changing host state",
+      "status": "passed"
+    },
+    {
+      "name": "No uncaught JavaScript errors or outside requests",
+      "status": "passed"
+    }
+  ],
+  "accessibility": [
+    {
+      "tag": "default-390",
+      "violations": []
+    },
+    {
+      "tag": "default-1440",
+      "violations": []
+    },
+    {
+      "tag": "checked",
+      "violations": []
+    },
+    {
+      "tag": "manual-copy",
+      "violations": []
+    }
+  ],
+  "screenshots": [
+    "research/brand_skill_validation/screenshots/brand-390.png",
+    "research/brand_skill_validation/screenshots/brand-1440.png"
+  ],
+  "errors": [],
+  "external_requests": [],
+  "environment": {
+    "platform": "win32",
+    "node": "v24.14.0",
+    "browser": "157.0.8103.79",
+    "viewport_widths": [
+      320,
+      390,
+      768,
+      1440
+    ],
+    "device_scale_factor": 1
+  },
+  "limitations": [
+    "Authored original guide, not source-site reconstruction",
+    "Selected automated accessibility rules are not complete WCAG conformance",
+    "No physical-device, assistive-technology, source asset license or production acceptance"
+  ]
+}

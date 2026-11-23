@@ -169,3 +169,10 @@ PAGES.append(('inspiration-detail',['main.inspiration-detail'],'主站灵感参�
  ['reference_id','creator','source_url_or_null','media_file','media_duration','transcript_segments','static_tags','related_notes','notebook_version','local_notes','persistence_scope','clipboard_result'],
  '媒体失败保留海报与完整文字稿；存储不可用只保留当前标签页并说明旧记录可能存在；编辑后下载失效；复制未确认不报成功。',
  '蓝本没有自动播放；明确点击才播放原创静音短片；支持暂停、定位、重置，减少动态时仍默认静态并保留全文。'))
+
+
+PAGES.append(('external-brand-guide',['external.brand-guide'],'获奖来源外站品牌指南、资源与可控演示','brand-guide','指南身份、章节导航、原创色板、对比度计算、标志、图标组合、可控动效、下载与复制回退',
+ ['把指南内容、品牌资产许可、示范工具和真实产品规则分别记录，不因公开可读而推断允许分发。','核实导航开关及组合示例的局部内容变化；不要用整页截图差异代替作用区域与滚动证据。','为原创色板提供六位不透明 sRGB 对比度计算，使用原始比值判定并说明完整合规仍需其他检查。','复制必须等待设备确认；拒绝、缺失或超时提供可选文本。输入变化使旧计算及其下载失效。','动效仅明确启动，可暂停、继续或重置；减少动态时默认显示静态结果，尺寸或偏好变化取消旧运行。','编辑指南后同步生成完整静态内容及下载；断网、脚本失败、数据不符时仍可阅读并获得原创资源。'],
+ ['guide_version','palette[].hex','asset_origin','asset_license','foreground','background','raw_ratio','normal_text_ratio_met','large_text_ratio_met','symbol_order','transition_duration','motion_preference','copy_confirmation'],
+ '无效颜色不能沿用旧比值；复制失败不报成功；过期动画与复制确认不能覆盖当前状态；数据失败保留完整静态指南并可重试。',
+ '无自动播放；提供暂停、继续、重置和明确选择；减少动态默认静态，改变视口或偏好取消旧运动；窄屏导航可关闭并恢复焦点。'))

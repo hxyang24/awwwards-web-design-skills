@@ -78,6 +78,50 @@
       "evidence_id": "reference-cta78-390",
       "rationale": "Rendered page task matches an existing Skill; no duplicate Skill count and no complete individual-page extraction claim.",
       "hash_scope": "Cached HTTP metadata anchor, not equality with browser DOM or a historical version."
+    },
+    {
+      "url": "https://brand.dropbox.com/color",
+      "source_id": "753c3c1e80ee64fb",
+      "source_sha256": "7199598891849984377f1ccc68b58644704f7ebe36a61b34456b577203ee7bea",
+      "family": "external.brand-guide",
+      "reviewed_at": "2026-11-23T17:50:09.353373+00:00",
+      "evidence_file": "research/live_pages/brand-guide-observations.json",
+      "evidence_id": "brand78-color-390",
+      "rationale": "Distinct guidance task; four section URLs inform one Skill, not four Skill counts. Limited rendered and local control evidence only.",
+      "hash_scope": "Cached HTTP metadata anchor, not identity with browser DOM or historical source"
+    },
+    {
+      "url": "https://brand.dropbox.com/iconography",
+      "source_id": "bf7f73e9e627d431",
+      "source_sha256": "5fcfa510fc576f68b3a2267b44c08085628c8b861a0e1c5c2b7316f1db02b7ae",
+      "family": "external.brand-guide",
+      "reviewed_at": "2026-11-23T17:50:09.353373+00:00",
+      "evidence_file": "research/live_pages/brand-guide-observations.json",
+      "evidence_id": "brand78-iconography-390",
+      "rationale": "Distinct guidance task; four section URLs inform one Skill, not four Skill counts. Limited rendered and local control evidence only.",
+      "hash_scope": "Cached HTTP metadata anchor, not identity with browser DOM or historical source"
+    },
+    {
+      "url": "https://brand.dropbox.com/logo",
+      "source_id": "038d22891a539c19",
+      "source_sha256": "0524b70c5d78476812fc90b6fffcad874f0cf1ffd9dddf1e2c3c0607562b25ce",
+      "family": "external.brand-guide",
+      "reviewed_at": "2026-11-23T17:50:09.353373+00:00",
+      "evidence_file": "research/live_pages/brand-guide-observations.json",
+      "evidence_id": "brand78-logo-390",
+      "rationale": "Distinct guidance task; four section URLs inform one Skill, not four Skill counts. Limited rendered and local control evidence only.",
+      "hash_scope": "Cached HTTP metadata anchor, not identity with browser DOM or historical source"
+    },
+    {
+      "url": "https://brand.dropbox.com/motion",
+      "source_id": "82d46fa5aea701c0",
+      "source_sha256": "69fa1b6f99d92549a865a7f60a55cb1a9fc512f721e574d2d91d0e49d9c410f5",
+      "family": "external.brand-guide",
+      "reviewed_at": "2026-11-23T17:50:09.353373+00:00",
+      "evidence_file": "research/live_pages/brand-guide-observations.json",
+      "evidence_id": "brand78-motion-390",
+      "rationale": "Distinct guidance task; four section URLs inform one Skill, not four Skill counts. Limited rendered and local control evidence only.",
+      "hash_scope": "Cached HTTP metadata anchor, not identity with browser DOM or historical source"
     }
   ]
 }

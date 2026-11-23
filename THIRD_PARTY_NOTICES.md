@@ -21,3 +21,7 @@ The new `skills/awwwards-page-*` assets are original geometric blueprints. `rese
 ## Additional standalone spatial pattern
 
 `skills/awwwards-pattern-immersive-fallback/assets/vendor/` redistributes the same pinned Three.js module and core as the preserved V2 package, with its MIT license in `vendor/LICENSE`. The pattern geometry, prose and interface code are original. No source-site media, fonts or shaders are redistributed in these new patterns.
+
+## Original brand-guide study
+
+Common Room guide code, text, colors, geometric symbols and SVG mark are original fictional MIT examples, not Dropbox assets. Source screenshots, brand palettes, fonts, logos, footage, protected HTML and copy are not distributed. Links and limited factual observations do not convey trademark or asset rights. Numeric contrast logic follows the public W3C WCAG2.2 specification; the documentation paraphrases numerical rules and links to primary sources rather than copying the explanatory publication. The local JSON format is authored and does not claim any design-token standard certification.

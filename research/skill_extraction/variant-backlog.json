@@ -5106,8 +5106,8 @@
       "not_claimed": "DOM element counts do not prove visible layout, technology, state or completed skill extraction"
     },
     {
-      "id": "46c5aaef6a67e4c0",
-      "family_hint": "external.other",
+      "id": "dd4bbe1a3ef30bda",
+      "family_hint": "external.brand-guide",
       "observed_dom_signature": {
         "forms": 0,
         "tables": 0,
@@ -5122,13 +5122,15 @@
       "example_source_ids": [
         "753c3c1e80ee64fb"
       ],
-      "candidate_page_skills": [],
+      "candidate_page_skills": [
+        "awwwards-page-external-brand-guide"
+      ],
       "status": "requires_variant_review",
       "not_claimed": "DOM element counts do not prove visible layout, technology, state or completed skill extraction"
     },
     {
-      "id": "aedd90d0ebe0536b",
-      "family_hint": "external.other",
+      "id": "d0a8ac1d8b09ed8c",
+      "family_hint": "external.brand-guide",
       "observed_dom_signature": {
         "forms": 0,
         "tables": 0,
@@ -5143,13 +5145,15 @@
       "example_source_ids": [
         "bf7f73e9e627d431"
       ],
-      "candidate_page_skills": [],
+      "candidate_page_skills": [
+        "awwwards-page-external-brand-guide"
+      ],
       "status": "requires_variant_review",
       "not_claimed": "DOM element counts do not prove visible layout, technology, state or completed skill extraction"
     },
     {
-      "id": "95005f995109201d",
-      "family_hint": "external.other",
+      "id": "89a540db4244302c",
+      "family_hint": "external.brand-guide",
       "observed_dom_signature": {
         "forms": 0,
         "tables": 0,
@@ -5164,13 +5168,15 @@
       "example_source_ids": [
         "038d22891a539c19"
       ],
-      "candidate_page_skills": [],
+      "candidate_page_skills": [
+        "awwwards-page-external-brand-guide"
+      ],
       "status": "requires_variant_review",
       "not_claimed": "DOM element counts do not prove visible layout, technology, state or completed skill extraction"
     },
     {
-      "id": "6e2b89c7b294a701",
-      "family_hint": "external.other",
+      "id": "f5cd5ff547a8fc83",
+      "family_hint": "external.brand-guide",
       "observed_dom_signature": {
         "forms": 0,
         "tables": 0,
@@ -5187,7 +5193,9 @@
       "example_source_ids": [
         "82d46fa5aea701c0"
       ],
-      "candidate_page_skills": [],
+      "candidate_page_skills": [
+        "awwwards-page-external-brand-guide"
+      ],
       "status": "requires_variant_review",
       "not_claimed": "DOM element counts do not prove visible layout, technology, state or completed skill extraction"
     },

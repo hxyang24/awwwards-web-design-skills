@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "id": "common-room",
+  "version": "1.0",
+  "license": "MIT",
+  "origin": "original_fictional_study",
+  "colors": {
+    "ink": "#3D2630",
+    "paper": "#F5F0E9",
+    "rose": "#A54657",
+    "forest": "#21635D",
+    "sand": "#E5C0A2",
+    "mist": "#D6DED6"
+  }
+}

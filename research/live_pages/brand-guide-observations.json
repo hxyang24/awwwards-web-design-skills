@@ -1,0 +1,186 @@
+{
+  "schema_version": "1.0",
+  "purpose": "Limited inspected source facts for an authored brand-guide Skill, not a source clone",
+  "source_assets_redistributed": false,
+  "observations": [
+    {
+      "id": "brand78-color-390",
+      "source_id": "753c3c1e80ee64fb",
+      "url": "https://brand.dropbox.com/color",
+      "observed_at": "2026-11-23T17:25:02.221Z",
+      "viewport": {
+        "width": 390,
+        "height": 1000,
+        "device_scale_factor": 1
+      },
+      "status": "rendered_observed",
+      "page_task": "Brand design-system guidance; one reusable Skill family across the four sections",
+      "visual_review": "Private screenshot manually reviewed: large typography, own-brand graphics and section-oriented guidance; protected visuals not bundled",
+      "source_assets_redistributed": false,
+      "source_relationship": {
+        "official_work_detail": "https://www.awwwards.com/sites/dropbox-brand",
+        "live_http_title": "Dropbox Brand - Awwwards SOTD",
+        "title_observation_only": true,
+        "current_inner_pages_independently_awarded": false
+      },
+      "not_claimed": [
+        "Source copy/download and resource license operation",
+        "Complete motion, error or reduced-motion audit",
+        "Pixel match, source code or historical-version equality"
+      ],
+      "authored_extension": "Original fictional guide, colors, SVG mark, geometric symbols, local contrast calculator, confirmed copy/manual fallback, explicit controlled transition and complete no-script downloads",
+      "navigation_observation": {
+        "viewports": [
+          390,
+          1440
+        ],
+        "opened_and_closed": true,
+        "private_menu_screenshot_reviewed": true,
+        "expanded_aria_not_reported_by_source": true,
+        "no_login_or_transaction": true
+      }
+    },
+    {
+      "id": "brand78-color-1440",
+      "source_id": "753c3c1e80ee64fb",
+      "url": "https://brand.dropbox.com/color",
+      "observed_at": "2026-11-23T17:25:08.180Z",
+      "viewport": {
+        "width": 1440,
+        "height": 1000,
+        "device_scale_factor": 1
+      },
+      "status": "rendered_observed",
+      "page_task": "Brand design-system guidance; one reusable Skill family across the four sections",
+      "visual_review": "Private screenshot manually reviewed: large typography, own-brand graphics and section-oriented guidance; protected visuals not bundled",
+      "source_assets_redistributed": false,
+      "source_relationship": {
+        "official_work_detail": "https://www.awwwards.com/sites/dropbox-brand",
+        "live_http_title": "Dropbox Brand - Awwwards SOTD",
+        "title_observation_only": true,
+        "current_inner_pages_independently_awarded": false
+      },
+      "not_claimed": [
+        "Source copy/download and resource license operation",
+        "Complete motion, error or reduced-motion audit",
+        "Pixel match, source code or historical-version equality"
+      ],
+      "authored_extension": "Original fictional guide, colors, SVG mark, geometric symbols, local contrast calculator, confirmed copy/manual fallback, explicit controlled transition and complete no-script downloads",
+      "navigation_observation": {
+        "viewports": [
+          390,
+          1440
+        ],
+        "opened_and_closed": true,
+        "private_menu_screenshot_reviewed": true,
+        "expanded_aria_not_reported_by_source": true,
+        "no_login_or_transaction": true
+      }
+    },
+    {
+      "id": "brand78-iconography-390",
+      "source_id": "bf7f73e9e627d431",
+      "url": "https://brand.dropbox.com/iconography",
+      "observed_at": "2026-11-23T17:25:15.501Z",
+      "viewport": {
+        "width": 390,
+        "height": 1000,
+        "device_scale_factor": 1
+      },
+      "status": "rendered_observed",
+      "page_task": "Brand design-system guidance; one reusable Skill family across the four sections",
+      "visual_review": "Private screenshot manually reviewed: large typography, own-brand graphics and section-oriented guidance; protected visuals not bundled",
+      "source_assets_redistributed": false,
+      "source_relationship": {
+        "official_work_detail": "https://www.awwwards.com/sites/dropbox-brand",
+        "live_http_title": "Dropbox Brand - Awwwards SOTD",
+        "title_observation_only": true,
+        "current_inner_pages_independently_awarded": false
+      },
+      "not_claimed": [
+        "Source copy/download and resource license operation",
+        "Complete motion, error or reduced-motion audit",
+        "Pixel match, source code or historical-version equality"
+      ],
+      "authored_extension": "Original fictional guide, colors, SVG mark, geometric symbols, local contrast calculator, confirmed copy/manual fallback, explicit controlled transition and complete no-script downloads",
+      "stack_observation": {
+        "unique_native_control": "New Stack",
+        "local_panel_text_changed": true,
+        "local_graphic_geometry_changed": true,
+        "scroll_unchanged": true,
+        "cookie_banner_appeared_later": "Full screenshot diff cannot be attributed only to the stack button"
+      }
+    },
+    {
+      "id": "brand78-logo-390",
+      "source_id": "038d22891a539c19",
+      "url": "https://brand.dropbox.com/logo",
+      "observed_at": "2026-11-23T17:25:23.116Z",
+      "viewport": {
+        "width": 390,
+        "height": 1000,
+        "device_scale_factor": 1
+      },
+      "status": "rendered_observed",
+      "page_task": "Brand design-system guidance; one reusable Skill family across the four sections",
+      "visual_review": "Private screenshot manually reviewed: large typography, own-brand graphics and section-oriented guidance; protected visuals not bundled",
+      "source_assets_redistributed": false,
+      "source_relationship": {
+        "official_work_detail": "https://www.awwwards.com/sites/dropbox-brand",
+        "live_http_title": "Dropbox Brand - Awwwards SOTD",
+        "title_observation_only": true,
+        "current_inner_pages_independently_awarded": false
+      },
+      "not_claimed": [
+        "Source copy/download and resource license operation",
+        "Complete motion, error or reduced-motion audit",
+        "Pixel match, source code or historical-version equality"
+      ],
+      "authored_extension": "Original fictional guide, colors, SVG mark, geometric symbols, local contrast calculator, confirmed copy/manual fallback, explicit controlled transition and complete no-script downloads"
+    },
+    {
+      "id": "brand78-motion-390",
+      "source_id": "82d46fa5aea701c0",
+      "url": "https://brand.dropbox.com/motion",
+      "observed_at": "2026-11-23T17:25:30.112Z",
+      "viewport": {
+        "width": 390,
+        "height": 1000,
+        "device_scale_factor": 1
+      },
+      "status": "rendered_observed",
+      "page_task": "Brand design-system guidance; one reusable Skill family across the four sections",
+      "visual_review": "Private screenshot manually reviewed: large typography, own-brand graphics and section-oriented guidance; protected visuals not bundled",
+      "source_assets_redistributed": false,
+      "source_relationship": {
+        "official_work_detail": "https://www.awwwards.com/sites/dropbox-brand",
+        "live_http_title": "Dropbox Brand - Awwwards SOTD",
+        "title_observation_only": true,
+        "current_inner_pages_independently_awarded": false
+      },
+      "not_claimed": [
+        "Source copy/download and resource license operation",
+        "Complete motion, error or reduced-motion audit",
+        "Pixel match, source code or historical-version equality"
+      ],
+      "authored_extension": "Original fictional guide, colors, SVG mark, geometric symbols, local contrast calculator, confirmed copy/manual fallback, explicit controlled transition and complete no-script downloads"
+    }
+  ],
+  "calculation_reference": {
+    "urls": [
+      "https://www.w3.org/TR/WCAG22/",
+      "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html"
+    ],
+    "verified_at": "2026-11-23T17:50:09.353373+00:00",
+    "http_status": 200,
+    "sRGB_linear_threshold": 0.04045,
+    "relative_luminance_weights": [
+      0.2126,
+      0.7152,
+      0.0722
+    ],
+    "normal_text_ratio": 4.5,
+    "large_text_ratio": 3,
+    "limits": "Opaque six-digit sRGB only; unrounded ratio thresholds; no complete WCAG conformance determination"
+  }
+}

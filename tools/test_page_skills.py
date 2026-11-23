@@ -10,6 +10,18 @@ from install_all_skills import install
 def load(path,name):
  spec=importlib.util.spec_from_file_location(name,path);m=importlib.util.module_from_spec(spec);spec.loader.exec_module(m);return m
 class PageSkills(unittest.TestCase):
+ def test_brand_static_guide_exports_complete_original_data_and_safe_text(self):
+  import shutil
+  with tempfile.TemporaryDirectory() as t:
+   target=Path(t)/'brand';shutil.copytree(R/'page_skills/design/brand',target);p=target/'guide.json';d=json.loads(p.read_text(encoding='utf-8'));d['title']='<Guide fixture>';p.write_text(json.dumps(d),encoding='utf-8');result=load(target/'render_static.py','brand_static_fixture').render(target)
+   self.assertEqual(result,{'colors':6,'symbols':4,'transitions':2});text=(target/'index.html').read_text(encoding='utf-8');self.assertIn('&lt;Guide fixture&gt;',text);self.assertIn(hashlib.sha256(p.read_bytes()).hexdigest(),text);self.assertEqual(text.count('class="swatch"'),6);self.assertIn('download="common-room-mark.svg"',text)
+   css=(target/'palette.css').read_text(encoding='utf-8');export=json.loads((target/'palette.json').read_text(encoding='utf-8'));self.assertEqual(export['origin'],'original_fictional_study')
+   for c in d['palette']:self.assertEqual(export['colors'][c['id']],c['hex']);self.assertIn(c['hex'],css);self.assertIn(html.escape(c['name']),text)
+ def test_four_brand_source_sections_anchor_one_skill_and_invalidate_when_source_changes(self):
+  reviews=load_reviews(R);rows=[x for x in definitions() if x[0]=='external-brand-guide'];self.assertEqual(len(rows),1)
+  for name in ['color','logo','iconography','motion']:
+   url='https://brand.dropbox.com/'+name;r=reviews[url];s={'url':url,'id':r['source_id'],'source_sha256':r['source_sha256'],'inspection_level':'http_dom'};self.assertEqual(assign_family(s,reviews)['family'],'external.brand-guide');s['source_sha256']='0'*64;self.assertEqual(assign_family(s,reviews)['review_status'],'stale')
+
  def test_creator_static_generation_preserves_all_original_works_and_unavailable_has_no_identity(self):
   import shutil
   with tempfile.TemporaryDirectory() as t:
@@ -22,7 +34,7 @@ class PageSkills(unittest.TestCase):
   reviews=load_reviews(R);targets={'https://www.awwwards.com/13treize.fr/submissions':'main.creator-profile','https://www.awwwards.com/inspiration/20-years-of-xbox-museum-3d-environments-microverse':'main.inspiration-detail','https://www.awwwards.com/inspiration/2021-virtual-webbys-cta-button-to-enter':'main.inspiration-detail'}
   for url,family_name in targets.items():
    review=reviews[url];source={'url':url,'id':review['source_id'],'source_sha256':review['source_sha256'],'inspection_level':'http_dom'};self.assertEqual(assign_family(source,reviews)['family'],family_name);source['source_sha256']='0'*64;self.assertEqual(assign_family(source,reviews)['review_status'],'stale')
-  self.assertEqual(len(definitions()),49)
+  self.assertEqual(len(definitions()),50)
  def test_reference_static_content_preserves_media_transcript_and_all_original_notes(self):
   import shutil
   with tempfile.TemporaryDirectory() as t:

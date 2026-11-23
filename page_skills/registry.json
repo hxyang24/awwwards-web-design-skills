@@ -1,8 +1,8 @@
 {
   "schema_version": "3.0",
-  "generated_at": "2026-11-23T17:13:12.290169+00:00",
+  "generated_at": "2026-11-23T17:55:48.090823+00:00",
   "core_skills_preserved": 24,
-  "page_skills": 49,
+  "page_skills": 50,
   "status": "in_progress",
   "scope": "Awwwards main pages and awarded external-site inner pages, organized into reusable task-specific skills",
   "not_claimed": [
@@ -796,6 +796,22 @@
       "evidence_level": "rendered_source_observations",
       "path": "skills/awwwards-page-inspiration-detail",
       "demo": "skills/awwwards-page-inspiration-detail/assets/",
+      "browser_validation": "See validation evidence; not inferred from generation"
+    },
+    {
+      "id": "external-brand-guide",
+      "skill": "awwwards-page-external-brand-guide",
+      "title": "获奖来源外站品牌指南、资源与可控演示",
+      "kind": "brand-guide",
+      "runtime_variant": "design-brand",
+      "source_families": [
+        "external.brand-guide"
+      ],
+      "source_coverage": "observed_examples",
+      "source_count": 4,
+      "evidence_level": "rendered_source_observations",
+      "path": "skills/awwwards-page-external-brand-guide",
+      "demo": "skills/awwwards-page-external-brand-guide/assets/",
       "browser_validation": "See validation evidence; not inferred from generation"
     }
   ]

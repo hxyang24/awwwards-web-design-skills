@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "id": "common-room",
+  "title": "Common Room / design guide",
+  "summary": "A small original identity system for clear, useful work. Explore the palette, the mark, the symbols and a controlled motion study.",
+  "version": "1.0",
+  "origin": "original_fictional_study",
+  "palette": [
+    {"id":"ink","name":"Ink","hex":"#3D2630"},
+    {"id":"paper","name":"Paper","hex":"#F5F0E9"},
+    {"id":"rose","name":"Rose","hex":"#A54657"},
+    {"id":"forest","name":"Forest","hex":"#21635D"},
+    {"id":"sand","name":"Sand","hex":"#E5C0A2"},
+    {"id":"mist","name":"Mist","hex":"#D6DED6"}
+  ],
+  "symbols": [
+    {"id":"orbit","name":"Orbit","shape":"orbit"},
+    {"id":"window","name":"Window","shape":"window"},
+    {"id":"steps","name":"Steps","shape":"steps"},
+    {"id":"cross","name":"Cross","shape":"cross"}
+  ],
+  "motion": [
+    {"id":"direct","name":"Direct","duration_ms":300,"easing":"linear"},
+    {"id":"settle","name":"Settle","duration_ms":700,"easing":"cubic-bezier(0.2, 0.8, 0.2, 1)"}
+  ]
+}
