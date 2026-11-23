@@ -42,7 +42,7 @@ python scripts/scaffold.py --output YOUR_EMPTY_PROJECT_DIRECTORY
 - https://aonnoysengupta.com/services/website-migration（http_dom；2026-11-23T09:09:53.838487+00:00）
 - https://aonnoysengupta.com/services/website-speed（http_dom；2026-11-23T09:09:53.976558+00:00）
 - https://aonnoysengupta.com/services/websites-and-web-apps（http_dom；2026-11-23T09:09:54.114236+00:00）
-- https://mindmarket.com/services（http_dom；2026-11-23T08:43:25.486342+00:00）
-- https://www.14islands.com/services（http_dom；2026-11-23T08:45:01.382416+00:00）
+- https://doemedia.com/services/（http_dom；2026-11-23T10:46:05.859480+00:00）
+- https://espaciohomedesign.com/en/services（http_dom；2026-11-23T10:57:27.384540+00:00）
 
 来源受各自版权和访问规则约束；只借鉴结构与机制，使用原创或已授权文案、图像、字体和模型。未知技术版本、隐藏状态和服务端行为不得根据截图补造。

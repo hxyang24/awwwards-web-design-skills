@@ -1,13 +1,20 @@
 #!/usr/bin/env python3
 """Build standalone page skills from authored recipes and measured references."""
 from pathlib import Path
-import datetime,hashlib,importlib.util,json,shutil
+import datetime,hashlib,importlib.util,json,shutil,html
 from page_research import family
 R=Path(__file__).resolve().parents[1]
 def definitions():
  spec=importlib.util.spec_from_file_location('page_definitions',R/'page_skills/definitions.py');module=importlib.util.module_from_spec(spec);spec.loader.exec_module(module);return module.PAGES
 def write(path,text):path.parent.mkdir(parents=True,exist_ok=True);path.write_text(text,encoding='utf-8',newline='\n')
+def build_story_fallback():
+ folder=R/'page_skills/creative/story';data_file=folder/'story-data.json';data_file.stat();chapters=json.loads(data_file.read_text(encoding='utf-8'));p=folder/'index.html';text=p.read_text(encoding='utf-8');start='<!-- STATIC_STORY_START -->';end='<!-- STATIC_STORY_END -->'
+ content='<p id="reader-enhancement-status" role="status">The complete story is available below. JavaScript enables optional reader controls.</p><section id="static-story" aria-labelledby="static-story-title"><h2 id="static-story-title">Read all three chapters</h2>'
+ for i,c in enumerate(chapters,1):content+='<article id="chapter-'+str(i)+'" tabindex="-1"><h3>'+html.escape(c['title'])+'</h3>'+''.join('<h4>'+html.escape(h)+'</h4><p>'+html.escape(t)+'</p>' for h,t in c['panels'])+'</article>'
+ content+='</section>';text=text[:text.index(start)+len(start)]+content+text[text.index(end):];write(p,text)
+
 def generate():
+ build_story_fallback()
  source_file=R/'research/live_pages/sources.jsonl';sources=[]
  if source_file.exists():
   with source_file.open(encoding='utf-8') as f:
@@ -20,13 +27,13 @@ def generate():
  registry=[]
  for id,families,title,kind,regions,workflow,fields,recovery,motion in definitions():
   name='awwwards-page-'+id;folder=R/'skills'/name
-  observed=[s for s in sources if s['family'] in families and s['inspection_level']=='http_dom' and (kind=='notfound' or not any(x in s.get('title','').lower() for x in ['not found','just a moment','404']))]
+  observed=[s for s in sources if s['family'] in families and s['inspection_level']=='http_dom' and (kind=='notfound' or s.get('content_state_hint','unclassified')=='unclassified') and (kind=='notfound' or not any(x in s.get('title','').lower() for x in ['not found','just a moment','404']))]
   if id=='external-careers':
    observed=sorted(observed,key=lambda s:(any(x in s.get('title','').lower() for x in ['accessibility','accommodation','choose your country']),len(s['url'])))
   if id=='external-prompt-detail':observed.sort(key=lambda s:s['id']!='619b8560ee5995dd')
   selected=observed[:6];source_ids={s['id'] for s in selected};views=[v for v in visual if v['source_id'] in source_ids and v['status']=='rendered_observed']
   state_views=[v for v in creative if v['source_id'] in source_ids]
-  level='rendered_source_observations' if any(v['status']=='rendered_content_observed' for v in state_views) else 'rendered_geometry' if views else ('http_dom' if selected else 'not_observed')
+  level='rendered_source_observations' if any(v['status'] in ['rendered_content_observed','rendered_content_signals_observed'] for v in state_views) else 'rendered_geometry' if views else ('http_dom' if selected else 'not_observed')
   goal={'story-index':'选择可用章节，理解阅读顺序并按需恢复已保存的位置。','story':'以明确顺序阅读当前章节，并能切换阅读方式、继续或退出。','prompt':'审阅并编辑分层提示词，理解样例来源并可靠复制原创配方。','careers':'理解雇主理念、工作方式和岗位入口，再审阅符合条件的角色。','gallery':'按主题浏览视觉作品，用可访问的查看器审阅并返回索引。','experiment':'理解输入方式并可控地体验、暂停和退出互动实验。','notfound':'理解资源不可达的原因，并通过有效入口恢复任务。','listing':'帮助用户在完整结果中定位条目，并进入详情或恢复空结果。','directory':'根据实体身份和明确筛选找到合适的对象。','portal':'让用户理解内容层级，并进入当前最重要的任务。','award':'理解作品、奖项与来源，并安全进入原站或相关内容。','pricing':'理解计费周期和权益限制，再审阅明确的方案。','wizard':'分步收集最少必要输入，在最终行动前审阅和确认。','course':'理解课程与大纲，明确公开预览和访问权限。','product':'核对产品、规格、许可与费用，完成可核实的选择。','job':'理解岗位及申请条件，进入明确的申请路径。','contact':'完成可恢复的询问表单并理解提交的实际状态。','faq':'找到相关答案，理解下一步及帮助渠道。','event':'理解活动时间、议程、地点与参与条件。','article':'按章节持续阅读并追溯事实、版本和引用。','profile':'理解身份、贡献、作品与公开联系边界。','project':'理解项目问题、过程、贡献和有证据的成果。','about':'理解主体、团队和可核实的背景。','service':'判断服务与当前问题的适配性，并进入咨询。'}[kind]
   contract={'schema_version':'3.0','id':id,'skill':name,'title':title,'kind':kind,'scope':'Awwwards-linked external inner page; specific award status requires official evidence' if id.startswith('external-') else 'Awwwards main-site page family','source_families':families,'goal':goal,'regions':regions.split('、'),'workflow':workflow,'data_fields':fields,'failure_recovery':recovery,'motion_contract':motion,'evidence_level':level,'source_relationship_note':'An outbound work-detail association does not certify that every current inner page won an award or matches a historical version.','evidence_note':'Only recorded observations are facts. DOM structure does not prove visual composition, hidden state, source code, backend behavior or licenses. The runnable blueprint is an original recipe, not a source-site clone.','sources':[{'id':s['id'],'url':s['url'],'family':s['family'],'inspection_level':s['inspection_level'],'observed_at':s['observed_at'],'source_sha256':s.get('source_sha256'),'structure':s['structure']} for s in selected],'visual_metrics':views,'source_state_observations':state_views,'source_coverage':'observed_examples' if selected else 'needs_source_inspection','original_blueprint':True,'business_mode':'local_preview','states':['default','loading','empty','error','success_preview','disabled','keyboard_focus','reduced_motion','narrow_view'],'acceptance':[goal,recovery,motion,'320、390、768、1440 宽度不出现整页横溢出；必要表格在独立区域滚动。','键盘可进入、操作、关闭对话框并返回触发点；错误不只靠颜色。','本地预览不得暗示真实支付、投稿、消息、账户或预约已生效。'],'limitations':['Source interaction audit is not automatically performed','Source assets are not bundled','Real backend, production and physical-device acceptance are not included']}
   if id=='external-prompt-detail':contract['reference_eligibility_note']='The AIFont official work-detail title was Nominee at the recorded observation. This is a supplementary reference, not counted as a confirmed awarded-site case; a later live read was HTTP 403.'
@@ -102,7 +109,8 @@ if __name__=='__main__':
   if kind in ['story','story-index','prompt']:
    runtime_variant='creative-story' if kind.startswith('story') else 'creative-prompt'
    source=R/'page_skills/creative'/('story' if kind.startswith('story') else 'prompt')
-   for file in ['index.html','style.css','main.mjs','runtime.mjs']:shutil.copy2(source/file,folder/'assets'/file)
+   for source_file in source.iterdir():
+    if source_file.is_file():shutil.copy2(source_file,folder/'assets'/source_file.name)
   registry.append({'id':id,'skill':name,'title':title,'kind':kind,'runtime_variant':runtime_variant,'source_families':families,'source_coverage':contract['source_coverage'],'source_count':len(selected),'evidence_level':level,'path':folder.relative_to(R).as_posix(),'demo':folder.relative_to(R).as_posix()+'/assets/','browser_validation':'See validation evidence; not inferred from generation'})
  out={'schema_version':'3.0','generated_at':datetime.datetime.now(datetime.timezone.utc).isoformat(),'core_skills_preserved':24,'page_skills':len(registry),'status':'in_progress','scope':'Awwwards main pages and awarded external-site inner pages, organized into reusable task-specific skills','not_claimed':['All pages visited','All awarded websites fully analyzed','All source interactions reproduced'],'skills':registry}
  write(R/'page_skills/registry.json',json.dumps(out,ensure_ascii=False,indent=2)+'\n')

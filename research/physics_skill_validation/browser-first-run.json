@@ -1,0 +1,99 @@
+{
+  "recorded_at": "2026-11-23T10:48:44.509Z",
+  "status": "failed",
+  "checks": [
+    {
+      "name": "Physics layout and original screenshot at 320",
+      "status": "passed"
+    },
+    {
+      "name": "Physics layout and original screenshot at 390",
+      "status": "passed"
+    },
+    {
+      "name": "Physics layout and original screenshot at 768",
+      "status": "passed"
+    },
+    {
+      "name": "Physics layout and original screenshot at 1440",
+      "status": "passed"
+    },
+    {
+      "name": "Physics selected accessibility rules at 390",
+      "status": "passed"
+    },
+    {
+      "name": "Physics selected accessibility rules at 1440",
+      "status": "passed"
+    },
+    {
+      "name": "Manual positioning works with reduced motion and equivalent keys",
+      "status": "passed"
+    },
+    {
+      "name": "Play, pause and reset have actual state changes",
+      "status": "passed"
+    },
+    {
+      "name": "Pointer drag remains bounded and releases its capture",
+      "status": "passed"
+    },
+    {
+      "name": "Emulated Chromium touch positions a shape without scrolling the page",
+      "status": "passed"
+    },
+    {
+      "name": "Pointer cancellation and component destruction free the active constraint",
+      "status": "passed"
+    },
+    {
+      "name": "Leaving the viewport stops motion and does not automatically restart",
+      "status": "failed",
+      "error": "expect(locator).toContainText(expected) failed\n\nLocator: locator('#motion-status')\nExpected substring: \"outside the visible area\"\nReceived string:    \"Original physics is playing. Pause at any time.\"\nTimeout: 5000ms\n\nCall log:\n  - Expect \"toContainText\" locator('#motion-status') with timeout 5000ms\n  - waiting for locator('#motion-status')\n    14 × locator resolved to <p role=\"status\" id=\"motion-status\">Original physics is playing. Pause at any time.</p>\n       - unexpected value \"Original physics is playing. Pause at any time.\"\n"
+    },
+    {
+      "name": "Hide and restore preserve useful content with motion off",
+      "status": "passed"
+    },
+    {
+      "name": "Rendering unavailable and JavaScript disabled preserve an honest static path",
+      "status": "passed"
+    },
+    {
+      "name": "No outside requests or uncaught errors",
+      "status": "passed"
+    }
+  ],
+  "accessibility": [
+    {
+      "width": 390,
+      "violations": []
+    },
+    {
+      "width": 1440,
+      "violations": []
+    }
+  ],
+  "screenshots": [
+    "research/physics_skill_validation/screenshots/physics-390.png",
+    "research/physics_skill_validation/screenshots/physics-1440.png"
+  ],
+  "errors": [],
+  "external_requests": [],
+  "environment": {
+    "platform": "win32",
+    "node": "v24.14.0",
+    "browser": "159.0.8154.6",
+    "viewport_widths": [
+      320,
+      390,
+      768,
+      1440
+    ]
+  },
+  "limitations": [
+    "Original decorative physics fixture only; not source-engine or parameter reconstruction",
+    "Touch uses Chromium emulation, not a physical device",
+    "No Safari/Firefox, production performance or full assistive-technology acceptance"
+  ]
+}

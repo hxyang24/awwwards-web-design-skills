@@ -77,6 +77,36 @@
       }
     },
     {
+      "id": "90eb76bd82e19550",
+      "url": "http://duplos.org/",
+      "family": "external.home",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T10:49:07.040578+00:00",
+      "source_sha256": "bc6d738ed4bb3494454a41e755fea0ad0a960d6de64d499f443004574ed5b10d",
+      "structure": {
+        "headings": {
+          "h1": 5,
+          "h2": 11
+        },
+        "forms": 0,
+        "input_types": {},
+        "navigation_regions": 0,
+        "main_regions": 1,
+        "sections": 4,
+        "articles": 0,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 0,
+        "roles": {
+          "banner": 1,
+          "contentinfo": 1,
+          "main": 1
+        },
+        "anchor_count": 17
+      }
+    },
+    {
       "id": "1e56626c0a2eb400",
       "url": "http://www.because-recollection.com/",
       "family": "external.home",
@@ -123,96 +153,66 @@
       }
     },
     {
-      "id": "da29e4d7f6f02853",
-      "url": "https://365ayearof.cartier.com/en/",
+      "id": "7a58075db1ab2813",
+      "url": "http://www.delvaux.com/en",
       "family": "external.home",
       "inspection_level": "http_dom",
-      "observed_at": "2026-11-23T08:45:19.244737+00:00",
-      "source_sha256": "00642d93dd3da90f2ed076c505687479e98c5eb8f93bff62ae111cccc90283d3",
+      "observed_at": "2026-11-23T10:39:49.768720+00:00",
+      "source_sha256": "139f5a424bb0f822a6df38dadf3b898bb7be4d6c5d99b2ba97454dd9ed2f0efb",
       "structure": {
         "headings": {
           "h1": 1,
-          "h2": 11,
-          "h3": 27
+          "h2": 10,
+          "h6": 5
         },
-        "forms": 0,
-        "input_types": {},
-        "navigation_regions": 3,
-        "main_regions": 1,
-        "sections": 6,
-        "articles": 0,
-        "tables": 0,
-        "dialogs": 0,
-        "canvases": 1,
-        "videos": 5,
-        "roles": {
-          "banner": 1,
-          "menu": 1,
-          "menuitem": 1
-        },
-        "anchor_count": 29
-      }
-    },
-    {
-      "id": "cd3ef38c0d7e4f68",
-      "url": "https://8pm.it/",
-      "family": "external.home",
-      "inspection_level": "http_dom",
-      "observed_at": "2026-11-23T08:45:41.229812+00:00",
-      "source_sha256": "a4098b533ccb44ff6270ffdda434c11b8b32a465894bba3ee7802c583ccb427d",
-      "structure": {
-        "headings": {
-          "h2": 6,
-          "h3": 49
-        },
-        "forms": 7,
+        "forms": 4,
         "input_types": {
-          "search": 3,
-          "hidden": 14,
-          "radio": 29,
-          "email": 2
+          "text": 10,
+          "email": 7,
+          "password": 1,
+          "checkbox": 3,
+          "hidden": 8,
+          "tel": 2
         },
-        "navigation_regions": 2,
-        "main_regions": 1,
-        "sections": 19,
+        "navigation_regions": 4,
+        "main_regions": 0,
+        "sections": 0,
         "articles": 0,
         "tables": 0,
         "dialogs": 0,
         "canvases": 0,
         "videos": 2,
         "roles": {
-          "main": 1
+          "button": 5,
+          "combobox": 4,
+          "alert": 4,
+          "listbox": 4,
+          "option": 27
         },
-        "anchor_count": 184
+        "anchor_count": 45
       }
     },
     {
-      "id": "6a1c34195f749a09",
-      "url": "https://a24.raviklaassens.com/",
+      "id": "ea0013142d6f961d",
+      "url": "http://www.enjoyyourprivacy.com/",
       "family": "external.home",
       "inspection_level": "http_dom",
-      "observed_at": "2026-11-23T08:03:50.201105+00:00",
-      "source_sha256": "a6976bec37981eb0f6a30b43d9f6e4c45daec5583d902824e42ac9f6a10fb8db",
+      "observed_at": "2026-11-23T10:54:49.222197+00:00",
+      "source_sha256": "bce574871939132237ecbab419faa4af161cbb1d2a4052151b2abadfe985a696",
       "structure": {
-        "headings": {
-          "h2": 12,
-          "h1": 1
-        },
+        "headings": {},
         "forms": 0,
         "input_types": {},
-        "navigation_regions": 1,
-        "main_regions": 1,
-        "sections": 1,
+        "navigation_regions": 0,
+        "main_regions": 0,
+        "sections": 0,
         "articles": 0,
         "tables": 0,
         "dialogs": 0,
         "canvases": 0,
         "videos": 0,
-        "roles": {
-          "list": 38,
-          "listitem": 110
-        },
-        "anchor_count": 32
+        "roles": {},
+        "anchor_count": 0
       }
     }
   ],

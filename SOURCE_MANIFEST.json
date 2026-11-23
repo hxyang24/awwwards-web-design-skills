@@ -10,8 +10,8 @@
     },
     {
       "path": ".github/workflows/ci.yml",
-      "bytes": 2271,
-      "sha256": "f0bbfbba66dd17ddffc0b330dca87627b0544efbb4322d7a6c78e15ba4876c83"
+      "bytes": 2691,
+      "sha256": "a068d774438fb70bcb7d3a4ee7f32543801f33fc3eec1b99631103300da053da"
     },
     {
       "path": ".gitignore",
@@ -25,13 +25,13 @@
     },
     {
       "path": "CREATIVE_PAGE_SKILLS.md",
-      "bytes": 4628,
-      "sha256": "54c749718c00ae6e49c7f18b1fef7cbafb2a1955468ac3af1f4c83393f40a976"
+      "bytes": 5282,
+      "sha256": "1a51257a202031a76307f4f9681d1d7ad0f8eb7647334e3624c366cd52ec5701"
     },
     {
       "path": "docs/FULL_SITE_SKILLS_GOAL.md",
-      "bytes": 5608,
-      "sha256": "d5dfd0bcbd170febed513599fa01107840a1cca85debb17406c07478825e3879"
+      "bytes": 6289,
+      "sha256": "b16a29a212cc7e128a7cf5232d6720893322865edbf692b541e57cd6c3cfb1a9"
     },
     {
       "path": "docs/OPEN_SOURCE_PUBLICATION.md",
@@ -84,19 +84,39 @@
       "sha256": "a20fd4393961111e4d566381324e8298f36f645aa9a0610a90100a89e917f7e7"
     },
     {
+      "path": "interaction_skills/assets/physics/engine.mjs",
+      "bytes": 3089,
+      "sha256": "52771958a1be8a42d73abaf68e0950618525b888e19fe0f78586eb53968699b4"
+    },
+    {
+      "path": "interaction_skills/assets/physics/index.html",
+      "bytes": 4218,
+      "sha256": "3721489d0ebe0fba4c37d51c9f4875d6fd26a11f5227c5193089af2b0377002d"
+    },
+    {
+      "path": "interaction_skills/assets/physics/main.mjs",
+      "bytes": 6215,
+      "sha256": "d24fa2f57820c13b2d6f60df516a61af70fec7909caf7cdab54f0838148c3036"
+    },
+    {
+      "path": "interaction_skills/assets/physics/style.css",
+      "bytes": 3888,
+      "sha256": "60dea2497c0886678796bf14c11d2146c9b82185c32dc8afcb50aa4f117243eb"
+    },
+    {
       "path": "interaction_skills/page_adapter.mjs",
       "bytes": 443,
       "sha256": "db45819c379383ef982cb4438ae0ef7dbea11456e8d17ff2991005d68df9972a"
     },
     {
       "path": "interaction_skills/registry.json",
-      "bytes": 2595,
-      "sha256": "57fafccd8aee1ca1156c464331e7f811fa35cd2a8c5239019d48a038b32b2a3b"
+      "bytes": 3406,
+      "sha256": "e54fde44e23bf078983aa6e2672bb763c2d5f35a07e72fe2dc5e4f1c2cb3a9ce"
     },
     {
       "path": "INTERACTION_SKILLS.md",
-      "bytes": 3620,
-      "sha256": "2707f05ba1001831313a71ebe0418d609d4af2d3620f2cfd161af6a1fa98546c"
+      "bytes": 4113,
+      "sha256": "46cd34914ebc253daded6790aaf8c07ed34707d6d58148d79b78e72004557088"
     },
     {
       "path": "LICENSE",
@@ -1880,23 +1900,28 @@
     },
     {
       "path": "page_skills/creative/story/index.html",
-      "bytes": 5297,
-      "sha256": "7604c017b4049ec74511102d79e1a5e114bc3313e15b7d272bfaee81713fc713"
+      "bytes": 6520,
+      "sha256": "30042e177d5a626d2798b3e224a8896ae55b5d1816df366d062917194174642f"
     },
     {
       "path": "page_skills/creative/story/main.mjs",
-      "bytes": 167,
-      "sha256": "2f5650cd13f6f1c6c10870fefe3d081490ebf54de09dc12eef6303120166d07b"
+      "bytes": 406,
+      "sha256": "44da37e8b0a275577a07f5d024a79c7541ad33212f399ec28c69fff764732465"
     },
     {
       "path": "page_skills/creative/story/runtime.mjs",
-      "bytes": 7545,
-      "sha256": "e3f86454b5566bc94a55a22ffe2ceb54a865e89b044cd83b6317a6db8ae00bfb"
+      "bytes": 6957,
+      "sha256": "4410fc25a5f5c899d5fc868091d03ced3bfb0fcbb91a1e9c01ddc75086eb49f8"
+    },
+    {
+      "path": "page_skills/creative/story/story-data.json",
+      "bytes": 1141,
+      "sha256": "6088b8858acefe88e0f18673e71582a7c5c2c0e64ef89437239708e50ddb8d6f"
     },
     {
       "path": "page_skills/creative/story/style.css",
-      "bytes": 5567,
-      "sha256": "47c48f8dd3f1955b82950ca77bd1f5d099e7029fe29f9e8c588eff02a7d28ddf"
+      "bytes": 5865,
+      "sha256": "9a41042da046f7358d0b9008fd6d135736aaf7a713d96278239bec7ad4372d2e"
     },
     {
       "path": "page_skills/definitions.py",
@@ -1905,13 +1930,13 @@
     },
     {
       "path": "page_skills/index.html",
-      "bytes": 18824,
-      "sha256": "880522aececf6c64e2dd3b03096529c1f84933435af6cdeed259befe827e38a6"
+      "bytes": 19275,
+      "sha256": "e6ab1a10b51ac1d7eab53378ae6faa780057fcec4313fa491b50bfc2c68af2e2"
     },
     {
       "path": "page_skills/registry.json",
       "bytes": 26047,
-      "sha256": "1c7a3449cb867a0fb9da10042e349fb9cf3cd5cde1ef39e6b5b2550f8d3413e7"
+      "sha256": "3d9768c3defe7339484dd555bd9b33b8357353b06d4e1a4064f00d0584ae027f"
     },
     {
       "path": "page_skills/runtime.css",
@@ -1925,13 +1950,18 @@
     },
     {
       "path": "PAGE_SKILLS.md",
-      "bytes": 13164,
-      "sha256": "f86b83fa4370acde14a33fc466d6d6d37899822b9f1d7cc2d00c91be5ac25508"
+      "bytes": 13397,
+      "sha256": "d949fb33c911d079b7bcaa5847bb2ead5fb20446742e6e60214971c189866e5e"
+    },
+    {
+      "path": "PHYSICS_AND_SOURCE_AUDIT.md",
+      "bytes": 4665,
+      "sha256": "8305b1d3fe6ea7b7fdf1015abd962f0df354d709727874d153fcaa986c62d394"
     },
     {
       "path": "README.md",
-      "bytes": 7126,
-      "sha256": "ae97ad07358d2085a01e5a70d724e0e9f622ac1d12dac5145c88539b42ae141c"
+      "bytes": 7348,
+      "sha256": "4f87b40bed01cb40b030a0dc1ef391540e7575ca3a43b877c48d1ac4d05fbcf2"
     },
     {
       "path": "research/creative_page_validation/browser-first-run.json",
@@ -1939,9 +1969,14 @@
       "sha256": "b2c064631b2ffcc19edc30bffe34e8ed83912c93338ad081e646e5b3020c872c"
     },
     {
+      "path": "research/creative_page_validation/browser-resource-failure-first-run.json",
+      "bytes": 6179,
+      "sha256": "00c1a67a513ddc1e610ef83cba4699fcb86eed25b2bb36b770255a44029a18de"
+    },
+    {
       "path": "research/creative_page_validation/browser-results.json",
-      "bytes": 5503,
-      "sha256": "a0dd402d28f3d205dba26a92cca26356f3f22e643ba6469c1b75fe0024b3f8db"
+      "bytes": 5767,
+      "sha256": "6982ae3edb1953f53ebe9fd7ec8605fc1ced3026d75d188848958733304ef036"
     },
     {
       "path": "research/creative_page_validation/browser-second-run.json",
@@ -1985,13 +2020,23 @@
     },
     {
       "path": "research/interaction_skill_validation/browser-results.json",
-      "bytes": 5420,
-      "sha256": "115aeb85fbb08d7edfb4e18862a5d03950514bdd8f2fd823b227923a65b365eb"
+      "bytes": 6346,
+      "sha256": "bb38931a16b7390c0975c658512132885e338df5953cc61bd67170d2fb11833c"
     },
     {
       "path": "research/interaction_skill_validation/ci-pause-observation.json",
       "bytes": 896,
       "sha256": "cd9546359d588eb28e2a5acc323d40a279e086a49bd42f7e77832e0421f36051"
+    },
+    {
+      "path": "research/interaction_skill_validation/screenshots/bounded-physics-1440.png",
+      "bytes": 150397,
+      "sha256": "20fdca1b83eaa25e209ae5062a4d5a44b136093b8016ff97b6259b0adf6e235e"
+    },
+    {
+      "path": "research/interaction_skill_validation/screenshots/bounded-physics-390.png",
+      "bytes": 97259,
+      "sha256": "1a58b629e91cbe7feb05e91610557450adf0a5bd9d08d24fbecd261bd7e4a7f0"
     },
     {
       "path": "research/interaction_skill_validation/screenshots/careers-culture-1440.png",
@@ -2026,12 +2071,12 @@
     {
       "path": "research/interaction_skill_validation/unit-results.json",
       "bytes": 257,
-      "sha256": "f6329a96f0e1a2153d968693c486859c6b887beb4adc57e247cddc826984d001"
+      "sha256": "43148fd5210516b2d30515cc0f213b996fecbec6d4abbff71ed763191770bd46"
     },
     {
       "path": "research/live_pages/coverage.json",
-      "bytes": 3601,
-      "sha256": "d21b9b9cb3df8a29c0175e3ba6d8094260493030c4b77929bc63a284867e9dad"
+      "bytes": 3920,
+      "sha256": "caba62b34b9a0d620e6383f0799910e4e93c92c0c367f20d3aa51378d8da173d"
     },
     {
       "path": "research/live_pages/creative-page-observations.json",
@@ -2040,13 +2085,13 @@
     },
     {
       "path": "research/live_pages/external-targets.jsonl",
-      "bytes": 28712,
-      "sha256": "2fc1c819c8068c1fc2733536768ddba6c797582a3776f51d8904f446a1f38acd"
+      "bytes": 42983,
+      "sha256": "b0700f18aa98bbfcd861755e88341bcdf6175551df2defbe81b53b9b394f9f71"
     },
     {
       "path": "research/live_pages/interaction-observations.json",
-      "bytes": 21235,
-      "sha256": "ee739d19f1e504b7e0ccd379bb90799af9ed25d4fac9fd053ef6c984dcd2a279"
+      "bytes": 24645,
+      "sha256": "e1c06e3254ae01a2a15ce91b1c5a2c9fcd75cd03e89db8cdc174daf2c8df8a9a"
     },
     {
       "path": "research/live_pages/pending-pages.jsonl",
@@ -2055,8 +2100,8 @@
     },
     {
       "path": "research/live_pages/sources.jsonl",
-      "bytes": 2898230,
-      "sha256": "e9d1c2c4a8498f8ea78ad9d7814d44fa25313d0ea7c5a165c20a42654442eb8f"
+      "bytes": 4824006,
+      "sha256": "c16fe81b777f2905e27a70acc30062123053b10f23b0dcd55302c359b1a80e35"
     },
     {
       "path": "research/live_pages/visual-observations.json",
@@ -2071,7 +2116,7 @@
     {
       "path": "research/page_skill_validation/browser-results.json",
       "bytes": 8543,
-      "sha256": "15609e2bc22eb94319b5ebec5857ab1d363ad0a4eed058553c406f156893926e"
+      "sha256": "6ec9a4a43d0de0b75200575d644e5e021acb9194adf0cdc8e4669f391c6c7fae"
     },
     {
       "path": "research/page_skill_validation/screenshots/about-390.png",
@@ -2115,8 +2160,8 @@
     },
     {
       "path": "research/page_skill_validation/screenshots/experiment-390.png",
-      "bytes": 111529,
-      "sha256": "9c63ce81794f6765ee1788f8b1fcbc71272c5fa5fa8ce3364ce2427f5f285d75"
+      "bytes": 113237,
+      "sha256": "e08296888bbf60116cd46c3aa816898c5347056f66ac403c7274ac88430dbabe"
     },
     {
       "path": "research/page_skill_validation/screenshots/faq-390.png",
@@ -2125,8 +2170,8 @@
     },
     {
       "path": "research/page_skill_validation/screenshots/gallery-390.png",
-      "bytes": 136340,
-      "sha256": "e4dc0eeeb5b53114cfc81a8ddfcf66c453b8cf2cc5a927fd3e7ef5b01a99c8d6"
+      "bytes": 137912,
+      "sha256": "41884d44ec58df9de6ba2f2528a759fb59e421bca9eb507156893a3d81a653c0"
     },
     {
       "path": "research/page_skill_validation/screenshots/job-390.png",
@@ -2140,8 +2185,8 @@
     },
     {
       "path": "research/page_skill_validation/screenshots/notfound-390.png",
-      "bytes": 84179,
-      "sha256": "ad6167926cd3dec069e62c4b41faa4815c7579e65a653ecafddeb5bbe5f5d7f3"
+      "bytes": 85779,
+      "sha256": "72963517924d266d831e6c8d6cbe38df6cacab5ccaad0271fd5df6fd870cf989"
     },
     {
       "path": "research/page_skill_validation/screenshots/portal-390.png",
@@ -2165,8 +2210,8 @@
     },
     {
       "path": "research/page_skill_validation/screenshots/project-390.png",
-      "bytes": 173873,
-      "sha256": "32ca0cd82eb9949a740d9628da0c80700a72d299d207ef6c9290f5118be40c56"
+      "bytes": 175472,
+      "sha256": "329141ad765e1f35990936525c12664f683978ab54fb59c198e0b0f9b47f70dd"
     },
     {
       "path": "research/page_skill_validation/screenshots/prompt-390.png",
@@ -2175,13 +2220,13 @@
     },
     {
       "path": "research/page_skill_validation/screenshots/service-390.png",
-      "bytes": 170191,
-      "sha256": "fb37763b7bc5fcb77052209c2e8b571dd90c0b4acccac0d682332fc2d117feac"
+      "bytes": 171777,
+      "sha256": "40dbcabbf4bbb5c0c44fd9220a2707b1846e82af214508a012aa37694efec118"
     },
     {
       "path": "research/page_skill_validation/screenshots/story-390.png",
-      "bytes": 70025,
-      "sha256": "1333d21856339a9f9e6681311464b10c139a030b5545685221a2b1877eb34ed8"
+      "bytes": 70020,
+      "sha256": "04f5bcfc5d7596bc269938344f70484763b5accada2143cfa1257188186cc738"
     },
     {
       "path": "research/page_skill_validation/screenshots/story-index-390.png",
@@ -2196,32 +2241,62 @@
     {
       "path": "research/page_skill_validation/unit-results.json",
       "bytes": 293,
-      "sha256": "63cabbd47dd258b36df01fd8acc611a10826f40bddea4707d73364f360010280"
+      "sha256": "cb21572a1234af85514013f46476934b93a2acf0b6511118d7ecea724cbff33b"
+    },
+    {
+      "path": "research/physics_skill_validation/browser-first-run.json",
+      "bytes": 3107,
+      "sha256": "4df8fc448758eb65901e8d761c3a1ed790ce3a835694d8c5617275a07e7209e5"
+    },
+    {
+      "path": "research/physics_skill_validation/browser-results.json",
+      "bytes": 2646,
+      "sha256": "85452ab589bb33aa5857da983004cc1889cab9effb50c56697297edb49a89e7f"
+    },
+    {
+      "path": "research/physics_skill_validation/engine-results.json",
+      "bytes": 1111,
+      "sha256": "9a2eaa90d62c5d52490d32e3ae7e48c39228486700e10a4ef66ebb2549774936"
+    },
+    {
+      "path": "research/physics_skill_validation/screenshots/physics-1440.png",
+      "bytes": 150423,
+      "sha256": "4c3b55551bae79795ac2912dfe852f7c15e21a3cfa3266cde4564d3ce1016284"
+    },
+    {
+      "path": "research/physics_skill_validation/screenshots/physics-390.png",
+      "bytes": 97256,
+      "sha256": "c3c938d7972a0c54c808937f75af7502fc2ffe71e7a7e2fdf5c9a6e991dc1a3b"
     },
     {
       "path": "research/skill_extraction/award-provenance-coverage.json",
       "bytes": 560,
-      "sha256": "5c60d7433fe5ff1acf092d8263e3a3720e3f50ba6c89ee65155449fcb648f427"
+      "sha256": "887ae5e6f903f5ac0eab3dc6435f474abfcaf9ce82d24537db934a1047c0ffae"
     },
     {
       "path": "research/skill_extraction/coverage.json",
-      "bytes": 846,
-      "sha256": "b6610fa24ddb035636da795084d35bf9cf7d2e3849e81e8317618ad5fd2b9677"
+      "bytes": 890,
+      "sha256": "45b79f41f5786442d9e3d01e81db769641f0e35a215fac0968537b1cf0a0620e"
     },
     {
       "path": "research/skill_extraction/official-detail-title-labels.jsonl",
-      "bytes": 90536,
-      "sha256": "5e83952368d7bca154291699642db7b52a136ab3304cd455b71ddb5af4f3fdb2"
+      "bytes": 136225,
+      "sha256": "78e27fb02240b5d646865e97be1412ffdb7a3654a6c0d0f2c9e06e7aa9debf94"
     },
     {
       "path": "research/skill_extraction/source-skill-map.jsonl",
-      "bytes": 1143816,
-      "sha256": "508ff2185090b5d59b6a6ae7d28de8407458f594f003f592c31aa252c66dde5b"
+      "bytes": 1950526,
+      "sha256": "f84790469174d539709f990de5d6b70fd8e588f95b96cef4c00cfc23ca79a005"
     },
     {
       "path": "research/skill_extraction/variant-backlog.json",
-      "bytes": 412314,
-      "sha256": "1b832b512c9ec24621112342fbf07d93b4c24296f44ab5136da4f68a028308ee"
+      "bytes": 664988,
+      "sha256": "012e57e0211545f82924193ab6d7df0f51ceb70a3a76e72d2c9a8dc9b9a3fb8f"
+    },
+    {
+      "path": "research/source_state_validation/browser-results.json",
+      "bytes": 5062,
+      "sha256": "6381022fa9ac148c2edc4bcfada075fbb0ca78dfa72cd5daff2b91b63516c141"
     },
     {
       "path": "skills/awwwards-page-annual-awards/assets/contract.json",
@@ -2745,8 +2820,8 @@
     },
     {
       "path": "skills/awwwards-page-external-about/SKILL.md",
-      "bytes": 3554,
-      "sha256": "a5afdc31e6b30d6cbd8cddbea35be679171407a68c9fa6b5febd224a0f4ee347"
+      "bytes": 3683,
+      "sha256": "6c32953673207b957b47cbdd3fa1b1b385e68f3d8fe2f8c583c63b7675af642a"
     },
     {
       "path": "skills/awwwards-page-external-article/assets/contract.json",
@@ -2820,8 +2895,8 @@
     },
     {
       "path": "skills/awwwards-page-external-careers/assets/contract.json",
-      "bytes": 8072,
-      "sha256": "415e075e26f23165a072cebea20c4076a03bf7947ff06bd626cbcc8b8d7643db"
+      "bytes": 7767,
+      "sha256": "77a90f94c3f009e7cf9f51ad55f82d07f394babd822e3922f2459e963525dfb0"
     },
     {
       "path": "skills/awwwards-page-external-careers/assets/index.html",
@@ -2845,8 +2920,8 @@
     },
     {
       "path": "skills/awwwards-page-external-careers/references/page-contract.json",
-      "bytes": 8072,
-      "sha256": "415e075e26f23165a072cebea20c4076a03bf7947ff06bd626cbcc8b8d7643db"
+      "bytes": 7767,
+      "sha256": "77a90f94c3f009e7cf9f51ad55f82d07f394babd822e3922f2459e963525dfb0"
     },
     {
       "path": "skills/awwwards-page-external-careers/scripts/scaffold.py",
@@ -2855,8 +2930,8 @@
     },
     {
       "path": "skills/awwwards-page-external-careers/SKILL.md",
-      "bytes": 4000,
-      "sha256": "9e4c43d949388dd262dc2ee568ed71696c578c30a1d1f490a43da1c9e3b74f4c"
+      "bytes": 3989,
+      "sha256": "1dbee4e540ccbfee726711ec57c4a5e5e44a1dc41870f4ce6d818eef46fa0712"
     },
     {
       "path": "skills/awwwards-page-external-contact/assets/contract.json",
@@ -2895,8 +2970,8 @@
     },
     {
       "path": "skills/awwwards-page-external-experiment/assets/contract.json",
-      "bytes": 3521,
-      "sha256": "13a94344cc05d099159fa82aa7938f107cc1a7ae6af76b5dda2028e09b49b772"
+      "bytes": 4181,
+      "sha256": "e7969b83a99299574174b92a03468973f296e3b4080b2db194e5bf595f80df0c"
     },
     {
       "path": "skills/awwwards-page-external-experiment/assets/index.html",
@@ -2915,8 +2990,8 @@
     },
     {
       "path": "skills/awwwards-page-external-experiment/references/page-contract.json",
-      "bytes": 3521,
-      "sha256": "13a94344cc05d099159fa82aa7938f107cc1a7ae6af76b5dda2028e09b49b772"
+      "bytes": 4181,
+      "sha256": "e7969b83a99299574174b92a03468973f296e3b4080b2db194e5bf595f80df0c"
     },
     {
       "path": "skills/awwwards-page-external-experiment/scripts/scaffold.py",
@@ -2925,13 +3000,13 @@
     },
     {
       "path": "skills/awwwards-page-external-experiment/SKILL.md",
-      "bytes": 3423,
-      "sha256": "a218ebe4da0e7233849581828a52f70dce02095e728d191b9177acd494fc0f27"
+      "bytes": 3607,
+      "sha256": "48b210aab1473e42d6f7ac3dbec43293624f39956c777568c658005482209136"
     },
     {
       "path": "skills/awwwards-page-external-gallery/assets/contract.json",
-      "bytes": 7588,
-      "sha256": "f26ba5f70fd88fa83ab8add1f8ff2d403606e08da8f5f0ca860dca75687e9d00"
+      "bytes": 7587,
+      "sha256": "05916cc61ef246cc1bc585960bcc5fb89b354ab03bc9593542f28b862900cb31"
     },
     {
       "path": "skills/awwwards-page-external-gallery/assets/index.html",
@@ -2950,8 +3025,8 @@
     },
     {
       "path": "skills/awwwards-page-external-gallery/references/page-contract.json",
-      "bytes": 7588,
-      "sha256": "f26ba5f70fd88fa83ab8add1f8ff2d403606e08da8f5f0ca860dca75687e9d00"
+      "bytes": 7587,
+      "sha256": "05916cc61ef246cc1bc585960bcc5fb89b354ab03bc9593542f28b862900cb31"
     },
     {
       "path": "skills/awwwards-page-external-gallery/scripts/scaffold.py",
@@ -2960,13 +3035,13 @@
     },
     {
       "path": "skills/awwwards-page-external-gallery/SKILL.md",
-      "bytes": 3740,
-      "sha256": "0be60356d19fe0d6ab3f9d7d1b70657be5d89a4ee83f4ca2d4aaeb8b81e7c65c"
+      "bytes": 3739,
+      "sha256": "575473c5ac40d5c326e44f4500282223304d1e5027bd6e391033038215d2bcab"
     },
     {
       "path": "skills/awwwards-page-external-home/assets/contract.json",
-      "bytes": 9448,
-      "sha256": "e663fdaecf129ff9be614ae7e8dda4a2c71613242ad6d4e75f14eda5ed6127fd"
+      "bytes": 9481,
+      "sha256": "579935ec585644346cf2d71b4936a31de65fcb4d9bbbbd6d11a3b4a54d969a8e"
     },
     {
       "path": "skills/awwwards-page-external-home/assets/index.html",
@@ -2985,8 +3060,8 @@
     },
     {
       "path": "skills/awwwards-page-external-home/references/page-contract.json",
-      "bytes": 9448,
-      "sha256": "e663fdaecf129ff9be614ae7e8dda4a2c71613242ad6d4e75f14eda5ed6127fd"
+      "bytes": 9481,
+      "sha256": "579935ec585644346cf2d71b4936a31de65fcb4d9bbbbd6d11a3b4a54d969a8e"
     },
     {
       "path": "skills/awwwards-page-external-home/scripts/scaffold.py",
@@ -2995,13 +3070,13 @@
     },
     {
       "path": "skills/awwwards-page-external-home/SKILL.md",
-      "bytes": 3808,
-      "sha256": "353987ab1bb6d335ca891683097f920fc5d22c58b6c8420c882f6e370fccde16"
+      "bytes": 3804,
+      "sha256": "c07799c8c1756588930394fe11c4dac36deb1ae4f29f019b870c0f405a2d2fa3"
     },
     {
       "path": "skills/awwwards-page-external-legal/assets/contract.json",
-      "bytes": 7722,
-      "sha256": "766925c42f864650179cad4784424b0d6e111e95c5db142eabf1ffa89398a92a"
+      "bytes": 7894,
+      "sha256": "e3a4244a48004f0669550dbc437a0082085069f5b97b16573546a2446d1d09bd"
     },
     {
       "path": "skills/awwwards-page-external-legal/assets/index.html",
@@ -3020,8 +3095,8 @@
     },
     {
       "path": "skills/awwwards-page-external-legal/references/page-contract.json",
-      "bytes": 7722,
-      "sha256": "766925c42f864650179cad4784424b0d6e111e95c5db142eabf1ffa89398a92a"
+      "bytes": 7894,
+      "sha256": "e3a4244a48004f0669550dbc437a0082085069f5b97b16573546a2446d1d09bd"
     },
     {
       "path": "skills/awwwards-page-external-legal/scripts/scaffold.py",
@@ -3030,8 +3105,8 @@
     },
     {
       "path": "skills/awwwards-page-external-legal/SKILL.md",
-      "bytes": 3622,
-      "sha256": "692ed13fb5a1b8b9a22c4f84ec5694e887a16cac200b8cbe3de825ba0a39d867"
+      "bytes": 3607,
+      "sha256": "816cca1a68639f32aaa22917cc06822994425272aac6bdb563a3bcf8beb55457"
     },
     {
       "path": "skills/awwwards-page-external-media-portfolio/assets/contract.json",
@@ -3070,8 +3145,8 @@
     },
     {
       "path": "skills/awwwards-page-external-not-found/assets/contract.json",
-      "bytes": 9751,
-      "sha256": "a38ebd004742ebbcb6b104cb5cb6d1df8865c029995a127fb5869bd8473ae8b1"
+      "bytes": 9794,
+      "sha256": "1549834e43117e70bebbf91a46dcd323bf21a0d1fb902e1e39843732e88712f4"
     },
     {
       "path": "skills/awwwards-page-external-not-found/assets/index.html",
@@ -3090,8 +3165,8 @@
     },
     {
       "path": "skills/awwwards-page-external-not-found/references/page-contract.json",
-      "bytes": 9751,
-      "sha256": "a38ebd004742ebbcb6b104cb5cb6d1df8865c029995a127fb5869bd8473ae8b1"
+      "bytes": 9794,
+      "sha256": "1549834e43117e70bebbf91a46dcd323bf21a0d1fb902e1e39843732e88712f4"
     },
     {
       "path": "skills/awwwards-page-external-not-found/scripts/scaffold.py",
@@ -3100,13 +3175,13 @@
     },
     {
       "path": "skills/awwwards-page-external-not-found/SKILL.md",
-      "bytes": 3715,
-      "sha256": "8312eca949fddfadbfc4f2207759846bd8b42cf109c39e3e154b944925a63c4e"
+      "bytes": 3712,
+      "sha256": "213c6b68dccbe92db8447bddd92533635d131d3862c6fbfe00630cfd870b53a4"
     },
     {
       "path": "skills/awwwards-page-external-product/assets/contract.json",
-      "bytes": 7707,
-      "sha256": "30e19c43673901b7efe3f2944141aaa8d891099fa913b23cce7ac2e8642f82c4"
+      "bytes": 8419,
+      "sha256": "a786459278d1dda6dc263fc77f2b1ba4eb2e5fe71f6fdf333ed9caabdcbd248b"
     },
     {
       "path": "skills/awwwards-page-external-product/assets/index.html",
@@ -3125,8 +3200,8 @@
     },
     {
       "path": "skills/awwwards-page-external-product/references/page-contract.json",
-      "bytes": 7707,
-      "sha256": "30e19c43673901b7efe3f2944141aaa8d891099fa913b23cce7ac2e8642f82c4"
+      "bytes": 8419,
+      "sha256": "a786459278d1dda6dc263fc77f2b1ba4eb2e5fe71f6fdf333ed9caabdcbd248b"
     },
     {
       "path": "skills/awwwards-page-external-product/scripts/scaffold.py",
@@ -3135,8 +3210,8 @@
     },
     {
       "path": "skills/awwwards-page-external-product/SKILL.md",
-      "bytes": 3692,
-      "sha256": "42b0e7637634b40acb6e876231def06c99da9c4115bb5ea0752befd8425b42ac"
+      "bytes": 3725,
+      "sha256": "53b253febd7220bc9f4497b09d9b5336750c265db784b80d5f994c18305b5dbe"
     },
     {
       "path": "skills/awwwards-page-external-project/assets/contract.json",
@@ -3215,8 +3290,8 @@
     },
     {
       "path": "skills/awwwards-page-external-service/assets/contract.json",
-      "bytes": 7546,
-      "sha256": "85bcce5b1f3e0a62fb20cd261992e577dc0854c229c66b9d55fc0f2635ff1cd3"
+      "bytes": 7858,
+      "sha256": "217ae80a2b484e8dc6b9b73f5d0ffa774a7a233766ae01129f2b75c5a918e812"
     },
     {
       "path": "skills/awwwards-page-external-service/assets/index.html",
@@ -3235,8 +3310,8 @@
     },
     {
       "path": "skills/awwwards-page-external-service/references/page-contract.json",
-      "bytes": 7546,
-      "sha256": "85bcce5b1f3e0a62fb20cd261992e577dc0854c229c66b9d55fc0f2635ff1cd3"
+      "bytes": 7858,
+      "sha256": "217ae80a2b484e8dc6b9b73f5d0ffa774a7a233766ae01129f2b75c5a918e812"
     },
     {
       "path": "skills/awwwards-page-external-service/scripts/scaffold.py",
@@ -3245,8 +3320,8 @@
     },
     {
       "path": "skills/awwwards-page-external-service/SKILL.md",
-      "bytes": 3635,
-      "sha256": "90e5383a8a97045b575c82a2d45934e06ed73e0480ca612eda4faef5d71154d3"
+      "bytes": 3641,
+      "sha256": "b304cf330407b8f8de08a2be31f69e1a80bdd7b17bb0c1beb38975f65375c2bb"
     },
     {
       "path": "skills/awwwards-page-external-story-chapter/assets/contract.json",
@@ -3255,23 +3330,28 @@
     },
     {
       "path": "skills/awwwards-page-external-story-chapter/assets/index.html",
-      "bytes": 5297,
-      "sha256": "7604c017b4049ec74511102d79e1a5e114bc3313e15b7d272bfaee81713fc713"
+      "bytes": 6520,
+      "sha256": "30042e177d5a626d2798b3e224a8896ae55b5d1816df366d062917194174642f"
     },
     {
       "path": "skills/awwwards-page-external-story-chapter/assets/main.mjs",
-      "bytes": 167,
-      "sha256": "2f5650cd13f6f1c6c10870fefe3d081490ebf54de09dc12eef6303120166d07b"
+      "bytes": 406,
+      "sha256": "44da37e8b0a275577a07f5d024a79c7541ad33212f399ec28c69fff764732465"
     },
     {
       "path": "skills/awwwards-page-external-story-chapter/assets/runtime.mjs",
-      "bytes": 7545,
-      "sha256": "e3f86454b5566bc94a55a22ffe2ceb54a865e89b044cd83b6317a6db8ae00bfb"
+      "bytes": 6957,
+      "sha256": "4410fc25a5f5c899d5fc868091d03ced3bfb0fcbb91a1e9c01ddc75086eb49f8"
+    },
+    {
+      "path": "skills/awwwards-page-external-story-chapter/assets/story-data.json",
+      "bytes": 1141,
+      "sha256": "6088b8858acefe88e0f18673e71582a7c5c2c0e64ef89437239708e50ddb8d6f"
     },
     {
       "path": "skills/awwwards-page-external-story-chapter/assets/style.css",
-      "bytes": 5567,
-      "sha256": "47c48f8dd3f1955b82950ca77bd1f5d099e7029fe29f9e8c588eff02a7d28ddf"
+      "bytes": 5865,
+      "sha256": "9a41042da046f7358d0b9008fd6d135736aaf7a713d96278239bec7ad4372d2e"
     },
     {
       "path": "skills/awwwards-page-external-story-chapter/references/page-contract.json",
@@ -3295,23 +3375,28 @@
     },
     {
       "path": "skills/awwwards-page-external-story-index/assets/index.html",
-      "bytes": 5297,
-      "sha256": "7604c017b4049ec74511102d79e1a5e114bc3313e15b7d272bfaee81713fc713"
+      "bytes": 6520,
+      "sha256": "30042e177d5a626d2798b3e224a8896ae55b5d1816df366d062917194174642f"
     },
     {
       "path": "skills/awwwards-page-external-story-index/assets/main.mjs",
-      "bytes": 167,
-      "sha256": "2f5650cd13f6f1c6c10870fefe3d081490ebf54de09dc12eef6303120166d07b"
+      "bytes": 406,
+      "sha256": "44da37e8b0a275577a07f5d024a79c7541ad33212f399ec28c69fff764732465"
     },
     {
       "path": "skills/awwwards-page-external-story-index/assets/runtime.mjs",
-      "bytes": 7545,
-      "sha256": "e3f86454b5566bc94a55a22ffe2ceb54a865e89b044cd83b6317a6db8ae00bfb"
+      "bytes": 6957,
+      "sha256": "4410fc25a5f5c899d5fc868091d03ced3bfb0fcbb91a1e9c01ddc75086eb49f8"
+    },
+    {
+      "path": "skills/awwwards-page-external-story-index/assets/story-data.json",
+      "bytes": 1141,
+      "sha256": "6088b8858acefe88e0f18673e71582a7c5c2c0e64ef89437239708e50ddb8d6f"
     },
     {
       "path": "skills/awwwards-page-external-story-index/assets/style.css",
-      "bytes": 5567,
-      "sha256": "47c48f8dd3f1955b82950ca77bd1f5d099e7029fe29f9e8c588eff02a7d28ddf"
+      "bytes": 5865,
+      "sha256": "9a41042da046f7358d0b9008fd6d135736aaf7a713d96278239bec7ad4372d2e"
     },
     {
       "path": "skills/awwwards-page-external-story-index/references/page-contract.json",
@@ -3784,6 +3869,41 @@
       "sha256": "b79d8772e1da27d78c6acf5a949a395d22a517ae1ac761687de8dfe80ea4dbc1"
     },
     {
+      "path": "skills/awwwards-pattern-bounded-physics/assets/engine.mjs",
+      "bytes": 3089,
+      "sha256": "52771958a1be8a42d73abaf68e0950618525b888e19fe0f78586eb53968699b4"
+    },
+    {
+      "path": "skills/awwwards-pattern-bounded-physics/assets/index.html",
+      "bytes": 4218,
+      "sha256": "3721489d0ebe0fba4c37d51c9f4875d6fd26a11f5227c5193089af2b0377002d"
+    },
+    {
+      "path": "skills/awwwards-pattern-bounded-physics/assets/main.mjs",
+      "bytes": 6215,
+      "sha256": "d24fa2f57820c13b2d6f60df516a61af70fec7909caf7cdab54f0838148c3036"
+    },
+    {
+      "path": "skills/awwwards-pattern-bounded-physics/assets/style.css",
+      "bytes": 3888,
+      "sha256": "60dea2497c0886678796bf14c11d2146c9b82185c32dc8afcb50aa4f117243eb"
+    },
+    {
+      "path": "skills/awwwards-pattern-bounded-physics/references/pattern-contract.json",
+      "bytes": 5767,
+      "sha256": "f72c885576ba79c1b4f3e9463049f36167169bcd6e09b1e300ed06ea24b9d6f2"
+    },
+    {
+      "path": "skills/awwwards-pattern-bounded-physics/scripts/scaffold.py",
+      "bytes": 899,
+      "sha256": "6a58a29264c644554f318f8b053ce750379069f5b35074be8ed5f607d08f91e4"
+    },
+    {
+      "path": "skills/awwwards-pattern-bounded-physics/SKILL.md",
+      "bytes": 3032,
+      "sha256": "0a637b836d7d41fb225e11190f9c4e07cbeef1eb12d575972626507b3f072014"
+    },
+    {
       "path": "skills/awwwards-pattern-careers-culture/assets/index.html",
       "bytes": 5548,
       "sha256": "521eae1d1bca38c4ed7ba13162950e8defacaa7606848b15450253824704f6c8"
@@ -3810,8 +3930,8 @@
     },
     {
       "path": "skills/awwwards-pattern-careers-culture/SKILL.md",
-      "bytes": 2988,
-      "sha256": "d5cebc8dccd1f61d8fdd532a7ec6adce9d46fae57912e6ccc442faa91a930be7"
+      "bytes": 3004,
+      "sha256": "59d37b679d6d3ce2e7c065e1246b935e0f6538871ea712e1e47ff5aa1dc0f8bd"
     },
     {
       "path": "skills/awwwards-pattern-discovery-navigation/assets/index.html",
@@ -3840,8 +3960,8 @@
     },
     {
       "path": "skills/awwwards-pattern-discovery-navigation/SKILL.md",
-      "bytes": 2872,
-      "sha256": "39048eabede044f8d7427f2690995519cb06f204554586ece1219db524161415"
+      "bytes": 2888,
+      "sha256": "9ab5c78b9937d5059b63fdeb7a70c5acf9e52fc64bf897a61c73f45e7e1d147c"
     },
     {
       "path": "skills/awwwards-pattern-immersive-fallback/assets/index.html",
@@ -3900,18 +4020,18 @@
     },
     {
       "path": "tools/build_interaction_skills.py",
-      "bytes": 10415,
-      "sha256": "91a50781399bb6ebabba040a401d65094f41ddb0654e4eb3b0db14e564c98228"
+      "bytes": 12428,
+      "sha256": "e6d4f345f404d4ed849ca8b1d0c0ad07e16ba91b3e1bc179b1acfe53a8c7c851"
     },
     {
       "path": "tools/build_page_skills.py",
-      "bytes": 13609,
-      "sha256": "b11b7d0defe58c6a3facf48d21e2e32da3906db0c6fbab329648b90bcf093a6c"
+      "bytes": 14686,
+      "sha256": "5eb09a075983bb0a823bbfa8ac5573998f1cc1d2b527cabc7d049b289a05c8dd"
     },
     {
       "path": "tools/build_source_skill_map.py",
-      "bytes": 4699,
-      "sha256": "a1832241ef5d446ae242c63d936a079ae4fa9f583e686cdda857ead54d2e5667"
+      "bytes": 4938,
+      "sha256": "5c2f437998a4cceda371ea7db16d37b1932af5e2aa4a701119c07b5aa31caa8b"
     },
     {
       "path": "tools/install_all_skills.py",
@@ -3925,13 +4045,13 @@
     },
     {
       "path": "tools/page_research.py",
-      "bytes": 22168,
-      "sha256": "9b32b8519292f85991c4801142676f8f94ef51d6fdf0af07e67bd76499ca1449"
+      "bytes": 24031,
+      "sha256": "76f77c6fb467b96bf6cefeb3487bff8a5348583b52683ef8ccd7d9c5b3919200"
     },
     {
       "path": "tools/probe_page_states.mjs",
-      "bytes": 9701,
-      "sha256": "22d32e8229098852c07f21889eefa3a2d632f58a58c47d5f80159177d6f878cb"
+      "bytes": 11404,
+      "sha256": "ef4b10d36264a0e92fd2ef16d2bb7fc2e672f3fa53ec7b3926cf7afd1af70664"
     },
     {
       "path": "tools/render_page_skill_index.py",
@@ -3939,9 +4059,19 @@
       "sha256": "f90ab40dd4a47ce9cbd9d1fe0d46f313634e29af896675245ae8047960d30186"
     },
     {
+      "path": "tools/source_action_cleanup.mjs",
+      "bytes": 481,
+      "sha256": "4e68e526eb507138fca6e68f8c70bafaf9b358162bdf60cd614f5d422dca7839"
+    },
+    {
+      "path": "tools/source_readiness.mjs",
+      "bytes": 2704,
+      "sha256": "f8a32715a72d68ed6b537c6023f1c1fad37185d8e1268fd8adca9695dd97021f"
+    },
+    {
       "path": "tools/test_creative_page_skills.mjs",
-      "bytes": 16617,
-      "sha256": "1df2d0220e676302ebd99acf24bd3c9a6c57051c6aaf710006131a4e2777394e"
+      "bytes": 18352,
+      "sha256": "8da7fcf665e24ae987062298d32d849686243a39cb1eda90276e70f67af92d6e"
     },
     {
       "path": "tools/test_interaction_skills.mjs",
@@ -3950,8 +4080,8 @@
     },
     {
       "path": "tools/test_interaction_skills.py",
-      "bytes": 4335,
-      "sha256": "7e539bcbea1221d37199132148af7222012a4e381d96064ea0ec005aece370c2"
+      "bytes": 4359,
+      "sha256": "a9f36805dbb7b60261b67c371d9461e0892965ca5726d474e5034b4dd4621fc8"
     },
     {
       "path": "tools/test_page_skills.mjs",
@@ -3960,13 +4090,28 @@
     },
     {
       "path": "tools/test_page_skills.py",
-      "bytes": 9112,
-      "sha256": "53906b0d8b6de36d2cba4cd78051e9e52a41daebb77d66dca49284200dd095c3"
+      "bytes": 11093,
+      "sha256": "1e67d73198e01f1c839bcf69e5fcb5e86f10a9d1701dcb612b421372ffcb7807"
+    },
+    {
+      "path": "tools/test_physics_engine.mjs",
+      "bytes": 3320,
+      "sha256": "e7ccf3f5f87cfc580839c02c468e331919b9cbe8fa88376e8e90865e6c94ca23"
+    },
+    {
+      "path": "tools/test_physics_pattern.mjs",
+      "bytes": 12591,
+      "sha256": "8b84302ee1230012466ad220b679f4275b45927a90f1e17da2f73f580c1f358c"
+    },
+    {
+      "path": "tools/test_source_readiness.mjs",
+      "bytes": 4974,
+      "sha256": "a9cf9002bb9932ef67fc917673cc79de7066d2f7c6050d271925f226abc39115"
     },
     {
       "path": "tools/verify_page_skills.py",
-      "bytes": 4183,
-      "sha256": "5927c967841cb9fc780b4f8ab107704a4e6424ed25392d0290ebc2383aa45549"
+      "bytes": 4164,
+      "sha256": "82eba3a7ce114ed4ab423b904a3371d41a4e1690b8f29bc44fdf45fabb90e711"
     }
   ]
 }

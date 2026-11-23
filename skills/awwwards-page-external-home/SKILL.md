@@ -39,11 +39,11 @@ python scripts/scaffold.py --output YOUR_EMPTY_PROJECT_DIRECTORY
 
 ## 已读取的来源
 - http://aonnoysengupta.com/（http_dom；2026-11-23T09:10:12.625176+00:00）
+- http://duplos.org/（http_dom；2026-11-23T10:49:07.040578+00:00）
 - http://www.because-recollection.com/（http_dom；2026-11-23T08:04:59.667057+00:00）
 - http://www.blacknegative.com/（http_dom；2026-11-23T08:05:13.599518+00:00）
-- https://365ayearof.cartier.com/en/（http_dom；2026-11-23T08:45:19.244737+00:00）
-- https://8pm.it/（http_dom；2026-11-23T08:45:41.229812+00:00）
-- https://a24.raviklaassens.com/（http_dom；2026-11-23T08:03:50.201105+00:00）
+- http://www.delvaux.com/en（http_dom；2026-11-23T10:39:49.768720+00:00）
+- http://www.enjoyyourprivacy.com/（http_dom；2026-11-23T10:54:49.222197+00:00）
 
 来源受各自版权和访问规则约束；只借鉴结构与机制，使用原创或已授权文案、图像、字体和模型。未知技术版本、隐藏状态和服务端行为不得根据截图补造。
 

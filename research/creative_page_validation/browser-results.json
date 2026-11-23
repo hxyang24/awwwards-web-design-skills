@@ -1,5 +1,5 @@
 {
-  "recorded_at": "2026-11-23T09:49:33.651Z",
+  "recorded_at": "2026-11-23T11:14:54.526Z",
   "status": "passed",
   "new_page_skills": 3,
   "checks": [
@@ -129,6 +129,14 @@
     },
     {
       "name": "JavaScript-disabled story and prompt retain meaningful original content",
+      "status": "passed"
+    },
+    {
+      "name": "Without JavaScript every chapter and native deep link remains readable",
+      "status": "passed"
+    },
+    {
+      "name": "Missing reader data preserves complete static chapters without a false ready state",
       "status": "passed"
     },
     {

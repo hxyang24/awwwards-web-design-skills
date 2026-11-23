@@ -37,7 +37,7 @@ class Patterns(unittest.TestCase):
   self.assertIn('MIT License',(folder/'LICENSE').read_text(encoding='utf-8'))
  def test_mechanisms_are_distinct_assets_and_have_valid_support_targets(self):
   declared={p.parent.name for root in [R/'skills',R/'package/skills'] for p in root.glob('*/SKILL.md')}
-  self.assertEqual(len(declared),24+len(definitions())+REG['interaction_skills']);self.assertEqual(len({r['asset_sha256'] for r in REG['skills']}),3)
+  self.assertEqual(len(declared),24+len(definitions())+REG['interaction_skills']);self.assertEqual(len({r['asset_sha256'] for r in REG['skills']}),REG['interaction_skills'])
   for row in REG['skills']:
    for target in row['supports_page_skills']:self.assertIn(target,declared)
    self.assertEqual(asset_digest(R/row['path']/'assets'),row['asset_sha256'])

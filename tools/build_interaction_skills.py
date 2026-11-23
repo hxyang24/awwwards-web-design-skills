@@ -20,6 +20,15 @@ PATTERNS=[
   'invariants':['禁用 JavaScript、图形不可用或手动选择静态时，核心链接和项目文本仍在页面。','兼容失败不等于正常源站体验完成；原站技术版本与内部 shader 不得从图像猜测。','资源清理只释放当前实例所有的资源，不全局销毁其他页面。','原创建模与有许可的 Three.js 分开标记；保留 MIT 文本。'],
   'limits':['本轮源站正常三维交互未观察，示例为原创替代实现。','软件 WebGL 验证不能替代真实 GPU、手机和生产验收。']}
 ]
+PATTERNS.append({
+ 'id':'bounded-physics','title':'有界物理装饰：可控对象、等价输入与静态替代','kind':'physics',
+ 'page_skills':['awwwards-page-external-about','awwwards-page-external-experiment','awwwards-advanced-motion'],
+ 'source_ids':['ponpon-about-physics-phone','ponpon-about-physics-wide'],
+ 'observed':['官方作品页将 About 物理效果列为展示点；本轮 About 的两种宽度都显示画布中的装饰性对象堆叠。','修正采样工具多余 Escape 输入后，页面保持 About；指针采样期间对象位置发生重排。','抓取跟随、精确受力、碰撞规则和源站引擎版本尚未确认；不能把像素变化单独算作对应手势已验证。'],
+ 'recipe':['将物理效果作为说明、导航与内容之外的增强层，保留静态内容及可退出路径。','为对象数量、世界边界、速度与单帧追赶设预算；使用固定时间步，隐藏或离屏后不积累巨大补偿。','指针直接操作同时提供对象选择、按钮与键盘等价操作；指针取消或丢失捕获时解除约束。','播放由用户请求，提供暂停、重置、减少动画和静态路径；销毁取消动画帧、释放对象并移除观察器与事件。'],
+ 'invariants':['示例中的圆、文字和动力学代码为原创，不复制源站角色、音乐或引擎。','对象保持边界内且参数有界；模拟是装饰用途，不是科学或生产物理求解器。','减少动画时不自动积分；手动定位仍可用，离屏返回不会自行播放。','任何输入失败、图形不可用或卸载都不应锁住页面滚动、导航或已有内容。'],
+ 'limits':['源站对象抓取和移动端真实触控尚未确认；原创示例的拖动不是源站手感复刻。','软件浏览器测试不等于真机、完整辅助技术或生产性能验收。']})
+
 def write(path,text):path.parent.mkdir(parents=True,exist_ok=True);path.write_text(text,encoding='utf-8',newline='\n')
 def asset_digest(folder):
  h=hashlib.sha256()
@@ -71,6 +80,7 @@ python scripts/scaffold.py --output YOUR_EMPTY_DIRECTORY
 
 ## 剩余边界
 '''+ '\n'.join('- '+x for x in row['limits'])+'\n\n原站图像、字体、视频、音乐和标志不随技能分发。所有示例文案、几何和行为代码为原创；第三方库适用各自许可。\n'
+  if row['kind']!='immersive':text=text.replace('Three.js 示例保留其 MIT 文件。','此示例不加载原站代码或第三方运行库。')
   write(folder/'SKILL.md',text)
   write(folder/'scripts/scaffold.py','''#!/usr/bin/env python3
 from pathlib import Path

@@ -3,7 +3,7 @@
 [![CI](https://github.com/hxyang24/awwwards-web-design-skills/actions/workflows/ci.yml/badge.svg)](https://github.com/hxyang24/awwwards-web-design-skills/actions/workflows/ci.yml)
 [![Original code: MIT](https://img.shields.io/badge/original_code-MIT-green.svg)](LICENSE)
 
-> **当前新增页面专项 Skills 整理仍在进行，尚未完成全站与所有获奖外站内页覆盖。** 新增 44 套可单独安装的页面技能及 3 套具体交互机制，保留原 24 套核心技能，共 71 套。详细来源边界和缺口见 [页面技能目录](PAGE_SKILLS.md)。
+> **当前新增页面专项 Skills 整理仍在进行，尚未完成全站与所有获奖外站内页覆盖。** 新增 44 套可单独安装的页面技能及 4 套具体交互机制，保留原 24 套核心技能，共 72 套。详细来源边界和缺口见 [页面技能目录](PAGE_SKILLS.md)。
 
 [下载当前页面技能工作版](https://github.com/hxyang24/awwwards-web-design-skills/archive/refs/heads/main.zip) · [独立页面技能](skills) · [来源覆盖](research/live_pages/coverage.json)
 
@@ -84,7 +84,7 @@ npm run test:export
 
 提供授权参照简报、PNG 尺寸/主色提取、统一视口截图、整体与关键区域差异图，以及原创页面的独立重建示例。该示例在同一环境的 390/1440 宽度通过比对，不代表可自动逐页复刻任意第三方网站。详见 [重建说明](package/v2/docs/RECONSTRUCTION.md)。
 
-全部业务为本地虚构演示：没有真实支付、交易、行情、模型调用、服务端授权或持久化。未完成生产部署、真机、Safari/Firefox、真实用户性能和完整无障碍验收。复杂 shader、物理引擎、OCR/字体识别及高级跨页动画不属于已实装能力。
+全部业务为本地虚构演示：没有真实支付、交易、行情、模型调用、服务端授权或持久化。未完成生产部署、真机、Safari/Firefox、真实用户性能和完整无障碍验收。复杂 shader、生产级物理引擎、OCR/字体识别及高级跨页动画未实装；另附原创有界装饰物理模型，边界见专项说明。
 
 ## 开源与版权
 
@@ -98,6 +98,6 @@ npm run test:export
 
 原站内容只作为观察证据。完整 HTML、原站截图、代码、图片、字体、视频及音乐不随新增公开研究记录分发。新增技能的几何插图和蓝本为原创。观察缺口、受限访问、未验证的隐藏交互与未接入服务端持续保留。
 
-具体机制包括发现门户导航、雇主品牌与价值观画廊、图形失败回退，入口见 [机制说明](INTERACTION_SKILLS.md)。本轮另增加章节索引、交互叙事阅读与提示词详情三套独立页面蓝本，见 [新页面说明](CREATIVE_PAGE_SKILLS.md)。
+具体机制包括发现门户导航、雇主品牌与价值观画廊、图形失败回退、有界物理装饰，入口见 [机制说明](INTERACTION_SKILLS.md)。本轮另增加章节索引、交互叙事阅读与提示词详情三套独立页面蓝本，见 [新页面说明](CREATIVE_PAGE_SKILLS.md)。
 
-本轮 Windows 检查：12 项页面工具、5 项机制工具、39 组完整页面浏览器检查及 33 组叙事/提示词专项检查通过；既有机制蓝本另保留 31 组通过记录，在线 CI 会重跑。187 个 V1 文件与基础包封存清单仍匹配。来源观察、原创蓝本和真实业务验收分别记录。
+本轮 Windows 检查：16 项页面工具、5 项机制工具、8 项物理模型、12 项来源采样、39 组完整页面、37 组通用机制、35 组叙事/提示词及 16 组物理专项浏览器检查通过。章节蓝本含完整三章无脚本路径，物理与采样边界见 [专项说明](PHYSICS_AND_SOURCE_AUDIT.md)。在线 CI 会独立重跑。187 个 V1 文件与基础包封存清单仍匹配。来源观察、原创蓝本和真实业务验收分别记录。

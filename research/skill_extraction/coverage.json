@@ -1,19 +1,20 @@
 {
-  "recorded_at": "2026-11-23T09:50:59.743141+00:00",
+  "recorded_at": "2026-11-23T11:16:56.319925+00:00",
   "status": "in_progress",
-  "recorded_sources": 2408,
+  "recorded_sources": 3829,
   "states": {
-    "access_unresolved": 1066,
-    "family_candidate_needs_page_review": 1254,
-    "needs_skill_extraction": 88
+    "access_unresolved": 1859,
+    "family_candidate_needs_page_review": 1817,
+    "needs_skill_extraction": 134,
+    "source_content_requires_review": 19
   },
   "unmapped_dom_families": {
-    "external.other": 84,
+    "external.other": 130,
     "main.other": 4
   },
-  "contract_reference_sources": 195,
-  "sources_with_recorded_view_or_state_evidence": 15,
-  "dom_signature_variant_candidates": 602,
+  "contract_reference_sources": 196,
+  "sources_with_recorded_view_or_state_evidence": 16,
+  "dom_signature_variant_candidates": 909,
   "all_pages_completed": false,
   "limitations": [
     "A family match is a navigation aid, not completed individual-page analysis",

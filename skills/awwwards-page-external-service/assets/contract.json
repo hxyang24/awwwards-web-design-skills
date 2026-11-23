@@ -175,60 +175,75 @@
       }
     },
     {
-      "id": "e01b4fb9aeaeeb3e",
-      "url": "https://mindmarket.com/services",
+      "id": "376a3439d7ea24f7",
+      "url": "https://doemedia.com/services/",
       "family": "external.service",
       "inspection_level": "http_dom",
-      "observed_at": "2026-11-23T08:43:25.486342+00:00",
-      "source_sha256": "137d8450914dfed4685ddc19c895897ac81c57b13e17781384d1382a535ba47a",
+      "observed_at": "2026-11-23T10:46:05.859480+00:00",
+      "source_sha256": "59609cf650dd93d94599967207933722e79b3088345afdf16295f9f52e494494",
       "structure": {
         "headings": {
+          "h6": 1,
           "h1": 1,
-          "h2": 8,
-          "h3": 11
+          "h2": 5,
+          "h5": 14,
+          "h3": 7
         },
-        "forms": 0,
-        "input_types": {},
+        "forms": 1,
+        "input_types": {
+          "text": 1
+        },
         "navigation_regions": 4,
         "main_regions": 1,
-        "sections": 4,
-        "articles": 0,
+        "sections": 34,
+        "articles": 1,
         "tables": 0,
         "dialogs": 0,
-        "canvases": 8,
-        "videos": 0,
+        "canvases": 0,
+        "videos": 8,
         "roles": {
-          "status": 2
+          "link": 1,
+          "search": 1,
+          "contentinfo": 1,
+          "list": 1,
+          "listitem": 4,
+          "button": 4
         },
-        "anchor_count": 162
+        "anchor_count": 93
       }
     },
     {
-      "id": "46ef26cbdfecab09",
-      "url": "https://www.14islands.com/services",
+      "id": "ff1de15017b92227",
+      "url": "https://espaciohomedesign.com/en/services",
       "family": "external.service",
       "inspection_level": "http_dom",
-      "observed_at": "2026-11-23T08:45:01.382416+00:00",
-      "source_sha256": "d89481786d31b9195410b821d5d2269c2dc83f84faffa6d98b8745391922aa81",
+      "observed_at": "2026-11-23T10:57:27.384540+00:00",
+      "source_sha256": "52f4a01cc08fc511dfaf53136ebe17b8dcb3de55ceb3710d31db3c2ad2868c27",
       "structure": {
         "headings": {
-          "h2": 18,
-          "h1": 1,
-          "h3": 15,
-          "h4": 1
+          "h2": 7,
+          "h3": 8,
+          "h1": 1
         },
-        "forms": 0,
-        "input_types": {},
-        "navigation_regions": 2,
+        "forms": 2,
+        "input_types": {
+          "text": 3,
+          "email": 2,
+          "tel": 1,
+          "checkbox": 1,
+          "hidden": 3,
+          "submit": 1
+        },
+        "navigation_regions": 9,
         "main_regions": 1,
-        "sections": 11,
+        "sections": 9,
         "articles": 0,
         "tables": 0,
         "dialogs": 0,
-        "canvases": 1,
+        "canvases": 0,
         "videos": 0,
         "roles": {},
-        "anchor_count": 31
+        "anchor_count": 120
       }
     }
   ],

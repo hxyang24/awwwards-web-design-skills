@@ -38,11 +38,11 @@ python scripts/scaffold.py --output YOUR_EMPTY_PROJECT_DIRECTORY
 交付路由/组件边界、状态矩阵、数据契约、来源和素材台账、实际运行命令、截图及未测项。检查契约中的每条 acceptance，记录 passed/failed/blocked/not_run 并给出证据。不要从一个测试通过推断整站、全部设备或生产已验收。
 
 ## 已读取的来源
+- http://www.delvaux.com/en/collections（http_dom；2026-11-23T10:39:56.699707+00:00）
+- http://www.delvaux.com/en/products/accessories/brillant-charms-box-calf-black-dore（http_dom；2026-11-23T10:39:57.242692+00:00）
 - https://acmecups.nz/collections（http_dom；2026-11-23T08:47:53.086202+00:00）
 - https://acmecups.nz/collections?page=2（http_dom；2026-11-23T09:34:05.987624+00:00）
 - https://acmecups.nz/collections?page=3（http_dom；2026-11-23T09:34:06.160014+00:00）
 - https://adinabuzatu.ro/collection/abc（http_dom；2026-11-23T08:47:18.578544+00:00）
-- https://adinabuzatu.ro/collection/bestsellers（http_dom；2026-11-23T08:47:18.656125+00:00）
-- https://adinabuzatu.ro/collection/cadouri（http_dom；2026-11-23T08:47:18.735457+00:00）
 
 来源受各自版权和访问规则约束；只借鉴结构与机制，使用原创或已授权文案、图像、字体和模型。未知技术版本、隐藏状态和服务端行为不得根据截图补造。

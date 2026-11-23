@@ -1,6 +1,6 @@
 {
   "schema_version": "3.0",
-  "generated_at": "2026-11-23T09:59:30.236189+00:00",
+  "generated_at": "2026-11-23T11:16:55.917491+00:00",
   "core_skills_preserved": 24,
   "page_skills": 44,
   "status": "in_progress",
@@ -648,7 +648,7 @@
         "external.experiment"
       ],
       "source_coverage": "observed_examples",
-      "source_count": 1,
+      "source_count": 2,
       "evidence_level": "http_dom",
       "path": "skills/awwwards-page-external-experiment",
       "demo": "skills/awwwards-page-external-experiment/assets/",

@@ -38,12 +38,12 @@ python scripts/scaffold.py --output YOUR_EMPTY_PROJECT_DIRECTORY
 交付路由/组件边界、状态矩阵、数据契约、来源和素材台账、实际运行命令、截图及未测项。检查契约中的每条 acceptance，记录 passed/failed/blocked/not_run 并给出证据。不要从一个测试通过推断整站、全部设备或生产已验收。
 
 ## 已读取的来源
+- https://ecavo.in/careers（http_dom；2026-11-23T10:50:08.775544+00:00）
 - https://aleo.org/careers/（http_dom；2026-11-23T08:48:04.145191+00:00）
 - https://www.5lab.co/career/（http_dom；2026-11-23T08:45:29.563132+00:00）
+- https://doemedia.com/careers/（http_dom；2026-11-23T10:45:35.421377+00:00）
+- https://dogstudio.co/careers/（http_dom；2026-11-23T10:47:17.280464+00:00）
 - https://gobranded.com/careers（http_dom；2026-11-23T09:37:04.076956+00:00）
-- https://www.antler.co/careers（http_dom；2026-11-23T08:49:48.004646+00:00）
-- https://cambrilearn.com/careers（http_dom；2026-11-23T09:41:07.618843+00:00）
-- https://acmecups.nz/pages/careers（http_dom；2026-11-23T08:49:04.560031+00:00）
 
 来源受各自版权和访问规则约束；只借鉴结构与机制，使用原创或已授权文案、图像、字体和模型。未知技术版本、隐藏状态和服务端行为不得根据截图补造。
 

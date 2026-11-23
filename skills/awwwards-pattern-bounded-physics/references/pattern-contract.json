@@ -1,0 +1,133 @@
+{
+  "id": "bounded-physics",
+  "title": "有界物理装饰：可控对象、等价输入与静态替代",
+  "kind": "physics",
+  "page_skills": [
+    "awwwards-page-external-about",
+    "awwwards-page-external-experiment",
+    "awwwards-advanced-motion"
+  ],
+  "source_ids": [
+    "ponpon-about-physics-phone",
+    "ponpon-about-physics-wide"
+  ],
+  "observed": [
+    "官方作品页将 About 物理效果列为展示点；本轮 About 的两种宽度都显示画布中的装饰性对象堆叠。",
+    "修正采样工具多余 Escape 输入后，页面保持 About；指针采样期间对象位置发生重排。",
+    "抓取跟随、精确受力、碰撞规则和源站引擎版本尚未确认；不能把像素变化单独算作对应手势已验证。"
+  ],
+  "recipe": [
+    "将物理效果作为说明、导航与内容之外的增强层，保留静态内容及可退出路径。",
+    "为对象数量、世界边界、速度与单帧追赶设预算；使用固定时间步，隐藏或离屏后不积累巨大补偿。",
+    "指针直接操作同时提供对象选择、按钮与键盘等价操作；指针取消或丢失捕获时解除约束。",
+    "播放由用户请求，提供暂停、重置、减少动画和静态路径；销毁取消动画帧、释放对象并移除观察器与事件。"
+  ],
+  "invariants": [
+    "示例中的圆、文字和动力学代码为原创，不复制源站角色、音乐或引擎。",
+    "对象保持边界内且参数有界；模拟是装饰用途，不是科学或生产物理求解器。",
+    "减少动画时不自动积分；手动定位仍可用，离屏返回不会自行播放。",
+    "任何输入失败、图形不可用或卸载都不应锁住页面滚动、导航或已有内容。"
+  ],
+  "limits": [
+    "源站对象抓取和移动端真实触控尚未确认；原创示例的拖动不是源站手感复刻。",
+    "软件浏览器测试不等于真机、完整辅助技术或生产性能验收。"
+  ],
+  "skill": "awwwards-pattern-bounded-physics",
+  "source_evidence": [
+    {
+      "id": "ponpon-about-physics-phone",
+      "source_id": "9c9808fb1aa1b52b",
+      "url": "https://ponpon-mania.com/about",
+      "viewport": {
+        "width": 390,
+        "height": 1000,
+        "device_scale_factor": 1
+      },
+      "observed_at": "2026-11-23T10:40:11.163Z",
+      "status": "rendered_content_observed",
+      "normal_source_experience_fully_validated": false,
+      "source_assets_redistributed": false,
+      "observations": [
+        "About viewport displayed a decorative character pile in a canvas.",
+        "Pointer input sampled with URL remaining on About after removing automatic Escape cleanup.",
+        "Position changes were visible; cursor-follow dragging, exact force rules, touch and source engine identity are not established."
+      ],
+      "sampled_actions": [
+        {
+          "action": "click",
+          "url_before": "https://ponpon-mania.com/about",
+          "url_after": "https://ponpon-mania.com/about",
+          "automatic_key_sent": false
+        },
+        {
+          "action": "drag",
+          "url_before": "https://ponpon-mania.com/about",
+          "url_after": "https://ponpon-mania.com/about",
+          "automatic_key_sent": false
+        }
+      ],
+      "targeted_frame_review": {
+        "viewport_width": 390,
+        "input": "mouse pointer on a phone-width viewport",
+        "from": [
+          145,
+          835
+        ],
+        "to": [
+          150,
+          450
+        ],
+        "review": "A later live-session sample targeted a currently visible character. The pile spread/rearranged; no character followed the cursor to the upper destination.",
+        "frame_sha256": {
+          "live-before-1": "6ea79982b7bf4113fdb1dfef323649247fcaeeed53fb6dea5666c50bf00a91ee",
+          "live-during-1": "605c2c92f2b1089b0ec4b16f794d75ef5c863fa34a39fbde75bd579d58c51791",
+          "live-after-1": "c55f6947cbe57fbc15f9bb2a425c7dae9cc290bef0d7a7a0ae5be0aec242fc7e"
+        }
+      }
+    },
+    {
+      "id": "ponpon-about-physics-wide",
+      "source_id": "9c9808fb1aa1b52b",
+      "url": "https://ponpon-mania.com/about",
+      "viewport": {
+        "width": 1440,
+        "height": 1000,
+        "device_scale_factor": 1
+      },
+      "observed_at": "2026-11-23T10:40:35.822Z",
+      "status": "rendered_content_observed",
+      "normal_source_experience_fully_validated": false,
+      "source_assets_redistributed": false,
+      "observations": [
+        "About viewport displayed a decorative character pile in a canvas.",
+        "Pointer input sampled with URL remaining on About after removing automatic Escape cleanup.",
+        "Position changes were visible; cursor-follow dragging, exact force rules, touch and source engine identity are not established."
+      ],
+      "sampled_actions": [
+        {
+          "action": "click",
+          "url_before": "https://ponpon-mania.com/about",
+          "url_after": "https://ponpon-mania.com/about",
+          "automatic_key_sent": false
+        },
+        {
+          "action": "move",
+          "url_before": "https://ponpon-mania.com/about",
+          "url_after": "https://ponpon-mania.com/about",
+          "automatic_key_sent": false
+        },
+        {
+          "action": "move",
+          "url_before": "https://ponpon-mania.com/about",
+          "url_after": "https://ponpon-mania.com/about",
+          "automatic_key_sent": false
+        }
+      ]
+    }
+  ],
+  "source_screenshots_redistributed": false,
+  "implementation": "original runnable pattern",
+  "business_mode": "local_fictional_preview",
+  "source_reproduction_claim": false,
+  "validation_scope": "Actual fixture tests are recorded separately; source observations do not attest implementation tests"
+}

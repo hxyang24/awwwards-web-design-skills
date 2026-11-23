@@ -3,7 +3,7 @@ import hashlib,importlib.util,json,sys,tempfile,unittest
 from pathlib import Path
 sys.dont_write_bytecode=True
 R=Path(__file__).resolve().parents[1];sys.path.insert(0,str(R/'tools'))
-from page_research import normalize,Robots,Structure,Collector,family
+from page_research import normalize,Robots,Structure,Collector,family,content_state_hint
 from build_page_skills import definitions
 from install_all_skills import install
 def load(path,name):
@@ -61,6 +61,24 @@ class PageSkills(unittest.TestCase):
  def test_localized_inner_pages_are_not_discarded_as_generic_urls(self):
   examples={'https://x.test/en/about-us':'external.about','https://x.test/en/archive':'external.gallery','https://x.test/en/artwork/113':'external.artwork','https://x.test/privacy-policy':'external.legal','https://x.test/lab':'external.experiment','https://x.test/404':'external.not-found','https://x.test/en/dispensa/item':'external.product','https://ponpon-mania.com/chapters':'external.story-index','https://ponpon-mania.com/chapter/1':'external.story-chapter','https://aifont.ai/fonts/tagging-letters':'external.prompt-detail','https://aifont.ai/ar/fonts/tagging-letters':'external.prompt-detail'}
   for u,f in examples.items():self.assertEqual(family(u),f)
+ def test_story_static_content_contains_all_original_chapters_and_deep_links(self):
+  import html
+  folder=R/'page_skills/creative/story';data=json.loads((folder/'story-data.json').read_text(encoding='utf-8'));markup=(folder/'index.html').read_text(encoding='utf-8')
+  self.assertEqual(len(data),3)
+  for i,c in enumerate(data,1):
+   self.assertIn('id="chapter-'+str(i)+'"',markup)
+   for h,t in c['panels']:self.assertIn(html.escape(h),markup);self.assertIn(html.escape(t),markup)
+ def test_error_headings_are_hints_without_promoting_dom_to_normal_ui(self):
+  self.assertEqual(content_state_hint('Studio', ['This page couldn’t load']),'possible_render_error')
+  self.assertEqual(content_state_hint('A year of Studio', ['The page doesn’t exist.']),'possible_not_found')
+  self.assertEqual(content_state_hint('Studio',['Unsupported browser']),'possible_compatibility_fallback')
+  self.assertEqual(content_state_hint('404 ideas for a poster',['A chapter about error design']),'unclassified')
+ def test_heading_hints_ignore_script_and_preserve_inline_heading_text(self):
+  s=Structure();s.feed('<title>Studio</title><script>Page not found</script><h1>This page <em>couldn’t</em> load</h1>');self.assertEqual(content_state_hint(s.title,s.heading_texts),'possible_render_error')
+ def test_http_404_body_is_a_readable_error_reference_not_a_normal_page(self):
+  with tempfile.TemporaryDirectory() as d:
+   p=Path(d);c=Collector(p/'state/db.sqlite',p/'public',p/'raw',interval=0);c.policy=lambda u:(Robots(''),{'policy':'no_robots_file'});c.request=lambda u:(404,{'Content-Type':'text/html'},b'<main><h1>Page not found</h1><a href="/">Home</a></main>',False)
+   row=c.inspect(('https://example.com/missing','https://example.com/','external'));self.assertEqual(row['http_status'],404);self.assertEqual(row['status'],'http_not_found');self.assertEqual(row['inspection_level'],'http_dom');self.assertEqual(row['content_state_hint'],'possible_not_found');c.db.close()
  def test_structure_does_not_treat_script_text_as_observed_navigation(self):
   s=Structure();s.feed('<title>Original page</title><nav><a href="/about">About</a></nav><script>fake nav <a href="/secret">secret</a></script><main><h1>X</h1><form><input type="email"></form></main>');self.assertEqual(s.title,'Original page');self.assertEqual(s.inputs['email'],1);self.assertEqual(s.headings['h1'],1);self.assertEqual(s.links[0]['href'],'/about')
 if __name__=='__main__':

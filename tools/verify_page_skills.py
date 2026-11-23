@@ -21,7 +21,7 @@ def verify(check_seal=True):
   if s.get('runtime_variant')=='careers-pattern':
    pairs=[('main.mjs',R/'interaction_skills/page_adapter.mjs'),('runtime.mjs',R/'interaction_skills/assets/careers/main.mjs'),('style.css',R/'interaction_skills/assets/careers/style.css')]
   elif s.get('runtime_variant') in ['creative-story','creative-prompt']:
-   source=R/'page_skills/creative'/s['runtime_variant'].removeprefix('creative-');pairs=[(file,source/file) for file in ['index.html','style.css','main.mjs','runtime.mjs']]
+   source=R/'page_skills/creative'/s['runtime_variant'].removeprefix('creative-');pairs=[(file.name,file) for file in source.iterdir() if file.is_file()]
   else:pairs=[('main.mjs',R/'page_skills/runtime.mjs'),('style.css',R/'page_skills/runtime.css')]
   for name,source in pairs:
    if digest(folder/'assets'/name)!=digest(source):errors.append('Stale runtime '+s['skill'])

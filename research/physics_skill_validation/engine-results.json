@@ -1,0 +1,39 @@
+{
+  "recorded_at": "2026-11-23T11:15:28.761Z",
+  "status": "passed",
+  "checks": [
+    {
+      "name": "Reject invalid world and body budgets",
+      "status": "passed"
+    },
+    {
+      "name": "Only finite positive elapsed time advances the bounded model",
+      "status": "passed"
+    },
+    {
+      "name": "Gravity produces motion within the fixed room",
+      "status": "passed"
+    },
+    {
+      "name": "Collision separates overlapping bodies and reverses an approaching pair",
+      "status": "passed"
+    },
+    {
+      "name": "Pointer constraints preserve bounds and release ownership",
+      "status": "passed"
+    },
+    {
+      "name": "Keyboard-equivalent nudges preserve bounds and reject invalid input",
+      "status": "passed"
+    },
+    {
+      "name": "Repeated integration remains finite and reproducible",
+      "status": "passed"
+    },
+    {
+      "name": "Reset restores positions while disposal is final and idempotent",
+      "status": "passed"
+    }
+  ],
+  "scope": "Original decorative model invariants, not source-engine identity or scientific/production physics acceptance"
+}

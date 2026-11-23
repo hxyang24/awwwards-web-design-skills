@@ -42,7 +42,7 @@ python scripts/scaffold.py --output YOUR_EMPTY_PROJECT_DIRECTORY
 - https://artworks.joe8lee.com/404（http_dom；2026-11-23T09:11:03.291884+00:00）
 - https://axiom-power-template.webflow.io/404（http_dom；2026-11-23T09:13:37.115969+00:00）
 - https://brik.space/gallery/404（http_dom；2026-11-23T09:38:29.067631+00:00）
-- https://www.a-lign.studio/404（http_dom；2026-11-23T08:03:35.616538+00:00）
-- https://www.addifico.com/404（http_dom；2026-11-23T08:46:42.244788+00:00）
+- https://danielneath.com/404（http_dom；2026-11-23T10:34:15.534871+00:00）
+- https://ebuka.marketing/404（http_dom；2026-11-23T10:49:49.470079+00:00）
 
 来源受各自版权和访问规则约束；只借鉴结构与机制，使用原创或已授权文案、图像、字体和模型。未知技术版本、隐藏状态和服务端行为不得根据截图补造。

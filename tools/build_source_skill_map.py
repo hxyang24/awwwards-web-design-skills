@@ -28,14 +28,14 @@ def build():
  with source.open(encoding='utf-8') as f:
   for line in f:
    s=json.loads(line);candidates=families.get(s['family'],[])
-   state='access_unresolved' if s['inspection_level']!='http_dom' else 'family_candidate_needs_page_review' if candidates else 'needs_skill_extraction'
+   state='access_unresolved' if s['inspection_level']!='http_dom' else 'source_content_requires_review' if s.get('content_state_hint','unclassified')!='unclassified' else 'family_candidate_needs_page_review' if candidates else 'needs_skill_extraction'
    counts[state]+=1
    if state=='needs_skill_extraction':unmapped[s['family']]+=1
    if s['inspection_level']=='http_dom':
-    structure=s['structure'];signature={k:structure.get(k,0) for k in ['forms','tables','dialogs','canvases','videos','navigation_regions']};signature['input_types']=sorted(structure.get('input_types',{}));variant_id=hashlib.sha256(json.dumps([s['family'],signature],sort_keys=True).encode()).hexdigest()[:16]
+    structure=s['structure'];signature={k:structure.get(k,0) for k in ['forms','tables','dialogs','canvases','videos','navigation_regions']};signature['content_state_hint']=s.get('content_state_hint','unclassified');signature['input_types']=sorted(structure.get('input_types',{}));variant_id=hashlib.sha256(json.dumps([s['family'],signature],sort_keys=True).encode()).hexdigest()[:16]
     variant=variants.setdefault(variant_id,{'id':variant_id,'family_hint':s['family'],'observed_dom_signature':signature,'pages':0,'example_source_ids':[],'candidate_page_skills':candidates,'status':'requires_variant_review','not_claimed':'DOM element counts do not prove visible layout, technology, state or completed skill extraction'});variant['pages']+=1
     if len(variant['example_source_ids'])<5:variant['example_source_ids'].append(s['id'])
-   rows.append({'source_id':s['id'],'url':s['url'],'family_hint':s['family'],'family_assignment':'URL heuristic; not a reviewed design conclusion','inspection_level':s['inspection_level'],'candidate_page_skills':candidates,'included_contract_references':selected.get(s['id'],[]),'candidate_mechanisms':[p['skill'] for p in patterns if set(candidates)&set(p['supports_page_skills'])],'recorded_view_and_state_evidence':evidence.get(s['id'],[]),'extraction_state':state,'individual_page_design_complete':False})
+   rows.append({'source_id':s['id'],'url':s['url'],'family_hint':s['family'],'family_assignment':'URL heuristic; not a reviewed design conclusion','inspection_level':s['inspection_level'],'content_state_hint':s.get('content_state_hint','unclassified'),'candidate_page_skills':candidates,'included_contract_references':selected.get(s['id'],[]),'candidate_mechanisms':[p['skill'] for p in patterns if set(candidates)&set(p['supports_page_skills'])],'recorded_view_and_state_evidence':evidence.get(s['id'],[]),'extraction_state':state,'individual_page_design_complete':False})
  out=R/'research/skill_extraction';out.mkdir(exist_ok=True)
  with (out/'source-skill-map.jsonl').open('w',encoding='utf-8',newline='\n') as f:
   for row in rows:f.write(json.dumps(row,ensure_ascii=False,separators=(',',':'))+'\n')

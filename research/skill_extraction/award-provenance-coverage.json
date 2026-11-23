@@ -1,10 +1,10 @@
 {
-  "recorded_at": "2026-11-23T09:59:29.840569+00:00",
-  "official_detail_observations": 205,
+  "recorded_at": "2026-11-23T11:16:56.432880+00:00",
+  "official_detail_observations": 308,
   "observed_title_labels": {
-    "sotd": 103,
-    "honorable_mention": 41,
-    "nominee": 61
+    "sotd": 136,
+    "honorable_mention": 76,
+    "nominee": 96
   },
   "scope": "Counts official work-detail observations, not unique external hosts or awarded inner pages",
   "source_eligibility_note": "Nominee is a nomination label and must not be counted as a confirmed award. SOTD/Honorable Mention title labels remain timestamped source reports; do not infer all current inner pages won.",

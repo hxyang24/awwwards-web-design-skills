@@ -38,6 +38,36 @@
   "evidence_note": "Only recorded observations are facts. DOM structure does not prove visual composition, hidden state, source code, backend behavior or licenses. The runnable blueprint is an original recipe, not a source-site clone.",
   "sources": [
     {
+      "id": "fb2b60f4544778cd",
+      "url": "https://ecavo.in/careers",
+      "family": "external.careers",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T10:50:08.775544+00:00",
+      "source_sha256": "f1648e7bf18904a259fcb088e373e5250f2e737465004ff6079a599f8cba4519",
+      "structure": {
+        "headings": {
+          "h1": 1,
+          "h2": 6,
+          "h3": 12
+        },
+        "forms": 0,
+        "input_types": {},
+        "navigation_regions": 2,
+        "main_regions": 1,
+        "sections": 7,
+        "articles": 0,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 0,
+        "roles": {
+          "list": 4,
+          "contentinfo": 1
+        },
+        "anchor_count": 58
+      }
+    },
+    {
       "id": "7b155337b1bb2011",
       "url": "https://aleo.org/careers/",
       "family": "external.careers",
@@ -99,6 +129,71 @@
       }
     },
     {
+      "id": "3447b2a9b56f60a4",
+      "url": "https://doemedia.com/careers/",
+      "family": "external.careers",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T10:45:35.421377+00:00",
+      "source_sha256": "735e3cab88b0d3da68a6add310703e36cb50b9ea2480229b1b1613b4cf2504bf",
+      "structure": {
+        "headings": {
+          "h6": 1,
+          "h1": 1,
+          "h2": 4,
+          "h3": 13
+        },
+        "forms": 1,
+        "input_types": {
+          "text": 1
+        },
+        "navigation_regions": 6,
+        "main_regions": 1,
+        "sections": 7,
+        "articles": 0,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 1,
+        "videos": 0,
+        "roles": {
+          "link": 1,
+          "search": 1,
+          "group": 1,
+          "contentinfo": 1,
+          "list": 1,
+          "listitem": 4,
+          "button": 4
+        },
+        "anchor_count": 92
+      }
+    },
+    {
+      "id": "a5946dfd425fcc4a",
+      "url": "https://dogstudio.co/careers/",
+      "family": "external.careers",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T10:47:17.280464+00:00",
+      "source_sha256": "c6d1018e6e8ad159e6caf1fec6c84a97cbae6c7dadc79b1e73fd7db4eb21d8c5",
+      "structure": {
+        "headings": {
+          "h1": 1,
+          "h2": 6,
+          "h3": 17
+        },
+        "forms": 0,
+        "input_types": {},
+        "navigation_regions": 0,
+        "main_regions": 1,
+        "sections": 8,
+        "articles": 0,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 0,
+        "roles": {},
+        "anchor_count": 30
+      }
+    },
+    {
       "id": "cac4840effaada25",
       "url": "https://gobranded.com/careers",
       "family": "external.careers",
@@ -128,116 +223,6 @@
           "tab": 3
         },
         "anchor_count": 25
-      }
-    },
-    {
-      "id": "b722cf7db75675cb",
-      "url": "https://www.antler.co/careers",
-      "family": "external.careers",
-      "inspection_level": "http_dom",
-      "observed_at": "2026-11-23T08:49:48.004646+00:00",
-      "source_sha256": "b52834e4a9e050d3d2a2538b10a85ce6f31a4ee1f9fb55401c5c27fc9ef19f2c",
-      "structure": {
-        "headings": {
-          "h2": 16,
-          "h3": 13,
-          "h1": 1,
-          "h4": 3
-        },
-        "forms": 0,
-        "input_types": {},
-        "navigation_regions": 8,
-        "main_regions": 1,
-        "sections": 9,
-        "articles": 0,
-        "tables": 0,
-        "dialogs": 0,
-        "canvases": 0,
-        "videos": 0,
-        "roles": {
-          "list": 16,
-          "listitem": 67,
-          "banner": 2,
-          "navigation": 5
-        },
-        "anchor_count": 110
-      }
-    },
-    {
-      "id": "8f3e16b133fbcd75",
-      "url": "https://cambrilearn.com/careers",
-      "family": "external.careers",
-      "inspection_level": "http_dom",
-      "observed_at": "2026-11-23T09:41:07.618843+00:00",
-      "source_sha256": "70eb903fa43671379e67776c8c09f38cb1b4b5e927d7e180f4e6f726dd761e8a",
-      "structure": {
-        "headings": {
-          "h2": 8,
-          "h3": 20,
-          "h1": 1
-        },
-        "forms": 1,
-        "input_types": {
-          "text": 3,
-          "email": 1,
-          "tel": 1,
-          "file": 1,
-          "submit": 1
-        },
-        "navigation_regions": 7,
-        "main_regions": 0,
-        "sections": 9,
-        "articles": 4,
-        "tables": 0,
-        "dialogs": 2,
-        "canvases": 0,
-        "videos": 0,
-        "roles": {
-          "img": 11,
-          "list": 8,
-          "listitem": 1,
-          "alert": 1,
-          "status": 1
-        },
-        "anchor_count": 127
-      }
-    },
-    {
-      "id": "765d8032f4785ad4",
-      "url": "https://acmecups.nz/pages/careers",
-      "family": "external.careers",
-      "inspection_level": "http_dom",
-      "observed_at": "2026-11-23T08:49:04.560031+00:00",
-      "source_sha256": "a99b555ee2e7493a30429498a1f8688a099cefe590d2537617024b888b98f322",
-      "structure": {
-        "headings": {
-          "h1": 2,
-          "h4": 3,
-          "h2": 1,
-          "h6": 2,
-          "h5": 2,
-          "h3": 2
-        },
-        "forms": 8,
-        "input_types": {
-          "hidden": 20,
-          "text": 5,
-          "email": 2,
-          "number": 1
-        },
-        "navigation_regions": 0,
-        "main_regions": 1,
-        "sections": 0,
-        "articles": 0,
-        "tables": 0,
-        "dialogs": 0,
-        "canvases": 0,
-        "videos": 0,
-        "roles": {
-          "main": 1,
-          "status": 1
-        },
-        "anchor_count": 170
       }
     }
   ],

@@ -66,6 +66,87 @@
       }
     },
     {
+      "id": "b7cb93447fad3bc6",
+      "url": "http://www.delvaux.com/en/legal",
+      "family": "external.legal",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T10:39:56.895835+00:00",
+      "source_sha256": "12ab767a6f75395e8477509592dbaa16e22f4782eff5c450443f5dfd98f87501",
+      "structure": {
+        "headings": {
+          "h1": 1,
+          "h2": 9,
+          "h6": 5
+        },
+        "forms": 4,
+        "input_types": {
+          "text": 10,
+          "email": 7,
+          "password": 1,
+          "checkbox": 3,
+          "hidden": 8,
+          "tel": 2
+        },
+        "navigation_regions": 4,
+        "main_regions": 0,
+        "sections": 0,
+        "articles": 0,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 0,
+        "roles": {
+          "button": 5,
+          "combobox": 4,
+          "alert": 4,
+          "listbox": 4,
+          "option": 27
+        },
+        "anchor_count": 46
+      }
+    },
+    {
+      "id": "112548a1b326f2aa",
+      "url": "http://www.delvaux.com/en/privacy-policy",
+      "family": "external.legal",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T10:39:57.069489+00:00",
+      "source_sha256": "0d50bb82b9baed166277a99d6f570be3b31aaa56f3c338eb613f9bd24099bfaf",
+      "structure": {
+        "headings": {
+          "h1": 1,
+          "h2": 9,
+          "h6": 5
+        },
+        "forms": 4,
+        "input_types": {
+          "text": 10,
+          "email": 7,
+          "password": 1,
+          "checkbox": 3,
+          "hidden": 8,
+          "tel": 2
+        },
+        "navigation_regions": 4,
+        "main_regions": 0,
+        "sections": 0,
+        "articles": 0,
+        "tables": 1,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 0,
+        "roles": {
+          "region": 1,
+          "button": 5,
+          "combobox": 4,
+          "alert": 4,
+          "listbox": 4,
+          "option": 27
+        },
+        "anchor_count": 48
+      }
+    },
+    {
       "id": "5810c4781a2fdeab",
       "url": "https://8pm.it/policies/privacy-policy",
       "family": "external.legal",
@@ -162,80 +243,6 @@
           "listitem": 23
         },
         "anchor_count": 50
-      }
-    },
-    {
-      "id": "c4a9b3c7781bd567",
-      "url": "https://acmecups.nz/pages/privacy-policy",
-      "family": "external.legal",
-      "inspection_level": "http_dom",
-      "observed_at": "2026-11-23T08:49:04.736741+00:00",
-      "source_sha256": "3ac4bdba6b8f23c225c1e140f06767f4060e6f71baf4977f61d5e3a9599e05df",
-      "structure": {
-        "headings": {
-          "h1": 2,
-          "h4": 2,
-          "h6": 2,
-          "h5": 2,
-          "h3": 2
-        },
-        "forms": 8,
-        "input_types": {
-          "hidden": 20,
-          "text": 5,
-          "email": 2,
-          "number": 1
-        },
-        "navigation_regions": 0,
-        "main_regions": 1,
-        "sections": 0,
-        "articles": 0,
-        "tables": 0,
-        "dialogs": 0,
-        "canvases": 0,
-        "videos": 0,
-        "roles": {
-          "main": 1,
-          "status": 1
-        },
-        "anchor_count": 147
-      }
-    },
-    {
-      "id": "2bf217bf11543000",
-      "url": "https://acmecups.nz/pages/terms-and-conditions",
-      "family": "external.legal",
-      "inspection_level": "http_dom",
-      "observed_at": "2026-11-23T09:35:13.107689+00:00",
-      "source_sha256": "d29fa5dd985f02029262dab4797f5f2e1766f74f606f00d5562607e95bd49322",
-      "structure": {
-        "headings": {
-          "h1": 2,
-          "h6": 3,
-          "h4": 3,
-          "h5": 2,
-          "h3": 2
-        },
-        "forms": 8,
-        "input_types": {
-          "hidden": 20,
-          "text": 5,
-          "email": 2,
-          "number": 1
-        },
-        "navigation_regions": 0,
-        "main_regions": 1,
-        "sections": 0,
-        "articles": 0,
-        "tables": 0,
-        "dialogs": 0,
-        "canvases": 0,
-        "videos": 0,
-        "roles": {
-          "main": 1,
-          "status": 1
-        },
-        "anchor_count": 147
       }
     }
   ],

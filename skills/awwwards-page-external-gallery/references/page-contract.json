@@ -185,12 +185,12 @@
       }
     },
     {
-      "id": "b8767ce5d88982e0",
-      "url": "https://bluntumbrellas.com/pages/archive/",
+      "id": "19ffa215dd9a80ff",
+      "url": "https://bluntumbrellas.com/pages/archive",
       "family": "external.gallery",
       "inspection_level": "http_dom",
-      "observed_at": "2026-11-23T09:35:29.972323+00:00",
-      "source_sha256": "5640276a3d62c1b4093eca4f5a4b1259c1359003db3ef6aea4b11ab35d52d1c4",
+      "observed_at": "2026-11-23T10:41:05.361663+00:00",
+      "source_sha256": "a00b55f8550544c8e07043f861ae080d5f8ed6f35ec04959bb97c5e7664e8e79",
       "structure": {
         "headings": {
           "h6": 10,

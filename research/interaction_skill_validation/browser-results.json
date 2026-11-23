@@ -1,7 +1,7 @@
 {
-  "recorded_at": "2026-11-23T10:06:05.385Z",
+  "recorded_at": "2026-11-23T10:57:38.584Z",
   "status": "passed",
-  "interaction_skills": 3,
+  "interaction_skills": 4,
   "checks": [
     {
       "name": "discovery-navigation loads and fits at 320",
@@ -52,6 +52,22 @@
       "status": "passed"
     },
     {
+      "name": "bounded-physics loads and fits at 320",
+      "status": "passed"
+    },
+    {
+      "name": "bounded-physics loads and fits at 390",
+      "status": "passed"
+    },
+    {
+      "name": "bounded-physics loads and fits at 768",
+      "status": "passed"
+    },
+    {
+      "name": "bounded-physics loads and fits at 1440",
+      "status": "passed"
+    },
+    {
       "name": "discovery-navigation automated accessibility at 390",
       "status": "passed"
     },
@@ -73,6 +89,14 @@
     },
     {
       "name": "immersive-fallback automated accessibility at 1440",
+      "status": "passed"
+    },
+    {
+      "name": "bounded-physics automated accessibility at 390",
+      "status": "passed"
+    },
+    {
+      "name": "bounded-physics automated accessibility at 1440",
       "status": "passed"
     },
     {
@@ -158,6 +182,16 @@
       "skill": "immersive-fallback",
       "width": 1440,
       "violations": []
+    },
+    {
+      "skill": "bounded-physics",
+      "width": 390,
+      "violations": []
+    },
+    {
+      "skill": "bounded-physics",
+      "width": 1440,
+      "violations": []
     }
   ],
   "screenshots": [
@@ -166,16 +200,18 @@
     "research/interaction_skill_validation/screenshots/careers-culture-390.png",
     "research/interaction_skill_validation/screenshots/careers-culture-1440.png",
     "research/interaction_skill_validation/screenshots/immersive-fallback-390.png",
-    "research/interaction_skill_validation/screenshots/immersive-fallback-1440.png"
+    "research/interaction_skill_validation/screenshots/immersive-fallback-1440.png",
+    "research/interaction_skill_validation/screenshots/bounded-physics-390.png",
+    "research/interaction_skill_validation/screenshots/bounded-physics-1440.png"
   ],
   "motion_observations": [
     {
       "case": "careers_pause",
       "pending_after_ready": false,
-      "before_time": 40.01900000651371,
-      "after_time": 40.01900000651371,
-      "before_transform": "matrix(0.984198, -0.17707, 0.17707, 0.984198, 0, 0)",
-      "after_transform": "matrix(0.984198, -0.17707, 0.17707, 0.984198, 0, 0)"
+      "before_time": 53.32399999457416,
+      "after_time": 53.32399999457416,
+      "before_transform": "matrix(0.985995, -0.166776, 0.166776, 0.985995, 0, 0)",
+      "after_transform": "matrix(0.985995, -0.166776, 0.166776, 0.985995, 0, 0)"
     }
   ],
   "errors": [],

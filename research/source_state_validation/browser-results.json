@@ -1,0 +1,145 @@
+{
+  "recorded_at": "2026-11-23T11:10:34.588Z",
+  "status": "passed",
+  "checks": [
+    {
+      "name": "Normal article has visible content",
+      "status": "passed",
+      "observed": {
+        "state": "rendered_content_signals_observed",
+        "requires_visual_review": true,
+        "title_heading_state_hint_only": true,
+        "visible_unoccluded_heading_count": 1,
+        "displayed_heading_count": 1,
+        "loading_overlay_count": 0,
+        "visible_canvases": [],
+        "not_claimed": "Readiness hints do not certify source interaction, graphics correctness or all page states"
+      }
+    },
+    {
+      "name": "Overlay prevents hidden DOM headings from proving readiness",
+      "status": "passed",
+      "observed": {
+        "state": "loading_incomplete",
+        "requires_visual_review": true,
+        "title_heading_state_hint_only": true,
+        "visible_unoccluded_heading_count": 0,
+        "displayed_heading_count": 1,
+        "loading_overlay_count": 1,
+        "visible_canvases": [],
+        "not_claimed": "Readiness hints do not certify source interaction, graphics correctness or all page states"
+      }
+    },
+    {
+      "name": "Transparent or hidden loader is not a current obstruction",
+      "status": "passed",
+      "observed": {
+        "state": "rendered_content_signals_observed",
+        "requires_visual_review": true,
+        "title_heading_state_hint_only": true,
+        "visible_unoccluded_heading_count": 1,
+        "displayed_heading_count": 1,
+        "loading_overlay_count": 0,
+        "visible_canvases": [],
+        "not_claimed": "Readiness hints do not certify source interaction, graphics correctness or all page states"
+      }
+    },
+    {
+      "name": "Not-found heading is preserved as an error reference",
+      "status": "passed",
+      "observed": {
+        "state": "rendered_not_found",
+        "requires_visual_review": true,
+        "title_heading_state_hint_only": true,
+        "visible_unoccluded_heading_count": 1,
+        "displayed_heading_count": 1,
+        "loading_overlay_count": 0,
+        "visible_canvases": [],
+        "not_claimed": "Readiness hints do not certify source interaction, graphics correctness or all page states"
+      }
+    },
+    {
+      "name": "Reload/back error is not accepted as normal 3D",
+      "status": "passed",
+      "observed": {
+        "state": "rendered_error_in_observation_environment",
+        "requires_visual_review": true,
+        "title_heading_state_hint_only": true,
+        "visible_unoccluded_heading_count": 1,
+        "displayed_heading_count": 1,
+        "loading_overlay_count": 0,
+        "visible_canvases": [],
+        "not_claimed": "Readiness hints do not certify source interaction, graphics correctness or all page states"
+      }
+    },
+    {
+      "name": "Unsupported browser is a compatibility fallback",
+      "status": "passed",
+      "observed": {
+        "state": "compatibility_fallback_observed",
+        "requires_visual_review": true,
+        "title_heading_state_hint_only": true,
+        "visible_unoccluded_heading_count": 1,
+        "displayed_heading_count": 1,
+        "loading_overlay_count": 0,
+        "visible_canvases": [],
+        "not_claimed": "Readiness hints do not certify source interaction, graphics correctness or all page states"
+      }
+    },
+    {
+      "name": "Article discussing errors remains a normal article",
+      "status": "passed",
+      "observed": {
+        "state": "rendered_content_signals_observed",
+        "requires_visual_review": true,
+        "title_heading_state_hint_only": true,
+        "visible_unoccluded_heading_count": 1,
+        "displayed_heading_count": 1,
+        "loading_overlay_count": 0,
+        "visible_canvases": [],
+        "not_claimed": "Readiness hints do not certify source interaction, graphics correctness or all page states"
+      }
+    },
+    {
+      "name": "Canvas-only view requires visual review",
+      "status": "passed",
+      "observed": {
+        "state": "graphics_requires_visual_review",
+        "requires_visual_review": true,
+        "title_heading_state_hint_only": true,
+        "visible_unoccluded_heading_count": 0,
+        "displayed_heading_count": 0,
+        "loading_overlay_count": 0,
+        "visible_canvases": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 390,
+            "height": 700
+          }
+        ],
+        "not_claimed": "Readiness hints do not certify source interaction, graphics correctness or all page states"
+      }
+    },
+    {
+      "name": "Source cleanup ordinary_action",
+      "status": "passed"
+    },
+    {
+      "name": "Source cleanup new_dialog",
+      "status": "passed"
+    },
+    {
+      "name": "Source cleanup unknown_counts",
+      "status": "passed"
+    },
+    {
+      "name": "Source cleanup explicit_escape",
+      "status": "passed"
+    }
+  ],
+  "limitations": [
+    "Authored local fixtures verify readiness classification, not actual source-site completeness",
+    "A canvas without visible headings requires a screenshot review"
+  ]
+}

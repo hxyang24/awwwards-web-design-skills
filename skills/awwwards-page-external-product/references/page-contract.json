@@ -40,6 +40,89 @@
   "evidence_note": "Only recorded observations are facts. DOM structure does not prove visual composition, hidden state, source code, backend behavior or licenses. The runnable blueprint is an original recipe, not a source-site clone.",
   "sources": [
     {
+      "id": "ee1ff5a8fffa40ad",
+      "url": "http://www.delvaux.com/en/collections",
+      "family": "external.product",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T10:39:56.699707+00:00",
+      "source_sha256": "0519e41ce18c4bb0a099137a77e4fe98466ae8b041ffc5817cd6d93bc564d96f",
+      "structure": {
+        "headings": {
+          "h1": 1,
+          "h2": 13,
+          "h6": 5
+        },
+        "forms": 4,
+        "input_types": {
+          "text": 10,
+          "email": 7,
+          "password": 1,
+          "checkbox": 3,
+          "hidden": 8,
+          "tel": 2
+        },
+        "navigation_regions": 4,
+        "main_regions": 0,
+        "sections": 0,
+        "articles": 0,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 0,
+        "roles": {
+          "button": 5,
+          "combobox": 4,
+          "alert": 4,
+          "listbox": 4,
+          "option": 27
+        },
+        "anchor_count": 40
+      }
+    },
+    {
+      "id": "aad6872ee0de11a6",
+      "url": "http://www.delvaux.com/en/products/accessories/brillant-charms-box-calf-black-dore",
+      "family": "external.product",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T10:39:57.242692+00:00",
+      "source_sha256": "9a0766296b83c22d2724954ad294f3da13bf0a63138d2b2481ca697001602bce",
+      "structure": {
+        "headings": {
+          "h1": 1,
+          "h2": 13,
+          "h5": 1,
+          "h6": 5
+        },
+        "forms": 4,
+        "input_types": {
+          "text": 11,
+          "hidden": 9,
+          "radio": 2,
+          "email": 7,
+          "password": 1,
+          "checkbox": 3,
+          "tel": 2
+        },
+        "navigation_regions": 4,
+        "main_regions": 0,
+        "sections": 0,
+        "articles": 0,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 0,
+        "roles": {
+          "button": 7,
+          "tab": 3,
+          "combobox": 4,
+          "alert": 4,
+          "listbox": 4,
+          "option": 27
+        },
+        "anchor_count": 47
+      }
+    },
+    {
       "id": "c5456d3dbfbe6cf9",
       "url": "https://acmecups.nz/collections",
       "family": "external.product",
@@ -182,56 +265,6 @@
         "videos": 0,
         "roles": {},
         "anchor_count": 121
-      }
-    },
-    {
-      "id": "8951f0ec4b7a9daf",
-      "url": "https://adinabuzatu.ro/collection/bestsellers",
-      "family": "external.product",
-      "inspection_level": "http_dom",
-      "observed_at": "2026-11-23T08:47:18.656125+00:00",
-      "source_sha256": "2f0e2b67073a0faa374376116f7e2e19225329ee36a3c1aa67fcc9f1417b0cf0",
-      "structure": {
-        "headings": {
-          "h1": 1
-        },
-        "forms": 0,
-        "input_types": {},
-        "navigation_regions": 2,
-        "main_regions": 1,
-        "sections": 1,
-        "articles": 0,
-        "tables": 0,
-        "dialogs": 0,
-        "canvases": 0,
-        "videos": 0,
-        "roles": {},
-        "anchor_count": 126
-      }
-    },
-    {
-      "id": "5f5c7334f19d2c5d",
-      "url": "https://adinabuzatu.ro/collection/cadouri",
-      "family": "external.product",
-      "inspection_level": "http_dom",
-      "observed_at": "2026-11-23T08:47:18.735457+00:00",
-      "source_sha256": "0cb0a4510c8902d6e15647939e2904cfea19b0173db2a0d60d555ef0a1988a27",
-      "structure": {
-        "headings": {
-          "h1": 1
-        },
-        "forms": 0,
-        "input_types": {},
-        "navigation_regions": 2,
-        "main_regions": 1,
-        "sections": 1,
-        "articles": 0,
-        "tables": 0,
-        "dialogs": 0,
-        "canvases": 0,
-        "videos": 0,
-        "roles": {},
-        "anchor_count": 108
       }
     }
   ],

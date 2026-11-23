@@ -1,8 +1,8 @@
 {
   "schema_version": "1.0",
-  "recorded_at": "2026-11-23T09:13:35.067628+00:00",
+  "recorded_at": "2026-11-23T11:16:55.422418+00:00",
   "status": "in_progress",
-  "interaction_skills": 3,
+  "interaction_skills": 4,
   "scope": "Specific source-informed mechanisms complement page-level skills; not exhaustive site coverage",
   "skills": [
     {
@@ -59,6 +59,26 @@
         "active-theory-compatibility-fallback"
       ],
       "asset_sha256": "475b8e13d8e6738ffc464aa7efeddbf755606cde4f7e88846beb09f013ad24cd",
+      "source_normal_experience_validated": false,
+      "status": "original_pattern_with_limited_source_observations"
+    },
+    {
+      "id": "bounded-physics",
+      "skill": "awwwards-pattern-bounded-physics",
+      "title": "有界物理装饰：可控对象、等价输入与静态替代",
+      "kind": "physics",
+      "path": "skills/awwwards-pattern-bounded-physics",
+      "demo": "skills/awwwards-pattern-bounded-physics/assets/",
+      "supports_page_skills": [
+        "awwwards-page-external-about",
+        "awwwards-page-external-experiment",
+        "awwwards-advanced-motion"
+      ],
+      "source_observation_ids": [
+        "ponpon-about-physics-phone",
+        "ponpon-about-physics-wide"
+      ],
+      "asset_sha256": "4f4ec0a2ae48f31fc6e4544716e5b60c1ac62486b9a05edce52af4df84a7158e",
       "source_normal_experience_validated": false,
       "status": "original_pattern_with_limited_source_observations"
     }

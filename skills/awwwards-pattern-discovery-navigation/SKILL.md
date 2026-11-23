@@ -33,7 +33,7 @@ description: Implement a distinct discovery navigation pattern with recorded sou
 ```text
 python scripts/scaffold.py --output YOUR_EMPTY_DIRECTORY
 ```
-在导出目录运行 `python -m http.server 8000 --bind 127.0.0.1` 并访问 http://127.0.0.1:8000/ 。拒绝覆盖非空目录，不依赖 npm 或原站素材。Three.js 示例保留其 MIT 文件。
+在导出目录运行 `python -m http.server 8000 --bind 127.0.0.1` 并访问 http://127.0.0.1:8000/ 。拒绝覆盖非空目录，不依赖 npm 或原站素材。此示例不加载原站代码或第三方运行库。
 
 ## 剩余边界
 - 原站搜索未提交；蓝本搜索不是原站搜索的复刻。

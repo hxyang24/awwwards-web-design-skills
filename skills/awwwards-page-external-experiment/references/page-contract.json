@@ -65,6 +65,29 @@
         },
         "anchor_count": 98
       }
+    },
+    {
+      "id": "e676e43a44421506",
+      "url": "https://www.fromanother.love/lab",
+      "family": "external.experiment",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T11:14:33.155323+00:00",
+      "source_sha256": "89757ed1b1df2980f8c464b23dfc0c0775e3b5de06ef02f33b4707a2f71b898a",
+      "structure": {
+        "headings": {},
+        "forms": 0,
+        "input_types": {},
+        "navigation_regions": 0,
+        "main_regions": 0,
+        "sections": 0,
+        "articles": 0,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 4,
+        "videos": 47,
+        "roles": {},
+        "anchor_count": 8
+      }
     }
   ],
   "visual_metrics": [],

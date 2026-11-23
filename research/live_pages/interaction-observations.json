@@ -657,6 +657,96 @@
       "private_screenshot_sha256": "92c34324e195b399e7cb7546b16c1e14dbfea626d5097f24b5a96eaec7178949",
       "source_screenshots_redistributed": false,
       "normal_site_interactions": "not_observed"
+    },
+    {
+      "id": "ponpon-about-physics-phone",
+      "source_id": "9c9808fb1aa1b52b",
+      "url": "https://ponpon-mania.com/about",
+      "viewport": {
+        "width": 390,
+        "height": 1000,
+        "device_scale_factor": 1
+      },
+      "observed_at": "2026-11-23T10:40:11.163Z",
+      "status": "rendered_content_observed",
+      "normal_source_experience_fully_validated": false,
+      "source_assets_redistributed": false,
+      "observations": [
+        "About viewport displayed a decorative character pile in a canvas.",
+        "Pointer input sampled with URL remaining on About after removing automatic Escape cleanup.",
+        "Position changes were visible; cursor-follow dragging, exact force rules, touch and source engine identity are not established."
+      ],
+      "sampled_actions": [
+        {
+          "action": "click",
+          "url_before": "https://ponpon-mania.com/about",
+          "url_after": "https://ponpon-mania.com/about",
+          "automatic_key_sent": false
+        },
+        {
+          "action": "drag",
+          "url_before": "https://ponpon-mania.com/about",
+          "url_after": "https://ponpon-mania.com/about",
+          "automatic_key_sent": false
+        }
+      ],
+      "targeted_frame_review": {
+        "viewport_width": 390,
+        "input": "mouse pointer on a phone-width viewport",
+        "from": [
+          145,
+          835
+        ],
+        "to": [
+          150,
+          450
+        ],
+        "review": "A later live-session sample targeted a currently visible character. The pile spread/rearranged; no character followed the cursor to the upper destination.",
+        "frame_sha256": {
+          "live-before-1": "6ea79982b7bf4113fdb1dfef323649247fcaeeed53fb6dea5666c50bf00a91ee",
+          "live-during-1": "605c2c92f2b1089b0ec4b16f794d75ef5c863fa34a39fbde75bd579d58c51791",
+          "live-after-1": "c55f6947cbe57fbc15f9bb2a425c7dae9cc290bef0d7a7a0ae5be0aec242fc7e"
+        }
+      }
+    },
+    {
+      "id": "ponpon-about-physics-wide",
+      "source_id": "9c9808fb1aa1b52b",
+      "url": "https://ponpon-mania.com/about",
+      "viewport": {
+        "width": 1440,
+        "height": 1000,
+        "device_scale_factor": 1
+      },
+      "observed_at": "2026-11-23T10:40:35.822Z",
+      "status": "rendered_content_observed",
+      "normal_source_experience_fully_validated": false,
+      "source_assets_redistributed": false,
+      "observations": [
+        "About viewport displayed a decorative character pile in a canvas.",
+        "Pointer input sampled with URL remaining on About after removing automatic Escape cleanup.",
+        "Position changes were visible; cursor-follow dragging, exact force rules, touch and source engine identity are not established."
+      ],
+      "sampled_actions": [
+        {
+          "action": "click",
+          "url_before": "https://ponpon-mania.com/about",
+          "url_after": "https://ponpon-mania.com/about",
+          "automatic_key_sent": false
+        },
+        {
+          "action": "move",
+          "url_before": "https://ponpon-mania.com/about",
+          "url_after": "https://ponpon-mania.com/about",
+          "automatic_key_sent": false
+        },
+        {
+          "action": "move",
+          "url_before": "https://ponpon-mania.com/about",
+          "url_after": "https://ponpon-mania.com/about",
+          "automatic_key_sent": false
+        }
+      ]
     }
   ]
 }

@@ -17,6 +17,14 @@ ASSET=re.compile(r'\.(?:png|jpe?g|gif|webp|svg|ico|avif|mp4|webm|mov|mp3|ogg|pdf
 USER_PATH=re.compile(r'^/(?:login|logout|register|sign[-_]?in|sign[-_]?up|checkout|cart|account|admin|wp-admin|wp-login|api)(?:/|$)',re.I)
 SEEDS=['/','/websites/','/websites/sites_of_the_day/','/websites/sites_of_the_month/','/websites/sites_of_the_year/','/websites/nominees/','/honors/winners','/winner-list/','/annual-awards/','/jury/2026/','/collections/','/library/','/directory/','/directory/homepage/','/directory/international/','/directory/freelance/','/directory/agency-studio/','/academy/','/jobs/','/market/','/pro','/plans/user-plans','/submit/','/faqs/','/blog/','/about-us/','/contact-us/','/conferences/','/privacy-policy/','/terms/','/cookies-policy/']
 def now():return datetime.datetime.now(datetime.timezone.utc).isoformat()
+
+def content_state_hint(title,headings):
+ texts=[' '.join(x.lower().replace('’',"'").replace('‘',"'").split()) for x in [title,*headings]]
+ for text in texts:
+  if re.search(r"^(?:404(?:\s*[-|:]|$)|(?:this |the )?page (?:not found|doesn'?t exist|does not exist)|not found(?:\s*[-|:]|$))",text):return 'possible_not_found'
+  if re.search(r"^(?:(?:this |the )?page (?:couldn'?t|cannot|can'?t) load|application error|something went wrong)",text):return 'possible_render_error'
+  if re.search(r"^(?:your |this )?browser (?:is )?not supported|^unsupported browser",text):return 'possible_compatibility_fallback'
+ return 'unclassified'
 def normalize(value,base):
  try:
   u=urllib.parse.urlsplit(urllib.parse.urljoin(base,html.unescape(value)))
@@ -84,12 +92,13 @@ def family(url):
  if len([x for x in p.split('/') if x])==1:return 'main.creator-profile'
  return 'main.other'
 class Structure(HTMLParser):
- def __init__(self):super().__init__(convert_charrefs=True);self.tags=Counter();self.inputs=Counter();self.roles=Counter();self.links=[];self.active=None;self.title='';self.in_title=False;self.ignore=0;self.headings=Counter();self.canonical=None
+ def __init__(self):super().__init__(convert_charrefs=True);self.tags=Counter();self.inputs=Counter();self.roles=Counter();self.links=[];self.active=None;self.title='';self.in_title=False;self.ignore=0;self.headings=Counter();self.canonical=None;self.heading_tag=None;self.heading_text='';self.heading_texts=[]
  def handle_starttag(self,tag,attrs):
   a=dict(attrs);self.tags[tag]+=1
   if tag in ('script','style'):self.ignore+=1
   if tag=='title':self.in_title=True
   if tag in ['h1','h2','h3','h4','h5','h6']:self.headings[tag]+=1
+  if tag in ('h1','h2'):self.heading_tag=tag;self.heading_text=''
   if a.get('role'):self.roles[a['role']]+=1
   if tag=='input':self.inputs[a.get('type','text').lower()]+=1
   if tag=='link' and a.get('rel')=='canonical':self.canonical=a.get('href')
@@ -97,9 +106,13 @@ class Structure(HTMLParser):
  def handle_endtag(self,tag):
   if tag in ('script','style'):self.ignore=max(0,self.ignore-1)
   if tag=='title':self.in_title=False
+  if tag==self.heading_tag:
+   if len(self.heading_texts)<30:self.heading_texts.append(self.heading_text[:300])
+   self.heading_tag=None;self.heading_text=''
   if tag=='a' and self.active:self.links.append(self.active);self.active=None
  def handle_data(self,data):
   if self.in_title:self.title+=data
+  if self.heading_tag and not self.ignore:self.heading_text+=data[:300]
   if self.active and not self.ignore:self.active['text']+=data[:100]
 class NoRedirect(urllib.request.HTTPRedirectHandler):
  def redirect_request(self,*args,**kwargs):return None
@@ -157,6 +170,8 @@ class Collector:
     try:delay=max(5,min(3600,int(retry)))
     except ValueError:delay=60
     with self.lock:self.db.execute('INSERT INTO host_backoff(host,retry_after)VALUES(?,?) ON CONFLICT(host)DO UPDATE SET retry_after=MAX(retry_after,excluded.retry_after)',(host,time.time()+delay));self.db.commit()
+   if e.code in (404,410):
+    b=e.read(self.max_bytes+1);return e.code,dict(e.headers),b[:self.max_bytes],len(b)>self.max_bytes
    return e.code,dict(e.headers),b'',False
  def policy(self,url):
   host=urllib.parse.urlsplit(url).netloc
@@ -207,12 +222,16 @@ class Collector:
     target=normalize(headers['Location'],url);record['redirect_to']=target
     if target and (same_site(url,target) or scope=='external'):self.add(target,url,scope,3)
     record['status']='redirect';return record
-   if code<200 or code>=300:return record
+   if code in (404,410):record['status']='http_not_found'
+   elif code<200 or code>=300:return record
    content_type=next((v for k,v in headers.items() if k.lower()=='content-type'),'');record['content_type']=content_type
    if not any(s in content_type.lower() for s in ('html','xhtml')):record['status']='non_html';return record
    sha=hashlib.sha256(body).hexdigest();record['source_sha256']=sha;(self.raw/(record['id']+'.html')).write_bytes(body)
    parser=Structure();parser.feed(body.decode('utf-8','replace'));record.update({'inspection_level':'partial_http_dom' if truncated else 'http_dom','title':' '.join(parser.title.split()[:14])[:180],'structure':{'headings':dict(parser.headings),'forms':parser.tags['form'],'input_types':dict(parser.inputs),'navigation_regions':parser.tags['nav'],'main_regions':parser.tags['main'],'sections':parser.tags['section'],'articles':parser.tags['article'],'tables':parser.tags['table'],'dialogs':parser.tags['dialog'],'canvases':parser.tags['canvas'],'videos':parser.tags['video'],'roles':dict(parser.roles),'anchor_count':len(parser.links)}})
    if parser.canonical:record['declared_canonical']=normalize(parser.canonical,url)
+   record['content_state_hint']=content_state_hint(parser.title,parser.heading_texts)
+   if code in (404,410) and record['content_state_hint']=='unclassified':record['content_state_hint']='http_not_found_reference'
+   record['content_state_method']='Title/heading text only; requires rendered review. Unclassified does not prove normal content.'
    root=urllib.parse.urlsplit(url).hostname
    with self.lock:known={h for (h,) in self.db.execute('SELECT host FROM roots')}
    links=[];winners=[];external_pages=[]
@@ -248,6 +267,8 @@ class Collector:
   with self.lock:
    rows=[json.loads(r) for (r,) in self.db.execute('SELECT record FROM queue WHERE record IS NOT NULL ORDER BY url')];counts=dict(self.db.execute('SELECT state,COUNT(*)FROM queue GROUP BY state'));roots=[{'host':h,'official_url':u,'award_status':'not_independently_verified'} for h,u in self.db.execute('SELECT host,official_url FROM roots ORDER BY host')];pending=[{'url':u,'scope':s,'family':family(u)} for u,s in self.db.execute('SELECT url,scope FROM queue WHERE state!="done" ORDER BY priority,url')]
   statuses=Counter(r['status'] for r in rows);families=Counter(r['family'] for r in rows if r['inspection_level']=='http_dom');summary={'snapshot_at':now(),'goal':'Convert Awwwards main-site and awarded external-site page patterns into reusable skills','status':'in_progress','scope':['Awwwards public page families and concrete pages','Awarded external websites and their reachable inner pages'],'queue':counts,'observed_records':len(rows),'observed_complete_http_dom':sum(r['inspection_level']=='http_dom' for r in rows),'statuses':dict(statuses),'families_http_dom':dict(sorted(families.items())),'awarded_external_hosts_discovered':len(roots),'not_claimed':['Exhaustive discovery of every historical award','All external websites fully traversed','Visual or interaction completion from HTTP DOM','Skill completion solely from URL counts'],'raw_content_distribution':'not included','robots_respected':True}
+  summary['http_dom_content_state_hints']=dict(sorted(Counter(r.get('content_state_hint','unclassified') for r in rows if r['inspection_level']=='http_dom').items()))
+  summary['content_state_hint_note']='Title/heading heuristics only. Unclassified is not normal UI proof; complete HTTP DOM includes readable HTTP-error references.'
   summary['awwwards_linked_external_hosts_discovered']=len(roots)
   summary['external_host_count_note']='The legacy awarded_external_hosts_discovered field counts explicit work-detail-linked hosts; winning status is not independently verified per host.'
   summary['pending_sample_count']=min(200,len(pending));summary['pending_sample_is_exhaustive']=len(pending)<=200
