@@ -1,5 +1,7 @@
 {
-  "distribution": "Awwwards Web Design Skills v2.0.0 public source",
+  "version": "2.0.1",
+  "distribution": "public source",
+  "self_excluded": "SOURCE_MANIFEST.json",
   "files": [
     {
       "path": ".gitattributes",
@@ -23,8 +25,8 @@
     },
     {
       "path": "docs/OPEN_SOURCE_PUBLICATION.md",
-      "bytes": 1344,
-      "sha256": "42b2b5c871a97b1bf822b44755f39b64fe4b06a90c83a3376aa161e9aae62c1a"
+      "bytes": 1998,
+      "sha256": "6a638bc7837e4608289ee1bec84d28b59eedaceded2f76ddc5ac46b49d00e072"
     },
     {
       "path": "LICENSE",
@@ -213,8 +215,8 @@
     },
     {
       "path": "package/MANIFEST-V2.json",
-      "bytes": 62106,
-      "sha256": "f81a3acf4137a771e3dbf778bbde8ae960df567fd96fade485e968ed83d94758"
+      "bytes": 62002,
+      "sha256": "6e792137072fab2c28a0afb62349aebadce33816f52d0d96aec63b5fb593b1ed"
     },
     {
       "path": "package/MANIFEST.json",
@@ -1659,12 +1661,12 @@
     {
       "path": "package/v2/package-lock.json",
       "bytes": 4352,
-      "sha256": "2977514d3efaa83c7728ae632b76f9713fe886630643b120df4ed409f2bde224"
+      "sha256": "dab1e72442225b471a507f699372d08b8c696b94c970954a312cd3a8c2bb1437"
     },
     {
       "path": "package/v2/package.json",
       "bytes": 706,
-      "sha256": "65fb3f9be41a2a33b6d084e14bb3208e77110601307c4d1ad170aaf0f1912c2d"
+      "sha256": "10b6d1ab605ff26fb52b74394588ea67d0895b365218e4554634084c720580b7"
     },
     {
       "path": "package/v2/server.mjs",
@@ -1673,13 +1675,13 @@
     },
     {
       "path": "package/v2/tests/browser.mjs",
-      "bytes": 20191,
-      "sha256": "6e92412afd31aa94474ad3d080d619a29c57fdb0cc98e04867f4c428a5fe33db"
+      "bytes": 20199,
+      "sha256": "02241e48e88d5fd0def499727477ad816cb671afd9833a1709a23751c31401b3"
     },
     {
       "path": "package/v2/tests/cold.mjs",
-      "bytes": 5010,
-      "sha256": "5e00bc734a0841dd3f1b03a52922f25b9492199c58e67c4b38863c0ea2402485"
+      "bytes": 5100,
+      "sha256": "2232d1ad636d18c6d7926521d34b6449323d297a50bf7dbde36a04d7eae30a1e"
     },
     {
       "path": "package/v2/tests/exported.mjs",
@@ -1788,8 +1790,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 5257,
-      "sha256": "1fd2cbaa714eb2586b6b2872b402387fd5cb50955d06edcd154b89be493af9e0"
+      "bytes": 5302,
+      "sha256": "8d4d1ba41cb8da0c918fb9972438055ea83fa126af98ffa6f1841dba8264466a"
     },
     {
       "path": "THIRD_PARTY_NOTICES.md",

@@ -1,13 +1,7 @@
 {
-  "version": "2.0.0",
+  "version": "2.0.1",
   "distribution": "public-source",
-  "date": "2026-11-23",
   "self_excluded": "MANIFEST-V2.json",
-  "exclusions": [
-    "node_modules",
-    "__pycache__",
-    "*.pyc"
-  ],
   "files": [
     {
       "path": "AGENT_START_HERE.md",
@@ -1632,12 +1626,12 @@
     {
       "path": "v2/package-lock.json",
       "bytes": 4352,
-      "sha256": "2977514d3efaa83c7728ae632b76f9713fe886630643b120df4ed409f2bde224"
+      "sha256": "dab1e72442225b471a507f699372d08b8c696b94c970954a312cd3a8c2bb1437"
     },
     {
       "path": "v2/package.json",
       "bytes": 706,
-      "sha256": "65fb3f9be41a2a33b6d084e14bb3208e77110601307c4d1ad170aaf0f1912c2d"
+      "sha256": "10b6d1ab605ff26fb52b74394588ea67d0895b365218e4554634084c720580b7"
     },
     {
       "path": "v2/server.mjs",
@@ -1646,13 +1640,13 @@
     },
     {
       "path": "v2/tests/browser.mjs",
-      "bytes": 20191,
-      "sha256": "6e92412afd31aa94474ad3d080d619a29c57fdb0cc98e04867f4c428a5fe33db"
+      "bytes": 20199,
+      "sha256": "02241e48e88d5fd0def499727477ad816cb671afd9833a1709a23751c31401b3"
     },
     {
       "path": "v2/tests/cold.mjs",
-      "bytes": 5010,
-      "sha256": "5e00bc734a0841dd3f1b03a52922f25b9492199c58e67c4b38863c0ea2402485"
+      "bytes": 5100,
+      "sha256": "2232d1ad636d18c6d7926521d34b6449323d297a50bf7dbde36a04d7eae30a1e"
     },
     {
       "path": "v2/tests/exported.mjs",

@@ -1,4 +1,4 @@
-# Awwwards Web Design Skills · V2.0
+# Awwwards Web Design Skills · V2.0.1
 
 [![CI](https://github.com/hxyang24/awwwards-web-design-skills/actions/workflows/ci.yml/badge.svg)](https://github.com/hxyang24/awwwards-web-design-skills/actions/workflows/ci.yml)
 [![Original code: MIT](https://img.shields.io/badge/original_code-MIT-green.svg)](LICENSE)
@@ -86,4 +86,4 @@ npm run test:export
 
 原创代码、技能及原创文档以 [MIT](LICENSE) 开源。**第三方组件不被重新许可：GSAP 使用其标准许可，不是 MIT；Three.js 保留 MIT。** 研究资料及链接不授予原站设计、品牌、代码或素材复制权。详见 [第三方声明](THIRD_PARTY_NOTICES.md)。
 
-这是独立研究与原创实现项目，与 Awwwards 无隶属或背书关系。公开分发仅规范化少量测试元数据并移除私人聊天标识，旧版 187 文件仍保留原字节，见 [公开发布记录](docs/OPEN_SOURCE_PUBLICATION.md)。
+这是独立研究与原创实现项目，与 Awwwards 无隶属或背书关系。公开版移除私人聊天标识、规范化少量元数据，并修正 Linux 在线测试的详情页等待条件，旧版 187 文件仍保留原字节，见 [公开发布记录](docs/OPEN_SOURCE_PUBLICATION.md)。
