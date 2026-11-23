@@ -5,10 +5,25 @@ sys.dont_write_bytecode=True
 R=Path(__file__).resolve().parents[1];sys.path.insert(0,str(R/'tools'))
 from page_research import normalize,Robots,Structure,Collector,family,content_state_hint
 from build_page_skills import definitions
+from reviewed_family import load_reviews,assign_family
 from install_all_skills import install
 def load(path,name):
  spec=importlib.util.spec_from_file_location(name,path);m=importlib.util.module_from_spec(spec);spec.loader.exec_module(m);return m
 class PageSkills(unittest.TestCase):
+ def test_exact_url_review_assigns_arbitrary_slug_without_generalizing(self):
+  reviews=load_reviews(R)
+  with (R/'research/live_pages/sources.jsonl').open(encoding='utf-8') as f:
+   source=next(json.loads(line) for line in f if '5be4915e232c552f' in line)
+  assigned=assign_family(source,reviews);self.assertEqual(assigned['family'],'external.product');self.assertEqual(assigned['heuristic'],'external.other')
+  self.assertEqual(assign_family({**source,'url':'https://marryandbride.com/a-different-slug/'},reviews)['family'],'external.other')
+ def test_review_becomes_stale_when_cached_source_hash_changes_or_source_is_unavailable(self):
+  reviews=load_reviews(R);review=next(iter(reviews.values()));source={'url':review['url'],'id':review['source_id'],'source_sha256':review['source_sha256'],'inspection_level':'http_dom'}
+  for changed in [{**source,'source_sha256':'0'*64},{**source,'inspection_level':'http_error'},{**source,'id':'other'}]:
+   result=assign_family(changed,reviews);self.assertEqual(result['review_status'],'stale');self.assertEqual(result['family'],'external.other')
+ def test_product_static_fallback_has_all_views_prices_and_disabled_selection_controls(self):
+  text=(R/'page_skills/business/product/index.html').read_text(encoding='utf-8')
+  for part in ['data-view="0"','data-view="1"','data-view="2"','$145.00','$185.00','id="configuration" disabled','Tax and delivery are unknown']:
+   self.assertIn(part,text)
  def test_editorial_static_fallback_keeps_every_original_story_and_native_destination(self):
   folder=R/'page_skills/editorial/magazine';data=json.loads((folder/'articles.json').read_text(encoding='utf-8'));markup=(folder/'index.html').read_text(encoding='utf-8')
   for article in data['articles']:

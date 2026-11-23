@@ -1,0 +1,181 @@
+{
+  "schema_version": "1.0",
+  "purpose": "Limited product-detail reference evidence for an original standalone page Skill",
+  "source_screenshots_redistributed": false,
+  "source_media_redistributed": false,
+  "observations": [
+    {
+      "id": "marry-gallery-390",
+      "source_id": "5be4915e232c552f",
+      "url": "https://marryandbride.com/come-fly-with-me-braut-cape/",
+      "viewport": {
+        "width": 390,
+        "height": 1000,
+        "device_scale_factor": 1
+      },
+      "observed_at": "2026-11-23T13:01:01.390Z",
+      "status": "rendered_observed",
+      "actions": [
+        {
+          "name": "Go to slide 2",
+          "status": "acted_and_observed",
+          "observable_state_changed": true
+        },
+        {
+          "name": "Material & Pflege",
+          "status": "acted_and_observed",
+          "observable_state_changed": true
+        },
+        {
+          "name": "Lieferung & Rückgaben",
+          "status": "acted_and_observed",
+          "observable_state_changed": true
+        }
+      ],
+      "not_claimed": [
+        "Autoplay from a single initial slide",
+        "Purchase, wishlist, messages or backend actions"
+      ],
+      "private_screenshot_sha256": "267ca1f7cbff458421b0d26deb1babaf2ed1452a303e75d54fad0727f17ee931"
+    },
+    {
+      "id": "marry-gallery-1440",
+      "source_id": "5be4915e232c552f",
+      "url": "https://marryandbride.com/come-fly-with-me-braut-cape/",
+      "viewport": {
+        "width": 1440,
+        "height": 1000,
+        "device_scale_factor": 1
+      },
+      "observed_at": "2026-11-23T13:01:21.669Z",
+      "status": "rendered_observed",
+      "actions": [
+        {
+          "name": "Go to slide 2",
+          "status": "acted_and_observed",
+          "observable_state_changed": true
+        },
+        {
+          "name": "Material & Pflege",
+          "status": "acted_and_observed",
+          "observable_state_changed": true
+        },
+        {
+          "name": "Lieferung & Rückgaben",
+          "status": "acted_and_observed",
+          "observable_state_changed": true
+        }
+      ],
+      "not_claimed": [
+        "Autoplay from a single initial slide",
+        "Purchase, wishlist, messages or backend actions"
+      ],
+      "private_screenshot_sha256": "72c709154325d5643e4c92e3c461b8ae0a6c2bf41ac778f1d5320e12788b4502"
+    },
+    {
+      "id": "marry-options-390",
+      "source_id": "5be4915e232c552f",
+      "url": "https://marryandbride.com/come-fly-with-me-braut-cape/",
+      "viewport": {
+        "width": 390,
+        "height": 1000,
+        "device_scale_factor": 1
+      },
+      "observed_at": "2026-11-23T13:18:46.717Z",
+      "status": "rendered_observed",
+      "official_relationship": {
+        "url": "https://www.awwwards.com/sites/marry-bride",
+        "label": "honorable_mention",
+        "award_date": "2026-08-05",
+        "verification": "Live official structured fetch confirmed on 2026-11-23; applies to named work, not independent award for this inner page"
+      },
+      "actions": [
+        {
+          "name": "Inspected single available color label",
+          "status": "acted_and_observed",
+          "observable_state_changed": false,
+          "result": "The only color remains selected; no alternate color transition demonstrated"
+        },
+        {
+          "name": "Enable express option through inspected visible label",
+          "status": "acted_and_observed",
+          "observable_state_changed": true,
+          "checked_before": false,
+          "checked_after": true,
+          "displayed_preparation_time_changed": true
+        },
+        {
+          "name": "Disable express option through same visible label",
+          "status": "acted_and_observed",
+          "observable_state_changed": true,
+          "checked_after": false,
+          "displayed_preparation_time_restored": true
+        }
+      ],
+      "field_visibility_correction": "An earlier native-visible-only scan omitted styled fields. The color select is display:none, its visible swatch uses a labeled radio, and the express checkbox is transparent with a visible associated label. Absence cannot be inferred from that old scan.",
+      "request_guard": "Only anonymous GET/HEAD allowed; source non-read requests were aborted. No source form submission, cart, wishlist, contact or purchase was operated.",
+      "not_claimed": [
+        "Source price recalculation was not captured",
+        "All variations, availability or stock semantics",
+        "Source implementation version or backend behavior",
+        "Source terms or media rights"
+      ],
+      "private_screenshot_sha256": "169769727e0ddd6ddc15431038708f96382c4a73a207886ad52903bea9665e5e"
+    },
+    {
+      "id": "marry-options-1440",
+      "source_id": "5be4915e232c552f",
+      "url": "https://marryandbride.com/come-fly-with-me-braut-cape/",
+      "viewport": {
+        "width": 1440,
+        "height": 1000,
+        "device_scale_factor": 1
+      },
+      "observed_at": "2026-11-23T13:18:56.471Z",
+      "status": "rendered_observed",
+      "official_relationship": {
+        "url": "https://www.awwwards.com/sites/marry-bride",
+        "label": "honorable_mention",
+        "award_date": "2026-08-05",
+        "verification": "Live official structured fetch confirmed on 2026-11-23; applies to named work, not independent award for this inner page"
+      },
+      "actions": [
+        {
+          "name": "Inspected single available color label",
+          "status": "acted_and_observed",
+          "observable_state_changed": false,
+          "result": "The only color remains selected; no alternate color transition demonstrated"
+        },
+        {
+          "name": "Enable express option through inspected visible label",
+          "status": "acted_and_observed",
+          "observable_state_changed": true,
+          "checked_before": false,
+          "checked_after": true,
+          "displayed_preparation_time_changed": true
+        },
+        {
+          "name": "Disable express option through same visible label",
+          "status": "acted_and_observed",
+          "observable_state_changed": true,
+          "checked_after": false,
+          "displayed_preparation_time_restored": true
+        }
+      ],
+      "field_visibility_correction": "An earlier native-visible-only scan omitted styled fields. The color select is display:none, its visible swatch uses a labeled radio, and the express checkbox is transparent with a visible associated label. Absence cannot be inferred from that old scan.",
+      "request_guard": "Only anonymous GET/HEAD allowed; source non-read requests were aborted. No source form submission, cart, wishlist, contact or purchase was operated.",
+      "not_claimed": [
+        "Source price recalculation was not captured",
+        "All variations, availability or stock semantics",
+        "Source implementation version or backend behavior",
+        "Source terms or media rights"
+      ],
+      "private_screenshot_sha256": "62e460510318505a7ec563af4274ccf2e8238bf025c4fa1fa919bc03422c0324"
+    }
+  ],
+  "unresolved_reference": {
+    "url": "https://www.cartier.com/en-us/loveconfigurator.html",
+    "status": "http_403_at_390_and_1440",
+    "not_claimed": "No normal configurator, 3D or configuration behavior observed. A different Cartier campaign record cannot prove this page independently awarded."
+  }
+}

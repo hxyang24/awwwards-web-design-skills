@@ -1,0 +1,160 @@
+{
+  "recorded_at": "2026-11-23T13:35:28.035Z",
+  "status": "passed",
+  "checks": [
+    {
+      "name": "Product layout at 320",
+      "status": "passed"
+    },
+    {
+      "name": "Product layout at 390",
+      "status": "passed"
+    },
+    {
+      "name": "Product layout at 768",
+      "status": "passed"
+    },
+    {
+      "name": "Product layout at 1440",
+      "status": "passed"
+    },
+    {
+      "name": "Product selected accessibility rules at 390",
+      "status": "passed"
+    },
+    {
+      "name": "Product selected accessibility rules at 1440",
+      "status": "passed"
+    },
+    {
+      "name": "Product gallery switches explicit views without autoplay at 390",
+      "status": "passed"
+    },
+    {
+      "name": "Product gallery switches explicit views without autoplay at 1440",
+      "status": "passed"
+    },
+    {
+      "name": "Enlarged gallery supports arrows wraparound Escape and focus return",
+      "status": "passed"
+    },
+    {
+      "name": "Color choices retain native state update artwork and preserve unknown stock",
+      "status": "passed"
+    },
+    {
+      "name": "Sold out is distinct from unknown and a valid choice recovers",
+      "status": "passed"
+    },
+    {
+      "name": "Size quantity and express update the known estimate with a fixed fee",
+      "status": "passed"
+    },
+    {
+      "name": "Editing invalidates the old estimate and local save feedback",
+      "status": "passed"
+    },
+    {
+      "name": "Native color radios and express checkbox work from keyboard",
+      "status": "passed"
+    },
+    {
+      "name": "Invalid quantity stays editable and focuses a meaningful error",
+      "status": "passed"
+    },
+    {
+      "name": "Quantity above sample availability does not open a review",
+      "status": "passed"
+    },
+    {
+      "name": "Failed quote retry preserves selected size quantity and express",
+      "status": "passed"
+    },
+    {
+      "name": "Editing aborts a pending quote and prevents stale success",
+      "status": "passed"
+    },
+    {
+      "name": "A new quote wins after an older request is aborted",
+      "status": "passed"
+    },
+    {
+      "name": "Review dialog Escape and back restore the triggering focus",
+      "status": "passed"
+    },
+    {
+      "name": "Local save has no persistent order or payment side effects",
+      "status": "passed"
+    },
+    {
+      "name": "Changed local sample price requires and displays a fresh estimate",
+      "status": "passed"
+    },
+    {
+      "name": "Materials delivery and estimate disclosures operate independently",
+      "status": "passed"
+    },
+    {
+      "name": "Enlarged dialog selected accessibility rules",
+      "status": "passed"
+    },
+    {
+      "name": "Estimate review selected accessibility rules",
+      "status": "passed"
+    },
+    {
+      "name": "Reduced motion retains a static controllable gallery",
+      "status": "passed"
+    },
+    {
+      "name": "No JavaScript preserves all original views prices specifications and boundaries",
+      "status": "passed"
+    },
+    {
+      "name": "Data failure leaves readable fallback and retry enables controls",
+      "status": "passed"
+    },
+    {
+      "name": "Malformed product data does not enable controls or inject unsafe markup",
+      "status": "passed"
+    },
+    {
+      "name": "Dispose cancels owned work restores fallback and leaves host controls usable",
+      "status": "passed"
+    },
+    {
+      "name": "No uncaught errors or external requests in original product flows",
+      "status": "passed"
+    }
+  ],
+  "accessibility": [
+    {
+      "tag": "default-390",
+      "violations": []
+    },
+    {
+      "tag": "default-1440",
+      "violations": []
+    },
+    {
+      "tag": "enlarged-dialog",
+      "violations": []
+    },
+    {
+      "tag": "review-dialog",
+      "violations": []
+    }
+  ],
+  "screenshots": [
+    "research/product_skill_validation/screenshots/product-390.png",
+    "research/product_skill_validation/screenshots/product-1440.png"
+  ],
+  "uncaught_errors": [],
+  "external_requests": [],
+  "limitations": [
+    "Original local fictional template tests, not a source-site clone or live commerce acceptance",
+    "Selected automated accessibility rules do not replace manual assistive-technology testing",
+    "No physical-device, real stock, cart, payment, shipping or legal-policy validation",
+    "A short static-gallery observation is not a full source autoplay audit"
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "recorded_at": "2026-11-23T13:36:13.398Z",
+  "status": "passed",
+  "checks": [
+    {
+      "name": "Transparent checkbox retains its visible associated label",
+      "status": "passed"
+    },
+    {
+      "name": "Hidden native select does not erase a visible label and radio affordance",
+      "status": "passed"
+    },
+    {
+      "name": "Hidden ancestor and hidden label are not visible affordances",
+      "status": "passed"
+    },
+    {
+      "name": "Duplicate labels remain separate and do not imply unique action targets",
+      "status": "passed"
+    },
+    {
+      "name": "Observation records disabled state without entering or exposing field values",
+      "status": "passed"
+    },
+    {
+      "name": "Bounded observation explicitly reports truncation",
+      "status": "passed"
+    },
+    {
+      "name": "Read-only field observation neither selects nor clicks controls",
+      "status": "passed"
+    }
+  ],
+  "limitations": [
+    "Original fixtures; label visibility does not certify source behavior, unobscured target or complete field discovery"
+  ]
+}

@@ -3,6 +3,7 @@
 from pathlib import Path
 import datetime,hashlib,importlib.util,json,shutil,html
 from page_research import family
+from reviewed_family import load_reviews,assign_family
 R=Path(__file__).resolve().parents[1]
 def definitions():
  spec=importlib.util.spec_from_file_location('page_definitions',R/'page_skills/definitions.py');module=importlib.util.module_from_spec(spec);spec.loader.exec_module(module);return module.PAGES
@@ -33,17 +34,18 @@ def build_editorial_fallback():
 def generate():
  build_story_fallback()
  build_editorial_fallback()
- source_file=R/'research/live_pages/sources.jsonl';sources=[]
+ source_file=R/'research/live_pages/sources.jsonl';sources=[];reviews=load_reviews(R)
  if source_file.exists():
   with source_file.open(encoding='utf-8') as f:
    for line in f:
     if line.strip():
-     source=json.loads(line);source['family']=family(source['url']);sources.append(source)
+     source=json.loads(line);assignment=assign_family(source,reviews);source['family']=assignment['family'];sources.append(source)
  visual_file=R/'research/live_pages/visual-observations.json';visual=json.loads(visual_file.read_text(encoding='utf-8')).get('observations',[]) if visual_file.exists() else []
  patterns=json.loads((R/'interaction_skills/registry.json').read_text(encoding='utf-8'))['skills']
  creative_file=R/'research/live_pages/creative-page-observations.json';creative=json.loads(creative_file.read_text(encoding='utf-8')).get('observations',[]) if creative_file.exists() else []
  business_file=R/'research/live_pages/pricing-page-observations.json';creative+=json.loads(business_file.read_text(encoding='utf-8')).get('observations',[]) if business_file.exists() else []
  editorial_file=R/'research/live_pages/editorial-page-observations.json';creative+=json.loads(editorial_file.read_text(encoding='utf-8')).get('observations',[]) if editorial_file.exists() else []
+ product_file=R/'research/live_pages/product-page-observations.json';creative+=json.loads(product_file.read_text(encoding='utf-8')).get('observations',[]) if product_file.exists() else []
  registry=[]
  for id,families,title,kind,regions,workflow,fields,recovery,motion in definitions():
   name='awwwards-page-'+id;folder=R/'skills'/name
@@ -52,10 +54,11 @@ def generate():
    observed=sorted(observed,key=lambda s:(any(x in s.get('title','').lower() for x in ['accessibility','accommodation','choose your country']),len(s['url'])))
   if id=='external-editorial-index':observed.sort(key=lambda s:(s['id'] not in ['61347083729f7876','a6e0e3d19a1ef887'],s['id']!='61347083729f7876'))
   if id=='external-pricing':observed.sort(key=lambda s:s['id']!='a955e8342ff580e5')
+  if id=='external-product':observed.sort(key=lambda s:s['id']!='5be4915e232c552f')
   if id=='external-prompt-detail':observed.sort(key=lambda s:s['id']!='619b8560ee5995dd')
   selected=observed[:6];source_ids={s['id'] for s in selected};views=[v for v in visual if v['source_id'] in source_ids and v['status']=='rendered_observed']
   state_views=[v for v in creative if v['source_id'] in source_ids]
-  level='rendered_source_observations' if any(v['status'] in ['rendered_content_observed','rendered_content_signals_observed'] for v in state_views) else 'rendered_geometry' if views else ('http_dom' if selected else 'not_observed')
+  level='rendered_source_observations' if any(v['status'] in ['rendered_content_observed','rendered_content_signals_observed','rendered_observed'] for v in state_views) else 'rendered_geometry' if views else ('http_dom' if selected else 'not_observed')
   goal={'editorial-index':'按主题和完整目录搜索发现文章，并可靠继续加载、阅读与返回。','story-index':'选择可用章节，理解阅读顺序并按需恢复已保存的位置。','story':'以明确顺序阅读当前章节，并能切换阅读方式、继续或退出。','prompt':'审阅并编辑分层提示词，理解样例来源并可靠复制原创配方。','careers':'理解雇主理念、工作方式和岗位入口，再审阅符合条件的角色。','gallery':'按主题浏览视觉作品，用可访问的查看器审阅并返回索引。','experiment':'理解输入方式并可控地体验、暂停和退出互动实验。','notfound':'理解资源不可达的原因，并通过有效入口恢复任务。','listing':'帮助用户在完整结果中定位条目，并进入详情或恢复空结果。','directory':'根据实体身份和明确筛选找到合适的对象。','portal':'让用户理解内容层级，并进入当前最重要的任务。','award':'理解作品、奖项与来源，并安全进入原站或相关内容。','pricing':'理解计费周期和权益限制，再审阅明确的方案。','wizard':'分步收集最少必要输入，在最终行动前审阅和确认。','course':'理解课程与大纲，明确公开预览和访问权限。','product':'核对产品、规格、许可与费用，完成可核实的选择。','job':'理解岗位及申请条件，进入明确的申请路径。','contact':'完成可恢复的询问表单并理解提交的实际状态。','faq':'找到相关答案，理解下一步及帮助渠道。','event':'理解活动时间、议程、地点与参与条件。','article':'按章节持续阅读并追溯事实、版本和引用。','profile':'理解身份、贡献、作品与公开联系边界。','project':'理解项目问题、过程、贡献和有证据的成果。','about':'理解主体、团队和可核实的背景。','service':'判断服务与当前问题的适配性，并进入咨询。'}[kind]
   contract={'schema_version':'3.0','id':id,'skill':name,'title':title,'kind':kind,'scope':'Awwwards-linked external inner page; specific award status requires official evidence' if id.startswith('external-') else 'Awwwards main-site page family','source_families':families,'goal':goal,'regions':regions.split('、'),'workflow':workflow,'data_fields':fields,'failure_recovery':recovery,'motion_contract':motion,'evidence_level':level,'source_relationship_note':'An outbound work-detail association does not certify that every current inner page won an award or matches a historical version.','evidence_note':'Only recorded observations are facts. DOM structure does not prove visual composition, hidden state, source code, backend behavior or licenses. The runnable blueprint is an original recipe, not a source-site clone.','sources':[{'id':s['id'],'url':s['url'],'family':s['family'],'inspection_level':s['inspection_level'],'observed_at':s['observed_at'],'source_sha256':s.get('source_sha256'),'structure':s['structure']} for s in selected],'visual_metrics':views,'source_state_observations':state_views,'source_coverage':'observed_examples' if selected else 'needs_source_inspection','original_blueprint':True,'business_mode':'local_preview','states':['default','loading','empty','error','success_preview','disabled','keyboard_focus','reduced_motion','narrow_view'],'acceptance':[goal,recovery,motion,'320、390、768、1440 宽度不出现整页横溢出；必要表格在独立区域滚动。','键盘可进入、操作、关闭对话框并返回触发点；错误不只靠颜色。','本地预览不得暗示真实支付、投稿、消息、账户或预约已生效。'],'limitations':['Source interaction audit is not automatically performed','Source assets are not bundled','Real backend, production and physical-device acceptance are not included']}
   if id=='external-prompt-detail':contract['reference_eligibility_note']='The AIFont official work-detail title was Nominee at the recorded observation. This is a supplementary reference, not counted as a confirmed awarded-site case; a later live read was HTTP 403.'
@@ -65,6 +68,9 @@ def generate():
   if id=='external-editorial-index':
    contract['editorial_contract']={'demo_catalog':'Twelve original fictional stories, authors and CSS illustrations','query_scope':'Entire local catalog, including full story text; not just loaded cards','paging':'Versioned query-bound cursors; confirmed total is distinct from a request failure','stale_request_policy':'Abort previous requests and ignore obsolete responses','reading_return':'Preserve topic, query, order, expanded position, origin focus and scroll','fallback':'Complete pre-rendered original catalog, all story text and native destinations','data_editing':'Regenerate the static fallback whenever articles.json changes','limits':'Catalog parser is bounded; twenty-record paging is tested, while large-catalog production performance is not accepted','source_api_reproduction':False,'source_media_redistributed':False}
    contract['acceptance']+=['加载更多保留现有条目且不重复；失败重试同一游标，旧筛选结果不能覆盖新筛选。','阅读与返回恢复查询、主题、排序、已展开位置和触发焦点；页内锚点不应误触查询刷新。','无脚本或资源失败时可读取全部原创目录与完整正文；原文地址不可达时有有效恢复入口。','同名源站控件必须唯一定位或核对已观察的目标地址；不能默认把第一个匹配当作预期交互。']
+  if id=='external-product':
+   contract['product_contract']={'implementation':'Original fictional lamp, text, CSS illustrations, stock and integer-cent local estimates','gallery':'Three explicit views; no autoplay; enlarged dialog supports arrows and focus return','selection':'Labeled native color radios, size selector and express checkbox; unknown and sold-out stock remain distinct','estimate':'Edits invalidate old estimates and abort pending work; a new estimate is required before review','unknown_fees':'Known subtotal and express fee only; tax, delivery and final payable total remain null','source_field_review':'Inspect visible labels and custom controls as well as native visibility; an empty native-visible list does not prove absence','family_review':'Exact URL review is tied to the metadata hash and becomes stale after source changes','not_reproduced':['Real cart, wishlist, orders or payment','Source color switching: only one option observed','Source price recalculation','Source autoplay','Cartier configurator, blocked with HTTP403']}
+   contract['acceptance']+=['图库切换、放大、方向键和关闭后的焦点返回必须实际操作；不自动轮播。','颜色与加急选项具有可见标签，未知库存与售罄不能伪造为可购买。','数量不接受空值、小数或指数；整数金额展示与计算一致，未知税费、配送和最终应付金额保持未知。','编辑使旧估算失效，取消中的旧响应不能覆盖新选择；失败重试保留输入。','无脚本或产品数据失败时保留全部原创视图、价格示例和规格；真实后端与源站素材不随模板交付。']
   write(folder/'references/page-contract.json',json.dumps(contract,ensure_ascii=False,indent=2)+'\n')
   source_list='\n'.join('- '+s['url']+'（'+s['inspection_level']+'；'+s['observed_at']+'）' for s in selected) or '- 本轮尚未读取到该页面族的完整来源。保持 needs_source_inspection；不得声称已从原站提炼完整设计。'
   text=f'''---
@@ -112,6 +118,7 @@ python scripts/scaffold.py --output YOUR_EMPTY_PROJECT_DIRECTORY
   if companions:text+='\n## 可组合的具体机制\n'+''.join('- `'+x+'`：读取其机制契约和实际测试边界后按需组合。\n' for x in companions)
   if id=='external-pricing':text+='\n## 定价专项实施\n读取 `assets/pricing-model.mjs` 和契约中的 `estimate_contract`。它们是独立原创虚构费率模型，不是源站计费实现。以整数金额汇总和舍入，明确单位、输入精度、未知费用和旧估算失效。源站小数输入的具体观察不能被当成建议规则。按这些边界操作所有核心路径，再接真实服务端费率和购买接口。\n'
   if id=='external-editorial-index':text+='\n## 杂志索引专项\n读取 `assets/catalog.mjs`、`assets/articles.json` 和契约中的 `editorial_contract`。示例使用独立原创全文和本地异步分页适配器，不复刻源站后端。编辑数据后重新生成完整静态正文；移植到真实服务时保留服务端完整查询、游标版本、已确认数量和失败状态。来源只观察了有限主题与加载动作，不代表所有文章已审阅。\n'
+  if id=='external-product':text+='\n## 商品详情专项\n读取 `assets/product-model.mjs`、`assets/product.json` 和契约中的 `product_contract`。先区分详情与集合页，再核查图库、变体、加急选项、库存和说明折叠。源站透明原生控件可能有可见标签；实际点击已核查标签，不用强制修改隐藏 select 代替用户路径。当前来源只有一种颜色，加急勾选和准备时间的变化已观察；未证明颜色切换或源站价格重算。蓝本为独立原创虚构灯具，保留未知费用、失效估算、售罄和失败恢复；不包含真实购物接口。\n'
   write(folder/'SKILL.md',text)
   write(folder/'assets/contract.json',json.dumps(contract,ensure_ascii=False,indent=2)+'\n')
   write(folder/'assets/index.html','<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Original task-specific page skill blueprint with fictional local data."><title>'+id+' · Page skill blueprint</title><link rel="icon" href="data:,"><link rel="stylesheet" href="style.css"></head><body><a class="skip" href="#main">Skip to content</a><div id="app"><main id="main"><h1>Original page skill blueprint</h1><p>Read the page contract for the structure, states and source boundaries. JavaScript enables the local interaction example.</p></main></div><noscript>Interactive local previews require JavaScript. The page contract and skill instructions remain readable.</noscript><script type="module" src="main.mjs"></script></body></html>')
@@ -147,6 +154,10 @@ if __name__=='__main__':
     if source_file.is_file():shutil.copy2(source_file,folder/'assets'/source_file.name)
   if id=='external-pricing':
    runtime_variant='business-pricing';source=R/'page_skills/business/pricing'
+   for source_file in source.iterdir():
+    if source_file.is_file():shutil.copy2(source_file,folder/'assets'/source_file.name)
+  if id=='external-product':
+   runtime_variant='business-product';source=R/'page_skills/business/product'
    for source_file in source.iterdir():
     if source_file.is_file():shutil.copy2(source_file,folder/'assets'/source_file.name)
   registry.append({'id':id,'skill':name,'title':title,'kind':kind,'runtime_variant':runtime_variant,'source_families':families,'source_coverage':contract['source_coverage'],'source_count':len(selected),'evidence_level':level,'path':folder.relative_to(R).as_posix(),'demo':folder.relative_to(R).as_posix()+'/assets/','browser_validation':'See validation evidence; not inferred from generation'})

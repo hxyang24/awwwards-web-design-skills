@@ -10,8 +10,8 @@
     },
     {
       "path": ".github/workflows/ci.yml",
-      "bytes": 3330,
-      "sha256": "b3112137edc253d7e2e09668e815a7a0508c8ea5759455da0d6e0a0ca490db34"
+      "bytes": 3715,
+      "sha256": "9b509e5c467fd3363ef407993bb9a246eacd51b415de45787b4586d32095c855"
     },
     {
       "path": ".gitignore",
@@ -30,8 +30,8 @@
     },
     {
       "path": "docs/FULL_SITE_SKILLS_GOAL.md",
-      "bytes": 6102,
-      "sha256": "5bdf7b9a24785f88265d015992e414494bbd4eff26c538ce837115e9a8af4714"
+      "bytes": 6484,
+      "sha256": "87079864e04e1e1a3099e6a77de39638e4d5bfe57b041350d227dc126d14e2e5"
     },
     {
       "path": "docs/OPEN_SOURCE_PUBLICATION.md",
@@ -116,7 +116,7 @@
     {
       "path": "interaction_skills/registry.json",
       "bytes": 3406,
-      "sha256": "36a424503449f27fa19a196b0ac73dad936fa04695e5eab86c728a85de913251"
+      "sha256": "7dea51b2a973123c06f32c7518ea0363895bb169a91aef7c38422c83a06b8e60"
     },
     {
       "path": "INTERACTION_SKILLS.md",
@@ -1904,6 +1904,31 @@
       "sha256": "23a710b61606533e97df30751a3d7fe4d047fe8122fe6092891b28253c7f5e8d"
     },
     {
+      "path": "page_skills/business/product/index.html",
+      "bytes": 8116,
+      "sha256": "aeaed7738bec6d1d452ad88970ec6917c92fb96f5cf29e78201b9fa6d0e61f4f"
+    },
+    {
+      "path": "page_skills/business/product/main.mjs",
+      "bytes": 8292,
+      "sha256": "d312a40ad00d0ff19aa9b029122f95b810ecc6071fbb8eccc693e6c31f13beec"
+    },
+    {
+      "path": "page_skills/business/product/product-model.mjs",
+      "bytes": 3869,
+      "sha256": "78ecb0372a76b5a713dc94536821b904efd86a3e7d1cfc26aa41820783b0e79b"
+    },
+    {
+      "path": "page_skills/business/product/product.json",
+      "bytes": 795,
+      "sha256": "e57b702ad64701166700e634a24506752ad51e7593deb7c40ff6cf869fcda857"
+    },
+    {
+      "path": "page_skills/business/product/style.css",
+      "bytes": 7850,
+      "sha256": "ddf64cc15d022a8efbf44155efcd8175b82b0bddb55e65d102e994d77b056f20"
+    },
+    {
       "path": "page_skills/creative/prompt/index.html",
       "bytes": 6128,
       "sha256": "1969d9ab4898f3b852d3d1ceb84dbb1dd5b0661b0d30564db54f3db1b509915c"
@@ -1980,13 +2005,13 @@
     },
     {
       "path": "page_skills/index.html",
-      "bytes": 20080,
-      "sha256": "ca9ca733c9bcf9eb48e73856488ffccffe6f19b42285b02119d661b8924ead67"
+      "bytes": 20100,
+      "sha256": "0719d51b1d980ce16e5c6dc2c0f36697a834231e396a4b4cfbc3f16a1128a952"
     },
     {
       "path": "page_skills/registry.json",
-      "bytes": 27322,
-      "sha256": "6200853b6238cbe9593f26c8b0aae631462f42a0d415a32f22880b7075e6b4fe"
+      "bytes": 27346,
+      "sha256": "bbab92c3e2bee1158513169824b6c647105970f4a502ec3c3eab56e16eaba51a"
     },
     {
       "path": "page_skills/runtime.css",
@@ -2000,8 +2025,8 @@
     },
     {
       "path": "PAGE_SKILLS.md",
-      "bytes": 13938,
-      "sha256": "74d3c4d0b60af9dd23e930ae5dfbb6f2d5fda9807751f14840f5ce36685a603b"
+      "bytes": 13958,
+      "sha256": "46bb9f728bc7a631b20b1d182814b37721379478a94c4cb10f447bae2ccd6c5d"
     },
     {
       "path": "PHYSICS_AND_SOURCE_AUDIT.md",
@@ -2014,9 +2039,14 @@
       "sha256": "6fc2518a95251b6a975d9b3a265d58c0452b06b438e030d9705c4f67436b204b"
     },
     {
+      "path": "PRODUCT_PAGE_SKILL.md",
+      "bytes": 4704,
+      "sha256": "dfa3695eccf58617440f5da1608a2b742cb446c4e0d88ddebf7e0253d2d6e2e2"
+    },
+    {
       "path": "README.md",
-      "bytes": 7795,
-      "sha256": "bb2abde02a91c178a30af284c0ef60ace574687150800a5892a8dcd02416a372"
+      "bytes": 8199,
+      "sha256": "9e7fab28625b4776e51924c4eef9de7095032ddb553010d4b50f31778da4d605"
     },
     {
       "path": "research/creative_page_validation/browser-first-run.json",
@@ -2160,8 +2190,8 @@
     },
     {
       "path": "research/live_pages/coverage.json",
-      "bytes": 4055,
-      "sha256": "2910014f1d032fe913f9e7cf4ad1fc493e983a0550a866802617fe6c48cbcafa"
+      "bytes": 4036,
+      "sha256": "f32d8a727410c6c9c855467b46dd8297e20341ab2f4618a85524e9030c0c4aed"
     },
     {
       "path": "research/live_pages/creative-page-observations.json",
@@ -2175,8 +2205,8 @@
     },
     {
       "path": "research/live_pages/external-targets.jsonl",
-      "bytes": 66272,
-      "sha256": "97f3895557c37496654938cc3c03446daae7b33d556336c7f06b4076a4261398"
+      "bytes": 68020,
+      "sha256": "094b9e8e7aff1bec62736f3cdff00e4e7f9f357c0cb728ec964ba116fde72eaa"
     },
     {
       "path": "research/live_pages/interaction-observations.json",
@@ -2194,9 +2224,19 @@
       "sha256": "a5aff7c997134cfd97f6198367c8f06e0b3824fa2687924d98a9525673e28f27"
     },
     {
+      "path": "research/live_pages/product-page-observations.json",
+      "bytes": 7357,
+      "sha256": "283196a06c37b152a2623c0882897d9acc925ed372cf046a944a87c482127c6c"
+    },
+    {
+      "path": "research/live_pages/reviewed-page-families.json",
+      "bytes": 885,
+      "sha256": "5aef66177179c448dee4c3845aee8dc4650d212cdb924174ef82fd25e4cf1ac1"
+    },
+    {
       "path": "research/live_pages/sources.jsonl",
-      "bytes": 7819528,
-      "sha256": "a89f02c9404ac0065ba40a3179fae230565f73a1dec4f23237d7e0c469a78846"
+      "bytes": 7999051,
+      "sha256": "c99e1fe108006e220b09a792b4b28bce67276eeb497f5cdd33c910ecfa6f7f9f"
     },
     {
       "path": "research/live_pages/visual-observations.json",
@@ -2215,138 +2255,138 @@
     },
     {
       "path": "research/page_skill_validation/browser-results.json",
-      "bytes": 8838,
-      "sha256": "31c9b2189591c0dae042a027d757a2e40fa8eee74dbb3ac42927bbe048886677"
+      "bytes": 8839,
+      "sha256": "32c3d5b4b161b9348920be8abd05bc5a35e24cc049d4ff6402c04389ad4aad28"
     },
     {
       "path": "research/page_skill_validation/screenshots/about-390.png",
-      "bytes": 165475,
-      "sha256": "a918ed41ecb21e6abb1ada691aaf1b798081e3aab6d6a7e6072e7337721a3a24"
+      "bytes": 166649,
+      "sha256": "f0e5c22f51f096ec1e9b1f3c2b612d0a443210bc81795f19ccf5151b517c2836"
     },
     {
       "path": "research/page_skill_validation/screenshots/article-390.png",
-      "bytes": 164068,
-      "sha256": "caaa06cd804141b760435e715f208534650cf3acc65bbc60f6d6f5fcaab65100"
+      "bytes": 165524,
+      "sha256": "361ea7cad0ce1f389c4ff12e8f172e9e8458bbb56c863d81efdd097fb98b2bcc"
     },
     {
       "path": "research/page_skill_validation/screenshots/award-390.png",
-      "bytes": 188834,
-      "sha256": "67a5cf0c013188d79b79387eca2cc404a284f1f256be8703b92e7a40a92e0591"
+      "bytes": 190429,
+      "sha256": "e5c55e9bd56e850d5ba18e6f8504474ab4479c025d6203b18dbcd7042cbe5ba4"
     },
     {
       "path": "research/page_skill_validation/screenshots/careers-390.png",
-      "bytes": 134887,
-      "sha256": "ded8795fd5eff79334448ab4d8bb0974ad34de15622757d2eb345f454589ac6b"
+      "bytes": 134942,
+      "sha256": "fba0506a5fef4c39884d5ca8da6f1ef18bf0492d3d0fdccc9d2b57c6d3d4aa67"
     },
     {
       "path": "research/page_skill_validation/screenshots/contact-390.png",
-      "bytes": 102285,
-      "sha256": "98e050fc90f23d89795e276c324f3ad5cacae097fca3ec4b8f3d074fd2a74802"
+      "bytes": 103542,
+      "sha256": "0d8e1c473a5a165c818cc9a296d352b7c771da0921336b30ee63522f58ab4c6d"
     },
     {
       "path": "research/page_skill_validation/screenshots/course-390.png",
-      "bytes": 113810,
-      "sha256": "83694c35458783607355b4d4794dea5d255438b5de1f3ed7dab30658f485f00f"
+      "bytes": 114796,
+      "sha256": "7cd7706f3e3d6f5b26aa4d50e7b16afeb6c12e54036026f944aa5ff9436604f3"
     },
     {
       "path": "research/page_skill_validation/screenshots/directory-390.png",
-      "bytes": 117932,
-      "sha256": "ebe8c6b05c5d7826bd0362a94546b7251f03bb4dc25d296629da40ec72ae6e41"
+      "bytes": 119367,
+      "sha256": "221368f37124155e73e75965f149b1e994b2fb86e9bc4d177f2b0e51141fafb7"
     },
     {
       "path": "research/page_skill_validation/screenshots/editorial-index-390.png",
-      "bytes": 164967,
-      "sha256": "fa424458c0a6bef0f3689ac2138dc2503aaf0b6147aa733fdc800abf37a4e732"
+      "bytes": 165273,
+      "sha256": "b0b930a6159c344da83adcfea242b5fe1021a7a1453f1d646a002a5f622b4963"
     },
     {
       "path": "research/page_skill_validation/screenshots/event-390.png",
-      "bytes": 95730,
-      "sha256": "811adb2ce58cb52ac775ed1fcc5060bd73c9ab4e038aedbf4b41ab6c5cf16171"
+      "bytes": 96981,
+      "sha256": "9316b1ac29d2e00d9a3bd69fda1d231d789923beda75676c8ee7997d72da5da3"
     },
     {
       "path": "research/page_skill_validation/screenshots/experiment-390.png",
-      "bytes": 113377,
-      "sha256": "d2004f792fc495394fb4ee6b9a06824e7c1dde2c4d77dc27d4f49bf3516694c1"
+      "bytes": 115034,
+      "sha256": "4adde7ede8a8ec38eca57be442becd5f98da7c01341bb61d6b15276c9e77b508"
     },
     {
       "path": "research/page_skill_validation/screenshots/faq-390.png",
-      "bytes": 77051,
-      "sha256": "6e8c58daad09a168cfbd3e854c7bcef92567e5f5fdd42844ebf0c6217b2f1aba"
+      "bytes": 78026,
+      "sha256": "ee937c18a98bd06efd726acbe104ecce44c35466a9e6d4d9f519ce3e77b9dff5"
     },
     {
       "path": "research/page_skill_validation/screenshots/gallery-390.png",
-      "bytes": 137912,
-      "sha256": "41884d44ec58df9de6ba2f2528a759fb59e421bca9eb507156893a3d81a653c0"
+      "bytes": 140652,
+      "sha256": "bc7e51b6a474b3044dc424446e538d5a72493389fc9b2d5c47a0ebbb4bce4229"
     },
     {
       "path": "research/page_skill_validation/screenshots/job-390.png",
-      "bytes": 100436,
-      "sha256": "8b3941e3cb38763ca5a639101bc44921c0173d90d367d663f8950b3c8a6ae1c1"
+      "bytes": 101857,
+      "sha256": "9eea4d965fa1cd858210a7c979c14eaae63c1c771298d238cf198b4153926f58"
     },
     {
       "path": "research/page_skill_validation/screenshots/listing-390.png",
-      "bytes": 119915,
-      "sha256": "a0dfabe79937b5deba95dd0fb5c55285fef2dc63657b6439e34074fd7e8c237e"
+      "bytes": 122020,
+      "sha256": "36c80618a349999fc8e595947bd7c205a6598ecdf5ab634ad4b357d4edc16be7"
     },
     {
       "path": "research/page_skill_validation/screenshots/notfound-390.png",
-      "bytes": 85779,
-      "sha256": "72963517924d266d831e6c8d6cbe38df6cacab5ccaad0271fd5df6fd870cf989"
+      "bytes": 87139,
+      "sha256": "1e92b4651cd39c2a03daa84a6cd3e87f610a7bb64a4a3caaddee4576364bca85"
     },
     {
       "path": "research/page_skill_validation/screenshots/portal-390.png",
-      "bytes": 154912,
-      "sha256": "5fd95d839982613ad321e23b7b3ed7c899eba09505a391c871e63c5dd0891fff"
+      "bytes": 156256,
+      "sha256": "bb5ed26f7e28372261afb49ecd2c8e4aa915c01e2c19729a9b3a7d12f3a7ff34"
     },
     {
       "path": "research/page_skill_validation/screenshots/pricing-390.png",
-      "bytes": 105381,
-      "sha256": "008173de99a721e73e21bcb60f86ce7f0fc23114b65427c3fa5546e3218cbbbc"
+      "bytes": 107100,
+      "sha256": "518dd64304fbe46a3b2b1b853101fa3169c35b052ab72e9f3ebea4f536b21225"
     },
     {
       "path": "research/page_skill_validation/screenshots/product-390.png",
-      "bytes": 95839,
-      "sha256": "a2ea38eff577fe7c24e3e9bd8aa6111b96a07d28ebd713740fd2e9f313c87f8b"
+      "bytes": 97897,
+      "sha256": "c98c574502e1fe103e924020c8ec13ad7e4e0c6dd8ef0f8bc47bcccf573d8c84"
     },
     {
       "path": "research/page_skill_validation/screenshots/profile-390.png",
-      "bytes": 167346,
-      "sha256": "dcd958883e4956c469f98467532d011ef758bbf8abd9403291db044eb9bcf62b"
+      "bytes": 168356,
+      "sha256": "d920539e323dce14b689e88b11ad5cfa96c1a72d46509bf6f545a06ebc476ba3"
     },
     {
       "path": "research/page_skill_validation/screenshots/project-390.png",
-      "bytes": 174418,
-      "sha256": "31a9e9b010252b52cc814babc8c240667be05f1aa16f4fdf28d60c4b8f73f38a"
+      "bytes": 175992,
+      "sha256": "dd77dd89b8b4694e0f2d3a8b4c92a0095f52c42bb4a2f217eba27661046163e8"
     },
     {
       "path": "research/page_skill_validation/screenshots/prompt-390.png",
-      "bytes": 125015,
-      "sha256": "60ae957ca3c5fe56c8f7b5380b5a2ad9ad43033cf2be59c75d31740f90925a1d"
+      "bytes": 125558,
+      "sha256": "48fd6aa03d837d3caa28c8fea52f98e644f5563f26fa4ceec9e0a991df8472e9"
     },
     {
       "path": "research/page_skill_validation/screenshots/service-390.png",
-      "bytes": 171777,
-      "sha256": "40dbcabbf4bbb5c0c44fd9220a2707b1846e82af214508a012aa37694efec118"
+      "bytes": 173300,
+      "sha256": "fc2d52d5b744b2764692c772f92f83b4147b8cd4d3379c13cd8c8c97c623f820"
     },
     {
       "path": "research/page_skill_validation/screenshots/story-390.png",
-      "bytes": 70020,
-      "sha256": "04f5bcfc5d7596bc269938344f70484763b5accada2143cfa1257188186cc738"
+      "bytes": 72312,
+      "sha256": "177105bf70b80de70558ede4772aeec890b4f3ca037331cb912b83606f1faf2a"
     },
     {
       "path": "research/page_skill_validation/screenshots/story-index-390.png",
-      "bytes": 105152,
-      "sha256": "9a0c711b1e260c34f744b850ac6fdb15b08cef77c302b38b472d6cf5e6bbff4a"
+      "bytes": 110579,
+      "sha256": "9ecd536eeac405f0f9c508cd2266799d1fc9b6e83b6c88b90a32dcb6aa96d3f4"
     },
     {
       "path": "research/page_skill_validation/screenshots/wizard-390.png",
-      "bytes": 71106,
-      "sha256": "920a1829e0764435e84fda28345269a117546515d31f2022fff00a0cd367cab6"
+      "bytes": 72764,
+      "sha256": "e0564f26002ff8d322f32038dc989fb04ebc4937f7624bc11a6616641aa321f3"
     },
     {
       "path": "research/page_skill_validation/unit-results.json",
       "bytes": 293,
-      "sha256": "a5249e216b824b03107bd439c3108a8e6669b21c8bbf1384aed5fea2f5cb4e9a"
+      "sha256": "6783a756d9b3faa56b85d09f71000667ece9d9e9751bbffbeed806b1a7792251"
     },
     {
       "path": "research/physics_skill_validation/browser-first-run.json",
@@ -2399,34 +2439,64 @@
       "sha256": "0570baccb87d5549dfcf67c7bea65cf8e62c058eb77e49a0c988ccfaf9c95221"
     },
     {
+      "path": "research/product_skill_validation/browser-first-run.json",
+      "bytes": 6526,
+      "sha256": "7914a24a689d57e935fd482fd24c5fe43dd719a9f83a847f2317223ebec1efda"
+    },
+    {
+      "path": "research/product_skill_validation/browser-results.json",
+      "bytes": 4433,
+      "sha256": "6930eaa1b80b4a2a9bae45b5966fb2625adf746717c126960347acb197405537"
+    },
+    {
+      "path": "research/product_skill_validation/model-results.json",
+      "bytes": 1649,
+      "sha256": "645e464ec024e1f8798b8bda20046d7dc9768481b141534413315696369d9a07"
+    },
+    {
+      "path": "research/product_skill_validation/screenshots/product-1440.png",
+      "bytes": 167468,
+      "sha256": "c7b13c1d30588f512f0c6c727a7644603615be6eb1e674a151907dfce148ea6a"
+    },
+    {
+      "path": "research/product_skill_validation/screenshots/product-390.png",
+      "bytes": 104524,
+      "sha256": "b25350433b7b26fcea5e7377724cec4ede10bd362fc14a7a706af89eb5bbcbbb"
+    },
+    {
       "path": "research/skill_extraction/award-provenance-coverage.json",
       "bytes": 585,
-      "sha256": "a3013484aa789c3906ee7d77cd7ae1410eea01caf5897835accbe7fbd06d1420"
+      "sha256": "2e2e07b29d51566d86dba3a9560690d84faf2b67f1148cb084d2b9bdaa912957"
     },
     {
       "path": "research/skill_extraction/coverage.json",
       "bytes": 891,
-      "sha256": "c448e04df16e6c393999f83cc0999446033d8b894c310c2853f0f91f853146cf"
+      "sha256": "cac3526de53c3db73c85161145f34d8d4e8ae93631ea44e8e45671722734db1f"
     },
     {
       "path": "research/skill_extraction/official-detail-title-labels.jsonl",
-      "bytes": 212333,
-      "sha256": "52f6ee32d50a97fea62241687467dc1dea84b58f517dfbcd8de9f4c5230984ed"
+      "bytes": 217675,
+      "sha256": "53734e75ed1b5ffb6d14853ef0366f93dc30ec8025d852ee066628dbba26f148"
     },
     {
       "path": "research/skill_extraction/source-skill-map.jsonl",
-      "bytes": 3193572,
-      "sha256": "98ac1f26b077575ccbc3e961279da5f7554d392e8ab228e86f6b33e88c9f32fb"
+      "bytes": 3827653,
+      "sha256": "ac47a46b352f118f0ec043690ac2e8efdf45076bd5fec4ec630cc2b0ae824116"
     },
     {
       "path": "research/skill_extraction/variant-backlog.json",
-      "bytes": 1051388,
-      "sha256": "5c54d3c54258acb6afe8417fbd07dd09e6130c17386d0988018d488331f62f18"
+      "bytes": 1074609,
+      "sha256": "3d237d7f235f5cad5e94ccb55062c18a05d869470b9b09317d7ecf902967e691"
     },
     {
       "path": "research/source_state_validation/browser-results.json",
       "bytes": 5062,
       "sha256": "6381022fa9ac148c2edc4bcfada075fbb0ca78dfa72cd5daff2b91b63516c141"
+    },
+    {
+      "path": "research/source_state_validation/field-results.json",
+      "bytes": 1074,
+      "sha256": "ccb82f53e520605c5da2d02321259a58905ca40f26c0803ffe0fba3b7724be79"
     },
     {
       "path": "research/source_state_validation/target-results.json",
@@ -3400,28 +3470,38 @@
     },
     {
       "path": "skills/awwwards-page-external-product/assets/contract.json",
-      "bytes": 8419,
-      "sha256": "a786459278d1dda6dc263fc77f2b1ba4eb2e5fe71f6fdf333ed9caabdcbd248b"
+      "bytes": 17289,
+      "sha256": "2ab9ec79d6682ab0d0e7d6b6559d6ce86b5dff3ab49aefcf363528e195e8e37b"
     },
     {
       "path": "skills/awwwards-page-external-product/assets/index.html",
-      "bytes": 813,
-      "sha256": "f7d5486d4d983b0cc0401fba99dd0ffe9ea22f1e188d84553d50343653b02524"
+      "bytes": 8116,
+      "sha256": "aeaed7738bec6d1d452ad88970ec6917c92fb96f5cf29e78201b9fa6d0e61f4f"
     },
     {
       "path": "skills/awwwards-page-external-product/assets/main.mjs",
-      "bytes": 20928,
-      "sha256": "d114365b0d0fafbe714a52c55d22ae5672bfb5dd832941e6958bb4dd75efcbb3"
+      "bytes": 8292,
+      "sha256": "d312a40ad00d0ff19aa9b029122f95b810ecc6071fbb8eccc693e6c31f13beec"
+    },
+    {
+      "path": "skills/awwwards-page-external-product/assets/product-model.mjs",
+      "bytes": 3869,
+      "sha256": "78ecb0372a76b5a713dc94536821b904efd86a3e7d1cfc26aa41820783b0e79b"
+    },
+    {
+      "path": "skills/awwwards-page-external-product/assets/product.json",
+      "bytes": 795,
+      "sha256": "e57b702ad64701166700e634a24506752ad51e7593deb7c40ff6cf869fcda857"
     },
     {
       "path": "skills/awwwards-page-external-product/assets/style.css",
-      "bytes": 7236,
-      "sha256": "8ca0198be52f162a681f08e996be47ab90f08f772b31d891fe9cf7b9164852fc"
+      "bytes": 7850,
+      "sha256": "ddf64cc15d022a8efbf44155efcd8175b82b0bddb55e65d102e994d77b056f20"
     },
     {
       "path": "skills/awwwards-page-external-product/references/page-contract.json",
-      "bytes": 8419,
-      "sha256": "a786459278d1dda6dc263fc77f2b1ba4eb2e5fe71f6fdf333ed9caabdcbd248b"
+      "bytes": 17289,
+      "sha256": "2ab9ec79d6682ab0d0e7d6b6559d6ce86b5dff3ab49aefcf363528e195e8e37b"
     },
     {
       "path": "skills/awwwards-page-external-product/scripts/scaffold.py",
@@ -3430,8 +3510,8 @@
     },
     {
       "path": "skills/awwwards-page-external-product/SKILL.md",
-      "bytes": 3725,
-      "sha256": "53b253febd7220bc9f4497b09d9b5336750c265db784b80d5f994c18305b5dbe"
+      "bytes": 4360,
+      "sha256": "5f90db82121ba395a3482519bd4770294fae7ca17ef359b7030e7b49e41d99ed"
     },
     {
       "path": "skills/awwwards-page-external-project/assets/contract.json",
@@ -4245,13 +4325,13 @@
     },
     {
       "path": "tools/build_page_skills.py",
-      "bytes": 21625,
-      "sha256": "774b3e030b457dd7781ec6c8ea6f22d710afc53b835c2a282b38fa4251eafc42"
+      "bytes": 24565,
+      "sha256": "8282df84d2c83e4c80d85eddfda83f86d73eafe53e7d3a84564009bd1b770673"
     },
     {
       "path": "tools/build_source_skill_map.py",
-      "bytes": 5040,
-      "sha256": "0a0cf30729d79705372e65a27d450ab110b1470c9e2de924a92c7d03b1ea4276"
+      "bytes": 5352,
+      "sha256": "0d861a6655c9382616ed7de277b8199a53ee1e198db7c62bf5cadebe3972c850"
     },
     {
       "path": "tools/install_all_skills.py",
@@ -4270,8 +4350,8 @@
     },
     {
       "path": "tools/probe_page_states.mjs",
-      "bytes": 11515,
-      "sha256": "25ee2e746df4a5e23a0d95de0ba3411c0323e80f79e99407e4112e0148534c9b"
+      "bytes": 11862,
+      "sha256": "6c1955c09424f5c4d56ae2278de1c6c56e7feb05fbcd2859ae80ddd366d1457e"
     },
     {
       "path": "tools/render_page_skill_index.py",
@@ -4279,9 +4359,19 @@
       "sha256": "f90ab40dd4a47ce9cbd9d1fe0d46f313634e29af896675245ae8047960d30186"
     },
     {
+      "path": "tools/reviewed_family.py",
+      "bytes": 2660,
+      "sha256": "723dd663238f455f16319725b724a49deb481a6b7223792ca0ea9c269bd2a535"
+    },
+    {
       "path": "tools/source_action_cleanup.mjs",
       "bytes": 481,
       "sha256": "4e68e526eb507138fca6e68f8c70bafaf9b358162bdf60cd614f5d422dca7839"
+    },
+    {
+      "path": "tools/source_fields.mjs",
+      "bytes": 1593,
+      "sha256": "aa3dfc4c4cf522c9113d648f6472a4966a981653b1a70cf077b802fa4769149c"
     },
     {
       "path": "tools/source_readiness.mjs",
@@ -4325,8 +4415,8 @@
     },
     {
       "path": "tools/test_page_skills.py",
-      "bytes": 12551,
-      "sha256": "29ee64fafceec481200decdf0acab9be795d957bfec6a5581311c405b8a7f0eb"
+      "bytes": 14044,
+      "sha256": "e9b39439a0b37c3e3dab4454feec4eecd834a250fb8f9aca7b386ec0c9fb920b"
     },
     {
       "path": "tools/test_physics_engine.mjs",
@@ -4349,6 +4439,21 @@
       "sha256": "5947838d9ba974d44fb240a8a7cd4d8b0b717d8b0c68873885ac72725021fb18"
     },
     {
+      "path": "tools/test_product_model.mjs",
+      "bytes": 4319,
+      "sha256": "226fdc19f064a719f4e2860c26c4c71c29e3f53a66914ad44c8ce143cf653ffe"
+    },
+    {
+      "path": "tools/test_product_page.mjs",
+      "bytes": 17586,
+      "sha256": "a8d0acb2006c53ba93e47eababdf3c7e068c2fa69c9b9f5beefbb7e31c6e9cdf"
+    },
+    {
+      "path": "tools/test_source_fields.mjs",
+      "bytes": 4445,
+      "sha256": "541f4774551df6d723155ca3480ed4d71b235caa664d74076ecfd7f0f0127771"
+    },
+    {
       "path": "tools/test_source_readiness.mjs",
       "bytes": 4974,
       "sha256": "a9cf9002bb9932ef67fc917673cc79de7066d2f7c6050d271925f226abc39115"
@@ -4360,8 +4465,8 @@
     },
     {
       "path": "tools/verify_page_skills.py",
-      "bytes": 4504,
-      "sha256": "3747d3ae8f869d10eb8afb5276caba68fb3c8da0ab612938ac070d543d972467"
+      "bytes": 4672,
+      "sha256": "a6c22be875253ba58362cd5c4c99fd5b5e2d07b93ef464c7e2380e2b2a540b58"
     }
   ]
 }

@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "id": "arc-lamp",
+  "title": "Arc table lamp",
+  "currency": "USD",
+  "colors": [
+    {"id": "sand", "label": "Sand", "hex": "#c9aa83", "stock": {"small": 8, "regular": 4}},
+    {"id": "chalk", "label": "Chalk", "hex": "#e0dbcc", "stock": {"small": null, "regular": null}},
+    {"id": "ink", "label": "Ink", "hex": "#454e58", "stock": {"small": 0, "regular": 0}}
+  ],
+  "sizes": [
+    {"id": "small", "label": "Small · 28 cm", "unit_cents": 14500},
+    {"id": "regular", "label": "Regular · 36 cm", "unit_cents": 18500}
+  ],
+  "express_fee_cents": 2500,
+  "standard_lead": "10–14 working days",
+  "express_lead": "5–7 working days",
+  "notice": "Original fictional USD estimate. Tax and delivery are unknown and excluded. No live inventory, order or payment."
+}

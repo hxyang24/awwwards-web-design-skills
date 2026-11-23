@@ -2,7 +2,7 @@
 
 现有 24 套核心技能继续保留；新增 46 套可单独安装的页面技能，再新增 4 套具体交互机制技能，共 74 套。页面技能中 46 套有当前页面来源，0 套仍需补来源。**这不是全站已经完成的声明。**
 
-已记录 6260 个页面结果，其中 3095 个完整读取 HTTP DOM；已发现 471 个作品关联外站主机。尚有 24274 个已发现地址待观察，发现范围仍可能增长。
+已记录 6408 个页面结果，其中 3165 个完整读取 HTTP DOM；已发现 483 个作品关联外站主机。尚有 24750 个已发现地址待观察，发现范围仍可能增长。
 
 网址数用于审计来源；每套技能都有任务、页面结构、数据字段、交互状态、恢复路径、响应式、动效、版权边界、独立蓝本和验收要求。网页 DOM、浏览器视觉度量、原创蓝本测试、原站交互验证分别记录，不混为同一种完成。
 
@@ -39,7 +39,7 @@
 | `awwwards-page-external-project` | 获奖外站项目与案例内页 | http_dom / 6 来源 | [external-project](skills/awwwards-page-external-project/SKILL.md) | [HTML](skills/awwwards-page-external-project/assets/index.html) |
 | `awwwards-page-external-about` | 获奖外站团队与关于内页 | http_dom / 6 来源 | [external-about](skills/awwwards-page-external-about/SKILL.md) | [HTML](skills/awwwards-page-external-about/assets/index.html) |
 | `awwwards-page-external-service` | 获奖外站服务与方案内页 | http_dom / 6 来源 | [external-service](skills/awwwards-page-external-service/SKILL.md) | [HTML](skills/awwwards-page-external-service/assets/index.html) |
-| `awwwards-page-external-product` | 获奖外站产品与商店内页 | http_dom / 6 来源 | [external-product](skills/awwwards-page-external-product/SKILL.md) | [HTML](skills/awwwards-page-external-product/assets/index.html) |
+| `awwwards-page-external-product` | 获奖外站产品与商店内页 | rendered_source_observations / 6 来源 | [external-product](skills/awwwards-page-external-product/SKILL.md) | [HTML](skills/awwwards-page-external-product/assets/index.html) |
 | `awwwards-page-external-article` | 获奖外站日志与文章内页 | http_dom / 6 来源 | [external-article](skills/awwwards-page-external-article/SKILL.md) | [HTML](skills/awwwards-page-external-article/assets/index.html) |
 | `awwwards-page-external-contact` | 获奖外站联系内页 | http_dom / 6 来源 | [external-contact](skills/awwwards-page-external-contact/SKILL.md) | [HTML](skills/awwwards-page-external-contact/assets/index.html) |
 | `awwwards-page-external-careers` | 获奖外站招聘与雇主品牌内页 | http_dom / 6 来源 | [external-careers](skills/awwwards-page-external-careers/SKILL.md) | [HTML](skills/awwwards-page-external-careers/assets/index.html) |

@@ -1,0 +1,57 @@
+{
+  "recorded_at": "2026-11-23T13:36:11.716Z",
+  "status": "passed",
+  "checks": [
+    {
+      "name": "Integer-cent product amount and unknown final fees remain distinct",
+      "status": "passed"
+    },
+    {
+      "name": "Express fee is applied once per selection rather than per item",
+      "status": "passed"
+    },
+    {
+      "name": "Empty decimal exponent signed padded and out-of-range quantities are rejected",
+      "status": "passed"
+    },
+    {
+      "name": "Unknown availability is preserved rather than coerced into zero",
+      "status": "passed"
+    },
+    {
+      "name": "Sold out and insufficient stock return different recovery reasons",
+      "status": "passed"
+    },
+    {
+      "name": "Invalid options and nonboolean express values cannot yield a quote",
+      "status": "passed"
+    },
+    {
+      "name": "Malformed prices duplicate identifiers missing stock and unsafe styles fail data parsing",
+      "status": "passed"
+    },
+    {
+      "name": "Parsing does not retain a mutable caller-owned data object",
+      "status": "passed"
+    },
+    {
+      "name": "Aborted local quote rejects without returning a stale selection",
+      "status": "passed"
+    },
+    {
+      "name": "A rejected local request can retry with the same input",
+      "status": "passed"
+    },
+    {
+      "name": "Changed preview price is recorded in a fresh quote",
+      "status": "passed"
+    },
+    {
+      "name": "Unsafe amount formatting and negative resulting prices are rejected",
+      "status": "passed"
+    }
+  ],
+  "limitations": [
+    "Original local fictional model, not source billing or live inventory validation"
+  ]
+}

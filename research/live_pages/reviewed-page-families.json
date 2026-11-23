@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "not_claimed": "Family review is not completed design extraction and does not generalize to other URL slugs",
+  "reviews": [
+    {
+      "url": "https://marryandbride.com/come-fly-with-me-braut-cape/",
+      "source_id": "5be4915e232c552f",
+      "source_sha256": "916560bf9a9610e4449618046476f8dd9439e2509879d049a42b935e13fb1247",
+      "family": "external.product",
+      "reviewed_at": "2026-11-23T13:25:44.883812+00:00",
+      "evidence_file": "research/live_pages/product-page-observations.json",
+      "evidence_id": "marry-options-390",
+      "rationale": "Rendered product identity, image tabs, color swatch, express option and product information disclosures. Arbitrary URL slug was previously external.other.",
+      "hash_scope": "Cached HTTP metadata revision anchor; not a claim that a browser DOM hash equals this static response."
+    }
+  ]
+}

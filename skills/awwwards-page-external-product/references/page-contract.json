@@ -35,10 +35,50 @@
   ],
   "failure_recovery": "缺货、价格改变和支付失败均可恢复；不可伪造购买。",
   "motion_contract": "3D 预览是增强，规格与购买条件保留在 DOM。",
-  "evidence_level": "http_dom",
+  "evidence_level": "rendered_source_observations",
   "source_relationship_note": "An outbound work-detail association does not certify that every current inner page won an award or matches a historical version.",
   "evidence_note": "Only recorded observations are facts. DOM structure does not prove visual composition, hidden state, source code, backend behavior or licenses. The runnable blueprint is an original recipe, not a source-site clone.",
   "sources": [
+    {
+      "id": "5be4915e232c552f",
+      "url": "https://marryandbride.com/come-fly-with-me-braut-cape/",
+      "family": "external.product",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T12:28:50.024570+00:00",
+      "source_sha256": "916560bf9a9610e4449618046476f8dd9439e2509879d049a42b935e13fb1247",
+      "structure": {
+        "headings": {
+          "h1": 1,
+          "h2": 7,
+          "h3": 13
+        },
+        "forms": 1,
+        "input_types": {
+          "radio": 1,
+          "hidden": 4
+        },
+        "navigation_regions": 5,
+        "main_regions": 1,
+        "sections": 3,
+        "articles": 0,
+        "tables": 2,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 0,
+        "roles": {
+          "region": 4,
+          "presentation": 2,
+          "radiogroup": 1,
+          "alert": 1,
+          "button": 3,
+          "tablist": 1,
+          "list": 2,
+          "group": 1,
+          "img": 4
+        },
+        "anchor_count": 92
+      }
+    },
     {
       "id": "ee1ff5a8fffa40ad",
       "url": "http://www.delvaux.com/en/collections",
@@ -241,35 +281,179 @@
         },
         "anchor_count": 170
       }
-    },
-    {
-      "id": "4da7f8cc9bece608",
-      "url": "https://adinabuzatu.ro/collection/abc",
-      "family": "external.product",
-      "inspection_level": "http_dom",
-      "observed_at": "2026-11-23T08:47:18.578544+00:00",
-      "source_sha256": "df317508c0c7cc8ea04b71385cb678751d1f4b58916b997022b233ece46290e0",
-      "structure": {
-        "headings": {
-          "h1": 1
-        },
-        "forms": 0,
-        "input_types": {},
-        "navigation_regions": 2,
-        "main_regions": 1,
-        "sections": 1,
-        "articles": 0,
-        "tables": 0,
-        "dialogs": 0,
-        "canvases": 0,
-        "videos": 0,
-        "roles": {},
-        "anchor_count": 121
-      }
     }
   ],
   "visual_metrics": [],
-  "source_state_observations": [],
+  "source_state_observations": [
+    {
+      "id": "marry-gallery-390",
+      "source_id": "5be4915e232c552f",
+      "url": "https://marryandbride.com/come-fly-with-me-braut-cape/",
+      "viewport": {
+        "width": 390,
+        "height": 1000,
+        "device_scale_factor": 1
+      },
+      "observed_at": "2026-11-23T13:01:01.390Z",
+      "status": "rendered_observed",
+      "actions": [
+        {
+          "name": "Go to slide 2",
+          "status": "acted_and_observed",
+          "observable_state_changed": true
+        },
+        {
+          "name": "Material & Pflege",
+          "status": "acted_and_observed",
+          "observable_state_changed": true
+        },
+        {
+          "name": "Lieferung & Rückgaben",
+          "status": "acted_and_observed",
+          "observable_state_changed": true
+        }
+      ],
+      "not_claimed": [
+        "Autoplay from a single initial slide",
+        "Purchase, wishlist, messages or backend actions"
+      ],
+      "private_screenshot_sha256": "267ca1f7cbff458421b0d26deb1babaf2ed1452a303e75d54fad0727f17ee931"
+    },
+    {
+      "id": "marry-gallery-1440",
+      "source_id": "5be4915e232c552f",
+      "url": "https://marryandbride.com/come-fly-with-me-braut-cape/",
+      "viewport": {
+        "width": 1440,
+        "height": 1000,
+        "device_scale_factor": 1
+      },
+      "observed_at": "2026-11-23T13:01:21.669Z",
+      "status": "rendered_observed",
+      "actions": [
+        {
+          "name": "Go to slide 2",
+          "status": "acted_and_observed",
+          "observable_state_changed": true
+        },
+        {
+          "name": "Material & Pflege",
+          "status": "acted_and_observed",
+          "observable_state_changed": true
+        },
+        {
+          "name": "Lieferung & Rückgaben",
+          "status": "acted_and_observed",
+          "observable_state_changed": true
+        }
+      ],
+      "not_claimed": [
+        "Autoplay from a single initial slide",
+        "Purchase, wishlist, messages or backend actions"
+      ],
+      "private_screenshot_sha256": "72c709154325d5643e4c92e3c461b8ae0a6c2bf41ac778f1d5320e12788b4502"
+    },
+    {
+      "id": "marry-options-390",
+      "source_id": "5be4915e232c552f",
+      "url": "https://marryandbride.com/come-fly-with-me-braut-cape/",
+      "viewport": {
+        "width": 390,
+        "height": 1000,
+        "device_scale_factor": 1
+      },
+      "observed_at": "2026-11-23T13:18:46.717Z",
+      "status": "rendered_observed",
+      "official_relationship": {
+        "url": "https://www.awwwards.com/sites/marry-bride",
+        "label": "honorable_mention",
+        "award_date": "2026-08-05",
+        "verification": "Live official structured fetch confirmed on 2026-11-23; applies to named work, not independent award for this inner page"
+      },
+      "actions": [
+        {
+          "name": "Inspected single available color label",
+          "status": "acted_and_observed",
+          "observable_state_changed": false,
+          "result": "The only color remains selected; no alternate color transition demonstrated"
+        },
+        {
+          "name": "Enable express option through inspected visible label",
+          "status": "acted_and_observed",
+          "observable_state_changed": true,
+          "checked_before": false,
+          "checked_after": true,
+          "displayed_preparation_time_changed": true
+        },
+        {
+          "name": "Disable express option through same visible label",
+          "status": "acted_and_observed",
+          "observable_state_changed": true,
+          "checked_after": false,
+          "displayed_preparation_time_restored": true
+        }
+      ],
+      "field_visibility_correction": "An earlier native-visible-only scan omitted styled fields. The color select is display:none, its visible swatch uses a labeled radio, and the express checkbox is transparent with a visible associated label. Absence cannot be inferred from that old scan.",
+      "request_guard": "Only anonymous GET/HEAD allowed; source non-read requests were aborted. No source form submission, cart, wishlist, contact or purchase was operated.",
+      "not_claimed": [
+        "Source price recalculation was not captured",
+        "All variations, availability or stock semantics",
+        "Source implementation version or backend behavior",
+        "Source terms or media rights"
+      ],
+      "private_screenshot_sha256": "169769727e0ddd6ddc15431038708f96382c4a73a207886ad52903bea9665e5e"
+    },
+    {
+      "id": "marry-options-1440",
+      "source_id": "5be4915e232c552f",
+      "url": "https://marryandbride.com/come-fly-with-me-braut-cape/",
+      "viewport": {
+        "width": 1440,
+        "height": 1000,
+        "device_scale_factor": 1
+      },
+      "observed_at": "2026-11-23T13:18:56.471Z",
+      "status": "rendered_observed",
+      "official_relationship": {
+        "url": "https://www.awwwards.com/sites/marry-bride",
+        "label": "honorable_mention",
+        "award_date": "2026-08-05",
+        "verification": "Live official structured fetch confirmed on 2026-11-23; applies to named work, not independent award for this inner page"
+      },
+      "actions": [
+        {
+          "name": "Inspected single available color label",
+          "status": "acted_and_observed",
+          "observable_state_changed": false,
+          "result": "The only color remains selected; no alternate color transition demonstrated"
+        },
+        {
+          "name": "Enable express option through inspected visible label",
+          "status": "acted_and_observed",
+          "observable_state_changed": true,
+          "checked_before": false,
+          "checked_after": true,
+          "displayed_preparation_time_changed": true
+        },
+        {
+          "name": "Disable express option through same visible label",
+          "status": "acted_and_observed",
+          "observable_state_changed": true,
+          "checked_after": false,
+          "displayed_preparation_time_restored": true
+        }
+      ],
+      "field_visibility_correction": "An earlier native-visible-only scan omitted styled fields. The color select is display:none, its visible swatch uses a labeled radio, and the express checkbox is transparent with a visible associated label. Absence cannot be inferred from that old scan.",
+      "request_guard": "Only anonymous GET/HEAD allowed; source non-read requests were aborted. No source form submission, cart, wishlist, contact or purchase was operated.",
+      "not_claimed": [
+        "Source price recalculation was not captured",
+        "All variations, availability or stock semantics",
+        "Source implementation version or backend behavior",
+        "Source terms or media rights"
+      ],
+      "private_screenshot_sha256": "62e460510318505a7ec563af4274ccf2e8238bf025c4fa1fa919bc03422c0324"
+    }
+  ],
   "source_coverage": "observed_examples",
   "original_blueprint": true,
   "business_mode": "local_preview",
@@ -290,11 +474,32 @@
     "3D 预览是增强，规格与购买条件保留在 DOM。",
     "320、390、768、1440 宽度不出现整页横溢出；必要表格在独立区域滚动。",
     "键盘可进入、操作、关闭对话框并返回触发点；错误不只靠颜色。",
-    "本地预览不得暗示真实支付、投稿、消息、账户或预约已生效。"
+    "本地预览不得暗示真实支付、投稿、消息、账户或预约已生效。",
+    "图库切换、放大、方向键和关闭后的焦点返回必须实际操作；不自动轮播。",
+    "颜色与加急选项具有可见标签，未知库存与售罄不能伪造为可购买。",
+    "数量不接受空值、小数或指数；整数金额展示与计算一致，未知税费、配送和最终应付金额保持未知。",
+    "编辑使旧估算失效，取消中的旧响应不能覆盖新选择；失败重试保留输入。",
+    "无脚本或产品数据失败时保留全部原创视图、价格示例和规格；真实后端与源站素材不随模板交付。"
   ],
   "limitations": [
     "Source interaction audit is not automatically performed",
     "Source assets are not bundled",
     "Real backend, production and physical-device acceptance are not included"
-  ]
+  ],
+  "product_contract": {
+    "implementation": "Original fictional lamp, text, CSS illustrations, stock and integer-cent local estimates",
+    "gallery": "Three explicit views; no autoplay; enlarged dialog supports arrows and focus return",
+    "selection": "Labeled native color radios, size selector and express checkbox; unknown and sold-out stock remain distinct",
+    "estimate": "Edits invalidate old estimates and abort pending work; a new estimate is required before review",
+    "unknown_fees": "Known subtotal and express fee only; tax, delivery and final payable total remain null",
+    "source_field_review": "Inspect visible labels and custom controls as well as native visibility; an empty native-visible list does not prove absence",
+    "family_review": "Exact URL review is tied to the metadata hash and becomes stale after source changes",
+    "not_reproduced": [
+      "Real cart, wishlist, orders or payment",
+      "Source color switching: only one option observed",
+      "Source price recalculation",
+      "Source autoplay",
+      "Cartier configurator, blocked with HTTP403"
+    ]
+  }
 }

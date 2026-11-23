@@ -1,6 +1,6 @@
 {
   "schema_version": "3.0",
-  "generated_at": "2026-11-23T12:43:27.361070+00:00",
+  "generated_at": "2026-11-23T13:34:40.607700+00:00",
   "core_skills_preserved": 24,
   "page_skills": 46,
   "status": "in_progress",
@@ -515,13 +515,13 @@
       "skill": "awwwards-page-external-product",
       "title": "获奖外站产品与商店内页",
       "kind": "product",
-      "runtime_variant": "generic-page",
+      "runtime_variant": "business-product",
       "source_families": [
         "external.product"
       ],
       "source_coverage": "observed_examples",
       "source_count": 6,
-      "evidence_level": "http_dom",
+      "evidence_level": "rendered_source_observations",
       "path": "skills/awwwards-page-external-product",
       "demo": "skills/awwwards-page-external-product/assets/",
       "browser_validation": "See validation evidence; not inferred from generation"

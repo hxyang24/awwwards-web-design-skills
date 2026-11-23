@@ -9,7 +9,7 @@ description: Design and implement a external product page with task-specific str
 核对产品、规格、许可与费用，完成可核实的选择。 使用于这一页面族；不要把它扩张为完整网站或所有业务的通用流程。现有项目优先保留其框架、品牌、路由和真实接口。
 
 ## 先读取
-读取 [页面契约](references/page-contract.json)。其中 regions 是建议结构，workflow 是原创实现步骤，sources/visual_metrics 才是已记录观察。当前证据层级 `http_dom`；页面族覆盖 `observed_examples`。同类页面共用此技能，但这不证明该页面族所有网站均已逐页检查。
+读取 [页面契约](references/page-contract.json)。其中 regions 是建议结构，workflow 是原创实现步骤，sources/visual_metrics 才是已记录观察。当前证据层级 `rendered_source_observations`；页面族覆盖 `observed_examples`。同类页面共用此技能，但这不证明该页面族所有网站均已逐页检查。
 
 ## 页面结构与实施
 建议区域：产品身份、展示、规格或变体、库存、许可、价格、购买条件。
@@ -38,11 +38,14 @@ python scripts/scaffold.py --output YOUR_EMPTY_PROJECT_DIRECTORY
 交付路由/组件边界、状态矩阵、数据契约、来源和素材台账、实际运行命令、截图及未测项。检查契约中的每条 acceptance，记录 passed/failed/blocked/not_run 并给出证据。不要从一个测试通过推断整站、全部设备或生产已验收。
 
 ## 已读取的来源
+- https://marryandbride.com/come-fly-with-me-braut-cape/（http_dom；2026-11-23T12:28:50.024570+00:00）
 - http://www.delvaux.com/en/collections（http_dom；2026-11-23T10:39:56.699707+00:00）
 - http://www.delvaux.com/en/products/accessories/brillant-charms-box-calf-black-dore（http_dom；2026-11-23T10:39:57.242692+00:00）
 - https://acmecups.nz/collections（http_dom；2026-11-23T08:47:53.086202+00:00）
 - https://acmecups.nz/collections?page=2（http_dom；2026-11-23T09:34:05.987624+00:00）
 - https://acmecups.nz/collections?page=3（http_dom；2026-11-23T09:34:06.160014+00:00）
-- https://adinabuzatu.ro/collection/abc（http_dom；2026-11-23T08:47:18.578544+00:00）
 
 来源受各自版权和访问规则约束；只借鉴结构与机制，使用原创或已授权文案、图像、字体和模型。未知技术版本、隐藏状态和服务端行为不得根据截图补造。
+
+## 商品详情专项
+读取 `assets/product-model.mjs`、`assets/product.json` 和契约中的 `product_contract`。先区分详情与集合页，再核查图库、变体、加急选项、库存和说明折叠。源站透明原生控件可能有可见标签；实际点击已核查标签，不用强制修改隐藏 select 代替用户路径。当前来源只有一种颜色，加急勾选和准备时间的变化已观察；未证明颜色切换或源站价格重算。蓝本为独立原创虚构灯具，保留未知费用、失效估算、售罄和失败恢复；不包含真实购物接口。
