@@ -1,0 +1,11 @@
+{
+  "run_id": 45151993427,
+  "commit": "411495919afc17dabe7df55edfc99e2991472f09",
+  "platform": "GitHub ubuntu-latest",
+  "failed_case": "Careers visual motion pauses on request and outside viewport",
+  "observed_before_transform": "matrix(0.983255, -0.182237, 0.182237, 0.983255, 0, 0)",
+  "observed_later_transform": "matrix(0.98556, -0.169325, 0.169325, 0.98556, 0, 0)",
+  "interpretation": "Consistent with sampling before the pending pause/presentation task settled; the failing run did not record pending/currentTime, so the exact cause is not proven by that trace alone.",
+  "verification_change": "Wait for no pending pause, await Animation.ready and two presentation frames, then independently assert both currentTime and rendered transform remain fixed. Keep the failure record; do not just rerun an unchanged check.",
+  "timing_reference": "https://www.w3.org/TR/web-animations-1/"
+}

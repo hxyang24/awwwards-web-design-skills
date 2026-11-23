@@ -1985,8 +1985,13 @@
     },
     {
       "path": "research/interaction_skill_validation/browser-results.json",
-      "bytes": 5070,
-      "sha256": "5e8116f2765022a64b0fc13ce4188d55868cf933cb9fbe7d3b30df1ff797c098"
+      "bytes": 5420,
+      "sha256": "115aeb85fbb08d7edfb4e18862a5d03950514bdd8f2fd823b227923a65b365eb"
+    },
+    {
+      "path": "research/interaction_skill_validation/ci-pause-observation.json",
+      "bytes": 896,
+      "sha256": "cd9546359d588eb28e2a5acc323d40a279e086a49bd42f7e77832e0421f36051"
     },
     {
       "path": "research/interaction_skill_validation/screenshots/careers-culture-1440.png",
@@ -2000,8 +2005,8 @@
     },
     {
       "path": "research/interaction_skill_validation/screenshots/discovery-navigation-1440.png",
-      "bytes": 240409,
-      "sha256": "fa8df67114952ddaf17237e4007a816ce53e93bc7429705b4bf6c3c714df1a18"
+      "bytes": 240690,
+      "sha256": "d2eecaa85403115b38ab6f4b3494d99e7d931bd4f67c5bebc5b571a016f69dd1"
     },
     {
       "path": "research/interaction_skill_validation/screenshots/discovery-navigation-390.png",
@@ -3940,8 +3945,8 @@
     },
     {
       "path": "tools/test_interaction_skills.mjs",
-      "bytes": 14635,
-      "sha256": "523d606385f4051044fa960f7b8d716b92667dad683d7cffa874bd9518bbdf1c"
+      "bytes": 15387,
+      "sha256": "e0a49926b8a3fe1525eb9c767fbf22677d02e4aa39e6c783b765d782c4382a98"
     },
     {
       "path": "tools/test_interaction_skills.py",
