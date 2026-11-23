@@ -36,6 +36,46 @@
   "evidence_note": "Only recorded observations are facts. DOM structure does not prove visual composition, hidden state, source code, backend behavior or licenses. The runnable blueprint is an original recipe, not a source-site clone.",
   "sources": [
     {
+      "id": "7a0e2034d1d14185",
+      "url": "http://aonnoysengupta.com/",
+      "family": "external.home",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T09:10:12.625176+00:00",
+      "source_sha256": "7b870a7e1c3215ed54d14dc70dfa082801b37154889d32a51c124f1e2ddb084f",
+      "structure": {
+        "headings": {
+          "h1": 1,
+          "h2": 9,
+          "h3": 19
+        },
+        "forms": 1,
+        "input_types": {
+          "text": 4,
+          "email": 1,
+          "checkbox": 2
+        },
+        "navigation_regions": 2,
+        "main_regions": 1,
+        "sections": 10,
+        "articles": 5,
+        "tables": 0,
+        "dialogs": 1,
+        "canvases": 2,
+        "videos": 0,
+        "roles": {
+          "switch": 4,
+          "img": 94,
+          "tablist": 1,
+          "tab": 5,
+          "tabpanel": 5,
+          "group": 1,
+          "dialog": 1,
+          "alert": 4
+        },
+        "anchor_count": 61
+      }
+    },
+    {
       "id": "1e56626c0a2eb400",
       "url": "http://www.because-recollection.com/",
       "family": "external.home",
@@ -82,6 +122,70 @@
       }
     },
     {
+      "id": "da29e4d7f6f02853",
+      "url": "https://365ayearof.cartier.com/en/",
+      "family": "external.home",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T08:45:19.244737+00:00",
+      "source_sha256": "00642d93dd3da90f2ed076c505687479e98c5eb8f93bff62ae111cccc90283d3",
+      "structure": {
+        "headings": {
+          "h1": 1,
+          "h2": 11,
+          "h3": 27
+        },
+        "forms": 0,
+        "input_types": {},
+        "navigation_regions": 3,
+        "main_regions": 1,
+        "sections": 6,
+        "articles": 0,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 1,
+        "videos": 5,
+        "roles": {
+          "banner": 1,
+          "menu": 1,
+          "menuitem": 1
+        },
+        "anchor_count": 29
+      }
+    },
+    {
+      "id": "cd3ef38c0d7e4f68",
+      "url": "https://8pm.it/",
+      "family": "external.home",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T08:45:41.229812+00:00",
+      "source_sha256": "a4098b533ccb44ff6270ffdda434c11b8b32a465894bba3ee7802c583ccb427d",
+      "structure": {
+        "headings": {
+          "h2": 6,
+          "h3": 49
+        },
+        "forms": 7,
+        "input_types": {
+          "search": 3,
+          "hidden": 14,
+          "radio": 29,
+          "email": 2
+        },
+        "navigation_regions": 2,
+        "main_regions": 1,
+        "sections": 19,
+        "articles": 0,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 2,
+        "roles": {
+          "main": 1
+        },
+        "anchor_count": 184
+      }
+    },
+    {
       "id": "6a1c34195f749a09",
       "url": "https://a24.raviklaassens.com/",
       "family": "external.home",
@@ -108,83 +212,6 @@
           "listitem": 110
         },
         "anchor_count": 32
-      }
-    },
-    {
-      "id": "f1a2bcc79e92badf",
-      "url": "https://accentboissons.com/",
-      "family": "external.home",
-      "inspection_level": "http_dom",
-      "observed_at": "2026-11-23T08:03:56.329370+00:00",
-      "source_sha256": "03675b62d229a878705a4927de1e61c84fefa4b0f6c7750cfd6988517e49fe6c",
-      "structure": {
-        "headings": {
-          "h2": 11,
-          "h1": 1,
-          "h3": 4
-        },
-        "forms": 1,
-        "input_types": {
-          "number": 1
-        },
-        "navigation_regions": 0,
-        "main_regions": 1,
-        "sections": 6,
-        "articles": 4,
-        "tables": 0,
-        "dialogs": 0,
-        "canvases": 1,
-        "videos": 1,
-        "roles": {
-          "listbox": 1
-        },
-        "anchor_count": 5
-      }
-    },
-    {
-      "id": "433180293c3d969b",
-      "url": "https://activetheory.net/",
-      "family": "external.home",
-      "inspection_level": "http_dom",
-      "observed_at": "2026-11-23T08:04:00.435854+00:00",
-      "source_sha256": "e026e78b8db8823da1d2256fd7b011aa016b971d2bbd64e72e98f440f46626d5",
-      "structure": {
-        "headings": {},
-        "forms": 0,
-        "input_types": {},
-        "navigation_regions": 0,
-        "main_regions": 0,
-        "sections": 0,
-        "articles": 0,
-        "tables": 0,
-        "dialogs": 0,
-        "canvases": 0,
-        "videos": 0,
-        "roles": {},
-        "anchor_count": 0
-      }
-    },
-    {
-      "id": "8aec7d303102589f",
-      "url": "https://adidaschile20.com/",
-      "family": "external.home",
-      "inspection_level": "http_dom",
-      "observed_at": "2026-11-23T08:05:58.754132+00:00",
-      "source_sha256": "1ae426b88bf06d9270b897f51322739a2e385329a86288bde35de59b073b034a",
-      "structure": {
-        "headings": {},
-        "forms": 0,
-        "input_types": {},
-        "navigation_regions": 0,
-        "main_regions": 0,
-        "sections": 0,
-        "articles": 0,
-        "tables": 0,
-        "dialogs": 0,
-        "canvases": 0,
-        "videos": 0,
-        "roles": {},
-        "anchor_count": 0
       }
     }
   ],

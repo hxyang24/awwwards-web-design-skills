@@ -1,5 +1,5 @@
 {
-  "date": "2026-11-23T08:27:14.243Z",
+  "date": "2026-11-23T09:13:34.295Z",
   "status": "passed",
   "page_skills": 41,
   "checks": [
@@ -77,6 +77,10 @@
     },
     {
       "name": "service accessibility and original screenshot",
+      "status": "passed"
+    },
+    {
+      "name": "careers accessibility and original screenshot",
       "status": "passed"
     },
     {
@@ -231,6 +235,11 @@
       "violations": []
     },
     {
+      "kind": "careers",
+      "skill": "external-careers",
+      "violations": []
+    },
+    {
       "kind": "gallery",
       "skill": "external-media-portfolio",
       "violations": []
@@ -264,6 +273,7 @@
     "research/page_skill_validation/screenshots/event-390.png",
     "research/page_skill_validation/screenshots/project-390.png",
     "research/page_skill_validation/screenshots/service-390.png",
+    "research/page_skill_validation/screenshots/careers-390.png",
     "research/page_skill_validation/screenshots/gallery-390.png",
     "research/page_skill_validation/screenshots/experiment-390.png",
     "research/page_skill_validation/screenshots/notfound-390.png"

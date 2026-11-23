@@ -30,26 +30,198 @@
   ],
   "failure_recovery": "未批准内容保持草案或未知；不自动套用第三方主体。",
   "motion_contract": "文档可缩放和打印，静态导航可直接到达各章节。",
-  "evidence_level": "rendered_geometry",
+  "evidence_level": "http_dom",
   "evidence_note": "Only recorded observations are facts. DOM structure does not prove visual composition, hidden state, source code, backend behavior or licenses. The runnable blueprint is an original recipe, not a source-site clone.",
   "sources": [
     {
-      "id": "d2e47d81c8ac833c",
-      "url": "https://www.a-lign.studio/privacy-policy",
+      "id": "09e521e12c5ffb30",
+      "url": "http://aonnoysengupta.com/cookies",
       "family": "external.legal",
       "inspection_level": "http_dom",
-      "observed_at": "2026-11-23T08:03:41.286909+00:00",
-      "source_sha256": "e4a9499c17b5f6a4f0c70f711109b42e1e0f223e4c5229c05bc17b482aace32c",
+      "observed_at": "2026-11-23T09:10:15.455204+00:00",
+      "source_sha256": "e37180f8f75e4be3b60fe415682dc60128e86f59d77d6cba8761bf8832351a71",
       "structure": {
         "headings": {
           "h1": 1,
-          "h2": 8
+          "h2": 8,
+          "h3": 3
         },
-        "forms": 1,
+        "forms": 0,
+        "input_types": {
+          "checkbox": 2
+        },
+        "navigation_regions": 2,
+        "main_regions": 1,
+        "sections": 7,
+        "articles": 0,
+        "tables": 2,
+        "dialogs": 1,
+        "canvases": 2,
+        "videos": 0,
+        "roles": {
+          "switch": 4
+        },
+        "anchor_count": 39
+      }
+    },
+    {
+      "id": "a7c83c136260ca49",
+      "url": "https://abatable.com/privacy-policy",
+      "family": "external.legal",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T08:46:08.760529+00:00",
+      "source_sha256": "7677247998d6ededc7a3bbd1d647e651f97381312ff3c336b2c76308c367d0a4",
+      "structure": {
+        "headings": {
+          "h3": 12,
+          "h1": 1,
+          "h2": 12,
+          "h4": 5
+        },
+        "forms": 0,
         "input_types": {},
         "navigation_regions": 1,
+        "main_regions": 0,
+        "sections": 8,
+        "articles": 0,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 0,
+        "roles": {
+          "region": 2,
+          "list": 15,
+          "none": 1,
+          "listitem": 23
+        },
+        "anchor_count": 50
+      }
+    },
+    {
+      "id": "0718e5122d7ffdd8",
+      "url": "https://abatable.com/terms-and-conditions",
+      "family": "external.legal",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T08:46:24.150828+00:00",
+      "source_sha256": "d76d25e99869622ef51dfc7d58cffc1da301fd74f5613efb5afd848b90c82f2d",
+      "structure": {
+        "headings": {
+          "h3": 9,
+          "h1": 1,
+          "h2": 20
+        },
+        "forms": 0,
+        "input_types": {},
+        "navigation_regions": 1,
+        "main_regions": 0,
+        "sections": 8,
+        "articles": 0,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 0,
+        "roles": {
+          "region": 2,
+          "none": 1,
+          "list": 7,
+          "listitem": 23
+        },
+        "anchor_count": 50
+      }
+    },
+    {
+      "id": "c4a9b3c7781bd567",
+      "url": "https://acmecups.nz/pages/privacy-policy",
+      "family": "external.legal",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T08:49:04.736741+00:00",
+      "source_sha256": "3ac4bdba6b8f23c225c1e140f06767f4060e6f71baf4977f61d5e3a9599e05df",
+      "structure": {
+        "headings": {
+          "h1": 2,
+          "h4": 2,
+          "h6": 2,
+          "h5": 2,
+          "h3": 2
+        },
+        "forms": 8,
+        "input_types": {
+          "hidden": 20,
+          "text": 5,
+          "email": 2,
+          "number": 1
+        },
+        "navigation_regions": 0,
         "main_regions": 1,
-        "sections": 6,
+        "sections": 0,
+        "articles": 0,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 0,
+        "roles": {
+          "main": 1,
+          "status": 1
+        },
+        "anchor_count": 147
+      }
+    },
+    {
+      "id": "7a215715b0a55581",
+      "url": "https://adsb.co.kr/policies/privacy-policy",
+      "family": "external.legal",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T08:49:39.910436+00:00",
+      "source_sha256": "cc64c27618c28cc8ed57cb799a74aae7684e2dcfb42034d64cfac006f9fb2794",
+      "structure": {
+        "headings": {
+          "h1": 8,
+          "h2": 9,
+          "h4": 5
+        },
+        "forms": 4,
+        "input_types": {
+          "text": 2,
+          "hidden": 7,
+          "email": 1
+        },
+        "navigation_regions": 1,
+        "main_regions": 1,
+        "sections": 0,
+        "articles": 0,
+        "tables": 2,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 0,
+        "roles": {
+          "dialog": 1
+        },
+        "anchor_count": 241
+      }
+    },
+    {
+      "id": "b513f060b9fe6f3c",
+      "url": "https://agnestoth.com/policies/privacy-policy",
+      "family": "external.legal",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T08:49:44.060286+00:00",
+      "source_sha256": "6af81847752697a8b54e66fc9a865da91a14be958abf3e05e25bf84b15756339",
+      "structure": {
+        "headings": {
+          "h1": 1,
+          "h2": 3,
+          "h3": 13
+        },
+        "forms": 2,
+        "input_types": {
+          "hidden": 6,
+          "email": 1,
+          "text": 1,
+          "checkbox": 1
+        },
+        "navigation_regions": 3,
+        "main_regions": 1,
+        "sections": 0,
         "articles": 0,
         "tables": 0,
         "dialogs": 0,
@@ -57,262 +229,17 @@
         "videos": 0,
         "roles": {
           "list": 6,
-          "listitem": 17
+          "img": 2,
+          "listbox": 2,
+          "option": 6,
+          "main": 1,
+          "status": 1
         },
-        "anchor_count": 33
-      }
-    },
-    {
-      "id": "3f69150e5ff0d48e",
-      "url": "https://www.agrumeafarm.it/en/privacy",
-      "family": "external.legal",
-      "inspection_level": "http_dom",
-      "observed_at": "2026-11-23T08:15:24.207803+00:00",
-      "source_sha256": "524a1aac2ce7306b9863d5c4fb151f7f1a5b47680a1033f63420384cd0e06b43",
-      "structure": {
-        "headings": {
-          "h1": 1,
-          "h2": 7
-        },
-        "forms": 0,
-        "input_types": {},
-        "navigation_regions": 3,
-        "main_regions": 1,
-        "sections": 7,
-        "articles": 0,
-        "tables": 1,
-        "dialogs": 0,
-        "canvases": 0,
-        "videos": 0,
-        "roles": {},
-        "anchor_count": 26
-      }
-    },
-    {
-      "id": "0507d4f9829fd9ee",
-      "url": "https://www.agrumeafarm.it/privacy",
-      "family": "external.legal",
-      "inspection_level": "http_dom",
-      "observed_at": "2026-11-23T08:16:02.188608+00:00",
-      "source_sha256": "410e737bb0a34596f2dfebb2f79ef4028dcd37fde2ba88fedf64db9751ff44f9",
-      "structure": {
-        "headings": {
-          "h1": 1,
-          "h2": 7
-        },
-        "forms": 0,
-        "input_types": {},
-        "navigation_regions": 3,
-        "main_regions": 1,
-        "sections": 7,
-        "articles": 0,
-        "tables": 1,
-        "dialogs": 0,
-        "canvases": 0,
-        "videos": 0,
-        "roles": {},
-        "anchor_count": 26
+        "anchor_count": 31
       }
     }
   ],
-  "visual_metrics": [
-    {
-      "source_id": "3f69150e5ff0d48e",
-      "url": "https://www.agrumeafarm.it/en/privacy",
-      "family": "external.legal",
-      "viewport": {
-        "width": 390,
-        "height": 1000,
-        "device_scale_factor": 1
-      },
-      "observed_at": "2026-11-23T08:21:15.836Z",
-      "interaction_inspection": "not_run",
-      "source_screenshots_redistributed": false,
-      "http_status": 200,
-      "final_url": "https://www.agrumeafarm.it/en/privacy",
-      "render_state": "visible_content",
-      "metrics": {
-        "document_width": 390,
-        "viewport_width": 390,
-        "body_background": "rgb(253, 243, 235)",
-        "html_background": "rgba(0, 0, 0, 0)",
-        "body_font": "ivystyle-sans, \"Avenir Next\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
-        "heading_geometry": [
-          {
-            "x": 24,
-            "y": 112,
-            "width": 342,
-            "height": 24,
-            "font_family": "ivymode, \"Iowan Old Style\", \"Palatino Linotype\", \"Book Antiqua\", Palatino, serif",
-            "font_size": "22.134px",
-            "font_weight": "400",
-            "line_height": "24.3474px",
-            "color": "rgb(118, 37, 48)"
-          },
-          {
-            "x": 24,
-            "y": 203,
-            "width": 342,
-            "height": 23,
-            "font_family": "ivymode, \"Iowan Old Style\", \"Palatino Linotype\", \"Book Antiqua\", Palatino, serif",
-            "font_size": "18.0035px",
-            "font_weight": "400",
-            "line_height": "22.5044px",
-            "color": "rgb(118, 37, 48)"
-          },
-          {
-            "x": 24,
-            "y": 468,
-            "width": 342,
-            "height": 23,
-            "font_family": "ivymode, \"Iowan Old Style\", \"Palatino Linotype\", \"Book Antiqua\", Palatino, serif",
-            "font_size": "18.0035px",
-            "font_weight": "400",
-            "line_height": "22.5044px",
-            "color": "rgb(118, 37, 48)"
-          },
-          {
-            "x": 24,
-            "y": 876,
-            "width": 342,
-            "height": 23,
-            "font_family": "ivymode, \"Iowan Old Style\", \"Palatino Linotype\", \"Book Antiqua\", Palatino, serif",
-            "font_size": "18.0035px",
-            "font_weight": "400",
-            "line_height": "22.5044px",
-            "color": "rgb(118, 37, 48)"
-          },
-          {
-            "x": 24,
-            "y": 1352,
-            "width": 342,
-            "height": 23,
-            "font_family": "ivymode, \"Iowan Old Style\", \"Palatino Linotype\", \"Book Antiqua\", Palatino, serif",
-            "font_size": "18.0035px",
-            "font_weight": "400",
-            "line_height": "22.5044px",
-            "color": "rgb(118, 37, 48)"
-          },
-          {
-            "x": 24,
-            "y": 1578,
-            "width": 342,
-            "height": 23,
-            "font_family": "ivymode, \"Iowan Old Style\", \"Palatino Linotype\", \"Book Antiqua\", Palatino, serif",
-            "font_size": "18.0035px",
-            "font_weight": "400",
-            "line_height": "22.5044px",
-            "color": "rgb(118, 37, 48)"
-          }
-        ],
-        "navigation_regions": 3,
-        "visible_buttons": 2,
-        "visible_inputs": 0,
-        "canvas_count": 0,
-        "video_count": 0
-      },
-      "screenshot_sha256": "73d361f9050f201fd3f4279bf326ae0548c0137f698453489acf96c41cd78a79",
-      "status": "rendered_observed"
-    },
-    {
-      "source_id": "3f69150e5ff0d48e",
-      "url": "https://www.agrumeafarm.it/en/privacy",
-      "family": "external.legal",
-      "viewport": {
-        "width": 1440,
-        "height": 1000,
-        "device_scale_factor": 1
-      },
-      "observed_at": "2026-11-23T08:21:19.303Z",
-      "interaction_inspection": "not_run",
-      "source_screenshots_redistributed": false,
-      "http_status": 200,
-      "final_url": "https://www.agrumeafarm.it/en/privacy",
-      "render_state": "visible_content",
-      "metrics": {
-        "document_width": 1440,
-        "viewport_width": 1440,
-        "body_background": "rgb(253, 243, 235)",
-        "html_background": "rgba(0, 0, 0, 0)",
-        "body_font": "ivystyle-sans, \"Avenir Next\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
-        "heading_geometry": [
-          {
-            "x": 352,
-            "y": 192,
-            "width": 736,
-            "height": 35,
-            "font_family": "ivymode, \"Iowan Old Style\", \"Palatino Linotype\", \"Book Antiqua\", Palatino, serif",
-            "font_size": "32px",
-            "font_weight": "400",
-            "line_height": "35.2px",
-            "color": "rgb(118, 37, 48)"
-          },
-          {
-            "x": 352,
-            "y": 309,
-            "width": 736,
-            "height": 25,
-            "font_family": "ivymode, \"Iowan Old Style\", \"Palatino Linotype\", \"Book Antiqua\", Palatino, serif",
-            "font_size": "19.736px",
-            "font_weight": "400",
-            "line_height": "24.67px",
-            "color": "rgb(118, 37, 48)"
-          },
-          {
-            "x": 352,
-            "y": 516,
-            "width": 736,
-            "height": 25,
-            "font_family": "ivymode, \"Iowan Old Style\", \"Palatino Linotype\", \"Book Antiqua\", Palatino, serif",
-            "font_size": "19.736px",
-            "font_weight": "400",
-            "line_height": "24.67px",
-            "color": "rgb(118, 37, 48)"
-          },
-          {
-            "x": 352,
-            "y": 789,
-            "width": 736,
-            "height": 25,
-            "font_family": "ivymode, \"Iowan Old Style\", \"Palatino Linotype\", \"Book Antiqua\", Palatino, serif",
-            "font_size": "19.736px",
-            "font_weight": "400",
-            "line_height": "24.67px",
-            "color": "rgb(118, 37, 48)"
-          },
-          {
-            "x": 352,
-            "y": 1214,
-            "width": 736,
-            "height": 25,
-            "font_family": "ivymode, \"Iowan Old Style\", \"Palatino Linotype\", \"Book Antiqua\", Palatino, serif",
-            "font_size": "19.736px",
-            "font_weight": "400",
-            "line_height": "24.67px",
-            "color": "rgb(118, 37, 48)"
-          },
-          {
-            "x": 352,
-            "y": 1381,
-            "width": 736,
-            "height": 25,
-            "font_family": "ivymode, \"Iowan Old Style\", \"Palatino Linotype\", \"Book Antiqua\", Palatino, serif",
-            "font_size": "19.736px",
-            "font_weight": "400",
-            "line_height": "24.67px",
-            "color": "rgb(118, 37, 48)"
-          }
-        ],
-        "navigation_regions": 3,
-        "visible_buttons": 2,
-        "visible_inputs": 0,
-        "canvas_count": 0,
-        "video_count": 0
-      },
-      "screenshot_sha256": "20d81a4f94412e4d9251c91ca2ddc6951ae1ce3945751426520a5c92c45288fa",
-      "status": "rendered_observed"
-    }
-  ],
+  "visual_metrics": [],
   "source_coverage": "observed_examples",
   "original_blueprint": true,
   "business_mode": "local_preview",

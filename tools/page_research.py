@@ -126,8 +126,10 @@ class Collector:
   for p in [self.state.parent,self.out,self.raw]:p.mkdir(parents=True,exist_ok=True)
   if self.state.is_relative_to(self.out) or self.raw.is_relative_to(self.out):raise ValueError('Private queue/cache must be outside public output')
   self.lock=threading.RLock();self.host_locks={};self.last={};self.robots={};self.opener=urllib.request.build_opener(NoRedirect);self.db=sqlite3.connect(self.state,check_same_thread=False)
-  self.db.executescript('CREATE TABLE IF NOT EXISTS queue(url TEXT PRIMARY KEY,origin TEXT,scope TEXT,priority INTEGER,state TEXT DEFAULT "pending",record TEXT);CREATE TABLE IF NOT EXISTS roots(host TEXT PRIMARY KEY,official_url TEXT);')
-  self.seen=Counter(json.loads(r)['family'] for (r,) in self.db.execute('SELECT record FROM queue WHERE record IS NOT NULL') if json.loads(r).get('inspection_level')=='http_dom')
+  self.db.executescript('CREATE TABLE IF NOT EXISTS queue(url TEXT PRIMARY KEY,origin TEXT,scope TEXT,priority INTEGER,state TEXT DEFAULT "pending",record TEXT);CREATE TABLE IF NOT EXISTS roots(host TEXT PRIMARY KEY,official_url TEXT);CREATE TABLE IF NOT EXISTS host_backoff(host TEXT PRIMARY KEY,retry_after REAL);')
+  observed=[json.loads(r) for (r,) in self.db.execute('SELECT record FROM queue WHERE record IS NOT NULL') if json.loads(r).get('inspection_level')=='http_dom']
+  self.seen=Counter(r['family'] for r in observed)
+  self.seen_on_host=Counter((urllib.parse.urlsplit(r['url']).hostname,r['family']) for r in observed)
  def add(self,url,origin,scope,priority):
   u=normalize(url,origin)
   if not u:return
@@ -145,7 +147,13 @@ class Collector:
   try:
    with self.opener.open(urllib.request.Request(url,headers={'User-Agent':AGENT,'Accept':'text/html,application/xhtml+xml,text/plain;q=0.8'}),timeout=25) as f:
     b=f.read(self.max_bytes+1);return f.status,dict(f.headers),b[:self.max_bytes],len(b)>self.max_bytes
-  except urllib.error.HTTPError as e:return e.code,dict(e.headers),b'',False
+  except urllib.error.HTTPError as e:
+   if e.code in (429,503):
+    retry=e.headers.get('Retry-After','60')
+    try:delay=max(5,min(3600,int(retry)))
+    except ValueError:delay=60
+    with self.lock:self.db.execute('INSERT INTO host_backoff(host,retry_after)VALUES(?,?) ON CONFLICT(host)DO UPDATE SET retry_after=MAX(retry_after,excluded.retry_after)',(host,time.time()+delay));self.db.commit()
+   return e.code,dict(e.headers),b'',False
  def policy(self,url):
   host=urllib.parse.urlsplit(url).netloc
   with self.lock:
@@ -173,12 +181,20 @@ class Collector:
  def claim(self):
   with self.lock:
    candidates=self.db.execute('SELECT url,origin,scope,priority FROM queue WHERE state="pending"').fetchall()
-   chosen=min(candidates,key=lambda x:(x[3]+min(100,self.seen[family(x[0])]*3),x[0]),default=None)
+   cooling={h for (h,) in self.db.execute('SELECT host FROM host_backoff WHERE retry_after>?',(time.time(),))}
+   def score(x):
+    f=family(x[0]);host=urllib.parse.urlsplit(x[0]).hostname
+    # A new awarded website must not inherit the global count of every other
+    # site's homepage/project pages. Inspect distinct inner-page families per
+    # host before repeatedly sampling an already represented pattern.
+    penalty=min(60,self.seen_on_host[(host,f)]*5) if x[2]=='external' else min(12 if f=='main.award-detail' else 60,self.seen[f]*3)
+    return x[3]+penalty,x[0]
+   chosen=min((x for x in candidates if urllib.parse.urlsplit(x[0]).hostname not in cooling),key=score,default=None)
    row=chosen[:3] if chosen else None
    if row:self.db.execute('UPDATE queue SET state="fetching" WHERE url=?',(row[0],));self.db.commit()
    return row
  def inspect(self,row):
-  url,origin,scope=row;record={'id':hashlib.sha256(url.encode()).hexdigest()[:16],'url':url,'discovered_from':origin,'scope':scope,'family':family(url),'observed_at':now(),'inspection_level':'not_observed','visual_inspection':'not_run','interaction_validation':'not_run','skill_extraction':'pending','rights':'Reference metadata only; no copied code, imagery or full text redistribution'}
+  url,origin,scope=row;record={'id':hashlib.sha256(url.encode()).hexdigest()[:16],'url':url,'discovered_from':origin,'scope':scope,'family':family(url),'observed_at':now(),'inspection_level':'not_observed','visual_inspection':'not_run','interaction_validation':'not_run','skill_extraction':'pending','family_assignment':'URL pattern hint; individual page design requires review','rights':'Reference metadata only; no copied code, imagery or full text redistribution'}
   r,proof=self.policy(url);record['robots']=proof
   if not r.allowed(url):record['status']='robots_disallowed' if proof['policy']=='rules' else 'robots_unavailable';return record
   try:
@@ -221,7 +237,8 @@ class Collector:
   record=self.inspect(row)
   with self.lock:
    self.db.execute('UPDATE queue SET state="done",record=? WHERE url=?',(json.dumps(record,ensure_ascii=False),row[0]));self.db.commit()
-   if record.get('inspection_level')=='http_dom':self.seen[record['family']]+=1
+   if record.get('inspection_level')=='http_dom':
+    self.seen[record['family']]+=1;self.seen_on_host[(urllib.parse.urlsplit(record['url']).hostname,record['family'])]+=1
   return True
  def export(self):
   with self.lock:
@@ -230,8 +247,8 @@ class Collector:
   summary['pending_sample_count']=min(200,len(pending));summary['pending_sample_is_exhaustive']=len(pending)<=200
   summary['pending_families']=dict(sorted(Counter(p['family'] for p in pending).items()))
   for name,data in [('sources.jsonl',rows),('pending-pages.jsonl',pending[:200]),('external-targets.jsonl',roots)]:
-   temp=self.out/(name+'.tmp');temp.write_text(''.join(json.dumps(x,ensure_ascii=False)+'\n' for x in data),encoding='utf-8');temp.replace(self.out/name)
-  temp=self.out/'coverage.json.tmp';temp.write_text(json.dumps(summary,ensure_ascii=False,indent=2)+'\n',encoding='utf-8');temp.replace(self.out/'coverage.json');return summary
+   temp=self.out/(name+'.tmp');temp.write_text(''.join(json.dumps(x,ensure_ascii=False)+'\n' for x in data),encoding='utf-8',newline='\n');temp.replace(self.out/name)
+  temp=self.out/'coverage.json.tmp';temp.write_text(json.dumps(summary,ensure_ascii=False,indent=2)+'\n',encoding='utf-8',newline='\n');temp.replace(self.out/'coverage.json');return summary
  def crawl(self,limit,workers):
   # A previous killed process can leave claims behind; only the explicit resume
   # flag in the CLI resets them, after the operator checks the old owner.

@@ -3,7 +3,7 @@
 [![CI](https://github.com/hxyang24/awwwards-web-design-skills/actions/workflows/ci.yml/badge.svg)](https://github.com/hxyang24/awwwards-web-design-skills/actions/workflows/ci.yml)
 [![Original code: MIT](https://img.shields.io/badge/original_code-MIT-green.svg)](LICENSE)
 
-> **当前新增页面专项 Skills 整理仍在进行，尚未完成全站与所有获奖外站内页覆盖。** 新增 41 套可单独安装的页面技能，保留原 24 套核心技能，共 65 套。详细来源边界和缺口见 [页面技能目录](PAGE_SKILLS.md)。
+> **当前新增页面专项 Skills 整理仍在进行，尚未完成全站与所有获奖外站内页覆盖。** 新增 41 套可单独安装的页面技能及 3 套具体交互机制，保留原 24 套核心技能，共 68 套。详细来源边界和缺口见 [页面技能目录](PAGE_SKILLS.md)。
 
 [下载当前页面技能工作版](https://github.com/hxyang24/awwwards-web-design-skills/archive/refs/heads/main.zip) · [独立页面技能](skills) · [来源覆盖](research/live_pages/coverage.json)
 
@@ -92,8 +92,10 @@ npm run test:export
 
 这是独立研究与原创实现项目，与 Awwwards 无隶属或背书关系。公开版移除私人聊天标识、规范化少量元数据，并修正 Linux 在线测试的详情页等待条件，旧版 187 文件仍保留原字节，见 [公开发布记录](docs/OPEN_SOURCE_PUBLICATION.md)。
 
-## 页面专项 Skills 扩展
+## 页面与具体机制 Skills 扩展
 
 从根目录执行 `python tools/install_all_skills.py --target YOUR_SKILLS_DIRECTORY` 可同时安装原 24 套核心与新增页面技能。新页面技能各自包含 `SKILL.md`、页面契约、独立 HTML/CSS/JS 原创蓝本和不覆盖导出脚本。主站页面与外站内页的结构、交互、状态、响应式、动效、来源和版权边界均进入技能，而不是只有网址。
 
 原站内容只作为观察证据。完整 HTML、原站截图、代码、图片、字体、视频及音乐不随新增公开研究记录分发。新增技能的几何插图和蓝本为原创。观察缺口、受限访问、未验证的隐藏交互与未接入服务端持续保留。
+
+具体机制包括发现门户导航、雇主品牌与价值观画廊、图形失败回退。它们具有独立实现及测试，入口见 [机制说明](INTERACTION_SKILLS.md)。本轮新增部分的 12 项页面工具检查、5 项机制工具检查、36 组页面浏览器检查及 31 组机制浏览器检查已在 Windows 通过；现有包 187 个 V1 文件与封存清单仍匹配。原站观察与原创蓝本验收分别记录。

@@ -32,7 +32,7 @@ class PageSkills(unittest.TestCase):
  def test_combined_installer_preserves_existing_skill(self):
   with tempfile.TemporaryDirectory() as d:
    dest=Path(d)/'installed';dest.mkdir();old=dest/'awwwards-workflow';old.mkdir();(old/'my.txt').write_text('keep')
-   rows=install(dest);expected=len(definitions())+24;self.assertEqual(len(rows),expected);self.assertEqual((old/'my.txt').read_text(),'keep');self.assertFalse((old/'SKILL.md').exists());self.assertTrue((dest/'awwwards-page-library/PACKAGE_LOCATION.json').is_file());self.assertTrue(all(r['status']=='skipped_existing' for r in install(dest)))
+   rows=install(dest);expected=len(definitions())+24+json.loads((R/'interaction_skills/registry.json').read_text(encoding='utf-8'))['interaction_skills'];self.assertEqual(len(rows),expected);self.assertEqual((old/'my.txt').read_text(),'keep');self.assertFalse((old/'SKILL.md').exists());self.assertTrue((dest/'awwwards-page-library/PACKAGE_LOCATION.json').is_file());self.assertTrue(all(r['status']=='skipped_existing' for r in install(dest)))
  def test_urls_discard_tracking_and_reject_credentials_private_hosts_and_mutations(self):
   self.assertEqual(normalize('/websites/sites_of_the_day/?utm_source=x&page=2#here','https://www.awwwards.com/'),'https://www.awwwards.com/websites/sites_of_the_day/?page=2')
   for u in ['https://u:p@example.com/','http://127.0.0.1/','http://localhost/','file:///secret','https://example.com/logout','https://example.com/a.mp4']:self.assertIsNone(normalize(u,'https://www.awwwards.com/'))
@@ -46,6 +46,13 @@ class PageSkills(unittest.TestCase):
  def test_discovery_prioritizes_unobserved_page_families(self):
   with tempfile.TemporaryDirectory() as d:
    p=Path(d);c=Collector(p/'state/db.sqlite',p/'public',p/'raw',interval=0);c.add('https://www.awwwards.com/websites/sites_of_the_day/','https://www.awwwards.com/','main',0);c.add('https://www.awwwards.com/contact-us/','https://www.awwwards.com/','main',5);c.seen['main.award-list']=100;self.assertIn('/contact-us/',c.claim()[0]);c.db.close()
+ def test_new_external_site_does_not_inherit_other_sites_sampling_penalty(self):
+  with tempfile.TemporaryDirectory() as d:
+   p=Path(d);c=Collector(p/'state/db.sqlite',p/'public',p/'raw',interval=0);c.add('https://new.example/','https://www.awwwards.com/sites/new','external',1);c.add('https://old.example/work/2','https://old.example/','external',7);c.seen['external.home']=200;c.seen_on_host[('old.example','external.project')]=10;self.assertEqual(c.claim()[0],'https://new.example/');c.db.close()
+ def test_host_retry_after_keeps_its_unfetched_pages_pending(self):
+  import time
+  with tempfile.TemporaryDirectory() as d:
+   p=Path(d);c=Collector(p/'state/db.sqlite',p/'public',p/'raw',interval=0);c.add('https://cooling.example/','https://www.awwwards.com/','external',1);c.add('https://available.example/','https://www.awwwards.com/','external',2);c.db.execute('INSERT INTO host_backoff VALUES(?,?)',('cooling.example',time.time()+60));c.db.commit();self.assertEqual(c.claim()[0],'https://available.example/');self.assertEqual(c.db.execute('SELECT state FROM queue WHERE url=?',('https://cooling.example/',)).fetchone()[0],'pending');c.db.close()
  def test_localized_inner_pages_are_not_discarded_as_generic_urls(self):
   examples={'https://x.test/en/about-us':'external.about','https://x.test/en/archive':'external.gallery','https://x.test/en/artwork/113':'external.artwork','https://x.test/privacy-policy':'external.legal','https://x.test/lab':'external.experiment','https://x.test/404':'external.not-found','https://x.test/en/dispensa/item':'external.product'}
   for u,f in examples.items():self.assertEqual(family(u),f)
@@ -55,5 +62,5 @@ if __name__=='__main__':
  import datetime,platform
  result=unittest.TextTestRunner(verbosity=2).run(unittest.defaultTestLoader.loadTestsFromTestCase(PageSkills))
  out=R/'research/page_skill_validation';out.mkdir(parents=True,exist_ok=True)
- (out/'unit-results.json').write_text(json.dumps({'recorded_at':datetime.datetime.now(datetime.timezone.utc).isoformat(),'status':'passed' if result.wasSuccessful() else 'failed','tests':result.testsRun,'failures':len(result.failures),'errors':len(result.errors),'platform':platform.system(),'python':platform.python_version(),'scope':'Standalone exports, evidence linkage, non-overwrite installation, URL/robots safety and discovery fairness'},indent=2)+'\n',encoding='utf-8')
+ (out/'unit-results.json').write_text(json.dumps({'recorded_at':datetime.datetime.now(datetime.timezone.utc).isoformat(),'status':'passed' if result.wasSuccessful() else 'failed','tests':result.testsRun,'failures':len(result.failures),'errors':len(result.errors),'platform':platform.system(),'python':platform.python_version(),'scope':'Standalone exports, evidence linkage, non-overwrite installation, URL/robots safety and discovery fairness'},indent=2)+'\n',encoding='utf-8',newline='\n')
  raise SystemExit(not result.wasSuccessful())

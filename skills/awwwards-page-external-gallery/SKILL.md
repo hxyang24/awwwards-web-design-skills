@@ -38,7 +38,11 @@ python scripts/scaffold.py --output YOUR_EMPTY_PROJECT_DIRECTORY
 交付路由/组件边界、状态矩阵、数据契约、来源和素材台账、实际运行命令、截图及未测项。检查契约中的每条 acceptance，记录 passed/failed/blocked/not_run 并给出证据。不要从一个测试通过推断整站、全部设备或生产已验收。
 
 ## 已读取的来源
+- https://aoiofficial.com/us/archive（http_dom；2026-11-23T08:49:09.154442+00:00）
 - https://www.197historiasilustradas.com/en/archive（http_dom；2026-11-23T08:03:08.631367+00:00）
 - https://www.197historiasilustradas.com/en/gallery（http_dom；2026-11-23T08:03:17.491382+00:00）
+- https://www.arteriorshome.com/gallery（http_dom；2026-11-23T09:11:07.523717+00:00）
+- https://www.arteriorshome.com/gallery/submission（http_dom；2026-11-23T09:11:56.784283+00:00）
+- https://www.flooringxtra.co.nz/blogs/gallery（http_dom；2026-11-23T08:46:57.523367+00:00）
 
 来源受各自版权和访问规则约束；只借鉴结构与机制，使用原创或已授权文案、图像、字体和模型。未知技术版本、隐藏状态和服务端行为不得根据截图补造。

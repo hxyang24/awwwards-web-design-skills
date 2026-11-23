@@ -1,0 +1,56 @@
+{
+  "id": "immersive-fallback",
+  "title": "沉浸式站点：图形增强失败时仍保留可用页面",
+  "kind": "immersive",
+  "page_skills": [
+    "awwwards-page-external-home",
+    "awwwards-page-external-experiment",
+    "awwwards-3d-experience"
+  ],
+  "source_ids": [
+    "active-theory-compatibility-fallback"
+  ],
+  "observed": [
+    "本轮匿名软件图形环境的实际截图出现了浏览器不支持的提示和静态视觉。",
+    "这是特定环境下的兼容回退观察，未验证该站正常图形体验，也不据此评价所有用户的浏览结果。"
+  ],
+  "recipe": [
+    "先以 DOM 交付项目、导航、说明和联系路径，图形层不得拥有唯一任务入口。",
+    "增强层有初始化、静止、运动、暂停、回退和销毁状态；WebGL 初始化或 context loss 失败时可读内容保持可用。",
+    "为当前增强实例记录资源所有权；卸载移除观察器、事件、动画帧并释放几何、材质与渲染器。",
+    "限制 DPR、粒子和几何预算，提供轻量档；离屏和隐藏标签停帧，减少动画时仅绘制稳定视图。"
+  ],
+  "invariants": [
+    "禁用 JavaScript、图形不可用或手动选择静态时，核心链接和项目文本仍在页面。",
+    "兼容失败不等于正常源站体验完成；原站技术版本与内部 shader 不得从图像猜测。",
+    "资源清理只释放当前实例所有的资源，不全局销毁其他页面。",
+    "原创建模与有许可的 Three.js 分开标记；保留 MIT 文本。"
+  ],
+  "limits": [
+    "本轮源站正常三维交互未观察，示例为原创替代实现。",
+    "软件 WebGL 验证不能替代真实 GPU、手机和生产验收。"
+  ],
+  "skill": "awwwards-pattern-immersive-fallback",
+  "source_evidence": [
+    {
+      "id": "active-theory-compatibility-fallback",
+      "url": "https://activetheory.net/",
+      "viewport": {
+        "width": 1440,
+        "height": 1000,
+        "device_scale_factor": 1
+      },
+      "observed_at": "2026-11-23T08:44:46.194Z",
+      "status": "compatibility_fallback_observed",
+      "basis": "Manual review of the captured viewport showed an unsupported-browser notice over a static branded visual; this is not normal-site interaction validation.",
+      "private_screenshot_sha256": "92c34324e195b399e7cb7546b16c1e14dbfea626d5097f24b5a96eaec7178949",
+      "source_screenshots_redistributed": false,
+      "normal_site_interactions": "not_observed"
+    }
+  ],
+  "source_screenshots_redistributed": false,
+  "implementation": "original runnable pattern",
+  "business_mode": "local_fictional_preview",
+  "source_reproduction_claim": false,
+  "validation_scope": "Actual fixture tests are recorded separately; source observations do not attest implementation tests"
+}

@@ -1,0 +1,22 @@
+{
+  "recorded_at": "2026-11-23T09:18:54.052095+00:00",
+  "status": "in_progress",
+  "recorded_sources": 1408,
+  "states": {
+    "access_unresolved": 508,
+    "family_candidate_needs_page_review": 844,
+    "needs_skill_extraction": 56
+  },
+  "unmapped_dom_families": {
+    "external.other": 52,
+    "main.other": 4
+  },
+  "contract_reference_sources": 189,
+  "all_pages_completed": false,
+  "limitations": [
+    "A family match is a navigation aid, not completed individual-page analysis",
+    "A shared skill does not prove that every design variation has been extracted",
+    "Access-unresolved entries remain gaps even when a family can be guessed",
+    "The pending crawl queue is additional work, not included in recorded-source counts"
+  ]
+}

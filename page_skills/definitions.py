@@ -104,9 +104,9 @@ PAGES=[
 ('external-contact',['external.contact'],'获奖外站联系内页','contact','公开联系渠道、地点、需求分类、表单、隐私与反馈',
  ['分别记录原站可观察表单结构和建议的服务端提交契约。','公开地址和邮箱有来源；示例用虚构替代。','最少必要字段、同意状态、错误恢复和提交状态均明确。'],
  ['channels','locations','inquiry_fields','consent','response_contract'],'原站无可用表单时不臆造后台；演示不实际发送。','触屏和键盘都能完成，光标增强不干扰输入。'),
-('external-careers',['external.careers'],'获奖外站招聘内页','job','团队介绍、职位、地点、要求、权益、申请入口',
- ['区分长期人才库与真实开放职位。','岗位要求、待遇和申请渠道使用当前公开证据。','申请可以跳转但不得未经授权替用户发送。'],
- ['organization','positions','locations','requirements','benefits','application'],'职位关闭或无岗位显示明确空态；不编造招聘。','招聘正文易读，固定 CTA 不遮挡移动键盘。'),
+('external-careers',['external.careers'],'获奖外站招聘与雇主品牌内页','careers','雇主定位、团队文化、价值观、岗位入口、职位过滤、公开申请渠道',
+ ['先区分雇主品牌首页、职位搜索、职位详情和申请表，不仅凭 careers 路径就把页面生成为申请表。','品牌叙事、局部导航、价值观画廊和岗位数据分别建模；真实岗位与演示角色明确区分。','岗位要求、待遇和申请渠道使用当前公开证据；本地审阅不向任何 ATS、邮箱或服务端发送申请。'],
+ ['organization','culture','values','positions','locations','employment_type','application_channel'],'职位关闭或无岗位显示明确空态；保留可恢复筛选，不编造招聘。','画廊和视觉可暂停；初始尊重减少动画，固定入口不遮挡移动键盘。'),
 ('external-legal',['external.legal'],'获奖外站政策与条款内页','article','文档名称、版本、日期、章节、联系与相关政策',
  ['记录原站政策页面的结构与可读性，不将其条款视为其他项目的法律模板。','新项目仅使用其正式批准文本。','变更日期、同意状态和可引用锚点分别保存。'],
  ['document','version','effective_at','sections','approved_text'],'未批准内容保持草案或未知；不自动套用第三方主体。','文档可缩放和打印，静态导航可直接到达各章节。')

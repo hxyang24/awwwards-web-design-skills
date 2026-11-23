@@ -1,0 +1,194 @@
+{
+  "recorded_at": "2026-11-23T09:12:31.704Z",
+  "status": "failed",
+  "interaction_skills": 3,
+  "checks": [
+    {
+      "name": "discovery-navigation loads and fits at 320",
+      "status": "passed"
+    },
+    {
+      "name": "discovery-navigation loads and fits at 390",
+      "status": "passed"
+    },
+    {
+      "name": "discovery-navigation loads and fits at 768",
+      "status": "passed"
+    },
+    {
+      "name": "discovery-navigation loads and fits at 1440",
+      "status": "passed"
+    },
+    {
+      "name": "careers-culture loads and fits at 320",
+      "status": "passed"
+    },
+    {
+      "name": "careers-culture loads and fits at 390",
+      "status": "passed"
+    },
+    {
+      "name": "careers-culture loads and fits at 768",
+      "status": "passed"
+    },
+    {
+      "name": "careers-culture loads and fits at 1440",
+      "status": "passed"
+    },
+    {
+      "name": "immersive-fallback loads and fits at 320",
+      "status": "passed"
+    },
+    {
+      "name": "immersive-fallback loads and fits at 390",
+      "status": "passed"
+    },
+    {
+      "name": "immersive-fallback loads and fits at 768",
+      "status": "passed"
+    },
+    {
+      "name": "immersive-fallback loads and fits at 1440",
+      "status": "passed"
+    },
+    {
+      "name": "discovery-navigation automated accessibility at 390",
+      "status": "passed"
+    },
+    {
+      "name": "discovery-navigation automated accessibility at 1440",
+      "status": "passed"
+    },
+    {
+      "name": "careers-culture automated accessibility at 390",
+      "status": "passed"
+    },
+    {
+      "name": "careers-culture automated accessibility at 1440",
+      "status": "passed"
+    },
+    {
+      "name": "immersive-fallback automated accessibility at 390",
+      "status": "passed"
+    },
+    {
+      "name": "immersive-fallback automated accessibility at 1440",
+      "status": "passed"
+    },
+    {
+      "name": "Discovery disclosure Escape and responsive focus recovery",
+      "status": "failed",
+      "error": "expect(locator).toBeFocused() failed\n\nLocator:  getByRole('button', { name: 'Explore', exact: true })\nExpected: focused\nReceived: inactive\nTimeout:  5000ms\n\nCall log:\n  - Expect \"toBeFocused\" getByRole('button', { name: 'Explore', exact: true }) with timeout 5000ms\n  - waiting for getByRole('button', { name: 'Explore', exact: true })\n    14 × locator resolved to <button type=\"button\" id=\"explore-trigger\" aria-expanded=\"false\" aria-controls=\"explore-panel\">…</button>\n       - unexpected value \"inactive\"\n"
+    },
+    {
+      "name": "Discovery search has empty recovery and opens a local study",
+      "status": "passed"
+    },
+    {
+      "name": "Section dock navigates without colliding with the dismissible note",
+      "status": "failed",
+      "error": "expect(locator).toHaveAttribute(expected) failed\n\nLocator:  locator('.dock a[href=\"#methods\"]')\nExpected: \"location\"\nReceived: \"\"\nTimeout:  5000ms\n\nCall log:\n  - Expect \"toHaveAttribute\" locator('.dock a[href=\"#methods\"]') with timeout 5000ms\n  - waiting for locator('.dock a[href=\"#methods\"]')\n    14 × locator resolved to <a href=\"#methods\">Methods</a>\n       - unexpected value \"null\"\n"
+    },
+    {
+      "name": "Careers brand and local mobile navigation maintain separate states",
+      "status": "failed",
+      "error": "expect(locator).toBeFocused() failed\n\nLocator:  getByRole('heading', { name: 'Shared values. Different perspectives.' })\nExpected: focused\nReceived: inactive\nTimeout:  5000ms\n\nCall log:\n  - Expect \"toBeFocused\" getByRole('heading', { name: 'Shared values. Different perspectives.' }) with timeout 5000ms\n  - waiting for getByRole('heading', { name: 'Shared values. Different perspectives.' })\n    14 × locator resolved to <h2 tabindex=\"-1\" id=\"values-title\">…</h2>\n       - unexpected value \"inactive\"\n"
+    },
+    {
+      "name": "Careers gallery changes one active value and respects limits",
+      "status": "passed"
+    },
+    {
+      "name": "Careers role filtering, empty recovery and local review work",
+      "status": "passed"
+    },
+    {
+      "name": "Careers visual motion pauses on request and outside viewport",
+      "status": "passed"
+    },
+    {
+      "name": "Careers reduced motion begins still and explicit opt-in can stop",
+      "status": "passed"
+    },
+    {
+      "name": "Spatial pause, quality replacement and still recovery release owned resources",
+      "status": "passed"
+    },
+    {
+      "name": "Actual WebGL context loss recovers to DOM and cleanup balances ownership",
+      "status": "passed"
+    },
+    {
+      "name": "Spatial reduced-motion state stops frame loop",
+      "status": "passed"
+    },
+    {
+      "name": "Disabled JavaScript preserves core content and project paths",
+      "status": "passed"
+    },
+    {
+      "name": "No uncaught script errors or outside requests",
+      "status": "passed"
+    }
+  ],
+  "accessibility": [
+    {
+      "skill": "discovery-navigation",
+      "width": 390,
+      "violations": []
+    },
+    {
+      "skill": "discovery-navigation",
+      "width": 1440,
+      "violations": []
+    },
+    {
+      "skill": "careers-culture",
+      "width": 390,
+      "violations": []
+    },
+    {
+      "skill": "careers-culture",
+      "width": 1440,
+      "violations": []
+    },
+    {
+      "skill": "immersive-fallback",
+      "width": 390,
+      "violations": []
+    },
+    {
+      "skill": "immersive-fallback",
+      "width": 1440,
+      "violations": []
+    }
+  ],
+  "screenshots": [
+    "research/interaction_skill_validation/screenshots/discovery-navigation-390.png",
+    "research/interaction_skill_validation/screenshots/discovery-navigation-1440.png",
+    "research/interaction_skill_validation/screenshots/careers-culture-390.png",
+    "research/interaction_skill_validation/screenshots/careers-culture-1440.png",
+    "research/interaction_skill_validation/screenshots/immersive-fallback-390.png",
+    "research/interaction_skill_validation/screenshots/immersive-fallback-1440.png"
+  ],
+  "errors": [],
+  "external_requests": [],
+  "environment": {
+    "platform": "win32",
+    "node": "v24.14.0",
+    "browser": "159.0.8154.6",
+    "viewport_widths": [
+      320,
+      390,
+      768,
+      1440
+    ],
+    "device_scale_factor": 1,
+    "graphics": "software WebGL / SwiftShader"
+  },
+  "limitations": [
+    "Tests cover original fixtures, not pixel reconstruction or all source states",
+    "Automated accessibility is not full WCAG acceptance",
+    "No production backend, physical device, Safari or Firefox acceptance"
+  ]
+}

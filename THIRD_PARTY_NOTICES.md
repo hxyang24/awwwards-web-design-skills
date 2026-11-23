@@ -17,3 +17,7 @@ Detailed records: `package/v2/contracts/asset-register.json`, `package/v2/docs/d
 All bundled screenshots show original fictional demo interfaces. No Awwwards website assets are bundled. This independent project is not affiliated with or endorsed by Awwwards.
 
 The new `skills/awwwards-page-*` assets are original geometric blueprints. `research/live_pages` redistributes short metadata, structural/computed-style measurements and source links, not source-site HTML, screenshots or protected media. Observation does not grant a copying license.
+
+## Additional standalone spatial pattern
+
+`skills/awwwards-pattern-immersive-fallback/assets/vendor/` redistributes the same pinned Three.js module and core as the preserved V2 package, with its MIT license in `vendor/LICENSE`. The pattern geometry, prose and interface code are original. No source-site media, fonts or shaders are redistributed in these new patterns.

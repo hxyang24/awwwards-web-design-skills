@@ -1,0 +1,662 @@
+{
+  "schema_version": "1.0",
+  "recorded_at": "2026-11-23T08:50:22.089363+00:00",
+  "scope": "Explicit anonymous source UI observations informing original skills; not complete source-site acceptance",
+  "limitations": [
+    "No source forms submitted",
+    "Search actions that were unavailable remain not_observed",
+    "Animation control changes do not prove film playback",
+    "Active Theory capture showed compatibility fallback, not the normal experience"
+  ],
+  "observations": [
+    {
+      "id": "awwwards-explore-wide",
+      "source_id": "3bb690a206a51974",
+      "url": "https://www.awwwards.com/",
+      "viewport": {
+        "width": 1440,
+        "height": 1000,
+        "device_scale_factor": 1
+      },
+      "observed_at": "2026-11-23T08:47:20.069Z",
+      "http_status": 200,
+      "status": "observed",
+      "reduced_motion": "reduce",
+      "measured_geometry": {
+        "document_width": 1440,
+        "viewport_width": 1440,
+        "body_font": "\"Inter Tight\"",
+        "body_background": "rgb(248, 248, 248)",
+        "headings": [
+          {
+            "tag": "h2",
+            "rect": {
+              "x": 52,
+              "y": 105,
+              "width": 1336,
+              "height": 29,
+              "font_family": "\"Inter Tight\"",
+              "font_size": "14px",
+              "line_height": "28px",
+              "font_weight": "400",
+              "color": "rgb(34, 34, 34)",
+              "background": "rgba(0, 0, 0, 0)"
+            }
+          },
+          {
+            "tag": "h1",
+            "rect": {
+              "x": 176,
+              "y": 158,
+              "width": 1089,
+              "height": 127,
+              "font_family": "\"Inter Tight\"",
+              "font_size": "126.732px",
+              "line_height": "126.732px",
+              "font_weight": "600",
+              "color": "rgb(34, 34, 34)",
+              "background": "rgba(0, 0, 0, 0)"
+            }
+          },
+          {
+            "tag": "h2",
+            "rect": {
+              "x": 52,
+              "y": 1609,
+              "width": 1336,
+              "height": 28,
+              "font_family": "\"Inter Tight\"",
+              "font_size": "14px",
+              "line_height": "28px",
+              "font_weight": "400",
+              "color": "rgb(34, 34, 34)",
+              "background": "rgba(0, 0, 0, 0)"
+            }
+          },
+          {
+            "tag": "h2",
+            "rect": {
+              "x": 52,
+              "y": 2782,
+              "width": 1336,
+              "height": 28,
+              "font_family": "\"Inter Tight\"",
+              "font_size": "14px",
+              "line_height": "28px",
+              "font_weight": "400",
+              "color": "rgb(34, 34, 34)",
+              "background": "rgba(0, 0, 0, 0)"
+            }
+          },
+          {
+            "tag": "h2",
+            "rect": {
+              "x": 52,
+              "y": 5005,
+              "width": 1336,
+              "height": 28,
+              "font_family": "\"Inter Tight\"",
+              "font_size": "14px",
+              "line_height": "28px",
+              "font_weight": "400",
+              "color": "rgb(34, 34, 34)",
+              "background": "rgba(0, 0, 0, 0)"
+            }
+          },
+          {
+            "tag": "h2",
+            "rect": {
+              "x": 52,
+              "y": 6148,
+              "width": 401,
+              "height": 28,
+              "font_family": "\"Inter Tight\"",
+              "font_size": "14px",
+              "line_height": "28px",
+              "font_weight": "400",
+              "color": "rgb(34, 34, 34)",
+              "background": "rgba(0, 0, 0, 0)"
+            }
+          },
+          {
+            "tag": "h2",
+            "rect": {
+              "x": 52,
+              "y": 7216,
+              "width": 1336,
+              "height": 28,
+              "font_family": "\"Inter Tight\"",
+              "font_size": "14px",
+              "line_height": "28px",
+              "font_weight": "400",
+              "color": "rgb(34, 34, 34)",
+              "background": "rgba(0, 0, 0, 0)"
+            }
+          },
+          {
+            "tag": "h2",
+            "rect": {
+              "x": 95,
+              "y": 7679,
+              "width": 492,
+              "height": 46,
+              "font_family": "\"Inter Tight\"",
+              "font_size": "41.8873px",
+              "line_height": "46.0761px",
+              "font_weight": "600",
+              "color": "rgb(255, 255, 255)",
+              "background": "rgba(0, 0, 0, 0)"
+            }
+          }
+        ]
+      },
+      "actions": [
+        {
+          "role": "explore_dropdown",
+          "status": "acted_and_observed",
+          "observable_state_changed": true,
+          "before": {
+            "links": 118,
+            "dialogs": 0,
+            "expanded": 0,
+            "url": "https://www.awwwards.com/"
+          },
+          "after": {
+            "links": 125,
+            "dialogs": 0,
+            "expanded": 0,
+            "url": "https://www.awwwards.com/"
+          },
+          "control_label_changed": false,
+          "reason": null,
+          "private_screenshot_sha256": "a189f7de4fab775853c507a82e1d8562e1c0f74969285ec5949c596d6e7ea052"
+        },
+        {
+          "role": "search_surface",
+          "status": "not_observed",
+          "observable_state_changed": false,
+          "before": {},
+          "after": {},
+          "control_label_changed": false,
+          "reason": "locator.click: Timeout 7000ms exceeded.",
+          "private_screenshot_sha256": null
+        }
+      ],
+      "private_before_screenshot_sha256": "e814677b994b021db57daf9c4502f49923cf632f9723fcfeee7e14e1093d0760",
+      "source_screenshots_redistributed": false
+    },
+    {
+      "id": "awwwards-search-phone",
+      "source_id": "3bb690a206a51974",
+      "url": "https://www.awwwards.com/",
+      "viewport": {
+        "width": 390,
+        "height": 1000,
+        "device_scale_factor": 1
+      },
+      "observed_at": "2026-11-23T08:47:36.284Z",
+      "http_status": 200,
+      "status": "observed",
+      "reduced_motion": "reduce",
+      "measured_geometry": {
+        "document_width": 390,
+        "viewport_width": 390,
+        "body_font": "\"Inter Tight\"",
+        "body_background": "rgb(248, 248, 248)",
+        "headings": [
+          {
+            "tag": "h2",
+            "rect": {
+              "x": 16,
+              "y": 74,
+              "width": 358,
+              "height": 29,
+              "font_family": "\"Inter Tight\"",
+              "font_size": "14px",
+              "line_height": "28px",
+              "font_weight": "400",
+              "color": "rgb(34, 34, 34)",
+              "background": "rgba(0, 0, 0, 0)"
+            }
+          },
+          {
+            "tag": "h1",
+            "rect": {
+              "x": 16,
+              "y": 123,
+              "width": 358,
+              "height": 84,
+              "font_family": "\"Inter Tight\"",
+              "font_size": "42px",
+              "line_height": "42px",
+              "font_weight": "600",
+              "color": "rgb(34, 34, 34)",
+              "background": "rgba(0, 0, 0, 0)"
+            }
+          },
+          {
+            "tag": "h2",
+            "rect": {
+              "x": 16,
+              "y": 604,
+              "width": 358,
+              "height": 28,
+              "font_family": "\"Inter Tight\"",
+              "font_size": "14px",
+              "line_height": "28px",
+              "font_weight": "400",
+              "color": "rgb(34, 34, 34)",
+              "background": "rgba(0, 0, 0, 0)"
+            }
+          },
+          {
+            "tag": "h2",
+            "rect": {
+              "x": 16,
+              "y": 1628,
+              "width": 358,
+              "height": 28,
+              "font_family": "\"Inter Tight\"",
+              "font_size": "14px",
+              "line_height": "28px",
+              "font_weight": "400",
+              "color": "rgb(34, 34, 34)",
+              "background": "rgba(0, 0, 0, 0)"
+            }
+          },
+          {
+            "tag": "h2",
+            "rect": {
+              "x": 16,
+              "y": 4149,
+              "width": 358,
+              "height": 28,
+              "font_family": "\"Inter Tight\"",
+              "font_size": "14px",
+              "line_height": "28px",
+              "font_weight": "400",
+              "color": "rgb(34, 34, 34)",
+              "background": "rgba(0, 0, 0, 0)"
+            }
+          },
+          {
+            "tag": "h2",
+            "rect": {
+              "x": 16,
+              "y": 5340,
+              "width": 249,
+              "height": 28,
+              "font_family": "\"Inter Tight\"",
+              "font_size": "14px",
+              "line_height": "28px",
+              "font_weight": "400",
+              "color": "rgb(34, 34, 34)",
+              "background": "rgba(0, 0, 0, 0)"
+            }
+          },
+          {
+            "tag": "h2",
+            "rect": {
+              "x": 16,
+              "y": 6343,
+              "width": 358,
+              "height": 28,
+              "font_family": "\"Inter Tight\"",
+              "font_size": "14px",
+              "line_height": "28px",
+              "font_weight": "400",
+              "color": "rgb(34, 34, 34)",
+              "background": "rgba(0, 0, 0, 0)"
+            }
+          },
+          {
+            "tag": "h2",
+            "rect": {
+              "x": 40,
+              "y": 6691,
+              "width": 230,
+              "height": 29,
+              "font_family": "\"Inter Tight\"",
+              "font_size": "26px",
+              "line_height": "28.6px",
+              "font_weight": "600",
+              "color": "rgb(255, 255, 255)",
+              "background": "rgba(0, 0, 0, 0)"
+            }
+          }
+        ]
+      },
+      "actions": [
+        {
+          "role": "search_surface",
+          "status": "not_observed",
+          "observable_state_changed": false,
+          "before": {},
+          "after": {},
+          "control_label_changed": false,
+          "reason": "locator.click: Timeout 7000ms exceeded.",
+          "private_screenshot_sha256": null
+        }
+      ],
+      "private_before_screenshot_sha256": "f151f710ef3ab27bc2d2e9d76afebd91861d57ec43da9387d038f79ddee7c166",
+      "source_screenshots_redistributed": false
+    },
+    {
+      "id": "apple-careers-wide",
+      "source_id": null,
+      "url": "https://www.apple.com/careers/us/",
+      "viewport": {
+        "width": 1440,
+        "height": 1000,
+        "device_scale_factor": 1
+      },
+      "observed_at": "2026-11-23T08:47:51.814Z",
+      "http_status": 200,
+      "status": "observed",
+      "reduced_motion": "reduce",
+      "measured_geometry": {
+        "document_width": 1440,
+        "viewport_width": 1440,
+        "body_font": "\"SF Pro Text\", \"SF Pro Icons\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+        "body_background": "rgb(255, 255, 255)",
+        "headings": [
+          {
+            "tag": "h1",
+            "rect": {
+              "x": 460,
+              "y": 613,
+              "width": 519,
+              "height": 80,
+              "font_family": "\"SF Pro Display\", \"SF Pro Icons\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "font_size": "75px",
+              "line_height": "80px",
+              "font_weight": "700",
+              "color": "rgb(255, 255, 255)",
+              "background": "rgba(0, 0, 0, 0)"
+            }
+          },
+          {
+            "tag": "h2",
+            "rect": {
+              "x": 645,
+              "y": 2192,
+              "width": 150,
+              "height": 32,
+              "font_family": "\"SF Pro Display\", \"SF Pro Icons\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "font_size": "24px",
+              "line_height": "32.0018px",
+              "font_weight": "700",
+              "color": "rgb(255, 255, 255)",
+              "background": "rgba(0, 0, 0, 0)"
+            }
+          },
+          {
+            "tag": "h2",
+            "rect": {
+              "x": 653,
+              "y": 3418,
+              "width": 133,
+              "height": 32,
+              "font_family": "\"SF Pro Display\", \"SF Pro Icons\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "font_size": "24px",
+              "line_height": "32.0018px",
+              "font_weight": "700",
+              "color": "rgb(255, 255, 255)",
+              "background": "rgba(0, 0, 0, 0)"
+            }
+          },
+          {
+            "tag": "h2",
+            "rect": {
+              "x": 230,
+              "y": 5238,
+              "width": 840,
+              "height": 128,
+              "font_family": "\"SF Pro Display\", \"SF Pro Icons\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "font_size": "56px",
+              "line_height": "64.0002px",
+              "font_weight": "600",
+              "color": "rgb(245, 245, 247)",
+              "background": "rgba(0, 0, 0, 0)"
+            }
+          },
+          {
+            "tag": "h2",
+            "rect": {
+              "x": 230,
+              "y": 5933,
+              "width": 1,
+              "height": 1,
+              "font_family": "\"SF Pro Text\", \"Myriad Set Pro\", \"SF Pro Icons\", \"Apple Legacy Chevron\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "font_size": "12px",
+              "line_height": "16.0005px",
+              "font_weight": "400",
+              "color": "rgba(255, 255, 255, 0.92)",
+              "background": "rgba(0, 0, 0, 0)"
+            }
+          }
+        ]
+      },
+      "actions": [
+        {
+          "role": "explicit_animation_toggle",
+          "status": "acted_and_observed",
+          "observable_state_changed": true,
+          "before": {
+            "links": 115,
+            "dialogs": 0,
+            "expanded": 0,
+            "url": "https://www.apple.com/careers/us/"
+          },
+          "after": {
+            "links": 115,
+            "dialogs": 0,
+            "expanded": 0,
+            "url": "https://www.apple.com/careers/us/"
+          },
+          "control_label_changed": true,
+          "reason": null,
+          "private_screenshot_sha256": "d1f2cd3c0b684f2f1a5cf2f8de97fd740ad7eaef2af571de9ae2ceab552d6399"
+        },
+        {
+          "role": "values_gallery_next",
+          "status": "acted_and_observed",
+          "observable_state_changed": true,
+          "before": {
+            "links": 115,
+            "dialogs": 0,
+            "expanded": 0,
+            "url": "https://www.apple.com/careers/us/"
+          },
+          "after": {
+            "links": 115,
+            "dialogs": 0,
+            "expanded": 0,
+            "url": "https://www.apple.com/careers/us/"
+          },
+          "control_label_changed": true,
+          "reason": null,
+          "private_screenshot_sha256": "84dedfa441488d71714e50998b5d69ade0f88e256b75a33e9047188d819a57ea"
+        }
+      ],
+      "private_before_screenshot_sha256": "450961f6403874bee27393f5524a3cfff2ef2b4db57152678957116fcae2aec0",
+      "source_screenshots_redistributed": false
+    },
+    {
+      "id": "apple-careers-phone",
+      "source_id": null,
+      "url": "https://www.apple.com/careers/us/",
+      "viewport": {
+        "width": 390,
+        "height": 1000,
+        "device_scale_factor": 1
+      },
+      "observed_at": "2026-11-23T08:47:57.077Z",
+      "http_status": 200,
+      "status": "observed",
+      "reduced_motion": "reduce",
+      "measured_geometry": {
+        "document_width": 390,
+        "viewport_width": 390,
+        "body_font": "\"SF Pro Text\", \"SF Pro Icons\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+        "body_background": "rgb(255, 255, 255)",
+        "headings": [
+          {
+            "tag": "h1",
+            "rect": {
+              "x": 65,
+              "y": 624,
+              "width": 260,
+              "height": 86,
+              "font_family": "\"SF Pro Display\", \"SF Pro Icons\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "font_size": "38px",
+              "line_height": "43px",
+              "font_weight": "700",
+              "color": "rgb(255, 255, 255)",
+              "background": "rgba(0, 0, 0, 0)"
+            }
+          },
+          {
+            "tag": "h2",
+            "rect": {
+              "x": 131,
+              "y": 2146,
+              "width": 127,
+              "height": 28,
+              "font_family": "\"SF Pro Display\", \"SF Pro Icons\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "font_size": "20px",
+              "line_height": "28px",
+              "font_weight": "700",
+              "color": "rgb(255, 255, 255)",
+              "background": "rgba(0, 0, 0, 0)"
+            }
+          },
+          {
+            "tag": "h2",
+            "rect": {
+              "x": 139,
+              "y": 3090,
+              "width": 113,
+              "height": 28,
+              "font_family": "\"SF Pro Display\", \"SF Pro Icons\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "font_size": "20px",
+              "line_height": "28px",
+              "font_weight": "700",
+              "color": "rgb(255, 255, 255)",
+              "background": "rgba(0, 0, 0, 0)"
+            }
+          },
+          {
+            "tag": "h2",
+            "rect": {
+              "x": 24,
+              "y": 4539,
+              "width": 341,
+              "height": 126,
+              "font_family": "\"SF Pro Display\", \"SF Pro Icons\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "font_size": "36px",
+              "line_height": "42.0001px",
+              "font_weight": "600",
+              "color": "rgb(245, 245, 247)",
+              "background": "rgba(0, 0, 0, 0)"
+            }
+          },
+          {
+            "tag": "h2",
+            "rect": {
+              "x": 16,
+              "y": 5250,
+              "width": 1,
+              "height": 1,
+              "font_family": "\"SF Pro Text\", \"Myriad Set Pro\", \"SF Pro Icons\", \"Apple Legacy Chevron\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "font_size": "12px",
+              "line_height": "16.0005px",
+              "font_weight": "400",
+              "color": "rgba(255, 255, 255, 0.92)",
+              "background": "rgba(0, 0, 0, 0)"
+            }
+          }
+        ]
+      },
+      "actions": [
+        {
+          "role": "local_navigation",
+          "status": "acted_and_observed",
+          "observable_state_changed": true,
+          "before": {
+            "links": 46,
+            "dialogs": 0,
+            "expanded": 0,
+            "url": "https://www.apple.com/careers/us/"
+          },
+          "after": {
+            "links": 50,
+            "dialogs": 0,
+            "expanded": 0,
+            "url": "https://www.apple.com/careers/us/"
+          },
+          "control_label_changed": true,
+          "reason": null,
+          "private_screenshot_sha256": "f40c6b71785b9df8211e33e29629ad14624eaec8e4b947294ed2a3e87c1a02f9"
+        },
+        {
+          "role": "global_navigation",
+          "status": "acted_and_observed",
+          "observable_state_changed": true,
+          "before": {
+            "links": 50,
+            "dialogs": 0,
+            "expanded": 0,
+            "url": "https://www.apple.com/careers/us/"
+          },
+          "after": {
+            "links": 54,
+            "dialogs": 1,
+            "expanded": 0,
+            "url": "https://www.apple.com/careers/us/"
+          },
+          "control_label_changed": true,
+          "reason": null,
+          "private_screenshot_sha256": "d4f5f451d9af004cf9de9cc629a39d942b4b0dbfa421f563b5895d589d68ce66"
+        },
+        {
+          "role": "values_gallery_next",
+          "status": "acted_and_observed",
+          "observable_state_changed": true,
+          "before": {
+            "links": 276,
+            "dialogs": 1,
+            "expanded": 0,
+            "url": "https://www.apple.com/careers/us/"
+          },
+          "after": {
+            "links": 46,
+            "dialogs": 0,
+            "expanded": 0,
+            "url": "https://www.apple.com/careers/us/"
+          },
+          "control_label_changed": true,
+          "reason": null,
+          "private_screenshot_sha256": "d39711a666ad09ef7309a88a3dc35f05e35411306a75b960827216589359d0dd"
+        }
+      ],
+      "private_before_screenshot_sha256": "7e43212f6424587ed197f697d8197c30c46d62e5c0fc56df9c59edaf0e1c5268",
+      "source_screenshots_redistributed": false
+    },
+    {
+      "id": "active-theory-compatibility-fallback",
+      "url": "https://activetheory.net/",
+      "viewport": {
+        "width": 1440,
+        "height": 1000,
+        "device_scale_factor": 1
+      },
+      "observed_at": "2026-11-23T08:44:46.194Z",
+      "status": "compatibility_fallback_observed",
+      "basis": "Manual review of the captured viewport showed an unsupported-browser notice over a static branded visual; this is not normal-site interaction validation.",
+      "private_screenshot_sha256": "92c34324e195b399e7cb7546b16c1e14dbfea626d5097f24b5a96eaec7178949",
+      "source_screenshots_redistributed": false,
+      "normal_site_interactions": "not_observed"
+    }
+  ]
+}

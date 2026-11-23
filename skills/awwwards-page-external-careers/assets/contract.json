@@ -2,41 +2,254 @@
   "schema_version": "3.0",
   "id": "external-careers",
   "skill": "awwwards-page-external-careers",
-  "title": "获奖外站招聘内页",
-  "kind": "job",
+  "title": "获奖外站招聘与雇主品牌内页",
+  "kind": "careers",
   "scope": "awarded external website inner page",
   "source_families": [
     "external.careers"
   ],
-  "goal": "理解岗位及申请条件，进入明确的申请路径。",
+  "goal": "理解雇主理念、工作方式和岗位入口，再审阅符合条件的角色。",
   "regions": [
-    "团队介绍",
-    "职位",
-    "地点",
-    "要求",
-    "权益",
-    "申请入口"
+    "雇主定位",
+    "团队文化",
+    "价值观",
+    "岗位入口",
+    "职位过滤",
+    "公开申请渠道"
   ],
   "workflow": [
-    "区分长期人才库与真实开放职位。",
-    "岗位要求、待遇和申请渠道使用当前公开证据。",
-    "申请可以跳转但不得未经授权替用户发送。"
+    "先区分雇主品牌首页、职位搜索、职位详情和申请表，不仅凭 careers 路径就把页面生成为申请表。",
+    "品牌叙事、局部导航、价值观画廊和岗位数据分别建模；真实岗位与演示角色明确区分。",
+    "岗位要求、待遇和申请渠道使用当前公开证据；本地审阅不向任何 ATS、邮箱或服务端发送申请。"
   ],
   "data_fields": [
     "organization",
+    "culture",
+    "values",
     "positions",
     "locations",
-    "requirements",
-    "benefits",
-    "application"
+    "employment_type",
+    "application_channel"
   ],
-  "failure_recovery": "职位关闭或无岗位显示明确空态；不编造招聘。",
-  "motion_contract": "招聘正文易读，固定 CTA 不遮挡移动键盘。",
-  "evidence_level": "not_observed",
+  "failure_recovery": "职位关闭或无岗位显示明确空态；保留可恢复筛选，不编造招聘。",
+  "motion_contract": "画廊和视觉可暂停；初始尊重减少动画，固定入口不遮挡移动键盘。",
+  "evidence_level": "http_dom",
   "evidence_note": "Only recorded observations are facts. DOM structure does not prove visual composition, hidden state, source code, backend behavior or licenses. The runnable blueprint is an original recipe, not a source-site clone.",
-  "sources": [],
+  "sources": [
+    {
+      "id": "7b155337b1bb2011",
+      "url": "https://aleo.org/careers/",
+      "family": "external.careers",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T08:48:04.145191+00:00",
+      "source_sha256": "74238f34968b33e15eb6f964f11c5a4d5a987cb0147fe5ca8b0b16fc6cf579a5",
+      "structure": {
+        "headings": {
+          "h1": 1,
+          "h4": 2
+        },
+        "forms": 0,
+        "input_types": {},
+        "navigation_regions": 0,
+        "main_regions": 1,
+        "sections": 1,
+        "articles": 0,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 0,
+        "roles": {
+          "presentation": 1
+        },
+        "anchor_count": 35
+      }
+    },
+    {
+      "id": "81593c83601def2b",
+      "url": "https://www.5lab.co/career/",
+      "family": "external.careers",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T08:45:29.563132+00:00",
+      "source_sha256": "0879469dff3147a4e0941affc2f44b70f2c6524d8e29c9b8c9ed3c65cb0b8a3d",
+      "structure": {
+        "headings": {
+          "h1": 1,
+          "h2": 7
+        },
+        "forms": 1,
+        "input_types": {
+          "text": 2,
+          "tel": 1,
+          "email": 1,
+          "url": 1
+        },
+        "navigation_regions": 2,
+        "main_regions": 1,
+        "sections": 6,
+        "articles": 0,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 1,
+        "roles": {
+          "status": 1
+        },
+        "anchor_count": 17
+      }
+    },
+    {
+      "id": "b722cf7db75675cb",
+      "url": "https://www.antler.co/careers",
+      "family": "external.careers",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T08:49:48.004646+00:00",
+      "source_sha256": "b52834e4a9e050d3d2a2538b10a85ce6f31a4ee1f9fb55401c5c27fc9ef19f2c",
+      "structure": {
+        "headings": {
+          "h2": 16,
+          "h3": 13,
+          "h1": 1,
+          "h4": 3
+        },
+        "forms": 0,
+        "input_types": {},
+        "navigation_regions": 8,
+        "main_regions": 1,
+        "sections": 9,
+        "articles": 0,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 0,
+        "roles": {
+          "list": 16,
+          "listitem": 67,
+          "banner": 2,
+          "navigation": 5
+        },
+        "anchor_count": 110
+      }
+    },
+    {
+      "id": "765d8032f4785ad4",
+      "url": "https://acmecups.nz/pages/careers",
+      "family": "external.careers",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T08:49:04.560031+00:00",
+      "source_sha256": "a99b555ee2e7493a30429498a1f8688a099cefe590d2537617024b888b98f322",
+      "structure": {
+        "headings": {
+          "h1": 2,
+          "h4": 3,
+          "h2": 1,
+          "h6": 2,
+          "h5": 2,
+          "h3": 2
+        },
+        "forms": 8,
+        "input_types": {
+          "hidden": 20,
+          "text": 5,
+          "email": 2,
+          "number": 1
+        },
+        "navigation_regions": 0,
+        "main_regions": 1,
+        "sections": 0,
+        "articles": 0,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 0,
+        "roles": {
+          "main": 1,
+          "status": 1
+        },
+        "anchor_count": 170
+      }
+    },
+    {
+      "id": "d40729d6c1a193e9",
+      "url": "https://www.academyux.com/careers",
+      "family": "external.careers",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T08:46:20.364563+00:00",
+      "source_sha256": "bf715c55ca320570b947466817fb8510d50f07304ed0c9b50302fe30764a3485",
+      "structure": {
+        "headings": {
+          "h1": 1,
+          "h2": 11,
+          "h3": 30
+        },
+        "forms": 1,
+        "input_types": {
+          "checkbox": 3
+        },
+        "navigation_regions": 3,
+        "main_regions": 1,
+        "sections": 11,
+        "articles": 0,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 1,
+        "videos": 0,
+        "roles": {
+          "button": 2,
+          "region": 9,
+          "dialog": 1,
+          "switch": 3
+        },
+        "anchor_count": 58
+      }
+    },
+    {
+      "id": "e619a5393173db12",
+      "url": "https://www.apple.com/careers/us/",
+      "family": "external.careers",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T08:39:51.927611+00:00",
+      "source_sha256": "f1b9d69327a4a89c97e0f651f034d6282c595914cac489e891b033d432641195",
+      "structure": {
+        "headings": {
+          "h1": 1,
+          "h2": 4,
+          "h3": 20
+        },
+        "forms": 1,
+        "input_types": {
+          "text": 2,
+          "hidden": 4,
+          "checkbox": 1,
+          "search": 1
+        },
+        "navigation_regions": 4,
+        "main_regions": 1,
+        "sections": 9,
+        "articles": 0,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 3,
+        "roles": {
+          "none": 12,
+          "button": 10,
+          "status": 2,
+          "navigation": 3,
+          "main": 1,
+          "img": 3,
+          "combobox": 1,
+          "listbox": 1,
+          "option": 5,
+          "list": 13,
+          "listitem": 76,
+          "contentinfo": 1
+        },
+        "anchor_count": 132
+      }
+    }
+  ],
   "visual_metrics": [],
-  "source_coverage": "needs_source_inspection",
+  "source_coverage": "observed_examples",
   "original_blueprint": true,
   "business_mode": "local_preview",
   "states": [
@@ -51,9 +264,9 @@
     "narrow_view"
   ],
   "acceptance": [
-    "理解岗位及申请条件，进入明确的申请路径。",
-    "职位关闭或无岗位显示明确空态；不编造招聘。",
-    "招聘正文易读，固定 CTA 不遮挡移动键盘。",
+    "理解雇主理念、工作方式和岗位入口，再审阅符合条件的角色。",
+    "职位关闭或无岗位显示明确空态；保留可恢复筛选，不编造招聘。",
+    "画廊和视觉可暂停；初始尊重减少动画，固定入口不遮挡移动键盘。",
     "320、390、768、1440 宽度不出现整页横溢出；必要表格在独立区域滚动。",
     "键盘可进入、操作、关闭对话框并返回触发点；错误不只靠颜色。",
     "本地预览不得暗示真实支付、投稿、消息、账户或预约已生效。"

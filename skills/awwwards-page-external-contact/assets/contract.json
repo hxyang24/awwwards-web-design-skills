@@ -34,6 +34,40 @@
   "evidence_note": "Only recorded observations are facts. DOM structure does not prove visual composition, hidden state, source code, backend behavior or licenses. The runnable blueprint is an original recipe, not a source-site clone.",
   "sources": [
     {
+      "id": "99311b9814c142b3",
+      "url": "http://aonnoysengupta.com/contact",
+      "family": "external.contact",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T09:10:15.317285+00:00",
+      "source_sha256": "8208c8105461b32bad38bb6a49fc9176e43a63db467879926ec7cda4dd974826",
+      "structure": {
+        "headings": {
+          "h1": 1,
+          "h2": 4
+        },
+        "forms": 1,
+        "input_types": {
+          "text": 5,
+          "email": 1,
+          "radio": 3,
+          "checkbox": 6
+        },
+        "navigation_regions": 1,
+        "main_regions": 1,
+        "sections": 0,
+        "articles": 0,
+        "tables": 0,
+        "dialogs": 1,
+        "canvases": 2,
+        "videos": 0,
+        "roles": {
+          "switch": 4,
+          "alert": 2
+        },
+        "anchor_count": 32
+      }
+    },
+    {
       "id": "6aaf81f3c82f2288",
       "url": "http://www.blacknegative.com/contact/",
       "family": "external.contact",
@@ -57,125 +91,131 @@
       }
     },
     {
-      "id": "d4e2612376d379ac",
-      "url": "https://alitwotimes.com/contact/",
+      "id": "092e2ab8c462da3e",
+      "url": "https://abatable.com/contact-us",
       "family": "external.contact",
       "inspection_level": "http_dom",
-      "observed_at": "2026-11-23T08:17:00.729358+00:00",
-      "source_sha256": "3aad14fa0940ee8d4ba2c9e68cd906b7e98cf8c62d3be7d7f73d9f14fdd70c54",
+      "observed_at": "2026-11-23T08:46:08.613001+00:00",
+      "source_sha256": "b36060f88dc71a29a9566c001eb90dd3a821967a145879bfccddfe60252ed336",
       "structure": {
         "headings": {
-          "h1": 1,
-          "h2": 3
+          "h3": 8,
+          "h2": 2
         },
         "forms": 0,
         "input_types": {},
         "navigation_regions": 1,
-        "main_regions": 1,
-        "sections": 1,
-        "articles": 1,
+        "main_regions": 0,
+        "sections": 7,
+        "articles": 0,
         "tables": 0,
         "dialogs": 0,
         "canvases": 0,
         "videos": 0,
-        "roles": {},
-        "anchor_count": 30
+        "roles": {
+          "region": 2,
+          "listitem": 25,
+          "none": 1,
+          "list": 7
+        },
+        "anchor_count": 49
       }
     },
     {
-      "id": "b3941ba433686291",
-      "url": "https://artemiilebedev.com/contact",
+      "id": "12d9241862ed7086",
+      "url": "https://acmecups.nz/pages/contact-us",
       "family": "external.contact",
       "inspection_level": "http_dom",
-      "observed_at": "2026-11-23T08:04:45.887025+00:00",
-      "source_sha256": "b7f4b18c5b87ef27c2343c6c20c736be95573687ee6f7f5fc7121de4f97b2a3b",
+      "observed_at": "2026-11-23T08:49:04.649027+00:00",
+      "source_sha256": "4bb0a13805bdc82291fa679bb879ae69001bb4e96b05e8beab732fb506492c26",
       "structure": {
         "headings": {
-          "h1": 1
+          "h1": 3,
+          "h6": 5,
+          "h2": 2,
+          "h4": 2,
+          "h5": 2,
+          "h3": 2
         },
-        "forms": 1,
+        "forms": 9,
         "input_types": {
-          "text": 2,
-          "email": 1,
-          "checkbox": 1,
-          "submit": 1
+          "hidden": 24,
+          "text": 7,
+          "email": 3,
+          "tel": 1,
+          "number": 1
         },
-        "navigation_regions": 1,
+        "navigation_regions": 0,
         "main_regions": 1,
         "sections": 0,
         "articles": 0,
         "tables": 0,
         "dialogs": 0,
         "canvases": 0,
-        "videos": 1,
-        "roles": {},
-        "anchor_count": 39
+        "videos": 0,
+        "roles": {
+          "main": 1,
+          "status": 1
+        },
+        "anchor_count": 183
       }
     },
     {
-      "id": "61b6afc31fc69722",
-      "url": "https://carterogunsola.com/contact",
+      "id": "d4f12a65c3565496",
+      "url": "https://adinabuzatu.ro/contact",
       "family": "external.contact",
       "inspection_level": "http_dom",
-      "observed_at": "2026-11-23T08:17:31.226905+00:00",
-      "source_sha256": "012ae9a1e8587c0afdefcabeb9b21540c747cf05b6255455b6c3d309cd1b59c8",
+      "observed_at": "2026-11-23T08:47:22.387975+00:00",
+      "source_sha256": "73c14ef4f9fc78cf65df0de4f2a4b0bc7e126b04de36277f2eb91e4645b23e9c",
       "structure": {
         "headings": {
           "h1": 1
         },
-        "forms": 1,
-        "input_types": {
-          "radio": 3,
-          "email": 1,
-          "text": 3
-        },
+        "forms": 0,
+        "input_types": {},
         "navigation_regions": 2,
         "main_regions": 1,
         "sections": 1,
         "articles": 0,
         "tables": 0,
-        "dialogs": 1,
-        "canvases": 8,
+        "dialogs": 0,
+        "canvases": 0,
         "videos": 0,
-        "roles": {
-          "group": 1,
-          "button": 1,
-          "alert": 1,
-          "dialog": 3
-        },
-        "anchor_count": 34
+        "roles": {},
+        "anchor_count": 51
       }
     },
     {
-      "id": "c0efcd19973c0ae4",
-      "url": "https://www.a-lign.studio/contact",
+      "id": "c4ef39ea2d830b31",
+      "url": "https://adsb.co.kr/pages/contact",
       "family": "external.contact",
       "inspection_level": "http_dom",
-      "observed_at": "2026-11-23T08:17:31.264667+00:00",
-      "source_sha256": "20545aef92de1358cce7f7da45205173e61d38e067ee07bb065ad74fc4d7fc54",
+      "observed_at": "2026-11-23T08:49:39.817348+00:00",
+      "source_sha256": "91b23ef53656341e12f9717c7b82550acb3b200a8e2db6aa82bacb10bfb9c8d4",
       "structure": {
         "headings": {
-          "h1": 1,
-          "h2": 2
+          "h1": 2,
+          "h4": 5
         },
-        "forms": 1,
+        "forms": 5,
         "input_types": {
-          "text": 3
+          "text": 3,
+          "hidden": 9,
+          "email": 2,
+          "tel": 1
         },
         "navigation_regions": 1,
         "main_regions": 1,
-        "sections": 5,
+        "sections": 1,
         "articles": 0,
         "tables": 0,
         "dialogs": 0,
         "canvases": 0,
         "videos": 0,
         "roles": {
-          "list": 6,
-          "none": 3,
-          "listitem": 17
+          "dialog": 1
         },
-        "anchor_count": 34
+        "anchor_count": 229
       }
     }
   ],

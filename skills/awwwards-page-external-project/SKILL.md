@@ -38,11 +38,11 @@ python scripts/scaffold.py --output YOUR_EMPTY_PROJECT_DIRECTORY
 交付路由/组件边界、状态矩阵、数据契约、来源和素材台账、实际运行命令、截图及未测项。检查契约中的每条 acceptance，记录 passed/failed/blocked/not_run 并给出证据。不要从一个测试通过推断整站、全部设备或生产已验收。
 
 ## 已读取的来源
+- https://abatable.com/case-studies/enabling-ap-moller-capital-to-meet-net-zero（http_dom；2026-11-23T08:46:04.461416+00:00）
+- https://abatable.com/case-studies/enabling-autotrader-to-support-carbon-removal（http_dom；2026-11-23T08:46:04.534206+00:00）
+- https://abatable.com/case-studies/partnering-with-howden-to-advance-climate-resilience（http_dom；2026-11-23T08:46:04.610608+00:00）
 - https://alitwotimes.com/work/amazon-the-biggest-sale-of-the-year/（http_dom；2026-11-23T08:18:00.072945+00:00）
 - https://alitwotimes.com/work/badya-life-imitates-art/（http_dom；2026-11-23T08:18:00.113808+00:00）
 - https://alitwotimes.com/work/bud-light-millennial-beach/（http_dom；2026-11-23T08:18:00.224693+00:00）
-- https://alitwotimes.com/work/changing-diner/（http_dom；2026-11-23T08:19:30.257588+00:00）
-- https://alitwotimes.com/work/cheers-to-all-fans/（http_dom；2026-11-23T08:20:03.962961+00:00）
-- https://alitwotimes.com/work/du-tuesday-the-man-sitting-next-to-you/（http_dom；2026-11-23T08:20:03.998549+00:00）
 
 来源受各自版权和访问规则约束；只借鉴结构与机制，使用原创或已授权文案、图像、字体和模型。未知技术版本、隐藏状态和服务端行为不得根据截图补造。

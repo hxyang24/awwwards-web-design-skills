@@ -58,6 +58,54 @@
       }
     },
     {
+      "id": "d25dc3eb5f830841",
+      "url": "https://artworks.joe8lee.com/404",
+      "family": "external.not-found",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T09:11:03.291884+00:00",
+      "source_sha256": "22b3a14e38ec223d166661117fe92afec1cbc555773a9d5b07ce45b62ac9d10a",
+      "structure": {
+        "headings": {},
+        "forms": 0,
+        "input_types": {},
+        "navigation_regions": 0,
+        "main_regions": 0,
+        "sections": 1,
+        "articles": 0,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 0,
+        "roles": {},
+        "anchor_count": 2
+      }
+    },
+    {
+      "id": "dd147e1124c5a400",
+      "url": "https://axiom-power-template.webflow.io/404",
+      "family": "external.not-found",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T09:13:37.115969+00:00",
+      "source_sha256": "1f0142a214887fcbf39cd4b8efa521dc381c630148c58458cd96ea890387f7a7",
+      "structure": {
+        "headings": {
+          "h1": 1
+        },
+        "forms": 0,
+        "input_types": {},
+        "navigation_regions": 1,
+        "main_regions": 1,
+        "sections": 1,
+        "articles": 0,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 0,
+        "roles": {},
+        "anchor_count": 32
+      }
+    },
+    {
       "id": "669bec146f1d8d9f",
       "url": "https://www.a-lign.studio/404",
       "family": "external.not-found",
@@ -83,6 +131,31 @@
           "listitem": 17
         },
         "anchor_count": 33
+      }
+    },
+    {
+      "id": "3a6173cc1684a342",
+      "url": "https://www.addifico.com/404",
+      "family": "external.not-found",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T08:46:42.244788+00:00",
+      "source_sha256": "0c5dd17cab3837d0883b673809b597adfea643829392bef00148ed81544e88ed",
+      "structure": {
+        "headings": {
+          "h1": 2
+        },
+        "forms": 0,
+        "input_types": {},
+        "navigation_regions": 0,
+        "main_regions": 0,
+        "sections": 0,
+        "articles": 0,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 0,
+        "roles": {},
+        "anchor_count": 1
       }
     }
   ],

@@ -1,0 +1,344 @@
+{
+  "id": "careers-culture",
+  "title": "招聘品牌页：双层导航、可控视觉与价值观画廊",
+  "kind": "careers",
+  "page_skills": [
+    "awwwards-page-external-careers",
+    "awwwards-page-job-board"
+  ],
+  "source_ids": [
+    "apple-careers-wide",
+    "apple-careers-phone"
+  ],
+  "observed": [
+    "招聘页在 1440/390 宽度的主标题约为 75/38px，均为白字深色背景；这是当前页面的视口观察，不是所有招聘页的规范。",
+    "桌面主动请求动画后，控制标签发生变化；本轮没有播放人物影片，也未验证媒体后端。",
+    "手机局部导航与全站导航分别操作后，可见链接数量发生变化；价值观画廊的下一项操作也观察到状态变化。"
+  ],
+  "recipe": [
+    "将品牌层、招聘局部导航、团队价值和岗位浏览分区；手机局部导航可独立展开，不能淹没岗位入口。",
+    "所有动效初始可静止；用户主动播放后提供暂停，离屏、隐藏标签和偏好改变时停帧。",
+    "画廊展示单一活动项，提供前后按钮、箭头键、当前位置和减少动画路径，不强制自动轮播。",
+    "岗位数据与品牌叙事分开；本地虚构岗位支持查询、团队过滤、空结果恢复和详情审阅，真实申请系统单独接入。"
+  ],
+  "invariants": [
+    "局部导航和全站导航不是同一状态；移动折叠后焦点仍可用。",
+    "不复制原站商标、音乐、影片、插图或真实岗位文案。",
+    "画廊隐藏项不能包含仍可聚焦的控制。",
+    "没有 ATS、邮件或数据库时，不显示真实申请成功；不得采集简历或敏感资料。"
+  ],
+  "limits": [
+    "观察到的控制变化不代表影片播放、申请提交或全部岗位流程已测。",
+    "来源位于获奖来源站点的当前内页，不声称该招聘页单独获得奖项或与历史获奖版本相同。"
+  ],
+  "skill": "awwwards-pattern-careers-culture",
+  "source_evidence": [
+    {
+      "id": "apple-careers-wide",
+      "source_id": null,
+      "url": "https://www.apple.com/careers/us/",
+      "viewport": {
+        "width": 1440,
+        "height": 1000,
+        "device_scale_factor": 1
+      },
+      "observed_at": "2026-11-23T08:47:51.814Z",
+      "http_status": 200,
+      "status": "observed",
+      "reduced_motion": "reduce",
+      "measured_geometry": {
+        "document_width": 1440,
+        "viewport_width": 1440,
+        "body_font": "\"SF Pro Text\", \"SF Pro Icons\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+        "body_background": "rgb(255, 255, 255)",
+        "headings": [
+          {
+            "tag": "h1",
+            "rect": {
+              "x": 460,
+              "y": 613,
+              "width": 519,
+              "height": 80,
+              "font_family": "\"SF Pro Display\", \"SF Pro Icons\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "font_size": "75px",
+              "line_height": "80px",
+              "font_weight": "700",
+              "color": "rgb(255, 255, 255)",
+              "background": "rgba(0, 0, 0, 0)"
+            }
+          },
+          {
+            "tag": "h2",
+            "rect": {
+              "x": 645,
+              "y": 2192,
+              "width": 150,
+              "height": 32,
+              "font_family": "\"SF Pro Display\", \"SF Pro Icons\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "font_size": "24px",
+              "line_height": "32.0018px",
+              "font_weight": "700",
+              "color": "rgb(255, 255, 255)",
+              "background": "rgba(0, 0, 0, 0)"
+            }
+          },
+          {
+            "tag": "h2",
+            "rect": {
+              "x": 653,
+              "y": 3418,
+              "width": 133,
+              "height": 32,
+              "font_family": "\"SF Pro Display\", \"SF Pro Icons\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "font_size": "24px",
+              "line_height": "32.0018px",
+              "font_weight": "700",
+              "color": "rgb(255, 255, 255)",
+              "background": "rgba(0, 0, 0, 0)"
+            }
+          },
+          {
+            "tag": "h2",
+            "rect": {
+              "x": 230,
+              "y": 5238,
+              "width": 840,
+              "height": 128,
+              "font_family": "\"SF Pro Display\", \"SF Pro Icons\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "font_size": "56px",
+              "line_height": "64.0002px",
+              "font_weight": "600",
+              "color": "rgb(245, 245, 247)",
+              "background": "rgba(0, 0, 0, 0)"
+            }
+          },
+          {
+            "tag": "h2",
+            "rect": {
+              "x": 230,
+              "y": 5933,
+              "width": 1,
+              "height": 1,
+              "font_family": "\"SF Pro Text\", \"Myriad Set Pro\", \"SF Pro Icons\", \"Apple Legacy Chevron\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "font_size": "12px",
+              "line_height": "16.0005px",
+              "font_weight": "400",
+              "color": "rgba(255, 255, 255, 0.92)",
+              "background": "rgba(0, 0, 0, 0)"
+            }
+          }
+        ]
+      },
+      "actions": [
+        {
+          "role": "explicit_animation_toggle",
+          "status": "acted_and_observed",
+          "observable_state_changed": true,
+          "before": {
+            "links": 115,
+            "dialogs": 0,
+            "expanded": 0,
+            "url": "https://www.apple.com/careers/us/"
+          },
+          "after": {
+            "links": 115,
+            "dialogs": 0,
+            "expanded": 0,
+            "url": "https://www.apple.com/careers/us/"
+          },
+          "control_label_changed": true,
+          "reason": null,
+          "private_screenshot_sha256": "d1f2cd3c0b684f2f1a5cf2f8de97fd740ad7eaef2af571de9ae2ceab552d6399"
+        },
+        {
+          "role": "values_gallery_next",
+          "status": "acted_and_observed",
+          "observable_state_changed": true,
+          "before": {
+            "links": 115,
+            "dialogs": 0,
+            "expanded": 0,
+            "url": "https://www.apple.com/careers/us/"
+          },
+          "after": {
+            "links": 115,
+            "dialogs": 0,
+            "expanded": 0,
+            "url": "https://www.apple.com/careers/us/"
+          },
+          "control_label_changed": true,
+          "reason": null,
+          "private_screenshot_sha256": "84dedfa441488d71714e50998b5d69ade0f88e256b75a33e9047188d819a57ea"
+        }
+      ],
+      "private_before_screenshot_sha256": "450961f6403874bee27393f5524a3cfff2ef2b4db57152678957116fcae2aec0",
+      "source_screenshots_redistributed": false
+    },
+    {
+      "id": "apple-careers-phone",
+      "source_id": null,
+      "url": "https://www.apple.com/careers/us/",
+      "viewport": {
+        "width": 390,
+        "height": 1000,
+        "device_scale_factor": 1
+      },
+      "observed_at": "2026-11-23T08:47:57.077Z",
+      "http_status": 200,
+      "status": "observed",
+      "reduced_motion": "reduce",
+      "measured_geometry": {
+        "document_width": 390,
+        "viewport_width": 390,
+        "body_font": "\"SF Pro Text\", \"SF Pro Icons\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+        "body_background": "rgb(255, 255, 255)",
+        "headings": [
+          {
+            "tag": "h1",
+            "rect": {
+              "x": 65,
+              "y": 624,
+              "width": 260,
+              "height": 86,
+              "font_family": "\"SF Pro Display\", \"SF Pro Icons\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "font_size": "38px",
+              "line_height": "43px",
+              "font_weight": "700",
+              "color": "rgb(255, 255, 255)",
+              "background": "rgba(0, 0, 0, 0)"
+            }
+          },
+          {
+            "tag": "h2",
+            "rect": {
+              "x": 131,
+              "y": 2146,
+              "width": 127,
+              "height": 28,
+              "font_family": "\"SF Pro Display\", \"SF Pro Icons\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "font_size": "20px",
+              "line_height": "28px",
+              "font_weight": "700",
+              "color": "rgb(255, 255, 255)",
+              "background": "rgba(0, 0, 0, 0)"
+            }
+          },
+          {
+            "tag": "h2",
+            "rect": {
+              "x": 139,
+              "y": 3090,
+              "width": 113,
+              "height": 28,
+              "font_family": "\"SF Pro Display\", \"SF Pro Icons\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "font_size": "20px",
+              "line_height": "28px",
+              "font_weight": "700",
+              "color": "rgb(255, 255, 255)",
+              "background": "rgba(0, 0, 0, 0)"
+            }
+          },
+          {
+            "tag": "h2",
+            "rect": {
+              "x": 24,
+              "y": 4539,
+              "width": 341,
+              "height": 126,
+              "font_family": "\"SF Pro Display\", \"SF Pro Icons\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "font_size": "36px",
+              "line_height": "42.0001px",
+              "font_weight": "600",
+              "color": "rgb(245, 245, 247)",
+              "background": "rgba(0, 0, 0, 0)"
+            }
+          },
+          {
+            "tag": "h2",
+            "rect": {
+              "x": 16,
+              "y": 5250,
+              "width": 1,
+              "height": 1,
+              "font_family": "\"SF Pro Text\", \"Myriad Set Pro\", \"SF Pro Icons\", \"Apple Legacy Chevron\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "font_size": "12px",
+              "line_height": "16.0005px",
+              "font_weight": "400",
+              "color": "rgba(255, 255, 255, 0.92)",
+              "background": "rgba(0, 0, 0, 0)"
+            }
+          }
+        ]
+      },
+      "actions": [
+        {
+          "role": "local_navigation",
+          "status": "acted_and_observed",
+          "observable_state_changed": true,
+          "before": {
+            "links": 46,
+            "dialogs": 0,
+            "expanded": 0,
+            "url": "https://www.apple.com/careers/us/"
+          },
+          "after": {
+            "links": 50,
+            "dialogs": 0,
+            "expanded": 0,
+            "url": "https://www.apple.com/careers/us/"
+          },
+          "control_label_changed": true,
+          "reason": null,
+          "private_screenshot_sha256": "f40c6b71785b9df8211e33e29629ad14624eaec8e4b947294ed2a3e87c1a02f9"
+        },
+        {
+          "role": "global_navigation",
+          "status": "acted_and_observed",
+          "observable_state_changed": true,
+          "before": {
+            "links": 50,
+            "dialogs": 0,
+            "expanded": 0,
+            "url": "https://www.apple.com/careers/us/"
+          },
+          "after": {
+            "links": 54,
+            "dialogs": 1,
+            "expanded": 0,
+            "url": "https://www.apple.com/careers/us/"
+          },
+          "control_label_changed": true,
+          "reason": null,
+          "private_screenshot_sha256": "d4f5f451d9af004cf9de9cc629a39d942b4b0dbfa421f563b5895d589d68ce66"
+        },
+        {
+          "role": "values_gallery_next",
+          "status": "acted_and_observed",
+          "observable_state_changed": true,
+          "before": {
+            "links": 276,
+            "dialogs": 1,
+            "expanded": 0,
+            "url": "https://www.apple.com/careers/us/"
+          },
+          "after": {
+            "links": 46,
+            "dialogs": 0,
+            "expanded": 0,
+            "url": "https://www.apple.com/careers/us/"
+          },
+          "control_label_changed": true,
+          "reason": null,
+          "private_screenshot_sha256": "d39711a666ad09ef7309a88a3dc35f05e35411306a75b960827216589359d0dd"
+        }
+      ],
+      "private_before_screenshot_sha256": "7e43212f6424587ed197f697d8197c30c46d62e5c0fc56df9c59edaf0e1c5268",
+      "source_screenshots_redistributed": false
+    }
+  ],
+  "source_screenshots_redistributed": false,
+  "implementation": "original runnable pattern",
+  "business_mode": "local_fictional_preview",
+  "source_reproduction_claim": false,
+  "validation_scope": "Actual fixture tests are recorded separately; source observations do not attest implementation tests"
+}

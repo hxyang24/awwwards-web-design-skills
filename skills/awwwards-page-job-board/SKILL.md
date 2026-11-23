@@ -46,3 +46,6 @@ python scripts/scaffold.py --output YOUR_EMPTY_PROJECT_DIRECTORY
 - https://www.awwwards.com/jobs/search/?category=design&type=freelance（http_dom；2026-11-23T08:21:48.243830+00:00）
 
 来源受各自版权和访问规则约束；只借鉴结构与机制，使用原创或已授权文案、图像、字体和模型。未知技术版本、隐藏状态和服务端行为不得根据截图补造。
+
+## 可组合的具体机制
+- `awwwards-pattern-careers-culture`：读取其机制契约和实际测试边界后按需组合。

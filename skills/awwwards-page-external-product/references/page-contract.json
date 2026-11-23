@@ -39,31 +39,192 @@
   "evidence_note": "Only recorded observations are facts. DOM structure does not prove visual composition, hidden state, source code, backend behavior or licenses. The runnable blueprint is an original recipe, not a source-site clone.",
   "sources": [
     {
-      "id": "1283543ad269bc0a",
-      "url": "https://www.agrumeafarm.it/en/dispensa/smeralda",
+      "id": "c5456d3dbfbe6cf9",
+      "url": "https://acmecups.nz/collections",
       "family": "external.product",
       "inspection_level": "http_dom",
-      "observed_at": "2026-11-23T08:04:15.723409+00:00",
-      "source_sha256": "721dd1a95407167549750302627e69b8ada85a903a168965238633d95e61771e",
+      "observed_at": "2026-11-23T08:47:53.086202+00:00",
+      "source_sha256": "da70546ac4055537cb1fcd8565ecfd5999e6d61dc24e4e50cf53d31eb074422d",
       "structure": {
         "headings": {
-          "h1": 1,
-          "h2": 1
+          "h1": 2,
+          "h4": 2,
+          "h6": 2,
+          "h5": 2,
+          "h3": 2
+        },
+        "forms": 8,
+        "input_types": {
+          "hidden": 20,
+          "text": 5,
+          "email": 2,
+          "number": 1
+        },
+        "navigation_regions": 0,
+        "main_regions": 1,
+        "sections": 0,
+        "articles": 0,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 0,
+        "roles": {
+          "main": 1,
+          "navigation": 1,
+          "list": 1,
+          "link": 1,
+          "status": 1
+        },
+        "anchor_count": 173
+      }
+    },
+    {
+      "id": "4da7f8cc9bece608",
+      "url": "https://adinabuzatu.ro/collection/abc",
+      "family": "external.product",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T08:47:18.578544+00:00",
+      "source_sha256": "df317508c0c7cc8ea04b71385cb678751d1f4b58916b997022b233ece46290e0",
+      "structure": {
+        "headings": {
+          "h1": 1
         },
         "forms": 0,
         "input_types": {},
-        "navigation_regions": 3,
+        "navigation_regions": 2,
         "main_regions": 1,
-        "sections": 5,
-        "articles": 9,
+        "sections": 1,
+        "articles": 0,
         "tables": 0,
         "dialogs": 0,
-        "canvases": 1,
+        "canvases": 0,
+        "videos": 0,
+        "roles": {},
+        "anchor_count": 121
+      }
+    },
+    {
+      "id": "8951f0ec4b7a9daf",
+      "url": "https://adinabuzatu.ro/collection/bestsellers",
+      "family": "external.product",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T08:47:18.656125+00:00",
+      "source_sha256": "2f0e2b67073a0faa374376116f7e2e19225329ee36a3c1aa67fcc9f1417b0cf0",
+      "structure": {
+        "headings": {
+          "h1": 1
+        },
+        "forms": 0,
+        "input_types": {},
+        "navigation_regions": 2,
+        "main_regions": 1,
+        "sections": 1,
+        "articles": 0,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 0,
+        "roles": {},
+        "anchor_count": 126
+      }
+    },
+    {
+      "id": "5f5c7334f19d2c5d",
+      "url": "https://adinabuzatu.ro/collection/cadouri",
+      "family": "external.product",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T08:47:18.735457+00:00",
+      "source_sha256": "0cb0a4510c8902d6e15647939e2904cfea19b0173db2a0d60d555ef0a1988a27",
+      "structure": {
+        "headings": {
+          "h1": 1
+        },
+        "forms": 0,
+        "input_types": {},
+        "navigation_regions": 2,
+        "main_regions": 1,
+        "sections": 1,
+        "articles": 0,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 0,
+        "roles": {},
+        "anchor_count": 108
+      }
+    },
+    {
+      "id": "5ec70b84e095774e",
+      "url": "https://adsb.co.kr/collections",
+      "family": "external.product",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T08:49:36.226426+00:00",
+      "source_sha256": "43d188adf646bdb7659a006e9c5675af0d700683be3f3cdf64ebb34364228d85",
+      "structure": {
+        "headings": {
+          "h1": 2,
+          "h4": 122
+        },
+        "forms": 4,
+        "input_types": {
+          "text": 2,
+          "hidden": 7,
+          "email": 1
+        },
+        "navigation_regions": 1,
+        "main_regions": 1,
+        "sections": 1,
+        "articles": 0,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
         "videos": 0,
         "roles": {
-          "group": 1
+          "dialog": 1
         },
-        "anchor_count": 33
+        "anchor_count": 459
+      }
+    },
+    {
+      "id": "41e5da43e1cd97ff",
+      "url": "https://almadalabel.com/collections/autumn-winter-26",
+      "family": "external.product",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T09:09:50.089259+00:00",
+      "source_sha256": "ab33129e36240091157a25734daac7dd2e7db97a354ba05e18c1c1dc933e2141",
+      "structure": {
+        "headings": {
+          "h5": 2,
+          "h2": 4,
+          "h3": 4
+        },
+        "forms": 3,
+        "input_types": {
+          "email": 2,
+          "checkbox": 1,
+          "search": 2,
+          "hidden": 14
+        },
+        "navigation_regions": 2,
+        "main_regions": 1,
+        "sections": 1,
+        "articles": 1,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 3,
+        "roles": {
+          "dialog": 2,
+          "list": 11,
+          "status": 3,
+          "listitem": 1,
+          "main": 1,
+          "search": 1,
+          "listbox": 1,
+          "option": 3,
+          "alert": 1
+        },
+        "anchor_count": 438
       }
     }
   ],

@@ -40,6 +40,105 @@
   "evidence_note": "Only recorded observations are facts. DOM structure does not prove visual composition, hidden state, source code, backend behavior or licenses. The runnable blueprint is an original recipe, not a source-site clone.",
   "sources": [
     {
+      "id": "8922a6977cf4f114",
+      "url": "https://abatable.com/case-studies/enabling-ap-moller-capital-to-meet-net-zero",
+      "family": "external.project",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T08:46:04.461416+00:00",
+      "source_sha256": "914fd058ddc1c027005043aabfc27abf2456de84559f31fb9836de9814a57ca8",
+      "structure": {
+        "headings": {
+          "h3": 12,
+          "h1": 1,
+          "h2": 7,
+          "h4": 1
+        },
+        "forms": 0,
+        "input_types": {},
+        "navigation_regions": 1,
+        "main_regions": 0,
+        "sections": 15,
+        "articles": 0,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 0,
+        "roles": {
+          "region": 2,
+          "list": 8,
+          "listitem": 27,
+          "none": 1
+        },
+        "anchor_count": 54
+      }
+    },
+    {
+      "id": "50a6c900cebdbd0e",
+      "url": "https://abatable.com/case-studies/enabling-autotrader-to-support-carbon-removal",
+      "family": "external.project",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T08:46:04.534206+00:00",
+      "source_sha256": "b02fca7140e4dfed1719f01fbf1787a886b8312d5db4d0a99e6c6e11ff701ef7",
+      "structure": {
+        "headings": {
+          "h3": 12,
+          "h1": 1,
+          "h2": 8,
+          "h4": 1
+        },
+        "forms": 0,
+        "input_types": {},
+        "navigation_regions": 1,
+        "main_regions": 0,
+        "sections": 15,
+        "articles": 0,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 0,
+        "roles": {
+          "region": 2,
+          "list": 9,
+          "listitem": 27,
+          "none": 1
+        },
+        "anchor_count": 54
+      }
+    },
+    {
+      "id": "c174b7545b18d0dd",
+      "url": "https://abatable.com/case-studies/partnering-with-howden-to-advance-climate-resilience",
+      "family": "external.project",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T08:46:04.610608+00:00",
+      "source_sha256": "252ed958f598aec48a7d5f685564882b0e869f6f33b6abf4a6b3f05e9f3eb819",
+      "structure": {
+        "headings": {
+          "h3": 12,
+          "h1": 1,
+          "h2": 8,
+          "h4": 1
+        },
+        "forms": 0,
+        "input_types": {},
+        "navigation_regions": 1,
+        "main_regions": 0,
+        "sections": 15,
+        "articles": 0,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 0,
+        "roles": {
+          "region": 2,
+          "list": 9,
+          "listitem": 27,
+          "none": 1
+        },
+        "anchor_count": 54
+      }
+    },
+    {
       "id": "f28fe19f38633ce9",
       "url": "https://alitwotimes.com/work/amazon-the-biggest-sale-of-the-year/",
       "family": "external.project",
@@ -100,87 +199,6 @@
       "inspection_level": "http_dom",
       "observed_at": "2026-11-23T08:18:00.224693+00:00",
       "source_sha256": "dd14d26e868a1179a08c8aa5011e5725581d535231ba4b587d58c7b6b2aa6828",
-      "structure": {
-        "headings": {
-          "h1": 1
-        },
-        "forms": 0,
-        "input_types": {
-          "range": 1
-        },
-        "navigation_regions": 1,
-        "main_regions": 1,
-        "sections": 2,
-        "articles": 1,
-        "tables": 0,
-        "dialogs": 0,
-        "canvases": 0,
-        "videos": 1,
-        "roles": {},
-        "anchor_count": 8
-      }
-    },
-    {
-      "id": "c63204446c8e9358",
-      "url": "https://alitwotimes.com/work/changing-diner/",
-      "family": "external.project",
-      "inspection_level": "http_dom",
-      "observed_at": "2026-11-23T08:19:30.257588+00:00",
-      "source_sha256": "c0d2282e6d640619d5326a0b6cbf76ed1a9f880e7d40044e0fd8464e57a9bc2d",
-      "structure": {
-        "headings": {
-          "h1": 1
-        },
-        "forms": 0,
-        "input_types": {
-          "range": 1
-        },
-        "navigation_regions": 1,
-        "main_regions": 1,
-        "sections": 2,
-        "articles": 1,
-        "tables": 0,
-        "dialogs": 0,
-        "canvases": 0,
-        "videos": 1,
-        "roles": {},
-        "anchor_count": 8
-      }
-    },
-    {
-      "id": "1d36b532e1074e1c",
-      "url": "https://alitwotimes.com/work/cheers-to-all-fans/",
-      "family": "external.project",
-      "inspection_level": "http_dom",
-      "observed_at": "2026-11-23T08:20:03.962961+00:00",
-      "source_sha256": "42b5f1fbd630191b5a956f1d9e0df694973e96ee46cee3273017fc2bc256a9ed",
-      "structure": {
-        "headings": {
-          "h1": 1
-        },
-        "forms": 0,
-        "input_types": {
-          "range": 1
-        },
-        "navigation_regions": 1,
-        "main_regions": 1,
-        "sections": 2,
-        "articles": 1,
-        "tables": 0,
-        "dialogs": 0,
-        "canvases": 0,
-        "videos": 1,
-        "roles": {},
-        "anchor_count": 8
-      }
-    },
-    {
-      "id": "ffb02c529e2ecdea",
-      "url": "https://alitwotimes.com/work/du-tuesday-the-man-sitting-next-to-you/",
-      "family": "external.project",
-      "inspection_level": "http_dom",
-      "observed_at": "2026-11-23T08:20:03.998549+00:00",
-      "source_sha256": "c30c4e3394739c3ff545e151da7423eea04ba08305f99b94a153e8b25fe8d991",
       "structure": {
         "headings": {
           "h1": 1

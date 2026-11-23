@@ -35,6 +35,35 @@
   "evidence_note": "Only recorded observations are facts. DOM structure does not prove visual composition, hidden state, source code, backend behavior or licenses. The runnable blueprint is an original recipe, not a source-site clone.",
   "sources": [
     {
+      "id": "d8a7da7554710b0a",
+      "url": "https://aoiofficial.com/us/archive",
+      "family": "external.gallery",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T08:49:09.154442+00:00",
+      "source_sha256": "897dc18ea54575677d99d802a67d9f9f66cf238328c9edb30870e7df72a930af",
+      "structure": {
+        "headings": {
+          "h1": 1,
+          "h2": 8,
+          "h3": 3
+        },
+        "forms": 0,
+        "input_types": {},
+        "navigation_regions": 2,
+        "main_regions": 1,
+        "sections": 9,
+        "articles": 0,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 0,
+        "roles": {
+          "combobox": 1
+        },
+        "anchor_count": 112
+      }
+    },
+    {
       "id": "6b9189309c8a7071",
       "url": "https://www.197historiasilustradas.com/en/archive",
       "family": "external.gallery",
@@ -83,6 +112,126 @@
         "videos": 0,
         "roles": {},
         "anchor_count": 5
+      }
+    },
+    {
+      "id": "950a7e435c5994d2",
+      "url": "https://www.arteriorshome.com/gallery",
+      "family": "external.gallery",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T09:11:07.523717+00:00",
+      "source_sha256": "30b2a679ac3625ad7c7ecb4aebb17941e87e1f490eb04f3eac73cf0ac2b9b226",
+      "structure": {
+        "headings": {
+          "h3": 13,
+          "h2": 2
+        },
+        "forms": 7,
+        "input_types": {
+          "hidden": 12,
+          "text": 3,
+          "email": 2,
+          "search": 1
+        },
+        "navigation_regions": 2,
+        "main_regions": 1,
+        "sections": 7,
+        "articles": 0,
+        "tables": 0,
+        "dialogs": 1,
+        "canvases": 0,
+        "videos": 2,
+        "roles": {
+          "alert": 1,
+          "img": 63,
+          "search": 3,
+          "dialog": 8,
+          "navigation": 1,
+          "button": 2,
+          "region": 2,
+          "status": 1
+        },
+        "anchor_count": 87
+      }
+    },
+    {
+      "id": "0af06ffb236fd808",
+      "url": "https://www.arteriorshome.com/gallery/submission",
+      "family": "external.gallery",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T09:11:56.784283+00:00",
+      "source_sha256": "f93f74dba90d948c348aa46ef2b6a0fc98b3a80f419efcc5d090bce7096fac70",
+      "structure": {
+        "headings": {
+          "h1": 1,
+          "h3": 10,
+          "h2": 1
+        },
+        "forms": 8,
+        "input_types": {
+          "hidden": 14,
+          "text": 14,
+          "file": 2,
+          "email": 3,
+          "checkbox": 1,
+          "search": 1
+        },
+        "navigation_regions": 3,
+        "main_regions": 1,
+        "sections": 8,
+        "articles": 0,
+        "tables": 0,
+        "dialogs": 1,
+        "canvases": 0,
+        "videos": 0,
+        "roles": {
+          "alert": 1,
+          "img": 50,
+          "search": 3,
+          "dialog": 7,
+          "navigation": 1,
+          "button": 2,
+          "region": 2,
+          "status": 1
+        },
+        "anchor_count": 90
+      }
+    },
+    {
+      "id": "907b32e9089837b7",
+      "url": "https://www.flooringxtra.co.nz/blogs/gallery",
+      "family": "external.gallery",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T08:46:57.523367+00:00",
+      "source_sha256": "6dfd1fa77cf532f7670318cad58baaee7a4c3ed4d0fcb2d79bd61931a2801a9a",
+      "structure": {
+        "headings": {
+          "h2": 7,
+          "h3": 12,
+          "h4": 6,
+          "h1": 1,
+          "h6": 5
+        },
+        "forms": 3,
+        "input_types": {
+          "text": 3,
+          "hidden": 4,
+          "email": 3,
+          "password": 1,
+          "submit": 1
+        },
+        "navigation_regions": 0,
+        "main_regions": 1,
+        "sections": 0,
+        "articles": 0,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 0,
+        "roles": {
+          "main": 1
+        },
+        "anchor_count": 954
       }
     }
   ],

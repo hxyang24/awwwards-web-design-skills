@@ -1,6 +1,6 @@
 {
   "schema_version": "3.0",
-  "generated_at": "2026-11-23T08:25:52.338063+00:00",
+  "generated_at": "2026-11-23T09:18:53.822649+00:00",
   "core_skills_preserved": 24,
   "page_skills": 41,
   "status": "in_progress",
@@ -16,6 +16,7 @@
       "skill": "awwwards-page-discovery-home",
       "title": "发现型门户首页",
       "kind": "portal",
+      "runtime_variant": "generic-page",
       "source_families": [
         "main.home"
       ],
@@ -31,6 +32,7 @@
       "skill": "awwwards-page-website-explorer",
       "title": "作品探索与多维筛选",
       "kind": "listing",
+      "runtime_variant": "generic-page",
       "source_families": [
         "main.website-explorer",
         "main.category-list"
@@ -47,6 +49,7 @@
       "skill": "awwwards-page-award-list",
       "title": "获奖与提名列表",
       "kind": "listing",
+      "runtime_variant": "generic-page",
       "source_families": [
         "main.award-list",
         "main.honors-list"
@@ -63,6 +66,7 @@
       "skill": "awwwards-page-award-detail",
       "title": "获奖作品详情与评审信息",
       "kind": "award",
+      "runtime_variant": "generic-page",
       "source_families": [
         "main.award-detail"
       ],
@@ -78,6 +82,7 @@
       "skill": "awwwards-page-winner-index",
       "title": "获奖档案与年度索引",
       "kind": "listing",
+      "runtime_variant": "generic-page",
       "source_families": [
         "main.winner-index"
       ],
@@ -93,6 +98,7 @@
       "skill": "awwwards-page-annual-awards",
       "title": "年度评选专题",
       "kind": "portal",
+      "runtime_variant": "generic-page",
       "source_families": [
         "main.annual-awards"
       ],
@@ -108,6 +114,7 @@
       "skill": "awwwards-page-jury-directory",
       "title": "评委目录与年份浏览",
       "kind": "directory",
+      "runtime_variant": "generic-page",
       "source_families": [
         "main.jury"
       ],
@@ -123,6 +130,7 @@
       "skill": "awwwards-page-collection-index",
       "title": "策展合集列表",
       "kind": "listing",
+      "runtime_variant": "generic-page",
       "source_families": [
         "main.collection-index"
       ],
@@ -138,6 +146,7 @@
       "skill": "awwwards-page-collection-detail",
       "title": "策展合集详情",
       "kind": "listing",
+      "runtime_variant": "generic-page",
       "source_families": [
         "main.collection-detail"
       ],
@@ -153,6 +162,7 @@
       "skill": "awwwards-page-inspiration-library",
       "title": "灵感与组件参考库",
       "kind": "listing",
+      "runtime_variant": "generic-page",
       "source_families": [
         "main.inspiration-library",
         "main.element-library"
@@ -169,6 +179,7 @@
       "skill": "awwwards-page-creator-directory",
       "title": "创作者与机构目录",
       "kind": "directory",
+      "runtime_variant": "generic-page",
       "source_families": [
         "main.creator-directory"
       ],
@@ -184,6 +195,7 @@
       "skill": "awwwards-page-creator-profile",
       "title": "创作者或机构主页",
       "kind": "profile",
+      "runtime_variant": "generic-page",
       "source_families": [
         "main.creator-profile"
       ],
@@ -199,6 +211,7 @@
       "skill": "awwwards-page-course-catalog",
       "title": "课程目录与学习入口",
       "kind": "listing",
+      "runtime_variant": "generic-page",
       "source_families": [
         "main.course-index"
       ],
@@ -214,6 +227,7 @@
       "skill": "awwwards-page-course-detail",
       "title": "课程详情与大纲",
       "kind": "course",
+      "runtime_variant": "generic-page",
       "source_families": [
         "main.course-detail"
       ],
@@ -229,6 +243,7 @@
       "skill": "awwwards-page-market-catalog",
       "title": "数字产品市场列表",
       "kind": "listing",
+      "runtime_variant": "generic-page",
       "source_families": [
         "main.market-index"
       ],
@@ -244,6 +259,7 @@
       "skill": "awwwards-page-market-product",
       "title": "数字商品详情与许可选择",
       "kind": "product",
+      "runtime_variant": "generic-page",
       "source_families": [
         "main.market-detail"
       ],
@@ -259,6 +275,7 @@
       "skill": "awwwards-page-job-board",
       "title": "职位列表与筛选",
       "kind": "directory",
+      "runtime_variant": "generic-page",
       "source_families": [
         "main.job-index"
       ],
@@ -274,6 +291,7 @@
       "skill": "awwwards-page-job-detail",
       "title": "职位详情与申请路径",
       "kind": "job",
+      "runtime_variant": "generic-page",
       "source_families": [
         "main.job-detail"
       ],
@@ -289,6 +307,7 @@
       "skill": "awwwards-page-editorial-index",
       "title": "编辑内容与博客索引",
       "kind": "listing",
+      "runtime_variant": "generic-page",
       "source_families": [
         "main.editorial-index"
       ],
@@ -304,6 +323,7 @@
       "skill": "awwwards-page-editorial-article",
       "title": "文章详情与技术拆解",
       "kind": "article",
+      "runtime_variant": "generic-page",
       "source_families": [
         "main.article"
       ],
@@ -319,6 +339,7 @@
       "skill": "awwwards-page-membership-plans",
       "title": "会员与套餐比较",
       "kind": "pricing",
+      "runtime_variant": "generic-page",
       "source_families": [
         "main.membership"
       ],
@@ -334,6 +355,7 @@
       "skill": "awwwards-page-submission-wizard",
       "title": "作品提交与审阅向导",
       "kind": "wizard",
+      "runtime_variant": "generic-page",
       "source_families": [
         "main.submission"
       ],
@@ -349,6 +371,7 @@
       "skill": "awwwards-page-faq-center",
       "title": "帮助中心与 FAQ",
       "kind": "faq",
+      "runtime_variant": "generic-page",
       "source_families": [
         "main.faq"
       ],
@@ -364,6 +387,7 @@
       "skill": "awwwards-page-organization-about",
       "title": "平台或品牌关于页",
       "kind": "about",
+      "runtime_variant": "generic-page",
       "source_families": [
         "main.about"
       ],
@@ -379,6 +403,7 @@
       "skill": "awwwards-page-contact-page",
       "title": "联系与询问表单",
       "kind": "contact",
+      "runtime_variant": "generic-page",
       "source_families": [
         "main.contact"
       ],
@@ -394,6 +419,7 @@
       "skill": "awwwards-page-conference-page",
       "title": "会议与活动详情",
       "kind": "event",
+      "runtime_variant": "generic-page",
       "source_families": [
         "main.conference"
       ],
@@ -409,6 +435,7 @@
       "skill": "awwwards-page-legal-document",
       "title": "条款与政策阅读页",
       "kind": "article",
+      "runtime_variant": "generic-page",
       "source_families": [
         "main.legal"
       ],
@@ -424,6 +451,7 @@
       "skill": "awwwards-page-external-home",
       "title": "获奖外站首页与品牌入口",
       "kind": "portal",
+      "runtime_variant": "generic-page",
       "source_families": [
         "external.home"
       ],
@@ -439,6 +467,7 @@
       "skill": "awwwards-page-external-project",
       "title": "获奖外站项目与案例内页",
       "kind": "project",
+      "runtime_variant": "generic-page",
       "source_families": [
         "external.project"
       ],
@@ -454,6 +483,7 @@
       "skill": "awwwards-page-external-about",
       "title": "获奖外站团队与关于内页",
       "kind": "about",
+      "runtime_variant": "generic-page",
       "source_families": [
         "external.about"
       ],
@@ -469,11 +499,12 @@
       "skill": "awwwards-page-external-service",
       "title": "获奖外站服务与方案内页",
       "kind": "service",
+      "runtime_variant": "generic-page",
       "source_families": [
         "external.service"
       ],
       "source_coverage": "observed_examples",
-      "source_count": 1,
+      "source_count": 6,
       "evidence_level": "http_dom",
       "path": "skills/awwwards-page-external-service",
       "demo": "skills/awwwards-page-external-service/assets/",
@@ -484,11 +515,12 @@
       "skill": "awwwards-page-external-product",
       "title": "获奖外站产品与商店内页",
       "kind": "product",
+      "runtime_variant": "generic-page",
       "source_families": [
         "external.product"
       ],
       "source_coverage": "observed_examples",
-      "source_count": 1,
+      "source_count": 6,
       "evidence_level": "http_dom",
       "path": "skills/awwwards-page-external-product",
       "demo": "skills/awwwards-page-external-product/assets/",
@@ -499,6 +531,7 @@
       "skill": "awwwards-page-external-article",
       "title": "获奖外站日志与文章内页",
       "kind": "article",
+      "runtime_variant": "generic-page",
       "source_families": [
         "external.article"
       ],
@@ -514,11 +547,12 @@
       "skill": "awwwards-page-external-contact",
       "title": "获奖外站联系内页",
       "kind": "contact",
+      "runtime_variant": "generic-page",
       "source_families": [
         "external.contact"
       ],
       "source_coverage": "observed_examples",
-      "source_count": 5,
+      "source_count": 6,
       "evidence_level": "http_dom",
       "path": "skills/awwwards-page-external-contact",
       "demo": "skills/awwwards-page-external-contact/assets/",
@@ -527,14 +561,15 @@
     {
       "id": "external-careers",
       "skill": "awwwards-page-external-careers",
-      "title": "获奖外站招聘内页",
-      "kind": "job",
+      "title": "获奖外站招聘与雇主品牌内页",
+      "kind": "careers",
+      "runtime_variant": "careers-pattern",
       "source_families": [
         "external.careers"
       ],
-      "source_coverage": "needs_source_inspection",
-      "source_count": 0,
-      "evidence_level": "not_observed",
+      "source_coverage": "observed_examples",
+      "source_count": 6,
+      "evidence_level": "http_dom",
       "path": "skills/awwwards-page-external-careers",
       "demo": "skills/awwwards-page-external-careers/assets/",
       "browser_validation": "See validation evidence; not inferred from generation"
@@ -544,12 +579,13 @@
       "skill": "awwwards-page-external-legal",
       "title": "获奖外站政策与条款内页",
       "kind": "article",
+      "runtime_variant": "generic-page",
       "source_families": [
         "external.legal"
       ],
       "source_coverage": "observed_examples",
-      "source_count": 3,
-      "evidence_level": "rendered_geometry",
+      "source_count": 6,
+      "evidence_level": "http_dom",
       "path": "skills/awwwards-page-external-legal",
       "demo": "skills/awwwards-page-external-legal/assets/",
       "browser_validation": "See validation evidence; not inferred from generation"
@@ -559,6 +595,7 @@
       "skill": "awwwards-page-external-media-portfolio",
       "title": "获奖外站音乐视觉与动态作品索引",
       "kind": "gallery",
+      "runtime_variant": "generic-page",
       "source_families": [
         "external.media-portfolio"
       ],
@@ -574,11 +611,12 @@
       "skill": "awwwards-page-external-gallery",
       "title": "获奖外站画廊与作品档案",
       "kind": "gallery",
+      "runtime_variant": "generic-page",
       "source_families": [
         "external.gallery"
       ],
       "source_coverage": "observed_examples",
-      "source_count": 2,
+      "source_count": 6,
       "evidence_level": "http_dom",
       "path": "skills/awwwards-page-external-gallery",
       "demo": "skills/awwwards-page-external-gallery/assets/",
@@ -589,6 +627,7 @@
       "skill": "awwwards-page-external-artwork",
       "title": "获奖外站单件作品与故事内页",
       "kind": "project",
+      "runtime_variant": "generic-page",
       "source_families": [
         "external.artwork"
       ],
@@ -604,6 +643,7 @@
       "skill": "awwwards-page-external-experiment",
       "title": "获奖外站实验与互动内页",
       "kind": "experiment",
+      "runtime_variant": "generic-page",
       "source_families": [
         "external.experiment"
       ],
@@ -619,11 +659,12 @@
       "skill": "awwwards-page-external-not-found",
       "title": "获奖外站 404 与恢复页面",
       "kind": "notfound",
+      "runtime_variant": "generic-page",
       "source_families": [
         "external.not-found"
       ],
       "source_coverage": "observed_examples",
-      "source_count": 2,
+      "source_count": 5,
       "evidence_level": "rendered_geometry",
       "path": "skills/awwwards-page-external-not-found",
       "demo": "skills/awwwards-page-external-not-found/assets/",

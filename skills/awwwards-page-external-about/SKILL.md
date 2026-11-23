@@ -38,11 +38,11 @@ python scripts/scaffold.py --output YOUR_EMPTY_PROJECT_DIRECTORY
 交付路由/组件边界、状态矩阵、数据契约、来源和素材台账、实际运行命令、截图及未测项。检查契约中的每条 acceptance，记录 passed/failed/blocked/not_run 并给出证据。不要从一个测试通过推断整站、全部设备或生产已验收。
 
 ## 已读取的来源
+- https://abatable.com/about-us（http_dom；2026-11-23T08:46:00.565319+00:00）
+- https://acmecups.nz/pages/about（http_dom；2026-11-23T08:46:38.810202+00:00）
+- https://adsb.co.kr/pages/about（http_dom；2026-11-23T08:49:39.725769+00:00）
 - https://aim.obys.agency/about（http_dom；2026-11-23T08:04:09.948300+00:00）
-- https://aristidebenoist.com/about（http_dom；2026-11-23T08:04:41.196079+00:00）
-- https://bennettandclive.com/about/（http_dom；2026-11-23T08:05:03.673013+00:00）
-- https://carterogunsola.com/about（http_dom；2026-11-23T08:05:51.201638+00:00）
-- https://carterogunsola.com/studio（http_dom；2026-11-23T08:05:51.206533+00:00）
-- https://www.197historiasilustradas.com/en/about-us（http_dom；2026-11-23T08:03:08.628736+00:00）
+- https://alephstudios.ai/about/（http_dom；2026-11-23T08:48:28.451441+00:00）
+- https://alephstudios.ai/team/alex-de-las-heras/（http_dom；2026-11-23T08:48:32.816346+00:00）
 
 来源受各自版权和访问规则约束；只借鉴结构与机制，使用原创或已授权文案、图像、字体和模型。未知技术版本、隐藏状态和服务端行为不得根据截图补造。

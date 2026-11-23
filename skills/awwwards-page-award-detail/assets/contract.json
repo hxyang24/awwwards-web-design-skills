@@ -39,6 +39,64 @@
   "evidence_note": "Only recorded observations are facts. DOM structure does not prove visual composition, hidden state, source code, backend behavior or licenses. The runnable blueprint is an original recipe, not a source-site clone.",
   "sources": [
     {
+      "id": "8883266382582c93",
+      "url": "https://www.awwwards.com/sites/14islands",
+      "family": "main.award-detail",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T08:44:49.659423+00:00",
+      "source_sha256": "155f5e7fd207b1c149c590d24669edc7b54b8f3ebb4073b31d4218dfc27ed0a6",
+      "structure": {
+        "headings": {
+          "h2": 10,
+          "h1": 1,
+          "h3": 15
+        },
+        "forms": 0,
+        "input_types": {
+          "text": 1
+        },
+        "navigation_regions": 2,
+        "main_regions": 0,
+        "sections": 1,
+        "articles": 0,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 4,
+        "roles": {},
+        "anchor_count": 190
+      }
+    },
+    {
+      "id": "4c9f094fabdfdd50",
+      "url": "https://www.awwwards.com/sites/14islands-v4",
+      "family": "main.award-detail",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T08:44:52.763059+00:00",
+      "source_sha256": "65a6722b17b8fbe5cde08560fdc2a1735e693e9d0a6d1e96cea25428390b35b3",
+      "structure": {
+        "headings": {
+          "h2": 11,
+          "h1": 1,
+          "h3": 26
+        },
+        "forms": 0,
+        "input_types": {
+          "text": 1
+        },
+        "navigation_regions": 2,
+        "main_regions": 0,
+        "sections": 1,
+        "articles": 0,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 6,
+        "roles": {},
+        "anchor_count": 215
+      }
+    },
+    {
       "id": "1f695e840492712e",
       "url": "https://www.awwwards.com/sites/197-historias-ilustradas",
       "family": "main.award-detail",
@@ -152,64 +210,6 @@
         "videos": 3,
         "roles": {},
         "anchor_count": 204
-      }
-    },
-    {
-      "id": "cf2861cd3a610aeb",
-      "url": "https://www.awwwards.com/sites/2degc-earth",
-      "family": "main.award-detail",
-      "inspection_level": "http_dom",
-      "observed_at": "2026-11-23T08:03:21.582582+00:00",
-      "source_sha256": "bc77998d4ec15605a3210cd5ab86487e68768553b509f8498231c242dfe5f537",
-      "structure": {
-        "headings": {
-          "h2": 10,
-          "h1": 1,
-          "h3": 17
-        },
-        "forms": 0,
-        "input_types": {
-          "text": 1
-        },
-        "navigation_regions": 2,
-        "main_regions": 0,
-        "sections": 1,
-        "articles": 0,
-        "tables": 0,
-        "dialogs": 0,
-        "canvases": 0,
-        "videos": 3,
-        "roles": {},
-        "anchor_count": 193
-      }
-    },
-    {
-      "id": "4738653a9627c873",
-      "url": "https://www.awwwards.com/sites/360-c2-b0-langstrasse-zurich",
-      "family": "main.award-detail",
-      "inspection_level": "http_dom",
-      "observed_at": "2026-11-23T08:03:24.566120+00:00",
-      "source_sha256": "7ff3e3a378327242633ccce77a94a80c3256874585dd429450470f0fdd256d32",
-      "structure": {
-        "headings": {
-          "h2": 7,
-          "h1": 1,
-          "h3": 10
-        },
-        "forms": 0,
-        "input_types": {
-          "text": 1
-        },
-        "navigation_regions": 2,
-        "main_regions": 0,
-        "sections": 1,
-        "articles": 0,
-        "tables": 0,
-        "dialogs": 0,
-        "canvases": 0,
-        "videos": 1,
-        "roles": {},
-        "anchor_count": 156
       }
     }
   ],

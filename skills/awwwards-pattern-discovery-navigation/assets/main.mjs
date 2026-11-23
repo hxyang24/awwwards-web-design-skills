@@ -1,0 +1,23 @@
+const trigger=document.querySelector('#explore-trigger'),panel=document.querySelector('#explore-panel'),search=document.querySelector('#search-dialog'),study=document.querySelector('#study-dialog');
+const studies=['Quiet Signals','Open Frame','Good Form','Make the next action visible'];
+function toggleMenu(open,focus=false){panel.hidden=!open;trigger.setAttribute('aria-expanded',String(open));if(open&&focus)panel.querySelector('a').focus();}
+trigger.addEventListener('click',()=>toggleMenu(panel.hidden,true));document.querySelector('#explore-close').addEventListener('click',()=>{toggleMenu(false);trigger.focus();});
+document.addEventListener('keydown',e=>{if(e.key==='Escape'&&!panel.hidden){toggleMenu(false);trigger.focus();}});
+document.addEventListener('click',e=>{if(!panel.hidden&&!panel.contains(e.target)&&!trigger.contains(e.target))toggleMenu(false);});
+panel.addEventListener('focusout',e=>{if(e.relatedTarget&&!panel.contains(e.relatedTarget)&&e.relatedTarget!==trigger)toggleMenu(false);});
+function moveToSection(hash){const target=document.querySelector(hash);if(!target)return;toggleMenu(false);target.scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'});const h=target.querySelector('h2,h1');h?.focus({preventScroll:true});}
+for(const a of document.querySelectorAll('.mega a,.dock a'))a.addEventListener('click',e=>{e.preventDefault();moveToSection(a.hash);history.replaceState(null,'',a.hash);});
+document.querySelector('#search-trigger').addEventListener('click',()=>{toggleMenu(false);search.showModal();document.querySelector('#search-input').focus();drawSearch('');});document.querySelector('#search-close').addEventListener('click',()=>search.close());
+function drawSearch(query){const rows=studies.filter(x=>x.toLowerCase().includes(query.toLowerCase()));document.querySelector('#search-count').textContent=rows.length?rows.length+' local studies found.':'No matching studies. Try another title.';const list=document.querySelector('#search-results');list.replaceChildren();for(const title of rows){const li=document.createElement('li'),button=document.createElement('button');button.type='button';button.textContent=title;button.addEventListener('click',()=>{search.close();openStudy(title);});li.append(button);list.append(li);}}
+document.querySelector('#search-form').addEventListener('submit',e=>{e.preventDefault();drawSearch(document.querySelector('#search-input').value.trim());});
+let studyReturn=null;
+function openStudy(title){studyReturn=search.contains(document.activeElement)||document.activeElement===document.body?document.querySelector('#search-trigger'):document.activeElement;document.querySelector('#study-title').textContent=title;document.querySelector('#study-description').textContent='A fictional example of '+title.toLowerCase()+'. This preview stays in the local study.';study.showModal();}
+study.addEventListener('close',()=>{if(studyReturn?.isConnected)studyReturn.focus({preventScroll:true});});
+document.querySelector('#study-close').addEventListener('click',()=>study.close());for(const b of document.querySelectorAll('[data-study]'))b.addEventListener('click',()=>openStudy(b.dataset.study));
+document.querySelector('#dismiss-note').addEventListener('click',()=>{document.querySelector('#study-note').hidden=true;(document.querySelector('.dock a[aria-current]')||document.querySelector('.dock a')).focus({preventScroll:true});});
+let lastFocused=null;document.addEventListener('focusin',e=>{lastFocused=e.target;});
+matchMedia('(max-width:760px)').addEventListener('change',e=>{if(e.matches&&(document.activeElement?.classList.contains('desktop-link')||lastFocused?.classList.contains('desktop-link')))trigger.focus();});
+const sections=[...document.querySelectorAll('main>.section')];let scrollFrame=0;
+function syncCurrent(){scrollFrame=0;let active=sections[0];for(const section of sections)if(section.getBoundingClientRect().top<=Math.max(120,innerHeight*.35))active=section;if(scrollY+innerHeight>=document.documentElement.scrollHeight-2)active=sections.at(-1);for(const a of document.querySelectorAll('.dock a')){if(a.hash==='#'+active.id)a.setAttribute('aria-current','location');else a.removeAttribute('aria-current');}}
+const onScroll=()=>{if(!scrollFrame)scrollFrame=requestAnimationFrame(syncCurrent);};window.addEventListener('scroll',onScroll,{passive:true});window.addEventListener('resize',onScroll);syncCurrent();
+window.addEventListener('pagehide',()=>{if(scrollFrame)cancelAnimationFrame(scrollFrame);window.removeEventListener('scroll',onScroll);window.removeEventListener('resize',onScroll);},{once:true});

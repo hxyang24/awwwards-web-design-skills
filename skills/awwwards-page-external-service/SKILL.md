@@ -38,6 +38,11 @@ python scripts/scaffold.py --output YOUR_EMPTY_PROJECT_DIRECTORY
 交付路由/组件边界、状态矩阵、数据契约、来源和素材台账、实际运行命令、截图及未测项。检查契约中的每条 acceptance，记录 passed/failed/blocked/not_run 并给出证据。不要从一个测试通过推断整站、全部设备或生产已验收。
 
 ## 已读取的来源
-- https://www.a-lign.studio/process（http_dom；2026-11-23T08:03:41.289544+00:00）
+- https://aleo.org/solutions/（http_dom；2026-11-23T08:48:08.703553+00:00）
+- https://aonnoysengupta.com/services/website-migration（http_dom；2026-11-23T09:09:53.838487+00:00）
+- https://aonnoysengupta.com/services/website-speed（http_dom；2026-11-23T09:09:53.976558+00:00）
+- https://aonnoysengupta.com/services/websites-and-web-apps（http_dom；2026-11-23T09:09:54.114236+00:00）
+- https://mindmarket.com/services（http_dom；2026-11-23T08:43:25.486342+00:00）
+- https://www.14islands.com/services（http_dom；2026-11-23T08:45:01.382416+00:00）
 
 来源受各自版权和访问规则约束；只借鉴结构与机制，使用原创或已授权文案、图像、字体和模型。未知技术版本、隐藏状态和服务端行为不得根据截图补造。

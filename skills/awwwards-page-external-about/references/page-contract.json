@@ -36,6 +36,107 @@
   "evidence_note": "Only recorded observations are facts. DOM structure does not prove visual composition, hidden state, source code, backend behavior or licenses. The runnable blueprint is an original recipe, not a source-site clone.",
   "sources": [
     {
+      "id": "0caeb559e23f5869",
+      "url": "https://abatable.com/about-us",
+      "family": "external.about",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T08:46:00.565319+00:00",
+      "source_sha256": "ca961e41a69a718cb3b06debfaa5307e65cdb91742edc168917b0acb3bb1d791",
+      "structure": {
+        "headings": {
+          "h3": 11,
+          "h2": 15
+        },
+        "forms": 0,
+        "input_types": {},
+        "navigation_regions": 1,
+        "main_regions": 0,
+        "sections": 14,
+        "articles": 0,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 0,
+        "roles": {
+          "region": 2,
+          "list": 9,
+          "listitem": 40,
+          "none": 1
+        },
+        "anchor_count": 59
+      }
+    },
+    {
+      "id": "f9cc27873ae215d6",
+      "url": "https://acmecups.nz/pages/about",
+      "family": "external.about",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T08:46:38.810202+00:00",
+      "source_sha256": "33b074b264e83836df73151367dc68d226d7af178085828a99d666831ddd8688",
+      "structure": {
+        "headings": {
+          "h1": 2,
+          "h2": 2,
+          "h6": 9,
+          "h4": 15,
+          "h5": 2,
+          "h3": 2
+        },
+        "forms": 8,
+        "input_types": {
+          "hidden": 20,
+          "text": 5,
+          "email": 2,
+          "number": 1
+        },
+        "navigation_regions": 0,
+        "main_regions": 1,
+        "sections": 0,
+        "articles": 0,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 0,
+        "roles": {
+          "main": 1,
+          "status": 1
+        },
+        "anchor_count": 169
+      }
+    },
+    {
+      "id": "04f15b421757957e",
+      "url": "https://adsb.co.kr/pages/about",
+      "family": "external.about",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T08:49:39.725769+00:00",
+      "source_sha256": "b62fe882fc9a531aaaaec8e54910d2e818542b2369459aa079e4a7ef35bf8178",
+      "structure": {
+        "headings": {
+          "h1": 1,
+          "h4": 6
+        },
+        "forms": 4,
+        "input_types": {
+          "text": 2,
+          "hidden": 7,
+          "email": 1
+        },
+        "navigation_regions": 1,
+        "main_regions": 1,
+        "sections": 1,
+        "articles": 0,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 1,
+        "roles": {
+          "dialog": 1
+        },
+        "anchor_count": 230
+      }
+    },
+    {
       "id": "987049facb4458b5",
       "url": "https://aim.obys.agency/about",
       "family": "external.about",
@@ -63,143 +164,67 @@
       }
     },
     {
-      "id": "376f7674c4c0d6d0",
-      "url": "https://aristidebenoist.com/about",
+      "id": "6f4ffa0273dd66d5",
+      "url": "https://alephstudios.ai/about/",
       "family": "external.about",
       "inspection_level": "http_dom",
-      "observed_at": "2026-11-23T08:04:41.196079+00:00",
-      "source_sha256": "6c1a9b8bdbd7e3dff8b2a4dde65fbe7a31e75aed7855362bfe39b28649a26fa7",
+      "observed_at": "2026-11-23T08:48:28.451441+00:00",
+      "source_sha256": "e80c0781e92cbc81387d7121fff65fa244b3fb978c6b91120ffac292a1f25fa9",
       "structure": {
-        "headings": {},
-        "forms": 0,
-        "input_types": {},
+        "headings": {
+          "h1": 1,
+          "h2": 4
+        },
+        "forms": 1,
+        "input_types": {
+          "hidden": 9,
+          "text": 2,
+          "email": 1
+        },
         "navigation_regions": 0,
-        "main_regions": 1,
+        "main_regions": 0,
+        "sections": 4,
+        "articles": 0,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 0,
+        "roles": {
+          "document": 1
+        },
+        "anchor_count": 26
+      }
+    },
+    {
+      "id": "0e20fac95725ef90",
+      "url": "https://alephstudios.ai/team/alex-de-las-heras/",
+      "family": "external.about",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T08:48:32.816346+00:00",
+      "source_sha256": "e0040297ec85452da9ee6ef9fa457ee9ab6b49d2c9e769704069bfdf7ee0f19a",
+      "structure": {
+        "headings": {
+          "h1": 1,
+          "h2": 1
+        },
+        "forms": 1,
+        "input_types": {
+          "hidden": 9,
+          "text": 2,
+          "email": 1
+        },
+        "navigation_regions": 0,
+        "main_regions": 0,
         "sections": 0,
         "articles": 0,
         "tables": 0,
         "dialogs": 0,
         "canvases": 0,
         "videos": 0,
-        "roles": {},
-        "anchor_count": 0
-      }
-    },
-    {
-      "id": "26f620a2845d6ab8",
-      "url": "https://bennettandclive.com/about/",
-      "family": "external.about",
-      "inspection_level": "http_dom",
-      "observed_at": "2026-11-23T08:05:03.673013+00:00",
-      "source_sha256": "32f4fcfc04ee43a65316daa82a37acf2265a4db9f92bcd555e5145243410dfae",
-      "structure": {
-        "headings": {
-          "h1": 1,
-          "h3": 2,
-          "h2": 4
-        },
-        "forms": 0,
-        "input_types": {},
-        "navigation_regions": 1,
-        "main_regions": 1,
-        "sections": 5,
-        "articles": 0,
-        "tables": 0,
-        "dialogs": 0,
-        "canvases": 0,
-        "videos": 0,
-        "roles": {},
-        "anchor_count": 20
-      }
-    },
-    {
-      "id": "2238c3649920143e",
-      "url": "https://carterogunsola.com/about",
-      "family": "external.about",
-      "inspection_level": "http_dom",
-      "observed_at": "2026-11-23T08:05:51.201638+00:00",
-      "source_sha256": "4b465da47a02d0e119540db30f7531ba384b1a530712880da09d7c67809e5784",
-      "structure": {
-        "headings": {
-          "h1": 1,
-          "h2": 2
-        },
-        "forms": 0,
-        "input_types": {
-          "text": 1
-        },
-        "navigation_regions": 3,
-        "main_regions": 1,
-        "sections": 4,
-        "articles": 4,
-        "tables": 0,
-        "dialogs": 3,
-        "canvases": 5,
-        "videos": 0,
         "roles": {
-          "group": 1,
-          "img": 1,
-          "dialog": 3
+          "document": 1
         },
-        "anchor_count": 59
-      }
-    },
-    {
-      "id": "4d13b0034a0c7ec2",
-      "url": "https://carterogunsola.com/studio",
-      "family": "external.about",
-      "inspection_level": "http_dom",
-      "observed_at": "2026-11-23T08:05:51.206533+00:00",
-      "source_sha256": "e67de0dac73e3702ab3c5f4aee4ec582284acd48e8d4b47ef3d15cefd8b45ff1",
-      "structure": {
-        "headings": {
-          "h1": 1
-        },
-        "forms": 0,
-        "input_types": {
-          "text": 1
-        },
-        "navigation_regions": 2,
-        "main_regions": 1,
-        "sections": 1,
-        "articles": 0,
-        "tables": 0,
-        "dialogs": 0,
-        "canvases": 6,
-        "videos": 0,
-        "roles": {
-          "group": 2,
-          "tooltip": 1,
-          "dialog": 3
-        },
-        "anchor_count": 34
-      }
-    },
-    {
-      "id": "9eeb454fa749d4d2",
-      "url": "https://www.197historiasilustradas.com/en/about-us",
-      "family": "external.about",
-      "inspection_level": "http_dom",
-      "observed_at": "2026-11-23T08:03:08.628736+00:00",
-      "source_sha256": "02c3257ed0f95661e0dcdf25256809d34cf2350eb069207c14989ad93d137f40",
-      "structure": {
-        "headings": {
-          "h1": 2
-        },
-        "forms": 0,
-        "input_types": {
-          "search": 1
-        },
-        "navigation_regions": 0,
-        "main_regions": 1,
-        "sections": 3,
-        "articles": 7,
-        "tables": 0,
-        "dialogs": 0,
-        "canvases": 0,
-        "videos": 0,
-        "roles": {},
-        "anchor_count": 141
+        "anchor_count": 14
       }
     }
   ],

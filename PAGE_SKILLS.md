@@ -1,8 +1,8 @@
 # 页面专项 Skills · 整理进行中
 
-现有 24 套核心技能继续保留；新增 41 套可单独安装的页面技能，共 65 套。新增技能中 40 套有当前页面来源，1 套仍需补来源。**这不是全站已经完成的声明。**
+现有 24 套核心技能继续保留；新增 41 套可单独安装的页面技能，再新增 3 套具体交互机制技能，共 68 套。新增技能中 41 套有当前页面来源，0 套仍需补来源。**这不是全站已经完成的声明。**
 
-已记录 508 个页面结果，其中 402 个完整读取 HTTP DOM；已发现 51 个获奖外站主机。尚有 6173 个已发现地址待观察，发现范围仍可能增长。
+已记录 1408 个页面结果，其中 900 个完整读取 HTTP DOM；已发现 134 个获奖外站主机。尚有 10613 个已发现地址待观察，发现范围仍可能增长。
 
 网址数用于审计来源；每套技能都有任务、页面结构、数据字段、交互状态、恢复路径、响应式、动效、版权边界、独立蓝本和验收要求。网页 DOM、浏览器视觉度量、原创蓝本测试、原站交互验证分别记录，不混为同一种完成。
 
@@ -38,17 +38,25 @@
 | `awwwards-page-external-home` | 获奖外站首页与品牌入口 | rendered_geometry / 6 来源 | [external-home](skills/awwwards-page-external-home/SKILL.md) | [HTML](skills/awwwards-page-external-home/assets/index.html) |
 | `awwwards-page-external-project` | 获奖外站项目与案例内页 | rendered_geometry / 6 来源 | [external-project](skills/awwwards-page-external-project/SKILL.md) | [HTML](skills/awwwards-page-external-project/assets/index.html) |
 | `awwwards-page-external-about` | 获奖外站团队与关于内页 | http_dom / 6 来源 | [external-about](skills/awwwards-page-external-about/SKILL.md) | [HTML](skills/awwwards-page-external-about/assets/index.html) |
-| `awwwards-page-external-service` | 获奖外站服务与方案内页 | http_dom / 1 来源 | [external-service](skills/awwwards-page-external-service/SKILL.md) | [HTML](skills/awwwards-page-external-service/assets/index.html) |
-| `awwwards-page-external-product` | 获奖外站产品与商店内页 | http_dom / 1 来源 | [external-product](skills/awwwards-page-external-product/SKILL.md) | [HTML](skills/awwwards-page-external-product/assets/index.html) |
+| `awwwards-page-external-service` | 获奖外站服务与方案内页 | http_dom / 6 来源 | [external-service](skills/awwwards-page-external-service/SKILL.md) | [HTML](skills/awwwards-page-external-service/assets/index.html) |
+| `awwwards-page-external-product` | 获奖外站产品与商店内页 | http_dom / 6 来源 | [external-product](skills/awwwards-page-external-product/SKILL.md) | [HTML](skills/awwwards-page-external-product/assets/index.html) |
 | `awwwards-page-external-article` | 获奖外站日志与文章内页 | http_dom / 6 来源 | [external-article](skills/awwwards-page-external-article/SKILL.md) | [HTML](skills/awwwards-page-external-article/assets/index.html) |
-| `awwwards-page-external-contact` | 获奖外站联系内页 | http_dom / 5 来源 | [external-contact](skills/awwwards-page-external-contact/SKILL.md) | [HTML](skills/awwwards-page-external-contact/assets/index.html) |
-| `awwwards-page-external-careers` | 获奖外站招聘内页 | not_observed / 0 来源 | [external-careers](skills/awwwards-page-external-careers/SKILL.md) | [HTML](skills/awwwards-page-external-careers/assets/index.html) |
-| `awwwards-page-external-legal` | 获奖外站政策与条款内页 | rendered_geometry / 3 来源 | [external-legal](skills/awwwards-page-external-legal/SKILL.md) | [HTML](skills/awwwards-page-external-legal/assets/index.html) |
+| `awwwards-page-external-contact` | 获奖外站联系内页 | http_dom / 6 来源 | [external-contact](skills/awwwards-page-external-contact/SKILL.md) | [HTML](skills/awwwards-page-external-contact/assets/index.html) |
+| `awwwards-page-external-careers` | 获奖外站招聘与雇主品牌内页 | http_dom / 6 来源 | [external-careers](skills/awwwards-page-external-careers/SKILL.md) | [HTML](skills/awwwards-page-external-careers/assets/index.html) |
+| `awwwards-page-external-legal` | 获奖外站政策与条款内页 | http_dom / 6 来源 | [external-legal](skills/awwwards-page-external-legal/SKILL.md) | [HTML](skills/awwwards-page-external-legal/assets/index.html) |
 | `awwwards-page-external-media-portfolio` | 获奖外站音乐视觉与动态作品索引 | http_dom / 1 来源 | [external-media-portfolio](skills/awwwards-page-external-media-portfolio/SKILL.md) | [HTML](skills/awwwards-page-external-media-portfolio/assets/index.html) |
-| `awwwards-page-external-gallery` | 获奖外站画廊与作品档案 | http_dom / 2 来源 | [external-gallery](skills/awwwards-page-external-gallery/SKILL.md) | [HTML](skills/awwwards-page-external-gallery/assets/index.html) |
+| `awwwards-page-external-gallery` | 获奖外站画廊与作品档案 | http_dom / 6 来源 | [external-gallery](skills/awwwards-page-external-gallery/SKILL.md) | [HTML](skills/awwwards-page-external-gallery/assets/index.html) |
 | `awwwards-page-external-artwork` | 获奖外站单件作品与故事内页 | http_dom / 3 来源 | [external-artwork](skills/awwwards-page-external-artwork/SKILL.md) | [HTML](skills/awwwards-page-external-artwork/assets/index.html) |
 | `awwwards-page-external-experiment` | 获奖外站实验与互动内页 | http_dom / 1 来源 | [external-experiment](skills/awwwards-page-external-experiment/SKILL.md) | [HTML](skills/awwwards-page-external-experiment/assets/index.html) |
-| `awwwards-page-external-not-found` | 获奖外站 404 与恢复页面 | rendered_geometry / 2 来源 | [external-not-found](skills/awwwards-page-external-not-found/SKILL.md) | [HTML](skills/awwwards-page-external-not-found/assets/index.html) |
+| `awwwards-page-external-not-found` | 获奖外站 404 与恢复页面 | rendered_geometry / 5 来源 | [external-not-found](skills/awwwards-page-external-not-found/SKILL.md) | [HTML](skills/awwwards-page-external-not-found/assets/index.html) |
+
+## 独立交互机制 Skills
+
+| Skill | 机制 | 独立指令 | 原创演示 |
+|---|---|---|---|
+| `awwwards-pattern-discovery-navigation` | 发现门户：巨型标题、分组导航与浮动章节入口 | [SKILL](skills/awwwards-pattern-discovery-navigation/SKILL.md) | [HTML](skills/awwwards-pattern-discovery-navigation/assets/index.html) |
+| `awwwards-pattern-careers-culture` | 招聘品牌页：双层导航、可控视觉与价值观画廊 | [SKILL](skills/awwwards-pattern-careers-culture/SKILL.md) | [HTML](skills/awwwards-pattern-careers-culture/assets/index.html) |
+| `awwwards-pattern-immersive-fallback` | 沉浸式站点：图形增强失败时仍保留可用页面 | [SKILL](skills/awwwards-pattern-immersive-fallback/SKILL.md) | [HTML](skills/awwwards-pattern-immersive-fallback/assets/index.html) |
 
 ## 使用
 

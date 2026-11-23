@@ -38,34 +38,196 @@
   "evidence_note": "Only recorded observations are facts. DOM structure does not prove visual composition, hidden state, source code, backend behavior or licenses. The runnable blueprint is an original recipe, not a source-site clone.",
   "sources": [
     {
-      "id": "d2e119040879c258",
-      "url": "https://www.a-lign.studio/process",
+      "id": "7a530460f5f0ba65",
+      "url": "https://aleo.org/solutions/",
       "family": "external.service",
       "inspection_level": "http_dom",
-      "observed_at": "2026-11-23T08:03:41.289544+00:00",
-      "source_sha256": "948fda68f6104128a707c1589571a858a192da187b3689f77bf50d44216c0cfb",
+      "observed_at": "2026-11-23T08:48:08.703553+00:00",
+      "source_sha256": "7acaff75b2d16ee15343a9ef489e1a81c2d6703fce28c68ceaf9413050beeb3a",
       "structure": {
         "headings": {
           "h1": 1,
-          "h2": 8,
-          "h3": 17,
-          "h4": 6
+          "h2": 5,
+          "h3": 6,
+          "h5": 18
         },
         "forms": 1,
-        "input_types": {},
+        "input_types": {
+          "text": 1,
+          "email": 1,
+          "checkbox": 1
+        },
+        "navigation_regions": 0,
+        "main_regions": 1,
+        "sections": 7,
+        "articles": 0,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 0,
+        "roles": {
+          "presentation": 21
+        },
+        "anchor_count": 58
+      }
+    },
+    {
+      "id": "114cb64d97d2c2a0",
+      "url": "https://aonnoysengupta.com/services/website-migration",
+      "family": "external.service",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T09:09:53.838487+00:00",
+      "source_sha256": "194046199ceed263428b6a45f023602a976fe4f5d261aca7fb5be02315144848",
+      "structure": {
+        "headings": {
+          "h1": 1,
+          "h2": 7,
+          "h3": 12
+        },
+        "forms": 1,
+        "input_types": {
+          "text": 3,
+          "email": 1,
+          "checkbox": 2
+        },
+        "navigation_regions": 1,
+        "main_regions": 1,
+        "sections": 7,
+        "articles": 0,
+        "tables": 0,
+        "dialogs": 1,
+        "canvases": 2,
+        "videos": 0,
+        "roles": {
+          "switch": 4,
+          "alert": 3
+        },
+        "anchor_count": 37
+      }
+    },
+    {
+      "id": "85af1da3ea530332",
+      "url": "https://aonnoysengupta.com/services/website-speed",
+      "family": "external.service",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T09:09:53.976558+00:00",
+      "source_sha256": "441e4c8ea7126034cd45a5e116fbbfa10500a339125049ff049c76b7d3350994",
+      "structure": {
+        "headings": {
+          "h1": 1,
+          "h2": 7,
+          "h3": 18
+        },
+        "forms": 1,
+        "input_types": {
+          "text": 3,
+          "email": 1,
+          "checkbox": 2
+        },
+        "navigation_regions": 1,
+        "main_regions": 1,
+        "sections": 7,
+        "articles": 0,
+        "tables": 0,
+        "dialogs": 1,
+        "canvases": 2,
+        "videos": 0,
+        "roles": {
+          "switch": 4,
+          "alert": 3
+        },
+        "anchor_count": 33
+      }
+    },
+    {
+      "id": "c04f2ddc507eb8d2",
+      "url": "https://aonnoysengupta.com/services/websites-and-web-apps",
+      "family": "external.service",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T09:09:54.114236+00:00",
+      "source_sha256": "1d97ebfa2e7b0073061284aabffd205378f6004176b55767998e28b9ec5b7960",
+      "structure": {
+        "headings": {
+          "h1": 1,
+          "h2": 10,
+          "h3": 13
+        },
+        "forms": 1,
+        "input_types": {
+          "text": 3,
+          "email": 1,
+          "checkbox": 2
+        },
         "navigation_regions": 1,
         "main_regions": 1,
         "sections": 10,
         "articles": 0,
         "tables": 0,
+        "dialogs": 1,
+        "canvases": 2,
+        "videos": 0,
+        "roles": {
+          "switch": 4,
+          "alert": 3
+        },
+        "anchor_count": 46
+      }
+    },
+    {
+      "id": "e01b4fb9aeaeeb3e",
+      "url": "https://mindmarket.com/services",
+      "family": "external.service",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T08:43:25.486342+00:00",
+      "source_sha256": "137d8450914dfed4685ddc19c895897ac81c57b13e17781384d1382a535ba47a",
+      "structure": {
+        "headings": {
+          "h1": 1,
+          "h2": 8,
+          "h3": 11
+        },
+        "forms": 0,
+        "input_types": {},
+        "navigation_regions": 4,
+        "main_regions": 1,
+        "sections": 4,
+        "articles": 0,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 8,
+        "videos": 0,
+        "roles": {
+          "status": 2
+        },
+        "anchor_count": 162
+      }
+    },
+    {
+      "id": "46ef26cbdfecab09",
+      "url": "https://www.14islands.com/services",
+      "family": "external.service",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T08:45:01.382416+00:00",
+      "source_sha256": "d89481786d31b9195410b821d5d2269c2dc83f84faffa6d98b8745391922aa81",
+      "structure": {
+        "headings": {
+          "h2": 18,
+          "h1": 1,
+          "h3": 15,
+          "h4": 1
+        },
+        "forms": 0,
+        "input_types": {},
+        "navigation_regions": 2,
+        "main_regions": 1,
+        "sections": 11,
+        "articles": 0,
+        "tables": 0,
         "dialogs": 0,
         "canvases": 1,
-        "videos": 1,
-        "roles": {
-          "list": 9,
-          "listitem": 28
-        },
-        "anchor_count": 38
+        "videos": 0,
+        "roles": {},
+        "anchor_count": 31
       }
     }
   ],

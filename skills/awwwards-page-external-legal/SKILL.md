@@ -9,7 +9,7 @@ description: Design and implement a external legal page with task-specific struc
 按章节持续阅读并追溯事实、版本和引用。 使用于这一页面族；不要把它扩张为完整网站或所有业务的通用流程。现有项目优先保留其框架、品牌、路由和真实接口。
 
 ## 先读取
-读取 [页面契约](references/page-contract.json)。其中 regions 是建议结构，workflow 是原创实现步骤，sources/visual_metrics 才是已记录观察。当前证据层级 `rendered_geometry`；页面族覆盖 `observed_examples`。同类页面共用此技能，但这不证明该页面族所有网站均已逐页检查。
+读取 [页面契约](references/page-contract.json)。其中 regions 是建议结构，workflow 是原创实现步骤，sources/visual_metrics 才是已记录观察。当前证据层级 `http_dom`；页面族覆盖 `observed_examples`。同类页面共用此技能，但这不证明该页面族所有网站均已逐页检查。
 
 ## 页面结构与实施
 建议区域：文档名称、版本、日期、章节、联系与相关政策。
@@ -38,8 +38,11 @@ python scripts/scaffold.py --output YOUR_EMPTY_PROJECT_DIRECTORY
 交付路由/组件边界、状态矩阵、数据契约、来源和素材台账、实际运行命令、截图及未测项。检查契约中的每条 acceptance，记录 passed/failed/blocked/not_run 并给出证据。不要从一个测试通过推断整站、全部设备或生产已验收。
 
 ## 已读取的来源
-- https://www.a-lign.studio/privacy-policy（http_dom；2026-11-23T08:03:41.286909+00:00）
-- https://www.agrumeafarm.it/en/privacy（http_dom；2026-11-23T08:15:24.207803+00:00）
-- https://www.agrumeafarm.it/privacy（http_dom；2026-11-23T08:16:02.188608+00:00）
+- http://aonnoysengupta.com/cookies（http_dom；2026-11-23T09:10:15.455204+00:00）
+- https://abatable.com/privacy-policy（http_dom；2026-11-23T08:46:08.760529+00:00）
+- https://abatable.com/terms-and-conditions（http_dom；2026-11-23T08:46:24.150828+00:00）
+- https://acmecups.nz/pages/privacy-policy（http_dom；2026-11-23T08:49:04.736741+00:00）
+- https://adsb.co.kr/policies/privacy-policy（http_dom；2026-11-23T08:49:39.910436+00:00）
+- https://agnestoth.com/policies/privacy-policy（http_dom；2026-11-23T08:49:44.060286+00:00）
 
 来源受各自版权和访问规则约束；只借鉴结构与机制，使用原创或已授权文案、图像、字体和模型。未知技术版本、隐藏状态和服务端行为不得根据截图补造。

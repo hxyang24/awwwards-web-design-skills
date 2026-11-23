@@ -1,0 +1,374 @@
+{
+  "id": "discovery-navigation",
+  "title": "发现门户：巨型标题、分组导航与浮动章节入口",
+  "kind": "navigation",
+  "page_skills": [
+    "awwwards-page-discovery-home",
+    "awwwards-page-website-explorer"
+  ],
+  "source_ids": [
+    "awwwards-explore-wide",
+    "awwwards-search-phone"
+  ],
+  "observed": [
+    "主站在 1440 宽度呈现约 127px 的居中主标题，390 宽度约 42px；这是两个具体视口的实测值。",
+    "实际点击 Explore 后，可见链接计数由 118 变为 125。源控件是带点击行为的 span，不据此声称其键盘或 ARIA 已合格。",
+    "页面存在搜索表单；本轮只读策略排除了提交按钮，因此未执行原站搜索。"
+  ],
+  "recipe": [
+    "将跨页面导航、站内章节入口和搜索分成三种独立状态，避免一个按钮承担多重含义。",
+    "用 button、aria-expanded 和关联 nav 实现分组导航；打开后可进入链接，Escape、离开区域或点击外部可关闭并维护焦点。",
+    "主标题按内容压力缩放，底部章节导航与提示层预留空间，不遮挡主要操作。",
+    "本地搜索只是原创蓝本的结果筛选，接真实接口时重新定义查询、加载、空结果和失败恢复。"
+  ],
+  "invariants": [
+    "主导航、章节跳转与搜索结果均可用键盘访问。",
+    "导航缩窄后不得让焦点留在隐藏区域；提示层不能挡住底部入口。",
+    "源站字体仅作为测量事实，不打包其字体文件或品牌资产。",
+    "按钮点击后必须检查展开、焦点或结果的实际变化，不仅检查按钮存在。"
+  ],
+  "limits": [
+    "原站搜索未提交；蓝本搜索不是原站搜索的复刻。",
+    "版式配方使用原创几何和系统字体，不声称逐像素一致。"
+  ],
+  "skill": "awwwards-pattern-discovery-navigation",
+  "source_evidence": [
+    {
+      "id": "awwwards-explore-wide",
+      "source_id": "3bb690a206a51974",
+      "url": "https://www.awwwards.com/",
+      "viewport": {
+        "width": 1440,
+        "height": 1000,
+        "device_scale_factor": 1
+      },
+      "observed_at": "2026-11-23T08:47:20.069Z",
+      "http_status": 200,
+      "status": "observed",
+      "reduced_motion": "reduce",
+      "measured_geometry": {
+        "document_width": 1440,
+        "viewport_width": 1440,
+        "body_font": "\"Inter Tight\"",
+        "body_background": "rgb(248, 248, 248)",
+        "headings": [
+          {
+            "tag": "h2",
+            "rect": {
+              "x": 52,
+              "y": 105,
+              "width": 1336,
+              "height": 29,
+              "font_family": "\"Inter Tight\"",
+              "font_size": "14px",
+              "line_height": "28px",
+              "font_weight": "400",
+              "color": "rgb(34, 34, 34)",
+              "background": "rgba(0, 0, 0, 0)"
+            }
+          },
+          {
+            "tag": "h1",
+            "rect": {
+              "x": 176,
+              "y": 158,
+              "width": 1089,
+              "height": 127,
+              "font_family": "\"Inter Tight\"",
+              "font_size": "126.732px",
+              "line_height": "126.732px",
+              "font_weight": "600",
+              "color": "rgb(34, 34, 34)",
+              "background": "rgba(0, 0, 0, 0)"
+            }
+          },
+          {
+            "tag": "h2",
+            "rect": {
+              "x": 52,
+              "y": 1609,
+              "width": 1336,
+              "height": 28,
+              "font_family": "\"Inter Tight\"",
+              "font_size": "14px",
+              "line_height": "28px",
+              "font_weight": "400",
+              "color": "rgb(34, 34, 34)",
+              "background": "rgba(0, 0, 0, 0)"
+            }
+          },
+          {
+            "tag": "h2",
+            "rect": {
+              "x": 52,
+              "y": 2782,
+              "width": 1336,
+              "height": 28,
+              "font_family": "\"Inter Tight\"",
+              "font_size": "14px",
+              "line_height": "28px",
+              "font_weight": "400",
+              "color": "rgb(34, 34, 34)",
+              "background": "rgba(0, 0, 0, 0)"
+            }
+          },
+          {
+            "tag": "h2",
+            "rect": {
+              "x": 52,
+              "y": 5005,
+              "width": 1336,
+              "height": 28,
+              "font_family": "\"Inter Tight\"",
+              "font_size": "14px",
+              "line_height": "28px",
+              "font_weight": "400",
+              "color": "rgb(34, 34, 34)",
+              "background": "rgba(0, 0, 0, 0)"
+            }
+          },
+          {
+            "tag": "h2",
+            "rect": {
+              "x": 52,
+              "y": 6148,
+              "width": 401,
+              "height": 28,
+              "font_family": "\"Inter Tight\"",
+              "font_size": "14px",
+              "line_height": "28px",
+              "font_weight": "400",
+              "color": "rgb(34, 34, 34)",
+              "background": "rgba(0, 0, 0, 0)"
+            }
+          },
+          {
+            "tag": "h2",
+            "rect": {
+              "x": 52,
+              "y": 7216,
+              "width": 1336,
+              "height": 28,
+              "font_family": "\"Inter Tight\"",
+              "font_size": "14px",
+              "line_height": "28px",
+              "font_weight": "400",
+              "color": "rgb(34, 34, 34)",
+              "background": "rgba(0, 0, 0, 0)"
+            }
+          },
+          {
+            "tag": "h2",
+            "rect": {
+              "x": 95,
+              "y": 7679,
+              "width": 492,
+              "height": 46,
+              "font_family": "\"Inter Tight\"",
+              "font_size": "41.8873px",
+              "line_height": "46.0761px",
+              "font_weight": "600",
+              "color": "rgb(255, 255, 255)",
+              "background": "rgba(0, 0, 0, 0)"
+            }
+          }
+        ]
+      },
+      "actions": [
+        {
+          "role": "explore_dropdown",
+          "status": "acted_and_observed",
+          "observable_state_changed": true,
+          "before": {
+            "links": 118,
+            "dialogs": 0,
+            "expanded": 0,
+            "url": "https://www.awwwards.com/"
+          },
+          "after": {
+            "links": 125,
+            "dialogs": 0,
+            "expanded": 0,
+            "url": "https://www.awwwards.com/"
+          },
+          "control_label_changed": false,
+          "reason": null,
+          "private_screenshot_sha256": "a189f7de4fab775853c507a82e1d8562e1c0f74969285ec5949c596d6e7ea052"
+        },
+        {
+          "role": "search_surface",
+          "status": "not_observed",
+          "observable_state_changed": false,
+          "before": {},
+          "after": {},
+          "control_label_changed": false,
+          "reason": "locator.click: Timeout 7000ms exceeded.",
+          "private_screenshot_sha256": null
+        }
+      ],
+      "private_before_screenshot_sha256": "e814677b994b021db57daf9c4502f49923cf632f9723fcfeee7e14e1093d0760",
+      "source_screenshots_redistributed": false
+    },
+    {
+      "id": "awwwards-search-phone",
+      "source_id": "3bb690a206a51974",
+      "url": "https://www.awwwards.com/",
+      "viewport": {
+        "width": 390,
+        "height": 1000,
+        "device_scale_factor": 1
+      },
+      "observed_at": "2026-11-23T08:47:36.284Z",
+      "http_status": 200,
+      "status": "observed",
+      "reduced_motion": "reduce",
+      "measured_geometry": {
+        "document_width": 390,
+        "viewport_width": 390,
+        "body_font": "\"Inter Tight\"",
+        "body_background": "rgb(248, 248, 248)",
+        "headings": [
+          {
+            "tag": "h2",
+            "rect": {
+              "x": 16,
+              "y": 74,
+              "width": 358,
+              "height": 29,
+              "font_family": "\"Inter Tight\"",
+              "font_size": "14px",
+              "line_height": "28px",
+              "font_weight": "400",
+              "color": "rgb(34, 34, 34)",
+              "background": "rgba(0, 0, 0, 0)"
+            }
+          },
+          {
+            "tag": "h1",
+            "rect": {
+              "x": 16,
+              "y": 123,
+              "width": 358,
+              "height": 84,
+              "font_family": "\"Inter Tight\"",
+              "font_size": "42px",
+              "line_height": "42px",
+              "font_weight": "600",
+              "color": "rgb(34, 34, 34)",
+              "background": "rgba(0, 0, 0, 0)"
+            }
+          },
+          {
+            "tag": "h2",
+            "rect": {
+              "x": 16,
+              "y": 604,
+              "width": 358,
+              "height": 28,
+              "font_family": "\"Inter Tight\"",
+              "font_size": "14px",
+              "line_height": "28px",
+              "font_weight": "400",
+              "color": "rgb(34, 34, 34)",
+              "background": "rgba(0, 0, 0, 0)"
+            }
+          },
+          {
+            "tag": "h2",
+            "rect": {
+              "x": 16,
+              "y": 1628,
+              "width": 358,
+              "height": 28,
+              "font_family": "\"Inter Tight\"",
+              "font_size": "14px",
+              "line_height": "28px",
+              "font_weight": "400",
+              "color": "rgb(34, 34, 34)",
+              "background": "rgba(0, 0, 0, 0)"
+            }
+          },
+          {
+            "tag": "h2",
+            "rect": {
+              "x": 16,
+              "y": 4149,
+              "width": 358,
+              "height": 28,
+              "font_family": "\"Inter Tight\"",
+              "font_size": "14px",
+              "line_height": "28px",
+              "font_weight": "400",
+              "color": "rgb(34, 34, 34)",
+              "background": "rgba(0, 0, 0, 0)"
+            }
+          },
+          {
+            "tag": "h2",
+            "rect": {
+              "x": 16,
+              "y": 5340,
+              "width": 249,
+              "height": 28,
+              "font_family": "\"Inter Tight\"",
+              "font_size": "14px",
+              "line_height": "28px",
+              "font_weight": "400",
+              "color": "rgb(34, 34, 34)",
+              "background": "rgba(0, 0, 0, 0)"
+            }
+          },
+          {
+            "tag": "h2",
+            "rect": {
+              "x": 16,
+              "y": 6343,
+              "width": 358,
+              "height": 28,
+              "font_family": "\"Inter Tight\"",
+              "font_size": "14px",
+              "line_height": "28px",
+              "font_weight": "400",
+              "color": "rgb(34, 34, 34)",
+              "background": "rgba(0, 0, 0, 0)"
+            }
+          },
+          {
+            "tag": "h2",
+            "rect": {
+              "x": 40,
+              "y": 6691,
+              "width": 230,
+              "height": 29,
+              "font_family": "\"Inter Tight\"",
+              "font_size": "26px",
+              "line_height": "28.6px",
+              "font_weight": "600",
+              "color": "rgb(255, 255, 255)",
+              "background": "rgba(0, 0, 0, 0)"
+            }
+          }
+        ]
+      },
+      "actions": [
+        {
+          "role": "search_surface",
+          "status": "not_observed",
+          "observable_state_changed": false,
+          "before": {},
+          "after": {},
+          "control_label_changed": false,
+          "reason": "locator.click: Timeout 7000ms exceeded.",
+          "private_screenshot_sha256": null
+        }
+      ],
+      "private_before_screenshot_sha256": "f151f710ef3ab27bc2d2e9d76afebd91861d57ec43da9387d038f79ddee7c166",
+      "source_screenshots_redistributed": false
+    }
+  ],
+  "source_screenshots_redistributed": false,
+  "implementation": "original runnable pattern",
+  "business_mode": "local_fictional_preview",
+  "source_reproduction_claim": false,
+  "validation_scope": "Actual fixture tests are recorded separately; source observations do not attest implementation tests"
+}

@@ -1,0 +1,66 @@
+{
+  "schema_version": "1.0",
+  "recorded_at": "2026-11-23T09:13:35.067628+00:00",
+  "status": "in_progress",
+  "interaction_skills": 3,
+  "scope": "Specific source-informed mechanisms complement page-level skills; not exhaustive site coverage",
+  "skills": [
+    {
+      "id": "discovery-navigation",
+      "skill": "awwwards-pattern-discovery-navigation",
+      "title": "发现门户：巨型标题、分组导航与浮动章节入口",
+      "kind": "navigation",
+      "path": "skills/awwwards-pattern-discovery-navigation",
+      "demo": "skills/awwwards-pattern-discovery-navigation/assets/",
+      "supports_page_skills": [
+        "awwwards-page-discovery-home",
+        "awwwards-page-website-explorer"
+      ],
+      "source_observation_ids": [
+        "awwwards-explore-wide",
+        "awwwards-search-phone"
+      ],
+      "asset_sha256": "450e15c6eec601ff9845b53ca0683b0d8532687926187152b062d246b7176c26",
+      "source_normal_experience_validated": false,
+      "status": "original_pattern_with_limited_source_observations"
+    },
+    {
+      "id": "careers-culture",
+      "skill": "awwwards-pattern-careers-culture",
+      "title": "招聘品牌页：双层导航、可控视觉与价值观画廊",
+      "kind": "careers",
+      "path": "skills/awwwards-pattern-careers-culture",
+      "demo": "skills/awwwards-pattern-careers-culture/assets/",
+      "supports_page_skills": [
+        "awwwards-page-external-careers",
+        "awwwards-page-job-board"
+      ],
+      "source_observation_ids": [
+        "apple-careers-wide",
+        "apple-careers-phone"
+      ],
+      "asset_sha256": "99081d8459d0228a865bfd944efca382c9f9b0eabeb7efcd651b9b238c762d24",
+      "source_normal_experience_validated": false,
+      "status": "original_pattern_with_limited_source_observations"
+    },
+    {
+      "id": "immersive-fallback",
+      "skill": "awwwards-pattern-immersive-fallback",
+      "title": "沉浸式站点：图形增强失败时仍保留可用页面",
+      "kind": "immersive",
+      "path": "skills/awwwards-pattern-immersive-fallback",
+      "demo": "skills/awwwards-pattern-immersive-fallback/assets/",
+      "supports_page_skills": [
+        "awwwards-page-external-home",
+        "awwwards-page-external-experiment",
+        "awwwards-3d-experience"
+      ],
+      "source_observation_ids": [
+        "active-theory-compatibility-fallback"
+      ],
+      "asset_sha256": "475b8e13d8e6738ffc464aa7efeddbf755606cde4f7e88846beb09f013ad24cd",
+      "source_normal_experience_validated": false,
+      "status": "original_pattern_with_limited_source_observations"
+    }
+  ]
+}
