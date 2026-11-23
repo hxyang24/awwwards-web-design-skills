@@ -68,6 +68,42 @@
       }
     },
     {
+      "id": "575f6410c5b366a4",
+      "url": "https://abelfragrance.com/pages/about",
+      "family": "external.about",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T12:28:55.242735+00:00",
+      "source_sha256": "3b494fa89279668eb26809cab0355f71ee9a6bffe2548721411cfd7bb40736f3",
+      "structure": {
+        "headings": {
+          "h3": 8,
+          "h2": 8,
+          "h4": 2
+        },
+        "forms": 8,
+        "input_types": {
+          "hidden": 30,
+          "text": 2,
+          "submit": 1,
+          "email": 1,
+          "date": 1,
+          "checkbox": 1
+        },
+        "navigation_regions": 0,
+        "main_regions": 1,
+        "sections": 7,
+        "articles": 0,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 1,
+        "roles": {
+          "main": 1
+        },
+        "anchor_count": 103
+      }
+    },
+    {
       "id": "f9cc27873ae215d6",
       "url": "https://acmecups.nz/pages/about",
       "family": "external.about",
@@ -194,38 +230,6 @@
           "document": 1
         },
         "anchor_count": 26
-      }
-    },
-    {
-      "id": "0e20fac95725ef90",
-      "url": "https://alephstudios.ai/team/alex-de-las-heras/",
-      "family": "external.about",
-      "inspection_level": "http_dom",
-      "observed_at": "2026-11-23T08:48:32.816346+00:00",
-      "source_sha256": "e0040297ec85452da9ee6ef9fa457ee9ab6b49d2c9e769704069bfdf7ee0f19a",
-      "structure": {
-        "headings": {
-          "h1": 1,
-          "h2": 1
-        },
-        "forms": 1,
-        "input_types": {
-          "hidden": 9,
-          "text": 2,
-          "email": 1
-        },
-        "navigation_regions": 0,
-        "main_regions": 0,
-        "sections": 0,
-        "articles": 0,
-        "tables": 0,
-        "dialogs": 0,
-        "canvases": 0,
-        "videos": 0,
-        "roles": {
-          "document": 1
-        },
-        "anchor_count": 14
       }
     }
   ],

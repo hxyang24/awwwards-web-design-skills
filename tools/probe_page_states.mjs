@@ -1,4 +1,5 @@
 import {cleanupSourceAction} from './source_action_cleanup.mjs';
+import {resolveSourceTarget} from './source_target.mjs';
 // Read-only anonymous interface observation. Plans contain only explicit,
 // non-submitting controls; source text is never interpreted as instructions.
 import {sourceReadiness} from './source_readiness.mjs';
@@ -28,7 +29,7 @@ try{for(const plan of plans){
   for(const action of (['loading_incomplete','rendered_error_in_observation_environment','rendered_not_found','compatibility_fallback_observed'].includes(result.readiness.state)?[]:plan.actions||[])){const item={role:action.role,name:action.name,status:'not_observed'};try{
    if(!['button','link','tab','textbox','summary','selector'].includes(action.role)||!action.name||action.name.length>80||/^(?:buy|purchase|pay|delete|remove|send|submit|generate|log ?out|sign ?in|apply)\b/i.test(action.name))throw Error('Plan must name an inspected non-submitting control');
    if(action.role==='selector'&&(!action.selector||action.selector.length>120))throw Error('A previously inspected selector is required');
-   const locator=(action.role==='selector'||action.role==='textbox'&&action.selector)?page.locator(action.selector).first():action.role==='summary'?page.locator('summary').filter({hasText:action.name}).first():page.getByRole(action.role,{name:action.name,exact:true}).first();
+   const resolved=await resolveSourceTarget(page,action);const locator=resolved.locator;item.target_resolution={method:resolved.method,visible_candidates_before_href:resolved.visible_candidates_before_href,visible_candidates_resolved:resolved.visible_candidates_resolved};
    await locator.waitFor({state:'visible',timeout:7000});const tag=await locator.evaluate(el=>({tag:el.tagName.toLowerCase(),type:el.getAttribute('type'),form:!!el.closest('form'),href:el.getAttribute('href')}));
    if(tag.form&&tag.tag==='button'&&tag.type!=='button')throw Error('Submitting form controls are excluded');
    if(tag.href&&/^mailto:|^tel:|login|logout|checkout|apply|account|cart/i.test(tag.href))throw Error('External mutation/private route excluded');
@@ -41,7 +42,7 @@ try{for(const plan of plans){
     item.drag_screenshot_sha256=await screenshot(page,plan.id+'-'+width+'-'+result.actions.length+'-drag');item.visual_change_requires_review=true;await page.mouse.up();
    }else if(action.action==='move'){if(action.role!=='selector'||tag.tag!=='canvas'||!Array.isArray(action.to)||!action.to.every(Number.isFinite)||action.to[0]<0||action.to[0]>=width||action.to[1]<0||action.to[1]>=1000)throw Error('Move requires inspected canvas and bounded point');await page.mouse.move(action.to[0],action.to[1],{steps:12});await page.waitForTimeout(500);item.visual_change_requires_review=true;}else if(action.action==='hover')await locator.hover({timeout:7000});else await locator.click({timeout:7000});await page.waitForTimeout(450);const after=await snapshot(page);
    if(action.action==='fill'){item.text_input_value_changed=beforeInput!==await locator.inputValue();item.local_preview_text_present=await page.evaluate(value=>document.body.innerText.includes(value),action.value);}item.action=action.action||'click';item.status='acted_and_observed';item.before={links:before.visible_links_count,dialogs:before.dialogs,expanded:before.controls.filter(x=>x.expanded==='true').length,control_labels:before.controls.map(x=>x.label),selected_tabs:before.controls.filter(x=>x.selected==='true').map(x=>x.label),url:before.url};item.after={links:after.visible_links_count,dialogs:after.dialogs,expanded:after.controls.filter(x=>x.expanded==='true').length,control_labels:after.controls.map(x=>x.label),selected_tabs:after.controls.filter(x=>x.selected==='true').map(x=>x.label),url:after.url};item.observable_state_changed=JSON.stringify(item.before)!==JSON.stringify(item.after)||item.text_input_value_changed===true;item.after_screenshot_sha256=await screenshot(page,plan.id+'-'+width+'-'+result.actions.length+'-after');
-   item.after_controls=after.controls.slice(0,12);item.cleanup=await cleanupSourceAction(page,before,after,action.close_after==='escape');
+   item.after_controls=after.controls.slice(0,12);item.after_readiness=await page.evaluate(sourceReadiness);item.cleanup=await cleanupSourceAction(page,before,after,action.close_after==='escape');
   }catch(e){item.status='not_observed';item.reason=e.message.split('\n')[0].slice(0,180);}result.actions.push(item);}
   result.status=result.readiness.state;if([404,410].includes(result.http_status))result.status='rendered_http_not_found_reference';
  }catch(e){result.status='blocked';result.reason=e.message.split('\n')[0].slice(0,180);}finally{await context.close();}

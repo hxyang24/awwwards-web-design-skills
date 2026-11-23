@@ -58,6 +58,8 @@ def family(url):
    if re.fullmatch(r'/chapter/\d+/?',p):return 'external.story-chapter'
   if host.removeprefix('www.')=='aifont.ai' and re.fullmatch(r'/fonts/[^/]+/?',p):return 'external.prompt-detail'
   if host.removeprefix('www.')=='artemiilebedev.com' and p=='/alter-ego':return 'external.media-portfolio'
+  if re.fullmatch(r'/blogs/[^/]+(?:/tagged/[^/]+)?/?',p,re.I) or re.fullmatch(r'/(?:journal|blog|news|stories|insights|writing|magazine)(?:/page/\d+)?/?',p,re.I):return 'external.editorial-index'
+  if re.fullmatch(r'/blogs/[^/]+/(?!tagged(?:/|$))[^/]+/?',p,re.I):return 'external.article'
   patterns=[('pricing',r'/(?:pricing|plans)(?=/|$)'),('not-found',r'/404(?:/|$)'),('gallery',r'/(?:gallery|archive)(?=/|$)'),('artwork',r'/artwork(?=/|$)'),('experiment',r'/(?:lab|experiments?|playground)(?=/|$)'),('project',r'/(?:work|works|project|projects|case-stud(?:y|ies))(?=/|$)'),('about',r'/(?:about|about-us|studio|team|who-we-are)(?=/|$)'),('contact',r'/(?:contact|contact-us|get-in-touch)(?=/|$)'),('product',r'/(?:products?|shop|collections?|dispensa)(?=/|$)'),('article',r'/(?:journal|blog|news|stories|insights|writing)(?=/|$)'),('service',r'/(?:services?|solutions?|expertise|process)(?=/|$)'),('careers',r'/(?:careers?|jobs?)(?=/|$)'),('legal',r'/(?:privacy|privacy-policy|terms|terms-and-conditions|legal|cookies)(?=/|$)')]
   for name,pattern in patterns:
    if re.search(pattern,p,re.I):return 'external.'+name

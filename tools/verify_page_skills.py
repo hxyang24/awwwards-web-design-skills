@@ -20,6 +20,8 @@ def verify(check_seal=True):
   if (folder/'assets/contract.json').read_bytes()!=(folder/'references/page-contract.json').read_bytes():errors.append('Contract drift '+s['skill'])
   if s.get('runtime_variant')=='careers-pattern':
    pairs=[('main.mjs',R/'interaction_skills/page_adapter.mjs'),('runtime.mjs',R/'interaction_skills/assets/careers/main.mjs'),('style.css',R/'interaction_skills/assets/careers/style.css')]
+  elif s.get('runtime_variant')=='editorial-magazine':
+   source=R/'page_skills/editorial/magazine';pairs=[(file.name,file) for file in source.iterdir() if file.is_file()]
   elif s.get('runtime_variant')=='business-pricing':
    source=R/'page_skills/business/pricing';pairs=[(file.name,file) for file in source.iterdir() if file.is_file()]
   elif s.get('runtime_variant') in ['creative-story','creative-prompt']:

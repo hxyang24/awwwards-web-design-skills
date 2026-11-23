@@ -43,9 +43,9 @@ python scripts/scaffold.py --output YOUR_EMPTY_PROJECT_DIRECTORY
 - https://cerebrium.ai/pricing（http_dom；2026-11-23T09:45:42.896551+00:00）
 - https://happenboard.com/pricing/（http_dom；2026-11-23T11:23:57.769456+00:00）
 - https://humanz.net.au/pricing（http_dom；2026-11-23T11:39:50.261015+00:00）
+- https://instinctor.com/pricing/（http_dom；2026-11-23T11:46:26.464673+00:00）
+- https://lagrowthmachine.com/pricing/（http_dom；2026-11-23T11:58:26.180478+00:00）
 - https://reapi.ai/blog/category/pricing（http_dom；2026-11-23T11:20:42.759048+00:00）
-- https://reapi.ai/blog/category/pricing/page/2（http_dom；2026-11-23T11:37:51.233314+00:00）
-- https://vault.hyperiux.com/pricing（http_dom；2026-11-23T11:41:49.670698+00:00）
 
 来源受各自版权和访问规则约束；只借鉴结构与机制，使用原创或已授权文案、图像、字体和模型。未知技术版本、隐藏状态和服务端行为不得根据截图补造。
 

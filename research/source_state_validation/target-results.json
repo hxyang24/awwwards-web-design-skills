@@ -1,0 +1,50 @@
+{
+  "recorded_at": "2026-11-23T12:44:04.051Z",
+  "status": "passed",
+  "checks": [
+    {
+      "name": "Duplicate navigation and topic names are rejected before any click",
+      "status": "passed"
+    },
+    {
+      "name": "An inspected expected href selects the topic instead of global navigation",
+      "status": "passed"
+    },
+    {
+      "name": "A stale or wrong expected href never falls back to the first link",
+      "status": "passed"
+    },
+    {
+      "name": "An explicit selector must still identify one visible control",
+      "status": "passed"
+    },
+    {
+      "name": "Hidden duplicates do not displace the visible inspected control",
+      "status": "passed"
+    },
+    {
+      "name": "Returned targets remain strict when a duplicate appears later",
+      "status": "passed"
+    },
+    {
+      "name": "Inspected hrefs with encoded quotes and spaces are compared without selector injection",
+      "status": "passed"
+    },
+    {
+      "name": "Credential and script destinations cannot be expected source hrefs",
+      "status": "passed"
+    },
+    {
+      "name": "A unique role and name still resolves ordinary inspected buttons",
+      "status": "passed"
+    },
+    {
+      "name": "Ambiguous summary text is rejected rather than choosing a FAQ",
+      "status": "passed"
+    }
+  ],
+  "limitations": [
+    "Original local fixtures, not full source-site interaction acceptance",
+    "Expected href must come from an inspected control; this helper does not certify navigation destinations or source licensing"
+  ]
+}

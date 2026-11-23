@@ -1,0 +1,163 @@
+{
+  "recorded_at": "2026-11-23T12:32:57.937Z",
+  "status": "failed",
+  "checks": [
+    {
+      "name": "Editorial layout at 320",
+      "status": "failed",
+      "error": "expect(received).toBeLessThanOrEqual(expected)\n\nExpected: <= 321\nReceived:    365"
+    },
+    {
+      "name": "Editorial layout at 390",
+      "status": "passed"
+    },
+    {
+      "name": "Editorial layout at 768",
+      "status": "passed"
+    },
+    {
+      "name": "Editorial layout at 1440",
+      "status": "passed"
+    },
+    {
+      "name": "Editorial selected accessibility rules at 390",
+      "status": "passed"
+    },
+    {
+      "name": "Editorial selected accessibility rules at 1440",
+      "status": "passed"
+    },
+    {
+      "name": "Search reaches a story beyond the first loaded page",
+      "status": "passed"
+    },
+    {
+      "name": "Topic selection updates URL, results and visible selected state",
+      "status": "passed"
+    },
+    {
+      "name": "Date ordering leaves unknown dates last without inventing a date",
+      "status": "passed"
+    },
+    {
+      "name": "Loading more appends stable cards and exposes a keyboard jump",
+      "status": "failed",
+      "error": "expect(locator).toContainText(expected) failed\n\nLocator: locator('#catalog-status')\nExpected substring: \"4 stories added\"\nReceived string:    \"Showing 8 of 12 stories in this catalog.\"\nTimeout: 5000ms\n\nCall log:\n  - Expect \"toContainText\" locator('#catalog-status') with timeout 5000ms\n  - waiting for locator('#catalog-status')\n    14 × locator resolved to <p role=\"status\" id=\"catalog-status\">Showing 8 of 12 stories in this catalog.</p>\n       - unexpected value \"Showing 8 of 12 stories in this catalog.\"\n"
+    },
+    {
+      "name": "The terminal page hides load controls and preserves a usable focus target",
+      "status": "passed"
+    },
+    {
+      "name": "Failed load-more preserves current stories and retries the same page",
+      "status": "passed"
+    },
+    {
+      "name": "A failed filtered view reports an unknown count and keeps a retry path",
+      "status": "passed"
+    },
+    {
+      "name": "Changing a topic cancels pending pagination and rejects stale results",
+      "status": "passed"
+    },
+    {
+      "name": "Repeated load activation does not start overlapping page requests",
+      "status": "passed"
+    },
+    {
+      "name": "Empty and excessive search input have distinct recoverable states",
+      "status": "passed"
+    },
+    {
+      "name": "Query text remains data rather than injected markup",
+      "status": "passed"
+    },
+    {
+      "name": "Reading and returning retains the expanded list and trigger focus",
+      "status": "passed"
+    },
+    {
+      "name": "Reading and returning keeps topic and ordering choices",
+      "status": "passed"
+    },
+    {
+      "name": "A direct story address has a safe internal return path",
+      "status": "passed"
+    },
+    {
+      "name": "An unavailable story recovers to the index without inventing content",
+      "status": "passed"
+    },
+    {
+      "name": "Browser back and forward restore distinct query views",
+      "status": "passed"
+    },
+    {
+      "name": "Unknown topics and malformed saved positions are explained without removing the recovery path",
+      "status": "passed"
+    },
+    {
+      "name": "Expanded reading position is not capped at the twelve-story sample",
+      "status": "passed"
+    },
+    {
+      "name": "No-script catalog contains every story and native readable destinations",
+      "status": "failed",
+      "error": "expect(locator).toBeDisabled() failed\n\nLocator:  locator('#filter-fields')\nExpected: disabled\nReceived: enabled\nTimeout:  5000ms\n\nCall log:\n  - Expect \"toBeDisabled\" locator('#filter-fields') with timeout 5000ms\n  - waiting for locator('#filter-fields')\n    14 × locator resolved to <fieldset disabled id=\"filter-fields\">…</fieldset>\n       - unexpected value \"enabled\"\n"
+    },
+    {
+      "name": "Missing catalog data retains the complete static reading path",
+      "status": "passed"
+    },
+    {
+      "name": "Invalid catalog identity preserves static content instead of a false ready state",
+      "status": "failed",
+      "error": "expect(locator).toBeDisabled() failed\n\nLocator:  locator('#filter-fields')\nExpected: disabled\nReceived: enabled\nTimeout:  5000ms\n\nCall log:\n  - Expect \"toBeDisabled\" locator('#filter-fields') with timeout 5000ms\n  - waiting for locator('#filter-fields')\n    14 × locator resolved to <fieldset disabled id=\"filter-fields\">…</fieldset>\n       - unexpected value \"enabled\"\n"
+    },
+    {
+      "name": "Cleanup aborts active work while keeping unrelated host controls usable",
+      "status": "failed",
+      "error": "expect(locator).toBeDisabled() failed\n\nLocator:  locator('#filter-fields')\nExpected: disabled\nReceived: enabled\nTimeout:  5000ms\n\nCall log:\n  - Expect \"toBeDisabled\" locator('#filter-fields') with timeout 5000ms\n  - waiting for locator('#filter-fields')\n    14 × locator resolved to <fieldset disabled id=\"filter-fields\">…</fieldset>\n       - unexpected value \"enabled\"\n"
+    },
+    {
+      "name": "A controlled persisted lifecycle signal keeps browsing functional",
+      "status": "passed"
+    },
+    {
+      "name": "No outside requests, form submissions or uncaught errors",
+      "status": "passed"
+    }
+  ],
+  "accessibility": [
+    {
+      "width": 390,
+      "violations": []
+    },
+    {
+      "width": 1440,
+      "violations": []
+    }
+  ],
+  "screenshots": [
+    "research/editorial_skill_validation/screenshots/editorial-390.png",
+    "research/editorial_skill_validation/screenshots/editorial-1440.png"
+  ],
+  "errors": [],
+  "external_requests": [],
+  "environment": {
+    "platform": "win32",
+    "node": "v24.14.0",
+    "browser": "159.0.8154.6",
+    "viewport_widths": [
+      320,
+      390,
+      768,
+      1440
+    ]
+  },
+  "limitations": [
+    "Original catalog and local asynchronous adapter only; not source-site API reconstruction",
+    "A controlled lifecycle signal is not full cross-browser back-forward-cache acceptance",
+    "No physical-device, Safari/Firefox, full assistive-technology or production-scale performance acceptance"
+  ]
+}

@@ -137,59 +137,61 @@
       }
     },
     {
-      "id": "ccb00026233a40df",
-      "url": "https://danielneath.com/404",
+      "id": "f31641f101d1db35",
+      "url": "https://carnilove.ashfall.studio/404/",
       "family": "external.not-found",
       "inspection_level": "http_dom",
-      "observed_at": "2026-11-23T10:34:15.534871+00:00",
-      "source_sha256": "7b9d87d1cd7e9c4e62ef4bb0ae1f653e103c789f249e589e05bca4c696b968cd",
+      "observed_at": "2026-11-23T12:16:39.347349+00:00",
+      "source_sha256": "5a87ed02193069ca2ff7d5ddb1733e4096f22f7015415028799703ff5e28b927",
       "structure": {
-        "headings": {
-          "h1": 1
-        },
-        "forms": 0,
-        "input_types": {},
-        "navigation_regions": 2,
-        "main_regions": 1,
-        "sections": 1,
-        "articles": 0,
-        "tables": 0,
-        "dialogs": 0,
-        "canvases": 1,
-        "videos": 1,
-        "roles": {},
-        "anchor_count": 22
-      }
-    },
-    {
-      "id": "ec1025f49ead59c6",
-      "url": "https://ebuka.marketing/404",
-      "family": "external.not-found",
-      "inspection_level": "http_dom",
-      "observed_at": "2026-11-23T10:49:49.470079+00:00",
-      "source_sha256": "2cad238d421de2be52cc0a5da61305ba35f770118cba88a863abd7e40617c95c",
-      "structure": {
-        "headings": {
-          "h1": 1,
-          "h2": 3
-        },
+        "headings": {},
         "forms": 1,
         "input_types": {
-          "text": 1
+          "search": 1,
+          "radio": 2,
+          "text": 1,
+          "hidden": 4,
+          "checkbox": 20
         },
         "navigation_regions": 0,
         "main_regions": 1,
-        "sections": 0,
+        "sections": 6,
         "articles": 0,
         "tables": 0,
-        "dialogs": 1,
-        "canvases": 1,
+        "dialogs": 0,
+        "canvases": 0,
         "videos": 0,
-        "roles": {
-          "status": 2,
-          "alert": 1
+        "roles": {},
+        "anchor_count": 58
+      }
+    },
+    {
+      "id": "75208d4e0c056341",
+      "url": "https://carnilove.ashfall.studio/cz/404/",
+      "family": "external.not-found",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T12:16:39.656965+00:00",
+      "source_sha256": "5a87ed02193069ca2ff7d5ddb1733e4096f22f7015415028799703ff5e28b927",
+      "structure": {
+        "headings": {},
+        "forms": 1,
+        "input_types": {
+          "search": 1,
+          "radio": 2,
+          "text": 1,
+          "hidden": 4,
+          "checkbox": 20
         },
-        "anchor_count": 2
+        "navigation_regions": 0,
+        "main_regions": 1,
+        "sections": 6,
+        "articles": 0,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 0,
+        "roles": {},
+        "anchor_count": 58
       }
     }
   ],

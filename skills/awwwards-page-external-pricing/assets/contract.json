@@ -149,6 +149,79 @@
       }
     },
     {
+      "id": "bc76a15b88d1e0dc",
+      "url": "https://instinctor.com/pricing/",
+      "family": "external.pricing",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T11:46:26.464673+00:00",
+      "source_sha256": "2b9cbd42be6e959cb25889be9e4ee5d38ab957ef298404e8a1b22e119f0e1972",
+      "structure": {
+        "headings": {
+          "h1": 1,
+          "h2": 2,
+          "h3": 1
+        },
+        "forms": 1,
+        "input_types": {
+          "hidden": 8,
+          "text": 2,
+          "tel": 3,
+          "checkbox": 3
+        },
+        "navigation_regions": 0,
+        "main_regions": 0,
+        "sections": 5,
+        "articles": 0,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 1,
+        "videos": 0,
+        "roles": {
+          "dialog": 2
+        },
+        "anchor_count": 10
+      }
+    },
+    {
+      "id": "5b5a122640da952b",
+      "url": "https://lagrowthmachine.com/pricing/",
+      "family": "external.pricing",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T11:58:26.180478+00:00",
+      "source_sha256": "5b9273191bce762b2429f06a9ff630e9b5edee99e293e0893f976f8f96559480",
+      "structure": {
+        "headings": {
+          "h1": 2,
+          "h2": 9
+        },
+        "forms": 1,
+        "input_types": {
+          "email": 1,
+          "hidden": 2,
+          "submit": 1
+        },
+        "navigation_regions": 9,
+        "main_regions": 1,
+        "sections": 11,
+        "articles": 4,
+        "tables": 7,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 0,
+        "roles": {
+          "banner": 1,
+          "navigation": 1,
+          "group": 5,
+          "button": 49,
+          "listbox": 1,
+          "option": 1,
+          "list": 1,
+          "listitem": 4
+        },
+        "anchor_count": 143
+      }
+    },
+    {
       "id": "b99baf0fead6583d",
       "url": "https://reapi.ai/blog/category/pricing",
       "family": "external.pricing",
@@ -177,78 +250,6 @@
           "navigation": 1
         },
         "anchor_count": 206
-      }
-    },
-    {
-      "id": "384e155576ddc242",
-      "url": "https://reapi.ai/blog/category/pricing/page/2",
-      "family": "external.pricing",
-      "inspection_level": "http_dom",
-      "observed_at": "2026-11-23T11:37:51.233314+00:00",
-      "source_sha256": "c365be224605b88900ad614e3e28c871ded96f966dbe25133acd4c4229d01a59",
-      "structure": {
-        "headings": {
-          "h1": 1,
-          "h2": 5,
-          "h3": 7
-        },
-        "forms": 0,
-        "input_types": {},
-        "navigation_regions": 6,
-        "main_regions": 1,
-        "sections": 2,
-        "articles": 0,
-        "tables": 0,
-        "dialogs": 0,
-        "canvases": 1,
-        "videos": 0,
-        "roles": {
-          "group": 1,
-          "radio": 4,
-          "navigation": 1
-        },
-        "anchor_count": 183
-      }
-    },
-    {
-      "id": "0c00a7d46bac06df",
-      "url": "https://vault.hyperiux.com/pricing",
-      "family": "external.pricing",
-      "inspection_level": "http_dom",
-      "observed_at": "2026-11-23T11:41:49.670698+00:00",
-      "source_sha256": "7bce80ffe25fb23fe0a089bdf4c120a9b5548e34f50b22239e0ceb4957b256af",
-      "structure": {
-        "headings": {
-          "h1": 1,
-          "h2": 6,
-          "h3": 15
-        },
-        "forms": 1,
-        "input_types": {
-          "range": 2,
-          "email": 1
-        },
-        "navigation_regions": 1,
-        "main_regions": 1,
-        "sections": 6,
-        "articles": 5,
-        "tables": 0,
-        "dialogs": 0,
-        "canvases": 3,
-        "videos": 0,
-        "roles": {
-          "status": 3,
-          "radiogroup": 2,
-          "radio": 4,
-          "table": 1,
-          "row": 11,
-          "columnheader": 3,
-          "rowheader": 10,
-          "cell": 20,
-          "button": 6,
-          "region": 6
-        },
-        "anchor_count": 60
       }
     }
   ],

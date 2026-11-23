@@ -36,6 +36,29 @@
   "evidence_note": "Only recorded observations are facts. DOM structure does not prove visual composition, hidden state, source code, backend behavior or licenses. The runnable blueprint is an original recipe, not a source-site clone.",
   "sources": [
     {
+      "id": "fa17b3ace793dbb9",
+      "url": "http://www.hellomonday.net/archive/greenpeace/intothearctic/en/",
+      "family": "external.gallery",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T11:47:03.878122+00:00",
+      "source_sha256": "9dcc2a53387314c022fc1cdba23bc10fb1c706dd86bbbde140e682cc237e2363",
+      "structure": {
+        "headings": {},
+        "forms": 0,
+        "input_types": {},
+        "navigation_regions": 0,
+        "main_regions": 0,
+        "sections": 0,
+        "articles": 0,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 0,
+        "roles": {},
+        "anchor_count": 49
+      }
+    },
+    {
       "id": "d8a7da7554710b0a",
       "url": "https://aoiofficial.com/us/archive",
       "family": "external.gallery",
@@ -182,42 +205,6 @@
           "main": 1
         },
         "anchor_count": 189
-      }
-    },
-    {
-      "id": "19ffa215dd9a80ff",
-      "url": "https://bluntumbrellas.com/pages/archive",
-      "family": "external.gallery",
-      "inspection_level": "http_dom",
-      "observed_at": "2026-11-23T10:41:05.361663+00:00",
-      "source_sha256": "a00b55f8550544c8e07043f861ae080d5f8ed6f35ec04959bb97c5e7664e8e79",
-      "structure": {
-        "headings": {
-          "h6": 10,
-          "h4": 54,
-          "h3": 46
-        },
-        "forms": 2,
-        "input_types": {
-          "text": 1,
-          "hidden": 6,
-          "email": 2,
-          "password": 1,
-          "submit": 1,
-          "checkbox": 1
-        },
-        "navigation_regions": 0,
-        "main_regions": 1,
-        "sections": 2,
-        "articles": 0,
-        "tables": 0,
-        "dialogs": 0,
-        "canvases": 0,
-        "videos": 0,
-        "roles": {
-          "main": 1
-        },
-        "anchor_count": 151
       }
     }
   ],

@@ -38,11 +38,11 @@ python scripts/scaffold.py --output YOUR_EMPTY_PROJECT_DIRECTORY
 交付路由/组件边界、状态矩阵、数据契约、来源和素材台账、实际运行命令、截图及未测项。检查契约中的每条 acceptance，记录 passed/failed/blocked/not_run 并给出证据。不要从一个测试通过推断整站、全部设备或生产已验收。
 
 ## 已读取的来源
-- http://aonnoysengupta.com/blog（http_dom；2026-11-23T09:10:15.179750+00:00）
-- http://www.blacknegative.com/news/（http_dom；2026-11-23T08:15:57.604064+00:00）
+- http://aonnoysengupta.com/blog/reduce-webflow-bandwidth（http_dom；2026-11-23T12:15:37.140229+00:00）
+- http://aonnoysengupta.com/blog/should-you-leave-webflow（http_dom；2026-11-23T12:15:37.461077+00:00）
 - https://abatable.com/blog/cop31-what-to-expect-for-carbon-markets（http_dom；2026-11-23T08:46:00.639646+00:00）
 - https://abatable.com/blog/corsia-a-decade-in（http_dom；2026-11-23T08:46:00.713802+00:00）
-- https://acmecups.nz/blogs/journal（http_dom；2026-11-23T08:47:48.626103+00:00）
-- https://acmecups.nz/blogs/journal/acme-gift-edit-for-every-type-of-coffee-person（http_dom；2026-11-23T08:47:48.715558+00:00）
+- https://abelfragrance.com/blogs/journal/almost-reckless-podcast-with-isaac-sinclair（http_dom；2026-11-23T12:33:28.759217+00:00）
+- https://abelfragrance.com/blogs/journal/compostable-caps（http_dom；2026-11-23T12:24:22.370992+00:00）
 
 来源受各自版权和访问规则约束；只借鉴结构与机制，使用原创或已授权文案、图像、字体和模型。未知技术版本、隐藏状态和服务端行为不得根据截图补造。

@@ -9,7 +9,7 @@ description: Design and implement a external project page with task-specific str
 理解项目问题、过程、贡献和有证据的成果。 使用于这一页面族；不要把它扩张为完整网站或所有业务的通用流程。现有项目优先保留其框架、品牌、路由和真实接口。
 
 ## 先读取
-读取 [页面契约](references/page-contract.json)。其中 regions 是建议结构，workflow 是原创实现步骤，sources/visual_metrics 才是已记录观察。当前证据层级 `rendered_geometry`；页面族覆盖 `observed_examples`。同类页面共用此技能，但这不证明该页面族所有网站均已逐页检查。
+读取 [页面契约](references/page-contract.json)。其中 regions 是建议结构，workflow 是原创实现步骤，sources/visual_metrics 才是已记录观察。当前证据层级 `http_dom`；页面族覆盖 `observed_examples`。同类页面共用此技能，但这不证明该页面族所有网站均已逐页检查。
 
 ## 页面结构与实施
 建议区域：项目身份、问题、角色、过程、成果、媒体、证据、下一项目。
@@ -38,11 +38,11 @@ python scripts/scaffold.py --output YOUR_EMPTY_PROJECT_DIRECTORY
 交付路由/组件边界、状态矩阵、数据契约、来源和素材台账、实际运行命令、截图及未测项。检查契约中的每条 acceptance，记录 passed/failed/blocked/not_run 并给出证据。不要从一个测试通过推断整站、全部设备或生产已验收。
 
 ## 已读取的来源
+- http://jesperlandberg.com/projects/book-of-happiness（http_dom；2026-11-23T11:48:13.115079+00:00）
+- http://jesperlandberg.com/projects/casa-di-solare（http_dom；2026-11-23T11:48:13.377119+00:00）
+- http://jesperlandberg.com/projects/discoveryland（http_dom；2026-11-23T11:48:13.639436+00:00）
 - https://abatable.com/case-studies/enabling-ap-moller-capital-to-meet-net-zero（http_dom；2026-11-23T08:46:04.461416+00:00）
 - https://abatable.com/case-studies/enabling-autotrader-to-support-carbon-removal（http_dom；2026-11-23T08:46:04.534206+00:00）
 - https://abatable.com/case-studies/partnering-with-howden-to-advance-climate-resilience（http_dom；2026-11-23T08:46:04.610608+00:00）
-- https://alitwotimes.com/work/amazon-the-biggest-sale-of-the-year/（http_dom；2026-11-23T08:18:00.072945+00:00）
-- https://alitwotimes.com/work/badya-life-imitates-art/（http_dom；2026-11-23T08:18:00.113808+00:00）
-- https://alitwotimes.com/work/bud-light-millennial-beach/（http_dom；2026-11-23T08:18:00.224693+00:00）
 
 来源受各自版权和访问规则约束；只借鉴结构与机制，使用原创或已授权文案、图像、字体和模型。未知技术版本、隐藏状态和服务端行为不得根据截图补造。

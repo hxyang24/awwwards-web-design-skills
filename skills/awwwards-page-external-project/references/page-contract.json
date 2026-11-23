@@ -36,10 +36,102 @@
   ],
   "failure_recovery": "案例数据不足时保留未知；媒体失败不阻止阅读与导航。",
   "motion_contract": "固定章节与图像过渡要保持正文可读；减少动画直接展示。",
-  "evidence_level": "rendered_geometry",
+  "evidence_level": "http_dom",
   "source_relationship_note": "An outbound work-detail association does not certify that every current inner page won an award or matches a historical version.",
   "evidence_note": "Only recorded observations are facts. DOM structure does not prove visual composition, hidden state, source code, backend behavior or licenses. The runnable blueprint is an original recipe, not a source-site clone.",
   "sources": [
+    {
+      "id": "642c33e4b1e9dfc5",
+      "url": "http://jesperlandberg.com/projects/book-of-happiness",
+      "family": "external.project",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T11:48:13.115079+00:00",
+      "source_sha256": "1d268ce0199b34c40791c4d8efaa99449917726588256bed4b884db3e6ab2a2a",
+      "structure": {
+        "headings": {
+          "h1": 1
+        },
+        "forms": 1,
+        "input_types": {
+          "email": 1,
+          "text": 1
+        },
+        "navigation_regions": 1,
+        "main_regions": 1,
+        "sections": 0,
+        "articles": 0,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 0,
+        "roles": {
+          "img": 1,
+          "status": 1
+        },
+        "anchor_count": 12
+      }
+    },
+    {
+      "id": "ced62fdc73e99339",
+      "url": "http://jesperlandberg.com/projects/casa-di-solare",
+      "family": "external.project",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T11:48:13.377119+00:00",
+      "source_sha256": "089b7fdadd388d80e3e03804b0e1f1c43fd28a3c025950197b5f691b7ac29b44",
+      "structure": {
+        "headings": {
+          "h1": 1
+        },
+        "forms": 1,
+        "input_types": {
+          "email": 1,
+          "text": 1
+        },
+        "navigation_regions": 1,
+        "main_regions": 1,
+        "sections": 0,
+        "articles": 0,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 0,
+        "roles": {
+          "img": 1,
+          "status": 1
+        },
+        "anchor_count": 12
+      }
+    },
+    {
+      "id": "cddf6fee0eb880bc",
+      "url": "http://jesperlandberg.com/projects/discoveryland",
+      "family": "external.project",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T11:48:13.639436+00:00",
+      "source_sha256": "a772915a84114fb86667684933f1df74ecd277bef9af2329e0a2749a1ffeb080",
+      "structure": {
+        "headings": {
+          "h1": 1
+        },
+        "forms": 1,
+        "input_types": {
+          "email": 1,
+          "text": 1
+        },
+        "navigation_regions": 1,
+        "main_regions": 1,
+        "sections": 0,
+        "articles": 0,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 0,
+        "roles": {
+          "status": 1
+        },
+        "anchor_count": 12
+      }
+    },
     {
       "id": "8922a6977cf4f114",
       "url": "https://abatable.com/case-studies/enabling-ap-moller-capital-to-meet-net-zero",
@@ -138,177 +230,9 @@
         },
         "anchor_count": 54
       }
-    },
-    {
-      "id": "f28fe19f38633ce9",
-      "url": "https://alitwotimes.com/work/amazon-the-biggest-sale-of-the-year/",
-      "family": "external.project",
-      "inspection_level": "http_dom",
-      "observed_at": "2026-11-23T08:18:00.072945+00:00",
-      "source_sha256": "273d6eceea3532b19230a95aaddc7f81adb46ce1a5bc852d1eca88f2a3a0bf63",
-      "structure": {
-        "headings": {
-          "h1": 1
-        },
-        "forms": 0,
-        "input_types": {
-          "range": 1
-        },
-        "navigation_regions": 1,
-        "main_regions": 1,
-        "sections": 2,
-        "articles": 1,
-        "tables": 0,
-        "dialogs": 0,
-        "canvases": 0,
-        "videos": 1,
-        "roles": {},
-        "anchor_count": 8
-      }
-    },
-    {
-      "id": "86de68767ddb48b0",
-      "url": "https://alitwotimes.com/work/badya-life-imitates-art/",
-      "family": "external.project",
-      "inspection_level": "http_dom",
-      "observed_at": "2026-11-23T08:18:00.113808+00:00",
-      "source_sha256": "0780c7c4d4a13fa037458f6589510cc41ee645a5ccf77c15d38b4477042e045d",
-      "structure": {
-        "headings": {
-          "h1": 1
-        },
-        "forms": 0,
-        "input_types": {
-          "range": 1
-        },
-        "navigation_regions": 1,
-        "main_regions": 1,
-        "sections": 2,
-        "articles": 1,
-        "tables": 0,
-        "dialogs": 0,
-        "canvases": 0,
-        "videos": 1,
-        "roles": {},
-        "anchor_count": 8
-      }
-    },
-    {
-      "id": "9094e451ee9b4013",
-      "url": "https://alitwotimes.com/work/bud-light-millennial-beach/",
-      "family": "external.project",
-      "inspection_level": "http_dom",
-      "observed_at": "2026-11-23T08:18:00.224693+00:00",
-      "source_sha256": "dd14d26e868a1179a08c8aa5011e5725581d535231ba4b587d58c7b6b2aa6828",
-      "structure": {
-        "headings": {
-          "h1": 1
-        },
-        "forms": 0,
-        "input_types": {
-          "range": 1
-        },
-        "navigation_regions": 1,
-        "main_regions": 1,
-        "sections": 2,
-        "articles": 1,
-        "tables": 0,
-        "dialogs": 0,
-        "canvases": 0,
-        "videos": 1,
-        "roles": {},
-        "anchor_count": 8
-      }
     }
   ],
-  "visual_metrics": [
-    {
-      "source_id": "f28fe19f38633ce9",
-      "url": "https://alitwotimes.com/work/amazon-the-biggest-sale-of-the-year/",
-      "family": "external.project",
-      "viewport": {
-        "width": 390,
-        "height": 1000,
-        "device_scale_factor": 1
-      },
-      "observed_at": "2026-11-23T08:21:08.169Z",
-      "interaction_inspection": "not_run",
-      "source_screenshots_redistributed": false,
-      "http_status": 200,
-      "final_url": "https://alitwotimes.com/work/amazon-the-biggest-sale-of-the-year/",
-      "render_state": "visible_content",
-      "metrics": {
-        "document_width": 390,
-        "viewport_width": 390,
-        "body_background": "rgba(0, 0, 0, 0)",
-        "html_background": "rgba(0, 0, 0, 0)",
-        "body_font": "\"Monument Grotesk\"",
-        "heading_geometry": [
-          {
-            "x": 53,
-            "y": 1122,
-            "width": 140,
-            "height": 75,
-            "font_family": "\"Monument Grotesk\"",
-            "font_size": "27.0816px",
-            "font_weight": "500",
-            "line_height": "24.9171px",
-            "color": "rgb(252, 246, 244)"
-          }
-        ],
-        "navigation_regions": 1,
-        "visible_buttons": 1,
-        "visible_inputs": 1,
-        "canvas_count": 0,
-        "video_count": 1
-      },
-      "screenshot_sha256": "c3ee858becde7a6dca7c54c6b1b14ddd2d6555c4f4c458d5cd45530b63e191ce",
-      "status": "rendered_observed"
-    },
-    {
-      "source_id": "f28fe19f38633ce9",
-      "url": "https://alitwotimes.com/work/amazon-the-biggest-sale-of-the-year/",
-      "family": "external.project",
-      "viewport": {
-        "width": 1440,
-        "height": 1000,
-        "device_scale_factor": 1
-      },
-      "observed_at": "2026-11-23T08:21:11.806Z",
-      "interaction_inspection": "not_run",
-      "source_screenshots_redistributed": false,
-      "http_status": 200,
-      "final_url": "https://alitwotimes.com/work/amazon-the-biggest-sale-of-the-year/",
-      "render_state": "visible_content",
-      "metrics": {
-        "document_width": 1440,
-        "viewport_width": 1440,
-        "body_background": "rgba(0, 0, 0, 0)",
-        "html_background": "rgba(0, 0, 0, 0)",
-        "body_font": "\"Monument Grotesk\"",
-        "heading_geometry": [
-          {
-            "x": 197,
-            "y": 1240,
-            "width": 517,
-            "height": 43,
-            "font_family": "\"Monument Grotesk\"",
-            "font_size": "47.5056px",
-            "font_weight": "500",
-            "line_height": "42.9984px",
-            "color": "rgb(252, 246, 244)"
-          }
-        ],
-        "navigation_regions": 1,
-        "visible_buttons": 1,
-        "visible_inputs": 1,
-        "canvas_count": 0,
-        "video_count": 1
-      },
-      "screenshot_sha256": "1e1e4a62d7349b943f9fe84c28e75826d60403d67fb800352c40e104fa5048bd",
-      "status": "rendered_observed"
-    }
-  ],
+  "visual_metrics": [],
   "source_state_observations": [],
   "source_coverage": "observed_examples",
   "original_blueprint": true,

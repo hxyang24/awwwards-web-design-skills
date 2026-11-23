@@ -1,0 +1,277 @@
+{
+  "schema_version": "1.0",
+  "purpose": "Limited source evidence for a separately authored editorial-index skill",
+  "observations": [
+    {
+      "id": "apini-verified-topic-390",
+      "source_id": "61347083729f7876",
+      "url": "https://apinistudio.com/blogs/notizie",
+      "viewport": {
+        "width": 390,
+        "height": 1000,
+        "device_scale_factor": 1
+      },
+      "observed_at": "2026-11-23T12:14:22.167Z",
+      "status": "insufficient_visible_content",
+      "automatic_readiness_is_only_a_hint": true,
+      "visual_review": "Magazine hero, topic links and article imagery reviewed in private screenshots; non-semantic heading markup leaves the automated signal insufficient.",
+      "official_relationship": {
+        "url": "https://www.awwwards.com/sites/apini-studio",
+        "label": "honorable_mention",
+        "verification": "Live structured official fetch confirmed HM Jul 1 2026",
+        "not_claimed": "No separate award or historical-version match for this current inner page"
+      },
+      "actions": [
+        {
+          "name": "Rifiuta",
+          "status": "acted_and_observed",
+          "observable_state_changed": true,
+          "target_resolution": {
+            "method": "role_and_name",
+            "visible_candidates_before_href": 1,
+            "visible_candidates_resolved": 1
+          },
+          "before_links": 23,
+          "after_links": 22,
+          "before_url": "https://apinistudio.com/blogs/notizie",
+          "after_url": "https://apinistudio.com/blogs/notizie",
+          "after_readiness": {
+            "state": "insufficient_visible_content",
+            "requires_visual_review": true,
+            "title_heading_state_hint_only": true,
+            "visible_unoccluded_heading_count": 0,
+            "displayed_heading_count": 0,
+            "loading_overlay_count": 0,
+            "visible_canvases": [],
+            "not_claimed": "Readiness hints do not certify source interaction, graphics correctness or all page states"
+          },
+          "private_after_screenshot_sha256": "3c03e71c4d70724ccea8c058ec812e39d48830f09cc4d97ff4aff8d63b15da4e"
+        },
+        {
+          "name": "Bespoke",
+          "status": "acted_and_observed",
+          "observable_state_changed": true,
+          "target_resolution": {
+            "method": "role_and_name_and_expected_href",
+            "visible_candidates_before_href": 1,
+            "visible_candidates_resolved": 1
+          },
+          "before_links": 22,
+          "after_links": 14,
+          "before_url": "https://apinistudio.com/blogs/notizie",
+          "after_url": "https://apinistudio.com/blogs/notizie/tagged/bespoke",
+          "after_readiness": {
+            "state": "insufficient_visible_content",
+            "requires_visual_review": true,
+            "title_heading_state_hint_only": true,
+            "visible_unoccluded_heading_count": 0,
+            "displayed_heading_count": 0,
+            "loading_overlay_count": 0,
+            "visible_canvases": [],
+            "not_claimed": "Readiness hints do not certify source interaction, graphics correctness or all page states"
+          },
+          "private_after_screenshot_sha256": "195524d31ff45034917164db3693b8ea038fcce6646eaa1b43aa10bda5d0f05d"
+        }
+      ],
+      "private_before_screenshot_sha256": "7ba4e442a79d908d46525c720c60cad028257cb74850bc0b2a1a31e9b013aa8e",
+      "source_media_redistributed": false,
+      "normal_source_experience_fully_validated": false,
+      "limits": [
+        "Source article text, photographs, fonts and full HTML are not redistributed",
+        "Link-count growth is not an independent audit of exact article-card counts",
+        "All topics, article bodies, pagination terminal states and backend behavior remain unverified"
+      ]
+    },
+    {
+      "id": "emily-verified-load-390",
+      "source_id": "a6e0e3d19a1ef887",
+      "url": "https://www.emilynixon.com/blogs/b-66/",
+      "viewport": {
+        "width": 390,
+        "height": 1000,
+        "device_scale_factor": 1
+      },
+      "observed_at": "2026-11-23T12:14:34.570Z",
+      "status": "rendered_content_signals_observed",
+      "automatic_readiness_is_only_a_hint": true,
+      "visual_review": "Featured story, journal identity statement and article imagery reviewed in private screenshots.",
+      "official_relationship": {
+        "url": "https://www.awwwards.com/sites/emily-nixon",
+        "label": "honorable_mention",
+        "verification": "Timestamped cached official title HM; newer structured official fetch was HTTP403 and remains a gap",
+        "not_claimed": "No separate award or historical-version match for this current inner page"
+      },
+      "actions": [
+        {
+          "name": "Load 4 more articles",
+          "status": "acted_and_observed",
+          "observable_state_changed": true,
+          "target_resolution": {
+            "method": "role_and_name",
+            "visible_candidates_before_href": 1,
+            "visible_candidates_resolved": 1
+          },
+          "before_links": 58,
+          "after_links": 70,
+          "before_url": "https://www.emilynixon.com/blogs/b-66/",
+          "after_url": "https://www.emilynixon.com/blogs/b-66/",
+          "after_readiness": {
+            "state": "insufficient_visible_content",
+            "requires_visual_review": true,
+            "title_heading_state_hint_only": true,
+            "visible_unoccluded_heading_count": 0,
+            "displayed_heading_count": 0,
+            "loading_overlay_count": 0,
+            "visible_canvases": [],
+            "not_claimed": "Readiness hints do not certify source interaction, graphics correctness or all page states"
+          },
+          "private_after_screenshot_sha256": "3749a3ca0d80fa016f3c1c5da59a9815d7a718ca6bd7e5ac5e5f9af696c9de66"
+        }
+      ],
+      "private_before_screenshot_sha256": "264386901af421457b4188c11869645f0b131608172140f7c659457f724770de",
+      "source_media_redistributed": false,
+      "normal_source_experience_fully_validated": false,
+      "limits": [
+        "Source article text, photographs, fonts and full HTML are not redistributed",
+        "Link-count growth is not an independent audit of exact article-card counts",
+        "All topics, article bodies, pagination terminal states and backend behavior remain unverified"
+      ]
+    },
+    {
+      "id": "apini-verified-topic-1440",
+      "source_id": "61347083729f7876",
+      "url": "https://apinistudio.com/blogs/notizie",
+      "viewport": {
+        "width": 1440,
+        "height": 1000,
+        "device_scale_factor": 1
+      },
+      "observed_at": "2026-11-23T12:14:42.553Z",
+      "status": "insufficient_visible_content",
+      "automatic_readiness_is_only_a_hint": true,
+      "visual_review": "Magazine hero, topic links and article imagery reviewed in private screenshots; non-semantic heading markup leaves the automated signal insufficient.",
+      "official_relationship": {
+        "url": "https://www.awwwards.com/sites/apini-studio",
+        "label": "honorable_mention",
+        "verification": "Live structured official fetch confirmed HM Jul 1 2026",
+        "not_claimed": "No separate award or historical-version match for this current inner page"
+      },
+      "actions": [
+        {
+          "name": "Rifiuta",
+          "status": "acted_and_observed",
+          "observable_state_changed": true,
+          "target_resolution": {
+            "method": "role_and_name",
+            "visible_candidates_before_href": 1,
+            "visible_candidates_resolved": 1
+          },
+          "before_links": 49,
+          "after_links": 48,
+          "before_url": "https://apinistudio.com/blogs/notizie",
+          "after_url": "https://apinistudio.com/blogs/notizie",
+          "after_readiness": {
+            "state": "insufficient_visible_content",
+            "requires_visual_review": true,
+            "title_heading_state_hint_only": true,
+            "visible_unoccluded_heading_count": 0,
+            "displayed_heading_count": 0,
+            "loading_overlay_count": 0,
+            "visible_canvases": [],
+            "not_claimed": "Readiness hints do not certify source interaction, graphics correctness or all page states"
+          },
+          "private_after_screenshot_sha256": "e3f56b5a9cbabbe2bd5760a4ecd839c8eede2a1843affaa452bba9a3e4551811"
+        },
+        {
+          "name": "Bespoke",
+          "status": "acted_and_observed",
+          "observable_state_changed": true,
+          "target_resolution": {
+            "method": "role_and_name_and_expected_href",
+            "visible_candidates_before_href": 3,
+            "visible_candidates_resolved": 1
+          },
+          "before_links": 48,
+          "after_links": 40,
+          "before_url": "https://apinistudio.com/blogs/notizie",
+          "after_url": "https://apinistudio.com/blogs/notizie/tagged/bespoke",
+          "after_readiness": {
+            "state": "insufficient_visible_content",
+            "requires_visual_review": true,
+            "title_heading_state_hint_only": true,
+            "visible_unoccluded_heading_count": 0,
+            "displayed_heading_count": 0,
+            "loading_overlay_count": 0,
+            "visible_canvases": [],
+            "not_claimed": "Readiness hints do not certify source interaction, graphics correctness or all page states"
+          },
+          "private_after_screenshot_sha256": "e833f0bf562b602f4008f2f96e9086cfcfd7738f0c7ad82e8eb5664456cdc7fb"
+        }
+      ],
+      "private_before_screenshot_sha256": "62629347968fe597abe9434053a19195c924d19e069b762865d39cef280dcf8f",
+      "source_media_redistributed": false,
+      "normal_source_experience_fully_validated": false,
+      "limits": [
+        "Source article text, photographs, fonts and full HTML are not redistributed",
+        "Link-count growth is not an independent audit of exact article-card counts",
+        "All topics, article bodies, pagination terminal states and backend behavior remain unverified"
+      ]
+    },
+    {
+      "id": "emily-verified-load-1440",
+      "source_id": "a6e0e3d19a1ef887",
+      "url": "https://www.emilynixon.com/blogs/b-66/",
+      "viewport": {
+        "width": 1440,
+        "height": 1000,
+        "device_scale_factor": 1
+      },
+      "observed_at": "2026-11-23T12:14:52.383Z",
+      "status": "rendered_content_signals_observed",
+      "automatic_readiness_is_only_a_hint": true,
+      "visual_review": "Featured story, journal identity statement and article imagery reviewed in private screenshots.",
+      "official_relationship": {
+        "url": "https://www.awwwards.com/sites/emily-nixon",
+        "label": "honorable_mention",
+        "verification": "Timestamped cached official title HM; newer structured official fetch was HTTP403 and remains a gap",
+        "not_claimed": "No separate award or historical-version match for this current inner page"
+      },
+      "actions": [
+        {
+          "name": "Load 4 more articles",
+          "status": "acted_and_observed",
+          "observable_state_changed": true,
+          "target_resolution": {
+            "method": "role_and_name",
+            "visible_candidates_before_href": 1,
+            "visible_candidates_resolved": 1
+          },
+          "before_links": 56,
+          "after_links": 68,
+          "before_url": "https://www.emilynixon.com/blogs/b-66/",
+          "after_url": "https://www.emilynixon.com/blogs/b-66/",
+          "after_readiness": {
+            "state": "insufficient_visible_content",
+            "requires_visual_review": true,
+            "title_heading_state_hint_only": true,
+            "visible_unoccluded_heading_count": 0,
+            "displayed_heading_count": 0,
+            "loading_overlay_count": 0,
+            "visible_canvases": [],
+            "not_claimed": "Readiness hints do not certify source interaction, graphics correctness or all page states"
+          },
+          "private_after_screenshot_sha256": "f29b2fe7cd344898934d8704bb2b7d06e4f2ffd6f0b6937e7d7724b0d6b35795"
+        }
+      ],
+      "private_before_screenshot_sha256": "12d51d3076dedd60f6e5c0f29dc2eae6ecadeec15daa3a76f52031af9aca2239",
+      "source_media_redistributed": false,
+      "normal_source_experience_fully_validated": false,
+      "limits": [
+        "Source article text, photographs, fonts and full HTML are not redistributed",
+        "Link-count growth is not an independent audit of exact article-card counts",
+        "All topics, article bodies, pagination terminal states and backend behavior remain unverified"
+      ]
+    }
+  ],
+  "sampling_correction": "An earlier wide same-name Bespoke action selected global navigation. It is excluded as category evidence; new observed href verification resolved three same-name candidates to the single category link."
+}

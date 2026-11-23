@@ -145,3 +145,9 @@ PAGES.append(('external-pricing',['external.pricing'],'获奖来源外站定价�
  ['tariff_version','currency','workspace_plan','base_fee','rate_unit','requests_per_month','active_seconds','hardware','resource_counts','storage','rounding','known_usage','unknown_costs'],
  '输入变化后旧估算不可冒充当前值；错误定位至相应字段并可恢复；源数据失败保留静态示例、全部套餐与单位说明。',
  '不依赖动效解释价格变化；单位切换只更新可读数值与说明，移动比较切换和断点重排保持焦点。'))
+
+PAGES.append(('external-editorial-index',['external.editorial-index'],'获奖来源外站杂志与文章索引','editorial-index','期刊身份、精选故事、主题导航、全文搜索与排序、文章卡片、渐进加载、阅读入口、完整静态内容与恢复',
+ ['把精选故事与可筛选目录分开；文章身份、主题、日期和作者使用独立字段，日期未知时不补造。','明确搜索覆盖完整目录还是仅已加载条目；主题、查询、排序和已展开位置可在地址及返回路径中恢复。','加载更多只追加新记录，保留原有条目与焦点；失败后保留已读列表并允许对同一游标重试。','取消或忽略过期请求，防止旧筛选结果覆盖新筛选；无结果、加载失败和无效主题分别解释。','阅读入口有可访问的完整原文路径，返回索引恢复主题、已展开条目和触发点；无脚本或资源失败时保留完整原创示例。'],
+ ['catalog_version','featured_article','topics','articles[].id','title','summary','author','published_at_or_null','query','sort','cursor','confirmed_total','loaded_count','reading_origin'],
+ '目录请求失败不能冒充零文章；加载更多失败保留已展示条目与旧游标；无效阅读地址可返回有效目录。',
+ '不依赖动效传达更新；新增条目不整页重排，键盘可跳转到新条目；移动端主题换行且控件不遮挡阅读。'))

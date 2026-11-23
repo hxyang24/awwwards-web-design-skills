@@ -1,0 +1,55 @@
+{
+  "recorded_at": "2026-11-23T12:41:01.384Z",
+  "status": "passed",
+  "checks": [
+    {
+      "name": "The original catalog has unique stories, known topics and a real featured entry",
+      "status": "passed"
+    },
+    {
+      "name": "Duplicate identities, impossible dates and excessive data are rejected",
+      "status": "passed"
+    },
+    {
+      "name": "Search covers the full story text using normalized literal input",
+      "status": "passed"
+    },
+    {
+      "name": "Unknown publication dates remain last in both date orders",
+      "status": "passed"
+    },
+    {
+      "name": "Progressive pages cover the catalog once and terminate without a repeating cursor",
+      "status": "passed"
+    },
+    {
+      "name": "Cursors cannot be reused for another query or catalog version",
+      "status": "passed"
+    },
+    {
+      "name": "A failed next page can retry the same cursor without losing or duplicating records",
+      "status": "passed"
+    },
+    {
+      "name": "Cancellation and disposal release active requests while another adapter stays usable",
+      "status": "passed"
+    },
+    {
+      "name": "URL state preserves query, ordering, expanded position and article identity",
+      "status": "passed"
+    },
+    {
+      "name": "Pagination is not hard-coded to the twelve-story demonstration",
+      "status": "passed"
+    },
+    {
+      "name": "An unknown topic is an empty query, not a successful replacement for a request failure",
+      "status": "passed"
+    },
+    {
+      "name": "Validation copies the catalog rather than retaining mutable source arrays",
+      "status": "passed"
+    }
+  ],
+  "scope": "Original local catalog, paging, query and cancellation invariants; not a source-site API or full large-catalog performance acceptance"
+}

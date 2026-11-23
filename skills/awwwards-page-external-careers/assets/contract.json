@@ -38,6 +38,33 @@
   "evidence_note": "Only recorded observations are facts. DOM structure does not prove visual composition, hidden state, source code, backend behavior or licenses. The runnable blueprint is an original recipe, not a source-site clone.",
   "sources": [
     {
+      "id": "48b41dbc3c1677ff",
+      "url": "https://meyers.dk/jobs",
+      "family": "external.careers",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T12:34:52.346315+00:00",
+      "source_sha256": "ec6c8d0a9d27b39834374baab407962c605f5bf5ce711890959fa006a2d520dd",
+      "structure": {
+        "headings": {
+          "h1": 1,
+          "h2": 3,
+          "h3": 3
+        },
+        "forms": 0,
+        "input_types": {},
+        "navigation_regions": 4,
+        "main_regions": 1,
+        "sections": 7,
+        "articles": 2,
+        "tables": 0,
+        "dialogs": 4,
+        "canvases": 0,
+        "videos": 0,
+        "roles": {},
+        "anchor_count": 31
+      }
+    },
+    {
       "id": "fb2b60f4544778cd",
       "url": "https://ecavo.in/careers",
       "family": "external.careers",
@@ -96,6 +123,62 @@
       }
     },
     {
+      "id": "35caa2ff5de560fd",
+      "url": "https://lpas.com/careers/",
+      "family": "external.careers",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T12:22:37.525620+00:00",
+      "source_sha256": "f2ee80f07052a64401e351f913c82f8810ad802a6f806bacc76de42f37816dcb",
+      "structure": {
+        "headings": {
+          "h2": 6,
+          "h1": 1,
+          "h3": 2
+        },
+        "forms": 0,
+        "input_types": {},
+        "navigation_regions": 2,
+        "main_regions": 1,
+        "sections": 1,
+        "articles": 0,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 1,
+        "roles": {},
+        "anchor_count": 60
+      }
+    },
+    {
+      "id": "f4ae992949f16e7c",
+      "url": "https://lynxeye.com/careers",
+      "family": "external.careers",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T12:24:59.601509+00:00",
+      "source_sha256": "c16bc1176e65736bbc61015b114e72d8fc075195a8f2c46214906537edfed6fb",
+      "structure": {
+        "headings": {
+          "h3": 33,
+          "h6": 1,
+          "h1": 1,
+          "h4": 13,
+          "h2": 7
+        },
+        "forms": 0,
+        "input_types": {},
+        "navigation_regions": 3,
+        "main_regions": 1,
+        "sections": 0,
+        "articles": 0,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 1,
+        "videos": 0,
+        "roles": {},
+        "anchor_count": 46
+      }
+    },
+    {
       "id": "81593c83601def2b",
       "url": "https://www.5lab.co/career/",
       "family": "external.careers",
@@ -126,103 +209,6 @@
           "status": 1
         },
         "anchor_count": 17
-      }
-    },
-    {
-      "id": "3447b2a9b56f60a4",
-      "url": "https://doemedia.com/careers/",
-      "family": "external.careers",
-      "inspection_level": "http_dom",
-      "observed_at": "2026-11-23T10:45:35.421377+00:00",
-      "source_sha256": "735e3cab88b0d3da68a6add310703e36cb50b9ea2480229b1b1613b4cf2504bf",
-      "structure": {
-        "headings": {
-          "h6": 1,
-          "h1": 1,
-          "h2": 4,
-          "h3": 13
-        },
-        "forms": 1,
-        "input_types": {
-          "text": 1
-        },
-        "navigation_regions": 6,
-        "main_regions": 1,
-        "sections": 7,
-        "articles": 0,
-        "tables": 0,
-        "dialogs": 0,
-        "canvases": 1,
-        "videos": 0,
-        "roles": {
-          "link": 1,
-          "search": 1,
-          "group": 1,
-          "contentinfo": 1,
-          "list": 1,
-          "listitem": 4,
-          "button": 4
-        },
-        "anchor_count": 92
-      }
-    },
-    {
-      "id": "a5946dfd425fcc4a",
-      "url": "https://dogstudio.co/careers/",
-      "family": "external.careers",
-      "inspection_level": "http_dom",
-      "observed_at": "2026-11-23T10:47:17.280464+00:00",
-      "source_sha256": "c6d1018e6e8ad159e6caf1fec6c84a97cbae6c7dadc79b1e73fd7db4eb21d8c5",
-      "structure": {
-        "headings": {
-          "h1": 1,
-          "h2": 6,
-          "h3": 17
-        },
-        "forms": 0,
-        "input_types": {},
-        "navigation_regions": 0,
-        "main_regions": 1,
-        "sections": 8,
-        "articles": 0,
-        "tables": 0,
-        "dialogs": 0,
-        "canvases": 0,
-        "videos": 0,
-        "roles": {},
-        "anchor_count": 30
-      }
-    },
-    {
-      "id": "cac4840effaada25",
-      "url": "https://gobranded.com/careers",
-      "family": "external.careers",
-      "inspection_level": "http_dom",
-      "observed_at": "2026-11-23T09:37:04.076956+00:00",
-      "source_sha256": "21614a95d69e5ecb189cae111844b80d361e5f5063ff8ab7edc327e014f12e8e",
-      "structure": {
-        "headings": {
-          "h1": 1,
-          "h2": 1,
-          "h3": 3
-        },
-        "forms": 0,
-        "input_types": {},
-        "navigation_regions": 1,
-        "main_regions": 0,
-        "sections": 1,
-        "articles": 0,
-        "tables": 0,
-        "dialogs": 0,
-        "canvases": 0,
-        "videos": 0,
-        "roles": {
-          "banner": 1,
-          "presentation": 1,
-          "tablist": 1,
-          "tab": 3
-        },
-        "anchor_count": 25
       }
     }
   ],

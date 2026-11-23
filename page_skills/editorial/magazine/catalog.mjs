@@ -1,0 +1,26 @@
+// Original catalog and local paging adapter. No source-site article text or API.
+const slug=s=>typeof s==='string'&&/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(s)&&s.length<=40;
+const text=(s,max)=>typeof s==='string'&&s.trim()&&Array.from(s).length<=max;
+const fold=s=>s.normalize('NFKC').toLocaleLowerCase('en-US');
+export function validateCatalog(raw){
+ if(!raw||!text(raw.version,50)||!Array.isArray(raw.topics)||!raw.topics.length||raw.topics.length>12||!Array.isArray(raw.articles)||!raw.articles.length||raw.articles.length>1000)throw Error('Catalog unavailable');
+ const topics=new Map();for(const t of raw.topics){if(!slug(t.id)||!text(t.label,60)||topics.has(t.id))throw Error('Invalid catalog topic');topics.set(t.id,{id:t.id,label:t.label});}
+ const ids=new Set(),articles=raw.articles.map(a=>{if(!slug(a.id)||ids.has(a.id)||!text(a.title,120)||!topics.has(a.topic)||!text(a.author,80)||!text(a.summary,300)||!Array.isArray(a.body)||!a.body.length||a.body.length>20||a.body.some(p=>!text(p,2500)))throw Error('Invalid catalog article');ids.add(a.id);if(a.date!==null&&(!/^\d{4}-\d{2}-\d{2}$/.test(a.date)||Number.isNaN(Date.parse(a.date))||new Date(a.date).toISOString().slice(0,10)!==a.date))throw Error('Invalid article date');return{...a,body:[...a.body],art:['paper','stone','water','field'].includes(a.art)?a.art:'paper'};});
+ if(!ids.has(raw.featured))throw Error('Missing featured article');return{version:raw.version,topics:[...topics.values()],articles,featured:raw.featured};
+}
+export function normalizeQuery(query={}){const topic=typeof query.topic==='string'?query.topic:'all',q=typeof query.q==='string'?query.q:'',sort=query.sort||'newest';if(Array.from(q).length>80)throw Error('Use at most 80 characters in the story search.');if(!['newest','oldest'].includes(sort))throw Error('Choose a known story order.');return{topic,q,sort};}
+export const queryKey=query=>{const q=normalizeQuery(query);return JSON.stringify([q.topic,fold(q.q.trim()),q.sort]);};
+export function filterArticles(catalog,query){const q=normalizeQuery(query),needle=fold(q.q.trim()),topics=new Map(catalog.topics.map(t=>[t.id,t.label]));return catalog.articles.filter(a=>(q.topic==='all'||a.topic===q.topic)&&(!needle||fold([a.title,a.summary,a.author,topics.get(a.topic),...a.body].join(' ')).includes(needle))).sort((a,b)=>{if(a.date===null)return b.date===null?a.id.localeCompare(b.id):1;if(b.date===null)return-1;return(a.date.localeCompare(b.date)*(q.sort==='newest'?-1:1))||a.id.localeCompare(b.id);});}
+export function parseLocation(search){const p=new URLSearchParams(search),rawShown=p.get('shown'),n=rawShown===null?4:Number(rawShown),valid=Number.isInteger(n)&&n>=4&&n<=1000&&n%4===0,sort=p.get('sort')||'newest';const notices=[];if(!valid)notices.push('The saved view position is unavailable; showing the first page.');if(!['newest','oldest'].includes(sort))notices.push('The saved order is unavailable; showing newest stories.');return{topic:p.get('topic')||'all',q:p.get('q')||'',sort:['newest','oldest'].includes(sort)?sort:'newest',shown:valid?n:4,article:p.get('article'),notice:notices.join(' ')};}
+export function searchString(query,{shown=4,article=null}={}){const q=normalizeQuery(query),p=new URLSearchParams();if(q.topic!=='all')p.set('topic',q.topic);if(q.q)p.set('q',q.q);if(q.sort!=='newest')p.set('sort',q.sort);if(shown!==4)p.set('shown',String(shown));if(article)p.set('article',article);const s=p.toString();return s?'?'+s:'';}
+const cancelled=()=>new DOMException('Story request cancelled','AbortError');
+export function createRepository(catalog,{delay=120}={}){
+ if(!Number.isFinite(delay)||delay<0||delay>10000)throw Error('Invalid request delay');let dead=false,failures=0,requests=0,aborted=0;const active=new Set();
+ function page(query,{cursor=null,limit=4,signal}={}){
+  if(dead)return Promise.reject(Error('Catalog adapter disposed'));if(signal?.aborted)return Promise.reject(cancelled());let items,key,cursorKey;
+  try{key=queryKey(query);cursorKey=catalog.version+'|'+key;items=filterArticles(catalog,query);if(!Number.isInteger(limit)||limit<1||limit>1000||cursor!==null&&(typeof cursor!=='object'||!Number.isInteger(cursor.offset)||cursor.offset<0||cursor.offset>100000||cursor.key!==cursorKey))throw Error('Story page cursor or size does not match this query');}catch(e){return Promise.reject(e);}
+  requests++;const offset=cursor?.offset??0;
+  return new Promise((resolve,reject)=>{let done=false,timer;const cleanup=()=>{clearTimeout(timer);signal?.removeEventListener('abort',cancel);active.delete(cancel);};const cancel=()=>{if(done)return;done=true;aborted++;cleanup();reject(cancelled());};active.add(cancel);signal?.addEventListener('abort',cancel,{once:true});timer=setTimeout(()=>{if(done)return;done=true;cleanup();if(failures){failures--;reject(Error('Story page temporarily unavailable'));return;}const batch=items.slice(offset,offset+limit),next=offset+batch.length;resolve({items:batch,total:items.length,nextCursor:next<items.length?{key:cursorKey,offset:next}:null,queryKey:key});},delay);});
+ }
+ return{page,failNext:()=>{failures++;},setDelay:ms=>{if(!Number.isFinite(ms)||ms<0||ms>10000)throw Error('Invalid request delay');delay=ms;},stats:()=>({requests,aborted,active:active.size,disposed:dead}),dispose:()=>{if(dead)return;dead=true;for(const cancel of [...active])cancel();}};
+}

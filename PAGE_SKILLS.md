@@ -1,8 +1,8 @@
 # 页面专项 Skills · 整理进行中
 
-现有 24 套核心技能继续保留；新增 45 套可单独安装的页面技能，再新增 4 套具体交互机制技能，共 73 套。页面技能中 45 套有当前页面来源，0 套仍需补来源。**这不是全站已经完成的声明。**
+现有 24 套核心技能继续保留；新增 46 套可单独安装的页面技能，再新增 4 套具体交互机制技能，共 74 套。页面技能中 46 套有当前页面来源，0 套仍需补来源。**这不是全站已经完成的声明。**
 
-已记录 4632 个页面结果，其中 2333 个完整读取 HTTP DOM；已发现 358 个作品关联外站主机。尚有 20050 个已发现地址待观察，发现范围仍可能增长。
+已记录 6260 个页面结果，其中 3095 个完整读取 HTTP DOM；已发现 471 个作品关联外站主机。尚有 24274 个已发现地址待观察，发现范围仍可能增长。
 
 网址数用于审计来源；每套技能都有任务、页面结构、数据字段、交互状态、恢复路径、响应式、动效、版权边界、独立蓝本和验收要求。网页 DOM、浏览器视觉度量、原创蓝本测试、原站交互验证分别记录，不混为同一种完成。
 
@@ -35,8 +35,8 @@
 | `awwwards-page-contact-page` | 联系与询问表单 | http_dom / 1 来源 | [contact-page](skills/awwwards-page-contact-page/SKILL.md) | [HTML](skills/awwwards-page-contact-page/assets/index.html) |
 | `awwwards-page-conference-page` | 会议与活动详情 | http_dom / 4 来源 | [conference-page](skills/awwwards-page-conference-page/SKILL.md) | [HTML](skills/awwwards-page-conference-page/assets/index.html) |
 | `awwwards-page-legal-document` | 条款与政策阅读页 | http_dom / 3 来源 | [legal-document](skills/awwwards-page-legal-document/SKILL.md) | [HTML](skills/awwwards-page-legal-document/assets/index.html) |
-| `awwwards-page-external-home` | 获奖外站首页与品牌入口 | rendered_geometry / 6 来源 | [external-home](skills/awwwards-page-external-home/SKILL.md) | [HTML](skills/awwwards-page-external-home/assets/index.html) |
-| `awwwards-page-external-project` | 获奖外站项目与案例内页 | rendered_geometry / 6 来源 | [external-project](skills/awwwards-page-external-project/SKILL.md) | [HTML](skills/awwwards-page-external-project/assets/index.html) |
+| `awwwards-page-external-home` | 获奖外站首页与品牌入口 | http_dom / 6 来源 | [external-home](skills/awwwards-page-external-home/SKILL.md) | [HTML](skills/awwwards-page-external-home/assets/index.html) |
+| `awwwards-page-external-project` | 获奖外站项目与案例内页 | http_dom / 6 来源 | [external-project](skills/awwwards-page-external-project/SKILL.md) | [HTML](skills/awwwards-page-external-project/assets/index.html) |
 | `awwwards-page-external-about` | 获奖外站团队与关于内页 | http_dom / 6 来源 | [external-about](skills/awwwards-page-external-about/SKILL.md) | [HTML](skills/awwwards-page-external-about/assets/index.html) |
 | `awwwards-page-external-service` | 获奖外站服务与方案内页 | http_dom / 6 来源 | [external-service](skills/awwwards-page-external-service/SKILL.md) | [HTML](skills/awwwards-page-external-service/assets/index.html) |
 | `awwwards-page-external-product` | 获奖外站产品与商店内页 | http_dom / 6 来源 | [external-product](skills/awwwards-page-external-product/SKILL.md) | [HTML](skills/awwwards-page-external-product/assets/index.html) |
@@ -53,6 +53,7 @@
 | `awwwards-page-external-story-chapter` | 获奖来源外站交互叙事章节 | rendered_source_observations / 3 来源 | [external-story-chapter](skills/awwwards-page-external-story-chapter/SKILL.md) | [HTML](skills/awwwards-page-external-story-chapter/assets/index.html) |
 | `awwwards-page-external-prompt-detail` | 参照外站提示词与字体效果详情 | rendered_source_observations / 1 来源 | [external-prompt-detail](skills/awwwards-page-external-prompt-detail/SKILL.md) | [HTML](skills/awwwards-page-external-prompt-detail/assets/index.html) |
 | `awwwards-page-external-pricing` | 获奖来源外站定价、套餐比较与用量估算 | rendered_source_observations / 6 来源 | [external-pricing](skills/awwwards-page-external-pricing/SKILL.md) | [HTML](skills/awwwards-page-external-pricing/assets/index.html) |
+| `awwwards-page-external-editorial-index` | 获奖来源外站杂志与文章索引 | rendered_source_observations / 6 来源 | [external-editorial-index](skills/awwwards-page-external-editorial-index/SKILL.md) | [HTML](skills/awwwards-page-external-editorial-index/assets/index.html) |
 
 ## 独立交互机制 Skills
 

@@ -39,11 +39,11 @@ python scripts/scaffold.py --output YOUR_EMPTY_PROJECT_DIRECTORY
 
 ## 已读取的来源
 - https://abatable.com/about-us（http_dom；2026-11-23T08:46:00.565319+00:00）
+- https://abelfragrance.com/pages/about（http_dom；2026-11-23T12:28:55.242735+00:00）
 - https://acmecups.nz/pages/about（http_dom；2026-11-23T08:46:38.810202+00:00）
 - https://adsb.co.kr/pages/about（http_dom；2026-11-23T08:49:39.725769+00:00）
 - https://aim.obys.agency/about（http_dom；2026-11-23T08:04:09.948300+00:00）
 - https://alephstudios.ai/about/（http_dom；2026-11-23T08:48:28.451441+00:00）
-- https://alephstudios.ai/team/alex-de-las-heras/（http_dom；2026-11-23T08:48:32.816346+00:00）
 
 来源受各自版权和访问规则约束；只借鉴结构与机制，使用原创或已授权文案、图像、字体和模型。未知技术版本、隐藏状态和服务端行为不得根据截图补造。
 

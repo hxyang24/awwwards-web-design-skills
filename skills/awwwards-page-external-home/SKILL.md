@@ -9,7 +9,7 @@ description: Design and implement a external home page with task-specific struct
 让用户理解内容层级，并进入当前最重要的任务。 使用于这一页面族；不要把它扩张为完整网站或所有业务的通用流程。现有项目优先保留其框架、品牌、路由和真实接口。
 
 ## 先读取
-读取 [页面契约](references/page-contract.json)。其中 regions 是建议结构，workflow 是原创实现步骤，sources/visual_metrics 才是已记录观察。当前证据层级 `rendered_geometry`；页面族覆盖 `observed_examples`。同类页面共用此技能，但这不证明该页面族所有网站均已逐页检查。
+读取 [页面契约](references/page-contract.json)。其中 regions 是建议结构，workflow 是原创实现步骤，sources/visual_metrics 才是已记录观察。当前证据层级 `http_dom`；页面族覆盖 `observed_examples`。同类页面共用此技能，但这不证明该页面族所有网站均已逐页检查。
 
 ## 页面结构与实施
 建议区域：品牌身份、核心主张、主导航、内容分区、主要行动、联系。
@@ -42,8 +42,8 @@ python scripts/scaffold.py --output YOUR_EMPTY_PROJECT_DIRECTORY
 - http://duplos.org/（http_dom；2026-11-23T10:49:07.040578+00:00）
 - http://i-remember.fr/（http_dom；2026-11-23T11:42:44.864518+00:00）
 - http://ifly50.com/（http_dom；2026-11-23T11:42:45.123568+00:00）
+- http://jesperlandberg.com/（http_dom；2026-11-23T11:48:02.064985+00:00）
 - http://residente.com/（http_dom；2026-11-23T11:42:45.377399+00:00）
-- http://www.because-recollection.com/（http_dom；2026-11-23T08:04:59.667057+00:00）
 
 来源受各自版权和访问规则约束；只借鉴结构与机制，使用原创或已授权文案、图像、字体和模型。未知技术版本、隐藏状态和服务端行为不得根据截图补造。
 

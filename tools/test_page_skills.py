@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-import hashlib,importlib.util,json,sys,tempfile,unittest
+import hashlib,html,importlib.util,json,sys,tempfile,unittest
 from pathlib import Path
 sys.dont_write_bytecode=True
 R=Path(__file__).resolve().parents[1];sys.path.insert(0,str(R/'tools'))
@@ -9,6 +9,17 @@ from install_all_skills import install
 def load(path,name):
  spec=importlib.util.spec_from_file_location(name,path);m=importlib.util.module_from_spec(spec);spec.loader.exec_module(m);return m
 class PageSkills(unittest.TestCase):
+ def test_editorial_static_fallback_keeps_every_original_story_and_native_destination(self):
+  folder=R/'page_skills/editorial/magazine';data=json.loads((folder/'articles.json').read_text(encoding='utf-8'));markup=(folder/'index.html').read_text(encoding='utf-8')
+  for article in data['articles']:
+   self.assertIn('id="story-'+article['id']+'"',markup);self.assertIn('href="#story-'+article['id']+'"',markup)
+   for paragraph in article['body']:self.assertIn(html.escape(paragraph),markup)
+ def test_editorial_indexes_topics_and_article_candidates_remain_distinct(self):
+  for url in ['https://apinistudio.com/blogs/notizie','https://apinistudio.com/blogs/notizie/tagged/bespoke','https://www.emilynixon.com/blogs/b-66/','https://example.com/en/journal','https://example.com/blog/page/2','https://example.com/magazine/']:
+   self.assertEqual(family(url),'external.editorial-index')
+  for url in ['https://apinistudio.com/blogs/notizie/introducing-apini-bespoke','https://example.com/journal/a-story']:
+   self.assertEqual(family(url),'external.article')
+  self.assertEqual(family('https://example.com/bloggers'),'external.other')
  def test_pricing_page_candidates_keep_localized_inner_page_identity(self):
   for url in ['https://example.com/pricing','https://example.com/en/pricing','https://example.com/plans/team']:
    self.assertEqual(family(url),'external.pricing')

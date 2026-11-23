@@ -39,57 +39,67 @@
   "evidence_note": "Only recorded observations are facts. DOM structure does not prove visual composition, hidden state, source code, backend behavior or licenses. The runnable blueprint is an original recipe, not a source-site clone.",
   "sources": [
     {
-      "id": "b98f6a98034f83f9",
-      "url": "http://aonnoysengupta.com/blog",
+      "id": "213e479b58eca2c3",
+      "url": "http://aonnoysengupta.com/blog/reduce-webflow-bandwidth",
       "family": "external.article",
       "inspection_level": "http_dom",
-      "observed_at": "2026-11-23T09:10:15.179750+00:00",
-      "source_sha256": "4ed8d44248b7dc7879689f2ab2dab62d7b371b219a5133fe3b2f231efd46412c",
+      "observed_at": "2026-11-23T12:15:37.140229+00:00",
+      "source_sha256": "5780480554bfd201012f63f216b9131472e159782877719e411fac94a5e7774e",
       "structure": {
         "headings": {
           "h1": 1,
-          "h2": 2,
-          "h3": 2
+          "h2": 9,
+          "h3": 1
         },
         "forms": 0,
         "input_types": {
           "checkbox": 2
         },
-        "navigation_regions": 1,
+        "navigation_regions": 2,
         "main_regions": 1,
-        "sections": 0,
-        "articles": 0,
+        "sections": 1,
+        "articles": 1,
         "tables": 0,
-        "dialogs": 1,
+        "dialogs": 2,
         "canvases": 2,
         "videos": 0,
         "roles": {
-          "switch": 4
+          "switch": 4,
+          "group": 1
         },
-        "anchor_count": 29
+        "anchor_count": 52
       }
     },
     {
-      "id": "59e318193c8ecfc5",
-      "url": "http://www.blacknegative.com/news/",
+      "id": "32a46484ece9ad93",
+      "url": "http://aonnoysengupta.com/blog/should-you-leave-webflow",
       "family": "external.article",
       "inspection_level": "http_dom",
-      "observed_at": "2026-11-23T08:15:57.604064+00:00",
-      "source_sha256": "ad0dd877b1e16b96a727a6bfdb4c3fb8c850eb5c221401998c7f21203e92ca1a",
+      "observed_at": "2026-11-23T12:15:37.461077+00:00",
+      "source_sha256": "8ada943d51baf39e4119a6e81a26d581440b4073b671fb60bd68e4bfc414e215",
       "structure": {
-        "headings": {},
+        "headings": {
+          "h1": 1,
+          "h2": 10
+        },
         "forms": 0,
-        "input_types": {},
-        "navigation_regions": 0,
-        "main_regions": 0,
+        "input_types": {
+          "checkbox": 2
+        },
+        "navigation_regions": 2,
+        "main_regions": 1,
         "sections": 0,
-        "articles": 0,
+        "articles": 1,
         "tables": 0,
-        "dialogs": 0,
-        "canvases": 0,
+        "dialogs": 2,
+        "canvases": 2,
         "videos": 0,
-        "roles": {},
-        "anchor_count": 17
+        "roles": {
+          "switch": 4,
+          "img": 2,
+          "group": 1
+        },
+        "anchor_count": 58
       }
     },
     {
@@ -159,81 +169,76 @@
       }
     },
     {
-      "id": "aff38fe7b944673b",
-      "url": "https://acmecups.nz/blogs/journal",
+      "id": "ed7de850a5b9fe44",
+      "url": "https://abelfragrance.com/blogs/journal/almost-reckless-podcast-with-isaac-sinclair",
       "family": "external.article",
       "inspection_level": "http_dom",
-      "observed_at": "2026-11-23T08:47:48.626103+00:00",
-      "source_sha256": "c35bf63fe6076ccd71a2ab0cbd43852ac21bec7128f9e0320d6a3324695ecb20",
+      "observed_at": "2026-11-23T12:33:28.759217+00:00",
+      "source_sha256": "ddb3d25252f3765dce251987c5f7174b602fd082ec93e68e7c82f32a32008f4c",
       "structure": {
         "headings": {
-          "h1": 2,
-          "h4": 18,
-          "h2": 1,
-          "h6": 2,
-          "h5": 2,
-          "h3": 2
+          "h3": 8,
+          "h2": 4,
+          "h4": 2
         },
-        "forms": 8,
+        "forms": 7,
         "input_types": {
-          "hidden": 20,
-          "text": 5,
-          "email": 2,
-          "number": 1
+          "hidden": 25,
+          "text": 2,
+          "submit": 1,
+          "email": 1,
+          "date": 1,
+          "checkbox": 1
         },
         "navigation_regions": 0,
         "main_regions": 1,
-        "sections": 0,
+        "sections": 3,
         "articles": 0,
         "tables": 0,
         "dialogs": 0,
         "canvases": 0,
         "videos": 0,
         "roles": {
-          "main": 1,
-          "navigation": 1,
-          "list": 1,
-          "link": 1,
-          "status": 1
+          "main": 1
         },
-        "anchor_count": 166
+        "anchor_count": 88
       }
     },
     {
-      "id": "f30b93648bb32624",
-      "url": "https://acmecups.nz/blogs/journal/acme-gift-edit-for-every-type-of-coffee-person",
+      "id": "13497e2c01fe3082",
+      "url": "https://abelfragrance.com/blogs/journal/compostable-caps",
       "family": "external.article",
       "inspection_level": "http_dom",
-      "observed_at": "2026-11-23T08:47:48.715558+00:00",
-      "source_sha256": "d764f2954429f8d28e51fcea951f169a44d2c20c5c16a348873238108f16b99e",
+      "observed_at": "2026-11-23T12:24:22.370992+00:00",
+      "source_sha256": "672b7830475a26954eea62b8372bbbdcbc04e3eab7704e2b7e79fbad15480b45",
       "structure": {
         "headings": {
-          "h1": 2,
-          "h4": 2,
-          "h6": 2,
-          "h5": 2,
-          "h3": 2
+          "h3": 8,
+          "h2": 4,
+          "h1": 1,
+          "h4": 2
         },
-        "forms": 8,
+        "forms": 10,
         "input_types": {
-          "hidden": 20,
-          "text": 5,
-          "email": 2,
-          "number": 1
+          "hidden": 40,
+          "text": 2,
+          "submit": 1,
+          "email": 1,
+          "date": 1,
+          "checkbox": 1
         },
         "navigation_regions": 0,
         "main_regions": 1,
-        "sections": 0,
+        "sections": 4,
         "articles": 0,
         "tables": 0,
         "dialogs": 0,
         "canvases": 0,
         "videos": 0,
         "roles": {
-          "main": 1,
-          "status": 1
+          "main": 1
         },
-        "anchor_count": 166
+        "anchor_count": 93
       }
     }
   ],

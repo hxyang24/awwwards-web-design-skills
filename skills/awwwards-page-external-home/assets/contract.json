@@ -32,7 +32,7 @@
   ],
   "failure_recovery": "原站关停、改版或重定向时记录事实，不据旧资料声称完整复现。",
   "motion_contract": "滚动、光标和 3D 增强必须有键盘、触屏与静态回退。",
-  "evidence_level": "rendered_geometry",
+  "evidence_level": "http_dom",
   "source_relationship_note": "An outbound work-detail association does not certify that every current inner page won an award or matches a historical version.",
   "evidence_note": "Only recorded observations are facts. DOM structure does not prove visual composition, hidden state, source code, backend behavior or licenses. The runnable blueprint is an original recipe, not a source-site clone.",
   "sources": [
@@ -157,6 +157,37 @@
       }
     },
     {
+      "id": "d26506240c69dc92",
+      "url": "http://jesperlandberg.com/",
+      "family": "external.home",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T11:48:02.064985+00:00",
+      "source_sha256": "f596fc2dae66944a3284c0cb177c06eac7b3644e644793f4c79136ddc582763b",
+      "structure": {
+        "headings": {
+          "h1": 1,
+          "h2": 2
+        },
+        "forms": 1,
+        "input_types": {
+          "email": 1,
+          "text": 1
+        },
+        "navigation_regions": 1,
+        "main_regions": 1,
+        "sections": 0,
+        "articles": 8,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 0,
+        "roles": {
+          "status": 1
+        },
+        "anchor_count": 22
+      }
+    },
+    {
       "id": "4ac99ef0d3eaacb7",
       "url": "http://residente.com/",
       "family": "external.home",
@@ -178,95 +209,9 @@
         "roles": {},
         "anchor_count": 0
       }
-    },
-    {
-      "id": "1e56626c0a2eb400",
-      "url": "http://www.because-recollection.com/",
-      "family": "external.home",
-      "inspection_level": "http_dom",
-      "observed_at": "2026-11-23T08:04:59.667057+00:00",
-      "source_sha256": "3274618cd42fcb405ef9a266de61d66f06ba8e50a9cf204d7e7658b4234bc062",
-      "structure": {
-        "headings": {},
-        "forms": 0,
-        "input_types": {},
-        "navigation_regions": 0,
-        "main_regions": 0,
-        "sections": 0,
-        "articles": 0,
-        "tables": 0,
-        "dialogs": 0,
-        "canvases": 0,
-        "videos": 0,
-        "roles": {},
-        "anchor_count": 5
-      }
     }
   ],
-  "visual_metrics": [
-    {
-      "source_id": "1e56626c0a2eb400",
-      "url": "http://www.because-recollection.com/",
-      "family": "external.home",
-      "viewport": {
-        "width": 390,
-        "height": 1000,
-        "device_scale_factor": 1
-      },
-      "observed_at": "2026-11-23T08:20:27.283Z",
-      "interaction_inspection": "not_run",
-      "source_screenshots_redistributed": false,
-      "http_status": 200,
-      "final_url": "http://www.because-recollection.com/",
-      "render_state": "visible_content",
-      "metrics": {
-        "document_width": 390,
-        "viewport_width": 390,
-        "body_background": "rgb(0, 0, 0)",
-        "html_background": "rgb(0, 0, 0)",
-        "body_font": "Inconsolata",
-        "heading_geometry": [],
-        "navigation_regions": 0,
-        "visible_buttons": 3,
-        "visible_inputs": 0,
-        "canvas_count": 1,
-        "video_count": 0
-      },
-      "screenshot_sha256": "5bb93d972401ead138fe6ffcd096b47fab83559a9ab73117a923774d723e5b2f",
-      "status": "rendered_observed"
-    },
-    {
-      "source_id": "1e56626c0a2eb400",
-      "url": "http://www.because-recollection.com/",
-      "family": "external.home",
-      "viewport": {
-        "width": 1440,
-        "height": 1000,
-        "device_scale_factor": 1
-      },
-      "observed_at": "2026-11-23T08:20:31.871Z",
-      "interaction_inspection": "not_run",
-      "source_screenshots_redistributed": false,
-      "http_status": 200,
-      "final_url": "http://www.because-recollection.com/",
-      "render_state": "visible_content",
-      "metrics": {
-        "document_width": 1440,
-        "viewport_width": 1440,
-        "body_background": "rgb(0, 0, 0)",
-        "html_background": "rgb(0, 0, 0)",
-        "body_font": "Inconsolata",
-        "heading_geometry": [],
-        "navigation_regions": 0,
-        "visible_buttons": 2,
-        "visible_inputs": 0,
-        "canvas_count": 1,
-        "video_count": 0
-      },
-      "screenshot_sha256": "83fc49587f6ae9f456fc5d63dc36ea0993dac347965b1892a93d600250ba791e",
-      "status": "rendered_observed"
-    }
-  ],
+  "visual_metrics": [],
   "source_state_observations": [],
   "source_coverage": "observed_examples",
   "original_blueprint": true,

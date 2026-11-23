@@ -1,8 +1,8 @@
 {
   "schema_version": "3.0",
-  "generated_at": "2026-11-23T11:43:10.326460+00:00",
+  "generated_at": "2026-11-23T12:43:27.361070+00:00",
   "core_skills_preserved": 24,
-  "page_skills": 45,
+  "page_skills": 46,
   "status": "in_progress",
   "scope": "Awwwards main pages and awarded external-site inner pages, organized into reusable task-specific skills",
   "not_claimed": [
@@ -457,7 +457,7 @@
       ],
       "source_coverage": "observed_examples",
       "source_count": 6,
-      "evidence_level": "rendered_geometry",
+      "evidence_level": "http_dom",
       "path": "skills/awwwards-page-external-home",
       "demo": "skills/awwwards-page-external-home/assets/",
       "browser_validation": "See validation evidence; not inferred from generation"
@@ -473,7 +473,7 @@
       ],
       "source_coverage": "observed_examples",
       "source_count": 6,
-      "evidence_level": "rendered_geometry",
+      "evidence_level": "http_dom",
       "path": "skills/awwwards-page-external-project",
       "demo": "skills/awwwards-page-external-project/assets/",
       "browser_validation": "See validation evidence; not inferred from generation"
@@ -732,6 +732,22 @@
       "evidence_level": "rendered_source_observations",
       "path": "skills/awwwards-page-external-pricing",
       "demo": "skills/awwwards-page-external-pricing/assets/",
+      "browser_validation": "See validation evidence; not inferred from generation"
+    },
+    {
+      "id": "external-editorial-index",
+      "skill": "awwwards-page-external-editorial-index",
+      "title": "获奖来源外站杂志与文章索引",
+      "kind": "editorial-index",
+      "runtime_variant": "editorial-magazine",
+      "source_families": [
+        "external.editorial-index"
+      ],
+      "source_coverage": "observed_examples",
+      "source_count": 6,
+      "evidence_level": "rendered_source_observations",
+      "path": "skills/awwwards-page-external-editorial-index",
+      "demo": "skills/awwwards-page-external-editorial-index/assets/",
       "browser_validation": "See validation evidence; not inferred from generation"
     }
   ]

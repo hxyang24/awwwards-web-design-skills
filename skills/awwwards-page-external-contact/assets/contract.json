@@ -123,6 +123,43 @@
       }
     },
     {
+      "id": "4355302e96814491",
+      "url": "https://abelfragrance.com/pages/contact",
+      "family": "external.contact",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T12:28:55.572143+00:00",
+      "source_sha256": "34b889faf4b92f1581f60086acc03daaf4216eb4f502b316fbe3b936fa6e04ff",
+      "structure": {
+        "headings": {
+          "h3": 8,
+          "h2": 2,
+          "h1": 1,
+          "h4": 2
+        },
+        "forms": 5,
+        "input_types": {
+          "hidden": 15,
+          "text": 2,
+          "submit": 1,
+          "email": 1,
+          "date": 1,
+          "checkbox": 1
+        },
+        "navigation_regions": 1,
+        "main_regions": 1,
+        "sections": 1,
+        "articles": 0,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 0,
+        "roles": {
+          "main": 1
+        },
+        "anchor_count": 94
+      }
+    },
+    {
       "id": "12d9241862ed7086",
       "url": "https://acmecups.nz/pages/contact-us",
       "family": "external.contact",
@@ -184,39 +221,6 @@
         "videos": 0,
         "roles": {},
         "anchor_count": 51
-      }
-    },
-    {
-      "id": "c4ef39ea2d830b31",
-      "url": "https://adsb.co.kr/pages/contact",
-      "family": "external.contact",
-      "inspection_level": "http_dom",
-      "observed_at": "2026-11-23T08:49:39.817348+00:00",
-      "source_sha256": "91b23ef53656341e12f9717c7b82550acb3b200a8e2db6aa82bacb10bfb9c8d4",
-      "structure": {
-        "headings": {
-          "h1": 2,
-          "h4": 5
-        },
-        "forms": 5,
-        "input_types": {
-          "text": 3,
-          "hidden": 9,
-          "email": 2,
-          "tel": 1
-        },
-        "navigation_regions": 1,
-        "main_regions": 1,
-        "sections": 1,
-        "articles": 0,
-        "tables": 0,
-        "dialogs": 0,
-        "canvases": 0,
-        "videos": 0,
-        "roles": {
-          "dialog": 1
-        },
-        "anchor_count": 229
       }
     }
   ],

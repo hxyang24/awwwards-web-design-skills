@@ -38,11 +38,11 @@ python scripts/scaffold.py --output YOUR_EMPTY_PROJECT_DIRECTORY
 交付路由/组件边界、状态矩阵、数据契约、来源和素材台账、实际运行命令、截图及未测项。检查契约中的每条 acceptance，记录 passed/failed/blocked/not_run 并给出证据。不要从一个测试通过推断整站、全部设备或生产已验收。
 
 ## 已读取的来源
+- http://www.hellomonday.net/archive/greenpeace/intothearctic/en/（http_dom；2026-11-23T11:47:03.878122+00:00）
 - https://aoiofficial.com/us/archive（http_dom；2026-11-23T08:49:09.154442+00:00）
 - https://bellussi.com/en/gallery/（http_dom；2026-11-23T09:33:10.092077+00:00）
 - https://bellussi.com/gallery/（http_dom；2026-11-23T09:32:24.535601+00:00）
 - https://bleibtgleich.dev/archive（http_dom；2026-11-23T09:34:52.461869+00:00）
 - https://bluntumbrellas.co.nz/pages/archive（http_dom；2026-11-23T09:40:23.354909+00:00）
-- https://bluntumbrellas.com/pages/archive（http_dom；2026-11-23T10:41:05.361663+00:00）
 
 来源受各自版权和访问规则约束；只借鉴结构与机制，使用原创或已授权文案、图像、字体和模型。未知技术版本、隐藏状态和服务端行为不得根据截图补造。

@@ -3,7 +3,7 @@
 [![CI](https://github.com/hxyang24/awwwards-web-design-skills/actions/workflows/ci.yml/badge.svg)](https://github.com/hxyang24/awwwards-web-design-skills/actions/workflows/ci.yml)
 [![Original code: MIT](https://img.shields.io/badge/original_code-MIT-green.svg)](LICENSE)
 
-> **当前新增页面专项 Skills 整理仍在进行，尚未完成全站与所有获奖外站内页覆盖。** 新增 45 套可单独安装的页面技能及 4 套具体交互机制，保留原 24 套核心技能，共 73 套。详细来源边界和缺口见 [页面技能目录](PAGE_SKILLS.md)。
+> **当前新增页面专项 Skills 整理仍在进行，尚未完成全站与所有获奖外站内页覆盖。** 新增 46 套可单独安装的页面技能及 4 套具体交互机制，保留原 24 套核心技能，共 74 套。详细来源边界和缺口见 [页面技能目录](PAGE_SKILLS.md)。
 
 [下载当前页面技能工作版](https://github.com/hxyang24/awwwards-web-design-skills/archive/refs/heads/main.zip) · [独立页面技能](skills) · [来源覆盖](research/live_pages/coverage.json)
 
@@ -100,4 +100,6 @@ npm run test:export
 
 具体机制包括发现门户导航、雇主品牌与价值观画廊、图形失败回退、有界物理装饰，入口见 [机制说明](INTERACTION_SKILLS.md)。本轮另增加章节索引、交互叙事阅读与提示词详情三套独立页面蓝本，见 [新页面说明](CREATIVE_PAGE_SKILLS.md)。
 
-本轮 Windows 检查：17 项页面工具、5 项机制工具、8 项物理模型、10 项定价模型、12 项来源采样、39 组完整页面、37 组通用机制、35 组叙事/提示词及 16 组物理专项浏览器检查通过。章节蓝本含完整三章无脚本路径，物理与采样边界见 [专项说明](PHYSICS_AND_SOURCE_AUDIT.md)。另有 23 组定价页专项验证，见 [定价 Skill](PRICING_PAGE_SKILL.md)，覆盖单位换算、小数、未知费用、手机比较与失败恢复。在线 CI 会独立重跑。187 个 V1 文件与基础包封存清单仍匹配。来源观察、原创蓝本和真实业务验收分别记录。
+本轮 Windows 检查：19 项页面工具、5 项机制工具、8 项物理模型、10 项定价模型、12 项来源采样、40 组完整页面、37 组通用机制、35 组叙事/提示词及 16 组物理专项浏览器检查通过。章节蓝本含完整三章无脚本路径，物理与采样边界见 [专项说明](PHYSICS_AND_SOURCE_AUDIT.md)。另有 23 组定价页专项验证，见 [定价 Skill](PRICING_PAGE_SKILL.md)，覆盖单位换算、小数、未知费用、手机比较与失败恢复。在线 CI 会独立重跑。187 个 V1 文件与基础包封存清单仍匹配。来源观察、原创蓝本和真实业务验收分别记录。
+
+新增 [杂志与文章索引 Skill](EDITORIAL_PAGE_SKILL.md)，提供精选、主题、全文搜索、渐进加载、阅读返回和完整静态路径。来源目标采样新增 10 项歧义保护检查；原创目录模型 12 项及页面 30 组专项检查通过。

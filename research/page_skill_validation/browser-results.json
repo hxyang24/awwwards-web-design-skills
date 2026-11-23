@@ -1,14 +1,14 @@
 {
-  "date": "2026-11-23T11:45:57.520Z",
+  "date": "2026-11-23T12:45:03.437Z",
   "status": "passed",
-  "page_skills": 45,
+  "page_skills": 46,
   "checks": [
     {
-      "name": "All 45 standalone skill blueprints load and fit at 390",
+      "name": "All 46 standalone skill blueprints load and fit at 390",
       "status": "passed"
     },
     {
-      "name": "All 45 standalone skill blueprints load and fit at 1440",
+      "name": "All 46 standalone skill blueprints load and fit at 1440",
       "status": "passed"
     },
     {
@@ -105,6 +105,10 @@
     },
     {
       "name": "prompt accessibility and original screenshot",
+      "status": "passed"
+    },
+    {
+      "name": "editorial-index accessibility and original screenshot",
       "status": "passed"
     },
     {
@@ -280,6 +284,11 @@
       "kind": "prompt",
       "skill": "external-prompt-detail",
       "violations": []
+    },
+    {
+      "kind": "editorial-index",
+      "skill": "external-editorial-index",
+      "violations": []
     }
   ],
   "screenshots": [
@@ -306,7 +315,8 @@
     "research/page_skill_validation/screenshots/notfound-390.png",
     "research/page_skill_validation/screenshots/story-index-390.png",
     "research/page_skill_validation/screenshots/story-390.png",
-    "research/page_skill_validation/screenshots/prompt-390.png"
+    "research/page_skill_validation/screenshots/prompt-390.png",
+    "research/page_skill_validation/screenshots/editorial-index-390.png"
   ],
   "errors": [],
   "external_requests": [],
