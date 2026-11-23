@@ -1,0 +1,127 @@
+{
+  "status": "passed",
+  "tested_at": "2026-11-22T19:06:38.590501+00:00",
+  "method": "Headless Chromium set_content + local CSS and concatenated JS. This validates DOM/layout/behavior, not HTTP routing, module imports, network performance, or actual GPU scenes.",
+  "cases": [
+    {
+      "kind": "saas",
+      "viewport": 390,
+      "title": "明账演示｜看清业务变化，做出更好的决定",
+      "dom_h1": 1,
+      "dom_main": 1,
+      "no_horizontal_overflow": true,
+      "status": "passed",
+      "errors": []
+    },
+    {
+      "kind": "saas",
+      "viewport": 1440,
+      "title": "明账演示｜看清业务变化，做出更好的决定",
+      "dom_h1": 1,
+      "dom_main": 1,
+      "no_horizontal_overflow": true,
+      "status": "passed",
+      "errors": []
+    },
+    {
+      "kind": "commerce",
+      "viewport": 390,
+      "title": "优选演示｜把产品的价值，呈现得恰到好处",
+      "dom_h1": 1,
+      "dom_main": 1,
+      "no_horizontal_overflow": true,
+      "status": "passed",
+      "errors": []
+    },
+    {
+      "kind": "commerce",
+      "viewport": 1440,
+      "title": "优选演示｜把产品的价值，呈现得恰到好处",
+      "dom_h1": 1,
+      "dom_main": 1,
+      "no_horizontal_overflow": true,
+      "status": "passed",
+      "errors": []
+    },
+    {
+      "kind": "dashboard",
+      "viewport": 390,
+      "title": "数据看板｜关键信息，清楚呈现",
+      "dom_h1": 1,
+      "dom_main": 1,
+      "no_horizontal_overflow": true,
+      "status": "passed",
+      "errors": []
+    },
+    {
+      "kind": "dashboard",
+      "viewport": 1440,
+      "title": "数据看板｜关键信息，清楚呈现",
+      "dom_h1": 1,
+      "dom_main": 1,
+      "no_horizontal_overflow": true,
+      "status": "passed",
+      "errors": []
+    },
+    {
+      "kind": "portfolio",
+      "viewport": 390,
+      "title": "光影档案｜让每一个项目，都成为一个完整的故事",
+      "dom_h1": 1,
+      "dom_main": 1,
+      "no_horizontal_overflow": true,
+      "status": "passed",
+      "errors": []
+    },
+    {
+      "kind": "portfolio",
+      "viewport": 1440,
+      "title": "光影档案｜让每一个项目，都成为一个完整的故事",
+      "dom_h1": 1,
+      "dom_main": 1,
+      "no_horizontal_overflow": true,
+      "status": "passed",
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "viewport": 390,
+      "title": "设计手记｜一篇长文，也值得认真设计",
+      "dom_h1": 1,
+      "dom_main": 1,
+      "no_horizontal_overflow": true,
+      "status": "passed",
+      "errors": []
+    },
+    {
+      "kind": "editorial",
+      "viewport": 1440,
+      "title": "设计手记｜一篇长文，也值得认真设计",
+      "dom_h1": 1,
+      "dom_main": 1,
+      "no_horizontal_overflow": true,
+      "status": "passed",
+      "errors": []
+    },
+    {
+      "kind": "immersive",
+      "viewport": 390,
+      "title": "数字旅程｜一场有节奏的数字旅程",
+      "dom_h1": 1,
+      "dom_main": 1,
+      "no_horizontal_overflow": true,
+      "status": "passed",
+      "errors": []
+    },
+    {
+      "kind": "immersive",
+      "viewport": 1440,
+      "title": "数字旅程｜一场有节奏的数字旅程",
+      "dom_h1": 1,
+      "dom_main": 1,
+      "no_horizontal_overflow": true,
+      "status": "passed",
+      "errors": []
+    }
+  ]
+}

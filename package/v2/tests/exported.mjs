@@ -1,0 +1,16 @@
+import {chromium,expect} from '@playwright/test';import fs from 'node:fs';import path from 'node:path';import os from 'node:os';import {fileURLToPath} from 'node:url';import {spawn,execFile} from 'node:child_process';import {promisify} from 'node:util';
+const V=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..'),parent=path.resolve(process.env.TEST_EXPORT_ROOT||os.tmpdir());fs.mkdirSync(parent,{recursive:true});const temp=fs.mkdtempSync(path.join(parent,'awwwards-v2-export-'));const run=promisify(execFile),checks=[];let browser;
+try{
+ browser=await chromium.launch({executablePath:process.env.PLAYWRIGHT_EXECUTABLE||chromium.executablePath(),headless:true,args:['--use-gl=angle','--use-angle=swiftshader','--enable-unsafe-swiftshader']});
+ for(const [i,kind]of ['enterprise','studio'].entries()){
+  let server,context;try{
+   const dest=path.join(temp,kind);await run(process.env.PYTHON||'python',[path.join(V,'tools/scaffold.py'),'--kind',kind,'--output',dest]);expect(fs.existsSync(path.join(dest,'node_modules'))).toBe(false);
+   server=spawn(process.execPath,[path.join(dest,'v2/server.mjs')],{cwd:dest,env:{...process.env,PORT:String(4250+i)},windowsHide:true});await new Promise((resolve,reject)=>{const timeout=setTimeout(()=>reject(Error('Export server did not start')),5000);server.stdout.on('data',()=>{clearTimeout(timeout);resolve();});server.once('error',reject);server.once('exit',code=>{if(code)reject(Error('Export server failed: '+code));});});
+   context=await browser.newContext({viewport:{width:1440,height:1000},reducedMotion:'reduce'});const page=await context.newPage(),errors=[];page.on('pageerror',e=>errors.push(e.message));page.on('response',r=>{if(r.status()>=400)errors.push(r.status()+' '+r.url());});await context.route('**/*',route=>new URL(route.request().url()).hostname==='127.0.0.1'?route.continue():route.abort());
+   await page.goto('http://127.0.0.1:'+(4250+i)+'/v2/demos/'+kind+'/',{waitUntil:'networkidle'});await expect(page.locator('h1')).toHaveCount(1);
+   if(kind==='enterprise'){await page.getByRole('link',{name:'Customers',exact:true}).click();await expect(page.locator('tbody tr')).toHaveCount(6);}
+   if(kind==='studio'){await page.getByRole('link',{name:'3D scene'}).click();await expect(page.locator('#scene')).toBeVisible();expect(await page.evaluate(()=>Boolean(window.__scene))).toBe(true);}
+   expect(errors).toEqual([]);await page.screenshot({path:path.join(V,'evidence','exported-'+kind+'.png'),animations:'disabled'});checks.push({kind,status:'passed',scope:'Exported project without node_modules, local HTTP and browser module loading'+(kind==='studio'?', actual software WebGL scene':'')});
+  }catch(err){checks.push({kind,status:'failed',error:err.message});}finally{await context?.close();if(server){server.kill();await new Promise(r=>server.once('exit',r));}}
+ }
+}finally{await browser?.close();if(!path.resolve(temp).startsWith(parent+path.sep))throw Error('Unexpected temporary export path');fs.rmSync(temp,{recursive:true,force:true});const report={date:new Date().toISOString(),status:checks.length===2&&checks.every(c=>c.status==='passed')?'passed':'failed',checks};fs.writeFileSync(path.join(V,'evidence/export-results.json'),JSON.stringify(report,null,2));console.log(JSON.stringify(report));process.exitCode=report.status==='passed'?0:1;}

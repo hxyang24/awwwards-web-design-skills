@@ -1,0 +1,88 @@
+{
+  "schema_version": "2.0",
+  "checks": [
+    {
+      "id": "browser-results",
+      "status": "passed",
+      "method": "Recorded executable validation",
+      "environment": {
+        "platform": "win32",
+        "node": "v24.14.0",
+        "browser": "159.0.8154.6",
+        "device_scale_factor": 1,
+        "locale": "en-US",
+        "timezone": "UTC",
+        "webgl": "Chromium ANGLE SwiftShader software renderer; not physical GPU acceptance"
+      },
+      "evidence": [
+        "v2/evidence/browser-results.json"
+      ],
+      "limitations": [
+        "Automated axe is not a full WCAG audit",
+        "Viewport emulation is not a physical phone",
+        "No production, real payment, brokerage or model-provider validation",
+        "No measured field Core Web Vitals or cross-browser acceptance"
+      ]
+    },
+    {
+      "id": "cli-results",
+      "status": "passed",
+      "method": "Recorded executable validation",
+      "environment": {
+        "platform": "win32",
+        "node": "v24.14.0",
+        "browser": "159.0.8154.6",
+        "device_scale_factor": 1,
+        "locale": "en-US",
+        "timezone": "UTC",
+        "webgl": "Chromium ANGLE SwiftShader software renderer; not physical GPU acceptance"
+      },
+      "evidence": [
+        "v2/evidence/cli-results.json"
+      ],
+      "limitations": [
+        "CLI group counts are not individual assertion counts",
+        "Structure validation does not verify semantic design decisions or production integrations"
+      ]
+    },
+    {
+      "id": "export-results",
+      "status": "passed",
+      "method": "Recorded executable validation",
+      "environment": {
+        "platform": "win32",
+        "node": "v24.14.0",
+        "browser": "159.0.8154.6",
+        "device_scale_factor": 1,
+        "locale": "en-US",
+        "timezone": "UTC",
+        "webgl": "Chromium ANGLE SwiftShader software renderer; not physical GPU acceptance"
+      },
+      "evidence": [
+        "v2/evidence/export-results.json"
+      ],
+      "limitations": []
+    },
+    {
+      "id": "v1-rerun-results",
+      "status": "passed",
+      "method": "Recorded executable validation",
+      "environment": {
+        "platform": "win32",
+        "node": "v24.14.0",
+        "browser": "159.0.8154.6",
+        "device_scale_factor": 1,
+        "locale": "en-US",
+        "timezone": "UTC",
+        "webgl": "Chromium ANGLE SwiftShader software renderer; not physical GPU acceptance"
+      },
+      "evidence": [
+        "v2/evidence/v1-rerun-results.json"
+      ],
+      "limitations": []
+    }
+  ],
+  "production_integration": "not_run",
+  "physical_device_acceptance": "not_run",
+  "awwwards_original_site_reproduction": "not_run"
+}

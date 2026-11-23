@@ -1,0 +1,18 @@
+{
+  "status": "passed",
+  "width": 1440,
+  "height": 1000,
+  "changed": 0,
+  "eligible": 1440000,
+  "ratio": 0,
+  "mean_absolute_rgb_error": 0,
+  "max_ratio": 0.005,
+  "pixel_threshold": 0.1,
+  "masks": [],
+  "regions": [],
+  "reference": "evidence/reference.png",
+  "candidate": "evidence/reference-repeat.png",
+  "reference_sha256": "9a6bcd9de2e01ffb397a4d16ecf99893b9cdaee2843a46376897500220432433",
+  "candidate_sha256": "9a6bcd9de2e01ffb397a4d16ecf99893b9cdaee2843a46376897500220432433",
+  "environment": "PNG pixel comparison; not a semantic or business acceptance result"
+}

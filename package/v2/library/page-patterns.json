@@ -1,0 +1,4357 @@
+{
+  "schema_version": "2.0",
+  "scope": "主流模式参考库，可扩展；不声称覆盖所有网站和隐藏状态",
+  "patterns": [
+    {
+      "id": "marketing.home",
+      "domain": "marketing",
+      "title": "企业首页",
+      "goal": "建立品牌定位并进入核心服务",
+      "regions": [
+        "Hero",
+        "可信事实",
+        "服务入口",
+        "案例",
+        "行动入口"
+      ],
+      "interactions": [
+        "导航",
+        "咨询入口",
+        "案例列表"
+      ],
+      "constraints": [
+        "不得虚构客户或转化数字"
+      ],
+      "inputs": [
+        "已授权业务数据或明确标识的样例",
+        "现有品牌与技术栈",
+        "资源许可与目标设备"
+      ],
+      "states": {
+        "default": "展示结构和下一步",
+        "loading": "显示等待范围并保留用户输入",
+        "empty": "说明无数据原因与恢复入口",
+        "error": "说明失败并允许安全重试",
+        "success": "显示可核实结果；演示标为本地预览",
+        "disabled": "解释不可操作原因"
+      },
+      "mobile": {
+        "narrow": "单列重排；必要表格在独立区域横滚；主操作可触达",
+        "wide": "保持信息密度与分组，不无限拉伸正文",
+        "keyboard": "软键盘不遮挡当前输入与提交；需真机核验"
+      },
+      "accessibility": [
+        "语义标题、字段标签与可见焦点",
+        "状态不只依赖颜色；错误关联字段",
+        "支持键盘；对话框焦点管理与返回"
+      ],
+      "acceptance": [
+        "建立品牌定位并进入核心服务主路径可完成",
+        "不得虚构客户或转化数字",
+        "320/390/768/1440 宽度检查",
+        "错误、空态及权限边界检查"
+      ],
+      "skill": "awwwards-page-library",
+      "coverage": "specification",
+      "demo": null,
+      "production": "not_connected"
+    },
+    {
+      "id": "marketing.about",
+      "domain": "marketing",
+      "title": "关于我们",
+      "goal": "理解团队与公司背景",
+      "regions": [
+        "使命",
+        "团队",
+        "时间线",
+        "联系信息"
+      ],
+      "interactions": [
+        "团队详情",
+        "联系入口"
+      ],
+      "constraints": [
+        "人物与资质需要真实来源"
+      ],
+      "inputs": [
+        "已授权业务数据或明确标识的样例",
+        "现有品牌与技术栈",
+        "资源许可与目标设备"
+      ],
+      "states": {
+        "default": "展示结构和下一步",
+        "loading": "显示等待范围并保留用户输入",
+        "empty": "说明无数据原因与恢复入口",
+        "error": "说明失败并允许安全重试",
+        "success": "显示可核实结果；演示标为本地预览",
+        "disabled": "解释不可操作原因"
+      },
+      "mobile": {
+        "narrow": "单列重排；必要表格在独立区域横滚；主操作可触达",
+        "wide": "保持信息密度与分组，不无限拉伸正文",
+        "keyboard": "软键盘不遮挡当前输入与提交；需真机核验"
+      },
+      "accessibility": [
+        "语义标题、字段标签与可见焦点",
+        "状态不只依赖颜色；错误关联字段",
+        "支持键盘；对话框焦点管理与返回"
+      ],
+      "acceptance": [
+        "理解团队与公司背景主路径可完成",
+        "人物与资质需要真实来源",
+        "320/390/768/1440 宽度检查",
+        "错误、空态及权限边界检查"
+      ],
+      "skill": "awwwards-page-library",
+      "coverage": "specification",
+      "demo": null,
+      "production": "not_connected"
+    },
+    {
+      "id": "marketing.solutions",
+      "domain": "marketing",
+      "title": "解决方案",
+      "goal": "按问题选择方案",
+      "regions": [
+        "用户问题",
+        "解决步骤",
+        "适用边界",
+        "证据"
+      ],
+      "interactions": [
+        "行业切换",
+        "方案详情"
+      ],
+      "constraints": [
+        "区分已上线能力与规划"
+      ],
+      "inputs": [
+        "已授权业务数据或明确标识的样例",
+        "现有品牌与技术栈",
+        "资源许可与目标设备"
+      ],
+      "states": {
+        "default": "展示结构和下一步",
+        "loading": "显示等待范围并保留用户输入",
+        "empty": "说明无数据原因与恢复入口",
+        "error": "说明失败并允许安全重试",
+        "success": "显示可核实结果；演示标为本地预览",
+        "disabled": "解释不可操作原因"
+      },
+      "mobile": {
+        "narrow": "单列重排；必要表格在独立区域横滚；主操作可触达",
+        "wide": "保持信息密度与分组，不无限拉伸正文",
+        "keyboard": "软键盘不遮挡当前输入与提交；需真机核验"
+      },
+      "accessibility": [
+        "语义标题、字段标签与可见焦点",
+        "状态不只依赖颜色；错误关联字段",
+        "支持键盘；对话框焦点管理与返回"
+      ],
+      "acceptance": [
+        "按问题选择方案主路径可完成",
+        "区分已上线能力与规划",
+        "320/390/768/1440 宽度检查",
+        "错误、空态及权限边界检查"
+      ],
+      "skill": "awwwards-page-library",
+      "coverage": "specification",
+      "demo": null,
+      "production": "not_connected"
+    },
+    {
+      "id": "marketing.pricing",
+      "domain": "marketing",
+      "title": "定价页",
+      "goal": "比较价格并理解计费规则",
+      "regions": [
+        "套餐",
+        "周期",
+        "功能对照",
+        "限制",
+        "FAQ"
+      ],
+      "interactions": [
+        "周期切换",
+        "套餐选择"
+      ],
+      "constraints": [
+        "总价、税费、自动续费应透明"
+      ],
+      "inputs": [
+        "已授权业务数据或明确标识的样例",
+        "现有品牌与技术栈",
+        "资源许可与目标设备"
+      ],
+      "states": {
+        "default": "展示结构和下一步",
+        "loading": "显示等待范围并保留用户输入",
+        "empty": "说明无数据原因与恢复入口",
+        "error": "说明失败并允许安全重试",
+        "success": "显示可核实结果；演示标为本地预览",
+        "disabled": "解释不可操作原因"
+      },
+      "mobile": {
+        "narrow": "单列重排；必要表格在独立区域横滚；主操作可触达",
+        "wide": "保持信息密度与分组，不无限拉伸正文",
+        "keyboard": "软键盘不遮挡当前输入与提交；需真机核验"
+      },
+      "accessibility": [
+        "语义标题、字段标签与可见焦点",
+        "状态不只依赖颜色；错误关联字段",
+        "支持键盘；对话框焦点管理与返回"
+      ],
+      "acceptance": [
+        "比较价格并理解计费规则主路径可完成",
+        "总价、税费、自动续费应透明",
+        "320/390/768/1440 宽度检查",
+        "错误、空态及权限边界检查"
+      ],
+      "skill": "awwwards-page-library",
+      "coverage": "specification",
+      "demo": null,
+      "production": "not_connected"
+    },
+    {
+      "id": "marketing.contact",
+      "domain": "marketing",
+      "title": "联系表单",
+      "goal": "提交可追踪的联系请求",
+      "regions": [
+        "渠道",
+        "表单",
+        "同意选项",
+        "提交状态"
+      ],
+      "interactions": [
+        "字段校验",
+        "提交",
+        "重试"
+      ],
+      "constraints": [
+        "无服务端只能标为本地预览"
+      ],
+      "inputs": [
+        "已授权业务数据或明确标识的样例",
+        "现有品牌与技术栈",
+        "资源许可与目标设备"
+      ],
+      "states": {
+        "default": "展示结构和下一步",
+        "loading": "显示等待范围并保留用户输入",
+        "empty": "说明无数据原因与恢复入口",
+        "error": "说明失败并允许安全重试",
+        "success": "显示可核实结果；演示标为本地预览",
+        "disabled": "解释不可操作原因"
+      },
+      "mobile": {
+        "narrow": "单列重排；必要表格在独立区域横滚；主操作可触达",
+        "wide": "保持信息密度与分组，不无限拉伸正文",
+        "keyboard": "软键盘不遮挡当前输入与提交；需真机核验"
+      },
+      "accessibility": [
+        "语义标题、字段标签与可见焦点",
+        "状态不只依赖颜色；错误关联字段",
+        "支持键盘；对话框焦点管理与返回"
+      ],
+      "acceptance": [
+        "提交可追踪的联系请求主路径可完成",
+        "无服务端只能标为本地预览",
+        "320/390/768/1440 宽度检查",
+        "错误、空态及权限边界检查"
+      ],
+      "skill": "awwwards-page-library",
+      "coverage": "specification",
+      "demo": null,
+      "production": "not_connected"
+    },
+    {
+      "id": "marketing.case-study",
+      "domain": "marketing",
+      "title": "案例详情",
+      "goal": "了解客户问题和成果证据",
+      "regions": [
+        "背景",
+        "过程",
+        "结果",
+        "署名",
+        "来源"
+      ],
+      "interactions": [
+        "章节导航",
+        "相关案例"
+      ],
+      "constraints": [
+        "收益数据必须有可引用证据"
+      ],
+      "inputs": [
+        "已授权业务数据或明确标识的样例",
+        "现有品牌与技术栈",
+        "资源许可与目标设备"
+      ],
+      "states": {
+        "default": "展示结构和下一步",
+        "loading": "显示等待范围并保留用户输入",
+        "empty": "说明无数据原因与恢复入口",
+        "error": "说明失败并允许安全重试",
+        "success": "显示可核实结果；演示标为本地预览",
+        "disabled": "解释不可操作原因"
+      },
+      "mobile": {
+        "narrow": "单列重排；必要表格在独立区域横滚；主操作可触达",
+        "wide": "保持信息密度与分组，不无限拉伸正文",
+        "keyboard": "软键盘不遮挡当前输入与提交；需真机核验"
+      },
+      "accessibility": [
+        "语义标题、字段标签与可见焦点",
+        "状态不只依赖颜色；错误关联字段",
+        "支持键盘；对话框焦点管理与返回"
+      ],
+      "acceptance": [
+        "了解客户问题和成果证据主路径可完成",
+        "收益数据必须有可引用证据",
+        "320/390/768/1440 宽度检查",
+        "错误、空态及权限边界检查"
+      ],
+      "skill": "awwwards-page-library",
+      "coverage": "specification",
+      "demo": null,
+      "production": "not_connected"
+    },
+    {
+      "id": "marketing.careers",
+      "domain": "marketing",
+      "title": "招聘列表",
+      "goal": "找到适合的职位",
+      "regions": [
+        "职位列表",
+        "团队",
+        "地区",
+        "申请方式"
+      ],
+      "interactions": [
+        "岗位筛选",
+        "职位详情"
+      ],
+      "constraints": [
+        "不虚构开放岗位"
+      ],
+      "inputs": [
+        "已授权业务数据或明确标识的样例",
+        "现有品牌与技术栈",
+        "资源许可与目标设备"
+      ],
+      "states": {
+        "default": "展示结构和下一步",
+        "loading": "显示等待范围并保留用户输入",
+        "empty": "说明无数据原因与恢复入口",
+        "error": "说明失败并允许安全重试",
+        "success": "显示可核实结果；演示标为本地预览",
+        "disabled": "解释不可操作原因"
+      },
+      "mobile": {
+        "narrow": "单列重排；必要表格在独立区域横滚；主操作可触达",
+        "wide": "保持信息密度与分组，不无限拉伸正文",
+        "keyboard": "软键盘不遮挡当前输入与提交；需真机核验"
+      },
+      "accessibility": [
+        "语义标题、字段标签与可见焦点",
+        "状态不只依赖颜色；错误关联字段",
+        "支持键盘；对话框焦点管理与返回"
+      ],
+      "acceptance": [
+        "找到适合的职位主路径可完成",
+        "不虚构开放岗位",
+        "320/390/768/1440 宽度检查",
+        "错误、空态及权限边界检查"
+      ],
+      "skill": "awwwards-page-library",
+      "coverage": "specification",
+      "demo": null,
+      "production": "not_connected"
+    },
+    {
+      "id": "marketing.campaign",
+      "domain": "marketing",
+      "title": "活动落地页",
+      "goal": "理解活动并完成报名",
+      "regions": [
+        "活动说明",
+        "时间地点",
+        "名额",
+        "报名"
+      ],
+      "interactions": [
+        "报名",
+        "日历入口",
+        "状态反馈"
+      ],
+      "constraints": [
+        "明确时区与报名是否真实生效"
+      ],
+      "inputs": [
+        "已授权业务数据或明确标识的样例",
+        "现有品牌与技术栈",
+        "资源许可与目标设备"
+      ],
+      "states": {
+        "default": "展示结构和下一步",
+        "loading": "显示等待范围并保留用户输入",
+        "empty": "说明无数据原因与恢复入口",
+        "error": "说明失败并允许安全重试",
+        "success": "显示可核实结果；演示标为本地预览",
+        "disabled": "解释不可操作原因"
+      },
+      "mobile": {
+        "narrow": "单列重排；必要表格在独立区域横滚；主操作可触达",
+        "wide": "保持信息密度与分组，不无限拉伸正文",
+        "keyboard": "软键盘不遮挡当前输入与提交；需真机核验"
+      },
+      "accessibility": [
+        "语义标题、字段标签与可见焦点",
+        "状态不只依赖颜色；错误关联字段",
+        "支持键盘；对话框焦点管理与返回"
+      ],
+      "acceptance": [
+        "理解活动并完成报名主路径可完成",
+        "明确时区与报名是否真实生效",
+        "320/390/768/1440 宽度检查",
+        "错误、空态及权限边界检查"
+      ],
+      "skill": "awwwards-page-library",
+      "coverage": "specification",
+      "demo": null,
+      "production": "not_connected"
+    },
+    {
+      "id": "marketing.comparison",
+      "domain": "marketing",
+      "title": "产品对比",
+      "goal": "比较适用场景和功能",
+      "regions": [
+        "对比维度",
+        "来源",
+        "更新时间",
+        "限制"
+      ],
+      "interactions": [
+        "产品切换",
+        "筛选维度"
+      ],
+      "constraints": [
+        "竞品主张必须有日期与来源"
+      ],
+      "inputs": [
+        "已授权业务数据或明确标识的样例",
+        "现有品牌与技术栈",
+        "资源许可与目标设备"
+      ],
+      "states": {
+        "default": "展示结构和下一步",
+        "loading": "显示等待范围并保留用户输入",
+        "empty": "说明无数据原因与恢复入口",
+        "error": "说明失败并允许安全重试",
+        "success": "显示可核实结果；演示标为本地预览",
+        "disabled": "解释不可操作原因"
+      },
+      "mobile": {
+        "narrow": "单列重排；必要表格在独立区域横滚；主操作可触达",
+        "wide": "保持信息密度与分组，不无限拉伸正文",
+        "keyboard": "软键盘不遮挡当前输入与提交；需真机核验"
+      },
+      "accessibility": [
+        "语义标题、字段标签与可见焦点",
+        "状态不只依赖颜色；错误关联字段",
+        "支持键盘；对话框焦点管理与返回"
+      ],
+      "acceptance": [
+        "比较适用场景和功能主路径可完成",
+        "竞品主张必须有日期与来源",
+        "320/390/768/1440 宽度检查",
+        "错误、空态及权限边界检查"
+      ],
+      "skill": "awwwards-page-library",
+      "coverage": "specification",
+      "demo": null,
+      "production": "not_connected"
+    },
+    {
+      "id": "marketing.portfolio",
+      "domain": "marketing",
+      "title": "作品集",
+      "goal": "快速理解创作能力",
+      "regions": [
+        "精选项目",
+        "角色",
+        "过程",
+        "联系"
+      ],
+      "interactions": [
+        "项目筛选",
+        "项目详情"
+      ],
+      "constraints": [
+        "标明个人贡献与素材许可"
+      ],
+      "inputs": [
+        "已授权业务数据或明确标识的样例",
+        "现有品牌与技术栈",
+        "资源许可与目标设备"
+      ],
+      "states": {
+        "default": "展示结构和下一步",
+        "loading": "显示等待范围并保留用户输入",
+        "empty": "说明无数据原因与恢复入口",
+        "error": "说明失败并允许安全重试",
+        "success": "显示可核实结果；演示标为本地预览",
+        "disabled": "解释不可操作原因"
+      },
+      "mobile": {
+        "narrow": "单列重排；必要表格在独立区域横滚；主操作可触达",
+        "wide": "保持信息密度与分组，不无限拉伸正文",
+        "keyboard": "软键盘不遮挡当前输入与提交；需真机核验"
+      },
+      "accessibility": [
+        "语义标题、字段标签与可见焦点",
+        "状态不只依赖颜色；错误关联字段",
+        "支持键盘；对话框焦点管理与返回"
+      ],
+      "acceptance": [
+        "快速理解创作能力主路径可完成",
+        "标明个人贡献与素材许可",
+        "320/390/768/1440 宽度检查",
+        "错误、空态及权限边界检查"
+      ],
+      "skill": "awwwards-page-library",
+      "coverage": "specification",
+      "demo": null,
+      "production": "not_connected"
+    },
+    {
+      "id": "enterprise.overview",
+      "domain": "enterprise",
+      "title": "运营概览",
+      "goal": "识别今日需要处理的工作",
+      "regions": [
+        "指标",
+        "趋势",
+        "待办",
+        "异常"
+      ],
+      "interactions": [
+        "钻取",
+        "时间范围",
+        "快捷处理"
+      ],
+      "constraints": [
+        "样例指标不代表真实运营数据"
+      ],
+      "inputs": [
+        "已授权业务数据或明确标识的样例",
+        "现有品牌与技术栈",
+        "资源许可与目标设备"
+      ],
+      "states": {
+        "default": "展示结构和下一步",
+        "loading": "显示等待范围并保留用户输入",
+        "empty": "说明无数据原因与恢复入口",
+        "error": "说明失败并允许安全重试",
+        "success": "显示可核实结果；演示标为本地预览",
+        "disabled": "解释不可操作原因"
+      },
+      "mobile": {
+        "narrow": "单列重排；必要表格在独立区域横滚；主操作可触达",
+        "wide": "保持信息密度与分组，不无限拉伸正文",
+        "keyboard": "软键盘不遮挡当前输入与提交；需真机核验"
+      },
+      "accessibility": [
+        "语义标题、字段标签与可见焦点",
+        "状态不只依赖颜色；错误关联字段",
+        "支持键盘；对话框焦点管理与返回"
+      ],
+      "acceptance": [
+        "识别今日需要处理的工作主路径可完成",
+        "样例指标不代表真实运营数据",
+        "320/390/768/1440 宽度检查",
+        "错误、空态及权限边界检查"
+      ],
+      "skill": "awwwards-enterprise",
+      "coverage": "runnable_demo",
+      "demo": "/v2/demos/enterprise/#overview",
+      "production": "not_connected"
+    },
+    {
+      "id": "enterprise.records",
+      "domain": "enterprise",
+      "title": "客户目录",
+      "goal": "定位并修改客户记录",
+      "regions": [
+        "筛选",
+        "排序",
+        "分页",
+        "行操作"
+      ],
+      "interactions": [
+        "搜索",
+        "排序",
+        "分页",
+        "编辑"
+      ],
+      "constraints": [
+        "更新必须具备版本冲突处理"
+      ],
+      "inputs": [
+        "已授权业务数据或明确标识的样例",
+        "现有品牌与技术栈",
+        "资源许可与目标设备"
+      ],
+      "states": {
+        "default": "展示结构和下一步",
+        "loading": "显示等待范围并保留用户输入",
+        "empty": "说明无数据原因与恢复入口",
+        "error": "说明失败并允许安全重试",
+        "success": "显示可核实结果；演示标为本地预览",
+        "disabled": "解释不可操作原因"
+      },
+      "mobile": {
+        "narrow": "单列重排；必要表格在独立区域横滚；主操作可触达",
+        "wide": "保持信息密度与分组，不无限拉伸正文",
+        "keyboard": "软键盘不遮挡当前输入与提交；需真机核验"
+      },
+      "accessibility": [
+        "语义标题、字段标签与可见焦点",
+        "状态不只依赖颜色；错误关联字段",
+        "支持键盘；对话框焦点管理与返回"
+      ],
+      "acceptance": [
+        "定位并修改客户记录主路径可完成",
+        "更新必须具备版本冲突处理",
+        "320/390/768/1440 宽度检查",
+        "错误、空态及权限边界检查"
+      ],
+      "skill": "awwwards-enterprise",
+      "coverage": "runnable_demo",
+      "demo": "/v2/demos/enterprise/#records",
+      "production": "not_connected"
+    },
+    {
+      "id": "enterprise.record-detail",
+      "domain": "enterprise",
+      "title": "记录详情",
+      "goal": "理解单个实体并安全变更",
+      "regions": [
+        "实体摘要",
+        "关联项",
+        "历史记录"
+      ],
+      "interactions": [
+        "编辑",
+        "恢复",
+        "查看版本"
+      ],
+      "constraints": [
+        "权限与版本应由服务端检查"
+      ],
+      "inputs": [
+        "已授权业务数据或明确标识的样例",
+        "现有品牌与技术栈",
+        "资源许可与目标设备"
+      ],
+      "states": {
+        "default": "展示结构和下一步",
+        "loading": "显示等待范围并保留用户输入",
+        "empty": "说明无数据原因与恢复入口",
+        "error": "说明失败并允许安全重试",
+        "success": "显示可核实结果；演示标为本地预览",
+        "disabled": "解释不可操作原因"
+      },
+      "mobile": {
+        "narrow": "单列重排；必要表格在独立区域横滚；主操作可触达",
+        "wide": "保持信息密度与分组，不无限拉伸正文",
+        "keyboard": "软键盘不遮挡当前输入与提交；需真机核验"
+      },
+      "accessibility": [
+        "语义标题、字段标签与可见焦点",
+        "状态不只依赖颜色；错误关联字段",
+        "支持键盘；对话框焦点管理与返回"
+      ],
+      "acceptance": [
+        "理解单个实体并安全变更主路径可完成",
+        "权限与版本应由服务端检查",
+        "320/390/768/1440 宽度检查",
+        "错误、空态及权限边界检查"
+      ],
+      "skill": "awwwards-enterprise",
+      "coverage": "specification",
+      "demo": null,
+      "production": "not_connected"
+    },
+    {
+      "id": "enterprise.approvals",
+      "domain": "enterprise",
+      "title": "审批队列",
+      "goal": "做出可追踪的审批决定",
+      "regions": [
+        "待办",
+        "申请详情",
+        "风险",
+        "决定"
+      ],
+      "interactions": [
+        "批准",
+        "拒绝",
+        "二次确认"
+      ],
+      "constraints": [
+        "生产审批需要持久审计和幂等"
+      ],
+      "inputs": [
+        "已授权业务数据或明确标识的样例",
+        "现有品牌与技术栈",
+        "资源许可与目标设备"
+      ],
+      "states": {
+        "default": "展示结构和下一步",
+        "loading": "显示等待范围并保留用户输入",
+        "empty": "说明无数据原因与恢复入口",
+        "error": "说明失败并允许安全重试",
+        "success": "显示可核实结果；演示标为本地预览",
+        "disabled": "解释不可操作原因"
+      },
+      "mobile": {
+        "narrow": "单列重排；必要表格在独立区域横滚；主操作可触达",
+        "wide": "保持信息密度与分组，不无限拉伸正文",
+        "keyboard": "软键盘不遮挡当前输入与提交；需真机核验"
+      },
+      "accessibility": [
+        "语义标题、字段标签与可见焦点",
+        "状态不只依赖颜色；错误关联字段",
+        "支持键盘；对话框焦点管理与返回"
+      ],
+      "acceptance": [
+        "做出可追踪的审批决定主路径可完成",
+        "生产审批需要持久审计和幂等",
+        "320/390/768/1440 宽度检查",
+        "错误、空态及权限边界检查"
+      ],
+      "skill": "awwwards-enterprise",
+      "coverage": "runnable_demo",
+      "demo": "/v2/demos/enterprise/#approvals",
+      "production": "not_connected"
+    },
+    {
+      "id": "enterprise.audit",
+      "domain": "enterprise",
+      "title": "操作审计",
+      "goal": "重建谁在何时做了什么",
+      "regions": [
+        "主体",
+        "事件",
+        "时间",
+        "对象",
+        "结果"
+      ],
+      "interactions": [
+        "筛选",
+        "详情",
+        "导出"
+      ],
+      "constraints": [
+        "客户端列表不等于不可篡改审计"
+      ],
+      "inputs": [
+        "已授权业务数据或明确标识的样例",
+        "现有品牌与技术栈",
+        "资源许可与目标设备"
+      ],
+      "states": {
+        "default": "展示结构和下一步",
+        "loading": "显示等待范围并保留用户输入",
+        "empty": "说明无数据原因与恢复入口",
+        "error": "说明失败并允许安全重试",
+        "success": "显示可核实结果；演示标为本地预览",
+        "disabled": "解释不可操作原因"
+      },
+      "mobile": {
+        "narrow": "单列重排；必要表格在独立区域横滚；主操作可触达",
+        "wide": "保持信息密度与分组，不无限拉伸正文",
+        "keyboard": "软键盘不遮挡当前输入与提交；需真机核验"
+      },
+      "accessibility": [
+        "语义标题、字段标签与可见焦点",
+        "状态不只依赖颜色；错误关联字段",
+        "支持键盘；对话框焦点管理与返回"
+      ],
+      "acceptance": [
+        "重建谁在何时做了什么主路径可完成",
+        "客户端列表不等于不可篡改审计",
+        "320/390/768/1440 宽度检查",
+        "错误、空态及权限边界检查"
+      ],
+      "skill": "awwwards-enterprise",
+      "coverage": "runnable_demo",
+      "demo": "/v2/demos/enterprise/#audit",
+      "production": "not_connected"
+    },
+    {
+      "id": "enterprise.roles",
+      "domain": "enterprise",
+      "title": "角色权限",
+      "goal": "配置最小业务权限",
+      "regions": [
+        "角色",
+        "资源",
+        "动作",
+        "权限矩阵"
+      ],
+      "interactions": [
+        "授权",
+        "撤权",
+        "影响确认"
+      ],
+      "constraints": [
+        "隐藏按钮不能替代服务端授权"
+      ],
+      "inputs": [
+        "已授权业务数据或明确标识的样例",
+        "现有品牌与技术栈",
+        "资源许可与目标设备"
+      ],
+      "states": {
+        "default": "展示结构和下一步",
+        "loading": "显示等待范围并保留用户输入",
+        "empty": "说明无数据原因与恢复入口",
+        "error": "说明失败并允许安全重试",
+        "success": "显示可核实结果；演示标为本地预览",
+        "disabled": "解释不可操作原因"
+      },
+      "mobile": {
+        "narrow": "单列重排；必要表格在独立区域横滚；主操作可触达",
+        "wide": "保持信息密度与分组，不无限拉伸正文",
+        "keyboard": "软键盘不遮挡当前输入与提交；需真机核验"
+      },
+      "accessibility": [
+        "语义标题、字段标签与可见焦点",
+        "状态不只依赖颜色；错误关联字段",
+        "支持键盘；对话框焦点管理与返回"
+      ],
+      "acceptance": [
+        "配置最小业务权限主路径可完成",
+        "隐藏按钮不能替代服务端授权",
+        "320/390/768/1440 宽度检查",
+        "错误、空态及权限边界检查"
+      ],
+      "skill": "awwwards-enterprise",
+      "coverage": "specification",
+      "demo": null,
+      "production": "not_connected"
+    },
+    {
+      "id": "enterprise.billing",
+      "domain": "enterprise",
+      "title": "账单管理",
+      "goal": "核对账单与付款状态",
+      "regions": [
+        "账单列表",
+        "金额",
+        "币种",
+        "税",
+        "状态"
+      ],
+      "interactions": [
+        "下载发票",
+        "账单筛选"
+      ],
+      "constraints": [
+        "付款状态跟随真实账务系统"
+      ],
+      "inputs": [
+        "已授权业务数据或明确标识的样例",
+        "现有品牌与技术栈",
+        "资源许可与目标设备"
+      ],
+      "states": {
+        "default": "展示结构和下一步",
+        "loading": "显示等待范围并保留用户输入",
+        "empty": "说明无数据原因与恢复入口",
+        "error": "说明失败并允许安全重试",
+        "success": "显示可核实结果；演示标为本地预览",
+        "disabled": "解释不可操作原因"
+      },
+      "mobile": {
+        "narrow": "单列重排；必要表格在独立区域横滚；主操作可触达",
+        "wide": "保持信息密度与分组，不无限拉伸正文",
+        "keyboard": "软键盘不遮挡当前输入与提交；需真机核验"
+      },
+      "accessibility": [
+        "语义标题、字段标签与可见焦点",
+        "状态不只依赖颜色；错误关联字段",
+        "支持键盘；对话框焦点管理与返回"
+      ],
+      "acceptance": [
+        "核对账单与付款状态主路径可完成",
+        "付款状态跟随真实账务系统",
+        "320/390/768/1440 宽度检查",
+        "错误、空态及权限边界检查"
+      ],
+      "skill": "awwwards-enterprise",
+      "coverage": "specification",
+      "demo": null,
+      "production": "not_connected"
+    },
+    {
+      "id": "enterprise.import",
+      "domain": "enterprise",
+      "title": "导入向导",
+      "goal": "在写入前预览导入结果",
+      "regions": [
+        "文件选择",
+        "字段映射",
+        "预览",
+        "错误行"
+      ],
+      "interactions": [
+        "映射",
+        "试运行",
+        "提交",
+        "恢复"
+      ],
+      "constraints": [
+        "限制文件大小，处理公式注入与重复键"
+      ],
+      "inputs": [
+        "已授权业务数据或明确标识的样例",
+        "现有品牌与技术栈",
+        "资源许可与目标设备"
+      ],
+      "states": {
+        "default": "展示结构和下一步",
+        "loading": "显示等待范围并保留用户输入",
+        "empty": "说明无数据原因与恢复入口",
+        "error": "说明失败并允许安全重试",
+        "success": "显示可核实结果；演示标为本地预览",
+        "disabled": "解释不可操作原因"
+      },
+      "mobile": {
+        "narrow": "单列重排；必要表格在独立区域横滚；主操作可触达",
+        "wide": "保持信息密度与分组，不无限拉伸正文",
+        "keyboard": "软键盘不遮挡当前输入与提交；需真机核验"
+      },
+      "accessibility": [
+        "语义标题、字段标签与可见焦点",
+        "状态不只依赖颜色；错误关联字段",
+        "支持键盘；对话框焦点管理与返回"
+      ],
+      "acceptance": [
+        "在写入前预览导入结果主路径可完成",
+        "限制文件大小，处理公式注入与重复键",
+        "320/390/768/1440 宽度检查",
+        "错误、空态及权限边界检查"
+      ],
+      "skill": "awwwards-enterprise",
+      "coverage": "specification",
+      "demo": null,
+      "production": "not_connected"
+    },
+    {
+      "id": "enterprise.settings",
+      "domain": "enterprise",
+      "title": "后台设置",
+      "goal": "配置工作空间选项",
+      "regions": [
+        "配置分组",
+        "脏状态",
+        "保存反馈"
+      ],
+      "interactions": [
+        "修改",
+        "保存",
+        "撤销"
+      ],
+      "constraints": [
+        "演示设置刷新会清空"
+      ],
+      "inputs": [
+        "已授权业务数据或明确标识的样例",
+        "现有品牌与技术栈",
+        "资源许可与目标设备"
+      ],
+      "states": {
+        "default": "展示结构和下一步",
+        "loading": "显示等待范围并保留用户输入",
+        "empty": "说明无数据原因与恢复入口",
+        "error": "说明失败并允许安全重试",
+        "success": "显示可核实结果；演示标为本地预览",
+        "disabled": "解释不可操作原因"
+      },
+      "mobile": {
+        "narrow": "单列重排；必要表格在独立区域横滚；主操作可触达",
+        "wide": "保持信息密度与分组，不无限拉伸正文",
+        "keyboard": "软键盘不遮挡当前输入与提交；需真机核验"
+      },
+      "accessibility": [
+        "语义标题、字段标签与可见焦点",
+        "状态不只依赖颜色；错误关联字段",
+        "支持键盘；对话框焦点管理与返回"
+      ],
+      "acceptance": [
+        "配置工作空间选项主路径可完成",
+        "演示设置刷新会清空",
+        "320/390/768/1440 宽度检查",
+        "错误、空态及权限边界检查"
+      ],
+      "skill": "awwwards-enterprise",
+      "coverage": "runnable_demo",
+      "demo": "/v2/demos/enterprise/#settings",
+      "production": "not_connected"
+    },
+    {
+      "id": "enterprise.reports",
+      "domain": "enterprise",
+      "title": "分析报表",
+      "goal": "按口径比较业务表现",
+      "regions": [
+        "指标定义",
+        "区间",
+        "分组",
+        "明细"
+      ],
+      "interactions": [
+        "筛选",
+        "下钻",
+        "导出"
+      ],
+      "constraints": [
+        "聚合口径和缺失数据必须说明"
+      ],
+      "inputs": [
+        "已授权业务数据或明确标识的样例",
+        "现有品牌与技术栈",
+        "资源许可与目标设备"
+      ],
+      "states": {
+        "default": "展示结构和下一步",
+        "loading": "显示等待范围并保留用户输入",
+        "empty": "说明无数据原因与恢复入口",
+        "error": "说明失败并允许安全重试",
+        "success": "显示可核实结果；演示标为本地预览",
+        "disabled": "解释不可操作原因"
+      },
+      "mobile": {
+        "narrow": "单列重排；必要表格在独立区域横滚；主操作可触达",
+        "wide": "保持信息密度与分组，不无限拉伸正文",
+        "keyboard": "软键盘不遮挡当前输入与提交；需真机核验"
+      },
+      "accessibility": [
+        "语义标题、字段标签与可见焦点",
+        "状态不只依赖颜色；错误关联字段",
+        "支持键盘；对话框焦点管理与返回"
+      ],
+      "acceptance": [
+        "按口径比较业务表现主路径可完成",
+        "聚合口径和缺失数据必须说明",
+        "320/390/768/1440 宽度检查",
+        "错误、空态及权限边界检查"
+      ],
+      "skill": "awwwards-enterprise",
+      "coverage": "specification",
+      "demo": null,
+      "production": "not_connected"
+    },
+    {
+      "id": "fintech.terminal",
+      "domain": "fintech",
+      "title": "行情与下单",
+      "goal": "审阅行情并构造模拟订单",
+      "regions": [
+        "行情图",
+        "订单簿",
+        "价格时间",
+        "下单单据"
+      ],
+      "interactions": [
+        "刷新",
+        "数量价格校验",
+        "审阅确认"
+      ],
+      "constraints": [
+        "模拟与真实交易必须显著区分"
+      ],
+      "inputs": [
+        "已授权业务数据或明确标识的样例",
+        "现有品牌与技术栈",
+        "资源许可与目标设备"
+      ],
+      "states": {
+        "default": "展示结构和下一步",
+        "loading": "显示等待范围并保留用户输入",
+        "empty": "说明无数据原因与恢复入口",
+        "error": "说明失败并允许安全重试",
+        "success": "显示可核实结果；演示标为本地预览",
+        "disabled": "解释不可操作原因"
+      },
+      "mobile": {
+        "narrow": "单列重排；必要表格在独立区域横滚；主操作可触达",
+        "wide": "保持信息密度与分组，不无限拉伸正文",
+        "keyboard": "软键盘不遮挡当前输入与提交；需真机核验"
+      },
+      "accessibility": [
+        "语义标题、字段标签与可见焦点",
+        "状态不只依赖颜色；错误关联字段",
+        "支持键盘；对话框焦点管理与返回"
+      ],
+      "acceptance": [
+        "审阅行情并构造模拟订单主路径可完成",
+        "模拟与真实交易必须显著区分",
+        "320/390/768/1440 宽度检查",
+        "错误、空态及权限边界检查"
+      ],
+      "skill": "awwwards-fintech",
+      "coverage": "runnable_demo",
+      "demo": "/v2/demos/fintech/#terminal",
+      "production": "not_connected"
+    },
+    {
+      "id": "fintech.orders",
+      "domain": "fintech",
+      "title": "订单管理",
+      "goal": "追踪并撤销符合条件的订单",
+      "regions": [
+        "订单标识",
+        "类型",
+        "状态",
+        "成交记录"
+      ],
+      "interactions": [
+        "筛选",
+        "详情",
+        "撤销确认"
+      ],
+      "constraints": [
+        "撤单应防止状态竞争和重复提交"
+      ],
+      "inputs": [
+        "已授权业务数据或明确标识的样例",
+        "现有品牌与技术栈",
+        "资源许可与目标设备"
+      ],
+      "states": {
+        "default": "展示结构和下一步",
+        "loading": "显示等待范围并保留用户输入",
+        "empty": "说明无数据原因与恢复入口",
+        "error": "说明失败并允许安全重试",
+        "success": "显示可核实结果；演示标为本地预览",
+        "disabled": "解释不可操作原因"
+      },
+      "mobile": {
+        "narrow": "单列重排；必要表格在独立区域横滚；主操作可触达",
+        "wide": "保持信息密度与分组，不无限拉伸正文",
+        "keyboard": "软键盘不遮挡当前输入与提交；需真机核验"
+      },
+      "accessibility": [
+        "语义标题、字段标签与可见焦点",
+        "状态不只依赖颜色；错误关联字段",
+        "支持键盘；对话框焦点管理与返回"
+      ],
+      "acceptance": [
+        "追踪并撤销符合条件的订单主路径可完成",
+        "撤单应防止状态竞争和重复提交",
+        "320/390/768/1440 宽度检查",
+        "错误、空态及权限边界检查"
+      ],
+      "skill": "awwwards-fintech",
+      "coverage": "runnable_demo",
+      "demo": "/v2/demos/fintech/#orders",
+      "production": "not_connected"
+    },
+    {
+      "id": "fintech.portfolio",
+      "domain": "fintech",
+      "title": "投资组合",
+      "goal": "理解敞口和持仓变化",
+      "regions": [
+        "资产",
+        "现金",
+        "收益",
+        "持仓",
+        "日期"
+      ],
+      "interactions": [
+        "按资产分组",
+        "明细"
+      ],
+      "constraints": [
+        "净值与收益必须有计算口径"
+      ],
+      "inputs": [
+        "已授权业务数据或明确标识的样例",
+        "现有品牌与技术栈",
+        "资源许可与目标设备"
+      ],
+      "states": {
+        "default": "展示结构和下一步",
+        "loading": "显示等待范围并保留用户输入",
+        "empty": "说明无数据原因与恢复入口",
+        "error": "说明失败并允许安全重试",
+        "success": "显示可核实结果；演示标为本地预览",
+        "disabled": "解释不可操作原因"
+      },
+      "mobile": {
+        "narrow": "单列重排；必要表格在独立区域横滚；主操作可触达",
+        "wide": "保持信息密度与分组，不无限拉伸正文",
+        "keyboard": "软键盘不遮挡当前输入与提交；需真机核验"
+      },
+      "accessibility": [
+        "语义标题、字段标签与可见焦点",
+        "状态不只依赖颜色；错误关联字段",
+        "支持键盘；对话框焦点管理与返回"
+      ],
+      "acceptance": [
+        "理解敞口和持仓变化主路径可完成",
+        "净值与收益必须有计算口径",
+        "320/390/768/1440 宽度检查",
+        "错误、空态及权限边界检查"
+      ],
+      "skill": "awwwards-fintech",
+      "coverage": "runnable_demo",
+      "demo": "/v2/demos/fintech/#portfolio",
+      "production": "not_connected"
+    },
+    {
+      "id": "fintech.risk",
+      "domain": "fintech",
+      "title": "风险设置",
+      "goal": "理解限制和异常",
+      "regions": [
+        "限额",
+        "报价时效",
+        "风险提示",
+        "检查结果"
+      ],
+      "interactions": [
+        "刷新报价",
+        "查看限制"
+      ],
+      "constraints": [
+        "真实风控在可信服务端执行"
+      ],
+      "inputs": [
+        "已授权业务数据或明确标识的样例",
+        "现有品牌与技术栈",
+        "资源许可与目标设备"
+      ],
+      "states": {
+        "default": "展示结构和下一步",
+        "loading": "显示等待范围并保留用户输入",
+        "empty": "说明无数据原因与恢复入口",
+        "error": "说明失败并允许安全重试",
+        "success": "显示可核实结果；演示标为本地预览",
+        "disabled": "解释不可操作原因"
+      },
+      "mobile": {
+        "narrow": "单列重排；必要表格在独立区域横滚；主操作可触达",
+        "wide": "保持信息密度与分组，不无限拉伸正文",
+        "keyboard": "软键盘不遮挡当前输入与提交；需真机核验"
+      },
+      "accessibility": [
+        "语义标题、字段标签与可见焦点",
+        "状态不只依赖颜色；错误关联字段",
+        "支持键盘；对话框焦点管理与返回"
+      ],
+      "acceptance": [
+        "理解限制和异常主路径可完成",
+        "真实风控在可信服务端执行",
+        "320/390/768/1440 宽度检查",
+        "错误、空态及权限边界检查"
+      ],
+      "skill": "awwwards-fintech",
+      "coverage": "runnable_demo",
+      "demo": "/v2/demos/fintech/#risk",
+      "production": "not_connected"
+    },
+    {
+      "id": "fintech.watchlist",
+      "domain": "fintech",
+      "title": "自选列表",
+      "goal": "跟踪关注的资产",
+      "regions": [
+        "代码",
+        "名称",
+        "价格",
+        "时间",
+        "提醒"
+      ],
+      "interactions": [
+        "搜索",
+        "添加",
+        "排序"
+      ],
+      "constraints": [
+        "延迟行情必须显示延迟标识"
+      ],
+      "inputs": [
+        "已授权业务数据或明确标识的样例",
+        "现有品牌与技术栈",
+        "资源许可与目标设备"
+      ],
+      "states": {
+        "default": "展示结构和下一步",
+        "loading": "显示等待范围并保留用户输入",
+        "empty": "说明无数据原因与恢复入口",
+        "error": "说明失败并允许安全重试",
+        "success": "显示可核实结果；演示标为本地预览",
+        "disabled": "解释不可操作原因"
+      },
+      "mobile": {
+        "narrow": "单列重排；必要表格在独立区域横滚；主操作可触达",
+        "wide": "保持信息密度与分组，不无限拉伸正文",
+        "keyboard": "软键盘不遮挡当前输入与提交；需真机核验"
+      },
+      "accessibility": [
+        "语义标题、字段标签与可见焦点",
+        "状态不只依赖颜色；错误关联字段",
+        "支持键盘；对话框焦点管理与返回"
+      ],
+      "acceptance": [
+        "跟踪关注的资产主路径可完成",
+        "延迟行情必须显示延迟标识",
+        "320/390/768/1440 宽度检查",
+        "错误、空态及权限边界检查"
+      ],
+      "skill": "awwwards-fintech",
+      "coverage": "specification",
+      "demo": null,
+      "production": "not_connected"
+    },
+    {
+      "id": "fintech.asset-detail",
+      "domain": "fintech",
+      "title": "资产详情",
+      "goal": "审阅资产信息与风险",
+      "regions": [
+        "基础资料",
+        "价格图",
+        "公告",
+        "数据来源"
+      ],
+      "interactions": [
+        "区间切换",
+        "加入自选"
+      ],
+      "constraints": [
+        "日期币种时区及拆股口径明确"
+      ],
+      "inputs": [
+        "已授权业务数据或明确标识的样例",
+        "现有品牌与技术栈",
+        "资源许可与目标设备"
+      ],
+      "states": {
+        "default": "展示结构和下一步",
+        "loading": "显示等待范围并保留用户输入",
+        "empty": "说明无数据原因与恢复入口",
+        "error": "说明失败并允许安全重试",
+        "success": "显示可核实结果；演示标为本地预览",
+        "disabled": "解释不可操作原因"
+      },
+      "mobile": {
+        "narrow": "单列重排；必要表格在独立区域横滚；主操作可触达",
+        "wide": "保持信息密度与分组，不无限拉伸正文",
+        "keyboard": "软键盘不遮挡当前输入与提交；需真机核验"
+      },
+      "accessibility": [
+        "语义标题、字段标签与可见焦点",
+        "状态不只依赖颜色；错误关联字段",
+        "支持键盘；对话框焦点管理与返回"
+      ],
+      "acceptance": [
+        "审阅资产信息与风险主路径可完成",
+        "日期币种时区及拆股口径明确",
+        "320/390/768/1440 宽度检查",
+        "错误、空态及权限边界检查"
+      ],
+      "skill": "awwwards-fintech",
+      "coverage": "specification",
+      "demo": null,
+      "production": "not_connected"
+    },
+    {
+      "id": "fintech.transfers",
+      "domain": "fintech",
+      "title": "资金划转",
+      "goal": "审阅资金流转请求",
+      "regions": [
+        "账户",
+        "金额",
+        "费用",
+        "确认摘要",
+        "结果"
+      ],
+      "interactions": [
+        "金额校验",
+        "二次确认",
+        "查询"
+      ],
+      "constraints": [
+        "本模板不得采集支付凭证或真实转账"
+      ],
+      "inputs": [
+        "已授权业务数据或明确标识的样例",
+        "现有品牌与技术栈",
+        "资源许可与目标设备"
+      ],
+      "states": {
+        "default": "展示结构和下一步",
+        "loading": "显示等待范围并保留用户输入",
+        "empty": "说明无数据原因与恢复入口",
+        "error": "说明失败并允许安全重试",
+        "success": "显示可核实结果；演示标为本地预览",
+        "disabled": "解释不可操作原因"
+      },
+      "mobile": {
+        "narrow": "单列重排；必要表格在独立区域横滚；主操作可触达",
+        "wide": "保持信息密度与分组，不无限拉伸正文",
+        "keyboard": "软键盘不遮挡当前输入与提交；需真机核验"
+      },
+      "accessibility": [
+        "语义标题、字段标签与可见焦点",
+        "状态不只依赖颜色；错误关联字段",
+        "支持键盘；对话框焦点管理与返回"
+      ],
+      "acceptance": [
+        "审阅资金流转请求主路径可完成",
+        "本模板不得采集支付凭证或真实转账",
+        "320/390/768/1440 宽度检查",
+        "错误、空态及权限边界检查"
+      ],
+      "skill": "awwwards-fintech",
+      "coverage": "specification",
+      "demo": null,
+      "production": "not_connected"
+    },
+    {
+      "id": "fintech.statements",
+      "domain": "fintech",
+      "title": "对账单",
+      "goal": "核对交易和费用",
+      "regions": [
+        "区间",
+        "起止余额",
+        "交易",
+        "费用"
+      ],
+      "interactions": [
+        "查询",
+        "筛选",
+        "下载"
+      ],
+      "constraints": [
+        "审计金额用定点数或整数最小单位"
+      ],
+      "inputs": [
+        "已授权业务数据或明确标识的样例",
+        "现有品牌与技术栈",
+        "资源许可与目标设备"
+      ],
+      "states": {
+        "default": "展示结构和下一步",
+        "loading": "显示等待范围并保留用户输入",
+        "empty": "说明无数据原因与恢复入口",
+        "error": "说明失败并允许安全重试",
+        "success": "显示可核实结果；演示标为本地预览",
+        "disabled": "解释不可操作原因"
+      },
+      "mobile": {
+        "narrow": "单列重排；必要表格在独立区域横滚；主操作可触达",
+        "wide": "保持信息密度与分组，不无限拉伸正文",
+        "keyboard": "软键盘不遮挡当前输入与提交；需真机核验"
+      },
+      "accessibility": [
+        "语义标题、字段标签与可见焦点",
+        "状态不只依赖颜色；错误关联字段",
+        "支持键盘；对话框焦点管理与返回"
+      ],
+      "acceptance": [
+        "核对交易和费用主路径可完成",
+        "审计金额用定点数或整数最小单位",
+        "320/390/768/1440 宽度检查",
+        "错误、空态及权限边界检查"
+      ],
+      "skill": "awwwards-fintech",
+      "coverage": "specification",
+      "demo": null,
+      "production": "not_connected"
+    },
+    {
+      "id": "commerce.collection",
+      "domain": "commerce",
+      "title": "商品列表",
+      "goal": "找到适合的商品",
+      "regions": [
+        "分类",
+        "商品卡",
+        "价格",
+        "库存",
+        "筛选"
+      ],
+      "interactions": [
+        "搜索",
+        "筛选",
+        "详情",
+        "加购"
+      ],
+      "constraints": [
+        "缺货不可伪装可购买"
+      ],
+      "inputs": [
+        "已授权业务数据或明确标识的样例",
+        "现有品牌与技术栈",
+        "资源许可与目标设备"
+      ],
+      "states": {
+        "default": "展示结构和下一步",
+        "loading": "显示等待范围并保留用户输入",
+        "empty": "说明无数据原因与恢复入口",
+        "error": "说明失败并允许安全重试",
+        "success": "显示可核实结果；演示标为本地预览",
+        "disabled": "解释不可操作原因"
+      },
+      "mobile": {
+        "narrow": "单列重排；必要表格在独立区域横滚；主操作可触达",
+        "wide": "保持信息密度与分组，不无限拉伸正文",
+        "keyboard": "软键盘不遮挡当前输入与提交；需真机核验"
+      },
+      "accessibility": [
+        "语义标题、字段标签与可见焦点",
+        "状态不只依赖颜色；错误关联字段",
+        "支持键盘；对话框焦点管理与返回"
+      ],
+      "acceptance": [
+        "找到适合的商品主路径可完成",
+        "缺货不可伪装可购买",
+        "320/390/768/1440 宽度检查",
+        "错误、空态及权限边界检查"
+      ],
+      "skill": "awwwards-ecommerce",
+      "coverage": "runnable_demo",
+      "demo": "/v2/demos/commerce/#collection",
+      "production": "not_connected"
+    },
+    {
+      "id": "commerce.product",
+      "domain": "commerce",
+      "title": "商品详情",
+      "goal": "确认规格和购买条件",
+      "regions": [
+        "图片",
+        "价格",
+        "规格",
+        "库存",
+        "配送",
+        "退换"
+      ],
+      "interactions": [
+        "规格切换",
+        "数量",
+        "加购"
+      ],
+      "constraints": [
+        "素材有许可，规格不可混淆"
+      ],
+      "inputs": [
+        "已授权业务数据或明确标识的样例",
+        "现有品牌与技术栈",
+        "资源许可与目标设备"
+      ],
+      "states": {
+        "default": "展示结构和下一步",
+        "loading": "显示等待范围并保留用户输入",
+        "empty": "说明无数据原因与恢复入口",
+        "error": "说明失败并允许安全重试",
+        "success": "显示可核实结果；演示标为本地预览",
+        "disabled": "解释不可操作原因"
+      },
+      "mobile": {
+        "narrow": "单列重排；必要表格在独立区域横滚；主操作可触达",
+        "wide": "保持信息密度与分组，不无限拉伸正文",
+        "keyboard": "软键盘不遮挡当前输入与提交；需真机核验"
+      },
+      "accessibility": [
+        "语义标题、字段标签与可见焦点",
+        "状态不只依赖颜色；错误关联字段",
+        "支持键盘；对话框焦点管理与返回"
+      ],
+      "acceptance": [
+        "确认规格和购买条件主路径可完成",
+        "素材有许可，规格不可混淆",
+        "320/390/768/1440 宽度检查",
+        "错误、空态及权限边界检查"
+      ],
+      "skill": "awwwards-ecommerce",
+      "coverage": "runnable_demo",
+      "demo": "/v2/demos/commerce/#product-lamp",
+      "production": "not_connected"
+    },
+    {
+      "id": "commerce.cart",
+      "domain": "commerce",
+      "title": "购物车",
+      "goal": "核对数量与总价",
+      "regions": [
+        "行项目",
+        "数量",
+        "库存",
+        "税费",
+        "运费"
+      ],
+      "interactions": [
+        "增减",
+        "移除",
+        "继续结算"
+      ],
+      "constraints": [
+        "金额使用整数分并明确舍入"
+      ],
+      "inputs": [
+        "已授权业务数据或明确标识的样例",
+        "现有品牌与技术栈",
+        "资源许可与目标设备"
+      ],
+      "states": {
+        "default": "展示结构和下一步",
+        "loading": "显示等待范围并保留用户输入",
+        "empty": "说明无数据原因与恢复入口",
+        "error": "说明失败并允许安全重试",
+        "success": "显示可核实结果；演示标为本地预览",
+        "disabled": "解释不可操作原因"
+      },
+      "mobile": {
+        "narrow": "单列重排；必要表格在独立区域横滚；主操作可触达",
+        "wide": "保持信息密度与分组，不无限拉伸正文",
+        "keyboard": "软键盘不遮挡当前输入与提交；需真机核验"
+      },
+      "accessibility": [
+        "语义标题、字段标签与可见焦点",
+        "状态不只依赖颜色；错误关联字段",
+        "支持键盘；对话框焦点管理与返回"
+      ],
+      "acceptance": [
+        "核对数量与总价主路径可完成",
+        "金额使用整数分并明确舍入",
+        "320/390/768/1440 宽度检查",
+        "错误、空态及权限边界检查"
+      ],
+      "skill": "awwwards-ecommerce",
+      "coverage": "runnable_demo",
+      "demo": "/v2/demos/commerce/#cart",
+      "production": "not_connected"
+    },
+    {
+      "id": "commerce.checkout",
+      "domain": "commerce",
+      "title": "结算",
+      "goal": "审阅配送和费用并提交",
+      "regions": [
+        "联系方式",
+        "地址",
+        "费用",
+        "支付边界"
+      ],
+      "interactions": [
+        "字段校验",
+        "审阅",
+        "提交",
+        "恢复"
+      ],
+      "constraints": [
+        "无真实支付接入不能显示已扣款"
+      ],
+      "inputs": [
+        "已授权业务数据或明确标识的样例",
+        "现有品牌与技术栈",
+        "资源许可与目标设备"
+      ],
+      "states": {
+        "default": "展示结构和下一步",
+        "loading": "显示等待范围并保留用户输入",
+        "empty": "说明无数据原因与恢复入口",
+        "error": "说明失败并允许安全重试",
+        "success": "显示可核实结果；演示标为本地预览",
+        "disabled": "解释不可操作原因"
+      },
+      "mobile": {
+        "narrow": "单列重排；必要表格在独立区域横滚；主操作可触达",
+        "wide": "保持信息密度与分组，不无限拉伸正文",
+        "keyboard": "软键盘不遮挡当前输入与提交；需真机核验"
+      },
+      "accessibility": [
+        "语义标题、字段标签与可见焦点",
+        "状态不只依赖颜色；错误关联字段",
+        "支持键盘；对话框焦点管理与返回"
+      ],
+      "acceptance": [
+        "审阅配送和费用并提交主路径可完成",
+        "无真实支付接入不能显示已扣款",
+        "320/390/768/1440 宽度检查",
+        "错误、空态及权限边界检查"
+      ],
+      "skill": "awwwards-ecommerce",
+      "coverage": "runnable_demo",
+      "demo": "/v2/demos/commerce/#checkout",
+      "production": "not_connected"
+    },
+    {
+      "id": "commerce.orders",
+      "domain": "commerce",
+      "title": "订单与售后",
+      "goal": "查看订单并启动售后",
+      "regions": [
+        "订单号",
+        "商品",
+        "状态",
+        "金额",
+        "售后"
+      ],
+      "interactions": [
+        "详情",
+        "退换申请",
+        "状态追踪"
+      ],
+      "constraints": [
+        "售后申请不等于已退款"
+      ],
+      "inputs": [
+        "已授权业务数据或明确标识的样例",
+        "现有品牌与技术栈",
+        "资源许可与目标设备"
+      ],
+      "states": {
+        "default": "展示结构和下一步",
+        "loading": "显示等待范围并保留用户输入",
+        "empty": "说明无数据原因与恢复入口",
+        "error": "说明失败并允许安全重试",
+        "success": "显示可核实结果；演示标为本地预览",
+        "disabled": "解释不可操作原因"
+      },
+      "mobile": {
+        "narrow": "单列重排；必要表格在独立区域横滚；主操作可触达",
+        "wide": "保持信息密度与分组，不无限拉伸正文",
+        "keyboard": "软键盘不遮挡当前输入与提交；需真机核验"
+      },
+      "accessibility": [
+        "语义标题、字段标签与可见焦点",
+        "状态不只依赖颜色；错误关联字段",
+        "支持键盘；对话框焦点管理与返回"
+      ],
+      "acceptance": [
+        "查看订单并启动售后主路径可完成",
+        "售后申请不等于已退款",
+        "320/390/768/1440 宽度检查",
+        "错误、空态及权限边界检查"
+      ],
+      "skill": "awwwards-ecommerce",
+      "coverage": "runnable_demo",
+      "demo": "/v2/demos/commerce/#orders",
+      "production": "not_connected"
+    },
+    {
+      "id": "commerce.order-detail",
+      "domain": "commerce",
+      "title": "订单详情",
+      "goal": "核对购买记录及物流",
+      "regions": [
+        "摘要",
+        "行项目",
+        "配送",
+        "支付",
+        "事件"
+      ],
+      "interactions": [
+        "查看物流",
+        "申请售后"
+      ],
+      "constraints": [
+        "状态应来自服务端事件"
+      ],
+      "inputs": [
+        "已授权业务数据或明确标识的样例",
+        "现有品牌与技术栈",
+        "资源许可与目标设备"
+      ],
+      "states": {
+        "default": "展示结构和下一步",
+        "loading": "显示等待范围并保留用户输入",
+        "empty": "说明无数据原因与恢复入口",
+        "error": "说明失败并允许安全重试",
+        "success": "显示可核实结果；演示标为本地预览",
+        "disabled": "解释不可操作原因"
+      },
+      "mobile": {
+        "narrow": "单列重排；必要表格在独立区域横滚；主操作可触达",
+        "wide": "保持信息密度与分组，不无限拉伸正文",
+        "keyboard": "软键盘不遮挡当前输入与提交；需真机核验"
+      },
+      "accessibility": [
+        "语义标题、字段标签与可见焦点",
+        "状态不只依赖颜色；错误关联字段",
+        "支持键盘；对话框焦点管理与返回"
+      ],
+      "acceptance": [
+        "核对购买记录及物流主路径可完成",
+        "状态应来自服务端事件",
+        "320/390/768/1440 宽度检查",
+        "错误、空态及权限边界检查"
+      ],
+      "skill": "awwwards-ecommerce",
+      "coverage": "specification",
+      "demo": null,
+      "production": "not_connected"
+    },
+    {
+      "id": "commerce.wishlist",
+      "domain": "commerce",
+      "title": "收藏列表",
+      "goal": "保存考虑中的商品",
+      "regions": [
+        "商品",
+        "价格",
+        "变动",
+        "库存"
+      ],
+      "interactions": [
+        "移除",
+        "加购",
+        "登录同步"
+      ],
+      "constraints": [
+        "明确本地和账户同步边界"
+      ],
+      "inputs": [
+        "已授权业务数据或明确标识的样例",
+        "现有品牌与技术栈",
+        "资源许可与目标设备"
+      ],
+      "states": {
+        "default": "展示结构和下一步",
+        "loading": "显示等待范围并保留用户输入",
+        "empty": "说明无数据原因与恢复入口",
+        "error": "说明失败并允许安全重试",
+        "success": "显示可核实结果；演示标为本地预览",
+        "disabled": "解释不可操作原因"
+      },
+      "mobile": {
+        "narrow": "单列重排；必要表格在独立区域横滚；主操作可触达",
+        "wide": "保持信息密度与分组，不无限拉伸正文",
+        "keyboard": "软键盘不遮挡当前输入与提交；需真机核验"
+      },
+      "accessibility": [
+        "语义标题、字段标签与可见焦点",
+        "状态不只依赖颜色；错误关联字段",
+        "支持键盘；对话框焦点管理与返回"
+      ],
+      "acceptance": [
+        "保存考虑中的商品主路径可完成",
+        "明确本地和账户同步边界",
+        "320/390/768/1440 宽度检查",
+        "错误、空态及权限边界检查"
+      ],
+      "skill": "awwwards-ecommerce",
+      "coverage": "specification",
+      "demo": null,
+      "production": "not_connected"
+    },
+    {
+      "id": "commerce.reviews",
+      "domain": "commerce",
+      "title": "评价",
+      "goal": "识别真实产品体验",
+      "regions": [
+        "评分",
+        "分布",
+        "审核状态",
+        "购买标识"
+      ],
+      "interactions": [
+        "筛选",
+        "举报",
+        "提交"
+      ],
+      "constraints": [
+        "不得捏造真实用户或验证购买"
+      ],
+      "inputs": [
+        "已授权业务数据或明确标识的样例",
+        "现有品牌与技术栈",
+        "资源许可与目标设备"
+      ],
+      "states": {
+        "default": "展示结构和下一步",
+        "loading": "显示等待范围并保留用户输入",
+        "empty": "说明无数据原因与恢复入口",
+        "error": "说明失败并允许安全重试",
+        "success": "显示可核实结果；演示标为本地预览",
+        "disabled": "解释不可操作原因"
+      },
+      "mobile": {
+        "narrow": "单列重排；必要表格在独立区域横滚；主操作可触达",
+        "wide": "保持信息密度与分组，不无限拉伸正文",
+        "keyboard": "软键盘不遮挡当前输入与提交；需真机核验"
+      },
+      "accessibility": [
+        "语义标题、字段标签与可见焦点",
+        "状态不只依赖颜色；错误关联字段",
+        "支持键盘；对话框焦点管理与返回"
+      ],
+      "acceptance": [
+        "识别真实产品体验主路径可完成",
+        "不得捏造真实用户或验证购买",
+        "320/390/768/1440 宽度检查",
+        "错误、空态及权限边界检查"
+      ],
+      "skill": "awwwards-ecommerce",
+      "coverage": "specification",
+      "demo": null,
+      "production": "not_connected"
+    },
+    {
+      "id": "commerce.returns",
+      "domain": "commerce",
+      "title": "退换向导",
+      "goal": "选择售后原因并审阅处理方式",
+      "regions": [
+        "订单",
+        "原因",
+        "凭证",
+        "费用",
+        "进度"
+      ],
+      "interactions": [
+        "资格校验",
+        "预览",
+        "提交"
+      ],
+      "constraints": [
+        "不承诺未确认的退款日期"
+      ],
+      "inputs": [
+        "已授权业务数据或明确标识的样例",
+        "现有品牌与技术栈",
+        "资源许可与目标设备"
+      ],
+      "states": {
+        "default": "展示结构和下一步",
+        "loading": "显示等待范围并保留用户输入",
+        "empty": "说明无数据原因与恢复入口",
+        "error": "说明失败并允许安全重试",
+        "success": "显示可核实结果；演示标为本地预览",
+        "disabled": "解释不可操作原因"
+      },
+      "mobile": {
+        "narrow": "单列重排；必要表格在独立区域横滚；主操作可触达",
+        "wide": "保持信息密度与分组，不无限拉伸正文",
+        "keyboard": "软键盘不遮挡当前输入与提交；需真机核验"
+      },
+      "accessibility": [
+        "语义标题、字段标签与可见焦点",
+        "状态不只依赖颜色；错误关联字段",
+        "支持键盘；对话框焦点管理与返回"
+      ],
+      "acceptance": [
+        "选择售后原因并审阅处理方式主路径可完成",
+        "不承诺未确认的退款日期",
+        "320/390/768/1440 宽度检查",
+        "错误、空态及权限边界检查"
+      ],
+      "skill": "awwwards-ecommerce",
+      "coverage": "specification",
+      "demo": null,
+      "production": "not_connected"
+    },
+    {
+      "id": "commerce.account",
+      "domain": "commerce",
+      "title": "消费者账户",
+      "goal": "管理资料与订单入口",
+      "regions": [
+        "资料",
+        "地址",
+        "订单",
+        "安全"
+      ],
+      "interactions": [
+        "编辑",
+        "移除",
+        "确认"
+      ],
+      "constraints": [
+        "个人信息不得进入公共测试快照"
+      ],
+      "inputs": [
+        "已授权业务数据或明确标识的样例",
+        "现有品牌与技术栈",
+        "资源许可与目标设备"
+      ],
+      "states": {
+        "default": "展示结构和下一步",
+        "loading": "显示等待范围并保留用户输入",
+        "empty": "说明无数据原因与恢复入口",
+        "error": "说明失败并允许安全重试",
+        "success": "显示可核实结果；演示标为本地预览",
+        "disabled": "解释不可操作原因"
+      },
+      "mobile": {
+        "narrow": "单列重排；必要表格在独立区域横滚；主操作可触达",
+        "wide": "保持信息密度与分组，不无限拉伸正文",
+        "keyboard": "软键盘不遮挡当前输入与提交；需真机核验"
+      },
+      "accessibility": [
+        "语义标题、字段标签与可见焦点",
+        "状态不只依赖颜色；错误关联字段",
+        "支持键盘；对话框焦点管理与返回"
+      ],
+      "acceptance": [
+        "管理资料与订单入口主路径可完成",
+        "个人信息不得进入公共测试快照",
+        "320/390/768/1440 宽度检查",
+        "错误、空态及权限边界检查"
+      ],
+      "skill": "awwwards-ecommerce",
+      "coverage": "specification",
+      "demo": null,
+      "production": "not_connected"
+    },
+    {
+      "id": "agent.chat",
+      "domain": "agent",
+      "title": "Agent 对话",
+      "goal": "发送任务并控制执行",
+      "regions": [
+        "消息",
+        "流式输出",
+        "工具请求",
+        "状态"
+      ],
+      "interactions": [
+        "发送",
+        "停止",
+        "批准",
+        "拒绝",
+        "重试"
+      ],
+      "constraints": [
+        "工具输出不能自授执行权限"
+      ],
+      "inputs": [
+        "已授权业务数据或明确标识的样例",
+        "现有品牌与技术栈",
+        "资源许可与目标设备"
+      ],
+      "states": {
+        "default": "展示结构和下一步",
+        "loading": "显示等待范围并保留用户输入",
+        "empty": "说明无数据原因与恢复入口",
+        "error": "说明失败并允许安全重试",
+        "success": "显示可核实结果；演示标为本地预览",
+        "disabled": "解释不可操作原因"
+      },
+      "mobile": {
+        "narrow": "单列重排；必要表格在独立区域横滚；主操作可触达",
+        "wide": "保持信息密度与分组，不无限拉伸正文",
+        "keyboard": "软键盘不遮挡当前输入与提交；需真机核验"
+      },
+      "accessibility": [
+        "语义标题、字段标签与可见焦点",
+        "状态不只依赖颜色；错误关联字段",
+        "支持键盘；对话框焦点管理与返回"
+      ],
+      "acceptance": [
+        "发送任务并控制执行主路径可完成",
+        "工具输出不能自授执行权限",
+        "320/390/768/1440 宽度检查",
+        "错误、空态及权限边界检查"
+      ],
+      "skill": "awwwards-ai-agent",
+      "coverage": "runnable_demo",
+      "demo": "/v2/demos/agent/#chat",
+      "production": "not_connected"
+    },
+    {
+      "id": "agent.workflow",
+      "domain": "agent",
+      "title": "工作流画布",
+      "goal": "理解并运行有向任务图",
+      "regions": [
+        "节点",
+        "连线",
+        "输入",
+        "输出",
+        "运行状态"
+      ],
+      "interactions": [
+        "校验",
+        "运行",
+        "观察失败"
+      ],
+      "constraints": [
+        "循环和缺失节点必须被检测"
+      ],
+      "inputs": [
+        "已授权业务数据或明确标识的样例",
+        "现有品牌与技术栈",
+        "资源许可与目标设备"
+      ],
+      "states": {
+        "default": "展示结构和下一步",
+        "loading": "显示等待范围并保留用户输入",
+        "empty": "说明无数据原因与恢复入口",
+        "error": "说明失败并允许安全重试",
+        "success": "显示可核实结果；演示标为本地预览",
+        "disabled": "解释不可操作原因"
+      },
+      "mobile": {
+        "narrow": "单列重排；必要表格在独立区域横滚；主操作可触达",
+        "wide": "保持信息密度与分组，不无限拉伸正文",
+        "keyboard": "软键盘不遮挡当前输入与提交；需真机核验"
+      },
+      "accessibility": [
+        "语义标题、字段标签与可见焦点",
+        "状态不只依赖颜色；错误关联字段",
+        "支持键盘；对话框焦点管理与返回"
+      ],
+      "acceptance": [
+        "理解并运行有向任务图主路径可完成",
+        "循环和缺失节点必须被检测",
+        "320/390/768/1440 宽度检查",
+        "错误、空态及权限边界检查"
+      ],
+      "skill": "awwwards-ai-agent",
+      "coverage": "runnable_demo",
+      "demo": "/v2/demos/agent/#workflow",
+      "production": "not_connected"
+    },
+    {
+      "id": "agent.runs",
+      "domain": "agent",
+      "title": "运行记录",
+      "goal": "定位失败或需要确认的步骤",
+      "regions": [
+        "事件",
+        "状态",
+        "时间",
+        "工具摘要"
+      ],
+      "interactions": [
+        "详情",
+        "重试",
+        "停止"
+      ],
+      "constraints": [
+        "重试前确认先前副作用是否发生"
+      ],
+      "inputs": [
+        "已授权业务数据或明确标识的样例",
+        "现有品牌与技术栈",
+        "资源许可与目标设备"
+      ],
+      "states": {
+        "default": "展示结构和下一步",
+        "loading": "显示等待范围并保留用户输入",
+        "empty": "说明无数据原因与恢复入口",
+        "error": "说明失败并允许安全重试",
+        "success": "显示可核实结果；演示标为本地预览",
+        "disabled": "解释不可操作原因"
+      },
+      "mobile": {
+        "narrow": "单列重排；必要表格在独立区域横滚；主操作可触达",
+        "wide": "保持信息密度与分组，不无限拉伸正文",
+        "keyboard": "软键盘不遮挡当前输入与提交；需真机核验"
+      },
+      "accessibility": [
+        "语义标题、字段标签与可见焦点",
+        "状态不只依赖颜色；错误关联字段",
+        "支持键盘；对话框焦点管理与返回"
+      ],
+      "acceptance": [
+        "定位失败或需要确认的步骤主路径可完成",
+        "重试前确认先前副作用是否发生",
+        "320/390/768/1440 宽度检查",
+        "错误、空态及权限边界检查"
+      ],
+      "skill": "awwwards-ai-agent",
+      "coverage": "runnable_demo",
+      "demo": "/v2/demos/agent/#runs",
+      "production": "not_connected"
+    },
+    {
+      "id": "agent.knowledge",
+      "domain": "agent",
+      "title": "知识库",
+      "goal": "添加可追溯的参考资料",
+      "regions": [
+        "资料",
+        "出处",
+        "解析状态",
+        "访问范围"
+      ],
+      "interactions": [
+        "添加",
+        "查找",
+        "删除"
+      ],
+      "constraints": [
+        "资料被当作不可信数据"
+      ],
+      "inputs": [
+        "已授权业务数据或明确标识的样例",
+        "现有品牌与技术栈",
+        "资源许可与目标设备"
+      ],
+      "states": {
+        "default": "展示结构和下一步",
+        "loading": "显示等待范围并保留用户输入",
+        "empty": "说明无数据原因与恢复入口",
+        "error": "说明失败并允许安全重试",
+        "success": "显示可核实结果；演示标为本地预览",
+        "disabled": "解释不可操作原因"
+      },
+      "mobile": {
+        "narrow": "单列重排；必要表格在独立区域横滚；主操作可触达",
+        "wide": "保持信息密度与分组，不无限拉伸正文",
+        "keyboard": "软键盘不遮挡当前输入与提交；需真机核验"
+      },
+      "accessibility": [
+        "语义标题、字段标签与可见焦点",
+        "状态不只依赖颜色；错误关联字段",
+        "支持键盘；对话框焦点管理与返回"
+      ],
+      "acceptance": [
+        "添加可追溯的参考资料主路径可完成",
+        "资料被当作不可信数据",
+        "320/390/768/1440 宽度检查",
+        "错误、空态及权限边界检查"
+      ],
+      "skill": "awwwards-ai-agent",
+      "coverage": "runnable_demo",
+      "demo": "/v2/demos/agent/#knowledge",
+      "production": "not_connected"
+    },
+    {
+      "id": "agent.settings",
+      "domain": "agent",
+      "title": "模型与费用设置",
+      "goal": "理解模型和成本边界",
+      "regions": [
+        "模型",
+        "参数",
+        "配额",
+        "账单来源"
+      ],
+      "interactions": [
+        "修改",
+        "保存",
+        "校验"
+      ],
+      "constraints": [
+        "真实密钥只保留在可信服务端"
+      ],
+      "inputs": [
+        "已授权业务数据或明确标识的样例",
+        "现有品牌与技术栈",
+        "资源许可与目标设备"
+      ],
+      "states": {
+        "default": "展示结构和下一步",
+        "loading": "显示等待范围并保留用户输入",
+        "empty": "说明无数据原因与恢复入口",
+        "error": "说明失败并允许安全重试",
+        "success": "显示可核实结果；演示标为本地预览",
+        "disabled": "解释不可操作原因"
+      },
+      "mobile": {
+        "narrow": "单列重排；必要表格在独立区域横滚；主操作可触达",
+        "wide": "保持信息密度与分组，不无限拉伸正文",
+        "keyboard": "软键盘不遮挡当前输入与提交；需真机核验"
+      },
+      "accessibility": [
+        "语义标题、字段标签与可见焦点",
+        "状态不只依赖颜色；错误关联字段",
+        "支持键盘；对话框焦点管理与返回"
+      ],
+      "acceptance": [
+        "理解模型和成本边界主路径可完成",
+        "真实密钥只保留在可信服务端",
+        "320/390/768/1440 宽度检查",
+        "错误、空态及权限边界检查"
+      ],
+      "skill": "awwwards-ai-agent",
+      "coverage": "runnable_demo",
+      "demo": "/v2/demos/agent/#settings",
+      "production": "not_connected"
+    },
+    {
+      "id": "agent.tool-catalog",
+      "domain": "agent",
+      "title": "工具目录",
+      "goal": "理解工具权限和外部影响",
+      "regions": [
+        "工具说明",
+        "作用域",
+        "输入",
+        "风险"
+      ],
+      "interactions": [
+        "启用",
+        "审批",
+        "撤销"
+      ],
+      "constraints": [
+        "写外部系统需要明确授权"
+      ],
+      "inputs": [
+        "已授权业务数据或明确标识的样例",
+        "现有品牌与技术栈",
+        "资源许可与目标设备"
+      ],
+      "states": {
+        "default": "展示结构和下一步",
+        "loading": "显示等待范围并保留用户输入",
+        "empty": "说明无数据原因与恢复入口",
+        "error": "说明失败并允许安全重试",
+        "success": "显示可核实结果；演示标为本地预览",
+        "disabled": "解释不可操作原因"
+      },
+      "mobile": {
+        "narrow": "单列重排；必要表格在独立区域横滚；主操作可触达",
+        "wide": "保持信息密度与分组，不无限拉伸正文",
+        "keyboard": "软键盘不遮挡当前输入与提交；需真机核验"
+      },
+      "accessibility": [
+        "语义标题、字段标签与可见焦点",
+        "状态不只依赖颜色；错误关联字段",
+        "支持键盘；对话框焦点管理与返回"
+      ],
+      "acceptance": [
+        "理解工具权限和外部影响主路径可完成",
+        "写外部系统需要明确授权",
+        "320/390/768/1440 宽度检查",
+        "错误、空态及权限边界检查"
+      ],
+      "skill": "awwwards-ai-agent",
+      "coverage": "specification",
+      "demo": null,
+      "production": "not_connected"
+    },
+    {
+      "id": "agent.evaluations",
+      "domain": "agent",
+      "title": "评估集",
+      "goal": "比较输出质量和失败模式",
+      "regions": [
+        "样本",
+        "准则",
+        "分数",
+        "版本",
+        "人工复核"
+      ],
+      "interactions": [
+        "运行",
+        "对比",
+        "审阅"
+      ],
+      "constraints": [
+        "不要将合成评估当作生产效果"
+      ],
+      "inputs": [
+        "已授权业务数据或明确标识的样例",
+        "现有品牌与技术栈",
+        "资源许可与目标设备"
+      ],
+      "states": {
+        "default": "展示结构和下一步",
+        "loading": "显示等待范围并保留用户输入",
+        "empty": "说明无数据原因与恢复入口",
+        "error": "说明失败并允许安全重试",
+        "success": "显示可核实结果；演示标为本地预览",
+        "disabled": "解释不可操作原因"
+      },
+      "mobile": {
+        "narrow": "单列重排；必要表格在独立区域横滚；主操作可触达",
+        "wide": "保持信息密度与分组，不无限拉伸正文",
+        "keyboard": "软键盘不遮挡当前输入与提交；需真机核验"
+      },
+      "accessibility": [
+        "语义标题、字段标签与可见焦点",
+        "状态不只依赖颜色；错误关联字段",
+        "支持键盘；对话框焦点管理与返回"
+      ],
+      "acceptance": [
+        "比较输出质量和失败模式主路径可完成",
+        "不要将合成评估当作生产效果",
+        "320/390/768/1440 宽度检查",
+        "错误、空态及权限边界检查"
+      ],
+      "skill": "awwwards-ai-agent",
+      "coverage": "specification",
+      "demo": null,
+      "production": "not_connected"
+    },
+    {
+      "id": "agent.memory",
+      "domain": "agent",
+      "title": "记忆管理",
+      "goal": "审阅并更正持久上下文",
+      "regions": [
+        "来源",
+        "时间",
+        "作用域",
+        "条目"
+      ],
+      "interactions": [
+        "查看",
+        "编辑",
+        "删除确认"
+      ],
+      "constraints": [
+        "模型建议不能成为自动事实"
+      ],
+      "inputs": [
+        "已授权业务数据或明确标识的样例",
+        "现有品牌与技术栈",
+        "资源许可与目标设备"
+      ],
+      "states": {
+        "default": "展示结构和下一步",
+        "loading": "显示等待范围并保留用户输入",
+        "empty": "说明无数据原因与恢复入口",
+        "error": "说明失败并允许安全重试",
+        "success": "显示可核实结果；演示标为本地预览",
+        "disabled": "解释不可操作原因"
+      },
+      "mobile": {
+        "narrow": "单列重排；必要表格在独立区域横滚；主操作可触达",
+        "wide": "保持信息密度与分组，不无限拉伸正文",
+        "keyboard": "软键盘不遮挡当前输入与提交；需真机核验"
+      },
+      "accessibility": [
+        "语义标题、字段标签与可见焦点",
+        "状态不只依赖颜色；错误关联字段",
+        "支持键盘；对话框焦点管理与返回"
+      ],
+      "acceptance": [
+        "审阅并更正持久上下文主路径可完成",
+        "模型建议不能成为自动事实",
+        "320/390/768/1440 宽度检查",
+        "错误、空态及权限边界检查"
+      ],
+      "skill": "awwwards-ai-agent",
+      "coverage": "specification",
+      "demo": null,
+      "production": "not_connected"
+    },
+    {
+      "id": "auth.login",
+      "domain": "auth",
+      "title": "登录",
+      "goal": "安全进入已有账户",
+      "regions": [
+        "身份输入",
+        "验证",
+        "恢复入口",
+        "状态"
+      ],
+      "interactions": [
+        "校验",
+        "提交",
+        "找回"
+      ],
+      "constraints": [
+        "登录成功应来自真实会话"
+      ],
+      "inputs": [
+        "已授权业务数据或明确标识的样例",
+        "现有品牌与技术栈",
+        "资源许可与目标设备"
+      ],
+      "states": {
+        "default": "展示结构和下一步",
+        "loading": "显示等待范围并保留用户输入",
+        "empty": "说明无数据原因与恢复入口",
+        "error": "说明失败并允许安全重试",
+        "success": "显示可核实结果；演示标为本地预览",
+        "disabled": "解释不可操作原因"
+      },
+      "mobile": {
+        "narrow": "单列重排；必要表格在独立区域横滚；主操作可触达",
+        "wide": "保持信息密度与分组，不无限拉伸正文",
+        "keyboard": "软键盘不遮挡当前输入与提交；需真机核验"
+      },
+      "accessibility": [
+        "语义标题、字段标签与可见焦点",
+        "状态不只依赖颜色；错误关联字段",
+        "支持键盘；对话框焦点管理与返回"
+      ],
+      "acceptance": [
+        "安全进入已有账户主路径可完成",
+        "登录成功应来自真实会话",
+        "320/390/768/1440 宽度检查",
+        "错误、空态及权限边界检查"
+      ],
+      "skill": "awwwards-page-library",
+      "coverage": "specification",
+      "demo": null,
+      "production": "not_connected"
+    },
+    {
+      "id": "auth.signup",
+      "domain": "auth",
+      "title": "注册",
+      "goal": "建立账户并理解条款",
+      "regions": [
+        "账户字段",
+        "密码要求",
+        "同意",
+        "结果"
+      ],
+      "interactions": [
+        "校验",
+        "注册",
+        "验证"
+      ],
+      "constraints": [
+        "不要预勾选营销同意"
+      ],
+      "inputs": [
+        "已授权业务数据或明确标识的样例",
+        "现有品牌与技术栈",
+        "资源许可与目标设备"
+      ],
+      "states": {
+        "default": "展示结构和下一步",
+        "loading": "显示等待范围并保留用户输入",
+        "empty": "说明无数据原因与恢复入口",
+        "error": "说明失败并允许安全重试",
+        "success": "显示可核实结果；演示标为本地预览",
+        "disabled": "解释不可操作原因"
+      },
+      "mobile": {
+        "narrow": "单列重排；必要表格在独立区域横滚；主操作可触达",
+        "wide": "保持信息密度与分组，不无限拉伸正文",
+        "keyboard": "软键盘不遮挡当前输入与提交；需真机核验"
+      },
+      "accessibility": [
+        "语义标题、字段标签与可见焦点",
+        "状态不只依赖颜色；错误关联字段",
+        "支持键盘；对话框焦点管理与返回"
+      ],
+      "acceptance": [
+        "建立账户并理解条款主路径可完成",
+        "不要预勾选营销同意",
+        "320/390/768/1440 宽度检查",
+        "错误、空态及权限边界检查"
+      ],
+      "skill": "awwwards-page-library",
+      "coverage": "specification",
+      "demo": null,
+      "production": "not_connected"
+    },
+    {
+      "id": "auth.reset-password",
+      "domain": "auth",
+      "title": "重置密码",
+      "goal": "恢复访问",
+      "regions": [
+        "身份确认",
+        "令牌",
+        "密码规则",
+        "结果"
+      ],
+      "interactions": [
+        "请求",
+        "设置",
+        "重试"
+      ],
+      "constraints": [
+        "避免泄漏账户是否存在"
+      ],
+      "inputs": [
+        "已授权业务数据或明确标识的样例",
+        "现有品牌与技术栈",
+        "资源许可与目标设备"
+      ],
+      "states": {
+        "default": "展示结构和下一步",
+        "loading": "显示等待范围并保留用户输入",
+        "empty": "说明无数据原因与恢复入口",
+        "error": "说明失败并允许安全重试",
+        "success": "显示可核实结果；演示标为本地预览",
+        "disabled": "解释不可操作原因"
+      },
+      "mobile": {
+        "narrow": "单列重排；必要表格在独立区域横滚；主操作可触达",
+        "wide": "保持信息密度与分组，不无限拉伸正文",
+        "keyboard": "软键盘不遮挡当前输入与提交；需真机核验"
+      },
+      "accessibility": [
+        "语义标题、字段标签与可见焦点",
+        "状态不只依赖颜色；错误关联字段",
+        "支持键盘；对话框焦点管理与返回"
+      ],
+      "acceptance": [
+        "恢复访问主路径可完成",
+        "避免泄漏账户是否存在",
+        "320/390/768/1440 宽度检查",
+        "错误、空态及权限边界检查"
+      ],
+      "skill": "awwwards-page-library",
+      "coverage": "specification",
+      "demo": null,
+      "production": "not_connected"
+    },
+    {
+      "id": "auth.mfa",
+      "domain": "auth",
+      "title": "双因素认证",
+      "goal": "完成额外验证",
+      "regions": [
+        "验证码",
+        "时效",
+        "备用方式",
+        "恢复"
+      ],
+      "interactions": [
+        "输入",
+        "重发",
+        "切换"
+      ],
+      "constraints": [
+        "限制重试与验证码暴力破解"
+      ],
+      "inputs": [
+        "已授权业务数据或明确标识的样例",
+        "现有品牌与技术栈",
+        "资源许可与目标设备"
+      ],
+      "states": {
+        "default": "展示结构和下一步",
+        "loading": "显示等待范围并保留用户输入",
+        "empty": "说明无数据原因与恢复入口",
+        "error": "说明失败并允许安全重试",
+        "success": "显示可核实结果；演示标为本地预览",
+        "disabled": "解释不可操作原因"
+      },
+      "mobile": {
+        "narrow": "单列重排；必要表格在独立区域横滚；主操作可触达",
+        "wide": "保持信息密度与分组，不无限拉伸正文",
+        "keyboard": "软键盘不遮挡当前输入与提交；需真机核验"
+      },
+      "accessibility": [
+        "语义标题、字段标签与可见焦点",
+        "状态不只依赖颜色；错误关联字段",
+        "支持键盘；对话框焦点管理与返回"
+      ],
+      "acceptance": [
+        "完成额外验证主路径可完成",
+        "限制重试与验证码暴力破解",
+        "320/390/768/1440 宽度检查",
+        "错误、空态及权限边界检查"
+      ],
+      "skill": "awwwards-page-library",
+      "coverage": "specification",
+      "demo": null,
+      "production": "not_connected"
+    },
+    {
+      "id": "auth.invite",
+      "domain": "auth",
+      "title": "邀请接受",
+      "goal": "确认加入组织及角色",
+      "regions": [
+        "邀请来源",
+        "组织",
+        "角色",
+        "有效期"
+      ],
+      "interactions": [
+        "接受",
+        "拒绝",
+        "登录"
+      ],
+      "constraints": [
+        "拒绝过期或不匹配邀请"
+      ],
+      "inputs": [
+        "已授权业务数据或明确标识的样例",
+        "现有品牌与技术栈",
+        "资源许可与目标设备"
+      ],
+      "states": {
+        "default": "展示结构和下一步",
+        "loading": "显示等待范围并保留用户输入",
+        "empty": "说明无数据原因与恢复入口",
+        "error": "说明失败并允许安全重试",
+        "success": "显示可核实结果；演示标为本地预览",
+        "disabled": "解释不可操作原因"
+      },
+      "mobile": {
+        "narrow": "单列重排；必要表格在独立区域横滚；主操作可触达",
+        "wide": "保持信息密度与分组，不无限拉伸正文",
+        "keyboard": "软键盘不遮挡当前输入与提交；需真机核验"
+      },
+      "accessibility": [
+        "语义标题、字段标签与可见焦点",
+        "状态不只依赖颜色；错误关联字段",
+        "支持键盘；对话框焦点管理与返回"
+      ],
+      "acceptance": [
+        "确认加入组织及角色主路径可完成",
+        "拒绝过期或不匹配邀请",
+        "320/390/768/1440 宽度检查",
+        "错误、空态及权限边界检查"
+      ],
+      "skill": "awwwards-page-library",
+      "coverage": "specification",
+      "demo": null,
+      "production": "not_connected"
+    },
+    {
+      "id": "auth.access-denied",
+      "domain": "auth",
+      "title": "访问受限",
+      "goal": "理解缺少的权限",
+      "regions": [
+        "上下文",
+        "原因",
+        "申请渠道"
+      ],
+      "interactions": [
+        "返回",
+        "申请访问"
+      ],
+      "constraints": [
+        "不泄漏受保护资源详情"
+      ],
+      "inputs": [
+        "已授权业务数据或明确标识的样例",
+        "现有品牌与技术栈",
+        "资源许可与目标设备"
+      ],
+      "states": {
+        "default": "展示结构和下一步",
+        "loading": "显示等待范围并保留用户输入",
+        "empty": "说明无数据原因与恢复入口",
+        "error": "说明失败并允许安全重试",
+        "success": "显示可核实结果；演示标为本地预览",
+        "disabled": "解释不可操作原因"
+      },
+      "mobile": {
+        "narrow": "单列重排；必要表格在独立区域横滚；主操作可触达",
+        "wide": "保持信息密度与分组，不无限拉伸正文",
+        "keyboard": "软键盘不遮挡当前输入与提交；需真机核验"
+      },
+      "accessibility": [
+        "语义标题、字段标签与可见焦点",
+        "状态不只依赖颜色；错误关联字段",
+        "支持键盘；对话框焦点管理与返回"
+      ],
+      "acceptance": [
+        "理解缺少的权限主路径可完成",
+        "不泄漏受保护资源详情",
+        "320/390/768/1440 宽度检查",
+        "错误、空态及权限边界检查"
+      ],
+      "skill": "awwwards-page-library",
+      "coverage": "specification",
+      "demo": null,
+      "production": "not_connected"
+    },
+    {
+      "id": "content.article-list",
+      "domain": "content",
+      "title": "文章列表",
+      "goal": "找到需要阅读的内容",
+      "regions": [
+        "栏目",
+        "标题",
+        "作者",
+        "日期",
+        "摘要"
+      ],
+      "interactions": [
+        "搜索",
+        "分类",
+        "分页"
+      ],
+      "constraints": [
+        "区分广告与编辑内容"
+      ],
+      "inputs": [
+        "已授权业务数据或明确标识的样例",
+        "现有品牌与技术栈",
+        "资源许可与目标设备"
+      ],
+      "states": {
+        "default": "展示结构和下一步",
+        "loading": "显示等待范围并保留用户输入",
+        "empty": "说明无数据原因与恢复入口",
+        "error": "说明失败并允许安全重试",
+        "success": "显示可核实结果；演示标为本地预览",
+        "disabled": "解释不可操作原因"
+      },
+      "mobile": {
+        "narrow": "单列重排；必要表格在独立区域横滚；主操作可触达",
+        "wide": "保持信息密度与分组，不无限拉伸正文",
+        "keyboard": "软键盘不遮挡当前输入与提交；需真机核验"
+      },
+      "accessibility": [
+        "语义标题、字段标签与可见焦点",
+        "状态不只依赖颜色；错误关联字段",
+        "支持键盘；对话框焦点管理与返回"
+      ],
+      "acceptance": [
+        "找到需要阅读的内容主路径可完成",
+        "区分广告与编辑内容",
+        "320/390/768/1440 宽度检查",
+        "错误、空态及权限边界检查"
+      ],
+      "skill": "awwwards-page-library",
+      "coverage": "specification",
+      "demo": null,
+      "production": "not_connected"
+    },
+    {
+      "id": "content.article",
+      "domain": "content",
+      "title": "文章详情",
+      "goal": "持续阅读并理解出处",
+      "regions": [
+        "正文",
+        "作者",
+        "日期",
+        "目录",
+        "引用"
+      ],
+      "interactions": [
+        "目录",
+        "引用",
+        "相关阅读"
+      ],
+      "constraints": [
+        "署名和转载许可明确"
+      ],
+      "inputs": [
+        "已授权业务数据或明确标识的样例",
+        "现有品牌与技术栈",
+        "资源许可与目标设备"
+      ],
+      "states": {
+        "default": "展示结构和下一步",
+        "loading": "显示等待范围并保留用户输入",
+        "empty": "说明无数据原因与恢复入口",
+        "error": "说明失败并允许安全重试",
+        "success": "显示可核实结果；演示标为本地预览",
+        "disabled": "解释不可操作原因"
+      },
+      "mobile": {
+        "narrow": "单列重排；必要表格在独立区域横滚；主操作可触达",
+        "wide": "保持信息密度与分组，不无限拉伸正文",
+        "keyboard": "软键盘不遮挡当前输入与提交；需真机核验"
+      },
+      "accessibility": [
+        "语义标题、字段标签与可见焦点",
+        "状态不只依赖颜色；错误关联字段",
+        "支持键盘；对话框焦点管理与返回"
+      ],
+      "acceptance": [
+        "持续阅读并理解出处主路径可完成",
+        "署名和转载许可明确",
+        "320/390/768/1440 宽度检查",
+        "错误、空态及权限边界检查"
+      ],
+      "skill": "awwwards-page-library",
+      "coverage": "specification",
+      "demo": null,
+      "production": "not_connected"
+    },
+    {
+      "id": "content.search",
+      "domain": "content",
+      "title": "全站搜索",
+      "goal": "找到匹配资料",
+      "regions": [
+        "关键词",
+        "结果",
+        "排序",
+        "空态"
+      ],
+      "interactions": [
+        "搜索",
+        "过滤",
+        "分页"
+      ],
+      "constraints": [
+        "空结果提供修正方式"
+      ],
+      "inputs": [
+        "已授权业务数据或明确标识的样例",
+        "现有品牌与技术栈",
+        "资源许可与目标设备"
+      ],
+      "states": {
+        "default": "展示结构和下一步",
+        "loading": "显示等待范围并保留用户输入",
+        "empty": "说明无数据原因与恢复入口",
+        "error": "说明失败并允许安全重试",
+        "success": "显示可核实结果；演示标为本地预览",
+        "disabled": "解释不可操作原因"
+      },
+      "mobile": {
+        "narrow": "单列重排；必要表格在独立区域横滚；主操作可触达",
+        "wide": "保持信息密度与分组，不无限拉伸正文",
+        "keyboard": "软键盘不遮挡当前输入与提交；需真机核验"
+      },
+      "accessibility": [
+        "语义标题、字段标签与可见焦点",
+        "状态不只依赖颜色；错误关联字段",
+        "支持键盘；对话框焦点管理与返回"
+      ],
+      "acceptance": [
+        "找到匹配资料主路径可完成",
+        "空结果提供修正方式",
+        "320/390/768/1440 宽度检查",
+        "错误、空态及权限边界检查"
+      ],
+      "skill": "awwwards-page-library",
+      "coverage": "specification",
+      "demo": null,
+      "production": "not_connected"
+    },
+    {
+      "id": "content.docs",
+      "domain": "content",
+      "title": "帮助文档",
+      "goal": "完成具体使用任务",
+      "regions": [
+        "侧栏",
+        "步骤",
+        "代码",
+        "版本",
+        "更新时间"
+      ],
+      "interactions": [
+        "搜索",
+        "复制",
+        "章节导航"
+      ],
+      "constraints": [
+        "文档应对应真实版本"
+      ],
+      "inputs": [
+        "已授权业务数据或明确标识的样例",
+        "现有品牌与技术栈",
+        "资源许可与目标设备"
+      ],
+      "states": {
+        "default": "展示结构和下一步",
+        "loading": "显示等待范围并保留用户输入",
+        "empty": "说明无数据原因与恢复入口",
+        "error": "说明失败并允许安全重试",
+        "success": "显示可核实结果；演示标为本地预览",
+        "disabled": "解释不可操作原因"
+      },
+      "mobile": {
+        "narrow": "单列重排；必要表格在独立区域横滚；主操作可触达",
+        "wide": "保持信息密度与分组，不无限拉伸正文",
+        "keyboard": "软键盘不遮挡当前输入与提交；需真机核验"
+      },
+      "accessibility": [
+        "语义标题、字段标签与可见焦点",
+        "状态不只依赖颜色；错误关联字段",
+        "支持键盘；对话框焦点管理与返回"
+      ],
+      "acceptance": [
+        "完成具体使用任务主路径可完成",
+        "文档应对应真实版本",
+        "320/390/768/1440 宽度检查",
+        "错误、空态及权限边界检查"
+      ],
+      "skill": "awwwards-page-library",
+      "coverage": "specification",
+      "demo": null,
+      "production": "not_connected"
+    },
+    {
+      "id": "content.video",
+      "domain": "content",
+      "title": "媒体播放",
+      "goal": "按偏好观看或阅读内容",
+      "regions": [
+        "播放器",
+        "字幕",
+        "文本稿",
+        "时长"
+      ],
+      "interactions": [
+        "播放",
+        "暂停",
+        "音量",
+        "字幕"
+      ],
+      "constraints": [
+        "不自动播放有声媒体"
+      ],
+      "inputs": [
+        "已授权业务数据或明确标识的样例",
+        "现有品牌与技术栈",
+        "资源许可与目标设备"
+      ],
+      "states": {
+        "default": "展示结构和下一步",
+        "loading": "显示等待范围并保留用户输入",
+        "empty": "说明无数据原因与恢复入口",
+        "error": "说明失败并允许安全重试",
+        "success": "显示可核实结果；演示标为本地预览",
+        "disabled": "解释不可操作原因"
+      },
+      "mobile": {
+        "narrow": "单列重排；必要表格在独立区域横滚；主操作可触达",
+        "wide": "保持信息密度与分组，不无限拉伸正文",
+        "keyboard": "软键盘不遮挡当前输入与提交；需真机核验"
+      },
+      "accessibility": [
+        "语义标题、字段标签与可见焦点",
+        "状态不只依赖颜色；错误关联字段",
+        "支持键盘；对话框焦点管理与返回"
+      ],
+      "acceptance": [
+        "按偏好观看或阅读内容主路径可完成",
+        "不自动播放有声媒体",
+        "320/390/768/1440 宽度检查",
+        "错误、空态及权限边界检查"
+      ],
+      "skill": "awwwards-page-library",
+      "coverage": "specification",
+      "demo": null,
+      "production": "not_connected"
+    },
+    {
+      "id": "content.immersive",
+      "domain": "content",
+      "title": "沉浸叙事",
+      "goal": "在不丢失内容的情况下探索",
+      "regions": [
+        "语义正文",
+        "场景",
+        "导航",
+        "静态回退"
+      ],
+      "interactions": [
+        "滚动",
+        "章节",
+        "暂停",
+        "退出"
+      ],
+      "constraints": [
+        "WebGL 不能阻断核心内容"
+      ],
+      "inputs": [
+        "已授权业务数据或明确标识的样例",
+        "现有品牌与技术栈",
+        "资源许可与目标设备"
+      ],
+      "states": {
+        "default": "展示结构和下一步",
+        "loading": "显示等待范围并保留用户输入",
+        "empty": "说明无数据原因与恢复入口",
+        "error": "说明失败并允许安全重试",
+        "success": "显示可核实结果；演示标为本地预览",
+        "disabled": "解释不可操作原因"
+      },
+      "mobile": {
+        "narrow": "单列重排；必要表格在独立区域横滚；主操作可触达",
+        "wide": "保持信息密度与分组，不无限拉伸正文",
+        "keyboard": "软键盘不遮挡当前输入与提交；需真机核验"
+      },
+      "accessibility": [
+        "语义标题、字段标签与可见焦点",
+        "状态不只依赖颜色；错误关联字段",
+        "支持键盘；对话框焦点管理与返回"
+      ],
+      "acceptance": [
+        "在不丢失内容的情况下探索主路径可完成",
+        "WebGL 不能阻断核心内容",
+        "320/390/768/1440 宽度检查",
+        "错误、空态及权限边界检查"
+      ],
+      "skill": "awwwards-page-library",
+      "coverage": "specification",
+      "demo": null,
+      "production": "not_connected"
+    },
+    {
+      "id": "community.feed",
+      "domain": "community",
+      "title": "动态流",
+      "goal": "浏览与相关互动",
+      "regions": [
+        "动态",
+        "作者",
+        "时间",
+        "过滤",
+        "加载"
+      ],
+      "interactions": [
+        "筛选",
+        "回复",
+        "举报"
+      ],
+      "constraints": [
+        "无限滚动保留可访问分页"
+      ],
+      "inputs": [
+        "已授权业务数据或明确标识的样例",
+        "现有品牌与技术栈",
+        "资源许可与目标设备"
+      ],
+      "states": {
+        "default": "展示结构和下一步",
+        "loading": "显示等待范围并保留用户输入",
+        "empty": "说明无数据原因与恢复入口",
+        "error": "说明失败并允许安全重试",
+        "success": "显示可核实结果；演示标为本地预览",
+        "disabled": "解释不可操作原因"
+      },
+      "mobile": {
+        "narrow": "单列重排；必要表格在独立区域横滚；主操作可触达",
+        "wide": "保持信息密度与分组，不无限拉伸正文",
+        "keyboard": "软键盘不遮挡当前输入与提交；需真机核验"
+      },
+      "accessibility": [
+        "语义标题、字段标签与可见焦点",
+        "状态不只依赖颜色；错误关联字段",
+        "支持键盘；对话框焦点管理与返回"
+      ],
+      "acceptance": [
+        "浏览与相关互动主路径可完成",
+        "无限滚动保留可访问分页",
+        "320/390/768/1440 宽度检查",
+        "错误、空态及权限边界检查"
+      ],
+      "skill": "awwwards-page-library",
+      "coverage": "specification",
+      "demo": null,
+      "production": "not_connected"
+    },
+    {
+      "id": "community.profile",
+      "domain": "community",
+      "title": "个人资料",
+      "goal": "理解用户公开身份",
+      "regions": [
+        "简介",
+        "贡献",
+        "隐私",
+        "关系"
+      ],
+      "interactions": [
+        "关注",
+        "联系",
+        "举报"
+      ],
+      "constraints": [
+        "公开字段与私有字段分离"
+      ],
+      "inputs": [
+        "已授权业务数据或明确标识的样例",
+        "现有品牌与技术栈",
+        "资源许可与目标设备"
+      ],
+      "states": {
+        "default": "展示结构和下一步",
+        "loading": "显示等待范围并保留用户输入",
+        "empty": "说明无数据原因与恢复入口",
+        "error": "说明失败并允许安全重试",
+        "success": "显示可核实结果；演示标为本地预览",
+        "disabled": "解释不可操作原因"
+      },
+      "mobile": {
+        "narrow": "单列重排；必要表格在独立区域横滚；主操作可触达",
+        "wide": "保持信息密度与分组，不无限拉伸正文",
+        "keyboard": "软键盘不遮挡当前输入与提交；需真机核验"
+      },
+      "accessibility": [
+        "语义标题、字段标签与可见焦点",
+        "状态不只依赖颜色；错误关联字段",
+        "支持键盘；对话框焦点管理与返回"
+      ],
+      "acceptance": [
+        "理解用户公开身份主路径可完成",
+        "公开字段与私有字段分离",
+        "320/390/768/1440 宽度检查",
+        "错误、空态及权限边界检查"
+      ],
+      "skill": "awwwards-page-library",
+      "coverage": "specification",
+      "demo": null,
+      "production": "not_connected"
+    },
+    {
+      "id": "community.discussion",
+      "domain": "community",
+      "title": "讨论详情",
+      "goal": "参与有上下文的讨论",
+      "regions": [
+        "主题",
+        "回复",
+        "引用",
+        "治理入口"
+      ],
+      "interactions": [
+        "回复",
+        "排序",
+        "举报"
+      ],
+      "constraints": [
+        "处理用户输入的脚本注入"
+      ],
+      "inputs": [
+        "已授权业务数据或明确标识的样例",
+        "现有品牌与技术栈",
+        "资源许可与目标设备"
+      ],
+      "states": {
+        "default": "展示结构和下一步",
+        "loading": "显示等待范围并保留用户输入",
+        "empty": "说明无数据原因与恢复入口",
+        "error": "说明失败并允许安全重试",
+        "success": "显示可核实结果；演示标为本地预览",
+        "disabled": "解释不可操作原因"
+      },
+      "mobile": {
+        "narrow": "单列重排；必要表格在独立区域横滚；主操作可触达",
+        "wide": "保持信息密度与分组，不无限拉伸正文",
+        "keyboard": "软键盘不遮挡当前输入与提交；需真机核验"
+      },
+      "accessibility": [
+        "语义标题、字段标签与可见焦点",
+        "状态不只依赖颜色；错误关联字段",
+        "支持键盘；对话框焦点管理与返回"
+      ],
+      "acceptance": [
+        "参与有上下文的讨论主路径可完成",
+        "处理用户输入的脚本注入",
+        "320/390/768/1440 宽度检查",
+        "错误、空态及权限边界检查"
+      ],
+      "skill": "awwwards-page-library",
+      "coverage": "specification",
+      "demo": null,
+      "production": "not_connected"
+    },
+    {
+      "id": "community.messages",
+      "domain": "community",
+      "title": "私信",
+      "goal": "安全交流并管理会话",
+      "regions": [
+        "会话列表",
+        "消息",
+        "发送状态",
+        "屏蔽"
+      ],
+      "interactions": [
+        "发送",
+        "重试",
+        "屏蔽"
+      ],
+      "constraints": [
+        "明确发送成功与本地排队"
+      ],
+      "inputs": [
+        "已授权业务数据或明确标识的样例",
+        "现有品牌与技术栈",
+        "资源许可与目标设备"
+      ],
+      "states": {
+        "default": "展示结构和下一步",
+        "loading": "显示等待范围并保留用户输入",
+        "empty": "说明无数据原因与恢复入口",
+        "error": "说明失败并允许安全重试",
+        "success": "显示可核实结果；演示标为本地预览",
+        "disabled": "解释不可操作原因"
+      },
+      "mobile": {
+        "narrow": "单列重排；必要表格在独立区域横滚；主操作可触达",
+        "wide": "保持信息密度与分组，不无限拉伸正文",
+        "keyboard": "软键盘不遮挡当前输入与提交；需真机核验"
+      },
+      "accessibility": [
+        "语义标题、字段标签与可见焦点",
+        "状态不只依赖颜色；错误关联字段",
+        "支持键盘；对话框焦点管理与返回"
+      ],
+      "acceptance": [
+        "安全交流并管理会话主路径可完成",
+        "明确发送成功与本地排队",
+        "320/390/768/1440 宽度检查",
+        "错误、空态及权限边界检查"
+      ],
+      "skill": "awwwards-page-library",
+      "coverage": "specification",
+      "demo": null,
+      "production": "not_connected"
+    },
+    {
+      "id": "community.notifications",
+      "domain": "community",
+      "title": "通知中心",
+      "goal": "处理需要关注的事件",
+      "regions": [
+        "事件",
+        "时间",
+        "已读状态",
+        "目标"
+      ],
+      "interactions": [
+        "标为已读",
+        "筛选",
+        "设置"
+      ],
+      "constraints": [
+        "不凭展示状态断言外部工作完成"
+      ],
+      "inputs": [
+        "已授权业务数据或明确标识的样例",
+        "现有品牌与技术栈",
+        "资源许可与目标设备"
+      ],
+      "states": {
+        "default": "展示结构和下一步",
+        "loading": "显示等待范围并保留用户输入",
+        "empty": "说明无数据原因与恢复入口",
+        "error": "说明失败并允许安全重试",
+        "success": "显示可核实结果；演示标为本地预览",
+        "disabled": "解释不可操作原因"
+      },
+      "mobile": {
+        "narrow": "单列重排；必要表格在独立区域横滚；主操作可触达",
+        "wide": "保持信息密度与分组，不无限拉伸正文",
+        "keyboard": "软键盘不遮挡当前输入与提交；需真机核验"
+      },
+      "accessibility": [
+        "语义标题、字段标签与可见焦点",
+        "状态不只依赖颜色；错误关联字段",
+        "支持键盘；对话框焦点管理与返回"
+      ],
+      "acceptance": [
+        "处理需要关注的事件主路径可完成",
+        "不凭展示状态断言外部工作完成",
+        "320/390/768/1440 宽度检查",
+        "错误、空态及权限边界检查"
+      ],
+      "skill": "awwwards-page-library",
+      "coverage": "specification",
+      "demo": null,
+      "production": "not_connected"
+    },
+    {
+      "id": "education.courses",
+      "domain": "education",
+      "title": "课程目录",
+      "goal": "选择适合的课程",
+      "regions": [
+        "课程",
+        "难度",
+        "时长",
+        "讲师",
+        "价格"
+      ],
+      "interactions": [
+        "筛选",
+        "搜索",
+        "详情"
+      ],
+      "constraints": [
+        "课程效果主张需要依据"
+      ],
+      "inputs": [
+        "已授权业务数据或明确标识的样例",
+        "现有品牌与技术栈",
+        "资源许可与目标设备"
+      ],
+      "states": {
+        "default": "展示结构和下一步",
+        "loading": "显示等待范围并保留用户输入",
+        "empty": "说明无数据原因与恢复入口",
+        "error": "说明失败并允许安全重试",
+        "success": "显示可核实结果；演示标为本地预览",
+        "disabled": "解释不可操作原因"
+      },
+      "mobile": {
+        "narrow": "单列重排；必要表格在独立区域横滚；主操作可触达",
+        "wide": "保持信息密度与分组，不无限拉伸正文",
+        "keyboard": "软键盘不遮挡当前输入与提交；需真机核验"
+      },
+      "accessibility": [
+        "语义标题、字段标签与可见焦点",
+        "状态不只依赖颜色；错误关联字段",
+        "支持键盘；对话框焦点管理与返回"
+      ],
+      "acceptance": [
+        "选择适合的课程主路径可完成",
+        "课程效果主张需要依据",
+        "320/390/768/1440 宽度检查",
+        "错误、空态及权限边界检查"
+      ],
+      "skill": "awwwards-page-library",
+      "coverage": "specification",
+      "demo": null,
+      "production": "not_connected"
+    },
+    {
+      "id": "education.lesson",
+      "domain": "education",
+      "title": "课程学习",
+      "goal": "持续完成学习单元",
+      "regions": [
+        "大纲",
+        "内容",
+        "进度",
+        "资源",
+        "笔记"
+      ],
+      "interactions": [
+        "播放",
+        "下一节",
+        "记笔记"
+      ],
+      "constraints": [
+        "进度持久化边界明确"
+      ],
+      "inputs": [
+        "已授权业务数据或明确标识的样例",
+        "现有品牌与技术栈",
+        "资源许可与目标设备"
+      ],
+      "states": {
+        "default": "展示结构和下一步",
+        "loading": "显示等待范围并保留用户输入",
+        "empty": "说明无数据原因与恢复入口",
+        "error": "说明失败并允许安全重试",
+        "success": "显示可核实结果；演示标为本地预览",
+        "disabled": "解释不可操作原因"
+      },
+      "mobile": {
+        "narrow": "单列重排；必要表格在独立区域横滚；主操作可触达",
+        "wide": "保持信息密度与分组，不无限拉伸正文",
+        "keyboard": "软键盘不遮挡当前输入与提交；需真机核验"
+      },
+      "accessibility": [
+        "语义标题、字段标签与可见焦点",
+        "状态不只依赖颜色；错误关联字段",
+        "支持键盘；对话框焦点管理与返回"
+      ],
+      "acceptance": [
+        "持续完成学习单元主路径可完成",
+        "进度持久化边界明确",
+        "320/390/768/1440 宽度检查",
+        "错误、空态及权限边界检查"
+      ],
+      "skill": "awwwards-page-library",
+      "coverage": "specification",
+      "demo": null,
+      "production": "not_connected"
+    },
+    {
+      "id": "education.assessment",
+      "domain": "education",
+      "title": "测评",
+      "goal": "理解并提交答题结果",
+      "regions": [
+        "题目",
+        "选项",
+        "进度",
+        "提交摘要"
+      ],
+      "interactions": [
+        "作答",
+        "复核",
+        "提交"
+      ],
+      "constraints": [
+        "支持键盘并避免仅颜色反馈"
+      ],
+      "inputs": [
+        "已授权业务数据或明确标识的样例",
+        "现有品牌与技术栈",
+        "资源许可与目标设备"
+      ],
+      "states": {
+        "default": "展示结构和下一步",
+        "loading": "显示等待范围并保留用户输入",
+        "empty": "说明无数据原因与恢复入口",
+        "error": "说明失败并允许安全重试",
+        "success": "显示可核实结果；演示标为本地预览",
+        "disabled": "解释不可操作原因"
+      },
+      "mobile": {
+        "narrow": "单列重排；必要表格在独立区域横滚；主操作可触达",
+        "wide": "保持信息密度与分组，不无限拉伸正文",
+        "keyboard": "软键盘不遮挡当前输入与提交；需真机核验"
+      },
+      "accessibility": [
+        "语义标题、字段标签与可见焦点",
+        "状态不只依赖颜色；错误关联字段",
+        "支持键盘；对话框焦点管理与返回"
+      ],
+      "acceptance": [
+        "理解并提交答题结果主路径可完成",
+        "支持键盘并避免仅颜色反馈",
+        "320/390/768/1440 宽度检查",
+        "错误、空态及权限边界检查"
+      ],
+      "skill": "awwwards-page-library",
+      "coverage": "specification",
+      "demo": null,
+      "production": "not_connected"
+    },
+    {
+      "id": "education.progress",
+      "domain": "education",
+      "title": "学习进度",
+      "goal": "理解已学内容和下一步",
+      "regions": [
+        "完成项",
+        "目标",
+        "建议",
+        "时间"
+      ],
+      "interactions": [
+        "筛选",
+        "继续学习"
+      ],
+      "constraints": [
+        "不从停留时长推断学习效果"
+      ],
+      "inputs": [
+        "已授权业务数据或明确标识的样例",
+        "现有品牌与技术栈",
+        "资源许可与目标设备"
+      ],
+      "states": {
+        "default": "展示结构和下一步",
+        "loading": "显示等待范围并保留用户输入",
+        "empty": "说明无数据原因与恢复入口",
+        "error": "说明失败并允许安全重试",
+        "success": "显示可核实结果；演示标为本地预览",
+        "disabled": "解释不可操作原因"
+      },
+      "mobile": {
+        "narrow": "单列重排；必要表格在独立区域横滚；主操作可触达",
+        "wide": "保持信息密度与分组，不无限拉伸正文",
+        "keyboard": "软键盘不遮挡当前输入与提交；需真机核验"
+      },
+      "accessibility": [
+        "语义标题、字段标签与可见焦点",
+        "状态不只依赖颜色；错误关联字段",
+        "支持键盘；对话框焦点管理与返回"
+      ],
+      "acceptance": [
+        "理解已学内容和下一步主路径可完成",
+        "不从停留时长推断学习效果",
+        "320/390/768/1440 宽度检查",
+        "错误、空态及权限边界检查"
+      ],
+      "skill": "awwwards-page-library",
+      "coverage": "specification",
+      "demo": null,
+      "production": "not_connected"
+    },
+    {
+      "id": "education.certificate",
+      "domain": "education",
+      "title": "证书",
+      "goal": "核验证书的颁发依据",
+      "regions": [
+        "主体",
+        "课程",
+        "日期",
+        "核验标识"
+      ],
+      "interactions": [
+        "核验",
+        "下载"
+      ],
+      "constraints": [
+        "不得伪造资格或认证"
+      ],
+      "inputs": [
+        "已授权业务数据或明确标识的样例",
+        "现有品牌与技术栈",
+        "资源许可与目标设备"
+      ],
+      "states": {
+        "default": "展示结构和下一步",
+        "loading": "显示等待范围并保留用户输入",
+        "empty": "说明无数据原因与恢复入口",
+        "error": "说明失败并允许安全重试",
+        "success": "显示可核实结果；演示标为本地预览",
+        "disabled": "解释不可操作原因"
+      },
+      "mobile": {
+        "narrow": "单列重排；必要表格在独立区域横滚；主操作可触达",
+        "wide": "保持信息密度与分组，不无限拉伸正文",
+        "keyboard": "软键盘不遮挡当前输入与提交；需真机核验"
+      },
+      "accessibility": [
+        "语义标题、字段标签与可见焦点",
+        "状态不只依赖颜色；错误关联字段",
+        "支持键盘；对话框焦点管理与返回"
+      ],
+      "acceptance": [
+        "核验证书的颁发依据主路径可完成",
+        "不得伪造资格或认证",
+        "320/390/768/1440 宽度检查",
+        "错误、空态及权限边界检查"
+      ],
+      "skill": "awwwards-page-library",
+      "coverage": "specification",
+      "demo": null,
+      "production": "not_connected"
+    },
+    {
+      "id": "booking.availability",
+      "domain": "booking",
+      "title": "可预约日历",
+      "goal": "找到可用时间",
+      "regions": [
+        "时区",
+        "日期",
+        "时段",
+        "时长",
+        "状态"
+      ],
+      "interactions": [
+        "切月",
+        "选时段",
+        "改时区"
+      ],
+      "constraints": [
+        "确认前重新校验可用性"
+      ],
+      "inputs": [
+        "已授权业务数据或明确标识的样例",
+        "现有品牌与技术栈",
+        "资源许可与目标设备"
+      ],
+      "states": {
+        "default": "展示结构和下一步",
+        "loading": "显示等待范围并保留用户输入",
+        "empty": "说明无数据原因与恢复入口",
+        "error": "说明失败并允许安全重试",
+        "success": "显示可核实结果；演示标为本地预览",
+        "disabled": "解释不可操作原因"
+      },
+      "mobile": {
+        "narrow": "单列重排；必要表格在独立区域横滚；主操作可触达",
+        "wide": "保持信息密度与分组，不无限拉伸正文",
+        "keyboard": "软键盘不遮挡当前输入与提交；需真机核验"
+      },
+      "accessibility": [
+        "语义标题、字段标签与可见焦点",
+        "状态不只依赖颜色；错误关联字段",
+        "支持键盘；对话框焦点管理与返回"
+      ],
+      "acceptance": [
+        "找到可用时间主路径可完成",
+        "确认前重新校验可用性",
+        "320/390/768/1440 宽度检查",
+        "错误、空态及权限边界检查"
+      ],
+      "skill": "awwwards-page-library",
+      "coverage": "specification",
+      "demo": null,
+      "production": "not_connected"
+    },
+    {
+      "id": "booking.booking",
+      "domain": "booking",
+      "title": "预约确认",
+      "goal": "审阅并确认预约信息",
+      "regions": [
+        "服务",
+        "时间",
+        "地点",
+        "费用",
+        "取消规则"
+      ],
+      "interactions": [
+        "编辑",
+        "提交",
+        "二次确认"
+      ],
+      "constraints": [
+        "演示不能假装占用真实时段"
+      ],
+      "inputs": [
+        "已授权业务数据或明确标识的样例",
+        "现有品牌与技术栈",
+        "资源许可与目标设备"
+      ],
+      "states": {
+        "default": "展示结构和下一步",
+        "loading": "显示等待范围并保留用户输入",
+        "empty": "说明无数据原因与恢复入口",
+        "error": "说明失败并允许安全重试",
+        "success": "显示可核实结果；演示标为本地预览",
+        "disabled": "解释不可操作原因"
+      },
+      "mobile": {
+        "narrow": "单列重排；必要表格在独立区域横滚；主操作可触达",
+        "wide": "保持信息密度与分组，不无限拉伸正文",
+        "keyboard": "软键盘不遮挡当前输入与提交；需真机核验"
+      },
+      "accessibility": [
+        "语义标题、字段标签与可见焦点",
+        "状态不只依赖颜色；错误关联字段",
+        "支持键盘；对话框焦点管理与返回"
+      ],
+      "acceptance": [
+        "审阅并确认预约信息主路径可完成",
+        "演示不能假装占用真实时段",
+        "320/390/768/1440 宽度检查",
+        "错误、空态及权限边界检查"
+      ],
+      "skill": "awwwards-page-library",
+      "coverage": "specification",
+      "demo": null,
+      "production": "not_connected"
+    },
+    {
+      "id": "booking.itinerary",
+      "domain": "booking",
+      "title": "行程详情",
+      "goal": "了解已预约安排",
+      "regions": [
+        "时间",
+        "地点",
+        "参加人",
+        "材料",
+        "状态"
+      ],
+      "interactions": [
+        "改期",
+        "取消",
+        "联系"
+      ],
+      "constraints": [
+        "外部变更需明确授权"
+      ],
+      "inputs": [
+        "已授权业务数据或明确标识的样例",
+        "现有品牌与技术栈",
+        "资源许可与目标设备"
+      ],
+      "states": {
+        "default": "展示结构和下一步",
+        "loading": "显示等待范围并保留用户输入",
+        "empty": "说明无数据原因与恢复入口",
+        "error": "说明失败并允许安全重试",
+        "success": "显示可核实结果；演示标为本地预览",
+        "disabled": "解释不可操作原因"
+      },
+      "mobile": {
+        "narrow": "单列重排；必要表格在独立区域横滚；主操作可触达",
+        "wide": "保持信息密度与分组，不无限拉伸正文",
+        "keyboard": "软键盘不遮挡当前输入与提交；需真机核验"
+      },
+      "accessibility": [
+        "语义标题、字段标签与可见焦点",
+        "状态不只依赖颜色；错误关联字段",
+        "支持键盘；对话框焦点管理与返回"
+      ],
+      "acceptance": [
+        "了解已预约安排主路径可完成",
+        "外部变更需明确授权",
+        "320/390/768/1440 宽度检查",
+        "错误、空态及权限边界检查"
+      ],
+      "skill": "awwwards-page-library",
+      "coverage": "specification",
+      "demo": null,
+      "production": "not_connected"
+    },
+    {
+      "id": "booking.service-detail",
+      "domain": "booking",
+      "title": "服务详情",
+      "goal": "理解服务内容和适用范围",
+      "regions": [
+        "内容",
+        "条件",
+        "价格",
+        "时间",
+        "评价"
+      ],
+      "interactions": [
+        "选择",
+        "咨询",
+        "预约"
+      ],
+      "constraints": [
+        "不虚构专业资质"
+      ],
+      "inputs": [
+        "已授权业务数据或明确标识的样例",
+        "现有品牌与技术栈",
+        "资源许可与目标设备"
+      ],
+      "states": {
+        "default": "展示结构和下一步",
+        "loading": "显示等待范围并保留用户输入",
+        "empty": "说明无数据原因与恢复入口",
+        "error": "说明失败并允许安全重试",
+        "success": "显示可核实结果；演示标为本地预览",
+        "disabled": "解释不可操作原因"
+      },
+      "mobile": {
+        "narrow": "单列重排；必要表格在独立区域横滚；主操作可触达",
+        "wide": "保持信息密度与分组，不无限拉伸正文",
+        "keyboard": "软键盘不遮挡当前输入与提交；需真机核验"
+      },
+      "accessibility": [
+        "语义标题、字段标签与可见焦点",
+        "状态不只依赖颜色；错误关联字段",
+        "支持键盘；对话框焦点管理与返回"
+      ],
+      "acceptance": [
+        "理解服务内容和适用范围主路径可完成",
+        "不虚构专业资质",
+        "320/390/768/1440 宽度检查",
+        "错误、空态及权限边界检查"
+      ],
+      "skill": "awwwards-page-library",
+      "coverage": "specification",
+      "demo": null,
+      "production": "not_connected"
+    },
+    {
+      "id": "mobile.today",
+      "domain": "mobile",
+      "title": "移动首页",
+      "goal": "快速完成当日主要任务",
+      "regions": [
+        "摘要",
+        "主操作",
+        "底部导航"
+      ],
+      "interactions": [
+        "完成",
+        "进入设置"
+      ],
+      "constraints": [
+        "安全区、键盘和触控目标要实测"
+      ],
+      "inputs": [
+        "已授权业务数据或明确标识的样例",
+        "现有品牌与技术栈",
+        "资源许可与目标设备"
+      ],
+      "states": {
+        "default": "展示结构和下一步",
+        "loading": "显示等待范围并保留用户输入",
+        "empty": "说明无数据原因与恢复入口",
+        "error": "说明失败并允许安全重试",
+        "success": "显示可核实结果；演示标为本地预览",
+        "disabled": "解释不可操作原因"
+      },
+      "mobile": {
+        "narrow": "单列重排；必要表格在独立区域横滚；主操作可触达",
+        "wide": "保持信息密度与分组，不无限拉伸正文",
+        "keyboard": "软键盘不遮挡当前输入与提交；需真机核验"
+      },
+      "accessibility": [
+        "语义标题、字段标签与可见焦点",
+        "状态不只依赖颜色；错误关联字段",
+        "支持键盘；对话框焦点管理与返回"
+      ],
+      "acceptance": [
+        "快速完成当日主要任务主路径可完成",
+        "安全区、键盘和触控目标要实测",
+        "320/390/768/1440 宽度检查",
+        "错误、空态及权限边界检查"
+      ],
+      "skill": "awwwards-mobile",
+      "coverage": "runnable_demo",
+      "demo": "/v2/demos/mobile/#today",
+      "production": "not_connected"
+    },
+    {
+      "id": "mobile.onboarding",
+      "domain": "mobile",
+      "title": "引导向导",
+      "goal": "逐步建立最少必要设置",
+      "regions": [
+        "进度",
+        "单步输入",
+        "确认摘要"
+      ],
+      "interactions": [
+        "继续",
+        "返回",
+        "完成"
+      ],
+      "constraints": [
+        "返回保留已输入值"
+      ],
+      "inputs": [
+        "已授权业务数据或明确标识的样例",
+        "现有品牌与技术栈",
+        "资源许可与目标设备"
+      ],
+      "states": {
+        "default": "展示结构和下一步",
+        "loading": "显示等待范围并保留用户输入",
+        "empty": "说明无数据原因与恢复入口",
+        "error": "说明失败并允许安全重试",
+        "success": "显示可核实结果；演示标为本地预览",
+        "disabled": "解释不可操作原因"
+      },
+      "mobile": {
+        "narrow": "单列重排；必要表格在独立区域横滚；主操作可触达",
+        "wide": "保持信息密度与分组，不无限拉伸正文",
+        "keyboard": "软键盘不遮挡当前输入与提交；需真机核验"
+      },
+      "accessibility": [
+        "语义标题、字段标签与可见焦点",
+        "状态不只依赖颜色；错误关联字段",
+        "支持键盘；对话框焦点管理与返回"
+      ],
+      "acceptance": [
+        "逐步建立最少必要设置主路径可完成",
+        "返回保留已输入值",
+        "320/390/768/1440 宽度检查",
+        "错误、空态及权限边界检查"
+      ],
+      "skill": "awwwards-mobile",
+      "coverage": "runnable_demo",
+      "demo": "/v2/demos/mobile/#onboarding",
+      "production": "not_connected"
+    },
+    {
+      "id": "mobile.preferences",
+      "domain": "mobile",
+      "title": "移动偏好",
+      "goal": "配置个人体验",
+      "regions": [
+        "偏好分组",
+        "开关",
+        "保存状态"
+      ],
+      "interactions": [
+        "切换",
+        "保存",
+        "撤回"
+      ],
+      "constraints": [
+        "开关不应假装申请系统权限"
+      ],
+      "inputs": [
+        "已授权业务数据或明确标识的样例",
+        "现有品牌与技术栈",
+        "资源许可与目标设备"
+      ],
+      "states": {
+        "default": "展示结构和下一步",
+        "loading": "显示等待范围并保留用户输入",
+        "empty": "说明无数据原因与恢复入口",
+        "error": "说明失败并允许安全重试",
+        "success": "显示可核实结果；演示标为本地预览",
+        "disabled": "解释不可操作原因"
+      },
+      "mobile": {
+        "narrow": "单列重排；必要表格在独立区域横滚；主操作可触达",
+        "wide": "保持信息密度与分组，不无限拉伸正文",
+        "keyboard": "软键盘不遮挡当前输入与提交；需真机核验"
+      },
+      "accessibility": [
+        "语义标题、字段标签与可见焦点",
+        "状态不只依赖颜色；错误关联字段",
+        "支持键盘；对话框焦点管理与返回"
+      ],
+      "acceptance": [
+        "配置个人体验主路径可完成",
+        "开关不应假装申请系统权限",
+        "320/390/768/1440 宽度检查",
+        "错误、空态及权限边界检查"
+      ],
+      "skill": "awwwards-mobile",
+      "coverage": "runnable_demo",
+      "demo": "/v2/demos/mobile/#preferences",
+      "production": "not_connected"
+    },
+    {
+      "id": "mobile.offline",
+      "domain": "mobile",
+      "title": "离线状态",
+      "goal": "在网络失效时保持方向",
+      "regions": [
+        "连接状态",
+        "可用数据",
+        "重试入口"
+      ],
+      "interactions": [
+        "重试",
+        "返回",
+        "查看缓存"
+      ],
+      "constraints": [
+        "不要显示未同步的操作为成功"
+      ],
+      "inputs": [
+        "已授权业务数据或明确标识的样例",
+        "现有品牌与技术栈",
+        "资源许可与目标设备"
+      ],
+      "states": {
+        "default": "展示结构和下一步",
+        "loading": "显示等待范围并保留用户输入",
+        "empty": "说明无数据原因与恢复入口",
+        "error": "说明失败并允许安全重试",
+        "success": "显示可核实结果；演示标为本地预览",
+        "disabled": "解释不可操作原因"
+      },
+      "mobile": {
+        "narrow": "单列重排；必要表格在独立区域横滚；主操作可触达",
+        "wide": "保持信息密度与分组，不无限拉伸正文",
+        "keyboard": "软键盘不遮挡当前输入与提交；需真机核验"
+      },
+      "accessibility": [
+        "语义标题、字段标签与可见焦点",
+        "状态不只依赖颜色；错误关联字段",
+        "支持键盘；对话框焦点管理与返回"
+      ],
+      "acceptance": [
+        "在网络失效时保持方向主路径可完成",
+        "不要显示未同步的操作为成功",
+        "320/390/768/1440 宽度检查",
+        "错误、空态及权限边界检查"
+      ],
+      "skill": "awwwards-mobile",
+      "coverage": "specification",
+      "demo": null,
+      "production": "not_connected"
+    },
+    {
+      "id": "system.loading",
+      "domain": "system",
+      "title": "加载状态",
+      "goal": "理解等待中的任务",
+      "regions": [
+        "占位",
+        "进度",
+        "取消",
+        "替代入口"
+      ],
+      "interactions": [
+        "取消",
+        "返回"
+      ],
+      "constraints": [
+        "避免布局跳动和无结束等待"
+      ],
+      "inputs": [
+        "已授权业务数据或明确标识的样例",
+        "现有品牌与技术栈",
+        "资源许可与目标设备"
+      ],
+      "states": {
+        "default": "展示结构和下一步",
+        "loading": "显示等待范围并保留用户输入",
+        "empty": "说明无数据原因与恢复入口",
+        "error": "说明失败并允许安全重试",
+        "success": "显示可核实结果；演示标为本地预览",
+        "disabled": "解释不可操作原因"
+      },
+      "mobile": {
+        "narrow": "单列重排；必要表格在独立区域横滚；主操作可触达",
+        "wide": "保持信息密度与分组，不无限拉伸正文",
+        "keyboard": "软键盘不遮挡当前输入与提交；需真机核验"
+      },
+      "accessibility": [
+        "语义标题、字段标签与可见焦点",
+        "状态不只依赖颜色；错误关联字段",
+        "支持键盘；对话框焦点管理与返回"
+      ],
+      "acceptance": [
+        "理解等待中的任务主路径可完成",
+        "避免布局跳动和无结束等待",
+        "320/390/768/1440 宽度检查",
+        "错误、空态及权限边界检查"
+      ],
+      "skill": "awwwards-page-library",
+      "coverage": "specification",
+      "demo": null,
+      "production": "not_connected"
+    },
+    {
+      "id": "system.empty",
+      "domain": "system",
+      "title": "空态",
+      "goal": "理解原因并开始行动",
+      "regions": [
+        "原因",
+        "上下文",
+        "主入口"
+      ],
+      "interactions": [
+        "创建",
+        "重置筛选"
+      ],
+      "constraints": [
+        "区分无数据和无权限"
+      ],
+      "inputs": [
+        "已授权业务数据或明确标识的样例",
+        "现有品牌与技术栈",
+        "资源许可与目标设备"
+      ],
+      "states": {
+        "default": "展示结构和下一步",
+        "loading": "显示等待范围并保留用户输入",
+        "empty": "说明无数据原因与恢复入口",
+        "error": "说明失败并允许安全重试",
+        "success": "显示可核实结果；演示标为本地预览",
+        "disabled": "解释不可操作原因"
+      },
+      "mobile": {
+        "narrow": "单列重排；必要表格在独立区域横滚；主操作可触达",
+        "wide": "保持信息密度与分组，不无限拉伸正文",
+        "keyboard": "软键盘不遮挡当前输入与提交；需真机核验"
+      },
+      "accessibility": [
+        "语义标题、字段标签与可见焦点",
+        "状态不只依赖颜色；错误关联字段",
+        "支持键盘；对话框焦点管理与返回"
+      ],
+      "acceptance": [
+        "理解原因并开始行动主路径可完成",
+        "区分无数据和无权限",
+        "320/390/768/1440 宽度检查",
+        "错误、空态及权限边界检查"
+      ],
+      "skill": "awwwards-page-library",
+      "coverage": "specification",
+      "demo": null,
+      "production": "not_connected"
+    },
+    {
+      "id": "system.error",
+      "domain": "system",
+      "title": "错误恢复",
+      "goal": "修复失败并保留输入",
+      "regions": [
+        "错误原因",
+        "范围",
+        "恢复方式"
+      ],
+      "interactions": [
+        "重试",
+        "返回",
+        "联系"
+      ],
+      "constraints": [
+        "不重复提交已执行的副作用"
+      ],
+      "inputs": [
+        "已授权业务数据或明确标识的样例",
+        "现有品牌与技术栈",
+        "资源许可与目标设备"
+      ],
+      "states": {
+        "default": "展示结构和下一步",
+        "loading": "显示等待范围并保留用户输入",
+        "empty": "说明无数据原因与恢复入口",
+        "error": "说明失败并允许安全重试",
+        "success": "显示可核实结果；演示标为本地预览",
+        "disabled": "解释不可操作原因"
+      },
+      "mobile": {
+        "narrow": "单列重排；必要表格在独立区域横滚；主操作可触达",
+        "wide": "保持信息密度与分组，不无限拉伸正文",
+        "keyboard": "软键盘不遮挡当前输入与提交；需真机核验"
+      },
+      "accessibility": [
+        "语义标题、字段标签与可见焦点",
+        "状态不只依赖颜色；错误关联字段",
+        "支持键盘；对话框焦点管理与返回"
+      ],
+      "acceptance": [
+        "修复失败并保留输入主路径可完成",
+        "不重复提交已执行的副作用",
+        "320/390/768/1440 宽度检查",
+        "错误、空态及权限边界检查"
+      ],
+      "skill": "awwwards-page-library",
+      "coverage": "specification",
+      "demo": null,
+      "production": "not_connected"
+    },
+    {
+      "id": "system.not-found",
+      "domain": "system",
+      "title": "404",
+      "goal": "重新找到目的地",
+      "regions": [
+        "说明",
+        "搜索",
+        "导航"
+      ],
+      "interactions": [
+        "返回",
+        "搜索"
+      ],
+      "constraints": [
+        "不泄漏内部路由或堆栈"
+      ],
+      "inputs": [
+        "已授权业务数据或明确标识的样例",
+        "现有品牌与技术栈",
+        "资源许可与目标设备"
+      ],
+      "states": {
+        "default": "展示结构和下一步",
+        "loading": "显示等待范围并保留用户输入",
+        "empty": "说明无数据原因与恢复入口",
+        "error": "说明失败并允许安全重试",
+        "success": "显示可核实结果；演示标为本地预览",
+        "disabled": "解释不可操作原因"
+      },
+      "mobile": {
+        "narrow": "单列重排；必要表格在独立区域横滚；主操作可触达",
+        "wide": "保持信息密度与分组，不无限拉伸正文",
+        "keyboard": "软键盘不遮挡当前输入与提交；需真机核验"
+      },
+      "accessibility": [
+        "语义标题、字段标签与可见焦点",
+        "状态不只依赖颜色；错误关联字段",
+        "支持键盘；对话框焦点管理与返回"
+      ],
+      "acceptance": [
+        "重新找到目的地主路径可完成",
+        "不泄漏内部路由或堆栈",
+        "320/390/768/1440 宽度检查",
+        "错误、空态及权限边界检查"
+      ],
+      "skill": "awwwards-page-library",
+      "coverage": "specification",
+      "demo": null,
+      "production": "not_connected"
+    },
+    {
+      "id": "system.maintenance",
+      "domain": "system",
+      "title": "维护页",
+      "goal": "理解服务可用性",
+      "regions": [
+        "状态",
+        "时间",
+        "替代渠道",
+        "更新时间"
+      ],
+      "interactions": [
+        "状态页",
+        "联系"
+      ],
+      "constraints": [
+        "预计恢复时间必须有来源"
+      ],
+      "inputs": [
+        "已授权业务数据或明确标识的样例",
+        "现有品牌与技术栈",
+        "资源许可与目标设备"
+      ],
+      "states": {
+        "default": "展示结构和下一步",
+        "loading": "显示等待范围并保留用户输入",
+        "empty": "说明无数据原因与恢复入口",
+        "error": "说明失败并允许安全重试",
+        "success": "显示可核实结果；演示标为本地预览",
+        "disabled": "解释不可操作原因"
+      },
+      "mobile": {
+        "narrow": "单列重排；必要表格在独立区域横滚；主操作可触达",
+        "wide": "保持信息密度与分组，不无限拉伸正文",
+        "keyboard": "软键盘不遮挡当前输入与提交；需真机核验"
+      },
+      "accessibility": [
+        "语义标题、字段标签与可见焦点",
+        "状态不只依赖颜色；错误关联字段",
+        "支持键盘；对话框焦点管理与返回"
+      ],
+      "acceptance": [
+        "理解服务可用性主路径可完成",
+        "预计恢复时间必须有来源",
+        "320/390/768/1440 宽度检查",
+        "错误、空态及权限边界检查"
+      ],
+      "skill": "awwwards-page-library",
+      "coverage": "specification",
+      "demo": null,
+      "production": "not_connected"
+    },
+    {
+      "id": "system.consent",
+      "domain": "system",
+      "title": "隐私偏好",
+      "goal": "理解并控制可选数据使用",
+      "regions": [
+        "类别",
+        "用途",
+        "范围",
+        "保存状态"
+      ],
+      "interactions": [
+        "同意",
+        "拒绝",
+        "撤回"
+      ],
+      "constraints": [
+        "不将可选追踪默认为必需"
+      ],
+      "inputs": [
+        "已授权业务数据或明确标识的样例",
+        "现有品牌与技术栈",
+        "资源许可与目标设备"
+      ],
+      "states": {
+        "default": "展示结构和下一步",
+        "loading": "显示等待范围并保留用户输入",
+        "empty": "说明无数据原因与恢复入口",
+        "error": "说明失败并允许安全重试",
+        "success": "显示可核实结果；演示标为本地预览",
+        "disabled": "解释不可操作原因"
+      },
+      "mobile": {
+        "narrow": "单列重排；必要表格在独立区域横滚；主操作可触达",
+        "wide": "保持信息密度与分组，不无限拉伸正文",
+        "keyboard": "软键盘不遮挡当前输入与提交；需真机核验"
+      },
+      "accessibility": [
+        "语义标题、字段标签与可见焦点",
+        "状态不只依赖颜色；错误关联字段",
+        "支持键盘；对话框焦点管理与返回"
+      ],
+      "acceptance": [
+        "理解并控制可选数据使用主路径可完成",
+        "不将可选追踪默认为必需",
+        "320/390/768/1440 宽度检查",
+        "错误、空态及权限边界检查"
+      ],
+      "skill": "awwwards-page-library",
+      "coverage": "specification",
+      "demo": null,
+      "production": "not_connected"
+    }
+  ]
+}

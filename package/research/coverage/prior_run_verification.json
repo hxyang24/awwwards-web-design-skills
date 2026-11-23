@@ -1,0 +1,329 @@
+{
+  "research_date": "2026-11-23",
+  "skill_count": 12,
+  "file_count": 131,
+  "python_files": 20,
+  "json_files": 25,
+  "javascript_files": 6,
+  "local_links": 43,
+  "checks": [
+    {
+      "check": "unique_skill_awwwards-workflow",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "metadata_awwwards-workflow",
+      "passed": true,
+      "detail": "Skill is valid!"
+    },
+    {
+      "check": "unique_skill_awwwards-research",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "metadata_awwwards-research",
+      "passed": true,
+      "detail": "Skill is valid!"
+    },
+    {
+      "check": "unique_skill_awwwards-reference",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "metadata_awwwards-reference",
+      "passed": true,
+      "detail": "Skill is valid!"
+    },
+    {
+      "check": "unique_skill_awwwards-design-system",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "metadata_awwwards-design-system",
+      "passed": true,
+      "detail": "Skill is valid!"
+    },
+    {
+      "check": "unique_skill_awwwards-layout",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "metadata_awwwards-layout",
+      "passed": true,
+      "detail": "Skill is valid!"
+    },
+    {
+      "check": "unique_skill_awwwards-motion",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "metadata_awwwards-motion",
+      "passed": true,
+      "detail": "Skill is valid!"
+    },
+    {
+      "check": "unique_skill_awwwards-webgl",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "metadata_awwwards-webgl",
+      "passed": true,
+      "detail": "Skill is valid!"
+    },
+    {
+      "check": "unique_skill_awwwards-content",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "metadata_awwwards-content",
+      "passed": true,
+      "detail": "Skill is valid!"
+    },
+    {
+      "check": "unique_skill_awwwards-product-ux",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "metadata_awwwards-product-ux",
+      "passed": true,
+      "detail": "Skill is valid!"
+    },
+    {
+      "check": "unique_skill_awwwards-components",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "metadata_awwwards-components",
+      "passed": true,
+      "detail": "Skill is valid!"
+    },
+    {
+      "check": "unique_skill_awwwards-quality",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "metadata_awwwards-quality",
+      "passed": true,
+      "detail": "Skill is valid!"
+    },
+    {
+      "check": "unique_skill_awwwards-release",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "metadata_awwwards-release",
+      "passed": true,
+      "detail": "Skill is valid!"
+    },
+    {
+      "check": "all_files_parse",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "runtime_awwwards-workflow",
+      "passed": true,
+      "detail": "{\n  \"tests\": 11,\n  \"passed\": 11,\n  \"results\": [\n    {\n      \"name\": \"resume_preserves_existing\",\n      \"pass\": true\n    },\n    {\n      \"name\": \"valid_record_accepted\",\n      \"pass\": true\n    },\n    {\n      \"name\": \"missing_gates_rejected\",\n      \"pass\": true\n    },\n    {\n      \"name\": \"pass_without_evidence_rejected\",\n      \"pass\": true\n    },\n    {\n      \"name\": \"unresolved_evidence_rejected\",\n      \"pass\": true\n    },\n    {\n      \"name\": \"path_escape_rejected\",\n      \"pass\": true\n    },\n    {\n      \"name\": \"complete_with_blocker_rejected\",\n      \"pass\": true\n    },\n    {\n      \"name\": \"unknown_status_rejected\",\n      \"pass\": true\n    },\n    {\n      \"name\": \"not_run_is_not_pass\",\n      \"pass\": true\n    },\n    {\n      \"name\": \"duplicate_evidence_rejected\",\n      \"pass\": true\n    },\n    {\n      \"name\": \"unjustified_skip_rejected\",\n      \"pass\": true\n    }\n  ],\n  \"scope\": \"Synthetic contract fixtures; no browser or production claims.\"\n}"
+    },
+    {
+      "check": "runtime_awwwards-components",
+      "passed": true,
+      "detail": "{\n  \"scope\": \"Local code review and no-browser mock tests\",\n  \"mode\": \"regression-after-fix\",\n  \"runtime_claim\": \"No real browser, visual, native focus trap, CSS layout or GPU testing performed\",\n  \"normal_tests\": [\n    {\n      \"name\": \"menu click / Escape / anchor close\",\n      \"status\": \"pass\"\n    },\n    {\n      \"name\": \"filter combination, count, empty, recovery\",\n      \"status\": \"pass\"\n    },\n    {\n      \"name\": \"dialog title/copy, open, close and explicit focus return\",\n      \"status\": \"pass\"\n    },\n    {\n      \"name\": \"form prevents submit, invalid rejected, valid explicitly local\",\n      \"status\": \"pass\"\n    },\n    {\n      \"name\": \"tabs arrow, Home, End, roving tabindex, panel roles and cleanup\",\n      \"status\": \"pass\"\n    },\n    {\n      \"name\": \"dispose removes listeners, is idempotent, proper remount works\",\n      \"status\": \"pass\"\n    },\n    {\n      \"name\": \"unsupported dialog falls back to #contact\",\n      \"status\": \"pass\"\n    },\n    {\n      \"name\": \"disabled fieldset restored on dispose\",\n      \"status\": \"pass\"\n    }\n  ],\n  \"findings\": [\n    {\n      \"id\": \"scope-global-flag\",\n      \"title\": \"A partial root toggles the whole document enhancement state\",\n      \"reproduced\": false,\n      \"status\": \"fixed\"\n    },\n    {\n      \"id\": \"multiple-roots\",\n      \"title\": \"Disposing one independent root disables the other global enhancement flag\",\n      \"reproduced\": false,\n      \"status\": \"fixed\"\n    },\n    {\n      \"id\": \"stale-form-validity\",\n      \"title\": \"Prior success message remains after editing invalid input\",\n      \"reproduced\": false,\n      \"status\": \"fixed\"\n    },\n    {\n      \"id\": \"dialog-title-contract\",\n      \"title\": \"Accessible custom title id allowed by prose contract throws on open\",\n      \"reproduced\": false,\n      \"status\": \"fixed\"\n    },\n    {\n      \"id\": \"resize-focus\",\n      \"title\": \"Narrowing viewport can leave focus in newly hidden navigation\",\n      \"reproduced\": false,\n      \"status\": \"fixed\"\n    },\n    {\n      \"id\": \"double-mount-documented-boundary\",\n      \"title\": \"Two undisposed mounts make one click open then close the menu\",\n      \"reproduced\": false,\n      \"status\": \"fixed\"\n    }\n  ]\n}"
+    },
+    {
+      "check": "static_profile_saas",
+      "passed": true,
+      "detail": {
+        "unique_ids": true,
+        "main_landmark": true,
+        "single_h1": true,
+        "language": true,
+        "fragment_targets": true,
+        "input_labels": true,
+        "image_alt": true,
+        "required_files": true
+      }
+    },
+    {
+      "check": "esm_profile_saas",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "static_profile_commerce",
+      "passed": true,
+      "detail": {
+        "unique_ids": true,
+        "main_landmark": true,
+        "single_h1": true,
+        "language": true,
+        "fragment_targets": true,
+        "input_labels": true,
+        "image_alt": true,
+        "required_files": true
+      }
+    },
+    {
+      "check": "esm_profile_commerce",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "static_profile_dashboard",
+      "passed": true,
+      "detail": {
+        "unique_ids": true,
+        "main_landmark": true,
+        "single_h1": true,
+        "language": true,
+        "fragment_targets": true,
+        "input_labels": true,
+        "image_alt": true,
+        "required_files": true
+      }
+    },
+    {
+      "check": "esm_profile_dashboard",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "static_profile_portfolio",
+      "passed": true,
+      "detail": {
+        "unique_ids": true,
+        "main_landmark": true,
+        "single_h1": true,
+        "language": true,
+        "fragment_targets": true,
+        "input_labels": true,
+        "image_alt": true,
+        "required_files": true
+      }
+    },
+    {
+      "check": "esm_profile_portfolio",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "static_profile_editorial",
+      "passed": true,
+      "detail": {
+        "unique_ids": true,
+        "main_landmark": true,
+        "single_h1": true,
+        "language": true,
+        "fragment_targets": true,
+        "input_labels": true,
+        "image_alt": true,
+        "required_files": true
+      }
+    },
+    {
+      "check": "esm_profile_editorial",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "static_profile_immersive",
+      "passed": true,
+      "detail": {
+        "unique_ids": true,
+        "main_landmark": true,
+        "single_h1": true,
+        "language": true,
+        "fragment_targets": true,
+        "input_labels": true,
+        "image_alt": true,
+        "required_files": true
+      }
+    },
+    {
+      "check": "esm_profile_immersive",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "installed_12",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "record_matches_awwwards-workflow",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "record_matches_awwwards-research",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "record_matches_awwwards-reference",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "record_matches_awwwards-design-system",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "record_matches_awwwards-layout",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "record_matches_awwwards-motion",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "record_matches_awwwards-webgl",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "record_matches_awwwards-content",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "record_matches_awwwards-product-ux",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "record_matches_awwwards-components",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "record_matches_awwwards-quality",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "record_matches_awwwards-release",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "all_passed": true,
+  "browser_status": "blocked",
+  "browser_test_count": 0,
+  "scope": "Metadata, source parsing, file references, script/mocked behavior, and static HTML; not live rendering or GPU tests."
+}

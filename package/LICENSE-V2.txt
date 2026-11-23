@@ -1,0 +1,3 @@
+Permission is granted to use, copy, modify and distribute the original V2 skills, documentation, tools and demo code in this package, with or without fee, provided this notice is retained. These original files are supplied as-is without warranty.
+
+This permission does not grant rights in third-party websites, brands, assets, the preserved V1 research corpus or vendor libraries. Third-party terms and retained notices govern those materials. See v2/docs/RIGHTS_AND_SOURCES_POLICY.md and v2/vendor/.

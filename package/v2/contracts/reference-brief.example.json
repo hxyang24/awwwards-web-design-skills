@@ -1,0 +1,33 @@
+{
+  "schema_version": "2.0",
+  "source": {
+    "kind": "original_fixture",
+    "path": "v2/demos/reference/index.html",
+    "permission": "included original example",
+    "captured_at": null
+  },
+  "viewport": {
+    "width": 1440,
+    "height": 1000,
+    "device_scale_factor": 1
+  },
+  "state": "default",
+  "observations": [
+    {
+      "region": "hero",
+      "fact": "Left aligned serif headline and single primary action",
+      "evidence": "source file"
+    }
+  ],
+  "hypotheses": [
+    {
+      "claim": "Font is Georgia family",
+      "confidence": "requires_render_check"
+    }
+  ],
+  "assets": [],
+  "unknowns": [
+    "No hidden interactions are inferred"
+  ],
+  "iteration_budget": 3
+}

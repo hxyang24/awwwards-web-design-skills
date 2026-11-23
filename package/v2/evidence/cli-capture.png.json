@@ -1,0 +1,14 @@
+{
+  "url": "http://127.0.0.1:4199/v2/demos/reference/",
+  "viewport": {
+    "width": 1440,
+    "height": 1000
+  },
+  "device_scale_factor": 1,
+  "reduced_motion": "reduce",
+  "browser": "159.0.8154.6",
+  "captured_at": "2026-11-23T05:50:27.660Z",
+  "errors": [],
+  "full_page": false,
+  "scope": "Visible state only; no business or rights acceptance"
+}

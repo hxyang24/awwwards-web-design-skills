@@ -1,0 +1,11 @@
+{
+  "name": "feature-reveal",
+  "target": "[data-reveal]",
+  "trigger": "intersection observer 15%",
+  "initial_state": "visible in HTML; JS may set transform only if supported",
+  "end_state": "opacity 1; translateY(0)",
+  "duration_ms": 450,
+  "reduced_motion": "no transition or transform; content remains visible",
+  "cleanup": "observer.disconnect(); remove event handlers owned by module",
+  "fallback": "fully visible semantic DOM without JS"
+}

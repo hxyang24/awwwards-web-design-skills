@@ -1,0 +1,11 @@
+{
+  "schema_version":"1.0",
+  "mode":"preview",
+  "user_goal":"申请产品演示",
+  "operation":"request_demo",
+  "primary_action":"预览提交",
+  "network_effect":"none",
+  "preview_disclaimer":"本示例未连接服务器，不会发送预约请求或保存个人资料。",
+  "states":["idle","loading","success","error","disabled"],
+  "transitions":[{"from":"idle","to":"loading","event":"valid_preview"},{"from":"loading","to":"success","event":"local_preview"},{"from":"loading","to":"error","event":"validation_failed"},{"from":"error","to":"idle","event":"edit_or_retry"}]
+}

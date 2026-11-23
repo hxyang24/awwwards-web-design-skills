@@ -1,0 +1,11 @@
+{
+  "status":"not_run",
+  "source":null,
+  "measured_at":null,
+  "device":null,
+  "percentile":75,
+  "sample_count":null,
+  "lcp_ms":null,
+  "inp_ms":null,
+  "cls":null
+}

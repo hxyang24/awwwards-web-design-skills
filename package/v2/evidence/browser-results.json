@@ -1,0 +1,416 @@
+{
+  "test_date": "2026-11-23T05:46:03.612Z",
+  "environment": {
+    "platform": "win32",
+    "node": "v24.14.0",
+    "browser": "159.0.8154.6",
+    "device_scale_factor": 1,
+    "locale": "en-US",
+    "timezone": "UTC",
+    "webgl": "Chromium ANGLE SwiftShader software renderer; not physical GPU acceptance"
+  },
+  "status": "passed",
+  "tested": 57,
+  "passed": 57,
+  "failed": [],
+  "tests": [
+    {
+      "name": "V2 enterprise rendered without overflow at 320",
+      "status": "passed",
+      "duration_ms": 912
+    },
+    {
+      "name": "V2 enterprise rendered without overflow at 390",
+      "status": "passed",
+      "duration_ms": 1319
+    },
+    {
+      "name": "V2 enterprise rendered without overflow at 768",
+      "status": "passed",
+      "duration_ms": 732
+    },
+    {
+      "name": "V2 enterprise rendered without overflow at 1440",
+      "status": "passed",
+      "duration_ms": 1267
+    },
+    {
+      "name": "V2 fintech rendered without overflow at 320",
+      "status": "passed",
+      "duration_ms": 775
+    },
+    {
+      "name": "V2 fintech rendered without overflow at 390",
+      "status": "passed",
+      "duration_ms": 1288
+    },
+    {
+      "name": "V2 fintech rendered without overflow at 768",
+      "status": "passed",
+      "duration_ms": 783
+    },
+    {
+      "name": "V2 fintech rendered without overflow at 1440",
+      "status": "passed",
+      "duration_ms": 1382
+    },
+    {
+      "name": "V2 commerce rendered without overflow at 320",
+      "status": "passed",
+      "duration_ms": 777
+    },
+    {
+      "name": "V2 commerce rendered without overflow at 390",
+      "status": "passed",
+      "duration_ms": 1250
+    },
+    {
+      "name": "V2 commerce rendered without overflow at 768",
+      "status": "passed",
+      "duration_ms": 785
+    },
+    {
+      "name": "V2 commerce rendered without overflow at 1440",
+      "status": "passed",
+      "duration_ms": 1317
+    },
+    {
+      "name": "V2 agent rendered without overflow at 320",
+      "status": "passed",
+      "duration_ms": 764
+    },
+    {
+      "name": "V2 agent rendered without overflow at 390",
+      "status": "passed",
+      "duration_ms": 1241
+    },
+    {
+      "name": "V2 agent rendered without overflow at 768",
+      "status": "passed",
+      "duration_ms": 751
+    },
+    {
+      "name": "V2 agent rendered without overflow at 1440",
+      "status": "passed",
+      "duration_ms": 1271
+    },
+    {
+      "name": "V2 mobile rendered without overflow at 320",
+      "status": "passed",
+      "duration_ms": 741
+    },
+    {
+      "name": "V2 mobile rendered without overflow at 390",
+      "status": "passed",
+      "duration_ms": 1238
+    },
+    {
+      "name": "V2 mobile rendered without overflow at 768",
+      "status": "passed",
+      "duration_ms": 754
+    },
+    {
+      "name": "V2 mobile rendered without overflow at 1440",
+      "status": "passed",
+      "duration_ms": 1250
+    },
+    {
+      "name": "V2 studio rendered without overflow at 320",
+      "status": "passed",
+      "duration_ms": 773
+    },
+    {
+      "name": "V2 studio rendered without overflow at 390",
+      "status": "passed",
+      "duration_ms": 1229
+    },
+    {
+      "name": "V2 studio rendered without overflow at 768",
+      "status": "passed",
+      "duration_ms": 774
+    },
+    {
+      "name": "V2 studio rendered without overflow at 1440",
+      "status": "passed",
+      "duration_ms": 1225
+    },
+    {
+      "name": "All 22 declared runnable routes respond at 390",
+      "status": "passed",
+      "duration_ms": 3159
+    },
+    {
+      "name": "All 22 declared runnable routes respond at 1440",
+      "status": "passed",
+      "duration_ms": 3094
+    },
+    {
+      "name": "Enterprise search, pagination, safe editing, dialog focus and role restrictions",
+      "status": "passed",
+      "duration_ms": 1234
+    },
+    {
+      "name": "Enterprise approval writes a local event once",
+      "status": "passed",
+      "duration_ms": 766
+    },
+    {
+      "name": "Commerce product, stock limit, totals, checkout and local refund",
+      "status": "passed",
+      "duration_ms": 1156
+    },
+    {
+      "name": "Fintech stale-quote gate, fees, confirmation and cancellation",
+      "status": "passed",
+      "duration_ms": 928
+    },
+    {
+      "name": "Agent interruption, denial, approval, retry and safe text rendering",
+      "status": "passed",
+      "duration_ms": 4568
+    },
+    {
+      "name": "Agent workflow rejects a cycle; knowledge and settings remain local",
+      "status": "passed",
+      "duration_ms": 1051
+    },
+    {
+      "name": "Mobile onboarding retains input on back and completes the daily task",
+      "status": "passed",
+      "duration_ms": 919
+    },
+    {
+      "name": "GSAP timeline plays, pauses, restarts and cleans up on navigation",
+      "status": "passed",
+      "duration_ms": 1323
+    },
+    {
+      "name": "Reduced motion keeps GSAP still",
+      "status": "passed",
+      "duration_ms": 914
+    },
+    {
+      "name": "Three.js software WebGL renders, switches quality, falls back and releases resources",
+      "status": "passed",
+      "duration_ms": 1436
+    },
+    {
+      "name": "V1 retained HTTP/module render saas at 390",
+      "status": "passed",
+      "duration_ms": 867
+    },
+    {
+      "name": "V1 retained HTTP/module render saas at 1440",
+      "status": "passed",
+      "duration_ms": 977
+    },
+    {
+      "name": "V1 retained HTTP/module render commerce at 390",
+      "status": "passed",
+      "duration_ms": 912
+    },
+    {
+      "name": "V1 retained HTTP/module render commerce at 1440",
+      "status": "passed",
+      "duration_ms": 959
+    },
+    {
+      "name": "V1 retained HTTP/module render dashboard at 390",
+      "status": "passed",
+      "duration_ms": 814
+    },
+    {
+      "name": "V1 retained HTTP/module render dashboard at 1440",
+      "status": "passed",
+      "duration_ms": 927
+    },
+    {
+      "name": "V1 retained HTTP/module render portfolio at 390",
+      "status": "passed",
+      "duration_ms": 875
+    },
+    {
+      "name": "V1 retained HTTP/module render portfolio at 1440",
+      "status": "passed",
+      "duration_ms": 969
+    },
+    {
+      "name": "V1 retained HTTP/module render editorial at 390",
+      "status": "passed",
+      "duration_ms": 830
+    },
+    {
+      "name": "V1 retained HTTP/module render editorial at 1440",
+      "status": "passed",
+      "duration_ms": 935
+    },
+    {
+      "name": "V1 retained HTTP/module render immersive at 390",
+      "status": "passed",
+      "duration_ms": 858
+    },
+    {
+      "name": "V1 retained HTTP/module render immersive at 1440",
+      "status": "passed",
+      "duration_ms": 943
+    },
+    {
+      "name": "V2 index landing at 390",
+      "status": "passed",
+      "duration_ms": 779
+    },
+    {
+      "name": "V2 index landing at 1440",
+      "status": "passed",
+      "duration_ms": 821
+    },
+    {
+      "name": "V2 index patterns/ at 390",
+      "status": "passed",
+      "duration_ms": 1272
+    },
+    {
+      "name": "V2 index patterns/ at 1440",
+      "status": "passed",
+      "duration_ms": 1346
+    },
+    {
+      "name": "Original reference captured and controlled visual regression detects a changed layout",
+      "status": "passed",
+      "duration_ms": 1225
+    },
+    {
+      "name": "Independent original-reference reconstruction meets visual threshold at 390",
+      "status": "passed",
+      "duration_ms": 1419
+    },
+    {
+      "name": "Independent original-reference reconstruction meets visual threshold at 1440",
+      "status": "passed",
+      "duration_ms": 1635
+    },
+    {
+      "name": "All browser pages had no uncaught module or JavaScript errors",
+      "status": "passed",
+      "duration_ms": 0
+    },
+    {
+      "name": "Offline demos made no external network requests",
+      "status": "passed",
+      "duration_ms": 0
+    }
+  ],
+  "screenshots": [
+    "v2/evidence/screenshots/enterprise-320.png",
+    "v2/evidence/screenshots/enterprise-390.png",
+    "v2/evidence/screenshots/enterprise-768.png",
+    "v2/evidence/screenshots/enterprise-1440.png",
+    "v2/evidence/screenshots/fintech-320.png",
+    "v2/evidence/screenshots/fintech-390.png",
+    "v2/evidence/screenshots/fintech-768.png",
+    "v2/evidence/screenshots/fintech-1440.png",
+    "v2/evidence/screenshots/commerce-320.png",
+    "v2/evidence/screenshots/commerce-390.png",
+    "v2/evidence/screenshots/commerce-768.png",
+    "v2/evidence/screenshots/commerce-1440.png",
+    "v2/evidence/screenshots/agent-320.png",
+    "v2/evidence/screenshots/agent-390.png",
+    "v2/evidence/screenshots/agent-768.png",
+    "v2/evidence/screenshots/agent-1440.png",
+    "v2/evidence/screenshots/mobile-320.png",
+    "v2/evidence/screenshots/mobile-390.png",
+    "v2/evidence/screenshots/mobile-768.png",
+    "v2/evidence/screenshots/mobile-1440.png",
+    "v2/evidence/screenshots/studio-320.png",
+    "v2/evidence/screenshots/studio-390.png",
+    "v2/evidence/screenshots/studio-768.png",
+    "v2/evidence/screenshots/studio-1440.png",
+    "v2/evidence/screenshots/studio-scene-1440.png",
+    "v2/evidence/screenshots/v1-saas-390.png",
+    "v2/evidence/screenshots/v1-saas-1440.png",
+    "v2/evidence/screenshots/v1-commerce-390.png",
+    "v2/evidence/screenshots/v1-commerce-1440.png",
+    "v2/evidence/screenshots/v1-dashboard-390.png",
+    "v2/evidence/screenshots/v1-dashboard-1440.png",
+    "v2/evidence/screenshots/v1-portfolio-390.png",
+    "v2/evidence/screenshots/v1-portfolio-1440.png",
+    "v2/evidence/screenshots/v1-editorial-390.png",
+    "v2/evidence/screenshots/v1-editorial-1440.png",
+    "v2/evidence/screenshots/v1-immersive-390.png",
+    "v2/evidence/screenshots/v1-immersive-1440.png",
+    "v2/evidence/screenshots/library-390.png",
+    "v2/evidence/screenshots/library-1440.png",
+    "v2/evidence/screenshots/patterns-390.png",
+    "v2/evidence/screenshots/patterns-1440.png"
+  ],
+  "axe": [
+    {
+      "app": "enterprise",
+      "width": 390,
+      "violations": []
+    },
+    {
+      "app": "enterprise",
+      "width": 1440,
+      "violations": []
+    },
+    {
+      "app": "fintech",
+      "width": 390,
+      "violations": []
+    },
+    {
+      "app": "fintech",
+      "width": 1440,
+      "violations": []
+    },
+    {
+      "app": "commerce",
+      "width": 390,
+      "violations": []
+    },
+    {
+      "app": "commerce",
+      "width": 1440,
+      "violations": []
+    },
+    {
+      "app": "agent",
+      "width": 390,
+      "violations": []
+    },
+    {
+      "app": "agent",
+      "width": 1440,
+      "violations": []
+    },
+    {
+      "app": "mobile",
+      "width": 390,
+      "violations": []
+    },
+    {
+      "app": "mobile",
+      "width": 1440,
+      "violations": []
+    },
+    {
+      "app": "studio",
+      "width": 390,
+      "violations": []
+    },
+    {
+      "app": "studio",
+      "width": 1440,
+      "violations": []
+    }
+  ],
+  "uncaught_errors": [],
+  "external_requests": [],
+  "limitations": [
+    "Automated axe is not a full WCAG audit",
+    "Viewport emulation is not a physical phone",
+    "No production, real payment, brokerage or model-provider validation",
+    "No measured field Core Web Vitals or cross-browser acceptance"
+  ]
+}

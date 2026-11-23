@@ -1,0 +1,89 @@
+# Awwwards Web Design Skills · V2.0
+
+[![CI](https://github.com/hxyang24/awwwards-web-design-skills/actions/workflows/ci.yml/badge.svg)](https://github.com/hxyang24/awwwards-web-design-skills/actions/workflows/ci.yml)
+[![Original code: MIT](https://img.shields.io/badge/original_code-MIT-green.svg)](LICENSE)
+
+一套从网站研究、页面设计到可运行原型与验证的 AI 技能库。保留 V1 的 12 套技能，新增 12 套专项，提供企业后台、金融模拟、电商、AI Agent、移动端、动效/3D 和视觉重建工具。
+
+**24 套技能 · 82 个页面模式 · 22 个业务演示路由 · 6 个新增交互模板 + 6 个 V1 蓝本。** 82 个模式中的其余 60 个属于设计/实现规范，不代表全部已开发。真实业务服务未连接。
+
+[下载完整公开版 ZIP](https://github.com/hxyang24/awwwards-web-design-skills/releases/latest) · [执行入口](package/V2_START_HERE.md) · [覆盖矩阵](package/v2/docs/COVERAGE.md) · [实测与未测](package/v2/docs/VALIDATION.md)
+
+![Original interface library preview](package/v2/evidence/screenshots/library-1440.png)
+
+## 快速启动
+
+需要 Node.js 20+。本地演示所需浏览器模块已经随包提供，启动无需 npm install：
+
+```sh
+git clone https://github.com/hxyang24/awwwards-web-design-skills.git
+cd awwwards-web-design-skills/package
+node v2/server.mjs
+```
+
+打开 http://127.0.0.1:4173/ 。不要用 file:// 打开模块页面。`START_V2.cmd` 与 `START_V2.sh` 也位于 package 目录。
+
+## 安装技能与导出模板
+
+Python 3.10+，在 package 目录运行。目标路径由你指定，已有同名技能或非空项目不覆盖：
+
+```sh
+python v2/tools/install.py --list
+python v2/tools/install.py --target /path/to/your/skills
+python v2/tools/route_task.py --task "金融交易终端按照截图重建"
+python v2/tools/scaffold.py --kind enterprise --output /path/to/empty-project
+```
+
+模板种类：enterprise、fintech、commerce、agent、mobile、studio。新项目中运行 `node v2/server.mjs`。完整包仍为集中资源位置，安装后的新技能通过 `PACKAGE_LOCATION.json` 定位它。
+
+## 技能与示例
+
+| 层次 | 内容 |
+|---|---|
+| 原有 12 技能 | workflow、research、reference、design-system、layout、motion、webgl、content、product-ux、components、quality、release |
+| 新增业务技能 | page-library、enterprise、fintech、ecommerce、ai-agent |
+| 新增实现与验证 | mobile、advanced-motion、3d-experience、design-intelligence、visual-reconstruction、visual-diff、acceptance-docs |
+| 新模板 | Morrow 后台、Axis 金融模拟、Forma 电商、Relay Agent、Daylight 移动网页、Orbit 动效/3D |
+| 研究资料 | 206 条历史档案、30 个代表案例及来源、未知和冲突记录；本轮未逐站重新核验 |
+
+所有完整技能名以 `awwwards-` 开头，位于 [package/skills](package/skills)。已有框架可复用行为契约，不需要迁移到原生 HTML 模板。
+
+## 测试
+
+以下为交付时 Windows 环境的实际结果；在线 Linux CI 是另一组验证，状态见页面顶部。
+
+| 检查 | 交付结果 |
+|---|---:|
+| V1 原文件保留 | 187/187 SHA-256 匹配 |
+| V1 独立重跑 | 42/42 |
+| 新逻辑测试 | 24/24 |
+| 安装、导出、契约与路由工具 | 8/8 |
+| 浏览器检查 | 57/57 |
+| 自动无障碍扫描 | 12 次，选定规则无违规；不是完整 WCAG 审计 |
+| 原交付 ZIP 干净解压检查 | 18/18；公开版另附自己的哈希与回执 |
+
+在 package/v2 目录，先检查完整性，再安装开发依赖、运行测试：
+
+```sh
+python tools/verify.py
+npm ci
+npx playwright install chromium
+npm test
+npm run test:tools
+npm run test:browser
+npm run test:export
+```
+
+重测会更新 evidence，之后与出厂清单出现哈希差异是预期行为；只查结构与 V1 保留用 `python tools/verify.py --structure-only`。测试依赖和 Chromium 初次安装需要联网。
+
+## 视觉重建与限制
+
+提供授权参照简报、PNG 尺寸/主色提取、统一视口截图、整体与关键区域差异图，以及原创页面的独立重建示例。该示例在同一环境的 390/1440 宽度通过比对，不代表可自动逐页复刻任意第三方网站。详见 [重建说明](package/v2/docs/RECONSTRUCTION.md)。
+
+全部业务为本地虚构演示：没有真实支付、交易、行情、模型调用、服务端授权或持久化。未完成生产部署、真机、Safari/Firefox、真实用户性能和完整无障碍验收。复杂 shader、物理引擎、OCR/字体识别及高级跨页动画不属于已实装能力。
+
+## 开源与版权
+
+原创代码、技能及原创文档以 [MIT](LICENSE) 开源。**第三方组件不被重新许可：GSAP 使用其标准许可，不是 MIT；Three.js 保留 MIT。** 研究资料及链接不授予原站设计、品牌、代码或素材复制权。详见 [第三方声明](THIRD_PARTY_NOTICES.md)。
+
+这是独立研究与原创实现项目，与 Awwwards 无隶属或背书关系。公开分发仅规范化少量测试元数据并移除私人聊天标识，旧版 187 文件仍保留原字节，见 [公开发布记录](docs/OPEN_SOURCE_PUBLICATION.md)。

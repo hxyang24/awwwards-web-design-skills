@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "scope",
+    "patterns"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "2.0"
+    },
+    "patterns": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "domain",
+          "title",
+          "goal",
+          "regions",
+          "states",
+          "skill",
+          "coverage",
+          "production"
+        ],
+        "properties": {
+          "coverage": {
+            "enum": [
+              "specification",
+              "runnable_demo"
+            ]
+          },
+          "production": {
+            "const": "not_connected"
+          }
+        }
+      }
+    }
+  }
+}

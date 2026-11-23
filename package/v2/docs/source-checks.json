@@ -1,0 +1,49 @@
+[
+  {
+    "url": "https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum.html",
+    "status": 200,
+    "bytes_read": 66123,
+    "contains_relevant_term": true
+  },
+  {
+    "url": "https://gsap.com/docs/v3/GSAP/gsap.matchMedia/",
+    "status": 200,
+    "bytes_read": 163457,
+    "contains_relevant_term": true
+  },
+  {
+    "url": "https://threejs.org/manual/en/cleanup.html",
+    "status": "unavailable",
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "url": "https://playwright.dev/docs/test-snapshots",
+    "status": 200,
+    "bytes_read": 79274,
+    "contains_relevant_term": true
+  },
+  {
+    "url": "https://www.copyright.gov/what-is-copyright/",
+    "status": 200,
+    "bytes_read": 41074,
+    "contains_relevant_term": true
+  },
+  {
+    "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion",
+    "status": 200,
+    "bytes_read": 262144,
+    "contains_relevant_term": true
+  },
+  {
+    "url": "https://gsap.com/standard-license/",
+    "status": 200,
+    "method": "Read official license page; complete retained license text in vendor/gsap/LICENSE.txt",
+    "fetched_on": "2026-11-23"
+  },
+  {
+    "url": "https://threejs.org/docs/",
+    "status": 200,
+    "method": "Official docs index reachable; actual renderer/dispose behavior verified against local installed package",
+    "fetched_on": "2026-11-23"
+  }
+]

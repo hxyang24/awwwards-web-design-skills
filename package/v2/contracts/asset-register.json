@@ -1,0 +1,32 @@
+{
+  "assets": [
+    {
+      "id": "v2-original-ui",
+      "scope": "v2/demos excluding vendor",
+      "origin": "Original code, CSS geometry and fictional copy authored for this delivery",
+      "rights": "Use and adapt the V2 original files under LICENSE-V2.txt; no third-party brand rights granted",
+      "personal_data": "fictional"
+    },
+    {
+      "id": "system-fonts",
+      "origin": "Browser/OS installed font stack",
+      "bundled": false,
+      "rights": "No font binaries redistributed"
+    },
+    {
+      "id": "three",
+      "origin": "npm three 0.187.0",
+      "rights": "MIT; see vendor/three/LICENSE"
+    },
+    {
+      "id": "gsap",
+      "origin": "npm gsap 3.15.1",
+      "rights": "GSAP Standard no-charge license; see vendor/gsap/LICENSE.txt and official current license; not MIT"
+    },
+    {
+      "id": "v1-research",
+      "origin": "Verified input ZIP",
+      "rights": "Retained under original provenance; awards research is not a license to copy site assets/code/brands"
+    }
+  ]
+}

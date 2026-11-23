@@ -1,0 +1,227 @@
+{
+  "date": "2026-11-23T05:50:27.860117+00:00",
+  "status": "passed",
+  "checks": [
+    {
+      "name": "Node domain, image and transport tests",
+      "command": [
+        "node",
+        "--test",
+        "tests/unit.test.mjs"
+      ],
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "status": "passed",
+      "stdout": "✔ Money uses exact integer minor units for common values (1.0801ms)\n✔ Money rejects ambiguous, negative, scientific, fractional and infinite amounts (0.3368ms)\n✔ Cart changes are immutable and enforce inventory (0.8166ms)\n✔ Cart pricing independently checks tax and shipping boundaries (0.2301ms)\n✔ Checkout validates contact and retains an item snapshot (0.2992ms)\n✔ Trade review calculates fixed-price fees independently (0.2203ms)\n✔ Trade rejects fractional quantity (0.1265ms)\n✔ Trade rejects zero quantity (0.0785ms)\n✔ Trade rejects stale quote (0.0945ms)\n✔ Trade rejects unacknowledged risk (0.2184ms)\n✔ Trade rejects insufficient funds (0.0978ms)\n✔ Trade rejects zero price (0.0926ms)\n✔ Trade rejects nonfinite age (0.117ms)\n✔ Confirmation rejects edited or newly stale orders (0.248ms)\n✔ Role matrix and record version conflicts protect local edit contracts (0.2391ms)\n✔ Workflow preserves dependencies and rejects cycles, missing or duplicate nodes (0.3009ms)\n✔ Agent permissions require explicit approval and enforce state transitions (0.1672ms)\n✔ Untrusted content is escaped as text (0.1389ms)\n✔ Visual comparison identical fixture passes and changed fixture fails (3.3897ms)\n✔ Visual comparison rejects dimensions, invalid thresholds and invalid masks (1.9637ms)\n✔ Regional threshold catches a local defect and cannot be masked (0.8905ms)\n✔ Reasoned noncritical dynamic masks affect only declared pixels (0.5715ms)\n✔ Image inspector returns quantized palette and rejects non-PNG (3.493ms)\n✔ Local server serves modules and rejects traversal, non-GET and node_modules (54.8193ms)\nℹ tests 24\nℹ suites 0\nℹ pass 24\nℹ fail 0\nℹ cancelled 0\nℹ skipped 0\nℹ todo 0\nℹ duration_ms 249.5031\n",
+      "stderr": ""
+    },
+    {
+      "name": "Installer and contract unit tests",
+      "command": [
+        "python",
+        "tests/tools_test.py"
+      ],
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "status": "passed",
+      "stdout": "",
+      "stderr": "test_all_new_templates_export_with_runtime_and_no_overwrite (__main__.Tools.test_all_new_templates_export_with_runtime_and_no_overwrite) ... ok\ntest_blocked_needs_reason_and_not_run_is_valid (__main__.Tools.test_blocked_needs_reason_and_not_run_is_valid) ... ok\ntest_installer_is_non_destructive_and_complete (__main__.Tools.test_installer_is_non_destructive_and_complete) ... ok\ntest_installer_rejects_in_package_destination (__main__.Tools.test_installer_rejects_in_package_destination) ... ok\ntest_passed_acceptance_requires_real_in_scope_evidence (__main__.Tools.test_passed_acceptance_requires_real_in_scope_evidence) ... ok\ntest_reference_needs_rights_and_observation_evidence (__main__.Tools.test_reference_needs_rights_and_observation_evidence) ... ok\ntest_router_combines_business_and_visual_tasks_without_losing_legacy_entry (__main__.Tools.test_router_combines_business_and_visual_tasks_without_losing_legacy_entry) ... ok\ntest_router_outputs_available_skills_for_unknown_task (__main__.Tools.test_router_outputs_available_skills_for_unknown_task) ... ok\n\n----------------------------------------------------------------------\nRan 8 tests in 0.207s\n\nOK\n"
+    },
+    {
+      "name": "Package structure, original V1 hashes and skill references",
+      "command": [
+        "python",
+        "tools/verify.py",
+        "--structure-only"
+      ],
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "status": "passed",
+      "stdout": "{\n  \"status\": \"passed\",\n  \"v1_original_files\": 187,\n  \"skills\": 24,\n  \"patterns\": 82,\n  \"runnable_routes\": 22,\n  \"manifest_checked\": false,\n  \"errors\": []\n}\n",
+      "stderr": ""
+    },
+    {
+      "name": "Reference contract example",
+      "command": [
+        "python",
+        "tools/validate_contract.py",
+        "reference",
+        "contracts/reference-brief.example.json"
+      ],
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "status": "passed",
+      "stdout": "{\"status\": \"passed\", \"scope\": \"Contract structure and local evidence existence only\", \"errors\": []}\n",
+      "stderr": ""
+    },
+    {
+      "name": "Unrun acceptance remains structurally valid",
+      "command": [
+        "python",
+        "tools/validate_contract.py",
+        "acceptance",
+        "contracts/acceptance.example.json"
+      ],
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "status": "passed",
+      "stdout": "{\"status\": \"passed\", \"scope\": \"Contract structure and local evidence existence only\", \"errors\": []}\n",
+      "stderr": ""
+    },
+    {
+      "name": "PNG analysis on actual browser screenshot",
+      "command": [
+        "node",
+        "tools/inspect_image.mjs",
+        "evidence/reference.png",
+        "evidence/image-analysis.json"
+      ],
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "status": "passed",
+      "stdout": "{\"width\":1440,\"height\":1000,\"samples\":360000,\"quantization_step\":16,\"palette\":[{\"rgb\":[240,240,240],\"fraction\":0.566},{\"rgb\":[240,240,224],\"fraction\":0.41611944444444443},{\"rgb\":[16,32,48],\"fraction\":0.007369444444444444},{\"rgb\":[32,96,80],\"fraction\":0.003980555555555556},{\"rgb\":[32,48,48],\"fraction\":0.0004},{\"rgb\":[48,64,64],\"fraction\":0.00036944444444444443},{\"rgb\":[192,192,192],\"fraction\":0.00034722222222222224},{\"rgb\":[224,224,224],\"fraction\":0.0002777777777777778},{\"rgb\":[144,144,144],\"fraction\":0.0002555555555555556},{\"rgb\":[96,112,112],\"fraction\":0.00020833333333333335},{\"rgb\":[240,176,112],\"fraction\":0.00018055555555555555},{\"rgb\":[176,240,224],\"fraction\":0.00017777777777777779}],\"limitations\":[\"No OCR, font identity, semantic layout or hidden interaction inference\"]}\n",
+      "stderr": ""
+    },
+    {
+      "name": "Visual CLI same screenshot passes",
+      "command": [
+        "node",
+        "tools/visual_diff.mjs",
+        "evidence/reference.png",
+        "evidence/reference-repeat.png",
+        "evidence/cli-identical"
+      ],
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "status": "passed",
+      "stdout": "{\"status\":\"passed\",\"width\":1440,\"height\":1000,\"changed\":0,\"eligible\":1440000,\"ratio\":0,\"mean_absolute_rgb_error\":0,\"max_ratio\":0.005,\"pixel_threshold\":0.1,\"masks\":[],\"regions\":[]}\n",
+      "stderr": ""
+    },
+    {
+      "name": "Visual CLI changed heading fails",
+      "command": [
+        "node",
+        "tools/visual_diff.mjs",
+        "evidence/reference.png",
+        "evidence/reference-changed.png",
+        "evidence/cli-changed"
+      ],
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "status": "passed",
+      "stdout": "{\"status\":\"failed\",\"width\":1440,\"height\":1000,\"changed\":30025,\"eligible\":1440000,\"ratio\":0.020850694444444446,\"mean_absolute_rgb_error\":4.09439537037037,\"max_ratio\":0.005,\"pixel_threshold\":0.1,\"masks\":[],\"regions\":[]}\n",
+      "stderr": ""
+    },
+    {
+      "name": "Capture CLI on local original reference",
+      "command": [
+        "node",
+        "tools/capture.mjs",
+        "http://127.0.0.1:4199/v2/demos/reference/",
+        "evidence/cli-capture.png",
+        "1440",
+        "1000"
+      ],
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "status": "passed",
+      "stdout": "evidence/cli-capture.png\n",
+      "stderr": ""
+    }
+  ],
+  "python_skill_syntax": [
+    {
+      "path": "skills/awwwards-components/scripts/scaffold.py",
+      "status": "passed"
+    },
+    {
+      "path": "skills/awwwards-components/scripts/static_self_test.py",
+      "status": "passed"
+    },
+    {
+      "path": "skills/awwwards-content/scripts/audit_content.py",
+      "status": "passed"
+    },
+    {
+      "path": "skills/awwwards-design-system/scripts/make_tokens.py",
+      "status": "passed"
+    },
+    {
+      "path": "skills/awwwards-design-system/scripts/validate_tokens.py",
+      "status": "passed"
+    },
+    {
+      "path": "skills/awwwards-layout/scripts/prepare_layout.py",
+      "status": "passed"
+    },
+    {
+      "path": "skills/awwwards-motion/scripts/check_motion_spec.py",
+      "status": "passed"
+    },
+    {
+      "path": "skills/awwwards-product-ux/scripts/validate_flow.py",
+      "status": "passed"
+    },
+    {
+      "path": "skills/awwwards-quality/scripts/browser_audit.py",
+      "status": "passed"
+    },
+    {
+      "path": "skills/awwwards-quality/scripts/check_budget.py",
+      "status": "passed"
+    },
+    {
+      "path": "skills/awwwards-quality/scripts/offline_dom_audit.py",
+      "status": "passed"
+    },
+    {
+      "path": "skills/awwwards-quality/scripts/static_audit.py",
+      "status": "passed"
+    },
+    {
+      "path": "skills/awwwards-reference/scripts/case_tool.py",
+      "status": "passed"
+    },
+    {
+      "path": "skills/awwwards-reference/scripts/merge_cases.py",
+      "status": "passed"
+    },
+    {
+      "path": "skills/awwwards-release/scripts/delivery_manifest.py",
+      "status": "passed"
+    },
+    {
+      "path": "skills/awwwards-research/scripts/archive_tool.py",
+      "status": "passed"
+    },
+    {
+      "path": "skills/awwwards-research/scripts/merge_archive.py",
+      "status": "passed"
+    },
+    {
+      "path": "skills/awwwards-research/scripts/summarize_dataset.py",
+      "status": "passed"
+    },
+    {
+      "path": "skills/awwwards-webgl/scripts/check_scene_spec.py",
+      "status": "passed"
+    },
+    {
+      "path": "skills/awwwards-workflow/scripts/init_project.py",
+      "status": "passed"
+    },
+    {
+      "path": "skills/awwwards-workflow/scripts/resolve_skill.py",
+      "status": "passed"
+    },
+    {
+      "path": "skills/awwwards-workflow/scripts/validate_stage.py",
+      "status": "passed"
+    }
+  ],
+  "limitations": [
+    "CLI group counts are not individual assertion counts",
+    "Structure validation does not verify semantic design decisions or production integrations"
+  ],
+  "publication_note": "Absolute Python executable paths normalized to python for public distribution. Test outcomes are unchanged."
+}

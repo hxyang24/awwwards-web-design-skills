@@ -1,0 +1,16 @@
+{
+  "date": "2026-11-23T05:47:55.756Z",
+  "status": "passed",
+  "checks": [
+    {
+      "kind": "enterprise",
+      "status": "passed",
+      "scope": "Exported project without node_modules, local HTTP and browser module loading"
+    },
+    {
+      "kind": "studio",
+      "status": "passed",
+      "scope": "Exported project without node_modules, local HTTP and browser module loading, actual software WebGL scene"
+    }
+  ]
+}

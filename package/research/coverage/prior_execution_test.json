@@ -1,0 +1,170 @@
+{
+  "schema_version": "1.0",
+  "project_name": "明账",
+  "created_at": "2026-11-22T18:36:47.473793+00:00",
+  "project_path": "/workspace/scratch/e85fa84d0259/forward-test-mingzhang",
+  "requested_goal": "可交接的中文企业财务SaaS最小页面方案与本地可运行原型",
+  "overall_status": "development_complete_verification_partial",
+  "primary_action": "预约演示",
+  "routes": [
+    "/",
+    "/404.html"
+  ],
+  "delivered": [
+    "README.md",
+    "HANDOFF.md",
+    "index.html",
+    "404.html",
+    "page.template.html",
+    "styles.css",
+    "tokens.json",
+    "tokens.css",
+    "client.mjs",
+    "bootstrap.mjs",
+    "preview.py",
+    "components-contract.json",
+    ".awwwards/design/tokens.json",
+    ".awwwards/product-brief.json",
+    ".awwwards/flows/demo-request-preview.json",
+    ".awwwards/data-contract.json",
+    ".awwwards/failure-matrix.json",
+    ".awwwards/content.json",
+    ".awwwards/stages/",
+    ".awwwards/evidence/",
+    "FINDINGS.json"
+  ],
+  "run": {
+    "command": "python3 preview.py --port 4173",
+    "cwd": "/workspace/scratch/e85fa84d0259/forward-test-mingzhang",
+    "url": "http://127.0.0.1:4173/",
+    "scope": "same machine local preview only",
+    "live_server_left_running": false,
+    "server_shutdown_exit_code": 130
+  },
+  "actual_checks": {
+    "build_and_module_syntax": "pass",
+    "form_pure_rule_cases": {
+      "status": "pass",
+      "count": 7,
+      "evidence": ".awwwards/evidence/form-rules.log"
+    },
+    "declared_color_pairs": {
+      "status": "pass",
+      "minimum_text_contrast": 5.503,
+      "control_boundary_contrast": 3.496,
+      "evidence": [
+        ".awwwards/evidence/tokens-final.log",
+        ".awwwards/evidence/control-contrast.json"
+      ]
+    },
+    "flow_content_motion_structure": "pass",
+    "static_html": {
+      "status": "pass",
+      "count": 10,
+      "scope": "source parser only, not rendered DOM",
+      "evidence": ".awwwards/evidence/static-html.json"
+    },
+    "local_http": {
+      "status": "pass",
+      "scope": "same-process server and GET requests only; not browser or visual verification",
+      "evidence": ".awwwards/evidence/http-check.json"
+    },
+    "negative_structural_cases": {
+      "status": "pass",
+      "count": 4,
+      "cases": [
+        "client_preview_cannot_claim_server_success",
+        "error_state_without_recovery",
+        "unrun_browser_gate_cannot_be_complete",
+        "unreadable_muted_text"
+      ],
+      "evidence": ".awwwards/evidence/negative-checks.json"
+    },
+    "browser": {
+      "status": "blocked",
+      "attempts": 1,
+      "error": "Chromium process_singleton_posix.cc socket() failed: Operation not permitted",
+      "page_results": 0,
+      "screenshots": 0,
+      "evidence": ".awwwards/qa/browser-01/browser-audit.json"
+    },
+    "all_stage_validator": {
+      "exit_code": 2,
+      "status": "incomplete",
+      "partial_stage_count": 7,
+      "evidence": ".awwwards/evidence/stage-validation.log"
+    },
+    "performance_budget": {
+      "exit_code": 2,
+      "status": "not_measured",
+      "evidence": ".awwwards/evidence/performance-budget.log"
+    },
+    "delivery_manifest": {
+      "exit_code": 0,
+      "scope": "inventory only; truth_verified false",
+      "evidence": ".awwwards/delivery-manifest.json"
+    }
+  },
+  "stage_statuses": {
+    "quality": "partial",
+    "release": "complete",
+    "content": "partial",
+    "layout": "partial",
+    "reference": "not_applicable",
+    "design_system": "partial",
+    "webgl": "not_applicable",
+    "motion": "partial",
+    "components": "partial",
+    "product_ux": "partial"
+  },
+  "size_estimate": {
+    "raw_bytes": 41286,
+    "gzip_bytes": 12006,
+    "js_gzip_kib": 3.1494140625,
+    "scope": "disk/gzip estimate only, not network transfer or load performance"
+  },
+  "not_run": [
+    "visual screenshots",
+    "responsive widths 360/390/768/1440",
+    "320px reflow",
+    "200% text resize",
+    "actual keyboard navigation and focus",
+    "screen reader status",
+    "browser form and failure flows",
+    "runtime reduced motion",
+    "runtime mount/dispose",
+    "LCP",
+    "INP",
+    "CLS"
+  ],
+  "source_boundaries": {
+    "is_product_concept": true,
+    "real_customer_data": false,
+    "backend_connected": false,
+    "financial_amounts": null,
+    "pricing": null,
+    "deployment_url": null,
+    "actual_booking_confirmation": false
+  },
+  "observed_workflow_notes": [
+    "New empty project was scaffolded before init_project, satisfying both scripts without overwriting user files.",
+    "prepare_layout needed --replace because init_project had created the layout stage; only this new generated file was replaced.",
+    "Installed skill directories changed to skill IDs during work; exact frontmatter name resolution succeeded.",
+    "Validators correctly retained incomplete evidence: partial stages and null performance metrics produce nonzero exit codes.",
+    "Browser installation did not imply runtime availability; one launch was attempted and its blocked report was retained.",
+    "No simulated DOM or HTTP result was recorded as a visual, responsive or keyboard pass.",
+    "A repeat delivery_manifest invocation refused to overwrite the previous evidence (exit 2); final inventory uses a new filename and preserves the earlier snapshot."
+  ],
+  "authorization_compliance": {
+    "writes_within_requested_new_project": true,
+    "existing_business_repository_modified": false,
+    "git_operations": false,
+    "skill_files_modified": false,
+    "deployment": false,
+    "form_sent": false,
+    "external_messages": false,
+    "other_agent_notes_read": false,
+    "research_qa_read": false
+  },
+  "execution_log": ".awwwards/evidence/execution.jsonl"
+}

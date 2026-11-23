@@ -1,0 +1,391 @@
+{
+  "schema_version": "1.0",
+  "source": "archives taxonomy fields (third-party index tags)",
+  "note": "overlapping per-site labels; missing means unknown",
+  "vocabularies": {
+    "industry": [
+      {
+        "tag": "Web & Interactive",
+        "count": 99
+      },
+      {
+        "tag": "Design Agencies",
+        "count": 36
+      },
+      {
+        "tag": "Promotional",
+        "count": 35
+      },
+      {
+        "tag": "Games & Entertainment",
+        "count": 32
+      },
+      {
+        "tag": "Art & Illustration",
+        "count": 30
+      },
+      {
+        "tag": "Business & Corporate",
+        "count": 24
+      },
+      {
+        "tag": "Experimental",
+        "count": 23
+      },
+      {
+        "tag": "Culture & Education",
+        "count": 22
+      },
+      {
+        "tag": "Technology",
+        "count": 21
+      },
+      {
+        "tag": "Music & Sound",
+        "count": 20
+      },
+      {
+        "tag": "Film & TV",
+        "count": 19
+      },
+      {
+        "tag": "Food & Drink",
+        "count": 11
+      },
+      {
+        "tag": "Mobile & Apps",
+        "count": 10
+      },
+      {
+        "tag": "Sports",
+        "count": 10
+      },
+      {
+        "tag": "Fashion",
+        "count": 10
+      },
+      {
+        "tag": "Other",
+        "count": 9
+      },
+      {
+        "tag": "E-Commerce",
+        "count": 9
+      },
+      {
+        "tag": "Startups",
+        "count": 7
+      },
+      {
+        "tag": "Institutions",
+        "count": 5
+      },
+      {
+        "tag": "Photography",
+        "count": 5
+      },
+      {
+        "tag": "Events",
+        "count": 5
+      },
+      {
+        "tag": "Architecture",
+        "count": 5
+      },
+      {
+        "tag": "Magazine / Newspaper / Blog",
+        "count": 4
+      },
+      {
+        "tag": "Hotel / Restaurant",
+        "count": 2
+      },
+      {
+        "tag": "Luxury",
+        "count": 2
+      },
+      {
+        "tag": "Social responsibility",
+        "count": 1
+      },
+      {
+        "tag": "Real Estate",
+        "count": 1
+      }
+    ],
+    "style": [
+      {
+        "tag": "Clean",
+        "count": 36
+      },
+      {
+        "tag": "Colorful",
+        "count": 34
+      },
+      {
+        "tag": "Typography",
+        "count": 21
+      },
+      {
+        "tag": "Graphic design",
+        "count": 16
+      },
+      {
+        "tag": "Minimal",
+        "count": 13
+      },
+      {
+        "tag": "Illustration",
+        "count": 13
+      },
+      {
+        "tag": "Photographic",
+        "count": 7
+      },
+      {
+        "tag": "Flat Design",
+        "count": 3
+      },
+      {
+        "tag": "Retro",
+        "count": 2
+      }
+    ],
+    "interaction": [
+      {
+        "tag": "Storytelling",
+        "count": 46
+      },
+      {
+        "tag": "Unusual Navigation",
+        "count": 31
+      },
+      {
+        "tag": "Transitions",
+        "count": 29
+      },
+      {
+        "tag": "Scrolling",
+        "count": 25
+      },
+      {
+        "tag": "Parallax",
+        "count": 22
+      },
+      {
+        "tag": "Microinteractions",
+        "count": 19
+      },
+      {
+        "tag": "Sound-Audio",
+        "count": 16
+      },
+      {
+        "tag": "Gestures / Interaction",
+        "count": 16
+      },
+      {
+        "tag": "Infinite Scroll",
+        "count": 10
+      },
+      {
+        "tag": "Navigation Menu",
+        "count": 9
+      },
+      {
+        "tag": "Horizontal Layout",
+        "count": 5
+      },
+      {
+        "tag": "360",
+        "count": 5
+      }
+    ],
+    "technology": [
+      {
+        "tag": "WebGL",
+        "count": 75
+      },
+      {
+        "tag": "HTML5",
+        "count": 54
+      },
+      {
+        "tag": "GSAP",
+        "count": 41
+      },
+      {
+        "tag": "CSS",
+        "count": 36
+      },
+      {
+        "tag": "Three.js",
+        "count": 33
+      },
+      {
+        "tag": "jQuery",
+        "count": 24
+      },
+      {
+        "tag": "PHP",
+        "count": 13
+      },
+      {
+        "tag": "GLSL",
+        "count": 10
+      },
+      {
+        "tag": "Wordpress",
+        "count": 7
+      },
+      {
+        "tag": "Nuxt.js",
+        "count": 7
+      },
+      {
+        "tag": "Vue.js",
+        "count": 7
+      },
+      {
+        "tag": "PixiJS",
+        "count": 6
+      },
+      {
+        "tag": "Nginx",
+        "count": 4
+      },
+      {
+        "tag": "Google Font API",
+        "count": 4
+      },
+      {
+        "tag": "React",
+        "count": 4
+      },
+      {
+        "tag": "Webflow",
+        "count": 4
+      },
+      {
+        "tag": "SVG",
+        "count": 3
+      },
+      {
+        "tag": "Varnish",
+        "count": 3
+      },
+      {
+        "tag": "Google App Engine",
+        "count": 3
+      },
+      {
+        "tag": "Javascript",
+        "count": 3
+      },
+      {
+        "tag": "Figma",
+        "count": 3
+      },
+      {
+        "tag": "Blender",
+        "count": 3
+      },
+      {
+        "tag": "WebSockets",
+        "count": 2
+      },
+      {
+        "tag": "Node.js",
+        "count": 2
+      },
+      {
+        "tag": "Typekit",
+        "count": 2
+      },
+      {
+        "tag": "Webpack",
+        "count": 2
+      },
+      {
+        "tag": "Vercel",
+        "count": 2
+      },
+      {
+        "tag": "After Effects",
+        "count": 2
+      },
+      {
+        "tag": "Knockout",
+        "count": 1
+      },
+      {
+        "tag": "Express",
+        "count": 1
+      },
+      {
+        "tag": "Bootstrap",
+        "count": 1
+      },
+      {
+        "tag": "Lo-dash",
+        "count": 1
+      },
+      {
+        "tag": "VR",
+        "count": 1
+      },
+      {
+        "tag": "WebVR",
+        "count": 1
+      },
+      {
+        "tag": "tween.js",
+        "count": 1
+      },
+      {
+        "tag": "YouTube API",
+        "count": 1
+      },
+      {
+        "tag": "Readymag",
+        "count": 1
+      },
+      {
+        "tag": "BARBA.js",
+        "count": 1
+      },
+      {
+        "tag": "Adobe Photoshop",
+        "count": 1
+      },
+      {
+        "tag": "Craft CMS",
+        "count": 1
+      },
+      {
+        "tag": "Highway.js",
+        "count": 1
+      },
+      {
+        "tag": "WooCommerce",
+        "count": 1
+      },
+      {
+        "tag": "Contentful",
+        "count": 1
+      },
+      {
+        "tag": "Motion",
+        "count": 1
+      },
+      {
+        "tag": "DatoCMS",
+        "count": 1
+      },
+      {
+        "tag": "Shopify",
+        "count": 1
+      }
+    ]
+  }
+}

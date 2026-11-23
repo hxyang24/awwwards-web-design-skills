@@ -1,0 +1,304 @@
+{
+  "test_date": "2026-11-23T05:43:21.301400+00:00",
+  "method": "Python/Node CLI and static example checks; online research and real-user CWV not rerun. Synthetic fixture checks exercise parser only.",
+  "status": "passed",
+  "tested": 42,
+  "passed": 42,
+  "failed": [],
+  "tests": [
+    {
+      "name": "archive_validate",
+      "status": "passed",
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "stderr": ""
+    },
+    {
+      "name": "case_citations_validate",
+      "status": "passed",
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "stderr": ""
+    },
+    {
+      "name": "motion_spec",
+      "status": "passed",
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "stderr": ""
+    },
+    {
+      "name": "webgl_spec",
+      "status": "passed",
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "stderr": ""
+    },
+    {
+      "name": "webgl_resource_scope",
+      "status": "passed",
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "stderr": ""
+    },
+    {
+      "name": "content_contract",
+      "status": "passed",
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "stderr": ""
+    },
+    {
+      "name": "ux_flow_contract",
+      "status": "passed",
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "stderr": ""
+    },
+    {
+      "name": "six_templates_scaffold_static",
+      "status": "passed",
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "stderr": ""
+    },
+    {
+      "name": "metrics_not_run_cannot_pass",
+      "status": "passed",
+      "expected_exit": 2,
+      "actual_exit": 2,
+      "stderr": ""
+    },
+    {
+      "name": "archive_case_counts",
+      "status": "passed",
+      "archive": 206,
+      "cases": 30
+    },
+    {
+      "name": "tokens_build_fintech",
+      "status": "passed",
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "stderr": ""
+    },
+    {
+      "name": "tokens_contrast_fintech",
+      "status": "passed",
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "stderr": ""
+    },
+    {
+      "name": "negative_low_contrast_rejected",
+      "status": "passed",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "stderr": ""
+    },
+    {
+      "name": "tokens_build_editorial",
+      "status": "passed",
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "stderr": ""
+    },
+    {
+      "name": "tokens_contrast_editorial",
+      "status": "passed",
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "stderr": ""
+    },
+    {
+      "name": "tokens_build_playful",
+      "status": "passed",
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "stderr": ""
+    },
+    {
+      "name": "tokens_contrast_playful",
+      "status": "passed",
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "stderr": ""
+    },
+    {
+      "name": "project_initializer",
+      "status": "passed",
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "stderr": ""
+    },
+    {
+      "name": "project_validator_unverified_status",
+      "status": "passed",
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "stderr": ""
+    },
+    {
+      "name": "negative_no_overwrite_project",
+      "status": "passed",
+      "expected_exit": 2,
+      "actual_exit": 2,
+      "stderr": ""
+    },
+    {
+      "name": "negative_stage_without_evidence_rejected",
+      "status": "passed",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "stderr": ""
+    },
+    {
+      "name": "layout_spec_creation",
+      "status": "passed",
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "stderr": ""
+    },
+    {
+      "name": "scaffold_saas",
+      "status": "passed",
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "stderr": ""
+    },
+    {
+      "name": "negative_no_overwrite_scaffold",
+      "status": "passed",
+      "expected_exit": 2,
+      "actual_exit": 2,
+      "stderr": ""
+    },
+    {
+      "name": "example_html_saas",
+      "status": "passed",
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "stderr": ""
+    },
+    {
+      "name": "example_js_syntax_saas",
+      "status": "passed",
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "stderr": ""
+    },
+    {
+      "name": "example_html_commerce",
+      "status": "passed",
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "stderr": ""
+    },
+    {
+      "name": "example_js_syntax_commerce",
+      "status": "passed",
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "stderr": ""
+    },
+    {
+      "name": "example_html_dashboard",
+      "status": "passed",
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "stderr": ""
+    },
+    {
+      "name": "example_js_syntax_dashboard",
+      "status": "passed",
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "stderr": ""
+    },
+    {
+      "name": "example_html_portfolio",
+      "status": "passed",
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "stderr": ""
+    },
+    {
+      "name": "example_js_syntax_portfolio",
+      "status": "passed",
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "stderr": ""
+    },
+    {
+      "name": "example_html_editorial",
+      "status": "passed",
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "stderr": ""
+    },
+    {
+      "name": "example_js_syntax_editorial",
+      "status": "passed",
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "stderr": ""
+    },
+    {
+      "name": "example_html_immersive",
+      "status": "passed",
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "stderr": ""
+    },
+    {
+      "name": "example_js_syntax_immersive",
+      "status": "passed",
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "stderr": ""
+    },
+    {
+      "name": "shared_js_syntax",
+      "status": "passed",
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "stderr": ""
+    },
+    {
+      "name": "synthetic_budget_parser_unit_test",
+      "status": "passed",
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "stderr": ""
+    },
+    {
+      "name": "negative_fake_payment_rejected",
+      "status": "passed",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "stderr": ""
+    },
+    {
+      "name": "negative_unsourced_claim_rejected",
+      "status": "passed",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "stderr": ""
+    },
+    {
+      "name": "nondestructive_archive_merge",
+      "status": "passed",
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "stderr": ""
+    },
+    {
+      "name": "nonempty_archive_merge_cannot_overwrite",
+      "status": "passed",
+      "expected_exit": 2,
+      "actual_exit": 2,
+      "stderr": ""
+    }
+  ],
+  "browser": "See tests/offline-dom-results.json for 12 Chromium set_content DOM/layout/behavior tests; no HTTP/module-loader/CWV testing."
+}

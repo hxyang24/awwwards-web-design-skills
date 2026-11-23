@@ -1,0 +1,23 @@
+{
+  "status": "passed",
+  "width": 1440,
+  "height": 1000,
+  "changed": 0,
+  "eligible": 1440000,
+  "ratio": 0,
+  "mean_absolute_rgb_error": 0,
+  "max_ratio": 0.005,
+  "pixel_threshold": 0.1,
+  "masks": [],
+  "regions": [
+    {
+      "id": "headline-and-action",
+      "changed": 0,
+      "eligible": 1008000,
+      "ratio": 0,
+      "max_ratio": 0.005,
+      "passed": true
+    }
+  ],
+  "scope": "Independent HTML and CSS for one bundled original reference; no third-party website or hidden behaviors reconstructed"
+}

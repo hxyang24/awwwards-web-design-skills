@@ -1,0 +1,12 @@
+{
+  "site_name": "明账演示版",
+  "routes": [{
+    "path": "/",
+    "title": "明账｜清晰展示业务财务数据",
+    "description": "面向团队的财务产品界面示例，展示设计和表单交互；不提供真实银行账户连接服务。",
+    "h1": "把复杂的业务数据，看得更清楚",
+    "primary_cta": "查看演示",
+    "images": [{"src":"assets/preview.svg","alt":"明账产品界面示意插画"}],
+    "public_claims": []
+  }]
+}

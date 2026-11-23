@@ -1,0 +1,6264 @@
+{
+  "schema_version": "1.0",
+  "research_date": "2026-11-23",
+  "case_count": 30,
+  "method": "Primary-source desk research; evidence separated from original reconstruction proposals.",
+  "live_inspected_count": 0,
+  "performance_measured_count": 0,
+  "cases": [
+    {
+      "schema_version": "1.0",
+      "case_id": "nike-better-world",
+      "name": "Nike Better World",
+      "research_level": "desk_researched",
+      "research_date": "2026-11-23",
+      "awwwards_url": "https://www.awwwards.com/sites/nike-better-world",
+      "award_year": 2011,
+      "award_month": 1,
+      "award_month_status": "primary_month_claim",
+      "candidate_month_claims": [],
+      "award_month_notes": "Award month read directly from official archive, not inferred from SOTD.",
+      "sources": [
+        {
+          "id": "s1",
+          "url": "https://www.awwwards.com/websites/sites_of_the_month/?page=7",
+          "retrieved_at": "2026-11-23",
+          "kind": "primary_source",
+          "supports": "Historical award identity and monthly evidence"
+        },
+        {
+          "id": "s2",
+          "url": "https://www.awwwards.com/sites/nike-better-world",
+          "retrieved_at": "2026-11-23",
+          "kind": "primary_source",
+          "supports": "Official work record; page date may be SOTD"
+        }
+      ],
+      "facts": [
+        {
+          "id": "f1",
+          "claim": "官方来源记录该案例的SOTM月份为2011-01。",
+          "category": "award",
+          "source_ids": [
+            "s1"
+          ],
+          "basis": "primary_published_evidence"
+        },
+        {
+          "id": "f2",
+          "claim": "官方作品页列出Parallax与Big Background Images标签，主题为通过运动创造更美好的世界。",
+          "category": "context",
+          "source_ids": [
+            "s2"
+          ],
+          "basis": "primary_published_evidence"
+        },
+        {
+          "id": "f3",
+          "claim": "可核验视差交互类别；框架、版本与CMS未知。",
+          "category": "technical",
+          "source_ids": [
+            "s2"
+          ],
+          "basis": "primary_published_evidence"
+        }
+      ],
+      "observations": [],
+      "inferences": [],
+      "pages": [],
+      "interactions": [],
+      "measurements": [],
+      "classification": {
+        "industry": [
+          "品牌",
+          "体育"
+        ],
+        "visual_style": [
+          "大图",
+          "编辑式"
+        ],
+        "interaction_pattern": [
+          "视差滚动"
+        ],
+        "basis": "analyst classification based on cited descriptions; not live visual inspection"
+      },
+      "historical_technology_names": [],
+      "technology_note": "Read technical fact statements and their scope. An empty list means no normalized complete list, not absence of technology.",
+      "blueprints": [
+        {
+          "id": "bp1",
+          "status": "proposal",
+          "title": "复用机制的原创实现蓝图",
+          "inputs": [
+            "经过核验的自有正文与主用户任务",
+            "已授权图片/视频/模型",
+            "用户操作与设备能力"
+          ],
+          "states": [
+            "idle",
+            "loading",
+            "ready",
+            "interacting",
+            "paused",
+            "error",
+            "fallback",
+            "disposed"
+          ],
+          "outputs": [
+            "可读的DOM内容与真实导航",
+            "与业务状态分离的视觉反馈"
+          ],
+          "steps": [
+            "先用语义section交付完整静态内容。",
+            "将前后景设为不同位移系数，保持阅读顺序。",
+            "每帧集中读取滚动状态并更新transform。",
+            "reduced-motion取消位移，手机端提供静态构图。"
+          ],
+          "fallback": "采用本例步骤与验收中的DOM、静态图、触摸按钮或鼠标替代路径；图形增强失败时主任务仍可完成。",
+          "cleanup": "卸载时停止本模块动画帧、断开观察器、移除事件监听；若存在GPU/音频/视频资源则分别释放或停止；不得全局销毁其他页面资源。",
+          "acceptance": [
+            "禁用JS仍可读。",
+            "键盘锚点可直接访问各节。",
+            "320px与1440px无正文溢出。"
+          ],
+          "risks": [
+            "历史站点可能不可运行。",
+            "输入设备和浏览器能力变化需要重新验收。"
+          ]
+        }
+      ],
+      "mobile_fallback": {
+        "status": "proposal",
+        "text": "采用本例步骤与验收中的DOM、静态图、触摸按钮或鼠标替代路径；图形增强失败时主任务仍可完成。"
+      },
+      "implementation_risks": {
+        "status": "proposal",
+        "items": [
+          "历史站点可能不可运行。",
+          "输入设备和浏览器能力变化需要重新验收。"
+        ]
+      },
+      "inspection_plan": {
+        "status": "not_run",
+        "viewports": [
+          {
+            "width": 390,
+            "height": 844
+          },
+          {
+            "width": 1440,
+            "height": 900
+          }
+        ],
+        "page_tasks": [
+          "确认获奖版本与当前URL关系",
+          "记录实际页面与主CTA",
+          "执行交互状态表"
+        ],
+        "required_states": [
+          "idle",
+          "focus",
+          "active",
+          "loading",
+          "success",
+          "error",
+          "empty",
+          "disabled",
+          "reduced_motion"
+        ]
+      },
+      "limitations": [
+        "本次未对原站进行现场交互或性能实测。",
+        "以下实现蓝图是原创建议，不是对原站源码的断言。",
+        "本次只完成官方/制作方文献拆解，未对原站逐页截图或执行交互。",
+        "未独立测量网络资源、帧率或Core Web Vitals；原作者数字不代表当前实测。",
+        "蓝图、移动回退和验收项均为本库建议，不是对原站源码的结论。"
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "case_id": "chrome-web-lab",
+      "name": "Chrome Web Lab",
+      "research_level": "desk_researched",
+      "research_date": "2026-11-23",
+      "awwwards_url": "https://www.awwwards.com/sites/chrome-web-lab",
+      "award_year": 2012,
+      "award_month": 8,
+      "award_month_status": "primary_month_claim",
+      "candidate_month_claims": [],
+      "award_month_notes": "Award month read directly from official archive, not inferred from SOTD.",
+      "sources": [
+        {
+          "id": "s1",
+          "url": "https://www.awwwards.com/websites/sites_of_the_month/?page=6",
+          "retrieved_at": "2026-11-23",
+          "kind": "primary_source",
+          "supports": "Historical award identity and monthly evidence"
+        },
+        {
+          "id": "s2",
+          "url": "https://www.awwwards.com/sites/chrome-web-lab",
+          "retrieved_at": "2026-11-23",
+          "kind": "primary_source",
+          "supports": "Official work record; page date may be SOTD"
+        },
+        {
+          "id": "s3",
+          "url": "https://www.markwheeler.net/portfolio/web-lab/",
+          "retrieved_at": "2026-11-23",
+          "kind": "primary_source",
+          "supports": "五项实验与获奖身份"
+        },
+        {
+          "id": "s4",
+          "url": "https://blog.chromium.org/2018/09/the-capable-web-10-year-retrospective.html",
+          "retrieved_at": "2026-11-23",
+          "kind": "primary_source",
+          "supports": "实现技术"
+        }
+      ],
+      "facts": [
+        {
+          "id": "f1",
+          "claim": "官方来源记录该案例的SOTM月份为2012-08。",
+          "category": "award",
+          "source_ids": [
+            "s1"
+          ],
+          "basis": "primary_published_evidence"
+        },
+        {
+          "id": "f2",
+          "claim": "五个Chrome实验连接线上参与者与伦敦科学博物馆。",
+          "category": "context",
+          "source_ids": [
+            "s2",
+            "s3",
+            "s4"
+          ],
+          "basis": "primary_published_evidence"
+        },
+        {
+          "id": "f3",
+          "claim": "创作者Mark Wheeler列出Awwwards SOTM。",
+          "category": "context",
+          "source_ids": [
+            "s2",
+            "s3",
+            "s4"
+          ],
+          "basis": "primary_published_evidence"
+        },
+        {
+          "id": "f4",
+          "claim": "Chromium官方回顾列出WebSocket、视频、实时流、WebGL和Web Audio。",
+          "category": "technical",
+          "source_ids": [
+            "s2",
+            "s3",
+            "s4"
+          ],
+          "basis": "primary_published_evidence"
+        }
+      ],
+      "observations": [],
+      "inferences": [],
+      "pages": [],
+      "interactions": [],
+      "measurements": [],
+      "classification": {
+        "industry": [
+          "文化",
+          "教育"
+        ],
+        "visual_style": [
+          "互动实验室"
+        ],
+        "interaction_pattern": [
+          "实时协作",
+          "线上线下连接"
+        ],
+        "basis": "analyst classification based on cited descriptions; not live visual inspection"
+      },
+      "historical_technology_names": [],
+      "technology_note": "Read technical fact statements and their scope. An empty list means no normalized complete list, not absence of technology.",
+      "blueprints": [
+        {
+          "id": "bp1",
+          "status": "proposal",
+          "title": "复用机制的原创实现蓝图",
+          "inputs": [
+            "经过核验的自有正文与主用户任务",
+            "已授权图片/视频/模型",
+            "用户操作与设备能力"
+          ],
+          "states": [
+            "idle",
+            "loading",
+            "ready",
+            "interacting",
+            "paused",
+            "error",
+            "fallback",
+            "disposed"
+          ],
+          "outputs": [
+            "可读的DOM内容与真实导航",
+            "与业务状态分离的视觉反馈"
+          ],
+          "steps": [
+            "每个实验分离介绍、排队、连接、互动和断线状态。",
+            "实时事件携带room、sequence、timestamp并由服务端校验。",
+            "连接层与渲染层解耦，断线保留可用UI。",
+            "音频只在用户动作后启动。"
+          ],
+          "fallback": "采用本例步骤与验收中的DOM、静态图、触摸按钮或鼠标替代路径；图形增强失败时主任务仍可完成。",
+          "cleanup": "卸载时停止本模块动画帧、断开观察器、移除事件监听；若存在GPU/音频/视频资源则分别释放或停止；不得全局销毁其他页面资源。",
+          "acceptance": [
+            "重复消息不重复执行。",
+            "断线后有重连和退出。",
+            "静音仍可理解结果。"
+          ],
+          "risks": [
+            "历史站点可能不可运行。",
+            "输入设备和浏览器能力变化需要重新验收。"
+          ]
+        }
+      ],
+      "mobile_fallback": {
+        "status": "proposal",
+        "text": "采用本例步骤与验收中的DOM、静态图、触摸按钮或鼠标替代路径；图形增强失败时主任务仍可完成。"
+      },
+      "implementation_risks": {
+        "status": "proposal",
+        "items": [
+          "历史站点可能不可运行。",
+          "输入设备和浏览器能力变化需要重新验收。"
+        ]
+      },
+      "inspection_plan": {
+        "status": "not_run",
+        "viewports": [
+          {
+            "width": 390,
+            "height": 844
+          },
+          {
+            "width": 1440,
+            "height": 900
+          }
+        ],
+        "page_tasks": [
+          "确认获奖版本与当前URL关系",
+          "记录实际页面与主CTA",
+          "执行交互状态表"
+        ],
+        "required_states": [
+          "idle",
+          "focus",
+          "active",
+          "loading",
+          "success",
+          "error",
+          "empty",
+          "disabled",
+          "reduced_motion"
+        ]
+      },
+      "limitations": [
+        "本次未对原站进行现场交互或性能实测。",
+        "以下实现蓝图是原创建议，不是对原站源码的断言。",
+        "未核验历史服务端实现与性能。",
+        "本次只完成官方/制作方文献拆解，未对原站逐页截图或执行交互。",
+        "未独立测量网络资源、帧率或Core Web Vitals；原作者数字不代表当前实测。",
+        "蓝图、移动回退和验收项均为本库建议，不是对原站源码的结论。"
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "case_id": "just-a-reflektor",
+      "name": "Just A Reflektor",
+      "research_level": "desk_researched",
+      "research_date": "2026-11-23",
+      "awwwards_url": "https://www.awwwards.com/sites/just-a-reflektor",
+      "award_year": 2013,
+      "award_month": 9,
+      "award_month_status": "primary_month_claim",
+      "candidate_month_claims": [],
+      "award_month_notes": "Award month read directly from official archive, not inferred from SOTD.",
+      "sources": [
+        {
+          "id": "s1",
+          "url": "https://www.awwwards.com/websites/sites_of_the_month/?page=6",
+          "retrieved_at": "2026-11-23",
+          "kind": "primary_source",
+          "supports": "Historical award identity and monthly evidence"
+        },
+        {
+          "id": "s2",
+          "url": "https://www.awwwards.com/sites/just-a-reflektor",
+          "retrieved_at": "2026-11-23",
+          "kind": "primary_source",
+          "supports": "Official work record; page date may be SOTD"
+        },
+        {
+          "id": "s3",
+          "url": "https://experiments.withgoogle.com/just-a-reflektor",
+          "retrieved_at": "2026-11-23",
+          "kind": "primary_source",
+          "supports": "WebGL与项目状态"
+        },
+        {
+          "id": "s4",
+          "url": "https://archive.unit9.com/project/reflektor/",
+          "retrieved_at": "2026-11-23",
+          "kind": "primary_source",
+          "supports": "传感器、WebSocket、摄像头实现"
+        },
+        {
+          "id": "s5",
+          "url": "https://github.com/unit9/justareflektor",
+          "retrieved_at": "2026-11-23",
+          "kind": "primary_source",
+          "supports": "原作者公开代码入口，复用前逐文件核验许可"
+        }
+      ],
+      "facts": [
+        {
+          "id": "f1",
+          "claim": "官方来源记录该案例的SOTM月份为2013-09。",
+          "category": "award",
+          "source_ids": [
+            "s1"
+          ],
+          "basis": "primary_published_evidence"
+        },
+        {
+          "id": "f2",
+          "claim": "Google实验页说明项目已不活跃。",
+          "category": "context",
+          "source_ids": [
+            "s2",
+            "s3",
+            "s4",
+            "s5"
+          ],
+          "basis": "primary_published_evidence"
+        },
+        {
+          "id": "f3",
+          "claim": "UNIT9说明手机动作实时修改视频视觉效果。",
+          "category": "context",
+          "source_ids": [
+            "s2",
+            "s3",
+            "s4",
+            "s5"
+          ],
+          "basis": "primary_published_evidence"
+        },
+        {
+          "id": "f4",
+          "claim": "制作方明确使用WebSocket交换陀螺仪和加速度计数据，并以摄像头定位手机。",
+          "category": "technical",
+          "source_ids": [
+            "s2",
+            "s3",
+            "s4",
+            "s5"
+          ],
+          "basis": "primary_published_evidence"
+        },
+        {
+          "id": "f5",
+          "claim": "Google确认WebGL，并提供开源代码入口。",
+          "category": "technical",
+          "source_ids": [
+            "s2",
+            "s3",
+            "s4",
+            "s5"
+          ],
+          "basis": "primary_published_evidence"
+        }
+      ],
+      "observations": [],
+      "inferences": [],
+      "pages": [],
+      "interactions": [],
+      "measurements": [],
+      "classification": {
+        "industry": [
+          "音乐",
+          "互动影像"
+        ],
+        "visual_style": [
+          "电影式",
+          "实时后处理"
+        ],
+        "interaction_pattern": [
+          "手机控制",
+          "传感器输入"
+        ],
+        "basis": "analyst classification based on cited descriptions; not live visual inspection"
+      },
+      "historical_technology_names": [],
+      "technology_note": "Read technical fact statements and their scope. An empty list means no normalized complete list, not absence of technology.",
+      "blueprints": [
+        {
+          "id": "bp1",
+          "status": "proposal",
+          "title": "复用机制的原创实现蓝图",
+          "inputs": [
+            "经过核验的自有正文与主用户任务",
+            "已授权图片/视频/模型",
+            "用户操作与设备能力"
+          ],
+          "states": [
+            "idle",
+            "loading",
+            "ready",
+            "interacting",
+            "paused",
+            "error",
+            "fallback",
+            "disposed"
+          ],
+          "outputs": [
+            "可读的DOM内容与真实导航",
+            "与业务状态分离的视觉反馈"
+          ],
+          "steps": [
+            "先做鼠标可控shader，再增加手机配对。",
+            "输入归一化为独立input-state，UI不直接操控shader。",
+            "为传感器拒绝、相机不可用、配对失败分别提供回退。",
+            "限频、平滑网络输入，超时停止控制。"
+          ],
+          "fallback": "采用本例步骤与验收中的DOM、静态图、触摸按钮或鼠标替代路径；图形增强失败时主任务仍可完成。",
+          "cleanup": "卸载时停止本模块动画帧、断开观察器、移除事件监听；若存在GPU/音频/视频资源则分别释放或停止；不得全局销毁其他页面资源。",
+          "acceptance": [
+            "拒绝权限仍能用鼠标/触摸完成。",
+            "配对凭证隔离会话。",
+            "暂停视频同时暂停视觉时钟。"
+          ],
+          "risks": [
+            "历史站点可能不可运行。",
+            "输入设备和浏览器能力变化需要重新验收。"
+          ]
+        }
+      ],
+      "mobile_fallback": {
+        "status": "proposal",
+        "text": "采用本例步骤与验收中的DOM、静态图、触摸按钮或鼠标替代路径；图形增强失败时主任务仍可完成。"
+      },
+      "implementation_risks": {
+        "status": "proposal",
+        "items": [
+          "历史站点可能不可运行。",
+          "输入设备和浏览器能力变化需要重新验收。"
+        ]
+      },
+      "inspection_plan": {
+        "status": "not_run",
+        "viewports": [
+          {
+            "width": 390,
+            "height": 844
+          },
+          {
+            "width": 1440,
+            "height": 900
+          }
+        ],
+        "page_tasks": [
+          "确认获奖版本与当前URL关系",
+          "记录实际页面与主CTA",
+          "执行交互状态表"
+        ],
+        "required_states": [
+          "idle",
+          "focus",
+          "active",
+          "loading",
+          "success",
+          "error",
+          "empty",
+          "disabled",
+          "reduced_motion"
+        ]
+      },
+      "limitations": [
+        "本次未对原站进行现场交互或性能实测。",
+        "以下实现蓝图是原创建议，不是对原站源码的断言。",
+        "历史代码不保证现代浏览器直接运行；没有复制原影片或代码。",
+        "本次只完成官方/制作方文献拆解，未对原站逐页截图或执行交互。",
+        "未独立测量网络资源、帧率或Core Web Vitals；原作者数字不代表当前实测。",
+        "蓝图、移动回退和验收项均为本库建议，不是对原站源码的结论。"
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "case_id": "honda-the-other-side",
+      "name": "Honda The Other Side",
+      "research_level": "desk_researched",
+      "research_date": "2026-11-23",
+      "awwwards_url": "https://www.awwwards.com/sites/honda-the-other-side",
+      "award_year": 2014,
+      "award_month": 11,
+      "award_month_status": "primary_month_claim",
+      "candidate_month_claims": [],
+      "award_month_notes": "Award month read directly from official archive, not inferred from SOTD.",
+      "sources": [
+        {
+          "id": "s1",
+          "url": "https://www.awwwards.com/websites/sites_of_the_month/?page=5",
+          "retrieved_at": "2026-11-23",
+          "kind": "primary_source",
+          "supports": "Historical award identity and monthly evidence"
+        },
+        {
+          "id": "s2",
+          "url": "https://www.awwwards.com/sites/honda-the-other-side",
+          "retrieved_at": "2026-11-23",
+          "kind": "primary_source",
+          "supports": "Official work record; page date may be SOTD"
+        },
+        {
+          "id": "s3",
+          "url": "https://www.wk.com/work/honda-the-other-side/",
+          "retrieved_at": "2026-11-23",
+          "kind": "primary_source",
+          "supports": "原制作方明确的交互叙事"
+        }
+      ],
+      "facts": [
+        {
+          "id": "f1",
+          "claim": "官方来源记录该案例的SOTM月份为2014-11。",
+          "category": "award",
+          "source_ids": [
+            "s1"
+          ],
+          "basis": "primary_published_evidence"
+        },
+        {
+          "id": "f2",
+          "claim": "制作方Wieden+Kennedy说明按R键在接送孩子与艺术品劫案之间切换。",
+          "category": "context",
+          "source_ids": [
+            "s2",
+            "s3"
+          ],
+          "basis": "primary_published_evidence"
+        },
+        {
+          "id": "f3",
+          "claim": "交互对应Type R的赛车模式按钮。",
+          "category": "context",
+          "source_ids": [
+            "s2",
+            "s3"
+          ],
+          "basis": "primary_published_evidence"
+        },
+        {
+          "id": "f4",
+          "claim": "可证实交互机制；播放器、前端框架和同步算法未知。",
+          "category": "technical",
+          "source_ids": [
+            "s2",
+            "s3"
+          ],
+          "basis": "primary_published_evidence"
+        }
+      ],
+      "observations": [],
+      "inferences": [],
+      "pages": [],
+      "interactions": [],
+      "measurements": [],
+      "classification": {
+        "industry": [
+          "汽车",
+          "品牌活动"
+        ],
+        "visual_style": [
+          "电影叙事",
+          "昼夜对照"
+        ],
+        "interaction_pattern": [
+          "按键切换双叙事"
+        ],
+        "basis": "analyst classification based on cited descriptions; not live visual inspection"
+      },
+      "historical_technology_names": [],
+      "technology_note": "Read technical fact statements and their scope. An empty list means no normalized complete list, not absence of technology.",
+      "blueprints": [
+        {
+          "id": "bp1",
+          "status": "proposal",
+          "title": "复用机制的原创实现蓝图",
+          "inputs": [
+            "经过核验的自有正文与主用户任务",
+            "已授权图片/视频/模型",
+            "用户操作与设备能力"
+          ],
+          "states": [
+            "idle",
+            "loading",
+            "ready",
+            "interacting",
+            "paused",
+            "error",
+            "fallback",
+            "disposed"
+          ],
+          "outputs": [
+            "可读的DOM内容与真实导航",
+            "与业务状态分离的视觉反馈"
+          ],
+          "steps": [
+            "准备长度、帧率与关键节点匹配的自有视频。",
+            "用单一主时钟管理轨道播放、暂停、seek。",
+            "提供键盘、触摸按钮与状态文字。",
+            "双路解码预算不足时回退为可独立播放章节。"
+          ],
+          "fallback": "采用本例步骤与验收中的DOM、静态图、触摸按钮或鼠标替代路径；图形增强失败时主任务仍可完成。",
+          "cleanup": "卸载时停止本模块动画帧、断开观察器、移除事件监听；若存在GPU/音频/视频资源则分别释放或停止；不得全局销毁其他页面资源。",
+          "acceptance": [
+            "输入框打字不触发快捷键。",
+            "任一时刻只播放一条声音。",
+            "缓冲和恢复后轨道仍同步。"
+          ],
+          "risks": [
+            "历史站点可能不可运行。",
+            "输入设备和浏览器能力变化需要重新验收。"
+          ]
+        }
+      ],
+      "mobile_fallback": {
+        "status": "proposal",
+        "text": "采用本例步骤与验收中的DOM、静态图、触摸按钮或鼠标替代路径；图形增强失败时主任务仍可完成。"
+      },
+      "implementation_risks": {
+        "status": "proposal",
+        "items": [
+          "历史站点可能不可运行。",
+          "输入设备和浏览器能力变化需要重新验收。"
+        ]
+      },
+      "inspection_plan": {
+        "status": "not_run",
+        "viewports": [
+          {
+            "width": 390,
+            "height": 844
+          },
+          {
+            "width": 1440,
+            "height": 900
+          }
+        ],
+        "page_tasks": [
+          "确认获奖版本与当前URL关系",
+          "记录实际页面与主CTA",
+          "执行交互状态表"
+        ],
+        "required_states": [
+          "idle",
+          "focus",
+          "active",
+          "loading",
+          "success",
+          "error",
+          "empty",
+          "disabled",
+          "reduced_motion"
+        ]
+      },
+      "limitations": [
+        "本次未对原站进行现场交互或性能实测。",
+        "以下实现蓝图是原创建议，不是对原站源码的断言。",
+        "双video方案是重建建议，不能写成原作事实。",
+        "本次只完成官方/制作方文献拆解，未对原站逐页截图或执行交互。",
+        "未独立测量网络资源、帧率或Core Web Vitals；原作者数字不代表当前实测。",
+        "蓝图、移动回退和验收项均为本库建议，不是对原站源码的结论。"
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "case_id": "timeshift165",
+      "name": "Timeshift165",
+      "research_level": "desk_researched",
+      "research_date": "2026-11-23",
+      "awwwards_url": "https://www.awwwards.com/sites/timeshift165",
+      "award_year": 2015,
+      "award_month": 4,
+      "award_month_status": "primary_month_claim",
+      "candidate_month_claims": [],
+      "award_month_notes": "Award month read directly from official archive, not inferred from SOTD.",
+      "sources": [
+        {
+          "id": "s1",
+          "url": "https://www.awwwards.com/websites/sites_of_the_month/?page=5",
+          "retrieved_at": "2026-11-23",
+          "kind": "primary_source",
+          "supports": "Historical award identity and monthly evidence"
+        },
+        {
+          "id": "s2",
+          "url": "https://www.awwwards.com/sites/timeshift165",
+          "retrieved_at": "2026-11-23",
+          "kind": "primary_source",
+          "supports": "Official work record; page date may be SOTD"
+        },
+        {
+          "id": "s3",
+          "url": "https://www.behance.net/gallery/25039521/Timeshift-165",
+          "retrieved_at": "2026-11-23",
+          "kind": "search_only_source",
+          "supports": "原作者搜索摘要介绍WebGL赛车；全文403，本条降级记录"
+        }
+      ],
+      "facts": [
+        {
+          "id": "f1",
+          "claim": "官方来源记录该案例的SOTM月份为2015-04。",
+          "category": "award",
+          "source_ids": [
+            "s1"
+          ],
+          "basis": "primary_published_evidence"
+        },
+        {
+          "id": "f2",
+          "claim": "官方作品描述为Delahaye165汽车故事的互动作品。",
+          "category": "context",
+          "source_ids": [
+            "s2"
+          ],
+          "basis": "primary_published_evidence"
+        },
+        {
+          "id": "f3",
+          "claim": "官方制作方为ultranoir。",
+          "category": "context",
+          "source_ids": [
+            "s2"
+          ],
+          "basis": "primary_published_evidence"
+        },
+        {
+          "id": "f4",
+          "claim": "Awwwards技术标签明确HTML5与WebGL；具体引擎和物理库未知。",
+          "category": "technical",
+          "source_ids": [
+            "s2"
+          ],
+          "basis": "primary_published_evidence"
+        }
+      ],
+      "observations": [],
+      "inferences": [],
+      "pages": [],
+      "interactions": [],
+      "measurements": [],
+      "classification": {
+        "industry": [
+          "汽车文化",
+          "游戏"
+        ],
+        "visual_style": [
+          "复古赛车",
+          "实时三维"
+        ],
+        "interaction_pattern": [
+          "赛车操作",
+          "计时挑战"
+        ],
+        "basis": "analyst classification based on cited descriptions; not live visual inspection"
+      },
+      "historical_technology_names": [],
+      "technology_note": "Read technical fact statements and their scope. An empty list means no normalized complete list, not absence of technology.",
+      "blueprints": [
+        {
+          "id": "bp1",
+          "status": "proposal",
+          "title": "复用机制的原创实现蓝图",
+          "inputs": [
+            "经过核验的自有正文与主用户任务",
+            "已授权图片/视频/模型",
+            "用户操作与设备能力"
+          ],
+          "states": [
+            "idle",
+            "loading",
+            "ready",
+            "interacting",
+            "paused",
+            "error",
+            "fallback",
+            "disposed"
+          ],
+          "outputs": [
+            "可读的DOM内容与真实导航",
+            "与业务状态分离的视觉反馈"
+          ],
+          "steps": [
+            "固定步长更新游戏，requestAnimationFrame负责绘制。",
+            "先灰盒实现开始、驾驶、碰撞、结束、重开，再添加视觉。",
+            "排名由服务端核验，演示数据明确标注。",
+            "提供暂停、退出、触摸等价控制。"
+          ],
+          "fallback": "采用本例步骤与验收中的DOM、静态图、触摸按钮或鼠标替代路径；图形增强失败时主任务仍可完成。",
+          "cleanup": "卸载时停止本模块动画帧、断开观察器、移除事件监听；若存在GPU/音频/视频资源则分别释放或停止；不得全局销毁其他页面资源。",
+          "acceptance": [
+            "60Hz与120Hz模拟速度一致。",
+            "后台恢复不发生大步长穿透。",
+            "键盘与触摸能完成完整流程。"
+          ],
+          "risks": [
+            "历史站点可能不可运行。",
+            "输入设备和浏览器能力变化需要重新验收。"
+          ]
+        }
+      ],
+      "mobile_fallback": {
+        "status": "proposal",
+        "text": "采用本例步骤与验收中的DOM、静态图、触摸按钮或鼠标替代路径；图形增强失败时主任务仍可完成。"
+      },
+      "implementation_risks": {
+        "status": "proposal",
+        "items": [
+          "历史站点可能不可运行。",
+          "输入设备和浏览器能力变化需要重新验收。"
+        ]
+      },
+      "inspection_plan": {
+        "status": "not_run",
+        "viewports": [
+          {
+            "width": 390,
+            "height": 844
+          },
+          {
+            "width": 1440,
+            "height": 900
+          }
+        ],
+        "page_tasks": [
+          "确认获奖版本与当前URL关系",
+          "记录实际页面与主CTA",
+          "执行交互状态表"
+        ],
+        "required_states": [
+          "idle",
+          "focus",
+          "active",
+          "loading",
+          "success",
+          "error",
+          "empty",
+          "disabled",
+          "reduced_motion"
+        ]
+      },
+      "limitations": [
+        "本次未对原站进行现场交互或性能实测。",
+        "以下实现蓝图是原创建议，不是对原站源码的断言。",
+        "OutRun灵感只作为作者搜索摘要线索，不提升为阅读全文核验。",
+        "本次只完成官方/制作方文献拆解，未对原站逐页截图或执行交互。",
+        "未独立测量网络资源、帧率或Core Web Vitals；原作者数字不代表当前实测。",
+        "蓝图、移动回退和验收项均为本库建议，不是对原站源码的结论。"
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "case_id": "discover-your-patronus",
+      "name": "Discover Your Patronus",
+      "research_level": "desk_researched",
+      "research_date": "2026-11-23",
+      "awwwards_url": "https://www.awwwards.com/sites/discover-your-patronus",
+      "award_year": 2016,
+      "award_month": 10,
+      "award_month_status": "primary_month_claim",
+      "candidate_month_claims": [],
+      "award_month_notes": "",
+      "sources": [
+        {
+          "id": "s1",
+          "url": "https://www.awwwards.com/websites/sites_of_the_month/?page=4",
+          "retrieved_at": "2026-11-23",
+          "kind": "primary_source",
+          "supports": "Historical award identity and monthly evidence"
+        },
+        {
+          "id": "s2",
+          "url": "https://www.awwwards.com/sites/discover-your-patronus",
+          "retrieved_at": "2026-11-23",
+          "kind": "primary_source",
+          "supports": "Official work record; page date may be SOTD"
+        },
+        {
+          "id": "s3",
+          "url": "https://www.rafaeldante.com/project/graveyard",
+          "retrieved_at": "2026-11-23",
+          "kind": "primary_source",
+          "supports": "参与者一手说明"
+        }
+      ],
+      "facts": [
+        {
+          "id": "f1",
+          "claim": "官方来源记录该案例的SOTM月份为2016-10。",
+          "category": "award",
+          "source_ids": [
+            "s1"
+          ],
+          "basis": "primary_published_evidence"
+        },
+        {
+          "id": "f2",
+          "claim": "官方作品说明用户在3D环境中按提示选择并揭晓结果。",
+          "category": "context",
+          "source_ids": [
+            "s2",
+            "s3"
+          ],
+          "basis": "primary_published_evidence"
+        },
+        {
+          "id": "f3",
+          "claim": "参与者Rafael Dante确认WebGL体验和Awwwards SOTM。",
+          "category": "context",
+          "source_ids": [
+            "s2",
+            "s3"
+          ],
+          "basis": "primary_published_evidence"
+        },
+        {
+          "id": "f4",
+          "claim": "Awwwards作品页标签包括WebGL、Three.js、GLSL；结果映射算法与版本未知。",
+          "category": "technical",
+          "source_ids": [
+            "s2",
+            "s3"
+          ],
+          "basis": "primary_published_evidence"
+        }
+      ],
+      "observations": [],
+      "inferences": [],
+      "pages": [],
+      "interactions": [],
+      "measurements": [],
+      "classification": {
+        "industry": [
+          "影视",
+          "互动测试"
+        ],
+        "visual_style": [
+          "森林",
+          "沉浸三维"
+        ],
+        "interaction_pattern": [
+          "多阶段选择",
+          "结果揭晓"
+        ],
+        "basis": "analyst classification based on cited descriptions; not live visual inspection"
+      },
+      "historical_technology_names": [],
+      "technology_note": "Read technical fact statements and their scope. An empty list means no normalized complete list, not absence of technology.",
+      "blueprints": [
+        {
+          "id": "bp1",
+          "status": "proposal",
+          "title": "复用机制的原创实现蓝图",
+          "inputs": [
+            "经过核验的自有正文与主用户任务",
+            "已授权图片/视频/模型",
+            "用户操作与设备能力"
+          ],
+          "states": [
+            "idle",
+            "loading",
+            "ready",
+            "interacting",
+            "paused",
+            "error",
+            "fallback",
+            "disposed"
+          ],
+          "outputs": [
+            "可读的DOM内容与真实导航",
+            "与业务状态分离的视觉反馈"
+          ],
+          "steps": [
+            "先用DOM实现问答状态机。",
+            "摄像机订阅业务状态，动画不能成为提交答案的唯一途径。",
+            "选择后锁定重复提交，并提供键盘等价输入。",
+            "GPU失败时保留完整DOM问答与结果页。"
+          ],
+          "fallback": "采用本例步骤与验收中的DOM、静态图、触摸按钮或鼠标替代路径；图形增强失败时主任务仍可完成。",
+          "cleanup": "卸载时停止本模块动画帧、断开观察器、移除事件监听；若存在GPU/音频/视频资源则分别释放或停止；不得全局销毁其他页面资源。",
+          "acceptance": [
+            "覆盖重复点击、返回、刷新与超时。",
+            "无WebGL仍能完成流程。",
+            "低动态偏好保留全部文本。"
+          ],
+          "risks": [
+            "历史站点可能不可运行。",
+            "输入设备和浏览器能力变化需要重新验收。"
+          ]
+        }
+      ],
+      "mobile_fallback": {
+        "status": "proposal",
+        "text": "采用本例步骤与验收中的DOM、静态图、触摸按钮或鼠标替代路径；图形增强失败时主任务仍可完成。"
+      },
+      "implementation_risks": {
+        "status": "proposal",
+        "items": [
+          "历史站点可能不可运行。",
+          "输入设备和浏览器能力变化需要重新验收。"
+        ]
+      },
+      "inspection_plan": {
+        "status": "not_run",
+        "viewports": [
+          {
+            "width": 390,
+            "height": 844
+          },
+          {
+            "width": 1440,
+            "height": 900
+          }
+        ],
+        "page_tasks": [
+          "确认获奖版本与当前URL关系",
+          "记录实际页面与主CTA",
+          "执行交互状态表"
+        ],
+        "required_states": [
+          "idle",
+          "focus",
+          "active",
+          "loading",
+          "success",
+          "error",
+          "empty",
+          "disabled",
+          "reduced_motion"
+        ]
+      },
+      "limitations": [
+        "本次未对原站进行现场交互或性能实测。",
+        "以下实现蓝图是原创建议，不是对原站源码的断言。",
+        "不复制Harry Potter品牌、原问卷或角色素材。",
+        "本次只完成官方/制作方文献拆解，未对原站逐页截图或执行交互。",
+        "未独立测量网络资源、帧率或Core Web Vitals；原作者数字不代表当前实测。",
+        "蓝图、移动回退和验收项均为本库建议，不是对原站源码的结论。"
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "case_id": "dunkirk-webvr",
+      "name": "Dunkirk WebVR",
+      "research_level": "desk_researched",
+      "research_date": "2026-11-23",
+      "awwwards_url": "https://www.awwwards.com/sites/dunkirk-webvr",
+      "award_year": 2017,
+      "award_month": 7,
+      "award_month_status": "primary_month_claim",
+      "candidate_month_claims": [],
+      "award_month_notes": "官方文章明确月份；跨年文章发表日期与获奖月份分开。",
+      "sources": [
+        {
+          "id": "s1",
+          "url": "https://www.awwwards.com/jam3-wins-site-of-the-month-july-with-dunkirk-webvr.html",
+          "retrieved_at": "2026-11-23",
+          "kind": "primary_source",
+          "supports": "Historical award identity and monthly evidence"
+        },
+        {
+          "id": "s2",
+          "url": "https://www.awwwards.com/sites/dunkirk-webvr",
+          "retrieved_at": "2026-11-23",
+          "kind": "primary_source",
+          "supports": "Official work record; page date may be SOTD"
+        }
+      ],
+      "facts": [
+        {
+          "id": "f1",
+          "claim": "官方来源记录该案例的SOTM月份为2017-07。",
+          "category": "award",
+          "source_ids": [
+            "s1"
+          ],
+          "basis": "primary_published_evidence"
+        },
+        {
+          "id": "f2",
+          "claim": "2017年官方案例说明不同玩家视角、凝视交互、空间音效、雾着色器及DOM文字转WebGL纹理。",
+          "category": "technical",
+          "source_ids": [
+            "s1"
+          ],
+          "basis": "primary_published_evidence"
+        },
+        {
+          "id": "f3",
+          "claim": "双人合作的360度体验以凝视操作和声音方向建立紧张感。",
+          "category": "interaction_description",
+          "source_ids": [
+            "s1"
+          ],
+          "basis": "primary_published_evidence"
+        },
+        {
+          "id": "f4",
+          "claim": "该历史版本的制作方资料列出：WebVR。",
+          "category": "historical_technology",
+          "source_ids": [
+            "s1"
+          ],
+          "basis": "primary_published_evidence"
+        },
+        {
+          "id": "f5",
+          "claim": "该历史版本的制作方资料列出：WebGL textures。",
+          "category": "historical_technology",
+          "source_ids": [
+            "s1"
+          ],
+          "basis": "primary_published_evidence"
+        },
+        {
+          "id": "f6",
+          "claim": "该历史版本的制作方资料列出：custom fog shader。",
+          "category": "historical_technology",
+          "source_ids": [
+            "s1"
+          ],
+          "basis": "primary_published_evidence"
+        },
+        {
+          "id": "f7",
+          "claim": "该历史版本的制作方资料列出：spatial audio。",
+          "category": "historical_technology",
+          "source_ids": [
+            "s1"
+          ],
+          "basis": "primary_published_evidence"
+        }
+      ],
+      "observations": [],
+      "inferences": [],
+      "pages": [],
+      "interactions": [],
+      "measurements": [],
+      "classification": {
+        "industry": [
+          "cooperative-game"
+        ],
+        "visual_style": [],
+        "interaction_pattern": [
+          "双人合作的360度体验以凝视操作和声音方向建立紧张感。"
+        ],
+        "basis": "analyst classification based on cited descriptions; not live visual inspection"
+      },
+      "historical_technology_names": [
+        "WebVR",
+        "WebGL textures",
+        "custom fog shader",
+        "spatial audio"
+      ],
+      "technology_note": "Read technical fact statements and their scope. An empty list means no normalized complete list, not absence of technology.",
+      "blueprints": [
+        {
+          "id": "bp1",
+          "status": "proposal",
+          "title": "复用机制的原创实现蓝图",
+          "inputs": [
+            "经过核验的自有正文与主用户任务",
+            "已授权图片/视频/模型",
+            "用户操作与设备能力"
+          ],
+          "states": [
+            "idle",
+            "loading",
+            "ready",
+            "interacting",
+            "paused",
+            "error",
+            "fallback",
+            "disposed"
+          ],
+          "outputs": [
+            "可读的DOM内容与真实导航",
+            "与业务状态分离的视觉反馈"
+          ],
+          "steps": [
+            "先定义单人可运行的状态机和每步任务。",
+            "把每个凝视动作配套按钮、键盘和触控操作。",
+            "多人同步只发送离散状态变化，记录超时、断线、重连与离开。",
+            "使用当前项目支持的XR接口；旧WebVR作为历史研究保留。"
+          ],
+          "fallback": "保留语义DOM内容和明确可点控件；触屏不依赖悬停，reduced-motion跳过视觉位移；按本例验收条目提供对应静态/列表入口。",
+          "cleanup": "卸载时停止本模块动画帧、断开观察器、移除事件监听；若存在GPU/音频/视频资源则分别释放或停止；不得全局销毁其他页面资源。",
+          "acceptance": [
+            "缺第二玩家可退出或进入单人介绍；网络中断明确说明；非XR设备有平面替代。"
+          ],
+          "risks": [
+            "当前获奖版本与当前活站可能不同。",
+            "历史内部工具和旧API不可直接当作新项目依赖。"
+          ]
+        }
+      ],
+      "mobile_fallback": {
+        "status": "proposal",
+        "text": "保留语义DOM内容和明确可点控件；触屏不依赖悬停，reduced-motion跳过视觉位移；按本例验收条目提供对应静态/列表入口。"
+      },
+      "implementation_risks": {
+        "status": "proposal",
+        "items": [
+          "当前获奖版本与当前活站可能不同。",
+          "历史内部工具和旧API不可直接当作新项目依赖。"
+        ]
+      },
+      "inspection_plan": {
+        "status": "not_run",
+        "viewports": [
+          {
+            "width": 390,
+            "height": 844
+          },
+          {
+            "width": 1440,
+            "height": 900
+          }
+        ],
+        "page_tasks": [
+          "确认获奖版本与当前URL关系",
+          "记录实际页面与主CTA",
+          "执行交互状态表"
+        ],
+        "required_states": [
+          "idle",
+          "focus",
+          "active",
+          "loading",
+          "success",
+          "error",
+          "empty",
+          "disabled",
+          "reduced_motion"
+        ]
+      },
+      "limitations": [
+        "WebVR是历史API，不应直接成为新项目技术要求；当前WebXR兼容性须按官方文档重新核验。",
+        "本次只完成官方/制作方文献拆解，未对原站逐页截图或执行交互。",
+        "未独立测量网络资源、帧率或Core Web Vitals；原作者数字不代表当前实测。",
+        "蓝图、移动回退和验收项均为本库建议，不是对原站源码的结论。"
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "case_id": "active-theory-v4",
+      "name": "Active Theory v4",
+      "research_level": "desk_researched",
+      "research_date": "2026-11-23",
+      "awwwards_url": "https://www.awwwards.com/sites/active-theory-v4",
+      "award_year": 2018,
+      "award_month": 1,
+      "award_month_status": "primary_month_claim",
+      "candidate_month_claims": [],
+      "award_month_notes": "官方文章明确月份；跨年文章发表日期与获奖月份分开。",
+      "sources": [
+        {
+          "id": "s1",
+          "url": "https://www.awwwards.com/active-theory-v4-wins-january-2018-site-of-the-month.html",
+          "retrieved_at": "2026-11-23",
+          "kind": "primary_source",
+          "supports": "Historical award identity and monthly evidence"
+        },
+        {
+          "id": "s2",
+          "url": "https://www.awwwards.com/sites/active-theory-v4",
+          "retrieved_at": "2026-11-23",
+          "kind": "primary_source",
+          "supports": "Official work record; page date may be SOTD"
+        }
+      ],
+      "facts": [
+        {
+          "id": "f1",
+          "claim": "官方来源记录该案例的SOTM月份为2018-01。",
+          "category": "award",
+          "source_ids": [
+            "s1"
+          ],
+          "basis": "primary_published_evidence"
+        },
+        {
+          "id": "f2",
+          "claim": "官方案例说明重复巷道几何、视频网格用于切换以及景深、体积光、雨与RGB位移等效果层。",
+          "category": "technical",
+          "source_ids": [
+            "s1"
+          ],
+          "basis": "primary_published_evidence"
+        },
+        {
+          "id": "f3",
+          "claim": "作品视频嵌入循环巷道场景，环境色随作品画面变化。",
+          "category": "interaction_description",
+          "source_ids": [
+            "s1"
+          ],
+          "basis": "primary_published_evidence"
+        },
+        {
+          "id": "f4",
+          "claim": "该历史版本的制作方资料列出：WebGL。",
+          "category": "historical_technology",
+          "source_ids": [
+            "s1"
+          ],
+          "basis": "primary_published_evidence"
+        },
+        {
+          "id": "f5",
+          "claim": "该历史版本的制作方资料列出：video textures。",
+          "category": "historical_technology",
+          "source_ids": [
+            "s1"
+          ],
+          "basis": "primary_published_evidence"
+        },
+        {
+          "id": "f6",
+          "claim": "该历史版本的制作方资料列出：custom post-processing。",
+          "category": "historical_technology",
+          "source_ids": [
+            "s1"
+          ],
+          "basis": "primary_published_evidence"
+        }
+      ],
+      "observations": [],
+      "inferences": [],
+      "pages": [],
+      "interactions": [],
+      "measurements": [],
+      "classification": {
+        "industry": [
+          "agency-portfolio"
+        ],
+        "visual_style": [],
+        "interaction_pattern": [
+          "作品视频嵌入循环巷道场景，环境色随作品画面变化。"
+        ],
+        "basis": "analyst classification based on cited descriptions; not live visual inspection"
+      },
+      "historical_technology_names": [
+        "WebGL",
+        "video textures",
+        "custom post-processing"
+      ],
+      "technology_note": "Read technical fact statements and their scope. An empty list means no normalized complete list, not absence of technology.",
+      "blueprints": [
+        {
+          "id": "bp1",
+          "status": "proposal",
+          "title": "复用机制的原创实现蓝图",
+          "inputs": [
+            "经过核验的自有正文与主用户任务",
+            "已授权图片/视频/模型",
+            "用户操作与设备能力"
+          ],
+          "states": [
+            "idle",
+            "loading",
+            "ready",
+            "interacting",
+            "paused",
+            "error",
+            "fallback",
+            "disposed"
+          ],
+          "outputs": [
+            "可读的DOM内容与真实导航",
+            "与业务状态分离的视觉反馈"
+          ],
+          "steps": [
+            "先建立可直接打开的作品目录。",
+            "只做一个循环段灰盒，验证镜头无可见跳变。",
+            "用作品缩略图作为初始纹理，播放需要用户设备与偏好允许。",
+            "对每层后处理记录开销，低配逐层关闭。"
+          ],
+          "fallback": "保留语义DOM内容和明确可点控件；触屏不依赖悬停，reduced-motion跳过视觉位移；按本例验收条目提供对应静态/列表入口。",
+          "cleanup": "卸载时停止本模块动画帧、断开观察器、移除事件监听；若存在GPU/音频/视频资源则分别释放或停止；不得全局销毁其他页面资源。",
+          "acceptance": [
+            "所有作品可从普通列表进入；视频失败显示静图；切换作品不留下多个解码器。"
+          ],
+          "risks": [
+            "当前获奖版本与当前活站可能不同。",
+            "历史内部工具和旧API不可直接当作新项目依赖。"
+          ]
+        }
+      ],
+      "mobile_fallback": {
+        "status": "proposal",
+        "text": "保留语义DOM内容和明确可点控件；触屏不依赖悬停，reduced-motion跳过视觉位移；按本例验收条目提供对应静态/列表入口。"
+      },
+      "implementation_risks": {
+        "status": "proposal",
+        "items": [
+          "当前获奖版本与当前活站可能不同。",
+          "历史内部工具和旧API不可直接当作新项目依赖。"
+        ]
+      },
+      "inspection_plan": {
+        "status": "not_run",
+        "viewports": [
+          {
+            "width": 390,
+            "height": 844
+          },
+          {
+            "width": 1440,
+            "height": 900
+          }
+        ],
+        "page_tasks": [
+          "确认获奖版本与当前URL关系",
+          "记录实际页面与主CTA",
+          "执行交互状态表"
+        ],
+        "required_states": [
+          "idle",
+          "focus",
+          "active",
+          "loading",
+          "success",
+          "error",
+          "empty",
+          "disabled",
+          "reduced_motion"
+        ]
+      },
+      "limitations": [
+        "官方未在该文明确框架，不将自研工具猜成Three.js；原站隐藏交互仅作可选装饰。",
+        "本次只完成官方/制作方文献拆解，未对原站逐页截图或执行交互。",
+        "未独立测量网络资源、帧率或Core Web Vitals；原作者数字不代表当前实测。",
+        "蓝图、移动回退和验收项均为本库建议，不是对原站源码的结论。"
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "case_id": "orano",
+      "name": "Orano",
+      "research_level": "desk_researched",
+      "research_date": "2026-11-23",
+      "awwwards_url": "https://www.awwwards.com/sites/orano",
+      "award_year": 2018,
+      "award_month": 11,
+      "award_month_status": "primary_month_claim",
+      "candidate_month_claims": [],
+      "award_month_notes": "官方文章明确月份；跨年文章发表日期与获奖月份分开。",
+      "sources": [
+        {
+          "id": "s1",
+          "url": "https://awwwards.com/orano-from-immersive-garden-wins-site-of-the-month-novemeber.html",
+          "retrieved_at": "2026-11-23",
+          "kind": "primary_source",
+          "supports": "Historical award identity and monthly evidence"
+        },
+        {
+          "id": "s2",
+          "url": "https://www.awwwards.com/sites/orano",
+          "retrieved_at": "2026-11-23",
+          "kind": "primary_source",
+          "supports": "Official work record; page date may be SOTD"
+        }
+      ],
+      "facts": [
+        {
+          "id": "f1",
+          "claim": "官方来源记录该案例的SOTM月份为2018-11。",
+          "category": "award",
+          "source_ids": [
+            "s1"
+          ],
+          "basis": "primary_published_evidence"
+        },
+        {
+          "id": "f2",
+          "claim": "官方披露Blender边线导出和自定义OBJ解析、重复地形变换、移动简化网格以及Vue界面。",
+          "category": "technical",
+          "source_ids": [
+            "s1"
+          ],
+          "basis": "primary_published_evidence"
+        },
+        {
+          "id": "f3",
+          "claim": "每种工业产品以独立场景解释，滚动结尾用小交互演示用途。",
+          "category": "interaction_description",
+          "source_ids": [
+            "s1"
+          ],
+          "basis": "primary_published_evidence"
+        },
+        {
+          "id": "f4",
+          "claim": "该历史版本的制作方资料列出：Three.js。",
+          "category": "historical_technology",
+          "source_ids": [
+            "s1"
+          ],
+          "basis": "primary_published_evidence"
+        },
+        {
+          "id": "f5",
+          "claim": "该历史版本的制作方资料列出：WebGL。",
+          "category": "historical_technology",
+          "source_ids": [
+            "s1"
+          ],
+          "basis": "primary_published_evidence"
+        },
+        {
+          "id": "f6",
+          "claim": "该历史版本的制作方资料列出：Blender。",
+          "category": "historical_technology",
+          "source_ids": [
+            "s1"
+          ],
+          "basis": "primary_published_evidence"
+        },
+        {
+          "id": "f7",
+          "claim": "该历史版本的制作方资料列出：Vue.js。",
+          "category": "historical_technology",
+          "source_ids": [
+            "s1"
+          ],
+          "basis": "primary_published_evidence"
+        },
+        {
+          "id": "f8",
+          "claim": "该历史版本的制作方资料列出：Stylus。",
+          "category": "historical_technology",
+          "source_ids": [
+            "s1"
+          ],
+          "basis": "primary_published_evidence"
+        },
+        {
+          "id": "f9",
+          "claim": "该历史版本的制作方资料列出：Webpack。",
+          "category": "historical_technology",
+          "source_ids": [
+            "s1"
+          ],
+          "basis": "primary_published_evidence"
+        }
+      ],
+      "observations": [],
+      "inferences": [],
+      "pages": [],
+      "interactions": [],
+      "measurements": [],
+      "classification": {
+        "industry": [
+          "b2b-industrial"
+        ],
+        "visual_style": [],
+        "interaction_pattern": [
+          "每种工业产品以独立场景解释，滚动结尾用小交互演示用途。"
+        ],
+        "basis": "analyst classification based on cited descriptions; not live visual inspection"
+      },
+      "historical_technology_names": [
+        "Three.js",
+        "WebGL",
+        "Blender",
+        "Vue.js",
+        "Stylus",
+        "Webpack"
+      ],
+      "technology_note": "Read technical fact statements and their scope. An empty list means no normalized complete list, not absence of technology.",
+      "blueprints": [
+        {
+          "id": "bp1",
+          "status": "proposal",
+          "title": "复用机制的原创实现蓝图",
+          "inputs": [
+            "经过核验的自有正文与主用户任务",
+            "已授权图片/视频/模型",
+            "用户操作与设备能力"
+          ],
+          "states": [
+            "idle",
+            "loading",
+            "ready",
+            "interacting",
+            "paused",
+            "error",
+            "fallback",
+            "disposed"
+          ],
+          "outputs": [
+            "可读的DOM内容与真实导航",
+            "与业务状态分离的视觉反馈"
+          ],
+          "steps": [
+            "先把产品任务、应用限制和可验证收益写成产品卡。",
+            "每个产品只选择一个用户动作说明一个工作原理。",
+            "需要线框时优先离线导出所需边，避免高成本运行时生成。",
+            "复用地形与材质，移动端替换简化资源；保留直接询价入口。"
+          ],
+          "fallback": "保留语义DOM内容和明确可点控件；触屏不依赖悬停，reduced-motion跳过视觉位移；按本例验收条目提供对应静态/列表入口。",
+          "cleanup": "卸载时停止本模块动画帧、断开观察器、移除事件监听；若存在GPU/音频/视频资源则分别释放或停止；不得全局销毁其他页面资源。",
+          "acceptance": [
+            "用户可跳过场景进入产品说明；同一视觉动作不夸大真实能力；触摸端无悬停独占功能。"
+          ],
+          "risks": [
+            "当前获奖版本与当前活站可能不同。",
+            "历史内部工具和旧API不可直接当作新项目依赖。"
+          ]
+        }
+      ],
+      "mobile_fallback": {
+        "status": "proposal",
+        "text": "保留语义DOM内容和明确可点控件；触屏不依赖悬停，reduced-motion跳过视觉位移；按本例验收条目提供对应静态/列表入口。"
+      },
+      "implementation_risks": {
+        "status": "proposal",
+        "items": [
+          "当前获奖版本与当前活站可能不同。",
+          "历史内部工具和旧API不可直接当作新项目依赖。"
+        ]
+      },
+      "inspection_plan": {
+        "status": "not_run",
+        "viewports": [
+          {
+            "width": 390,
+            "height": 844
+          },
+          {
+            "width": 1440,
+            "height": 900
+          }
+        ],
+        "page_tasks": [
+          "确认获奖版本与当前URL关系",
+          "记录实际页面与主CTA",
+          "执行交互状态表"
+        ],
+        "required_states": [
+          "idle",
+          "focus",
+          "active",
+          "loading",
+          "success",
+          "error",
+          "empty",
+          "disabled",
+          "reduced_motion"
+        ]
+      },
+      "limitations": [
+        "不复制产品安全结论；技术营销中的具体能力必须来自客户证据。",
+        "本次只完成官方/制作方文献拆解，未对原站逐页截图或执行交互。",
+        "未独立测量网络资源、帧率或Core Web Vitals；原作者数字不代表当前实测。",
+        "蓝图、移动回退和验收项均为本库建议，不是对原站源码的结论。"
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "case_id": "nomadic-tribe",
+      "name": "Nomadic Tribe",
+      "research_level": "desk_researched",
+      "research_date": "2026-11-23",
+      "awwwards_url": "https://www.awwwards.com/sites/nomadic-tribe",
+      "award_year": 2019,
+      "award_month": 2,
+      "award_month_status": "primary_month_claim",
+      "candidate_month_claims": [],
+      "award_month_notes": "官方文章明确月份；跨年文章发表日期与获奖月份分开。",
+      "sources": [
+        {
+          "id": "s1",
+          "url": "https://awwwards.com/nomadic-tribe-by-makemepulse-wins-site-of-the-month-february.html",
+          "retrieved_at": "2026-11-23",
+          "kind": "primary_source",
+          "supports": "Historical award identity and monthly evidence"
+        },
+        {
+          "id": "s2",
+          "url": "https://www.awwwards.com/sites/nomadic-tribe",
+          "retrieved_at": "2026-11-23",
+          "kind": "primary_source",
+          "supports": "Official work record; page date may be SOTD"
+        }
+      ],
+      "facts": [
+        {
+          "id": "f1",
+          "claim": "官方来源记录该案例的SOTM月份为2019-02。",
+          "category": "award",
+          "source_ids": [
+            "s1"
+          ],
+          "basis": "primary_published_evidence"
+        },
+        {
+          "id": "f2",
+          "claim": "官方说明自研NanoGL做模块化材质与效果组合，Vue整合界面，WebAudio支持声音；制作先灰盒再替换最终资产。",
+          "category": "technical",
+          "source_ids": [
+            "s1"
+          ],
+          "basis": "primary_published_evidence"
+        },
+        {
+          "id": "f3",
+          "claim": "以插画和角色动画组织多章互动寓言。",
+          "category": "interaction_description",
+          "source_ids": [
+            "s1"
+          ],
+          "basis": "primary_published_evidence"
+        },
+        {
+          "id": "f4",
+          "claim": "该历史版本的制作方资料列出：NanoGL。",
+          "category": "historical_technology",
+          "source_ids": [
+            "s1"
+          ],
+          "basis": "primary_published_evidence"
+        },
+        {
+          "id": "f5",
+          "claim": "该历史版本的制作方资料列出：WebGL。",
+          "category": "historical_technology",
+          "source_ids": [
+            "s1"
+          ],
+          "basis": "primary_published_evidence"
+        },
+        {
+          "id": "f6",
+          "claim": "该历史版本的制作方资料列出：WebAudio。",
+          "category": "historical_technology",
+          "source_ids": [
+            "s1"
+          ],
+          "basis": "primary_published_evidence"
+        },
+        {
+          "id": "f7",
+          "claim": "该历史版本的制作方资料列出：Vue.js。",
+          "category": "historical_technology",
+          "source_ids": [
+            "s1"
+          ],
+          "basis": "primary_published_evidence"
+        },
+        {
+          "id": "f8",
+          "claim": "该历史版本的制作方资料列出：Substance Painter。",
+          "category": "historical_technology",
+          "source_ids": [
+            "s1"
+          ],
+          "basis": "primary_published_evidence"
+        }
+      ],
+      "observations": [],
+      "inferences": [],
+      "pages": [],
+      "interactions": [],
+      "measurements": [],
+      "classification": {
+        "industry": [
+          "interactive-story"
+        ],
+        "visual_style": [],
+        "interaction_pattern": [
+          "以插画和角色动画组织多章互动寓言。"
+        ],
+        "basis": "analyst classification based on cited descriptions; not live visual inspection"
+      },
+      "historical_technology_names": [
+        "NanoGL",
+        "WebGL",
+        "WebAudio",
+        "Vue.js",
+        "Substance Painter"
+      ],
+      "technology_note": "Read technical fact statements and their scope. An empty list means no normalized complete list, not absence of technology.",
+      "blueprints": [
+        {
+          "id": "bp1",
+          "status": "proposal",
+          "title": "复用机制的原创实现蓝图",
+          "inputs": [
+            "经过核验的自有正文与主用户任务",
+            "已授权图片/视频/模型",
+            "用户操作与设备能力"
+          ],
+          "states": [
+            "idle",
+            "loading",
+            "ready",
+            "interacting",
+            "paused",
+            "error",
+            "fallback",
+            "disposed"
+          ],
+          "outputs": [
+            "可读的DOM内容与真实导航",
+            "与业务状态分离的视觉反馈"
+          ],
+          "steps": [
+            "把故事拆成章节、转场和用户动作三张表。",
+            "用低模和纯色材质先验证节奏。",
+            "为每种材质效果定义可复用参数，避免每场景复制整套shader。",
+            "音频默认不播放；用户启用后提供持续可见静音控件。"
+          ],
+          "fallback": "保留语义DOM内容和明确可点控件；触屏不依赖悬停，reduced-motion跳过视觉位移；按本例验收条目提供对应静态/列表入口。",
+          "cleanup": "卸载时停止本模块动画帧、断开观察器、移除事件监听；若存在GPU/音频/视频资源则分别释放或停止；不得全局销毁其他页面资源。",
+          "acceptance": [
+            "快速跳章不重叠声音；静音和减弱动态不妨碍理解；读者随时回到章节目录。"
+          ],
+          "risks": [
+            "当前获奖版本与当前活站可能不同。",
+            "历史内部工具和旧API不可直接当作新项目依赖。"
+          ]
+        }
+      ],
+      "mobile_fallback": {
+        "status": "proposal",
+        "text": "保留语义DOM内容和明确可点控件；触屏不依赖悬停，reduced-motion跳过视觉位移；按本例验收条目提供对应静态/列表入口。"
+      },
+      "implementation_risks": {
+        "status": "proposal",
+        "items": [
+          "当前获奖版本与当前活站可能不同。",
+          "历史内部工具和旧API不可直接当作新项目依赖。"
+        ]
+      },
+      "inspection_plan": {
+        "status": "not_run",
+        "viewports": [
+          {
+            "width": 390,
+            "height": 844
+          },
+          {
+            "width": 1440,
+            "height": 900
+          }
+        ],
+        "page_tasks": [
+          "确认获奖版本与当前URL关系",
+          "记录实际页面与主CTA",
+          "执行交互状态表"
+        ],
+        "required_states": [
+          "idle",
+          "focus",
+          "active",
+          "loading",
+          "success",
+          "error",
+          "empty",
+          "disabled",
+          "reduced_motion"
+        ]
+      },
+      "limitations": [
+        "NanoGL是制作方内部工具；不能要求其他AI直接取得其源码；建议使用项目已有渲染层实现同等机制。",
+        "本次只完成官方/制作方文献拆解，未对原站逐页截图或执行交互。",
+        "未独立测量网络资源、帧率或Core Web Vitals；原作者数字不代表当前实测。",
+        "蓝图、移动回退和验收项均为本库建议，不是对原站源码的结论。"
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "case_id": "ma",
+      "name": "MA",
+      "research_level": "desk_researched",
+      "research_date": "2026-11-23",
+      "awwwards_url": "https://www.awwwards.com/sites/ma",
+      "award_year": 2019,
+      "award_month": 9,
+      "award_month_status": "primary_month_claim",
+      "candidate_month_claims": [],
+      "award_month_notes": "官方文章明确月份；跨年文章发表日期与获奖月份分开。",
+      "sources": [
+        {
+          "id": "s1",
+          "url": "https://www.awwwards.com/ma-by-retail-710-aquest-wins-site-of-the-month-september.html",
+          "retrieved_at": "2026-11-23",
+          "kind": "primary_source",
+          "supports": "Historical award identity and monthly evidence"
+        },
+        {
+          "id": "s2",
+          "url": "https://www.awwwards.com/sites/ma",
+          "retrieved_at": "2026-11-23",
+          "kind": "primary_source",
+          "supports": "Official work record; page date may be SOTD"
+        }
+      ],
+      "facts": [
+        {
+          "id": "f1",
+          "claim": "官方来源记录该案例的SOTM月份为2019-09。",
+          "category": "award",
+          "source_ids": [
+            "s1"
+          ],
+          "basis": "primary_published_evidence"
+        },
+        {
+          "id": "f2",
+          "claim": "2019年官方案例披露React和定制Three.js桥接、动态导入、按需载入物体、烘焙阴影与shader背景混色。",
+          "category": "technical",
+          "source_ids": [
+            "s1"
+          ],
+          "basis": "primary_published_evidence"
+        },
+        {
+          "id": "f3",
+          "claim": "产品按四个视觉世界组织，场景切换与商品浏览结合。",
+          "category": "interaction_description",
+          "source_ids": [
+            "s1"
+          ],
+          "basis": "primary_published_evidence"
+        },
+        {
+          "id": "f4",
+          "claim": "该历史版本的制作方资料列出：React 16.8。",
+          "category": "historical_technology",
+          "source_ids": [
+            "s1"
+          ],
+          "basis": "primary_published_evidence"
+        },
+        {
+          "id": "f5",
+          "claim": "该历史版本的制作方资料列出：Redux。",
+          "category": "historical_technology",
+          "source_ids": [
+            "s1"
+          ],
+          "basis": "primary_published_evidence"
+        },
+        {
+          "id": "f6",
+          "claim": "该历史版本的制作方资料列出：redux-axios-middleware。",
+          "category": "historical_technology",
+          "source_ids": [
+            "s1"
+          ],
+          "basis": "primary_published_evidence"
+        },
+        {
+          "id": "f7",
+          "claim": "该历史版本的制作方资料列出：custom Three.js build。",
+          "category": "historical_technology",
+          "source_ids": [
+            "s1"
+          ],
+          "basis": "primary_published_evidence"
+        },
+        {
+          "id": "f8",
+          "claim": "该历史版本的制作方资料列出：Anime.js。",
+          "category": "historical_technology",
+          "source_ids": [
+            "s1"
+          ],
+          "basis": "primary_published_evidence"
+        },
+        {
+          "id": "f9",
+          "claim": "该历史版本的制作方资料列出：Webpack。",
+          "category": "historical_technology",
+          "source_ids": [
+            "s1"
+          ],
+          "basis": "primary_published_evidence"
+        }
+      ],
+      "observations": [],
+      "inferences": [],
+      "pages": [],
+      "interactions": [],
+      "measurements": [],
+      "classification": {
+        "industry": [
+          "ecommerce-brand"
+        ],
+        "visual_style": [],
+        "interaction_pattern": [
+          "产品按四个视觉世界组织，场景切换与商品浏览结合。"
+        ],
+        "basis": "analyst classification based on cited descriptions; not live visual inspection"
+      },
+      "historical_technology_names": [
+        "React 16.8",
+        "Redux",
+        "redux-axios-middleware",
+        "custom Three.js build",
+        "Anime.js",
+        "Webpack"
+      ],
+      "technology_note": "Read technical fact statements and their scope. An empty list means no normalized complete list, not absence of technology.",
+      "blueprints": [
+        {
+          "id": "bp1",
+          "status": "proposal",
+          "title": "复用机制的原创实现蓝图",
+          "inputs": [
+            "经过核验的自有正文与主用户任务",
+            "已授权图片/视频/模型",
+            "用户操作与设备能力"
+          ],
+          "states": [
+            "idle",
+            "loading",
+            "ready",
+            "interacting",
+            "paused",
+            "error",
+            "fallback",
+            "disposed"
+          ],
+          "outputs": [
+            "可读的DOM内容与真实导航",
+            "与业务状态分离的视觉反馈"
+          ],
+          "steps": [
+            "先保证商品详情、价格、库存和结算路径真实可用。",
+            "把3D场景选择映射到商品类别，不让其维护独立库存或价格。",
+            "悬浮装饰用简单周期函数；场景变化只改视觉参数。",
+            "商品与购物车逻辑按项目现有组件实现，3D失败时回退图片。"
+          ],
+          "fallback": "保留语义DOM内容和明确可点控件；触屏不依赖悬停，reduced-motion跳过视觉位移；按本例验收条目提供对应静态/列表入口。",
+          "cleanup": "卸载时停止本模块动画帧、断开观察器、移除事件监听；若存在GPU/音频/视频资源则分别释放或停止；不得全局销毁其他页面资源。",
+          "acceptance": [
+            "切换视觉世界不清空购物车；低配设备可以直接进入商品；价格和库存来自同一数据源。"
+          ],
+          "risks": [
+            "当前获奖版本与当前活站可能不同。",
+            "历史内部工具和旧API不可直接当作新项目依赖。"
+          ]
+        }
+      ],
+      "mobile_fallback": {
+        "status": "proposal",
+        "text": "保留语义DOM内容和明确可点控件；触屏不依赖悬停，reduced-motion跳过视觉位移；按本例验收条目提供对应静态/列表入口。"
+      },
+      "implementation_risks": {
+        "status": "proposal",
+        "items": [
+          "当前获奖版本与当前活站可能不同。",
+          "历史内部工具和旧API不可直接当作新项目依赖。"
+        ]
+      },
+      "inspection_plan": {
+        "status": "not_run",
+        "viewports": [
+          {
+            "width": 390,
+            "height": 844
+          },
+          {
+            "width": 1440,
+            "height": 900
+          }
+        ],
+        "page_tasks": [
+          "确认获奖版本与当前URL关系",
+          "记录实际页面与主CTA",
+          "执行交互状态表"
+        ],
+        "required_states": [
+          "idle",
+          "focus",
+          "active",
+          "loading",
+          "success",
+          "error",
+          "empty",
+          "disabled",
+          "reduced_motion"
+        ]
+      },
+      "limitations": [
+        "历史React版本和内部react-three包不可当2026依赖建议；只借鉴表现与架构。",
+        "本次只完成官方/制作方文献拆解，未对原站逐页截图或执行交互。",
+        "未独立测量网络资源、帧率或Core Web Vitals；原作者数字不代表当前实测。",
+        "蓝图、移动回退和验收项均为本库建议，不是对原站源码的结论。"
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "case_id": "bruno-simon-portfolio",
+      "name": "Bruno Simon Portfolio",
+      "research_level": "desk_researched",
+      "research_date": "2026-11-23",
+      "awwwards_url": "https://www.awwwards.com/sites/bruno-simon-portfolio",
+      "award_year": 2019,
+      "award_month": 11,
+      "award_month_status": "primary_month_claim",
+      "candidate_month_claims": [],
+      "award_month_notes": "官方文章明确月份；跨年文章发表日期与获奖月份分开。",
+      "sources": [
+        {
+          "id": "s1",
+          "url": "https://awwwards.com/bruno-simon-portfolio-wins-site-of-the-month-november.html",
+          "retrieved_at": "2026-11-23",
+          "kind": "primary_source",
+          "supports": "Historical award identity and monthly evidence"
+        },
+        {
+          "id": "s2",
+          "url": "https://www.awwwards.com/sites/bruno-simon-portfolio",
+          "retrieved_at": "2026-11-23",
+          "kind": "primary_source",
+          "supports": "Official work record; page date may be SOTD"
+        }
+      ],
+      "facts": [
+        {
+          "id": "f1",
+          "claim": "官方来源记录该案例的SOTM月份为2019-11。",
+          "category": "award",
+          "source_ids": [
+            "s1"
+          ],
+          "basis": "primary_published_evidence"
+        },
+        {
+          "id": "f2",
+          "claim": "2019年官方案例明确使用Three.js渲染、Cannon.js物理；可见低模与物理简化体分离，并有移动控制。",
+          "category": "technical",
+          "source_ids": [
+            "s1"
+          ],
+          "basis": "primary_published_evidence"
+        },
+        {
+          "id": "f3",
+          "claim": "用俯视小车游戏连接个人信息、项目和联系区域。",
+          "category": "interaction_description",
+          "source_ids": [
+            "s1"
+          ],
+          "basis": "primary_published_evidence"
+        },
+        {
+          "id": "f4",
+          "claim": "该历史版本的制作方资料列出：Three.js。",
+          "category": "historical_technology",
+          "source_ids": [
+            "s1"
+          ],
+          "basis": "primary_published_evidence"
+        },
+        {
+          "id": "f5",
+          "claim": "该历史版本的制作方资料列出：Cannon.js。",
+          "category": "historical_technology",
+          "source_ids": [
+            "s1"
+          ],
+          "basis": "primary_published_evidence"
+        },
+        {
+          "id": "f6",
+          "claim": "该历史版本的制作方资料列出：Blender。",
+          "category": "historical_technology",
+          "source_ids": [
+            "s1"
+          ],
+          "basis": "primary_published_evidence"
+        },
+        {
+          "id": "f7",
+          "claim": "该历史版本的制作方资料列出：glTF。",
+          "category": "historical_technology",
+          "source_ids": [
+            "s1"
+          ],
+          "basis": "primary_published_evidence"
+        },
+        {
+          "id": "f8",
+          "claim": "该历史版本的制作方资料列出：Draco。",
+          "category": "historical_technology",
+          "source_ids": [
+            "s1"
+          ],
+          "basis": "primary_published_evidence"
+        }
+      ],
+      "observations": [],
+      "inferences": [],
+      "pages": [],
+      "interactions": [],
+      "measurements": [],
+      "classification": {
+        "industry": [
+          "portfolio-game"
+        ],
+        "visual_style": [],
+        "interaction_pattern": [
+          "用俯视小车游戏连接个人信息、项目和联系区域。"
+        ],
+        "basis": "analyst classification based on cited descriptions; not live visual inspection"
+      },
+      "historical_technology_names": [
+        "Three.js",
+        "Cannon.js",
+        "Blender",
+        "glTF",
+        "Draco"
+      ],
+      "technology_note": "Read technical fact statements and their scope. An empty list means no normalized complete list, not absence of technology.",
+      "blueprints": [
+        {
+          "id": "bp1",
+          "status": "proposal",
+          "title": "复用机制的原创实现蓝图",
+          "inputs": [
+            "经过核验的自有正文与主用户任务",
+            "已授权图片/视频/模型",
+            "用户操作与设备能力"
+          ],
+          "states": [
+            "idle",
+            "loading",
+            "ready",
+            "interacting",
+            "paused",
+            "error",
+            "fallback",
+            "disposed"
+          ],
+          "outputs": [
+            "可读的DOM内容与真实导航",
+            "与业务状态分离的视觉反馈"
+          ],
+          "steps": [
+            "先写常规作品列表和联系信息。",
+            "灰盒场景只放一辆车、一个碰撞体和一个项目热点。",
+            "物理世界和渲染世界保持单向同步；固定步长处理物理。",
+            "提供触摸控制、暂停、重置与跳过游戏入口。"
+          ],
+          "fallback": "保留语义DOM内容和明确可点控件；触屏不依赖悬停，reduced-motion跳过视觉位移；按本例验收条目提供对应静态/列表入口。",
+          "cleanup": "卸载时停止本模块动画帧、断开观察器、移除事件监听；若存在GPU/音频/视频资源则分别释放或停止；不得全局销毁其他页面资源。",
+          "acceptance": [
+            "非玩家不驾驶也能找到项目与联系；后台标签页暂停；长时间卡住能重置。"
+          ],
+          "risks": [
+            "当前获奖版本与当前活站可能不同。",
+            "历史内部工具和旧API不可直接当作新项目依赖。"
+          ]
+        }
+      ],
+      "mobile_fallback": {
+        "status": "proposal",
+        "text": "保留语义DOM内容和明确可点控件；触屏不依赖悬停，reduced-motion跳过视觉位移；按本例验收条目提供对应静态/列表入口。"
+      },
+      "implementation_risks": {
+        "status": "proposal",
+        "items": [
+          "当前获奖版本与当前活站可能不同。",
+          "历史内部工具和旧API不可直接当作新项目依赖。"
+        ]
+      },
+      "inspection_plan": {
+        "status": "not_run",
+        "viewports": [
+          {
+            "width": 390,
+            "height": 844
+          },
+          {
+            "width": 1440,
+            "height": 900
+          }
+        ],
+        "page_tasks": [
+          "确认获奖版本与当前URL关系",
+          "记录实际页面与主CTA",
+          "执行交互状态表"
+        ],
+        "required_states": [
+          "idle",
+          "focus",
+          "active",
+          "loading",
+          "success",
+          "error",
+          "empty",
+          "disabled",
+          "reduced_motion"
+        ]
+      },
+      "limitations": [
+        "这是2019版本的事实，不外推到2025/2026重做版本；不复制作者资产或品牌。",
+        "本次只完成官方/制作方文献拆解，未对原站逐页截图或执行交互。",
+        "未独立测量网络资源、帧率或Core Web Vitals；原作者数字不代表当前实测。",
+        "蓝图、移动回退和验收项均为本库建议，不是对原站源码的结论。"
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "case_id": "pioneer-corn-revolutionized",
+      "name": "Pioneer - Corn Revolutionized",
+      "research_level": "desk_researched",
+      "research_date": "2026-11-23",
+      "awwwards_url": "https://www.awwwards.com/sites/pioneer-corn-revolutionized",
+      "award_year": 2020,
+      "award_month": 7,
+      "award_month_status": "primary_month_claim",
+      "candidate_month_claims": [],
+      "award_month_notes": "官方文章明确月份；跨年文章发表日期与获奖月份分开。",
+      "sources": [
+        {
+          "id": "s1",
+          "url": "https://awwwards.com/resns-pioneer-corn-revolutionized-wins-site-of-the-month-july-2020.html",
+          "retrieved_at": "2026-11-23",
+          "kind": "primary_source",
+          "supports": "Historical award identity and monthly evidence"
+        },
+        {
+          "id": "s2",
+          "url": "https://www.awwwards.com/sites/pioneer-corn-revolutionized",
+          "retrieved_at": "2026-11-23",
+          "kind": "primary_source",
+          "supports": "Official work record; page date may be SOTD"
+        }
+      ],
+      "facts": [
+        {
+          "id": "f1",
+          "claim": "官方来源记录该案例的SOTM月份为2020-07。",
+          "category": "award",
+          "source_ids": [
+            "s1"
+          ],
+          "basis": "primary_published_evidence"
+        },
+        {
+          "id": "f2",
+          "claim": "官方说明Jelly为内部管线；使用GPU压缩纹理、按设备供给资源、MSDF文字和着色器混合烘焙光照。",
+          "category": "technical",
+          "source_ids": [
+            "s1"
+          ],
+          "basis": "primary_published_evidence"
+        },
+        {
+          "id": "f3",
+          "claim": "以种子生命周期组织纵向故事，将育种和测试过程可视化。",
+          "category": "interaction_description",
+          "source_ids": [
+            "s1"
+          ],
+          "basis": "primary_published_evidence"
+        },
+        {
+          "id": "f4",
+          "claim": "该历史版本的制作方资料列出：Jelly。",
+          "category": "historical_technology",
+          "source_ids": [
+            "s1"
+          ],
+          "basis": "primary_published_evidence"
+        },
+        {
+          "id": "f5",
+          "claim": "该历史版本的制作方资料列出：Three.js。",
+          "category": "historical_technology",
+          "source_ids": [
+            "s1"
+          ],
+          "basis": "primary_published_evidence"
+        },
+        {
+          "id": "f6",
+          "claim": "该历史版本的制作方资料列出：GSAP。",
+          "category": "historical_technology",
+          "source_ids": [
+            "s1"
+          ],
+          "basis": "primary_published_evidence"
+        },
+        {
+          "id": "f7",
+          "claim": "该历史版本的制作方资料列出：Blender。",
+          "category": "historical_technology",
+          "source_ids": [
+            "s1"
+          ],
+          "basis": "primary_published_evidence"
+        },
+        {
+          "id": "f8",
+          "claim": "该历史版本的制作方资料列出：Octane。",
+          "category": "historical_technology",
+          "source_ids": [
+            "s1"
+          ],
+          "basis": "primary_published_evidence"
+        }
+      ],
+      "observations": [],
+      "inferences": [],
+      "pages": [],
+      "interactions": [],
+      "measurements": [],
+      "classification": {
+        "industry": [
+          "b2b-science"
+        ],
+        "visual_style": [],
+        "interaction_pattern": [
+          "以种子生命周期组织纵向故事，将育种和测试过程可视化。"
+        ],
+        "basis": "analyst classification based on cited descriptions; not live visual inspection"
+      },
+      "historical_technology_names": [
+        "Jelly",
+        "Three.js",
+        "GSAP",
+        "Blender",
+        "Octane"
+      ],
+      "technology_note": "Read technical fact statements and their scope. An empty list means no normalized complete list, not absence of technology.",
+      "blueprints": [
+        {
+          "id": "bp1",
+          "status": "proposal",
+          "title": "复用机制的原创实现蓝图",
+          "inputs": [
+            "经过核验的自有正文与主用户任务",
+            "已授权图片/视频/模型",
+            "用户操作与设备能力"
+          ],
+          "states": [
+            "idle",
+            "loading",
+            "ready",
+            "interacting",
+            "paused",
+            "error",
+            "fallback",
+            "disposed"
+          ],
+          "outputs": [
+            "可读的DOM内容与真实导航",
+            "与业务状态分离的视觉反馈"
+          ],
+          "steps": [
+            "把科学流程拆成有独立标题和结论的章节。",
+            "先用DOM图文解释各步骤，再决定哪些步骤必须用3D。",
+            "把相机、动画和文字统一映射到章节进度。",
+            "为WebGL中的重要标题提供语义HTML对应文本，避免重复朗读。"
+          ],
+          "fallback": "保留语义DOM内容和明确可点控件；触屏不依赖悬停，reduced-motion跳过视觉位移；按本例验收条目提供对应静态/列表入口。",
+          "cleanup": "卸载时停止本模块动画帧、断开观察器、移除事件监听；若存在GPU/音频/视频资源则分别释放或停止；不得全局销毁其他页面资源。",
+          "acceptance": [
+            "关闭动画仍能理解完整流程；每章可链接和定位；重要文本能搜索、复制并被辅助技术读取。"
+          ],
+          "risks": [
+            "当前获奖版本与当前活站可能不同。",
+            "历史内部工具和旧API不可直接当作新项目依赖。"
+          ]
+        }
+      ],
+      "mobile_fallback": {
+        "status": "proposal",
+        "text": "保留语义DOM内容和明确可点控件；触屏不依赖悬停，reduced-motion跳过视觉位移；按本例验收条目提供对应静态/列表入口。"
+      },
+      "implementation_risks": {
+        "status": "proposal",
+        "items": [
+          "当前获奖版本与当前活站可能不同。",
+          "历史内部工具和旧API不可直接当作新项目依赖。"
+        ]
+      },
+      "inspection_plan": {
+        "status": "not_run",
+        "viewports": [
+          {
+            "width": 390,
+            "height": 844
+          },
+          {
+            "width": 1440,
+            "height": 900
+          }
+        ],
+        "page_tasks": [
+          "确认获奖版本与当前URL关系",
+          "记录实际页面与主CTA",
+          "执行交互状态表"
+        ],
+        "required_states": [
+          "idle",
+          "focus",
+          "active",
+          "loading",
+          "success",
+          "error",
+          "empty",
+          "disabled",
+          "reduced_motion"
+        ]
+      },
+      "limitations": [
+        "Jelly不是可直接npm安装的公开框架；本文提出的DOM可访问层为复现建议，不是对原站实现的断言。",
+        "本次只完成官方/制作方文献拆解，未对原站逐页截图或执行交互。",
+        "未独立测量网络资源、帧率或Core Web Vitals；原作者数字不代表当前实测。",
+        "蓝图、移动回退和验收项均为本库建议，不是对原站源码的结论。"
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "case_id": "kode",
+      "name": "Kode Sports Club",
+      "research_level": "desk_researched",
+      "research_date": "2026-11-23",
+      "awwwards_url": "https://www.awwwards.com/sites/kode",
+      "award_year": 2020,
+      "award_month": 11,
+      "award_month_status": "primary_month_claim",
+      "candidate_month_claims": [],
+      "award_month_notes": "官方文章明确月份；跨年文章发表日期与获奖月份分开。",
+      "sources": [
+        {
+          "id": "s1",
+          "url": "https://awwwards.com/kode-sports-club-by-merci-michel-wins-site-of-the-month-november-2020.html",
+          "retrieved_at": "2026-11-23",
+          "kind": "primary_source",
+          "supports": "Historical award identity and monthly evidence"
+        },
+        {
+          "id": "s2",
+          "url": "https://www.awwwards.com/sites/kode",
+          "retrieved_at": "2026-11-23",
+          "kind": "primary_source",
+          "supports": "Official work record; page date may be SOTD"
+        }
+      ],
+      "facts": [
+        {
+          "id": "f1",
+          "claim": "官方来源记录该案例的SOTM月份为2020-11。",
+          "category": "award",
+          "source_ids": [
+            "s1"
+          ],
+          "basis": "primary_published_evidence"
+        },
+        {
+          "id": "f2",
+          "claim": "官方记录了导出时复用重复物体、合并网格、纹理通道着色、简化网格求高度与分区减少射线测试等取舍。",
+          "category": "technical",
+          "source_ids": [
+            "s1"
+          ],
+          "basis": "primary_published_evidence"
+        },
+        {
+          "id": "f3",
+          "claim": "俯视地图与第三人称角色参观之间连续切换，加入场所介绍和成就。",
+          "category": "interaction_description",
+          "source_ids": [
+            "s1"
+          ],
+          "basis": "primary_published_evidence"
+        },
+        {
+          "id": "f4",
+          "claim": "该历史版本的制作方资料列出：Three.js。",
+          "category": "historical_technology",
+          "source_ids": [
+            "s1"
+          ],
+          "basis": "primary_published_evidence"
+        },
+        {
+          "id": "f5",
+          "claim": "该历史版本的制作方资料列出：WebGL。",
+          "category": "historical_technology",
+          "source_ids": [
+            "s1"
+          ],
+          "basis": "primary_published_evidence"
+        },
+        {
+          "id": "f6",
+          "claim": "该历史版本的制作方资料列出：Blender Python API。",
+          "category": "historical_technology",
+          "source_ids": [
+            "s1"
+          ],
+          "basis": "primary_published_evidence"
+        },
+        {
+          "id": "f7",
+          "claim": "该历史版本的制作方资料列出：Draco。",
+          "category": "historical_technology",
+          "source_ids": [
+            "s1"
+          ],
+          "basis": "primary_published_evidence"
+        },
+        {
+          "id": "f8",
+          "claim": "该历史版本的制作方资料列出：glTF。",
+          "category": "historical_technology",
+          "source_ids": [
+            "s1"
+          ],
+          "basis": "primary_published_evidence"
+        }
+      ],
+      "observations": [],
+      "inferences": [],
+      "pages": [],
+      "interactions": [],
+      "measurements": [],
+      "classification": {
+        "industry": [
+          "spatial-tour"
+        ],
+        "visual_style": [],
+        "interaction_pattern": [
+          "俯视地图与第三人称角色参观之间连续切换，加入场所介绍和成就。"
+        ],
+        "basis": "analyst classification based on cited descriptions; not live visual inspection"
+      },
+      "historical_technology_names": [
+        "Three.js",
+        "WebGL",
+        "Blender Python API",
+        "Draco",
+        "glTF"
+      ],
+      "technology_note": "Read technical fact statements and their scope. An empty list means no normalized complete list, not absence of technology.",
+      "blueprints": [
+        {
+          "id": "bp1",
+          "status": "proposal",
+          "title": "复用机制的原创实现蓝图",
+          "inputs": [
+            "经过核验的自有正文与主用户任务",
+            "已授权图片/视频/模型",
+            "用户操作与设备能力"
+          ],
+          "states": [
+            "idle",
+            "loading",
+            "ready",
+            "interacting",
+            "paused",
+            "error",
+            "fallback",
+            "disposed"
+          ],
+          "outputs": [
+            "可读的DOM内容与真实导航",
+            "与业务状态分离的视觉反馈"
+          ],
+          "steps": [
+            "将设施列表作为主信息，3D作为探索入口。",
+            "为重复模型保存变换数据，比较实例化和合并后的实际draw calls。",
+            "指针落点先与平面求交，再用简化导航网格计算高度。",
+            "保留“回到地图”“跳到设施”和触摸替代控制。"
+          ],
+          "fallback": "保留语义DOM内容和明确可点控件；触屏不依赖悬停，reduced-motion跳过视觉位移；按本例验收条目提供对应静态/列表入口。",
+          "cleanup": "卸载时停止本模块动画帧、断开观察器、移除事件监听；若存在GPU/音频/视频资源则分别释放或停止；不得全局销毁其他页面资源。",
+          "acceptance": [
+            "用户被障碍卡住能重置；设施列表直接可达；缩放和旋转不阻断正文阅读。"
+          ],
+          "risks": [
+            "当前获奖版本与当前活站可能不同。",
+            "历史内部工具和旧API不可直接当作新项目依赖。"
+          ]
+        }
+      ],
+      "mobile_fallback": {
+        "status": "proposal",
+        "text": "保留语义DOM内容和明确可点控件；触屏不依赖悬停，reduced-motion跳过视觉位移；按本例验收条目提供对应静态/列表入口。"
+      },
+      "implementation_risks": {
+        "status": "proposal",
+        "items": [
+          "当前获奖版本与当前活站可能不同。",
+          "历史内部工具和旧API不可直接当作新项目依赖。"
+        ]
+      },
+      "inspection_plan": {
+        "status": "not_run",
+        "viewports": [
+          {
+            "width": 390,
+            "height": 844
+          },
+          {
+            "width": 1440,
+            "height": 900
+          }
+        ],
+        "page_tasks": [
+          "确认获奖版本与当前URL关系",
+          "记录实际页面与主CTA",
+          "执行交互状态表"
+        ],
+        "required_states": [
+          "idle",
+          "focus",
+          "active",
+          "loading",
+          "success",
+          "error",
+          "empty",
+          "disabled",
+          "reduced_motion"
+        ]
+      },
+      "limitations": [
+        "文中首载体积是2020年制作方报告，未作为当前实测；导航方案曾迭代，不应把全部实验方案同时照搬。",
+        "本次只完成官方/制作方文献拆解，未对原站逐页截图或执行交互。",
+        "未独立测量网络资源、帧率或Core Web Vitals；原作者数字不代表当前实测。",
+        "蓝图、移动回退和验收项均为本库建议，不是对原站源码的结论。"
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "case_id": "umami-land",
+      "name": "Umami Land",
+      "research_level": "desk_researched",
+      "research_date": "2026-11-23",
+      "awwwards_url": "https://www.awwwards.com/sites/umami-land",
+      "award_year": 2021,
+      "award_month": 2,
+      "award_month_status": "primary_month_claim",
+      "candidate_month_claims": [],
+      "award_month_notes": "官方文章明确月份；跨年文章发表日期与获奖月份分开。",
+      "sources": [
+        {
+          "id": "s1",
+          "url": "https://awwwards.com/umami-land-by-google-wins-site-of-the-month-february-2021.html",
+          "retrieved_at": "2026-11-23",
+          "kind": "primary_source",
+          "supports": "Historical award identity and monthly evidence"
+        },
+        {
+          "id": "s2",
+          "url": "https://www.awwwards.com/sites/umami-land",
+          "retrieved_at": "2026-11-23",
+          "kind": "primary_source",
+          "supports": "Official work record; page date may be SOTD"
+        }
+      ],
+      "facts": [
+        {
+          "id": "f1",
+          "claim": "官方来源记录该案例的SOTM月份为2021-02。",
+          "category": "award",
+          "source_ids": [
+            "s1"
+          ],
+          "basis": "primary_published_evidence"
+        },
+        {
+          "id": "f2",
+          "claim": "制作方披露将静态内容合成一个2D球面，上叠动态3D对象；UI使用Vue，内容经Google Sheets API管理。",
+          "category": "technical",
+          "source_ids": [
+            "s1"
+          ],
+          "basis": "primary_published_evidence"
+        },
+        {
+          "id": "f3",
+          "claim": "食物主题公园以热点引导用户了解菜品并访问相关搜索。",
+          "category": "interaction_description",
+          "source_ids": [
+            "s1"
+          ],
+          "basis": "primary_published_evidence"
+        },
+        {
+          "id": "f4",
+          "claim": "该历史版本的制作方资料列出：custom WebGL framework。",
+          "category": "historical_technology",
+          "source_ids": [
+            "s1"
+          ],
+          "basis": "primary_published_evidence"
+        },
+        {
+          "id": "f5",
+          "claim": "该历史版本的制作方资料列出：Vue.js。",
+          "category": "historical_technology",
+          "source_ids": [
+            "s1"
+          ],
+          "basis": "primary_published_evidence"
+        },
+        {
+          "id": "f6",
+          "claim": "该历史版本的制作方资料列出：GSAP。",
+          "category": "historical_technology",
+          "source_ids": [
+            "s1"
+          ],
+          "basis": "primary_published_evidence"
+        },
+        {
+          "id": "f7",
+          "claim": "该历史版本的制作方资料列出：Lottie。",
+          "category": "historical_technology",
+          "source_ids": [
+            "s1"
+          ],
+          "basis": "primary_published_evidence"
+        },
+        {
+          "id": "f8",
+          "claim": "该历史版本的制作方资料列出：Google Sheets API。",
+          "category": "historical_technology",
+          "source_ids": [
+            "s1"
+          ],
+          "basis": "primary_published_evidence"
+        },
+        {
+          "id": "f9",
+          "claim": "该历史版本的制作方资料列出：Google App Engine。",
+          "category": "historical_technology",
+          "source_ids": [
+            "s1"
+          ],
+          "basis": "primary_published_evidence"
+        }
+      ],
+      "observations": [],
+      "inferences": [],
+      "pages": [],
+      "interactions": [],
+      "measurements": [],
+      "classification": {
+        "industry": [
+          "education"
+        ],
+        "visual_style": [],
+        "interaction_pattern": [
+          "食物主题公园以热点引导用户了解菜品并访问相关搜索。"
+        ],
+        "basis": "analyst classification based on cited descriptions; not live visual inspection"
+      },
+      "historical_technology_names": [
+        "custom WebGL framework",
+        "Vue.js",
+        "GSAP",
+        "Lottie",
+        "Google Sheets API",
+        "Google App Engine"
+      ],
+      "technology_note": "Read technical fact statements and their scope. An empty list means no normalized complete list, not absence of technology.",
+      "blueprints": [
+        {
+          "id": "bp1",
+          "status": "proposal",
+          "title": "复用机制的原创实现蓝图",
+          "inputs": [
+            "经过核验的自有正文与主用户任务",
+            "已授权图片/视频/模型",
+            "用户操作与设备能力"
+          ],
+          "states": [
+            "idle",
+            "loading",
+            "ready",
+            "interacting",
+            "paused",
+            "error",
+            "fallback",
+            "disposed"
+          ],
+          "outputs": [
+            "可读的DOM内容与真实导航",
+            "与业务状态分离的视觉反馈"
+          ],
+          "steps": [
+            "建立菜品数据：标题、描述、图片、外链、语言。",
+            "先做可搜索的DOM菜品列表，确保所有热点有对应列表项。",
+            "静态背景与少量动态物体分层，逐区域加载。",
+            "热点选择只改变介绍面板，打开外链由用户明确触发。"
+          ],
+          "fallback": "保留语义DOM内容和明确可点控件；触屏不依赖悬停，reduced-motion跳过视觉位移；按本例验收条目提供对应静态/列表入口。",
+          "cleanup": "卸载时停止本模块动画帧、断开观察器、移除事件监听；若存在GPU/音频/视频资源则分别释放或停止；不得全局销毁其他页面资源。",
+          "acceptance": [
+            "触控、键盘、列表三条路径得到同一菜品；外链可识别；无3D仍可搜索。"
+          ],
+          "risks": [
+            "当前获奖版本与当前活站可能不同。",
+            "历史内部工具和旧API不可直接当作新项目依赖。"
+          ]
+        }
+      ],
+      "mobile_fallback": {
+        "status": "proposal",
+        "text": "保留语义DOM内容和明确可点控件；触屏不依赖悬停，reduced-motion跳过视觉位移；按本例验收条目提供对应静态/列表入口。"
+      },
+      "implementation_risks": {
+        "status": "proposal",
+        "items": [
+          "当前获奖版本与当前活站可能不同。",
+          "历史内部工具和旧API不可直接当作新项目依赖。"
+        ]
+      },
+      "inspection_plan": {
+        "status": "not_run",
+        "viewports": [
+          {
+            "width": 390,
+            "height": 844
+          },
+          {
+            "width": 1440,
+            "height": 900
+          }
+        ],
+        "page_tasks": [
+          "确认获奖版本与当前URL关系",
+          "记录实际页面与主CTA",
+          "执行交互状态表"
+        ],
+        "required_states": [
+          "idle",
+          "focus",
+          "active",
+          "loading",
+          "success",
+          "error",
+          "empty",
+          "disabled",
+          "reduced_motion"
+        ]
+      },
+      "limitations": [
+        "未披露自研引擎源码；不从WebGL推断Three.js；本地化文本必须核验。",
+        "本次只完成官方/制作方文献拆解，未对原站逐页截图或执行交互。",
+        "未独立测量网络资源、帧率或Core Web Vitals；原作者数字不代表当前实测。",
+        "蓝图、移动回退和验收项均为本库建议，不是对原站源码的结论。"
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "case_id": "prometheus-fuels",
+      "name": "Prometheus Fuels",
+      "research_level": "desk_researched",
+      "research_date": "2026-11-23",
+      "awwwards_url": "https://www.awwwards.com/sites/prometheus-fuels",
+      "award_year": 2021,
+      "award_month": 5,
+      "award_month_status": "primary_month_claim",
+      "candidate_month_claims": [],
+      "award_month_notes": "官方文章明确月份；跨年文章发表日期与获奖月份分开。",
+      "sources": [
+        {
+          "id": "s1",
+          "url": "https://www.awwwards.com/prometheus-by-active-theory-wins-site-of-the-month-may-2021.html",
+          "retrieved_at": "2026-11-23",
+          "kind": "primary_source",
+          "supports": "Historical award identity and monthly evidence"
+        },
+        {
+          "id": "s2",
+          "url": "https://www.awwwards.com/sites/prometheus-fuels",
+          "retrieved_at": "2026-11-23",
+          "kind": "primary_source",
+          "supports": "Official work record; page date may be SOTD"
+        }
+      ],
+      "facts": [
+        {
+          "id": "f1",
+          "claim": "官方来源记录该案例的SOTM月份为2021-05。",
+          "category": "award",
+          "source_ids": [
+            "s1"
+          ],
+          "basis": "primary_published_evidence"
+        },
+        {
+          "id": "f2",
+          "claim": "官方披露每场景起止相机的可调系统、边缘噪声处理及转场时交替渲染场景的性能策略。",
+          "category": "technical",
+          "source_ids": [
+            "s1"
+          ],
+          "basis": "primary_published_evidence"
+        },
+        {
+          "id": "f3",
+          "claim": "用复古未来视觉和滚动章节解释燃料技术。",
+          "category": "interaction_description",
+          "source_ids": [
+            "s1"
+          ],
+          "basis": "primary_published_evidence"
+        },
+        {
+          "id": "f4",
+          "claim": "该历史版本的制作方资料列出：custom 3D engine。",
+          "category": "historical_technology",
+          "source_ids": [
+            "s1"
+          ],
+          "basis": "primary_published_evidence"
+        },
+        {
+          "id": "f5",
+          "claim": "该历史版本的制作方资料列出：WebGL-style shader pipeline。",
+          "category": "historical_technology",
+          "source_ids": [
+            "s1"
+          ],
+          "basis": "primary_published_evidence"
+        }
+      ],
+      "observations": [],
+      "inferences": [],
+      "pages": [],
+      "interactions": [],
+      "measurements": [],
+      "classification": {
+        "industry": [
+          "b2b-climate"
+        ],
+        "visual_style": [],
+        "interaction_pattern": [
+          "用复古未来视觉和滚动章节解释燃料技术。"
+        ],
+        "basis": "analyst classification based on cited descriptions; not live visual inspection"
+      },
+      "historical_technology_names": [
+        "custom 3D engine",
+        "WebGL-style shader pipeline"
+      ],
+      "technology_note": "Read technical fact statements and their scope. An empty list means no normalized complete list, not absence of technology.",
+      "blueprints": [
+        {
+          "id": "bp1",
+          "status": "proposal",
+          "title": "复用机制的原创实现蓝图",
+          "inputs": [
+            "经过核验的自有正文与主用户任务",
+            "已授权图片/视频/模型",
+            "用户操作与设备能力"
+          ],
+          "states": [
+            "idle",
+            "loading",
+            "ready",
+            "interacting",
+            "paused",
+            "error",
+            "fallback",
+            "disposed"
+          ],
+          "outputs": [
+            "可读的DOM内容与真实导航",
+            "与业务状态分离的视觉反馈"
+          ],
+          "steps": [
+            "用明确文本说明技术输入、过程、输出与证据边界。",
+            "给每章保存起止相机与动画参数，允许可视调参。",
+            "按实际设备测试转场开销，再选择冻结、交替渲染或预渲染。",
+            "交互提示必须附可点击控件，避免只支持空格键。"
+          ],
+          "fallback": "保留语义DOM内容和明确可点控件；触屏不依赖悬停，reduced-motion跳过视觉位移；按本例验收条目提供对应静态/列表入口。",
+          "cleanup": "卸载时停止本模块动画帧、断开观察器、移除事件监听；若存在GPU/音频/视频资源则分别释放或停止；不得全局销毁其他页面资源。",
+          "acceptance": [
+            "快速滚动、反向滚动和跳章无黑屏；图形失败仍可读技术说明；所有环保及性能宣称有来源。"
+          ],
+          "risks": [
+            "当前获奖版本与当前活站可能不同。",
+            "历史内部工具和旧API不可直接当作新项目依赖。"
+          ]
+        }
+      ],
+      "mobile_fallback": {
+        "status": "proposal",
+        "text": "保留语义DOM内容和明确可点控件；触屏不依赖悬停，reduced-motion跳过视觉位移；按本例验收条目提供对应静态/列表入口。"
+      },
+      "implementation_risks": {
+        "status": "proposal",
+        "items": [
+          "当前获奖版本与当前活站可能不同。",
+          "历史内部工具和旧API不可直接当作新项目依赖。"
+        ]
+      },
+      "inspection_plan": {
+        "status": "not_run",
+        "viewports": [
+          {
+            "width": 390,
+            "height": 844
+          },
+          {
+            "width": 1440,
+            "height": 900
+          }
+        ],
+        "page_tasks": [
+          "确认获奖版本与当前URL关系",
+          "记录实际页面与主CTA",
+          "执行交互状态表"
+        ],
+        "required_states": [
+          "idle",
+          "focus",
+          "active",
+          "loading",
+          "success",
+          "error",
+          "empty",
+          "disabled",
+          "reduced_motion"
+        ]
+      },
+      "limitations": [
+        "公开案例未在所读正文明确框架名称，不认定Hydra/Three.js；交替渲染须实测后采用。",
+        "本次只完成官方/制作方文献拆解，未对原站逐页截图或执行交互。",
+        "未独立测量网络资源、帧率或Core Web Vitals；原作者数字不代表当前实测。",
+        "蓝图、移动回退和验收项均为本库建议，不是对原站源码的结论。"
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "case_id": "persepolis-reimagined",
+      "name": "Persepolis Reimagined",
+      "research_level": "desk_researched",
+      "research_date": "2026-11-23",
+      "awwwards_url": "https://www.awwwards.com/sites/persepolis-reimagined",
+      "award_year": 2022,
+      "award_month": 6,
+      "award_month_status": "primary_month_claim",
+      "candidate_month_claims": [],
+      "award_month_notes": "官方文章明确月份；跨年文章发表日期与获奖月份分开。",
+      "sources": [
+        {
+          "id": "s1",
+          "url": "https://awwwards.com/case-study-getty-persepolis-reimagined.html",
+          "retrieved_at": "2026-11-23",
+          "kind": "primary_source",
+          "supports": "Historical award identity and monthly evidence"
+        },
+        {
+          "id": "s2",
+          "url": "https://www.awwwards.com/sites/persepolis-reimagined",
+          "retrieved_at": "2026-11-23",
+          "kind": "primary_source",
+          "supports": "Official work record; page date may be SOTD"
+        }
+      ],
+      "facts": [
+        {
+          "id": "f1",
+          "claim": "官方来源记录该案例的SOTM月份为2022-06。",
+          "category": "award",
+          "source_ids": [
+            "s1"
+          ],
+          "basis": "primary_published_evidence"
+        },
+        {
+          "id": "f2",
+          "claim": "官方披露了视频与实时场景对齐、视锥剔除、LOD、动态实例化及Unity场景导出到自定义JSON的制作流程。",
+          "category": "technical",
+          "source_ids": [
+            "s1"
+          ],
+          "basis": "primary_published_evidence"
+        },
+        {
+          "id": "f3",
+          "claim": "从电影式开场进入可探索的古城，地图和章节共用视觉风格。",
+          "category": "interaction_description",
+          "source_ids": [
+            "s1"
+          ],
+          "basis": "primary_published_evidence"
+        },
+        {
+          "id": "f4",
+          "claim": "该历史版本的制作方资料列出：WebGL 2。",
+          "category": "historical_technology",
+          "source_ids": [
+            "s1"
+          ],
+          "basis": "primary_published_evidence"
+        },
+        {
+          "id": "f5",
+          "claim": "该历史版本的制作方资料列出：Vue.js。",
+          "category": "historical_technology",
+          "source_ids": [
+            "s1"
+          ],
+          "basis": "primary_published_evidence"
+        },
+        {
+          "id": "f6",
+          "claim": "该历史版本的制作方资料列出：GSAP。",
+          "category": "historical_technology",
+          "source_ids": [
+            "s1"
+          ],
+          "basis": "primary_published_evidence"
+        },
+        {
+          "id": "f7",
+          "claim": "该历史版本的制作方资料列出：Unity。",
+          "category": "historical_technology",
+          "source_ids": [
+            "s1"
+          ],
+          "basis": "primary_published_evidence"
+        },
+        {
+          "id": "f8",
+          "claim": "该历史版本的制作方资料列出：Maya。",
+          "category": "historical_technology",
+          "source_ids": [
+            "s1"
+          ],
+          "basis": "primary_published_evidence"
+        },
+        {
+          "id": "f9",
+          "claim": "该历史版本的制作方资料列出：Substance Painter。",
+          "category": "historical_technology",
+          "source_ids": [
+            "s1"
+          ],
+          "basis": "primary_published_evidence"
+        },
+        {
+          "id": "f10",
+          "claim": "该历史版本的制作方资料列出：After Effects。",
+          "category": "historical_technology",
+          "source_ids": [
+            "s1"
+          ],
+          "basis": "primary_published_evidence"
+        }
+      ],
+      "observations": [],
+      "inferences": [],
+      "pages": [],
+      "interactions": [],
+      "measurements": [],
+      "classification": {
+        "industry": [
+          "museum"
+        ],
+        "visual_style": [],
+        "interaction_pattern": [
+          "从电影式开场进入可探索的古城，地图和章节共用视觉风格。"
+        ],
+        "basis": "analyst classification based on cited descriptions; not live visual inspection"
+      },
+      "historical_technology_names": [
+        "WebGL 2",
+        "Vue.js",
+        "GSAP",
+        "Unity",
+        "Maya",
+        "Substance Painter",
+        "After Effects"
+      ],
+      "technology_note": "Read technical fact statements and their scope. An empty list means no normalized complete list, not absence of technology.",
+      "blueprints": [
+        {
+          "id": "bp1",
+          "status": "proposal",
+          "title": "复用机制的原创实现蓝图",
+          "inputs": [
+            "经过核验的自有正文与主用户任务",
+            "已授权图片/视频/模型",
+            "用户操作与设备能力"
+          ],
+          "states": [
+            "idle",
+            "loading",
+            "ready",
+            "interacting",
+            "paused",
+            "error",
+            "fallback",
+            "disposed"
+          ],
+          "outputs": [
+            "可读的DOM内容与真实导航",
+            "与业务状态分离的视觉反馈"
+          ],
+          "steps": [
+            "把史实、复原假设和参考图分开登记。",
+            "建立固定相机路径和低模灰盒；只给可见范围制作细节。",
+            "将重复构件实例化并按可见性剔除；用法线贴图替代不必要几何。",
+            "为视频切入实时场景保存同一相机、色彩与时间基准。"
+          ],
+          "fallback": "保留语义DOM内容和明确可点控件；触屏不依赖悬停，reduced-motion跳过视觉位移；按本例验收条目提供对应静态/列表入口。",
+          "cleanup": "卸载时停止本模块动画帧、断开观察器、移除事件监听；若存在GPU/音频/视频资源则分别释放或停止；不得全局销毁其他页面资源。",
+          "acceptance": [
+            "低配模式能进入章节；地图可键盘选点；实时场景失败时静态图与文字可完成阅读。"
+          ],
+          "risks": [
+            "当前获奖版本与当前活站可能不同。",
+            "历史内部工具和旧API不可直接当作新项目依赖。"
+          ]
+        }
+      ],
+      "mobile_fallback": {
+        "status": "proposal",
+        "text": "保留语义DOM内容和明确可点控件；触屏不依赖悬停，reduced-motion跳过视觉位移；按本例验收条目提供对应静态/列表入口。"
+      },
+      "implementation_risks": {
+        "status": "proposal",
+        "items": [
+          "当前获奖版本与当前活站可能不同。",
+          "历史内部工具和旧API不可直接当作新项目依赖。"
+        ]
+      },
+      "inspection_plan": {
+        "status": "not_run",
+        "viewports": [
+          {
+            "width": 390,
+            "height": 844
+          },
+          {
+            "width": 1440,
+            "height": 900
+          }
+        ],
+        "page_tasks": [
+          "确认获奖版本与当前URL关系",
+          "记录实际页面与主CTA",
+          "执行交互状态表"
+        ],
+        "required_states": [
+          "idle",
+          "focus",
+          "active",
+          "loading",
+          "success",
+          "error",
+          "empty",
+          "disabled",
+          "reduced_motion"
+        ]
+      },
+      "limitations": [
+        "Unity是制作工具，不等于发布了Unity WebGL播放器；不把2022年浏览器支持描述当2026年现状。",
+        "本次只完成官方/制作方文献拆解，未对原站逐页截图或执行交互。",
+        "未独立测量网络资源、帧率或Core Web Vitals；原作者数字不代表当前实测。",
+        "蓝图、移动回退和验收项均为本库建议，不是对原站源码的结论。"
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "case_id": "kpr",
+      "name": "KPR",
+      "research_level": "desk_researched",
+      "research_date": "2026-11-23",
+      "awwwards_url": "https://www.awwwards.com/sites/kpr",
+      "award_year": 2022,
+      "award_month": 12,
+      "award_month_status": "primary_month_claim",
+      "candidate_month_claims": [],
+      "award_month_notes": "官方文章明确月份；跨年文章发表日期与获奖月份分开。",
+      "sources": [
+        {
+          "id": "s1",
+          "url": "https://awwwards.com/kpr-by-resn-wins-sotm.html",
+          "retrieved_at": "2026-11-23",
+          "kind": "primary_source",
+          "supports": "Historical award identity and monthly evidence"
+        },
+        {
+          "id": "s2",
+          "url": "https://www.awwwards.com/sites/kpr",
+          "retrieved_at": "2026-11-23",
+          "kind": "primary_source",
+          "supports": "Official work record; page date may be SOTD"
+        }
+      ],
+      "facts": [
+        {
+          "id": "f1",
+          "claim": "官方来源记录该案例的SOTM月份为2022-12。",
+          "category": "award",
+          "source_ids": [
+            "s1"
+          ],
+          "basis": "primary_published_evidence"
+        },
+        {
+          "id": "f2",
+          "claim": "官方描述：SDF与精灵图用于加载揭示，Stencil Buffer让一个3D场景遮罩另一个；按住层的图形通过CSS变换定位。",
+          "category": "technical",
+          "source_ids": [
+            "s1"
+          ],
+          "basis": "primary_published_evidence"
+        },
+        {
+          "id": "f3",
+          "claim": "滚动探索虚构世界，按住指针揭示第二层叙事。",
+          "category": "interaction_description",
+          "source_ids": [
+            "s1"
+          ],
+          "basis": "primary_published_evidence"
+        },
+        {
+          "id": "f4",
+          "claim": "该历史版本的制作方资料列出：WebGL。",
+          "category": "historical_technology",
+          "source_ids": [
+            "s1"
+          ],
+          "basis": "primary_published_evidence"
+        },
+        {
+          "id": "f5",
+          "claim": "该历史版本的制作方资料列出：HTML。",
+          "category": "historical_technology",
+          "source_ids": [
+            "s1"
+          ],
+          "basis": "primary_published_evidence"
+        },
+        {
+          "id": "f6",
+          "claim": "该历史版本的制作方资料列出：CSS transforms。",
+          "category": "historical_technology",
+          "source_ids": [
+            "s1"
+          ],
+          "basis": "primary_published_evidence"
+        },
+        {
+          "id": "f7",
+          "claim": "该历史版本的制作方资料列出：After Effects。",
+          "category": "historical_technology",
+          "source_ids": [
+            "s1"
+          ],
+          "basis": "primary_published_evidence"
+        }
+      ],
+      "observations": [],
+      "inferences": [],
+      "pages": [],
+      "interactions": [],
+      "measurements": [],
+      "classification": {
+        "industry": [
+          "brand-world"
+        ],
+        "visual_style": [],
+        "interaction_pattern": [
+          "滚动探索虚构世界，按住指针揭示第二层叙事。"
+        ],
+        "basis": "analyst classification based on cited descriptions; not live visual inspection"
+      },
+      "historical_technology_names": [
+        "WebGL",
+        "HTML",
+        "CSS transforms",
+        "After Effects"
+      ],
+      "technology_note": "Read technical fact statements and their scope. An empty list means no normalized complete list, not absence of technology.",
+      "blueprints": [
+        {
+          "id": "bp1",
+          "status": "proposal",
+          "title": "复用机制的原创实现蓝图",
+          "inputs": [
+            "经过核验的自有正文与主用户任务",
+            "已授权图片/视频/模型",
+            "用户操作与设备能力"
+          ],
+          "states": [
+            "idle",
+            "loading",
+            "ready",
+            "interacting",
+            "paused",
+            "error",
+            "fallback",
+            "disposed"
+          ],
+          "outputs": [
+            "可读的DOM内容与真实导航",
+            "与业务状态分离的视觉反馈"
+          ],
+          "steps": [
+            "将章节、热点和次级信息保存为独立数据。",
+            "先实现DOM章节与可点击“显示更多”，再加入WebGL遮罩。",
+            "为pointerdown/up/cancel、blur和键盘Enter/Space建立同一状态机。",
+            "每次离开章节恢复未按下状态，暂停不可见场景。"
+          ],
+          "fallback": "保留语义DOM内容和明确可点控件；触屏不依赖悬停，reduced-motion跳过视觉位移；按本例验收条目提供对应静态/列表入口。",
+          "cleanup": "卸载时停止本模块动画帧、断开观察器、移除事件监听；若存在GPU/音频/视频资源则分别释放或停止；不得全局销毁其他页面资源。",
+          "acceptance": [
+            "按住与点击切换均能读到同一信息；取消指针和失焦不遗留遮罩；无WebGL仍有全部正文。"
+          ],
+          "risks": [
+            "当前获奖版本与当前活站可能不同。",
+            "历史内部工具和旧API不可直接当作新项目依赖。"
+          ]
+        }
+      ],
+      "mobile_fallback": {
+        "status": "proposal",
+        "text": "保留语义DOM内容和明确可点控件；触屏不依赖悬停，reduced-motion跳过视觉位移；按本例验收条目提供对应静态/列表入口。"
+      },
+      "implementation_risks": {
+        "status": "proposal",
+        "items": [
+          "当前获奖版本与当前活站可能不同。",
+          "历史内部工具和旧API不可直接当作新项目依赖。"
+        ]
+      },
+      "inspection_plan": {
+        "status": "not_run",
+        "viewports": [
+          {
+            "width": 390,
+            "height": 844
+          },
+          {
+            "width": 1440,
+            "height": 900
+          }
+        ],
+        "page_tasks": [
+          "确认获奖版本与当前URL关系",
+          "记录实际页面与主CTA",
+          "执行交互状态表"
+        ],
+        "required_states": [
+          "idle",
+          "focus",
+          "active",
+          "loading",
+          "success",
+          "error",
+          "empty",
+          "disabled",
+          "reduced_motion"
+        ]
+      },
+      "limitations": [
+        "未公开完整源代码；不推断React或Three.js。",
+        "本次只完成官方/制作方文献拆解，未对原站逐页截图或执行交互。",
+        "未独立测量网络资源、帧率或Core Web Vitals；原作者数字不代表当前实测。",
+        "蓝图、移动回退和验收项均为本库建议，不是对原站源码的结论。"
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "case_id": "bennett-clive",
+      "name": "Bennett & Clive",
+      "research_level": "desk_researched",
+      "research_date": "2026-11-23",
+      "awwwards_url": "https://www.awwwards.com/sites/bennett-clive",
+      "award_year": 2024,
+      "award_month": 3,
+      "award_month_status": "primary_month_claim",
+      "candidate_month_claims": [],
+      "award_month_notes": "Official creator article; not CSSDA award and not article publication month.",
+      "sources": [
+        {
+          "id": "s1",
+          "url": "https://www.awwwards.com/bennett-clive.html",
+          "retrieved_at": "2026-11-23",
+          "kind": "primary_source",
+          "supports": "Historical award identity and monthly evidence"
+        },
+        {
+          "id": "s2",
+          "url": "https://www.awwwards.com/sites/bennett-clive",
+          "retrieved_at": "2026-11-23",
+          "kind": "primary_source",
+          "supports": "Official work record; page date may be SOTD"
+        }
+      ],
+      "facts": [
+        {
+          "id": "f1",
+          "claim": "官方来源记录该案例的SOTM月份为2024-03。",
+          "category": "award",
+          "source_ids": [
+            "s1"
+          ],
+          "basis": "primary_published_evidence"
+        },
+        {
+          "id": "f2",
+          "claim": "制作方官方文章明确列出 Nuxt.js、GSAP、Netlify、Storyblok、Lenis。",
+          "category": "technical",
+          "source_ids": [
+            "s1",
+            "s2"
+          ],
+          "basis": "primary_published_evidence"
+        },
+        {
+          "id": "f3",
+          "claim": "交互式&符号作为品牌主体；作品页面强调内容，About页面更活跃。",
+          "category": "technical",
+          "source_ids": [
+            "s1",
+            "s2"
+          ],
+          "basis": "primary_published_evidence"
+        }
+      ],
+      "observations": [],
+      "inferences": [
+        {
+          "id": "i1",
+          "claim": "根据公开描述提炼的交互机制：&符号与相交元素产生视觉反应",
+          "status": "inference",
+          "basis_fact_ids": [
+            "f2",
+            "f3"
+          ]
+        },
+        {
+          "id": "i2",
+          "claim": "根据公开描述提炼的交互机制：作品页和About采用不同动效密度",
+          "status": "inference",
+          "basis_fact_ids": [
+            "f2",
+            "f3"
+          ]
+        }
+      ],
+      "pages": [],
+      "interactions": [],
+      "measurements": [],
+      "classification": {
+        "industry": [
+          "创意制作/作品集"
+        ],
+        "visual_style": [
+          "黑白编辑式排版"
+        ],
+        "interaction_pattern": [
+          "&符号与相交元素产生视觉反应",
+          "作品页和About采用不同动效密度"
+        ],
+        "basis": "analyst classification based on cited descriptions; not live visual inspection"
+      },
+      "historical_technology_names": [],
+      "technology_note": "Read technical fact statements and their scope. An empty list means no normalized complete list, not absence of technology.",
+      "blueprints": [
+        {
+          "id": "bp1",
+          "status": "proposal",
+          "title": "复用机制的原创实现蓝图",
+          "inputs": [
+            "经过核验的自有正文与主用户任务",
+            "已授权图片/视频/模型",
+            "用户操作与设备能力"
+          ],
+          "states": [
+            "idle",
+            "loading",
+            "ready",
+            "interacting",
+            "paused",
+            "error",
+            "fallback",
+            "disposed"
+          ],
+          "outputs": [
+            "可读的DOM内容与真实导航",
+            "与业务状态分离的视觉反馈"
+          ],
+          "steps": [
+            "先建语义化内容与作品列表",
+            "以SVG或DOM绘制原创品牌符号",
+            "通过局部GSAP时间线更新相交效果",
+            "路由切换统一dispose，保持返回位置"
+          ],
+          "fallback": "触屏不依赖hover；保留静态&与可点作品链接；reduced-motion直接呈现终态。",
+          "cleanup": "卸载时停止本模块动画帧、断开观察器、移除事件监听；若存在GPU/音频/视频资源则分别释放或停止；不得全局销毁其他页面资源。",
+          "acceptance": [
+            "在触屏、键盘和reduced-motion三种输入/偏好下完成主任务。",
+            "触屏不依赖hover；保留静态&与可点作品链接；reduced-motion直接呈现终态。",
+            "模拟媒体、网络或GPU加载失败时保留完整内容和导航。"
+          ],
+          "risks": [
+            "图形遮挡标题",
+            "大符号动态变形引发布局抖动",
+            "内容管理字段和动画状态耦合"
+          ]
+        }
+      ],
+      "mobile_fallback": {
+        "status": "proposal",
+        "text": "触屏不依赖hover；保留静态&与可点作品链接；reduced-motion直接呈现终态。"
+      },
+      "implementation_risks": {
+        "status": "proposal",
+        "items": [
+          "图形遮挡标题",
+          "大符号动态变形引发布局抖动",
+          "内容管理字段和动画状态耦合"
+        ]
+      },
+      "inspection_plan": {
+        "status": "not_run",
+        "viewports": [
+          {
+            "width": 390,
+            "height": 844
+          },
+          {
+            "width": 1440,
+            "height": 900
+          }
+        ],
+        "page_tasks": [
+          "确认获奖版本与当前URL关系",
+          "记录实际页面与主CTA",
+          "执行交互状态表"
+        ],
+        "required_states": [
+          "idle",
+          "focus",
+          "active",
+          "loading",
+          "success",
+          "error",
+          "empty",
+          "disabled",
+          "reduced_motion"
+        ]
+      },
+      "limitations": [
+        "未核验精确版本或原仓库",
+        "未实测资源大小",
+        "本次只完成官方/制作方文献拆解，未对原站逐页截图或执行交互。",
+        "未独立测量网络资源、帧率或Core Web Vitals；原作者数字不代表当前实测。",
+        "蓝图、移动回退和验收项均为本库建议，不是对原站源码的结论。"
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "case_id": "inkfish",
+      "name": "Inkfish",
+      "research_level": "desk_researched",
+      "research_date": "2026-11-23",
+      "awwwards_url": "https://www.awwwards.com/sites/inkfish",
+      "award_year": 2024,
+      "award_month": 5,
+      "award_month_status": "primary_month_claim",
+      "candidate_month_claims": [],
+      "award_month_notes": "Month is the explicit SOTM badge, not SOTD or Honors date.",
+      "sources": [
+        {
+          "id": "s1",
+          "url": "https://www.awwwards.com/websites/sites_of_the_month/",
+          "retrieved_at": "2026-11-23",
+          "kind": "primary_source",
+          "supports": "Historical award identity and monthly evidence"
+        },
+        {
+          "id": "s2",
+          "url": "https://www.awwwards.com/sites/inkfish",
+          "retrieved_at": "2026-11-23",
+          "kind": "primary_source",
+          "supports": "Official work record; page date may be SOTD"
+        },
+        {
+          "id": "s3",
+          "url": "https://dashdigital.studio/case-studies/inkfish",
+          "retrieved_at": "2026-11-23",
+          "kind": "primary_source",
+          "supports": "Case-specific publication used by the researcher"
+        }
+      ],
+      "facts": [
+        {
+          "id": "f1",
+          "claim": "官方来源记录该案例的SOTM月份为2024-05。",
+          "category": "award",
+          "source_ids": [
+            "s1"
+          ],
+          "basis": "primary_published_evidence"
+        },
+        {
+          "id": "f2",
+          "claim": "DashDigital说明使用单一Canvas 2D绘制双视频以同步首屏画面。",
+          "category": "technical",
+          "source_ids": [
+            "s2",
+            "s3"
+          ],
+          "basis": "primary_published_evidence"
+        },
+        {
+          "id": "f3",
+          "claim": "制作方说明React hooks管理视频加载，React Transition Group管理路由过渡，开发范围包含React/Next.js。",
+          "category": "technical",
+          "source_ids": [
+            "s2",
+            "s3"
+          ],
+          "basis": "primary_published_evidence"
+        },
+        {
+          "id": "f4",
+          "claim": "压缩MP4通过Vimeo直链分发；提供移动视频版本；作品卡片hover时加载。",
+          "category": "technical",
+          "source_ids": [
+            "s2",
+            "s3"
+          ],
+          "basis": "primary_published_evidence"
+        }
+      ],
+      "observations": [],
+      "inferences": [
+        {
+          "id": "i1",
+          "claim": "根据公开描述提炼的交互机制：双视频同步",
+          "status": "inference",
+          "basis_fact_ids": [
+            "f2",
+            "f3",
+            "f4"
+          ]
+        },
+        {
+          "id": "i2",
+          "claim": "根据公开描述提炼的交互机制：悬停作品预览",
+          "status": "inference",
+          "basis_fact_ids": [
+            "f2",
+            "f3",
+            "f4"
+          ]
+        },
+        {
+          "id": "i3",
+          "claim": "根据公开描述提炼的交互机制：全屏播放器与时间轴截图预览",
+          "status": "inference",
+          "basis_fact_ids": [
+            "f2",
+            "f3",
+            "f4"
+          ]
+        },
+        {
+          "id": "i4",
+          "claim": "根据公开描述提炼的交互机制：页面块状故障转场",
+          "status": "inference",
+          "basis_fact_ids": [
+            "f2",
+            "f3",
+            "f4"
+          ]
+        }
+      ],
+      "pages": [],
+      "interactions": [],
+      "measurements": [],
+      "classification": {
+        "industry": [
+          "影视广告/创意服务"
+        ],
+        "visual_style": [
+          "大字黑白视频作品集"
+        ],
+        "interaction_pattern": [
+          "双视频同步",
+          "悬停作品预览",
+          "全屏播放器与时间轴截图预览",
+          "页面块状故障转场"
+        ],
+        "basis": "analyst classification based on cited descriptions; not live visual inspection"
+      },
+      "historical_technology_names": [],
+      "technology_note": "Read technical fact statements and their scope. An empty list means no normalized complete list, not absence of technology.",
+      "blueprints": [
+        {
+          "id": "bp1",
+          "status": "proposal",
+          "title": "复用机制的原创实现蓝图",
+          "inputs": [
+            "经过核验的自有正文与主用户任务",
+            "已授权图片/视频/模型",
+            "用户操作与设备能力"
+          ],
+          "states": [
+            "idle",
+            "loading",
+            "ready",
+            "interacting",
+            "paused",
+            "error",
+            "fallback",
+            "disposed"
+          ],
+          "outputs": [
+            "可读的DOM内容与真实导航",
+            "与业务状态分离的视觉反馈"
+          ],
+          "steps": [
+            "用一个媒体时钟驱动画布合成",
+            "可见后启用预览并中止离屏播放",
+            "模态框通过portal挂载并实现焦点管理",
+            "转场仅遮盖内容准备过程，设置超时与取消"
+          ],
+          "fallback": "无hover时点选预览；弱网使用poster；全屏播放器保留原生controls替代。",
+          "cleanup": "卸载时停止本模块动画帧、断开观察器、移除事件监听；若存在GPU/音频/视频资源则分别释放或停止；不得全局销毁其他页面资源。",
+          "acceptance": [
+            "在触屏、键盘和reduced-motion三种输入/偏好下完成主任务。",
+            "无hover时点选预览；弱网使用poster；全屏播放器保留原生controls替代。",
+            "模拟媒体、网络或GPU加载失败时保留完整内容和导航。"
+          ],
+          "risks": [
+            "Canvas抽帧跨域限制",
+            "双视频解码耗电",
+            "音频自动播放限制",
+            "全屏模态焦点陷阱"
+          ]
+        }
+      ],
+      "mobile_fallback": {
+        "status": "proposal",
+        "text": "无hover时点选预览；弱网使用poster；全屏播放器保留原生controls替代。"
+      },
+      "implementation_risks": {
+        "status": "proposal",
+        "items": [
+          "Canvas抽帧跨域限制",
+          "双视频解码耗电",
+          "音频自动播放限制",
+          "全屏模态焦点陷阱"
+        ]
+      },
+      "inspection_plan": {
+        "status": "not_run",
+        "viewports": [
+          {
+            "width": 390,
+            "height": 844
+          },
+          {
+            "width": 1440,
+            "height": 900
+          }
+        ],
+        "page_tasks": [
+          "确认获奖版本与当前URL关系",
+          "记录实际页面与主CTA",
+          "执行交互状态表"
+        ],
+        "required_states": [
+          "idle",
+          "focus",
+          "active",
+          "loading",
+          "success",
+          "error",
+          "empty",
+          "disabled",
+          "reduced_motion"
+        ]
+      },
+      "limitations": [
+        "没有独立量测性能值",
+        "原文性能形容词不是RUM证据",
+        "本次只完成官方/制作方文献拆解，未对原站逐页截图或执行交互。",
+        "未独立测量网络资源、帧率或Core Web Vitals；原作者数字不代表当前实测。",
+        "蓝图、移动回退和验收项均为本库建议，不是对原站源码的结论。"
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "case_id": "zentry",
+      "name": "Zentry",
+      "research_level": "desk_researched",
+      "research_date": "2026-11-23",
+      "awwwards_url": "https://www.awwwards.com/sites/zentry",
+      "award_year": 2024,
+      "award_month": 8,
+      "award_month_status": "primary_month_claim",
+      "candidate_month_claims": [],
+      "award_month_notes": "Month is the explicit SOTM badge, not SOTD or Honors date.",
+      "sources": [
+        {
+          "id": "s1",
+          "url": "https://www.awwwards.com/websites/sites_of_the_month/",
+          "retrieved_at": "2026-11-23",
+          "kind": "primary_source",
+          "supports": "Historical award identity and monthly evidence"
+        },
+        {
+          "id": "s2",
+          "url": "https://www.awwwards.com/sites/zentry",
+          "retrieved_at": "2026-11-23",
+          "kind": "primary_source",
+          "supports": "Official work record; page date may be SOTD"
+        }
+      ],
+      "facts": [
+        {
+          "id": "f1",
+          "claim": "官方来源记录该案例的SOTM月份为2024-08。",
+          "category": "award",
+          "source_ids": [
+            "s1"
+          ],
+          "basis": "primary_published_evidence"
+        },
+        {
+          "id": "f2",
+          "claim": "官方案例页列出Scrolling、Sound-Audio、Storytelling等标签，并提供产品、首页、品牌、序章、About交互片段。",
+          "category": "technical",
+          "source_ids": [
+            "s2"
+          ],
+          "basis": "primary_published_evidence"
+        },
+        {
+          "id": "f3",
+          "claim": "官方页面没有列出React/GSAP等具体框架；网上教学克隆不等于原站源码。",
+          "category": "technical",
+          "source_ids": [
+            "s2"
+          ],
+          "basis": "primary_published_evidence"
+        }
+      ],
+      "observations": [],
+      "inferences": [
+        {
+          "id": "i1",
+          "claim": "根据公开描述提炼的交互机制：章节式内容浏览",
+          "status": "inference",
+          "basis_fact_ids": [
+            "f2",
+            "f3"
+          ]
+        },
+        {
+          "id": "i2",
+          "claim": "根据公开描述提炼的交互机制：产品分区展示",
+          "status": "inference",
+          "basis_fact_ids": [
+            "f2",
+            "f3"
+          ]
+        },
+        {
+          "id": "i3",
+          "claim": "根据公开描述提炼的交互机制：叙事画面与大字配合",
+          "status": "inference",
+          "basis_fact_ids": [
+            "f2",
+            "f3"
+          ]
+        }
+      ],
+      "pages": [],
+      "interactions": [],
+      "measurements": [],
+      "classification": {
+        "industry": [
+          "游戏世界观/品牌"
+        ],
+        "visual_style": [
+          "大字号与电影画面"
+        ],
+        "interaction_pattern": [
+          "章节式内容浏览",
+          "产品分区展示",
+          "叙事画面与大字配合"
+        ],
+        "basis": "analyst classification based on cited descriptions; not live visual inspection"
+      },
+      "historical_technology_names": [],
+      "technology_note": "Read technical fact statements and their scope. An empty list means no normalized complete list, not absence of technology.",
+      "blueprints": [
+        {
+          "id": "bp1",
+          "status": "proposal",
+          "title": "复用机制的原创实现蓝图",
+          "inputs": [
+            "经过核验的自有正文与主用户任务",
+            "已授权图片/视频/模型",
+            "用户操作与设备能力"
+          ],
+          "states": [
+            "idle",
+            "loading",
+            "ready",
+            "interacting",
+            "paused",
+            "error",
+            "fallback",
+            "disposed"
+          ],
+          "outputs": [
+            "可读的DOM内容与真实导航",
+            "与业务状态分离的视觉反馈"
+          ],
+          "steps": [
+            "语义HTML章节包含产品信息",
+            "原创视频用poster和lazy加载",
+            "用clip-path与transform制作遮罩切换",
+            "明确主CTA，不让特效吞没产品介绍"
+          ],
+          "fallback": "静态海报加短正文；提供播放/暂停；减少动效时显示完整章节。",
+          "cleanup": "卸载时停止本模块动画帧、断开观察器、移除事件监听；若存在GPU/音频/视频资源则分别释放或停止；不得全局销毁其他页面资源。",
+          "acceptance": [
+            "在触屏、键盘和reduced-motion三种输入/偏好下完成主任务。",
+            "静态海报加短正文；提供播放/暂停；减少动效时显示完整章节。",
+            "模拟媒体、网络或GPU加载失败时保留完整内容和导航。"
+          ],
+          "risks": [
+            "教学克隆误认原站技术",
+            "视频占用带宽",
+            "过度滚动接管"
+          ]
+        }
+      ],
+      "mobile_fallback": {
+        "status": "proposal",
+        "text": "静态海报加短正文；提供播放/暂停；减少动效时显示完整章节。"
+      },
+      "implementation_risks": {
+        "status": "proposal",
+        "items": [
+          "教学克隆误认原站技术",
+          "视频占用带宽",
+          "过度滚动接管"
+        ]
+      },
+      "inspection_plan": {
+        "status": "not_run",
+        "viewports": [
+          {
+            "width": 390,
+            "height": 844
+          },
+          {
+            "width": 1440,
+            "height": 900
+          }
+        ],
+        "page_tasks": [
+          "确认获奖版本与当前URL关系",
+          "记录实际页面与主CTA",
+          "执行交互状态表"
+        ],
+        "required_states": [
+          "idle",
+          "focus",
+          "active",
+          "loading",
+          "success",
+          "error",
+          "empty",
+          "disabled",
+          "reduced_motion"
+        ]
+      },
+      "limitations": [
+        "原站框架/CMS未核验",
+        "当前域名可能改版",
+        "本次只完成官方/制作方文献拆解，未对原站逐页截图或执行交互。",
+        "未独立测量网络资源、帧率或Core Web Vitals；原作者数字不代表当前实测。",
+        "蓝图、移动回退和验收项均为本库建议，不是对原站源码的结论。"
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "case_id": "david-whyte-experience",
+      "name": "David Whyte Experience",
+      "research_level": "desk_researched",
+      "research_date": "2026-11-23",
+      "awwwards_url": "https://www.awwwards.com/sites/david-whyte-experience",
+      "award_year": 2024,
+      "award_month": 12,
+      "award_month_status": "primary_month_claim",
+      "candidate_month_claims": [],
+      "award_month_notes": "Month is the explicit SOTM badge, not SOTD or Honors date.",
+      "sources": [
+        {
+          "id": "s1",
+          "url": "https://www.awwwards.com/websites/sites_of_the_month/",
+          "retrieved_at": "2026-11-23",
+          "kind": "primary_source",
+          "supports": "Historical award identity and monthly evidence"
+        },
+        {
+          "id": "s2",
+          "url": "https://www.awwwards.com/sites/david-whyte-experience",
+          "retrieved_at": "2026-11-23",
+          "kind": "primary_source",
+          "supports": "Official work record; page date may be SOTD"
+        }
+      ],
+      "facts": [
+        {
+          "id": "f1",
+          "claim": "官方来源记录该案例的SOTM月份为2024-12。",
+          "category": "award",
+          "source_ids": [
+            "s1"
+          ],
+          "basis": "primary_published_evidence"
+        },
+        {
+          "id": "f2",
+          "claim": "官方页面明确展示水彩效果、长按风景显现、全屏诗歌、滚动风景切换等交互条目。",
+          "category": "technical",
+          "source_ids": [
+            "s2"
+          ],
+          "basis": "primary_published_evidence"
+        },
+        {
+          "id": "f3",
+          "claim": "页面技术标签包含WooCommerce，但不能由此推断整个视觉渲染架构。",
+          "category": "technical",
+          "source_ids": [
+            "s2"
+          ],
+          "basis": "primary_published_evidence"
+        }
+      ],
+      "observations": [],
+      "inferences": [
+        {
+          "id": "i1",
+          "claim": "根据公开描述提炼的交互机制：水彩位移式响应",
+          "status": "inference",
+          "basis_fact_ids": [
+            "f2",
+            "f3"
+          ]
+        },
+        {
+          "id": "i2",
+          "claim": "根据公开描述提炼的交互机制：长按显示风景",
+          "status": "inference",
+          "basis_fact_ids": [
+            "f2",
+            "f3"
+          ]
+        },
+        {
+          "id": "i3",
+          "claim": "根据公开描述提炼的交互机制：全屏文字阅读",
+          "status": "inference",
+          "basis_fact_ids": [
+            "f2",
+            "f3"
+          ]
+        }
+      ],
+      "pages": [],
+      "interactions": [],
+      "measurements": [],
+      "classification": {
+        "industry": [
+          "文学/文化体验"
+        ],
+        "visual_style": [
+          "水彩风景叙事"
+        ],
+        "interaction_pattern": [
+          "水彩位移式响应",
+          "长按显示风景",
+          "全屏文字阅读"
+        ],
+        "basis": "analyst classification based on cited descriptions; not live visual inspection"
+      },
+      "historical_technology_names": [],
+      "technology_note": "Read technical fact statements and their scope. An empty list means no normalized complete list, not absence of technology.",
+      "blueprints": [
+        {
+          "id": "bp1",
+          "status": "proposal",
+          "title": "复用机制的原创实现蓝图",
+          "inputs": [
+            "经过核验的自有正文与主用户任务",
+            "已授权图片/视频/模型",
+            "用户操作与设备能力"
+          ],
+          "states": [
+            "idle",
+            "loading",
+            "ready",
+            "interacting",
+            "paused",
+            "error",
+            "fallback",
+            "disposed"
+          ],
+          "outputs": [
+            "可读的DOM内容与真实导航",
+            "与业务状态分离的视觉反馈"
+          ],
+          "steps": [
+            "保留语义诗歌和章节导航",
+            "用SVG滤镜或WebGL可选增强水彩",
+            "长按必须有等效点击按钮和键盘操作",
+            "切入阅读时降低背景运动"
+          ],
+          "fallback": "以静态水彩图片+原生视频替代实时效果；长按替换为显式按钮。",
+          "cleanup": "卸载时停止本模块动画帧、断开观察器、移除事件监听；若存在GPU/音频/视频资源则分别释放或停止；不得全局销毁其他页面资源。",
+          "acceptance": [
+            "在触屏、键盘和reduced-motion三种输入/偏好下完成主任务。",
+            "以静态水彩图片+原生视频替代实时效果；长按替换为显式按钮。",
+            "模拟媒体、网络或GPU加载失败时保留完整内容和导航。"
+          ],
+          "risks": [
+            "长按发现性差",
+            "文字对比度",
+            "误把标签当完整架构"
+          ]
+        }
+      ],
+      "mobile_fallback": {
+        "status": "proposal",
+        "text": "以静态水彩图片+原生视频替代实时效果；长按替换为显式按钮。"
+      },
+      "implementation_risks": {
+        "status": "proposal",
+        "items": [
+          "长按发现性差",
+          "文字对比度",
+          "误把标签当完整架构"
+        ]
+      },
+      "inspection_plan": {
+        "status": "not_run",
+        "viewports": [
+          {
+            "width": 390,
+            "height": 844
+          },
+          {
+            "width": 1440,
+            "height": 900
+          }
+        ],
+        "page_tasks": [
+          "确认获奖版本与当前URL关系",
+          "记录实际页面与主CTA",
+          "执行交互状态表"
+        ],
+        "required_states": [
+          "idle",
+          "focus",
+          "active",
+          "loading",
+          "success",
+          "error",
+          "empty",
+          "disabled",
+          "reduced_motion"
+        ]
+      },
+      "limitations": [
+        "没有读取原站shader",
+        "未测首屏载荷",
+        "本次只完成官方/制作方文献拆解，未对原站逐页截图或执行交互。",
+        "未独立测量网络资源、帧率或Core Web Vitals；原作者数字不代表当前实测。",
+        "蓝图、移动回退和验收项均为本库建议，不是对原站源码的结论。"
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "case_id": "igloo-inc",
+      "name": "Igloo Inc",
+      "research_level": "desk_researched",
+      "research_date": "2026-11-23",
+      "awwwards_url": "https://www.awwwards.com/sites/igloo-inc",
+      "award_year": 2024,
+      "award_month": null,
+      "award_month_status": "unresolved",
+      "candidate_month_claims": [
+        {
+          "year": 2024,
+          "month": 7,
+          "source_url": "https://rickcreates.com/r/2024-07-23-igloo-inc",
+          "evidence_level": "secondary_source_reported_by_researcher",
+          "retrieval_status": "url_and_research_note_preserved_fulltext_not_in_saved_extracts",
+          "year_basis": "official_archive_year",
+          "claim_summary": "近期研究员将July 2024记录为二手来源支持的候选月份。URL日期本身不被当作SOTM证据。",
+          "reason_not_promoted": "二手来源且未在本轮保存全文；官方候选名单准确URL不可追溯。没有明确一手获奖月正文。",
+          "collides_with_selected_month_case_ids": []
+        }
+      ],
+      "award_month_notes": "July 2024是二手研究候选。RickCreates URL已保存；曾提到的官方July候选名单没有保存准确URL/正文，因此不将该线索计作官方证据。主月份保持null。",
+      "sources": [
+        {
+          "id": "s1",
+          "url": "https://www.awwwards.com/websites/sites_of_the_month/",
+          "retrieved_at": "2026-11-23",
+          "kind": "primary_source",
+          "supports": "Historical award identity and monthly evidence"
+        },
+        {
+          "id": "s2",
+          "url": "https://www.awwwards.com/sites/igloo-inc",
+          "retrieved_at": "2026-11-23",
+          "kind": "primary_source",
+          "supports": "Official work record; page date may be SOTD"
+        },
+        {
+          "id": "s3",
+          "url": "https://www.awwwards.com/igloo-inc-case-study.html",
+          "retrieved_at": "2026-11-23",
+          "kind": "primary_source",
+          "supports": "Case-specific publication used by the researcher"
+        }
+      ],
+      "facts": [
+        {
+          "id": "f1",
+          "claim": "该案例收录于官方月度档案；本次核验未确定2024年的具体月度获奖月份。",
+          "category": "award",
+          "source_ids": [
+            "s1"
+          ],
+          "basis": "primary_published_evidence"
+        },
+        {
+          "id": "f2",
+          "claim": "abeto官方文章明确列出Three.js、Svelte、GSAP、Vite、Houdini、Blender等。",
+          "category": "technical",
+          "source_ids": [
+            "s2",
+            "s3"
+          ],
+          "basis": "primary_published_evidence"
+        },
+        {
+          "id": "f3",
+          "claim": "文章描述程序化冰晶建模、VDB体积数据导出与压缩、WebGL文字/SDF、分阶段加载和着色器编译。",
+          "category": "technical",
+          "source_ids": [
+            "s2",
+            "s3"
+          ],
+          "basis": "primary_published_evidence"
+        }
+      ],
+      "observations": [],
+      "inferences": [
+        {
+          "id": "i1",
+          "claim": "根据公开描述提炼的交互机制：滚动驱动镜头穿越冰块",
+          "status": "inference",
+          "basis_fact_ids": [
+            "f2",
+            "f3"
+          ]
+        },
+        {
+          "id": "i2",
+          "claim": "根据公开描述提炼的交互机制：粒子形成不同链接对应形状",
+          "status": "inference",
+          "basis_fact_ids": [
+            "f2",
+            "f3"
+          ]
+        },
+        {
+          "id": "i3",
+          "claim": "根据公开描述提炼的交互机制：文字故障与扰动",
+          "status": "inference",
+          "basis_fact_ids": [
+            "f2",
+            "f3"
+          ]
+        }
+      ],
+      "pages": [],
+      "interactions": [],
+      "measurements": [],
+      "classification": {
+        "industry": [
+          "品牌/企业介绍"
+        ],
+        "visual_style": [
+          "冰雪实时3D"
+        ],
+        "interaction_pattern": [
+          "滚动驱动镜头穿越冰块",
+          "粒子形成不同链接对应形状",
+          "文字故障与扰动"
+        ],
+        "basis": "analyst classification based on cited descriptions; not live visual inspection"
+      },
+      "historical_technology_names": [],
+      "technology_note": "Read technical fact statements and their scope. An empty list means no normalized complete list, not absence of technology.",
+      "blueprints": [
+        {
+          "id": "bp1",
+          "status": "proposal",
+          "title": "复用机制的原创实现蓝图",
+          "inputs": [
+            "经过核验的自有正文与主用户任务",
+            "已授权图片/视频/模型",
+            "用户操作与设备能力"
+          ],
+          "states": [
+            "idle",
+            "loading",
+            "ready",
+            "interacting",
+            "paused",
+            "error",
+            "fallback",
+            "disposed"
+          ],
+          "outputs": [
+            "可读的DOM内容与真实导航",
+            "与业务状态分离的视觉反馈"
+          ],
+          "steps": [
+            "先用灰盒验证三章节镜头路径",
+            "把正文与链接保留DOM",
+            "将重型场景作延迟增强",
+            "预编译下一场景并释放已完成资源"
+          ],
+          "fallback": "原始内容为可读三节页面；无WebGL或reduced-motion显示三张静态图；链接照常可操作。",
+          "cleanup": "卸载时停止本模块动画帧、断开观察器、移除事件监听；若存在GPU/音频/视频资源则分别释放或停止；不得全局销毁其他页面资源。",
+          "acceptance": [
+            "在触屏、键盘和reduced-motion三种输入/偏好下完成主任务。",
+            "原始内容为可读三节页面；无WebGL或reduced-motion显示三张静态图；链接照常可操作。",
+            "模拟媒体、网络或GPU加载失败时保留完整内容和导航。"
+          ],
+          "risks": [
+            "全Canvas文字可访问性",
+            "GPU显存",
+            "首屏编译卡顿",
+            "程序化美术成本"
+          ]
+        }
+      ],
+      "mobile_fallback": {
+        "status": "proposal",
+        "text": "原始内容为可读三节页面；无WebGL或reduced-motion显示三张静态图；链接照常可操作。"
+      },
+      "implementation_risks": {
+        "status": "proposal",
+        "items": [
+          "全Canvas文字可访问性",
+          "GPU显存",
+          "首屏编译卡顿",
+          "程序化美术成本"
+        ]
+      },
+      "inspection_plan": {
+        "status": "not_run",
+        "viewports": [
+          {
+            "width": 390,
+            "height": 844
+          },
+          {
+            "width": 1440,
+            "height": 900
+          }
+        ],
+        "page_tasks": [
+          "确认获奖版本与当前URL关系",
+          "记录实际页面与主CTA",
+          "执行交互状态表"
+        ],
+        "required_states": [
+          "idle",
+          "focus",
+          "active",
+          "loading",
+          "success",
+          "error",
+          "empty",
+          "disabled",
+          "reduced_motion"
+        ]
+      },
+      "limitations": [
+        "官方月度页覆盖为SOTY，7月仍须明确原始公告",
+        "不把第三方体积/FPS写成实测",
+        "本次只完成官方/制作方文献拆解，未对原站逐页截图或执行交互。",
+        "未独立测量网络资源、帧率或Core Web Vitals；原作者数字不代表当前实测。",
+        "蓝图、移动回退和验收项均为本库建议，不是对原站源码的结论。"
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "case_id": "anime-js",
+      "name": "Anime.js",
+      "research_level": "desk_researched",
+      "research_date": "2026-11-23",
+      "awwwards_url": "https://www.awwwards.com/sites/anime-js",
+      "award_year": 2025,
+      "award_month": 5,
+      "award_month_status": "primary_month_claim",
+      "candidate_month_claims": [],
+      "award_month_notes": "Month is the explicit SOTM badge, not SOTD or Honors date.",
+      "sources": [
+        {
+          "id": "s1",
+          "url": "https://www.awwwards.com/websites/sites_of_the_month/",
+          "retrieved_at": "2026-11-23",
+          "kind": "primary_source",
+          "supports": "Historical award identity and monthly evidence"
+        },
+        {
+          "id": "s2",
+          "url": "https://www.awwwards.com/sites/anime-js",
+          "retrieved_at": "2026-11-23",
+          "kind": "primary_source",
+          "supports": "Official work record; page date may be SOTD"
+        },
+        {
+          "id": "s3",
+          "url": "https://animejs.com/learn",
+          "retrieved_at": "2026-11-23",
+          "kind": "primary_source",
+          "supports": "Case-specific publication used by the researcher"
+        }
+      ],
+      "facts": [
+        {
+          "id": "f1",
+          "claim": "官方来源记录该案例的SOTM月份为2025-05。",
+          "category": "award",
+          "source_ids": [
+            "s1"
+          ],
+          "basis": "primary_published_evidence"
+        },
+        {
+          "id": "f2",
+          "claim": "作者官方Learn页明确其落地页重建会使用HTML、CSS、SVG、Canvas 2D和WebGL(Three.js)。",
+          "category": "technical",
+          "source_ids": [
+            "s2",
+            "s3"
+          ],
+          "basis": "primary_published_evidence"
+        },
+        {
+          "id": "f3",
+          "claim": "官方Awwwards页描述该产品为JavaScript动画库。",
+          "category": "technical",
+          "source_ids": [
+            "s2",
+            "s3"
+          ],
+          "basis": "primary_published_evidence"
+        }
+      ],
+      "observations": [],
+      "inferences": [
+        {
+          "id": "i1",
+          "claim": "根据公开描述提炼的交互机制：动画示例本身构成产品演示",
+          "status": "inference",
+          "basis_fact_ids": [
+            "f2",
+            "f3"
+          ]
+        },
+        {
+          "id": "i2",
+          "claim": "根据公开描述提炼的交互机制：不同渲染媒介展示能力",
+          "status": "inference",
+          "basis_fact_ids": [
+            "f2",
+            "f3"
+          ]
+        }
+      ],
+      "pages": [],
+      "interactions": [],
+      "measurements": [],
+      "classification": {
+        "industry": [
+          "开发者工具"
+        ],
+        "visual_style": [
+          "以功能演示表达产品"
+        ],
+        "interaction_pattern": [
+          "动画示例本身构成产品演示",
+          "不同渲染媒介展示能力"
+        ],
+        "basis": "analyst classification based on cited descriptions; not live visual inspection"
+      },
+      "historical_technology_names": [],
+      "technology_note": "Read technical fact statements and their scope. An empty list means no normalized complete list, not absence of technology.",
+      "blueprints": [
+        {
+          "id": "bp1",
+          "status": "proposal",
+          "title": "复用机制的原创实现蓝图",
+          "inputs": [
+            "经过核验的自有正文与主用户任务",
+            "已授权图片/视频/模型",
+            "用户操作与设备能力"
+          ],
+          "states": [
+            "idle",
+            "loading",
+            "ready",
+            "interacting",
+            "paused",
+            "error",
+            "fallback",
+            "disposed"
+          ],
+          "outputs": [
+            "可读的DOM内容与真实导航",
+            "与业务状态分离的视觉反馈"
+          ],
+          "steps": [
+            "用少量独立演示对应API能力",
+            "演示包含暂停/重播",
+            "使用既有锁文件确定Anime.js API版本",
+            "将代码示例与动态效果并排"
+          ],
+          "fallback": "精简复杂示例并提供录屏/静态终态；API代码和文档始终可读。",
+          "cleanup": "卸载时停止本模块动画帧、断开观察器、移除事件监听；若存在GPU/音频/视频资源则分别释放或停止；不得全局销毁其他页面资源。",
+          "acceptance": [
+            "在触屏、键盘和reduced-motion三种输入/偏好下完成主任务。",
+            "精简复杂示例并提供录屏/静态终态；API代码和文档始终可读。",
+            "模拟媒体、网络或GPU加载失败时保留完整内容和导航。"
+          ],
+          "risks": [
+            "v3/v4 API混用",
+            "多个演示同时运行",
+            "把计划课程误当公开完整源码"
+          ]
+        }
+      ],
+      "mobile_fallback": {
+        "status": "proposal",
+        "text": "精简复杂示例并提供录屏/静态终态；API代码和文档始终可读。"
+      },
+      "implementation_risks": {
+        "status": "proposal",
+        "items": [
+          "v3/v4 API混用",
+          "多个演示同时运行",
+          "把计划课程误当公开完整源码"
+        ]
+      },
+      "inspection_plan": {
+        "status": "not_run",
+        "viewports": [
+          {
+            "width": 390,
+            "height": 844
+          },
+          {
+            "width": 1440,
+            "height": 900
+          }
+        ],
+        "page_tasks": [
+          "确认获奖版本与当前URL关系",
+          "记录实际页面与主CTA",
+          "执行交互状态表"
+        ],
+        "required_states": [
+          "idle",
+          "focus",
+          "active",
+          "loading",
+          "success",
+          "error",
+          "empty",
+          "disabled",
+          "reduced_motion"
+        ]
+      },
+      "limitations": [
+        "Learn页是课程计划而非公开全站源码",
+        "原站全部库和版本未审计",
+        "本次只完成官方/制作方文献拆解，未对原站逐页截图或执行交互。",
+        "未独立测量网络资源、帧率或Core Web Vitals；原作者数字不代表当前实测。",
+        "蓝图、移动回退和验收项均为本库建议，不是对原站源码的结论。"
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "case_id": "cartier-watches-wonders-2025",
+      "name": "Cartier Watches & Wonders 2025",
+      "research_level": "desk_researched",
+      "research_date": "2026-11-23",
+      "awwwards_url": "https://www.awwwards.com/sites/cartier-watches-wonders-2025",
+      "award_year": 2025,
+      "award_month": 8,
+      "award_month_status": "primary_month_claim",
+      "candidate_month_claims": [],
+      "award_month_notes": "Month is the explicit SOTM badge, not SOTD or Honors date.",
+      "sources": [
+        {
+          "id": "s1",
+          "url": "https://www.awwwards.com/websites/sites_of_the_month/",
+          "retrieved_at": "2026-11-23",
+          "kind": "primary_source",
+          "supports": "Historical award identity and monthly evidence"
+        },
+        {
+          "id": "s2",
+          "url": "https://www.awwwards.com/sites/cartier-watches-wonders-2025",
+          "retrieved_at": "2026-11-23",
+          "kind": "primary_source",
+          "supports": "Official work record; page date may be SOTD"
+        },
+        {
+          "id": "s3",
+          "url": "https://www.awwwards.com/watches-wonders-immersive-experience-for-cartier.html",
+          "retrieved_at": "2026-11-23",
+          "kind": "primary_source",
+          "supports": "Case-specific publication used by the researcher"
+        }
+      ],
+      "facts": [
+        {
+          "id": "f1",
+          "claim": "官方来源记录该案例的SOTM月份为2025-08。",
+          "category": "award",
+          "source_ids": [
+            "s1"
+          ],
+          "basis": "primary_published_evidence"
+        },
+        {
+          "id": "f2",
+          "claim": "Immersive Garden官方案例明确六个独立3D场景和探索手势。",
+          "category": "technical",
+          "source_ids": [
+            "s2",
+            "s3"
+          ],
+          "basis": "primary_published_evidence"
+        },
+        {
+          "id": "f3",
+          "claim": "明确Sass、Three.js、Blender、GSAP、Lenis（原文Leniss）、Web Audio API。",
+          "category": "technical",
+          "source_ids": [
+            "s2",
+            "s3"
+          ],
+          "basis": "primary_published_evidence"
+        },
+        {
+          "id": "f4",
+          "claim": "技术制作伙伴为工作室60fps，声音由Mooders负责；60fps在此是名称，不是本次帧率测量。",
+          "category": "technical",
+          "source_ids": [
+            "s2",
+            "s3"
+          ],
+          "basis": "primary_published_evidence"
+        }
+      ],
+      "observations": [],
+      "inferences": [
+        {
+          "id": "i1",
+          "claim": "根据公开描述提炼的交互机制：连续展陈场景",
+          "status": "inference",
+          "basis_fact_ids": [
+            "f2",
+            "f3",
+            "f4"
+          ]
+        },
+        {
+          "id": "i2",
+          "claim": "根据公开描述提炼的交互机制：产品互动",
+          "status": "inference",
+          "basis_fact_ids": [
+            "f2",
+            "f3",
+            "f4"
+          ]
+        },
+        {
+          "id": "i3",
+          "claim": "根据公开描述提炼的交互机制：声音辅助叙事",
+          "status": "inference",
+          "basis_fact_ids": [
+            "f2",
+            "f3",
+            "f4"
+          ]
+        }
+      ],
+      "pages": [],
+      "interactions": [],
+      "measurements": [],
+      "classification": {
+        "industry": [
+          "奢侈品产品体验"
+        ],
+        "visual_style": [
+          "六个3D展陈空间"
+        ],
+        "interaction_pattern": [
+          "连续展陈场景",
+          "产品互动",
+          "声音辅助叙事"
+        ],
+        "basis": "analyst classification based on cited descriptions; not live visual inspection"
+      },
+      "historical_technology_names": [],
+      "technology_note": "Read technical fact statements and their scope. An empty list means no normalized complete list, not absence of technology.",
+      "blueprints": [
+        {
+          "id": "bp1",
+          "status": "proposal",
+          "title": "复用机制的原创实现蓝图",
+          "inputs": [
+            "经过核验的自有正文与主用户任务",
+            "已授权图片/视频/模型",
+            "用户操作与设备能力"
+          ],
+          "states": [
+            "idle",
+            "loading",
+            "ready",
+            "interacting",
+            "paused",
+            "error",
+            "fallback",
+            "disposed"
+          ],
+          "outputs": [
+            "可读的DOM内容与真实导航",
+            "与业务状态分离的视觉反馈"
+          ],
+          "steps": [
+            "建立场景清单和资源预算",
+            "相邻场景预载且数量受限",
+            "将输入事件映射为场景状态",
+            "场景销毁统一释放几何/材质/纹理/音频"
+          ],
+          "fallback": "每款产品有独立静态卡片与详情链接；默认无声；增强体验可跳过。",
+          "cleanup": "卸载时停止本模块动画帧、断开观察器、移除事件监听；若存在GPU/音频/视频资源则分别释放或停止；不得全局销毁其他页面资源。",
+          "acceptance": [
+            "在触屏、键盘和reduced-motion三种输入/偏好下完成主任务。",
+            "每款产品有独立静态卡片与详情链接；默认无声；增强体验可跳过。",
+            "模拟媒体、网络或GPU加载失败时保留完整内容和导航。"
+          ],
+          "risks": [
+            "显存累积",
+            "音频权限",
+            "交互线索隐蔽",
+            "高写实素材生产成本"
+          ]
+        }
+      ],
+      "mobile_fallback": {
+        "status": "proposal",
+        "text": "每款产品有独立静态卡片与详情链接；默认无声；增强体验可跳过。"
+      },
+      "implementation_risks": {
+        "status": "proposal",
+        "items": [
+          "显存累积",
+          "音频权限",
+          "交互线索隐蔽",
+          "高写实素材生产成本"
+        ]
+      },
+      "inspection_plan": {
+        "status": "not_run",
+        "viewports": [
+          {
+            "width": 390,
+            "height": 844
+          },
+          {
+            "width": 1440,
+            "height": 900
+          }
+        ],
+        "page_tasks": [
+          "确认获奖版本与当前URL关系",
+          "记录实际页面与主CTA",
+          "执行交互状态表"
+        ],
+        "required_states": [
+          "idle",
+          "focus",
+          "active",
+          "loading",
+          "success",
+          "error",
+          "empty",
+          "disabled",
+          "reduced_motion"
+        ]
+      },
+      "limitations": [
+        "释放策略是本库实现建议，原文未公开具体代码",
+        "没有实测移动FPS",
+        "本次只完成官方/制作方文献拆解，未对原站逐页截图或执行交互。",
+        "未独立测量网络资源、帧率或Core Web Vitals；原作者数字不代表当前实测。",
+        "蓝图、移动回退和验收项均为本库建议，不是对原站源码的结论。"
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "case_id": "terminal-industries",
+      "name": "Terminal Industries",
+      "research_level": "desk_researched",
+      "research_date": "2026-11-23",
+      "awwwards_url": "https://www.awwwards.com/sites/terminal-industries",
+      "award_year": 2025,
+      "award_month": 9,
+      "award_month_status": "primary_month_claim",
+      "candidate_month_claims": [],
+      "award_month_notes": "Month is the explicit SOTM badge, not SOTD or Honors date.",
+      "sources": [
+        {
+          "id": "s1",
+          "url": "https://www.awwwards.com/websites/sites_of_the_month/",
+          "retrieved_at": "2026-11-23",
+          "kind": "primary_source",
+          "supports": "Historical award identity and monthly evidence"
+        },
+        {
+          "id": "s2",
+          "url": "https://www.awwwards.com/sites/terminal-industries",
+          "retrieved_at": "2026-11-23",
+          "kind": "primary_source",
+          "supports": "Official work record; page date may be SOTD"
+        },
+        {
+          "id": "s3",
+          "url": "https://tympanus.net/codrops/2026/11/20/further-together-inside-propagande/",
+          "retrieved_at": "2026-11-23",
+          "kind": "primary_source",
+          "supports": "Case-specific publication used by the researcher"
+        }
+      ],
+      "facts": [
+        {
+          "id": "f1",
+          "claim": "官方来源记录该案例的SOTM月份为2025-09。",
+          "category": "award",
+          "source_ids": [
+            "s1"
+          ],
+          "basis": "primary_published_evidence"
+        },
+        {
+          "id": "f2",
+          "claim": "开发方Propagande在第一人称访谈确认Terminal为Rejouice设计、2025年、SOTM/SOTD/Developer获奖项目。",
+          "category": "technical",
+          "source_ids": [
+            "s2",
+            "s3"
+          ],
+          "basis": "primary_published_evidence"
+        },
+        {
+          "id": "f3",
+          "claim": "该访谈说明工作室常用自有Nuxt基底，但不等于逐项目依赖清单。",
+          "category": "technical",
+          "source_ids": [
+            "s2",
+            "s3"
+          ],
+          "basis": "primary_published_evidence"
+        },
+        {
+          "id": "f4",
+          "claim": "官方Awwwards页定位是运输场站效率。",
+          "category": "technical",
+          "source_ids": [
+            "s2",
+            "s3"
+          ],
+          "basis": "primary_published_evidence"
+        }
+      ],
+      "observations": [],
+      "inferences": [
+        {
+          "id": "i1",
+          "claim": "根据公开描述提炼的交互机制：动作表达物流技术",
+          "status": "inference",
+          "basis_fact_ids": [
+            "f2",
+            "f3",
+            "f4"
+          ]
+        },
+        {
+          "id": "i2",
+          "claim": "根据公开描述提炼的交互机制：企业内容与产品价值并存",
+          "status": "inference",
+          "basis_fact_ids": [
+            "f2",
+            "f3",
+            "f4"
+          ]
+        }
+      ],
+      "pages": [],
+      "interactions": [],
+      "measurements": [],
+      "classification": {
+        "industry": [
+          "B2B物流软件"
+        ],
+        "visual_style": [
+          "工业影片+清晰信息"
+        ],
+        "interaction_pattern": [
+          "动作表达物流技术",
+          "企业内容与产品价值并存"
+        ],
+        "basis": "analyst classification based on cited descriptions; not live visual inspection"
+      },
+      "historical_technology_names": [],
+      "technology_note": "Read technical fact statements and their scope. An empty list means no normalized complete list, not absence of technology.",
+      "blueprints": [
+        {
+          "id": "bp1",
+          "status": "proposal",
+          "title": "复用机制的原创实现蓝图",
+          "inputs": [
+            "经过核验的自有正文与主用户任务",
+            "已授权图片/视频/模型",
+            "用户操作与设备能力"
+          ],
+          "states": [
+            "idle",
+            "loading",
+            "ready",
+            "interacting",
+            "paused",
+            "error",
+            "fallback",
+            "disposed"
+          ],
+          "outputs": [
+            "可读的DOM内容与真实导航",
+            "与业务状态分离的视觉反馈"
+          ],
+          "steps": [
+            "先完成产品/能力/证据/演示CTA四区",
+            "视频和动效只支撑解释",
+            "业务表单完全独立于动画加载",
+            "为生产功能保留状态和错误提示"
+          ],
+          "fallback": "移动版以海报与短视频为主；表单与CTA第一优先级；无动效仍完整可用。",
+          "cleanup": "卸载时停止本模块动画帧、断开观察器、移除事件监听；若存在GPU/音频/视频资源则分别释放或停止；不得全局销毁其他页面资源。",
+          "acceptance": [
+            "在触屏、键盘和reduced-motion三种输入/偏好下完成主任务。",
+            "移动版以海报与短视频为主；表单与CTA第一优先级；无动效仍完整可用。",
+            "模拟媒体、网络或GPU加载失败时保留完整内容和导航。"
+          ],
+          "risks": [
+            "无WebGL是未经独立证实的否定断言",
+            "把工作室通用栈等同项目栈",
+            "品牌动画遮挡转化路径"
+          ]
+        }
+      ],
+      "mobile_fallback": {
+        "status": "proposal",
+        "text": "移动版以海报与短视频为主；表单与CTA第一优先级；无动效仍完整可用。"
+      },
+      "implementation_risks": {
+        "status": "proposal",
+        "items": [
+          "无WebGL是未经独立证实的否定断言",
+          "把工作室通用栈等同项目栈",
+          "品牌动画遮挡转化路径"
+        ]
+      },
+      "inspection_plan": {
+        "status": "not_run",
+        "viewports": [
+          {
+            "width": 390,
+            "height": 844
+          },
+          {
+            "width": 1440,
+            "height": 900
+          }
+        ],
+        "page_tasks": [
+          "确认获奖版本与当前URL关系",
+          "记录实际页面与主CTA",
+          "执行交互状态表"
+        ],
+        "required_states": [
+          "idle",
+          "focus",
+          "active",
+          "loading",
+          "success",
+          "error",
+          "empty",
+          "disabled",
+          "reduced_motion"
+        ]
+      },
+      "limitations": [
+        "本次没有一手证据确认Storyblok或完全无WebGL",
+        "没有运行网络/源码检测",
+        "本次只完成官方/制作方文献拆解，未对原站逐页截图或执行交互。",
+        "未独立测量网络资源、帧率或Core Web Vitals；原作者数字不代表当前实测。",
+        "蓝图、移动回退和验收项均为本库建议，不是对原站源码的结论。"
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "case_id": "ponpon-mania",
+      "name": "Ponpon Mania",
+      "research_level": "desk_researched",
+      "research_date": "2026-11-23",
+      "awwwards_url": "https://www.awwwards.com/sites/ponpon-mania",
+      "award_year": 2025,
+      "award_month": 10,
+      "award_month_status": "primary_month_claim",
+      "candidate_month_claims": [],
+      "award_month_notes": "Month is the explicit SOTM badge, not SOTD or Honors date.",
+      "sources": [
+        {
+          "id": "s1",
+          "url": "https://www.awwwards.com/websites/sites_of_the_month/",
+          "retrieved_at": "2026-11-23",
+          "kind": "primary_source",
+          "supports": "Historical award identity and monthly evidence"
+        },
+        {
+          "id": "s2",
+          "url": "https://www.awwwards.com/sites/ponpon-mania",
+          "retrieved_at": "2026-11-23",
+          "kind": "primary_source",
+          "supports": "Official work record; page date may be SOTD"
+        }
+      ],
+      "facts": [
+        {
+          "id": "f1",
+          "claim": "官方来源记录该案例的SOTM月份为2025-10。",
+          "category": "award",
+          "source_ids": [
+            "s1"
+          ],
+          "basis": "primary_published_evidence"
+        },
+        {
+          "id": "f2",
+          "claim": "官方页明确WebGL、GSAP、Nuxt.js标签。",
+          "category": "technical",
+          "source_ids": [
+            "s2"
+          ],
+          "basis": "primary_published_evidence"
+        },
+        {
+          "id": "f3",
+          "claim": "官方交互示例包含章节选择、物理互动、鼠标响应、面板镜头移动、面板导航、页面过渡。",
+          "category": "technical",
+          "source_ids": [
+            "s2"
+          ],
+          "basis": "primary_published_evidence"
+        }
+      ],
+      "observations": [],
+      "inferences": [
+        {
+          "id": "i1",
+          "claim": "根据公开描述提炼的交互机制：章节导航",
+          "status": "inference",
+          "basis_fact_ids": [
+            "f2",
+            "f3"
+          ]
+        },
+        {
+          "id": "i2",
+          "claim": "根据公开描述提炼的交互机制：漫画面板镜头运动",
+          "status": "inference",
+          "basis_fact_ids": [
+            "f2",
+            "f3"
+          ]
+        },
+        {
+          "id": "i3",
+          "claim": "根据公开描述提炼的交互机制：鼠标物理响应",
+          "status": "inference",
+          "basis_fact_ids": [
+            "f2",
+            "f3"
+          ]
+        }
+      ],
+      "pages": [],
+      "interactions": [],
+      "measurements": [],
+      "classification": {
+        "industry": [
+          "互动漫画"
+        ],
+        "visual_style": [
+          "插画+3D章节"
+        ],
+        "interaction_pattern": [
+          "章节导航",
+          "漫画面板镜头运动",
+          "鼠标物理响应"
+        ],
+        "basis": "analyst classification based on cited descriptions; not live visual inspection"
+      },
+      "historical_technology_names": [],
+      "technology_note": "Read technical fact statements and their scope. An empty list means no normalized complete list, not absence of technology.",
+      "blueprints": [
+        {
+          "id": "bp1",
+          "status": "proposal",
+          "title": "复用机制的原创实现蓝图",
+          "inputs": [
+            "经过核验的自有正文与主用户任务",
+            "已授权图片/视频/模型",
+            "用户操作与设备能力"
+          ],
+          "states": [
+            "idle",
+            "loading",
+            "ready",
+            "interacting",
+            "paused",
+            "error",
+            "fallback",
+            "disposed"
+          ],
+          "outputs": [
+            "可读的DOM内容与真实导航",
+            "与业务状态分离的视觉反馈"
+          ],
+          "steps": [
+            "以章节和面板ID建立可寻址状态",
+            "文本内容在DOM中有等效副本",
+            "视觉层消费面板进度，不拥有全部导航",
+            "物理模拟固定步长且离屏暂停"
+          ],
+          "fallback": "前后章节按钮与静态漫画顺序；不依赖指针精确操控；减少动效保持剧情内容。",
+          "cleanup": "卸载时停止本模块动画帧、断开观察器、移除事件监听；若存在GPU/音频/视频资源则分别释放或停止；不得全局销毁其他页面资源。",
+          "acceptance": [
+            "在触屏、键盘和reduced-motion三种输入/偏好下完成主任务。",
+            "前后章节按钮与静态漫画顺序；不依赖指针精确操控；减少动效保持剧情内容。",
+            "模拟媒体、网络或GPU加载失败时保留完整内容和导航。"
+          ],
+          "risks": [
+            "无障碍导航",
+            "物理模拟耗电",
+            "纹理内存",
+            "快速连续输入导致状态错乱"
+          ]
+        }
+      ],
+      "mobile_fallback": {
+        "status": "proposal",
+        "text": "前后章节按钮与静态漫画顺序；不依赖指针精确操控；减少动效保持剧情内容。"
+      },
+      "implementation_risks": {
+        "status": "proposal",
+        "items": [
+          "无障碍导航",
+          "物理模拟耗电",
+          "纹理内存",
+          "快速连续输入导致状态错乱"
+        ]
+      },
+      "inspection_plan": {
+        "status": "not_run",
+        "viewports": [
+          {
+            "width": 390,
+            "height": 844
+          },
+          {
+            "width": 1440,
+            "height": 900
+          }
+        ],
+        "page_tasks": [
+          "确认获奖版本与当前URL关系",
+          "记录实际页面与主CTA",
+          "执行交互状态表"
+        ],
+        "required_states": [
+          "idle",
+          "focus",
+          "active",
+          "loading",
+          "success",
+          "error",
+          "empty",
+          "disabled",
+          "reduced_motion"
+        ]
+      },
+      "limitations": [
+        "WebGL2/压缩纹理/物理库版本未得到一手确认",
+        "不将Matter.js作为已核验事实",
+        "本次只完成官方/制作方文献拆解，未对原站逐页截图或执行交互。",
+        "未独立测量网络资源、帧率或Core Web Vitals；原作者数字不代表当前实测。",
+        "蓝图、移动回退和验收项均为本库建议，不是对原站源码的结论。"
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "case_id": "mindmarket",
+      "name": "MindMarket",
+      "research_level": "desk_researched",
+      "research_date": "2026-11-23",
+      "awwwards_url": "https://www.awwwards.com/sites/mindmarket",
+      "award_year": 2025,
+      "award_month": 12,
+      "award_month_status": "primary_month_claim",
+      "candidate_month_claims": [],
+      "award_month_notes": "Month is the explicit SOTM badge, not SOTD or Honors date.",
+      "sources": [
+        {
+          "id": "s1",
+          "url": "https://www.awwwards.com/websites/sites_of_the_month/",
+          "retrieved_at": "2026-11-23",
+          "kind": "primary_source",
+          "supports": "Historical award identity and monthly evidence"
+        },
+        {
+          "id": "s2",
+          "url": "https://www.awwwards.com/sites/mindmarket",
+          "retrieved_at": "2026-11-23",
+          "kind": "primary_source",
+          "supports": "Official work record; page date may be SOTD"
+        },
+        {
+          "id": "s3",
+          "url": "https://www.awwwards.com/mindmarket-case-study.html",
+          "retrieved_at": "2026-11-23",
+          "kind": "primary_source",
+          "supports": "Case-specific publication used by the researcher"
+        }
+      ],
+      "facts": [
+        {
+          "id": "f1",
+          "claim": "官方来源记录该案例的SOTM月份为2025-12。",
+          "category": "award",
+          "source_ids": [
+            "s1"
+          ],
+          "basis": "primary_published_evidence"
+        },
+        {
+          "id": "f2",
+          "claim": "KOKI-KIKO官方案例明确Astro、DatoCMS、Netlify、Tailwind CSS、Rive、GSAP DrawSVG、Locomotive Scroll(基于Lenis)。",
+          "category": "technical",
+          "source_ids": [
+            "s2",
+            "s3"
+          ],
+          "basis": "primary_published_evidence"
+        },
+        {
+          "id": "f3",
+          "claim": "Rive由IntersectionObserver触发；首页线条由三层路径形成。",
+          "category": "technical",
+          "source_ids": [
+            "s2",
+            "s3"
+          ],
+          "basis": "primary_published_evidence"
+        },
+        {
+          "id": "f4",
+          "claim": "滚动进度0到1驱动暂停的GSAP时间线。",
+          "category": "technical",
+          "source_ids": [
+            "s2",
+            "s3"
+          ],
+          "basis": "primary_published_evidence"
+        }
+      ],
+      "observations": [],
+      "inferences": [
+        {
+          "id": "i1",
+          "claim": "根据公开描述提炼的交互机制：滚动绘制连接线",
+          "status": "inference",
+          "basis_fact_ids": [
+            "f2",
+            "f3",
+            "f4"
+          ]
+        },
+        {
+          "id": "i2",
+          "claim": "根据公开描述提炼的交互机制：角色进入视口触发",
+          "status": "inference",
+          "basis_fact_ids": [
+            "f2",
+            "f3",
+            "f4"
+          ]
+        },
+        {
+          "id": "i3",
+          "claim": "根据公开描述提炼的交互机制：插画随断点人工排布",
+          "status": "inference",
+          "basis_fact_ids": [
+            "f2",
+            "f3",
+            "f4"
+          ]
+        }
+      ],
+      "pages": [],
+      "interactions": [],
+      "measurements": [],
+      "classification": {
+        "industry": [
+          "市场研究服务"
+        ],
+        "visual_style": [
+          "手绘角色+连线"
+        ],
+        "interaction_pattern": [
+          "滚动绘制连接线",
+          "角色进入视口触发",
+          "插画随断点人工排布"
+        ],
+        "basis": "analyst classification based on cited descriptions; not live visual inspection"
+      },
+      "historical_technology_names": [],
+      "technology_note": "Read technical fact statements and their scope. An empty list means no normalized complete list, not absence of technology.",
+      "blueprints": [
+        {
+          "id": "bp1",
+          "status": "proposal",
+          "title": "复用机制的原创实现蓝图",
+          "inputs": [
+            "经过核验的自有正文与主用户任务",
+            "已授权图片/视频/模型",
+            "用户操作与设备能力"
+          ],
+          "states": [
+            "idle",
+            "loading",
+            "ready",
+            "interacting",
+            "paused",
+            "error",
+            "fallback",
+            "disposed"
+          ],
+          "outputs": [
+            "可读的DOM内容与真实导航",
+            "与业务状态分离的视觉反馈"
+          ],
+          "steps": [
+            "SVG路径在各断点单独设计",
+            "进度归一化驱动动画",
+            "observer负责启停Rive",
+            "静态插画保底并保留正文自然文档流"
+          ],
+          "fallback": "小屏路径简化；减少动效时显示完整线与静态角色；停止离屏和后台动画。",
+          "cleanup": "卸载时停止本模块动画帧、断开观察器、移除事件监听；若存在GPU/音频/视频资源则分别释放或停止；不得全局销毁其他页面资源。",
+          "acceptance": [
+            "在触屏、键盘和reduced-motion三种输入/偏好下完成主任务。",
+            "小屏路径简化；减少动效时显示完整线与静态角色；停止离屏和后台动画。",
+            "模拟媒体、网络或GPU加载失败时保留完整内容和导航。"
+          ],
+          "risks": [
+            "路径与文字错位",
+            "误用固定像素导致溢出",
+            "多个运行时循环叠加"
+          ]
+        }
+      ],
+      "mobile_fallback": {
+        "status": "proposal",
+        "text": "小屏路径简化；减少动效时显示完整线与静态角色；停止离屏和后台动画。"
+      },
+      "implementation_risks": {
+        "status": "proposal",
+        "items": [
+          "路径与文字错位",
+          "误用固定像素导致溢出",
+          "多个运行时循环叠加"
+        ]
+      },
+      "inspection_plan": {
+        "status": "not_run",
+        "viewports": [
+          {
+            "width": 390,
+            "height": 844
+          },
+          {
+            "width": 1440,
+            "height": 900
+          }
+        ],
+        "page_tasks": [
+          "确认获奖版本与当前URL关系",
+          "记录实际页面与主CTA",
+          "执行交互状态表"
+        ],
+        "required_states": [
+          "idle",
+          "focus",
+          "active",
+          "loading",
+          "success",
+          "error",
+          "empty",
+          "disabled",
+          "reduced_motion"
+        ]
+      },
+      "limitations": [
+        "没有一手确认Astro主版本",
+        "1.4MB第三方值未作为测量结果保存",
+        "本次只完成官方/制作方文献拆解，未对原站逐页截图或执行交互。",
+        "未独立测量网络资源、帧率或Core Web Vitals；原作者数字不代表当前实测。",
+        "蓝图、移动回退和验收项均为本库建议，不是对原站源码的结论。"
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "case_id": "oryzo-ai",
+      "name": "Oryzo AI",
+      "research_level": "desk_researched",
+      "research_date": "2026-11-23",
+      "awwwards_url": "https://www.awwwards.com/sites/oryzo-ai",
+      "award_year": 2026,
+      "award_month": 4,
+      "award_month_status": "primary_month_claim",
+      "candidate_month_claims": [],
+      "award_month_notes": "Month is the explicit SOTM badge, not SOTD or Honors date.",
+      "sources": [
+        {
+          "id": "s1",
+          "url": "https://www.awwwards.com/websites/sites_of_the_month/",
+          "retrieved_at": "2026-11-23",
+          "kind": "primary_source",
+          "supports": "Historical award identity and monthly evidence"
+        },
+        {
+          "id": "s2",
+          "url": "https://www.awwwards.com/sites/oryzo-ai",
+          "retrieved_at": "2026-11-23",
+          "kind": "primary_source",
+          "supports": "Official work record; page date may be SOTD"
+        },
+        {
+          "id": "s3",
+          "url": "https://lusion.co/projects/oryzo_ai",
+          "retrieved_at": "2026-11-23",
+          "kind": "primary_source",
+          "supports": "Case-specific publication used by the researcher"
+        },
+        {
+          "id": "s4",
+          "url": "https://blog.lusion.co/oryzo-bts-part-3-7-website-ux-ui-and-illustrations",
+          "retrieved_at": "2026-11-23",
+          "kind": "primary_source",
+          "supports": "Case-specific publication used by the researcher"
+        }
+      ],
+      "facts": [
+        {
+          "id": "f1",
+          "claim": "官方来源记录该案例的SOTM月份为2026-04。",
+          "category": "award",
+          "source_ids": [
+            "s1"
+          ],
+          "basis": "primary_published_evidence"
+        },
+        {
+          "id": "f2",
+          "claim": "Lusion第一方说明这是把软木杯垫包装为AI时代产品的自发项目，并非真实AI软件。",
+          "category": "technical",
+          "source_ids": [
+            "s2",
+            "s3",
+            "s4"
+          ],
+          "basis": "primary_published_evidence"
+        },
+        {
+          "id": "f3",
+          "claim": "官方项目服务列出WebGL、3D Design、Animation。",
+          "category": "technical",
+          "source_ids": [
+            "s2",
+            "s3",
+            "s4"
+          ],
+          "basis": "primary_published_evidence"
+        },
+        {
+          "id": "f4",
+          "claim": "设计幕后文章说明实时3D、少量字体/颜色、手绘插画；Figma用于设计，Rive用于交互原型；不等于生产站Rive依赖。",
+          "category": "technical",
+          "source_ids": [
+            "s2",
+            "s3",
+            "s4"
+          ],
+          "basis": "primary_published_evidence"
+        }
+      ],
+      "observations": [],
+      "inferences": [
+        {
+          "id": "i1",
+          "claim": "根据公开描述提炼的交互机制：真实桌面作为首页场景",
+          "status": "inference",
+          "basis_fact_ids": [
+            "f2",
+            "f3",
+            "f4"
+          ]
+        },
+        {
+          "id": "i2",
+          "claim": "根据公开描述提炼的交互机制：产品贯穿叙事",
+          "status": "inference",
+          "basis_fact_ids": [
+            "f2",
+            "f3",
+            "f4"
+          ]
+        },
+        {
+          "id": "i3",
+          "claim": "根据公开描述提炼的交互机制：场景连续过渡",
+          "status": "inference",
+          "basis_fact_ids": [
+            "f2",
+            "f3",
+            "f4"
+          ]
+        },
+        {
+          "id": "i4",
+          "claim": "根据公开描述提炼的交互机制：手绘插画构成视觉细节",
+          "status": "inference",
+          "basis_fact_ids": [
+            "f2",
+            "f3",
+            "f4"
+          ]
+        }
+      ],
+      "pages": [],
+      "interactions": [],
+      "measurements": [],
+      "classification": {
+        "industry": [
+          "自发创意实验/产品发布讽刺"
+        ],
+        "visual_style": [
+          "真实桌面3D+幽默"
+        ],
+        "interaction_pattern": [
+          "真实桌面作为首页场景",
+          "产品贯穿叙事",
+          "场景连续过渡",
+          "手绘插画构成视觉细节"
+        ],
+        "basis": "analyst classification based on cited descriptions; not live visual inspection"
+      },
+      "historical_technology_names": [],
+      "technology_note": "Read technical fact statements and their scope. An empty list means no normalized complete list, not absence of technology.",
+      "blueprints": [
+        {
+          "id": "bp1",
+          "status": "proposal",
+          "title": "复用机制的原创实现蓝图",
+          "inputs": [
+            "经过核验的自有正文与主用户任务",
+            "已授权图片/视频/模型",
+            "用户操作与设备能力"
+          ],
+          "states": [
+            "idle",
+            "loading",
+            "ready",
+            "interacting",
+            "paused",
+            "error",
+            "fallback",
+            "disposed"
+          ],
+          "outputs": [
+            "可读的DOM内容与真实导航",
+            "与业务状态分离的视觉反馈"
+          ],
+          "steps": [
+            "为真实业务明确产品价值再选叙事道具",
+            "以滚动章节映射同一产品状态",
+            "保持标题/价格/说明DOM可读",
+            "实验与真实产品能力文案分开"
+          ],
+          "fallback": "用产品静态图和短片；减少动效显示完整功能说明；不让幽默掩盖真实购买条件。",
+          "cleanup": "卸载时停止本模块动画帧、断开观察器、移除事件监听；若存在GPU/音频/视频资源则分别释放或停止；不得全局销毁其他页面资源。",
+          "acceptance": [
+            "在触屏、键盘和reduced-motion三种输入/偏好下完成主任务。",
+            "用产品静态图和短片；减少动效显示完整功能说明；不让幽默掩盖真实购买条件。",
+            "模拟媒体、网络或GPU加载失败时保留完整内容和导航。"
+          ],
+          "risks": [
+            "把名称AI误分类为SaaS",
+            "原型工具误当生产依赖",
+            "长叙事拖慢获取信息"
+          ]
+        }
+      ],
+      "mobile_fallback": {
+        "status": "proposal",
+        "text": "用产品静态图和短片；减少动效显示完整功能说明；不让幽默掩盖真实购买条件。"
+      },
+      "implementation_risks": {
+        "status": "proposal",
+        "items": [
+          "把名称AI误分类为SaaS",
+          "原型工具误当生产依赖",
+          "长叙事拖慢获取信息"
+        ]
+      },
+      "inspection_plan": {
+        "status": "not_run",
+        "viewports": [
+          {
+            "width": 390,
+            "height": 844
+          },
+          {
+            "width": 1440,
+            "height": 900
+          }
+        ],
+        "page_tasks": [
+          "确认获奖版本与当前URL关系",
+          "记录实际页面与主CTA",
+          "执行交互状态表"
+        ],
+        "required_states": [
+          "idle",
+          "focus",
+          "active",
+          "loading",
+          "success",
+          "error",
+          "empty",
+          "disabled",
+          "reduced_motion"
+        ]
+      },
+      "limitations": [
+        "技术系列后四篇在所读页面标为未发布",
+        "未核验完整production bundle或性能",
+        "本次只完成官方/制作方文献拆解，未对原站逐页截图或执行交互。",
+        "未独立测量网络资源、帧率或Core Web Vitals；原作者数字不代表当前实测。",
+        "蓝图、移动回退和验收项均为本库建议，不是对原站源码的结论。"
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "case_id": "why-zero",
+      "name": "Why Zero",
+      "research_level": "desk_researched",
+      "research_date": "2026-11-23",
+      "awwwards_url": "https://www.awwwards.com/sites/why-zero",
+      "award_year": 2026,
+      "award_month": 9,
+      "award_month_status": "primary_month_claim",
+      "candidate_month_claims": [],
+      "award_month_notes": "Month is the explicit SOTM badge, not SOTD or Honors date.",
+      "sources": [
+        {
+          "id": "s1",
+          "url": "https://www.awwwards.com/websites/sites_of_the_month/",
+          "retrieved_at": "2026-11-23",
+          "kind": "primary_source",
+          "supports": "Historical award identity and monthly evidence"
+        },
+        {
+          "id": "s2",
+          "url": "https://www.awwwards.com/sites/why-zero",
+          "retrieved_at": "2026-11-23",
+          "kind": "primary_source",
+          "supports": "Official work record; page date may be SOTD"
+        },
+        {
+          "id": "s3",
+          "url": "https://bunqlabs.com/insights/why-zero-awards",
+          "retrieved_at": "2026-11-23",
+          "kind": "primary_source",
+          "supports": "Case-specific publication used by the researcher"
+        }
+      ],
+      "facts": [
+        {
+          "id": "f1",
+          "claim": "官方来源记录该案例的SOTM月份为2026-09。",
+          "category": "award",
+          "source_ids": [
+            "s1"
+          ],
+          "basis": "primary_published_evidence"
+        },
+        {
+          "id": "f2",
+          "claim": "制作方BUNQ LABS明确WebGL/Three.js/shader工程，Blender预烘焙照明、按帧率调整视觉质量，目标包含低价旧Android。",
+          "category": "technical",
+          "source_ids": [
+            "s2",
+            "s3"
+          ],
+          "basis": "primary_published_evidence"
+        },
+        {
+          "id": "f3",
+          "claim": "制作方描述画零破冰、六阶段滚动、穿过logo隧道到探索城市。",
+          "category": "technical",
+          "source_ids": [
+            "s2",
+            "s3"
+          ],
+          "basis": "primary_published_evidence"
+        },
+        {
+          "id": "f4",
+          "claim": "制作方提供流量/FPS/体积自述，本记录不把它们当作独立实测。",
+          "category": "technical",
+          "source_ids": [
+            "s2",
+            "s3"
+          ],
+          "basis": "primary_published_evidence"
+        }
+      ],
+      "observations": [],
+      "inferences": [
+        {
+          "id": "i1",
+          "claim": "根据公开描述提炼的交互机制：开场画零",
+          "status": "inference",
+          "basis_fact_ids": [
+            "f2",
+            "f3",
+            "f4"
+          ]
+        },
+        {
+          "id": "i2",
+          "claim": "根据公开描述提炼的交互机制：连续叙事章节",
+          "status": "inference",
+          "basis_fact_ids": [
+            "f2",
+            "f3",
+            "f4"
+          ]
+        },
+        {
+          "id": "i3",
+          "claim": "根据公开描述提炼的交互机制：最终城市探索",
+          "status": "inference",
+          "basis_fact_ids": [
+            "f2",
+            "f3",
+            "f4"
+          ]
+        }
+      ],
+      "pages": [],
+      "interactions": [],
+      "measurements": [],
+      "classification": {
+        "industry": [
+          "教育叙事"
+        ],
+        "visual_style": [
+          "滚动3D故事"
+        ],
+        "interaction_pattern": [
+          "开场画零",
+          "连续叙事章节",
+          "最终城市探索"
+        ],
+        "basis": "analyst classification based on cited descriptions; not live visual inspection"
+      },
+      "historical_technology_names": [],
+      "technology_note": "Read technical fact statements and their scope. An empty list means no normalized complete list, not absence of technology.",
+      "blueprints": [
+        {
+          "id": "bp1",
+          "status": "proposal",
+          "title": "复用机制的原创实现蓝图",
+          "inputs": [
+            "经过核验的自有正文与主用户任务",
+            "已授权图片/视频/模型",
+            "用户操作与设备能力"
+          ],
+          "states": [
+            "idle",
+            "loading",
+            "ready",
+            "interacting",
+            "paused",
+            "error",
+            "fallback",
+            "disposed"
+          ],
+          "outputs": [
+            "可读的DOM内容与真实导航",
+            "与业务状态分离的视觉反馈"
+          ],
+          "steps": [
+            "开场提供跳过",
+            "故事内容与动画时间线分离",
+            "预烘焙照明/压缩纹理",
+            "按持续帧时间降DPR和后处理，保持内容与导航"
+          ],
+          "fallback": "提供无需绘画的进入按钮与顺序章节；低性能设备使用静态内容；降低画质而不删教育信息。",
+          "cleanup": "卸载时停止本模块动画帧、断开观察器、移除事件监听；若存在GPU/音频/视频资源则分别释放或停止；不得全局销毁其他页面资源。",
+          "acceptance": [
+            "在触屏、键盘和reduced-motion三种输入/偏好下完成主任务。",
+            "提供无需绘画的进入按钮与顺序章节；低性能设备使用静态内容；降低画质而不删教育信息。",
+            "模拟媒体、网络或GPU加载失败时保留完整内容和导航。"
+          ],
+          "risks": [
+            "交互入口阻塞",
+            "温度与耗电",
+            "不可验证的制作方性能宣传",
+            "只测单一Android代表全部设备"
+          ]
+        }
+      ],
+      "mobile_fallback": {
+        "status": "proposal",
+        "text": "提供无需绘画的进入按钮与顺序章节；低性能设备使用静态内容；降低画质而不删教育信息。"
+      },
+      "implementation_risks": {
+        "status": "proposal",
+        "items": [
+          "交互入口阻塞",
+          "温度与耗电",
+          "不可验证的制作方性能宣传",
+          "只测单一Android代表全部设备"
+        ]
+      },
+      "inspection_plan": {
+        "status": "not_run",
+        "viewports": [
+          {
+            "width": 390,
+            "height": 844
+          },
+          {
+            "width": 1440,
+            "height": 900
+          }
+        ],
+        "page_tasks": [
+          "确认获奖版本与当前URL关系",
+          "记录实际页面与主CTA",
+          "执行交互状态表"
+        ],
+        "required_states": [
+          "idle",
+          "focus",
+          "active",
+          "loading",
+          "success",
+          "error",
+          "empty",
+          "disabled",
+          "reduced_motion"
+        ]
+      },
+      "limitations": [
+        "本任务没有独立复测制作方量化宣称",
+        "本次只完成官方/制作方文献拆解，未对原站逐页截图或执行交互。",
+        "未独立测量网络资源、帧率或Core Web Vitals；原作者数字不代表当前实测。",
+        "蓝图、移动回退和验收项均为本库建议，不是对原站源码的结论。"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,3 @@
+# Agent contract
+
+Read `AGENT_START_HERE.md` first; then read `skills/awwwards-workflow/SKILL.md` and task-specific `skills/awwwards-*/SKILL.md`. Use `research/archive` for awards and `research/cases` for case evidence. Do not invent SOTM dates, site stack versions, screenshots or browser/performance test results. Do not overwrite user project files without scope authorization. Preserve readable content without JS, reduced-motion and mobile fallbacks, cleanup lifecycle, and accurate backend/preview boundaries. Record `passed` only with evidence. See `docs/RECONSTRUCTION_NOTES.md` for provenance.

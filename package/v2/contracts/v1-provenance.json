@@ -1,0 +1,8 @@
+{
+  "source": "Local downloaded copy named Awwwards_Research_Skills_Full_2026-11-23 (13).zip; referenced conversation sandbox filename matches base name",
+  "sha256": "c02efbcb88ed0f79b36365d89875f10165f04ed8d2bd4f1603a7559bf529192f",
+  "zip_bytes": 4429763,
+  "entries": 187,
+  "method": "Read actual zip directory, reject traversal, extract then preserve every original entry byte-for-byte",
+  "publication_note": "Private conversation identifier omitted from public distribution; original ZIP identity and file hashes retained."
+}
