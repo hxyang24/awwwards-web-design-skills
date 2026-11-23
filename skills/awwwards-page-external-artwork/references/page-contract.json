@@ -1,0 +1,155 @@
+{
+  "schema_version": "3.0",
+  "id": "external-artwork",
+  "skill": "awwwards-page-external-artwork",
+  "title": "获奖外站单件作品与故事内页",
+  "kind": "project",
+  "scope": "awarded external website inner page",
+  "source_families": [
+    "external.artwork"
+  ],
+  "goal": "理解项目问题、过程、贡献和有证据的成果。",
+  "regions": [
+    "作品标题",
+    "作者或主体",
+    "视觉内容",
+    "故事或说明",
+    "来源",
+    "前后作品"
+  ],
+  "workflow": [
+    "为单件作品保持稳定 URL 与来源，不能只依赖画布内选中状态。",
+    "人物、历史、作品和引用分别建模，不臆造与受访者有关的事实。",
+    "使用已授权媒体或原创占位保留叙事节奏；有文字说明与返回档案入口。"
+  ],
+  "data_fields": [
+    "artwork_id",
+    "creator",
+    "subject",
+    "narrative",
+    "references",
+    "media_rights",
+    "adjacent_items"
+  ],
+  "failure_recovery": "缺少图像或故事时说明缺失；下一件作品加载失败仍可返回档案。",
+  "motion_contract": "沉浸式转场可跳过；主体文本不因动画未加载而不可达。",
+  "evidence_level": "http_dom",
+  "evidence_note": "Only recorded observations are facts. DOM structure does not prove visual composition, hidden state, source code, backend behavior or licenses. The runnable blueprint is an original recipe, not a source-site clone.",
+  "sources": [
+    {
+      "id": "2a3b77d10f000ed7",
+      "url": "https://www.197historiasilustradas.com/en/artwork/113",
+      "family": "external.artwork",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T08:03:08.634019+00:00",
+      "source_sha256": "c2887f95f687355491c36e3da6098a6385890cb74ecdcfd0dfecd42858347355",
+      "structure": {
+        "headings": {
+          "h1": 1
+        },
+        "forms": 0,
+        "input_types": {
+          "checkbox": 1
+        },
+        "navigation_regions": 0,
+        "main_regions": 1,
+        "sections": 1,
+        "articles": 0,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 0,
+        "roles": {
+          "slider": 1
+        },
+        "anchor_count": 203
+      }
+    },
+    {
+      "id": "8fdf10ababfdf595",
+      "url": "https://www.197historiasilustradas.com/en/artwork/19",
+      "family": "external.artwork",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T08:03:13.005024+00:00",
+      "source_sha256": "cce8e32461e350609fe3d35abbdf482484d60cdb83663737de1d329db6406754",
+      "structure": {
+        "headings": {
+          "h1": 1
+        },
+        "forms": 0,
+        "input_types": {
+          "checkbox": 1
+        },
+        "navigation_regions": 0,
+        "main_regions": 1,
+        "sections": 1,
+        "articles": 0,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 0,
+        "roles": {
+          "slider": 1
+        },
+        "anchor_count": 203
+      }
+    },
+    {
+      "id": "5b14df5a727dc880",
+      "url": "https://www.197historiasilustradas.com/en/artwork/75",
+      "family": "external.artwork",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T08:03:13.007337+00:00",
+      "source_sha256": "6fc4e48de3e15121b897cf445d82d8bc69f838f7736f0356eda9964036eb6bb8",
+      "structure": {
+        "headings": {
+          "h1": 1
+        },
+        "forms": 0,
+        "input_types": {
+          "checkbox": 1
+        },
+        "navigation_regions": 0,
+        "main_regions": 1,
+        "sections": 1,
+        "articles": 0,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 0,
+        "roles": {
+          "slider": 1
+        },
+        "anchor_count": 203
+      }
+    }
+  ],
+  "visual_metrics": [],
+  "source_coverage": "observed_examples",
+  "original_blueprint": true,
+  "business_mode": "local_preview",
+  "states": [
+    "default",
+    "loading",
+    "empty",
+    "error",
+    "success_preview",
+    "disabled",
+    "keyboard_focus",
+    "reduced_motion",
+    "narrow_view"
+  ],
+  "acceptance": [
+    "理解项目问题、过程、贡献和有证据的成果。",
+    "缺少图像或故事时说明缺失；下一件作品加载失败仍可返回档案。",
+    "沉浸式转场可跳过；主体文本不因动画未加载而不可达。",
+    "320、390、768、1440 宽度不出现整页横溢出；必要表格在独立区域滚动。",
+    "键盘可进入、操作、关闭对话框并返回触发点；错误不只靠颜色。",
+    "本地预览不得暗示真实支付、投稿、消息、账户或预约已生效。"
+  ],
+  "limitations": [
+    "Source interaction audit is not automatically performed",
+    "Source assets are not bundled",
+    "Real backend, production and physical-device acceptance are not included"
+  ]
+}

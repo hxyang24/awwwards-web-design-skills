@@ -1,0 +1,633 @@
+{
+  "schema_version": "3.0",
+  "generated_at": "2026-11-23T08:25:52.338063+00:00",
+  "core_skills_preserved": 24,
+  "page_skills": 41,
+  "status": "in_progress",
+  "scope": "Awwwards main pages and awarded external-site inner pages, organized into reusable task-specific skills",
+  "not_claimed": [
+    "All pages visited",
+    "All awarded websites fully analyzed",
+    "All source interactions reproduced"
+  ],
+  "skills": [
+    {
+      "id": "discovery-home",
+      "skill": "awwwards-page-discovery-home",
+      "title": "发现型门户首页",
+      "kind": "portal",
+      "source_families": [
+        "main.home"
+      ],
+      "source_coverage": "observed_examples",
+      "source_count": 1,
+      "evidence_level": "rendered_geometry",
+      "path": "skills/awwwards-page-discovery-home",
+      "demo": "skills/awwwards-page-discovery-home/assets/",
+      "browser_validation": "See validation evidence; not inferred from generation"
+    },
+    {
+      "id": "website-explorer",
+      "skill": "awwwards-page-website-explorer",
+      "title": "作品探索与多维筛选",
+      "kind": "listing",
+      "source_families": [
+        "main.website-explorer",
+        "main.category-list"
+      ],
+      "source_coverage": "observed_examples",
+      "source_count": 6,
+      "evidence_level": "http_dom",
+      "path": "skills/awwwards-page-website-explorer",
+      "demo": "skills/awwwards-page-website-explorer/assets/",
+      "browser_validation": "See validation evidence; not inferred from generation"
+    },
+    {
+      "id": "award-list",
+      "skill": "awwwards-page-award-list",
+      "title": "获奖与提名列表",
+      "kind": "listing",
+      "source_families": [
+        "main.award-list",
+        "main.honors-list"
+      ],
+      "source_coverage": "observed_examples",
+      "source_count": 6,
+      "evidence_level": "http_dom",
+      "path": "skills/awwwards-page-award-list",
+      "demo": "skills/awwwards-page-award-list/assets/",
+      "browser_validation": "See validation evidence; not inferred from generation"
+    },
+    {
+      "id": "award-detail",
+      "skill": "awwwards-page-award-detail",
+      "title": "获奖作品详情与评审信息",
+      "kind": "award",
+      "source_families": [
+        "main.award-detail"
+      ],
+      "source_coverage": "observed_examples",
+      "source_count": 6,
+      "evidence_level": "http_dom",
+      "path": "skills/awwwards-page-award-detail",
+      "demo": "skills/awwwards-page-award-detail/assets/",
+      "browser_validation": "See validation evidence; not inferred from generation"
+    },
+    {
+      "id": "winner-index",
+      "skill": "awwwards-page-winner-index",
+      "title": "获奖档案与年度索引",
+      "kind": "listing",
+      "source_families": [
+        "main.winner-index"
+      ],
+      "source_coverage": "observed_examples",
+      "source_count": 6,
+      "evidence_level": "http_dom",
+      "path": "skills/awwwards-page-winner-index",
+      "demo": "skills/awwwards-page-winner-index/assets/",
+      "browser_validation": "See validation evidence; not inferred from generation"
+    },
+    {
+      "id": "annual-awards",
+      "skill": "awwwards-page-annual-awards",
+      "title": "年度评选专题",
+      "kind": "portal",
+      "source_families": [
+        "main.annual-awards"
+      ],
+      "source_coverage": "observed_examples",
+      "source_count": 6,
+      "evidence_level": "http_dom",
+      "path": "skills/awwwards-page-annual-awards",
+      "demo": "skills/awwwards-page-annual-awards/assets/",
+      "browser_validation": "See validation evidence; not inferred from generation"
+    },
+    {
+      "id": "jury-directory",
+      "skill": "awwwards-page-jury-directory",
+      "title": "评委目录与年份浏览",
+      "kind": "directory",
+      "source_families": [
+        "main.jury"
+      ],
+      "source_coverage": "observed_examples",
+      "source_count": 6,
+      "evidence_level": "http_dom",
+      "path": "skills/awwwards-page-jury-directory",
+      "demo": "skills/awwwards-page-jury-directory/assets/",
+      "browser_validation": "See validation evidence; not inferred from generation"
+    },
+    {
+      "id": "collection-index",
+      "skill": "awwwards-page-collection-index",
+      "title": "策展合集列表",
+      "kind": "listing",
+      "source_families": [
+        "main.collection-index"
+      ],
+      "source_coverage": "observed_examples",
+      "source_count": 4,
+      "evidence_level": "http_dom",
+      "path": "skills/awwwards-page-collection-index",
+      "demo": "skills/awwwards-page-collection-index/assets/",
+      "browser_validation": "See validation evidence; not inferred from generation"
+    },
+    {
+      "id": "collection-detail",
+      "skill": "awwwards-page-collection-detail",
+      "title": "策展合集详情",
+      "kind": "listing",
+      "source_families": [
+        "main.collection-detail"
+      ],
+      "source_coverage": "observed_examples",
+      "source_count": 6,
+      "evidence_level": "rendered_geometry",
+      "path": "skills/awwwards-page-collection-detail",
+      "demo": "skills/awwwards-page-collection-detail/assets/",
+      "browser_validation": "See validation evidence; not inferred from generation"
+    },
+    {
+      "id": "inspiration-library",
+      "skill": "awwwards-page-inspiration-library",
+      "title": "灵感与组件参考库",
+      "kind": "listing",
+      "source_families": [
+        "main.inspiration-library",
+        "main.element-library"
+      ],
+      "source_coverage": "observed_examples",
+      "source_count": 1,
+      "evidence_level": "http_dom",
+      "path": "skills/awwwards-page-inspiration-library",
+      "demo": "skills/awwwards-page-inspiration-library/assets/",
+      "browser_validation": "See validation evidence; not inferred from generation"
+    },
+    {
+      "id": "creator-directory",
+      "skill": "awwwards-page-creator-directory",
+      "title": "创作者与机构目录",
+      "kind": "directory",
+      "source_families": [
+        "main.creator-directory"
+      ],
+      "source_coverage": "observed_examples",
+      "source_count": 6,
+      "evidence_level": "http_dom",
+      "path": "skills/awwwards-page-creator-directory",
+      "demo": "skills/awwwards-page-creator-directory/assets/",
+      "browser_validation": "See validation evidence; not inferred from generation"
+    },
+    {
+      "id": "creator-profile",
+      "skill": "awwwards-page-creator-profile",
+      "title": "创作者或机构主页",
+      "kind": "profile",
+      "source_families": [
+        "main.creator-profile"
+      ],
+      "source_coverage": "observed_examples",
+      "source_count": 5,
+      "evidence_level": "http_dom",
+      "path": "skills/awwwards-page-creator-profile",
+      "demo": "skills/awwwards-page-creator-profile/assets/",
+      "browser_validation": "See validation evidence; not inferred from generation"
+    },
+    {
+      "id": "course-catalog",
+      "skill": "awwwards-page-course-catalog",
+      "title": "课程目录与学习入口",
+      "kind": "listing",
+      "source_families": [
+        "main.course-index"
+      ],
+      "source_coverage": "observed_examples",
+      "source_count": 6,
+      "evidence_level": "rendered_geometry",
+      "path": "skills/awwwards-page-course-catalog",
+      "demo": "skills/awwwards-page-course-catalog/assets/",
+      "browser_validation": "See validation evidence; not inferred from generation"
+    },
+    {
+      "id": "course-detail",
+      "skill": "awwwards-page-course-detail",
+      "title": "课程详情与大纲",
+      "kind": "course",
+      "source_families": [
+        "main.course-detail"
+      ],
+      "source_coverage": "observed_examples",
+      "source_count": 6,
+      "evidence_level": "http_dom",
+      "path": "skills/awwwards-page-course-detail",
+      "demo": "skills/awwwards-page-course-detail/assets/",
+      "browser_validation": "See validation evidence; not inferred from generation"
+    },
+    {
+      "id": "market-catalog",
+      "skill": "awwwards-page-market-catalog",
+      "title": "数字产品市场列表",
+      "kind": "listing",
+      "source_families": [
+        "main.market-index"
+      ],
+      "source_coverage": "observed_examples",
+      "source_count": 1,
+      "evidence_level": "http_dom",
+      "path": "skills/awwwards-page-market-catalog",
+      "demo": "skills/awwwards-page-market-catalog/assets/",
+      "browser_validation": "See validation evidence; not inferred from generation"
+    },
+    {
+      "id": "market-product",
+      "skill": "awwwards-page-market-product",
+      "title": "数字商品详情与许可选择",
+      "kind": "product",
+      "source_families": [
+        "main.market-detail"
+      ],
+      "source_coverage": "observed_examples",
+      "source_count": 6,
+      "evidence_level": "http_dom",
+      "path": "skills/awwwards-page-market-product",
+      "demo": "skills/awwwards-page-market-product/assets/",
+      "browser_validation": "See validation evidence; not inferred from generation"
+    },
+    {
+      "id": "job-board",
+      "skill": "awwwards-page-job-board",
+      "title": "职位列表与筛选",
+      "kind": "directory",
+      "source_families": [
+        "main.job-index"
+      ],
+      "source_coverage": "observed_examples",
+      "source_count": 6,
+      "evidence_level": "http_dom",
+      "path": "skills/awwwards-page-job-board",
+      "demo": "skills/awwwards-page-job-board/assets/",
+      "browser_validation": "See validation evidence; not inferred from generation"
+    },
+    {
+      "id": "job-detail",
+      "skill": "awwwards-page-job-detail",
+      "title": "职位详情与申请路径",
+      "kind": "job",
+      "source_families": [
+        "main.job-detail"
+      ],
+      "source_coverage": "observed_examples",
+      "source_count": 6,
+      "evidence_level": "http_dom",
+      "path": "skills/awwwards-page-job-detail",
+      "demo": "skills/awwwards-page-job-detail/assets/",
+      "browser_validation": "See validation evidence; not inferred from generation"
+    },
+    {
+      "id": "editorial-index",
+      "skill": "awwwards-page-editorial-index",
+      "title": "编辑内容与博客索引",
+      "kind": "listing",
+      "source_families": [
+        "main.editorial-index"
+      ],
+      "source_coverage": "observed_examples",
+      "source_count": 6,
+      "evidence_level": "http_dom",
+      "path": "skills/awwwards-page-editorial-index",
+      "demo": "skills/awwwards-page-editorial-index/assets/",
+      "browser_validation": "See validation evidence; not inferred from generation"
+    },
+    {
+      "id": "editorial-article",
+      "skill": "awwwards-page-editorial-article",
+      "title": "文章详情与技术拆解",
+      "kind": "article",
+      "source_families": [
+        "main.article"
+      ],
+      "source_coverage": "observed_examples",
+      "source_count": 6,
+      "evidence_level": "rendered_geometry",
+      "path": "skills/awwwards-page-editorial-article",
+      "demo": "skills/awwwards-page-editorial-article/assets/",
+      "browser_validation": "See validation evidence; not inferred from generation"
+    },
+    {
+      "id": "membership-plans",
+      "skill": "awwwards-page-membership-plans",
+      "title": "会员与套餐比较",
+      "kind": "pricing",
+      "source_families": [
+        "main.membership"
+      ],
+      "source_coverage": "observed_examples",
+      "source_count": 6,
+      "evidence_level": "http_dom",
+      "path": "skills/awwwards-page-membership-plans",
+      "demo": "skills/awwwards-page-membership-plans/assets/",
+      "browser_validation": "See validation evidence; not inferred from generation"
+    },
+    {
+      "id": "submission-wizard",
+      "skill": "awwwards-page-submission-wizard",
+      "title": "作品提交与审阅向导",
+      "kind": "wizard",
+      "source_families": [
+        "main.submission"
+      ],
+      "source_coverage": "observed_examples",
+      "source_count": 1,
+      "evidence_level": "http_dom",
+      "path": "skills/awwwards-page-submission-wizard",
+      "demo": "skills/awwwards-page-submission-wizard/assets/",
+      "browser_validation": "See validation evidence; not inferred from generation"
+    },
+    {
+      "id": "faq-center",
+      "skill": "awwwards-page-faq-center",
+      "title": "帮助中心与 FAQ",
+      "kind": "faq",
+      "source_families": [
+        "main.faq"
+      ],
+      "source_coverage": "observed_examples",
+      "source_count": 1,
+      "evidence_level": "http_dom",
+      "path": "skills/awwwards-page-faq-center",
+      "demo": "skills/awwwards-page-faq-center/assets/",
+      "browser_validation": "See validation evidence; not inferred from generation"
+    },
+    {
+      "id": "organization-about",
+      "skill": "awwwards-page-organization-about",
+      "title": "平台或品牌关于页",
+      "kind": "about",
+      "source_families": [
+        "main.about"
+      ],
+      "source_coverage": "observed_examples",
+      "source_count": 1,
+      "evidence_level": "rendered_geometry",
+      "path": "skills/awwwards-page-organization-about",
+      "demo": "skills/awwwards-page-organization-about/assets/",
+      "browser_validation": "See validation evidence; not inferred from generation"
+    },
+    {
+      "id": "contact-page",
+      "skill": "awwwards-page-contact-page",
+      "title": "联系与询问表单",
+      "kind": "contact",
+      "source_families": [
+        "main.contact"
+      ],
+      "source_coverage": "observed_examples",
+      "source_count": 1,
+      "evidence_level": "http_dom",
+      "path": "skills/awwwards-page-contact-page",
+      "demo": "skills/awwwards-page-contact-page/assets/",
+      "browser_validation": "See validation evidence; not inferred from generation"
+    },
+    {
+      "id": "conference-page",
+      "skill": "awwwards-page-conference-page",
+      "title": "会议与活动详情",
+      "kind": "event",
+      "source_families": [
+        "main.conference"
+      ],
+      "source_coverage": "observed_examples",
+      "source_count": 4,
+      "evidence_level": "http_dom",
+      "path": "skills/awwwards-page-conference-page",
+      "demo": "skills/awwwards-page-conference-page/assets/",
+      "browser_validation": "See validation evidence; not inferred from generation"
+    },
+    {
+      "id": "legal-document",
+      "skill": "awwwards-page-legal-document",
+      "title": "条款与政策阅读页",
+      "kind": "article",
+      "source_families": [
+        "main.legal"
+      ],
+      "source_coverage": "observed_examples",
+      "source_count": 3,
+      "evidence_level": "http_dom",
+      "path": "skills/awwwards-page-legal-document",
+      "demo": "skills/awwwards-page-legal-document/assets/",
+      "browser_validation": "See validation evidence; not inferred from generation"
+    },
+    {
+      "id": "external-home",
+      "skill": "awwwards-page-external-home",
+      "title": "获奖外站首页与品牌入口",
+      "kind": "portal",
+      "source_families": [
+        "external.home"
+      ],
+      "source_coverage": "observed_examples",
+      "source_count": 6,
+      "evidence_level": "rendered_geometry",
+      "path": "skills/awwwards-page-external-home",
+      "demo": "skills/awwwards-page-external-home/assets/",
+      "browser_validation": "See validation evidence; not inferred from generation"
+    },
+    {
+      "id": "external-project",
+      "skill": "awwwards-page-external-project",
+      "title": "获奖外站项目与案例内页",
+      "kind": "project",
+      "source_families": [
+        "external.project"
+      ],
+      "source_coverage": "observed_examples",
+      "source_count": 6,
+      "evidence_level": "rendered_geometry",
+      "path": "skills/awwwards-page-external-project",
+      "demo": "skills/awwwards-page-external-project/assets/",
+      "browser_validation": "See validation evidence; not inferred from generation"
+    },
+    {
+      "id": "external-about",
+      "skill": "awwwards-page-external-about",
+      "title": "获奖外站团队与关于内页",
+      "kind": "about",
+      "source_families": [
+        "external.about"
+      ],
+      "source_coverage": "observed_examples",
+      "source_count": 6,
+      "evidence_level": "http_dom",
+      "path": "skills/awwwards-page-external-about",
+      "demo": "skills/awwwards-page-external-about/assets/",
+      "browser_validation": "See validation evidence; not inferred from generation"
+    },
+    {
+      "id": "external-service",
+      "skill": "awwwards-page-external-service",
+      "title": "获奖外站服务与方案内页",
+      "kind": "service",
+      "source_families": [
+        "external.service"
+      ],
+      "source_coverage": "observed_examples",
+      "source_count": 1,
+      "evidence_level": "http_dom",
+      "path": "skills/awwwards-page-external-service",
+      "demo": "skills/awwwards-page-external-service/assets/",
+      "browser_validation": "See validation evidence; not inferred from generation"
+    },
+    {
+      "id": "external-product",
+      "skill": "awwwards-page-external-product",
+      "title": "获奖外站产品与商店内页",
+      "kind": "product",
+      "source_families": [
+        "external.product"
+      ],
+      "source_coverage": "observed_examples",
+      "source_count": 1,
+      "evidence_level": "http_dom",
+      "path": "skills/awwwards-page-external-product",
+      "demo": "skills/awwwards-page-external-product/assets/",
+      "browser_validation": "See validation evidence; not inferred from generation"
+    },
+    {
+      "id": "external-article",
+      "skill": "awwwards-page-external-article",
+      "title": "获奖外站日志与文章内页",
+      "kind": "article",
+      "source_families": [
+        "external.article"
+      ],
+      "source_coverage": "observed_examples",
+      "source_count": 6,
+      "evidence_level": "http_dom",
+      "path": "skills/awwwards-page-external-article",
+      "demo": "skills/awwwards-page-external-article/assets/",
+      "browser_validation": "See validation evidence; not inferred from generation"
+    },
+    {
+      "id": "external-contact",
+      "skill": "awwwards-page-external-contact",
+      "title": "获奖外站联系内页",
+      "kind": "contact",
+      "source_families": [
+        "external.contact"
+      ],
+      "source_coverage": "observed_examples",
+      "source_count": 5,
+      "evidence_level": "http_dom",
+      "path": "skills/awwwards-page-external-contact",
+      "demo": "skills/awwwards-page-external-contact/assets/",
+      "browser_validation": "See validation evidence; not inferred from generation"
+    },
+    {
+      "id": "external-careers",
+      "skill": "awwwards-page-external-careers",
+      "title": "获奖外站招聘内页",
+      "kind": "job",
+      "source_families": [
+        "external.careers"
+      ],
+      "source_coverage": "needs_source_inspection",
+      "source_count": 0,
+      "evidence_level": "not_observed",
+      "path": "skills/awwwards-page-external-careers",
+      "demo": "skills/awwwards-page-external-careers/assets/",
+      "browser_validation": "See validation evidence; not inferred from generation"
+    },
+    {
+      "id": "external-legal",
+      "skill": "awwwards-page-external-legal",
+      "title": "获奖外站政策与条款内页",
+      "kind": "article",
+      "source_families": [
+        "external.legal"
+      ],
+      "source_coverage": "observed_examples",
+      "source_count": 3,
+      "evidence_level": "rendered_geometry",
+      "path": "skills/awwwards-page-external-legal",
+      "demo": "skills/awwwards-page-external-legal/assets/",
+      "browser_validation": "See validation evidence; not inferred from generation"
+    },
+    {
+      "id": "external-media-portfolio",
+      "skill": "awwwards-page-external-media-portfolio",
+      "title": "获奖外站音乐视觉与动态作品索引",
+      "kind": "gallery",
+      "source_families": [
+        "external.media-portfolio"
+      ],
+      "source_coverage": "observed_examples",
+      "source_count": 1,
+      "evidence_level": "http_dom",
+      "path": "skills/awwwards-page-external-media-portfolio",
+      "demo": "skills/awwwards-page-external-media-portfolio/assets/",
+      "browser_validation": "See validation evidence; not inferred from generation"
+    },
+    {
+      "id": "external-gallery",
+      "skill": "awwwards-page-external-gallery",
+      "title": "获奖外站画廊与作品档案",
+      "kind": "gallery",
+      "source_families": [
+        "external.gallery"
+      ],
+      "source_coverage": "observed_examples",
+      "source_count": 2,
+      "evidence_level": "http_dom",
+      "path": "skills/awwwards-page-external-gallery",
+      "demo": "skills/awwwards-page-external-gallery/assets/",
+      "browser_validation": "See validation evidence; not inferred from generation"
+    },
+    {
+      "id": "external-artwork",
+      "skill": "awwwards-page-external-artwork",
+      "title": "获奖外站单件作品与故事内页",
+      "kind": "project",
+      "source_families": [
+        "external.artwork"
+      ],
+      "source_coverage": "observed_examples",
+      "source_count": 3,
+      "evidence_level": "http_dom",
+      "path": "skills/awwwards-page-external-artwork",
+      "demo": "skills/awwwards-page-external-artwork/assets/",
+      "browser_validation": "See validation evidence; not inferred from generation"
+    },
+    {
+      "id": "external-experiment",
+      "skill": "awwwards-page-external-experiment",
+      "title": "获奖外站实验与互动内页",
+      "kind": "experiment",
+      "source_families": [
+        "external.experiment"
+      ],
+      "source_coverage": "observed_examples",
+      "source_count": 1,
+      "evidence_level": "http_dom",
+      "path": "skills/awwwards-page-external-experiment",
+      "demo": "skills/awwwards-page-external-experiment/assets/",
+      "browser_validation": "See validation evidence; not inferred from generation"
+    },
+    {
+      "id": "external-not-found",
+      "skill": "awwwards-page-external-not-found",
+      "title": "获奖外站 404 与恢复页面",
+      "kind": "notfound",
+      "source_families": [
+        "external.not-found"
+      ],
+      "source_coverage": "observed_examples",
+      "source_count": 2,
+      "evidence_level": "rendered_geometry",
+      "path": "skills/awwwards-page-external-not-found",
+      "demo": "skills/awwwards-page-external-not-found/assets/",
+      "browser_validation": "See validation evidence; not inferred from generation"
+    }
+  ]
+}

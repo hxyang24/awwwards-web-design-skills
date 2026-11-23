@@ -25,22 +25,30 @@ jobs:
           python-version: '3.13'
       - name: Verify sealed package and V1 preservation
         run: python tools/verify.py
+      - name: Verify standalone page-skill seal
+        run: python ../../tools/verify_page_skills.py
       - name: Install locked validation dependencies
         run: npm ci
       - name: Domain and tool tests
         run: |
           npm test
           npm run test:tools
+      - name: Page-skill contracts, source linkage and standalone exports
+        run: python ../../tools/test_page_skills.py
       - name: Install test browser
         run: npx playwright install --with-deps chromium
       - name: Browser and exported-template tests
         run: |
           npm run test:browser
           npm run test:export
+      - name: Standalone page-skill browser validation
+        run: node ../../tools/test_page_skills.mjs
       - name: Upload validation evidence
         if: always()
         uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
         with:
           name: linux-validation-evidence
-          path: package/v2/evidence
+          path: |
+            package/v2/evidence
+            research/page_skill_validation
           retention-days: 14

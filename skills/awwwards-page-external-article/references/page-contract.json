@@ -1,0 +1,236 @@
+{
+  "schema_version": "3.0",
+  "id": "external-article",
+  "skill": "awwwards-page-external-article",
+  "title": "获奖外站日志与文章内页",
+  "kind": "article",
+  "scope": "awarded external website inner page",
+  "source_families": [
+    "external.article"
+  ],
+  "goal": "按章节持续阅读并追溯事实、版本和引用。",
+  "regions": [
+    "文章身份",
+    "日期",
+    "正文",
+    "媒体",
+    "作者",
+    "引用",
+    "相关内容"
+  ],
+  "workflow": [
+    "保留正文的层次、图片说明和引用关系，不逐字转载无许可内容。",
+    "列表与详情有明确返回路径，日期和修订分别记录。",
+    "阅读模式、目录和分享不应阻断正文。"
+  ],
+  "data_fields": [
+    "article",
+    "author",
+    "published_at",
+    "updated_at",
+    "sections",
+    "media",
+    "references"
+  ],
+  "failure_recovery": "图片或嵌入失效时保留说明；不存在的文章有回到列表的入口。",
+  "motion_contract": "动效不使文本消失；支持缩放与减少动画。",
+  "evidence_level": "http_dom",
+  "evidence_note": "Only recorded observations are facts. DOM structure does not prove visual composition, hidden state, source code, backend behavior or licenses. The runnable blueprint is an original recipe, not a source-site clone.",
+  "sources": [
+    {
+      "id": "59e318193c8ecfc5",
+      "url": "http://www.blacknegative.com/news/",
+      "family": "external.article",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T08:15:57.604064+00:00",
+      "source_sha256": "ad0dd877b1e16b96a727a6bfdb4c3fb8c850eb5c221401998c7f21203e92ca1a",
+      "structure": {
+        "headings": {},
+        "forms": 0,
+        "input_types": {},
+        "navigation_regions": 0,
+        "main_regions": 0,
+        "sections": 0,
+        "articles": 0,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 0,
+        "roles": {},
+        "anchor_count": 17
+      }
+    },
+    {
+      "id": "a0d75453dfef91d6",
+      "url": "https://artemiilebedev.com/journal",
+      "family": "external.article",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T08:04:45.889474+00:00",
+      "source_sha256": "6f0059d48ddcb8a7eb34985aacdf22033f079cabc2fa53e484b4053129f1dec1",
+      "structure": {
+        "headings": {
+          "h1": 1
+        },
+        "forms": 0,
+        "input_types": {},
+        "navigation_regions": 1,
+        "main_regions": 1,
+        "sections": 0,
+        "articles": 0,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 3,
+        "roles": {
+          "list": 1,
+          "listitem": 13
+        },
+        "anchor_count": 64
+      }
+    },
+    {
+      "id": "49b3914ee6cc9b06",
+      "url": "https://artemiilebedev.com/journal/a-microsite-as-a-playground",
+      "family": "external.article",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T08:17:00.768330+00:00",
+      "source_sha256": "5fc7afb51ca57f96602439f9e9ad733b85a6f3cb42d6ef6f665855729f563150",
+      "structure": {
+        "headings": {
+          "h1": 1,
+          "h2": 5
+        },
+        "forms": 0,
+        "input_types": {},
+        "navigation_regions": 1,
+        "main_regions": 0,
+        "sections": 0,
+        "articles": 1,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 0,
+        "roles": {
+          "list": 1,
+          "listitem": 2
+        },
+        "anchor_count": 46
+      }
+    },
+    {
+      "id": "a2b72918226b475c",
+      "url": "https://artemiilebedev.com/journal/bringing-tattoos-into-the-digital-era",
+      "family": "external.article",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T08:17:27.369187+00:00",
+      "source_sha256": "d45edda0fd81b2d444a3b1eb06f866d8dec92593138231540079184a98fa7a82",
+      "structure": {
+        "headings": {
+          "h1": 1,
+          "h2": 7
+        },
+        "forms": 0,
+        "input_types": {},
+        "navigation_regions": 1,
+        "main_regions": 0,
+        "sections": 0,
+        "articles": 1,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 0,
+        "roles": {
+          "list": 1,
+          "listitem": 2
+        },
+        "anchor_count": 46
+      }
+    },
+    {
+      "id": "bb21fb405db7d888",
+      "url": "https://artemiilebedev.com/journal/cantor8-making-infrastructure-visible",
+      "family": "external.article",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T08:17:27.410160+00:00",
+      "source_sha256": "ff64edbf4f46da2459ef9d5f1317a70612fce4035927d3a0fe635bc0042d39cb",
+      "structure": {
+        "headings": {
+          "h1": 1,
+          "h2": 6
+        },
+        "forms": 0,
+        "input_types": {},
+        "navigation_regions": 1,
+        "main_regions": 0,
+        "sections": 0,
+        "articles": 1,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 0,
+        "roles": {
+          "list": 1,
+          "listitem": 2
+        },
+        "anchor_count": 48
+      }
+    },
+    {
+      "id": "d00600cdfcee900c",
+      "url": "https://artemiilebedev.com/journal/designer-of-the-year-css-design-awards",
+      "family": "external.article",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T08:17:27.442140+00:00",
+      "source_sha256": "f859968b6d83fecdc695df03d82070c2a46ab9270d2adee7eac8b1f0c66258fd",
+      "structure": {
+        "headings": {
+          "h1": 1,
+          "h2": 4
+        },
+        "forms": 0,
+        "input_types": {},
+        "navigation_regions": 1,
+        "main_regions": 0,
+        "sections": 0,
+        "articles": 1,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 0,
+        "roles": {
+          "list": 1,
+          "listitem": 2
+        },
+        "anchor_count": 46
+      }
+    }
+  ],
+  "visual_metrics": [],
+  "source_coverage": "observed_examples",
+  "original_blueprint": true,
+  "business_mode": "local_preview",
+  "states": [
+    "default",
+    "loading",
+    "empty",
+    "error",
+    "success_preview",
+    "disabled",
+    "keyboard_focus",
+    "reduced_motion",
+    "narrow_view"
+  ],
+  "acceptance": [
+    "按章节持续阅读并追溯事实、版本和引用。",
+    "图片或嵌入失效时保留说明；不存在的文章有回到列表的入口。",
+    "动效不使文本消失；支持缩放与减少动画。",
+    "320、390、768、1440 宽度不出现整页横溢出；必要表格在独立区域滚动。",
+    "键盘可进入、操作、关闭对话框并返回触发点；错误不只靠颜色。",
+    "本地预览不得暗示真实支付、投稿、消息、账户或预约已生效。"
+  ],
+  "limitations": [
+    "Source interaction audit is not automatically performed",
+    "Source assets are not bundled",
+    "Real backend, production and physical-device acceptance are not included"
+  ]
+}

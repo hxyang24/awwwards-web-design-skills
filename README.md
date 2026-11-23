@@ -1,13 +1,17 @@
-# Awwwards Web Design Skills · V2.0.1
+# Awwwards Web Design Skills · 页面专项扩展进行中
 
 [![CI](https://github.com/hxyang24/awwwards-web-design-skills/actions/workflows/ci.yml/badge.svg)](https://github.com/hxyang24/awwwards-web-design-skills/actions/workflows/ci.yml)
 [![Original code: MIT](https://img.shields.io/badge/original_code-MIT-green.svg)](LICENSE)
 
+> **当前新增页面专项 Skills 整理仍在进行，尚未完成全站与所有获奖外站内页覆盖。** 新增 41 套可单独安装的页面技能，保留原 24 套核心技能，共 65 套。详细来源边界和缺口见 [页面技能目录](PAGE_SKILLS.md)。
+
+[下载当前页面技能工作版](https://github.com/hxyang24/awwwards-web-design-skills/archive/refs/heads/main.zip) · [独立页面技能](skills) · [来源覆盖](research/live_pages/coverage.json)
+
 一套从网站研究、页面设计到可运行原型与验证的 AI 技能库。保留 V1 的 12 套技能，新增 12 套专项，提供企业后台、金融模拟、电商、AI Agent、移动端、动效/3D 和视觉重建工具。
 
-**24 套技能 · 82 个页面模式 · 22 个业务演示路由 · 6 个新增交互模板 + 6 个 V1 蓝本。** 82 个模式中的其余 60 个属于设计/实现规范，不代表全部已开发。真实业务服务未连接。
+**保留的 v2.0.1 基础包：24 套核心技能 · 82 个页面模式 · 22 个业务演示路由 · 6 个交互模板 + 6 个 V1 蓝本。** 82 个模式中的其余 60 个属于设计/实现规范，不代表全部已开发。真实业务服务未连接。
 
-[下载完整公开版 ZIP](https://github.com/hxyang24/awwwards-web-design-skills/releases/latest) · [执行入口](package/V2_START_HERE.md) · [覆盖矩阵](package/v2/docs/COVERAGE.md) · [实测与未测](package/v2/docs/VALIDATION.md)
+[下载既有 v2.0.1 稳定包](https://github.com/hxyang24/awwwards-web-design-skills/releases/tag/v2.0.1) · [执行入口](package/V2_START_HERE.md) · [覆盖矩阵](package/v2/docs/COVERAGE.md) · [实测与未测](package/v2/docs/VALIDATION.md)
 
 ![Original interface library preview](package/v2/evidence/screenshots/library-1440.png)
 
@@ -87,3 +91,9 @@ npm run test:export
 原创代码、技能及原创文档以 [MIT](LICENSE) 开源。**第三方组件不被重新许可：GSAP 使用其标准许可，不是 MIT；Three.js 保留 MIT。** 研究资料及链接不授予原站设计、品牌、代码或素材复制权。详见 [第三方声明](THIRD_PARTY_NOTICES.md)。
 
 这是独立研究与原创实现项目，与 Awwwards 无隶属或背书关系。公开版移除私人聊天标识、规范化少量元数据，并修正 Linux 在线测试的详情页等待条件，旧版 187 文件仍保留原字节，见 [公开发布记录](docs/OPEN_SOURCE_PUBLICATION.md)。
+
+## 页面专项 Skills 扩展
+
+从根目录执行 `python tools/install_all_skills.py --target YOUR_SKILLS_DIRECTORY` 可同时安装原 24 套核心与新增页面技能。新页面技能各自包含 `SKILL.md`、页面契约、独立 HTML/CSS/JS 原创蓝本和不覆盖导出脚本。主站页面与外站内页的结构、交互、状态、响应式、动效、来源和版权边界均进入技能，而不是只有网址。
+
+原站内容只作为观察证据。完整 HTML、原站截图、代码、图片、字体、视频及音乐不随新增公开研究记录分发。新增技能的几何插图和蓝本为原创。观察缺口、受限访问、未验证的隐藏交互与未接入服务端持续保留。

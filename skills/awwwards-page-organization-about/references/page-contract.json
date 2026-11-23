@@ -1,0 +1,227 @@
+{
+  "schema_version": "3.0",
+  "id": "organization-about",
+  "skill": "awwwards-page-organization-about",
+  "title": "平台或品牌关于页",
+  "kind": "about",
+  "scope": "Awwwards main-site page family",
+  "source_families": [
+    "main.about"
+  ],
+  "goal": "理解主体、团队和可核实的背景。",
+  "regions": [
+    "使命",
+    "工作方式",
+    "团队",
+    "历史",
+    "可核实资质",
+    "联系"
+  ],
+  "workflow": [
+    "以真实身份和职责说明服务对象及价值。",
+    "时间线和资质各有来源，不虚构客户、奖项或数字。",
+    "团队成员与作品贡献关联，图片许可独立记录。"
+  ],
+  "data_fields": [
+    "organization",
+    "mission",
+    "history",
+    "team",
+    "verified_claims",
+    "contact"
+  ],
+  "failure_recovery": "资料缺失时不编造发展历史；头像使用授权素材或原创占位。",
+  "motion_contract": "叙事动效不改变阅读顺序；静态版包含全部主要信息。",
+  "evidence_level": "rendered_geometry",
+  "evidence_note": "Only recorded observations are facts. DOM structure does not prove visual composition, hidden state, source code, backend behavior or licenses. The runnable blueprint is an original recipe, not a source-site clone.",
+  "sources": [
+    {
+      "id": "50b721e0337aa156",
+      "url": "https://www.awwwards.com/about-us/",
+      "family": "main.about",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T08:01:54.516294+00:00",
+      "source_sha256": "810cb570b91cf9708381e4700642e25ca2daa19152662cd16ea0f3893660c66f",
+      "structure": {
+        "headings": {
+          "h1": 1,
+          "h2": 2,
+          "h3": 3
+        },
+        "forms": 0,
+        "input_types": {
+          "text": 1
+        },
+        "navigation_regions": 2,
+        "main_regions": 0,
+        "sections": 1,
+        "articles": 0,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 0,
+        "roles": {},
+        "anchor_count": 106
+      }
+    }
+  ],
+  "visual_metrics": [
+    {
+      "source_id": "50b721e0337aa156",
+      "url": "https://www.awwwards.com/about-us/",
+      "family": "main.about",
+      "viewport": {
+        "width": 390,
+        "height": 1000,
+        "device_scale_factor": 1
+      },
+      "observed_at": "2026-11-23T08:22:15.649Z",
+      "interaction_inspection": "not_run",
+      "source_screenshots_redistributed": false,
+      "http_status": 200,
+      "final_url": "https://www.awwwards.com/about-us/",
+      "render_state": "visible_content",
+      "metrics": {
+        "document_width": 390,
+        "viewport_width": 390,
+        "body_background": "rgb(248, 248, 248)",
+        "html_background": "rgba(0, 0, 0, 0)",
+        "body_font": "\"Inter Tight\"",
+        "heading_geometry": [
+          {
+            "x": 16,
+            "y": 239,
+            "width": 358,
+            "height": 84,
+            "font_family": "\"Inter Tight\"",
+            "font_size": "42px",
+            "font_weight": "600",
+            "line_height": "42px",
+            "color": "rgb(34, 34, 34)"
+          },
+          {
+            "x": 16,
+            "y": 695,
+            "width": 358,
+            "height": 114,
+            "font_family": "\"Inter Tight\"",
+            "font_size": "22px",
+            "font_weight": "300",
+            "line_height": "28.6px",
+            "color": "rgb(34, 34, 34)"
+          },
+          {
+            "x": 16,
+            "y": 832,
+            "width": 358,
+            "height": 200,
+            "font_family": "\"Inter Tight\"",
+            "font_size": "22px",
+            "font_weight": "300",
+            "line_height": "28.6px",
+            "color": "rgb(34, 34, 34)"
+          }
+        ],
+        "navigation_regions": 2,
+        "visible_buttons": 1,
+        "visible_inputs": 1,
+        "canvas_count": 0,
+        "video_count": 0
+      },
+      "screenshot_sha256": "3d83c2082d2dd40ac9000d5f6264f81fbf3aab57e6d6df15aabffa0831ba1318",
+      "status": "rendered_observed"
+    },
+    {
+      "source_id": "50b721e0337aa156",
+      "url": "https://www.awwwards.com/about-us/",
+      "family": "main.about",
+      "viewport": {
+        "width": 1440,
+        "height": 1000,
+        "device_scale_factor": 1
+      },
+      "observed_at": "2026-11-23T08:22:22.035Z",
+      "interaction_inspection": "not_run",
+      "source_screenshots_redistributed": false,
+      "http_status": 200,
+      "final_url": "https://www.awwwards.com/about-us/",
+      "render_state": "visible_content",
+      "metrics": {
+        "document_width": 1440,
+        "viewport_width": 1440,
+        "body_background": "rgb(248, 248, 248)",
+        "html_background": "rgba(0, 0, 0, 0)",
+        "body_font": "\"Inter Tight\"",
+        "heading_geometry": [
+          {
+            "x": 333,
+            "y": 245,
+            "width": 774,
+            "height": 253,
+            "font_family": "\"Inter Tight\"",
+            "font_size": "126.732px",
+            "font_weight": "600",
+            "line_height": "126.732px",
+            "color": "rgb(34, 34, 34)"
+          },
+          {
+            "x": 52,
+            "y": 1594,
+            "width": 1336,
+            "height": 99,
+            "font_family": "\"Inter Tight\"",
+            "font_size": "37.8873px",
+            "font_weight": "300",
+            "line_height": "49.2535px",
+            "color": "rgb(34, 34, 34)"
+          },
+          {
+            "x": 52,
+            "y": 1730,
+            "width": 1336,
+            "height": 148,
+            "font_family": "\"Inter Tight\"",
+            "font_size": "37.8873px",
+            "font_weight": "300",
+            "line_height": "49.2535px",
+            "color": "rgb(34, 34, 34)"
+          }
+        ],
+        "navigation_regions": 2,
+        "visible_buttons": 1,
+        "visible_inputs": 1,
+        "canvas_count": 0,
+        "video_count": 0
+      },
+      "screenshot_sha256": "ffbc96e8eb74f83189ee7473c47928ec7539728fcafa237ef62b460e900ab0db",
+      "status": "rendered_observed"
+    }
+  ],
+  "source_coverage": "observed_examples",
+  "original_blueprint": true,
+  "business_mode": "local_preview",
+  "states": [
+    "default",
+    "loading",
+    "empty",
+    "error",
+    "success_preview",
+    "disabled",
+    "keyboard_focus",
+    "reduced_motion",
+    "narrow_view"
+  ],
+  "acceptance": [
+    "理解主体、团队和可核实的背景。",
+    "资料缺失时不编造发展历史；头像使用授权素材或原创占位。",
+    "叙事动效不改变阅读顺序；静态版包含全部主要信息。",
+    "320、390、768、1440 宽度不出现整页横溢出；必要表格在独立区域滚动。",
+    "键盘可进入、操作、关闭对话框并返回触发点；错误不只靠颜色。",
+    "本地预览不得暗示真实支付、投稿、消息、账户或预约已生效。"
+  ],
+  "limitations": [
+    "Source interaction audit is not automatically performed",
+    "Source assets are not bundled",
+    "Real backend, production and physical-device acceptance are not included"
+  ]
+}

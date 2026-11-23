@@ -1,0 +1,1314 @@
+{
+  "schema_version": "1.0",
+  "method": "Anonymous public browser rendering; only geometry and computed-style facts are redistributed",
+  "limitations": [
+    "Viewport observation is not interaction or source-code verification",
+    "Screenshots and original assets stay outside the public repository"
+  ],
+  "observations": [
+    {
+      "source_id": "1e56626c0a2eb400",
+      "url": "http://www.because-recollection.com/",
+      "family": "external.home",
+      "viewport": {
+        "width": 390,
+        "height": 1000,
+        "device_scale_factor": 1
+      },
+      "observed_at": "2026-11-23T08:20:27.283Z",
+      "interaction_inspection": "not_run",
+      "source_screenshots_redistributed": false,
+      "http_status": 200,
+      "final_url": "http://www.because-recollection.com/",
+      "render_state": "visible_content",
+      "metrics": {
+        "document_width": 390,
+        "viewport_width": 390,
+        "body_background": "rgb(0, 0, 0)",
+        "html_background": "rgb(0, 0, 0)",
+        "body_font": "Inconsolata",
+        "heading_geometry": [],
+        "navigation_regions": 0,
+        "visible_buttons": 3,
+        "visible_inputs": 0,
+        "canvas_count": 1,
+        "video_count": 0
+      },
+      "screenshot_sha256": "5bb93d972401ead138fe6ffcd096b47fab83559a9ab73117a923774d723e5b2f",
+      "status": "rendered_observed"
+    },
+    {
+      "source_id": "1e56626c0a2eb400",
+      "url": "http://www.because-recollection.com/",
+      "family": "external.home",
+      "viewport": {
+        "width": 1440,
+        "height": 1000,
+        "device_scale_factor": 1
+      },
+      "observed_at": "2026-11-23T08:20:31.871Z",
+      "interaction_inspection": "not_run",
+      "source_screenshots_redistributed": false,
+      "http_status": 200,
+      "final_url": "http://www.because-recollection.com/",
+      "render_state": "visible_content",
+      "metrics": {
+        "document_width": 1440,
+        "viewport_width": 1440,
+        "body_background": "rgb(0, 0, 0)",
+        "html_background": "rgb(0, 0, 0)",
+        "body_font": "Inconsolata",
+        "heading_geometry": [],
+        "navigation_regions": 0,
+        "visible_buttons": 2,
+        "visible_inputs": 0,
+        "canvas_count": 1,
+        "video_count": 0
+      },
+      "screenshot_sha256": "83fc49587f6ae9f456fc5d63dc36ea0993dac347965b1892a93d600250ba791e",
+      "status": "rendered_observed"
+    },
+    {
+      "source_id": "6aaf81f3c82f2288",
+      "url": "http://www.blacknegative.com/contact/",
+      "family": "external.contact",
+      "viewport": {
+        "width": 390,
+        "height": 1000,
+        "device_scale_factor": 1
+      },
+      "observed_at": "2026-11-23T08:20:36.043Z",
+      "interaction_inspection": "not_run",
+      "source_screenshots_redistributed": false,
+      "http_status": 200,
+      "final_url": "http://www.blacknegative.com/contact/",
+      "render_state": "insufficient_visible_content",
+      "metrics": {
+        "document_width": 800,
+        "viewport_width": 390,
+        "body_background": "rgb(1, 1, 1)",
+        "html_background": "rgb(1, 1, 1)",
+        "body_font": "Helvetica, Arial, serif",
+        "heading_geometry": [],
+        "navigation_regions": 0,
+        "visible_buttons": 0,
+        "visible_inputs": 0,
+        "canvas_count": 0,
+        "video_count": 0
+      },
+      "screenshot_sha256": "5e83c5c41fef907be5da378027babd3efd0589931c491bf7ef14eb5c6024f683",
+      "status": "render_incomplete"
+    },
+    {
+      "source_id": "6aaf81f3c82f2288",
+      "url": "http://www.blacknegative.com/contact/",
+      "family": "external.contact",
+      "viewport": {
+        "width": 1440,
+        "height": 1000,
+        "device_scale_factor": 1
+      },
+      "observed_at": "2026-11-23T08:20:41.234Z",
+      "interaction_inspection": "not_run",
+      "source_screenshots_redistributed": false,
+      "http_status": 200,
+      "final_url": "http://www.blacknegative.com/contact/",
+      "render_state": "insufficient_visible_content",
+      "metrics": {
+        "document_width": 1440,
+        "viewport_width": 1440,
+        "body_background": "rgb(1, 1, 1)",
+        "html_background": "rgb(1, 1, 1)",
+        "body_font": "Helvetica, Arial, serif",
+        "heading_geometry": [],
+        "navigation_regions": 0,
+        "visible_buttons": 0,
+        "visible_inputs": 0,
+        "canvas_count": 0,
+        "video_count": 0
+      },
+      "screenshot_sha256": "83af5cf489a2af0418465c7b98fd17ddfa868d507bd4ea0bcf923daa450d87a9",
+      "status": "render_incomplete"
+    },
+    {
+      "source_id": "59e318193c8ecfc5",
+      "url": "http://www.blacknegative.com/news/",
+      "family": "external.article",
+      "viewport": {
+        "width": 390,
+        "height": 1000,
+        "device_scale_factor": 1
+      },
+      "observed_at": "2026-11-23T08:20:45.947Z",
+      "interaction_inspection": "not_run",
+      "source_screenshots_redistributed": false,
+      "http_status": 200,
+      "final_url": "http://www.blacknegative.com/news/",
+      "render_state": "insufficient_visible_content",
+      "metrics": {
+        "document_width": 800,
+        "viewport_width": 390,
+        "body_background": "rgb(1, 1, 1)",
+        "html_background": "rgb(1, 1, 1)",
+        "body_font": "Helvetica, Arial, serif",
+        "heading_geometry": [],
+        "navigation_regions": 0,
+        "visible_buttons": 0,
+        "visible_inputs": 0,
+        "canvas_count": 0,
+        "video_count": 0
+      },
+      "screenshot_sha256": "5e83c5c41fef907be5da378027babd3efd0589931c491bf7ef14eb5c6024f683",
+      "status": "render_incomplete"
+    },
+    {
+      "source_id": "59e318193c8ecfc5",
+      "url": "http://www.blacknegative.com/news/",
+      "family": "external.article",
+      "viewport": {
+        "width": 1440,
+        "height": 1000,
+        "device_scale_factor": 1
+      },
+      "observed_at": "2026-11-23T08:20:50.671Z",
+      "interaction_inspection": "not_run",
+      "source_screenshots_redistributed": false,
+      "http_status": 200,
+      "final_url": "http://www.blacknegative.com/news/",
+      "render_state": "insufficient_visible_content",
+      "metrics": {
+        "document_width": 1440,
+        "viewport_width": 1440,
+        "body_background": "rgb(1, 1, 1)",
+        "html_background": "rgb(1, 1, 1)",
+        "body_font": "Helvetica, Arial, serif",
+        "heading_geometry": [],
+        "navigation_regions": 0,
+        "visible_buttons": 0,
+        "visible_inputs": 0,
+        "canvas_count": 0,
+        "video_count": 0
+      },
+      "screenshot_sha256": "83af5cf489a2af0418465c7b98fd17ddfa868d507bd4ea0bcf923daa450d87a9",
+      "status": "render_incomplete"
+    },
+    {
+      "source_id": "485a2254dfc9f37d",
+      "url": "https://a24.raviklaassens.com/404",
+      "family": "external.not-found",
+      "viewport": {
+        "width": 390,
+        "height": 1000,
+        "device_scale_factor": 1
+      },
+      "observed_at": "2026-11-23T08:20:55.358Z",
+      "interaction_inspection": "not_run",
+      "source_screenshots_redistributed": false,
+      "http_status": 200,
+      "final_url": "https://a24.raviklaassens.com/404",
+      "render_state": "visible_content",
+      "metrics": {
+        "document_width": 390,
+        "viewport_width": 390,
+        "body_background": "rgb(242, 242, 242)",
+        "html_background": "rgba(0, 0, 0, 0)",
+        "body_font": "Ppneuemontreal, Arial, sans-serif",
+        "heading_geometry": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 390,
+            "height": 1000,
+            "font_family": "Ppeiko, Arial, sans-serif",
+            "font_size": "35.8246px",
+            "font_weight": "400",
+            "line_height": "35.8246px",
+            "color": "rgb(0, 0, 0)"
+          }
+        ],
+        "navigation_regions": 1,
+        "visible_buttons": 0,
+        "visible_inputs": 0,
+        "canvas_count": 1,
+        "video_count": 0
+      },
+      "screenshot_sha256": "faf166c847b689280c516e44065fbad215a5566d8c549dd671172d2f1458f17d",
+      "status": "rendered_observed"
+    },
+    {
+      "source_id": "485a2254dfc9f37d",
+      "url": "https://a24.raviklaassens.com/404",
+      "family": "external.not-found",
+      "viewport": {
+        "width": 1440,
+        "height": 1000,
+        "device_scale_factor": 1
+      },
+      "observed_at": "2026-11-23T08:20:59.706Z",
+      "interaction_inspection": "not_run",
+      "source_screenshots_redistributed": false,
+      "http_status": 200,
+      "final_url": "https://a24.raviklaassens.com/404",
+      "render_state": "visible_content",
+      "metrics": {
+        "document_width": 1440,
+        "viewport_width": 1440,
+        "body_background": "rgb(242, 242, 242)",
+        "html_background": "rgba(0, 0, 0, 0)",
+        "body_font": "Ppneuemontreal, Arial, sans-serif",
+        "heading_geometry": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1440,
+            "height": 1000,
+            "font_family": "Ppeiko, Arial, sans-serif",
+            "font_size": "72px",
+            "font_weight": "400",
+            "line_height": "72px",
+            "color": "rgb(0, 0, 0)"
+          }
+        ],
+        "navigation_regions": 1,
+        "visible_buttons": 0,
+        "visible_inputs": 0,
+        "canvas_count": 1,
+        "video_count": 0
+      },
+      "screenshot_sha256": "f5703289acbaa45fe5015477e13763af8271d4fd573e67140f632f2016eb5295",
+      "status": "rendered_observed"
+    },
+    {
+      "source_id": "987049facb4458b5",
+      "url": "https://aim.obys.agency/about",
+      "family": "external.about",
+      "viewport": {
+        "width": 390,
+        "height": 1000,
+        "device_scale_factor": 1
+      },
+      "observed_at": "2026-11-23T08:21:03.645Z",
+      "interaction_inspection": "not_run",
+      "source_screenshots_redistributed": false,
+      "http_status": 403,
+      "final_url": "https://aim.obys.agency/about",
+      "status": "render_blocked",
+      "error": "Browser HTTP response 403"
+    },
+    {
+      "source_id": "987049facb4458b5",
+      "url": "https://aim.obys.agency/about",
+      "family": "external.about",
+      "viewport": {
+        "width": 1440,
+        "height": 1000,
+        "device_scale_factor": 1
+      },
+      "observed_at": "2026-11-23T08:21:06.165Z",
+      "interaction_inspection": "not_run",
+      "source_screenshots_redistributed": false,
+      "http_status": 403,
+      "final_url": "https://aim.obys.agency/about",
+      "status": "render_blocked",
+      "error": "Browser HTTP response 403"
+    },
+    {
+      "source_id": "f28fe19f38633ce9",
+      "url": "https://alitwotimes.com/work/amazon-the-biggest-sale-of-the-year/",
+      "family": "external.project",
+      "viewport": {
+        "width": 390,
+        "height": 1000,
+        "device_scale_factor": 1
+      },
+      "observed_at": "2026-11-23T08:21:08.169Z",
+      "interaction_inspection": "not_run",
+      "source_screenshots_redistributed": false,
+      "http_status": 200,
+      "final_url": "https://alitwotimes.com/work/amazon-the-biggest-sale-of-the-year/",
+      "render_state": "visible_content",
+      "metrics": {
+        "document_width": 390,
+        "viewport_width": 390,
+        "body_background": "rgba(0, 0, 0, 0)",
+        "html_background": "rgba(0, 0, 0, 0)",
+        "body_font": "\"Monument Grotesk\"",
+        "heading_geometry": [
+          {
+            "x": 53,
+            "y": 1122,
+            "width": 140,
+            "height": 75,
+            "font_family": "\"Monument Grotesk\"",
+            "font_size": "27.0816px",
+            "font_weight": "500",
+            "line_height": "24.9171px",
+            "color": "rgb(252, 246, 244)"
+          }
+        ],
+        "navigation_regions": 1,
+        "visible_buttons": 1,
+        "visible_inputs": 1,
+        "canvas_count": 0,
+        "video_count": 1
+      },
+      "screenshot_sha256": "c3ee858becde7a6dca7c54c6b1b14ddd2d6555c4f4c458d5cd45530b63e191ce",
+      "status": "rendered_observed"
+    },
+    {
+      "source_id": "f28fe19f38633ce9",
+      "url": "https://alitwotimes.com/work/amazon-the-biggest-sale-of-the-year/",
+      "family": "external.project",
+      "viewport": {
+        "width": 1440,
+        "height": 1000,
+        "device_scale_factor": 1
+      },
+      "observed_at": "2026-11-23T08:21:11.806Z",
+      "interaction_inspection": "not_run",
+      "source_screenshots_redistributed": false,
+      "http_status": 200,
+      "final_url": "https://alitwotimes.com/work/amazon-the-biggest-sale-of-the-year/",
+      "render_state": "visible_content",
+      "metrics": {
+        "document_width": 1440,
+        "viewport_width": 1440,
+        "body_background": "rgba(0, 0, 0, 0)",
+        "html_background": "rgba(0, 0, 0, 0)",
+        "body_font": "\"Monument Grotesk\"",
+        "heading_geometry": [
+          {
+            "x": 197,
+            "y": 1240,
+            "width": 517,
+            "height": 43,
+            "font_family": "\"Monument Grotesk\"",
+            "font_size": "47.5056px",
+            "font_weight": "500",
+            "line_height": "42.9984px",
+            "color": "rgb(252, 246, 244)"
+          }
+        ],
+        "navigation_regions": 1,
+        "visible_buttons": 1,
+        "visible_inputs": 1,
+        "canvas_count": 0,
+        "video_count": 1
+      },
+      "screenshot_sha256": "1e1e4a62d7349b943f9fe84c28e75826d60403d67fb800352c40e104fa5048bd",
+      "status": "rendered_observed"
+    },
+    {
+      "source_id": "3f69150e5ff0d48e",
+      "url": "https://www.agrumeafarm.it/en/privacy",
+      "family": "external.legal",
+      "viewport": {
+        "width": 390,
+        "height": 1000,
+        "device_scale_factor": 1
+      },
+      "observed_at": "2026-11-23T08:21:15.836Z",
+      "interaction_inspection": "not_run",
+      "source_screenshots_redistributed": false,
+      "http_status": 200,
+      "final_url": "https://www.agrumeafarm.it/en/privacy",
+      "render_state": "visible_content",
+      "metrics": {
+        "document_width": 390,
+        "viewport_width": 390,
+        "body_background": "rgb(253, 243, 235)",
+        "html_background": "rgba(0, 0, 0, 0)",
+        "body_font": "ivystyle-sans, \"Avenir Next\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+        "heading_geometry": [
+          {
+            "x": 24,
+            "y": 112,
+            "width": 342,
+            "height": 24,
+            "font_family": "ivymode, \"Iowan Old Style\", \"Palatino Linotype\", \"Book Antiqua\", Palatino, serif",
+            "font_size": "22.134px",
+            "font_weight": "400",
+            "line_height": "24.3474px",
+            "color": "rgb(118, 37, 48)"
+          },
+          {
+            "x": 24,
+            "y": 203,
+            "width": 342,
+            "height": 23,
+            "font_family": "ivymode, \"Iowan Old Style\", \"Palatino Linotype\", \"Book Antiqua\", Palatino, serif",
+            "font_size": "18.0035px",
+            "font_weight": "400",
+            "line_height": "22.5044px",
+            "color": "rgb(118, 37, 48)"
+          },
+          {
+            "x": 24,
+            "y": 468,
+            "width": 342,
+            "height": 23,
+            "font_family": "ivymode, \"Iowan Old Style\", \"Palatino Linotype\", \"Book Antiqua\", Palatino, serif",
+            "font_size": "18.0035px",
+            "font_weight": "400",
+            "line_height": "22.5044px",
+            "color": "rgb(118, 37, 48)"
+          },
+          {
+            "x": 24,
+            "y": 876,
+            "width": 342,
+            "height": 23,
+            "font_family": "ivymode, \"Iowan Old Style\", \"Palatino Linotype\", \"Book Antiqua\", Palatino, serif",
+            "font_size": "18.0035px",
+            "font_weight": "400",
+            "line_height": "22.5044px",
+            "color": "rgb(118, 37, 48)"
+          },
+          {
+            "x": 24,
+            "y": 1352,
+            "width": 342,
+            "height": 23,
+            "font_family": "ivymode, \"Iowan Old Style\", \"Palatino Linotype\", \"Book Antiqua\", Palatino, serif",
+            "font_size": "18.0035px",
+            "font_weight": "400",
+            "line_height": "22.5044px",
+            "color": "rgb(118, 37, 48)"
+          },
+          {
+            "x": 24,
+            "y": 1578,
+            "width": 342,
+            "height": 23,
+            "font_family": "ivymode, \"Iowan Old Style\", \"Palatino Linotype\", \"Book Antiqua\", Palatino, serif",
+            "font_size": "18.0035px",
+            "font_weight": "400",
+            "line_height": "22.5044px",
+            "color": "rgb(118, 37, 48)"
+          }
+        ],
+        "navigation_regions": 3,
+        "visible_buttons": 2,
+        "visible_inputs": 0,
+        "canvas_count": 0,
+        "video_count": 0
+      },
+      "screenshot_sha256": "73d361f9050f201fd3f4279bf326ae0548c0137f698453489acf96c41cd78a79",
+      "status": "rendered_observed"
+    },
+    {
+      "source_id": "3f69150e5ff0d48e",
+      "url": "https://www.agrumeafarm.it/en/privacy",
+      "family": "external.legal",
+      "viewport": {
+        "width": 1440,
+        "height": 1000,
+        "device_scale_factor": 1
+      },
+      "observed_at": "2026-11-23T08:21:19.303Z",
+      "interaction_inspection": "not_run",
+      "source_screenshots_redistributed": false,
+      "http_status": 200,
+      "final_url": "https://www.agrumeafarm.it/en/privacy",
+      "render_state": "visible_content",
+      "metrics": {
+        "document_width": 1440,
+        "viewport_width": 1440,
+        "body_background": "rgb(253, 243, 235)",
+        "html_background": "rgba(0, 0, 0, 0)",
+        "body_font": "ivystyle-sans, \"Avenir Next\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+        "heading_geometry": [
+          {
+            "x": 352,
+            "y": 192,
+            "width": 736,
+            "height": 35,
+            "font_family": "ivymode, \"Iowan Old Style\", \"Palatino Linotype\", \"Book Antiqua\", Palatino, serif",
+            "font_size": "32px",
+            "font_weight": "400",
+            "line_height": "35.2px",
+            "color": "rgb(118, 37, 48)"
+          },
+          {
+            "x": 352,
+            "y": 309,
+            "width": 736,
+            "height": 25,
+            "font_family": "ivymode, \"Iowan Old Style\", \"Palatino Linotype\", \"Book Antiqua\", Palatino, serif",
+            "font_size": "19.736px",
+            "font_weight": "400",
+            "line_height": "24.67px",
+            "color": "rgb(118, 37, 48)"
+          },
+          {
+            "x": 352,
+            "y": 516,
+            "width": 736,
+            "height": 25,
+            "font_family": "ivymode, \"Iowan Old Style\", \"Palatino Linotype\", \"Book Antiqua\", Palatino, serif",
+            "font_size": "19.736px",
+            "font_weight": "400",
+            "line_height": "24.67px",
+            "color": "rgb(118, 37, 48)"
+          },
+          {
+            "x": 352,
+            "y": 789,
+            "width": 736,
+            "height": 25,
+            "font_family": "ivymode, \"Iowan Old Style\", \"Palatino Linotype\", \"Book Antiqua\", Palatino, serif",
+            "font_size": "19.736px",
+            "font_weight": "400",
+            "line_height": "24.67px",
+            "color": "rgb(118, 37, 48)"
+          },
+          {
+            "x": 352,
+            "y": 1214,
+            "width": 736,
+            "height": 25,
+            "font_family": "ivymode, \"Iowan Old Style\", \"Palatino Linotype\", \"Book Antiqua\", Palatino, serif",
+            "font_size": "19.736px",
+            "font_weight": "400",
+            "line_height": "24.67px",
+            "color": "rgb(118, 37, 48)"
+          },
+          {
+            "x": 352,
+            "y": 1381,
+            "width": 736,
+            "height": 25,
+            "font_family": "ivymode, \"Iowan Old Style\", \"Palatino Linotype\", \"Book Antiqua\", Palatino, serif",
+            "font_size": "19.736px",
+            "font_weight": "400",
+            "line_height": "24.67px",
+            "color": "rgb(118, 37, 48)"
+          }
+        ],
+        "navigation_regions": 3,
+        "visible_buttons": 2,
+        "visible_inputs": 0,
+        "canvas_count": 0,
+        "video_count": 0
+      },
+      "screenshot_sha256": "20d81a4f94412e4d9251c91ca2ddc6951ae1ce3945751426520a5c92c45288fa",
+      "status": "rendered_observed"
+    },
+    {
+      "source_id": "3bb690a206a51974",
+      "url": "https://www.awwwards.com/",
+      "family": "main.home",
+      "viewport": {
+        "width": 390,
+        "height": 1000,
+        "device_scale_factor": 1
+      },
+      "observed_at": "2026-11-23T08:21:22.797Z",
+      "interaction_inspection": "not_run",
+      "source_screenshots_redistributed": false,
+      "http_status": 200,
+      "final_url": "https://www.awwwards.com/",
+      "render_state": "visible_content",
+      "metrics": {
+        "document_width": 390,
+        "viewport_width": 390,
+        "body_background": "rgb(248, 248, 248)",
+        "html_background": "rgba(0, 0, 0, 0)",
+        "body_font": "\"Inter Tight\"",
+        "heading_geometry": [
+          {
+            "x": 16,
+            "y": 74,
+            "width": 358,
+            "height": 29,
+            "font_family": "\"Inter Tight\"",
+            "font_size": "14px",
+            "font_weight": "400",
+            "line_height": "28px",
+            "color": "rgb(34, 34, 34)"
+          },
+          {
+            "x": 16,
+            "y": 123,
+            "width": 358,
+            "height": 84,
+            "font_family": "\"Inter Tight\"",
+            "font_size": "42px",
+            "font_weight": "600",
+            "line_height": "42px",
+            "color": "rgb(34, 34, 34)"
+          },
+          {
+            "x": 16,
+            "y": 604,
+            "width": 358,
+            "height": 28,
+            "font_family": "\"Inter Tight\"",
+            "font_size": "14px",
+            "font_weight": "400",
+            "line_height": "28px",
+            "color": "rgb(34, 34, 34)"
+          },
+          {
+            "x": 16,
+            "y": 1664,
+            "width": 358,
+            "height": 28,
+            "font_family": "\"Inter Tight\"",
+            "font_size": "14px",
+            "font_weight": "400",
+            "line_height": "28px",
+            "color": "rgb(34, 34, 34)"
+          },
+          {
+            "x": 16,
+            "y": 4185,
+            "width": 358,
+            "height": 28,
+            "font_family": "\"Inter Tight\"",
+            "font_size": "14px",
+            "font_weight": "400",
+            "line_height": "28px",
+            "color": "rgb(34, 34, 34)"
+          },
+          {
+            "x": 16,
+            "y": 5376,
+            "width": 249,
+            "height": 28,
+            "font_family": "\"Inter Tight\"",
+            "font_size": "14px",
+            "font_weight": "400",
+            "line_height": "28px",
+            "color": "rgb(34, 34, 34)"
+          }
+        ],
+        "navigation_regions": 2,
+        "visible_buttons": 1,
+        "visible_inputs": 1,
+        "canvas_count": 0,
+        "video_count": 0
+      },
+      "screenshot_sha256": "39c53ea598f30cd1d1aa4ecc57033aea7e46977513928c65b3ef1cd881e9b4cd",
+      "status": "rendered_observed"
+    },
+    {
+      "source_id": "3bb690a206a51974",
+      "url": "https://www.awwwards.com/",
+      "family": "main.home",
+      "viewport": {
+        "width": 1440,
+        "height": 1000,
+        "device_scale_factor": 1
+      },
+      "observed_at": "2026-11-23T08:21:29.131Z",
+      "interaction_inspection": "not_run",
+      "source_screenshots_redistributed": false,
+      "http_status": 200,
+      "final_url": "https://www.awwwards.com/",
+      "render_state": "visible_content",
+      "metrics": {
+        "document_width": 1440,
+        "viewport_width": 1440,
+        "body_background": "rgb(248, 248, 248)",
+        "html_background": "rgba(0, 0, 0, 0)",
+        "body_font": "\"Inter Tight\"",
+        "heading_geometry": [
+          {
+            "x": 52,
+            "y": 105,
+            "width": 1336,
+            "height": 29,
+            "font_family": "\"Inter Tight\"",
+            "font_size": "14px",
+            "font_weight": "400",
+            "line_height": "28px",
+            "color": "rgb(34, 34, 34)"
+          },
+          {
+            "x": 176,
+            "y": 158,
+            "width": 1089,
+            "height": 127,
+            "font_family": "\"Inter Tight\"",
+            "font_size": "126.732px",
+            "font_weight": "600",
+            "line_height": "126.732px",
+            "color": "rgb(34, 34, 34)"
+          },
+          {
+            "x": 52,
+            "y": 1609,
+            "width": 1336,
+            "height": 28,
+            "font_family": "\"Inter Tight\"",
+            "font_size": "14px",
+            "font_weight": "400",
+            "line_height": "28px",
+            "color": "rgb(34, 34, 34)"
+          },
+          {
+            "x": 52,
+            "y": 2782,
+            "width": 1336,
+            "height": 28,
+            "font_family": "\"Inter Tight\"",
+            "font_size": "14px",
+            "font_weight": "400",
+            "line_height": "28px",
+            "color": "rgb(34, 34, 34)"
+          },
+          {
+            "x": 52,
+            "y": 5005,
+            "width": 1336,
+            "height": 28,
+            "font_family": "\"Inter Tight\"",
+            "font_size": "14px",
+            "font_weight": "400",
+            "line_height": "28px",
+            "color": "rgb(34, 34, 34)"
+          },
+          {
+            "x": 52,
+            "y": 6148,
+            "width": 401,
+            "height": 28,
+            "font_family": "\"Inter Tight\"",
+            "font_size": "14px",
+            "font_weight": "400",
+            "line_height": "28px",
+            "color": "rgb(34, 34, 34)"
+          }
+        ],
+        "navigation_regions": 2,
+        "visible_buttons": 1,
+        "visible_inputs": 1,
+        "canvas_count": 0,
+        "video_count": 0
+      },
+      "screenshot_sha256": "6a87ad96a486432fb53a7fda10e313021b0b75be587b0e2ab170ecd017495f58",
+      "status": "rendered_observed"
+    },
+    {
+      "source_id": "48ce006657cc7816",
+      "url": "https://www.awwwards.com/30-great-websites-with-parallax-scrolling.html",
+      "family": "main.article",
+      "viewport": {
+        "width": 390,
+        "height": 1000,
+        "device_scale_factor": 1
+      },
+      "observed_at": "2026-11-23T08:21:37.060Z",
+      "interaction_inspection": "not_run",
+      "source_screenshots_redistributed": false,
+      "http_status": 200,
+      "final_url": "https://www.awwwards.com/30-great-websites-with-parallax-scrolling.html",
+      "render_state": "visible_content",
+      "metrics": {
+        "document_width": 390,
+        "viewport_width": 390,
+        "body_background": "rgb(248, 248, 248)",
+        "html_background": "rgba(0, 0, 0, 0)",
+        "body_font": "\"Inter Tight\"",
+        "heading_geometry": [
+          {
+            "x": 16,
+            "y": 164,
+            "width": 358,
+            "height": 28,
+            "font_family": "\"Inter Tight\"",
+            "font_size": "14px",
+            "font_weight": "400",
+            "line_height": "28px",
+            "color": "rgb(34, 34, 34)"
+          },
+          {
+            "x": 16,
+            "y": 212,
+            "width": 358,
+            "height": 108,
+            "font_family": "\"Inter Tight\"",
+            "font_size": "36px",
+            "font_weight": "600",
+            "line_height": "36px",
+            "color": "rgb(34, 34, 34)"
+          },
+          {
+            "x": 16,
+            "y": 626,
+            "width": 358,
+            "height": 346,
+            "font_family": "\"Inter Tight\"",
+            "font_size": "24px",
+            "font_weight": "400",
+            "line_height": "28.8px",
+            "color": "rgb(34, 34, 34)"
+          },
+          {
+            "x": 16,
+            "y": 1198,
+            "width": 358,
+            "height": 86,
+            "font_family": "\"Inter Tight\"",
+            "font_size": "24px",
+            "font_weight": "400",
+            "line_height": "28.8px",
+            "color": "rgb(34, 34, 34)"
+          }
+        ],
+        "navigation_regions": 2,
+        "visible_buttons": 1,
+        "visible_inputs": 1,
+        "canvas_count": 0,
+        "video_count": 28
+      },
+      "screenshot_sha256": "b4d8749f7eec883f5be1daf1f404ef626b62273d802144932be70f77555cd1a7",
+      "status": "rendered_observed"
+    },
+    {
+      "source_id": "48ce006657cc7816",
+      "url": "https://www.awwwards.com/30-great-websites-with-parallax-scrolling.html",
+      "family": "main.article",
+      "viewport": {
+        "width": 1440,
+        "height": 1000,
+        "device_scale_factor": 1
+      },
+      "observed_at": "2026-11-23T08:21:47.224Z",
+      "interaction_inspection": "not_run",
+      "source_screenshots_redistributed": false,
+      "http_status": 200,
+      "final_url": "https://www.awwwards.com/30-great-websites-with-parallax-scrolling.html",
+      "render_state": "visible_content",
+      "metrics": {
+        "document_width": 1440,
+        "viewport_width": 1440,
+        "body_background": "rgb(248, 248, 248)",
+        "html_background": "rgba(0, 0, 0, 0)",
+        "body_font": "\"Inter Tight\"",
+        "heading_geometry": [
+          {
+            "x": 52,
+            "y": 218,
+            "width": 1336,
+            "height": 28,
+            "font_family": "\"Inter Tight\"",
+            "font_size": "14px",
+            "font_weight": "400",
+            "line_height": "28px",
+            "color": "rgb(34, 34, 34)"
+          },
+          {
+            "x": 52,
+            "y": 270,
+            "width": 1336,
+            "height": 149,
+            "font_family": "\"Inter Tight\"",
+            "font_size": "74.3944px",
+            "font_weight": "600",
+            "line_height": "74.3944px",
+            "color": "rgb(34, 34, 34)"
+          },
+          {
+            "x": 255,
+            "y": 1189,
+            "width": 931,
+            "height": 396,
+            "font_family": "\"Inter Tight\"",
+            "font_size": "41.2113px",
+            "font_weight": "400",
+            "line_height": "49.4535px",
+            "color": "rgb(34, 34, 34)"
+          },
+          {
+            "x": 255,
+            "y": 1744,
+            "width": 931,
+            "height": 148,
+            "font_family": "\"Inter Tight\"",
+            "font_size": "41.2113px",
+            "font_weight": "400",
+            "line_height": "49.4535px",
+            "color": "rgb(34, 34, 34)"
+          }
+        ],
+        "navigation_regions": 3,
+        "visible_buttons": 1,
+        "visible_inputs": 1,
+        "canvas_count": 0,
+        "video_count": 28
+      },
+      "screenshot_sha256": "971a332db462349d1d4ee23099be0ab9210a0b2d75a151b4fbcbca946361e8cf",
+      "status": "rendered_observed"
+    },
+    {
+      "source_id": "fc224df3cdc654d7",
+      "url": "https://www.awwwards.com/Mixallo/collections/pastel-colors/",
+      "family": "main.collection-detail",
+      "viewport": {
+        "width": 390,
+        "height": 1000,
+        "device_scale_factor": 1
+      },
+      "observed_at": "2026-11-23T08:21:57.485Z",
+      "interaction_inspection": "not_run",
+      "source_screenshots_redistributed": false,
+      "http_status": 200,
+      "final_url": "https://www.awwwards.com/Mixallo/collections/pastel-colors/",
+      "render_state": "visible_content",
+      "metrics": {
+        "document_width": 391,
+        "viewport_width": 390,
+        "body_background": "rgb(248, 248, 248)",
+        "html_background": "rgba(0, 0, 0, 0)",
+        "body_font": "\"Inter Tight\"",
+        "heading_geometry": [
+          {
+            "x": 16,
+            "y": 258,
+            "width": 358,
+            "height": 42,
+            "font_family": "\"Inter Tight\"",
+            "font_size": "42px",
+            "font_weight": "600",
+            "line_height": "42px",
+            "color": "rgb(34, 34, 34)"
+          }
+        ],
+        "navigation_regions": 2,
+        "visible_buttons": 1,
+        "visible_inputs": 1,
+        "canvas_count": 0,
+        "video_count": 0
+      },
+      "screenshot_sha256": "b7b082d147c87751f70df4b02b210e5e69cf8145e320e5e774fd44770844c622",
+      "status": "rendered_observed"
+    },
+    {
+      "source_id": "fc224df3cdc654d7",
+      "url": "https://www.awwwards.com/Mixallo/collections/pastel-colors/",
+      "family": "main.collection-detail",
+      "viewport": {
+        "width": 1440,
+        "height": 1000,
+        "device_scale_factor": 1
+      },
+      "observed_at": "2026-11-23T08:22:06.485Z",
+      "interaction_inspection": "not_run",
+      "source_screenshots_redistributed": false,
+      "http_status": 200,
+      "final_url": "https://www.awwwards.com/Mixallo/collections/pastel-colors/",
+      "render_state": "visible_content",
+      "metrics": {
+        "document_width": 1455,
+        "viewport_width": 1440,
+        "body_background": "rgb(248, 248, 248)",
+        "html_background": "rgba(0, 0, 0, 0)",
+        "body_font": "\"Inter Tight\"",
+        "heading_geometry": [
+          {
+            "x": 235,
+            "y": 325,
+            "width": 969,
+            "height": 127,
+            "font_family": "\"Inter Tight\"",
+            "font_size": "126.732px",
+            "font_weight": "600",
+            "line_height": "126.732px",
+            "color": "rgb(34, 34, 34)"
+          }
+        ],
+        "navigation_regions": 2,
+        "visible_buttons": 1,
+        "visible_inputs": 1,
+        "canvas_count": 0,
+        "video_count": 0
+      },
+      "screenshot_sha256": "a6c9810678854627f94ceefd76fe7703ea998914b02d5ed7cd5e9ec6bc3cc159",
+      "status": "rendered_observed"
+    },
+    {
+      "source_id": "50b721e0337aa156",
+      "url": "https://www.awwwards.com/about-us/",
+      "family": "main.about",
+      "viewport": {
+        "width": 390,
+        "height": 1000,
+        "device_scale_factor": 1
+      },
+      "observed_at": "2026-11-23T08:22:15.649Z",
+      "interaction_inspection": "not_run",
+      "source_screenshots_redistributed": false,
+      "http_status": 200,
+      "final_url": "https://www.awwwards.com/about-us/",
+      "render_state": "visible_content",
+      "metrics": {
+        "document_width": 390,
+        "viewport_width": 390,
+        "body_background": "rgb(248, 248, 248)",
+        "html_background": "rgba(0, 0, 0, 0)",
+        "body_font": "\"Inter Tight\"",
+        "heading_geometry": [
+          {
+            "x": 16,
+            "y": 239,
+            "width": 358,
+            "height": 84,
+            "font_family": "\"Inter Tight\"",
+            "font_size": "42px",
+            "font_weight": "600",
+            "line_height": "42px",
+            "color": "rgb(34, 34, 34)"
+          },
+          {
+            "x": 16,
+            "y": 695,
+            "width": 358,
+            "height": 114,
+            "font_family": "\"Inter Tight\"",
+            "font_size": "22px",
+            "font_weight": "300",
+            "line_height": "28.6px",
+            "color": "rgb(34, 34, 34)"
+          },
+          {
+            "x": 16,
+            "y": 832,
+            "width": 358,
+            "height": 200,
+            "font_family": "\"Inter Tight\"",
+            "font_size": "22px",
+            "font_weight": "300",
+            "line_height": "28.6px",
+            "color": "rgb(34, 34, 34)"
+          }
+        ],
+        "navigation_regions": 2,
+        "visible_buttons": 1,
+        "visible_inputs": 1,
+        "canvas_count": 0,
+        "video_count": 0
+      },
+      "screenshot_sha256": "3d83c2082d2dd40ac9000d5f6264f81fbf3aab57e6d6df15aabffa0831ba1318",
+      "status": "rendered_observed"
+    },
+    {
+      "source_id": "50b721e0337aa156",
+      "url": "https://www.awwwards.com/about-us/",
+      "family": "main.about",
+      "viewport": {
+        "width": 1440,
+        "height": 1000,
+        "device_scale_factor": 1
+      },
+      "observed_at": "2026-11-23T08:22:22.035Z",
+      "interaction_inspection": "not_run",
+      "source_screenshots_redistributed": false,
+      "http_status": 200,
+      "final_url": "https://www.awwwards.com/about-us/",
+      "render_state": "visible_content",
+      "metrics": {
+        "document_width": 1440,
+        "viewport_width": 1440,
+        "body_background": "rgb(248, 248, 248)",
+        "html_background": "rgba(0, 0, 0, 0)",
+        "body_font": "\"Inter Tight\"",
+        "heading_geometry": [
+          {
+            "x": 333,
+            "y": 245,
+            "width": 774,
+            "height": 253,
+            "font_family": "\"Inter Tight\"",
+            "font_size": "126.732px",
+            "font_weight": "600",
+            "line_height": "126.732px",
+            "color": "rgb(34, 34, 34)"
+          },
+          {
+            "x": 52,
+            "y": 1594,
+            "width": 1336,
+            "height": 99,
+            "font_family": "\"Inter Tight\"",
+            "font_size": "37.8873px",
+            "font_weight": "300",
+            "line_height": "49.2535px",
+            "color": "rgb(34, 34, 34)"
+          },
+          {
+            "x": 52,
+            "y": 1730,
+            "width": 1336,
+            "height": 148,
+            "font_family": "\"Inter Tight\"",
+            "font_size": "37.8873px",
+            "font_weight": "300",
+            "line_height": "49.2535px",
+            "color": "rgb(34, 34, 34)"
+          }
+        ],
+        "navigation_regions": 2,
+        "visible_buttons": 1,
+        "visible_inputs": 1,
+        "canvas_count": 0,
+        "video_count": 0
+      },
+      "screenshot_sha256": "ffbc96e8eb74f83189ee7473c47928ec7539728fcafa237ef62b460e900ab0db",
+      "status": "rendered_observed"
+    },
+    {
+      "source_id": "b01a6ef67edb4051",
+      "url": "https://www.awwwards.com/academy/",
+      "family": "main.course-index",
+      "viewport": {
+        "width": 390,
+        "height": 1000,
+        "device_scale_factor": 1
+      },
+      "observed_at": "2026-11-23T08:22:28.366Z",
+      "interaction_inspection": "not_run",
+      "source_screenshots_redistributed": false,
+      "http_status": 200,
+      "final_url": "https://www.awwwards.com/academy/",
+      "render_state": "visible_content",
+      "metrics": {
+        "document_width": 390,
+        "viewport_width": 390,
+        "body_background": "rgb(248, 248, 248)",
+        "html_background": "rgba(0, 0, 0, 0)",
+        "body_font": "\"Inter Tight\"",
+        "heading_geometry": [
+          {
+            "x": 16,
+            "y": 228,
+            "width": 358,
+            "height": 28,
+            "font_family": "\"Inter Tight\"",
+            "font_size": "14px",
+            "font_weight": "400",
+            "line_height": "28px",
+            "color": "rgb(34, 34, 34)"
+          },
+          {
+            "x": 16,
+            "y": 276,
+            "width": 358,
+            "height": 36,
+            "font_family": "\"Inter Tight\"",
+            "font_size": "36px",
+            "font_weight": "600",
+            "line_height": "36px",
+            "color": "rgb(34, 34, 34)"
+          },
+          {
+            "x": 16,
+            "y": 463,
+            "width": 358,
+            "height": 28,
+            "font_family": "\"Inter Tight\"",
+            "font_size": "14px",
+            "font_weight": "400",
+            "line_height": "28px",
+            "color": "rgb(34, 34, 34)"
+          },
+          {
+            "x": 16,
+            "y": 511,
+            "width": 358,
+            "height": 108,
+            "font_family": "\"Inter Tight\"",
+            "font_size": "36px",
+            "font_weight": "600",
+            "line_height": "36px",
+            "color": "rgb(34, 34, 34)"
+          }
+        ],
+        "navigation_regions": 3,
+        "visible_buttons": 1,
+        "visible_inputs": 1,
+        "canvas_count": 0,
+        "video_count": 0
+      },
+      "screenshot_sha256": "cfb808cb507180b329f2ac4b517b52ba29d6ea7f582db47661e931022396937a",
+      "status": "rendered_observed"
+    },
+    {
+      "source_id": "b01a6ef67edb4051",
+      "url": "https://www.awwwards.com/academy/",
+      "family": "main.course-index",
+      "viewport": {
+        "width": 1440,
+        "height": 1000,
+        "device_scale_factor": 1
+      },
+      "observed_at": "2026-11-23T08:22:38.409Z",
+      "interaction_inspection": "not_run",
+      "source_screenshots_redistributed": false,
+      "http_status": 200,
+      "final_url": "https://www.awwwards.com/academy/",
+      "render_state": "visible_content",
+      "metrics": {
+        "document_width": 1440,
+        "viewport_width": 1440,
+        "body_background": "rgb(248, 248, 248)",
+        "html_background": "rgba(0, 0, 0, 0)",
+        "body_font": "\"Inter Tight\"",
+        "heading_geometry": [
+          {
+            "x": 52,
+            "y": 219,
+            "width": 1336,
+            "height": 28,
+            "font_family": "\"Inter Tight\"",
+            "font_size": "14px",
+            "font_weight": "400",
+            "line_height": "28px",
+            "color": "rgb(34, 34, 34)"
+          },
+          {
+            "x": 52,
+            "y": 271,
+            "width": 1336,
+            "height": 74,
+            "font_family": "\"Inter Tight\"",
+            "font_size": "74.3944px",
+            "font_weight": "600",
+            "line_height": "74.3944px",
+            "color": "rgb(34, 34, 34)"
+          },
+          {
+            "x": 52,
+            "y": 1100,
+            "width": 1336,
+            "height": 28,
+            "font_family": "\"Inter Tight\"",
+            "font_size": "14px",
+            "font_weight": "400",
+            "line_height": "28px",
+            "color": "rgb(34, 34, 34)"
+          },
+          {
+            "x": 52,
+            "y": 1152,
+            "width": 1336,
+            "height": 149,
+            "font_family": "\"Inter Tight\"",
+            "font_size": "74.3944px",
+            "font_weight": "600",
+            "line_height": "74.3944px",
+            "color": "rgb(34, 34, 34)"
+          }
+        ],
+        "navigation_regions": 3,
+        "visible_buttons": 2,
+        "visible_inputs": 2,
+        "canvas_count": 0,
+        "video_count": 0
+      },
+      "screenshot_sha256": "ce7e90e55a69c74cf08eda1dd1ce75976cd95ac18661a02cc6833290cef52d32",
+      "status": "rendered_observed"
+    }
+  ]
+}

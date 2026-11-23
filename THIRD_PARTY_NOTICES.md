@@ -15,3 +15,5 @@ The root MIT license applies to the original skill instructions, scripts, demo c
 Detailed records: `package/v2/contracts/asset-register.json`, `package/v2/docs/dependency-licenses.json`, `package/docs/RIGHTS_AND_SOURCES.md`, `package/v2/docs/RIGHTS_AND_SOURCES_POLICY.md` and `package/v2/docs/SOURCES.md`.
 
 All bundled screenshots show original fictional demo interfaces. No Awwwards website assets are bundled. This independent project is not affiliated with or endorsed by Awwwards.
+
+The new `skills/awwwards-page-*` assets are original geometric blueprints. `research/live_pages` redistributes short metadata, structural/computed-style measurements and source links, not source-site HTML, screenshots or protected media. Observation does not grant a copying license.

@@ -1,0 +1,226 @@
+{
+  "schema_version": "3.0",
+  "id": "annual-awards",
+  "skill": "awwwards-page-annual-awards",
+  "title": "年度评选专题",
+  "kind": "portal",
+  "scope": "Awwwards main-site page family",
+  "source_families": [
+    "main.annual-awards"
+  ],
+  "goal": "让用户理解内容层级，并进入当前最重要的任务。",
+  "regions": [
+    "年度说明",
+    "评选阶段",
+    "类别",
+    "候选作品",
+    "评委",
+    "结果与时间表"
+  ],
+  "workflow": [
+    "把提名、投票、评审、揭晓各阶段明确建模。",
+    "每类奖项显示候选或正式获奖状态和来源。",
+    "倒计时使用明示时区；过期时进入结果或待公布状态。"
+  ],
+  "data_fields": [
+    "year",
+    "phase",
+    "categories",
+    "nominees",
+    "winners",
+    "milestones",
+    "timezone"
+  ],
+  "failure_recovery": "未知结果显示待公布；不以投票数猜官方结果。",
+  "motion_contract": "仪式性动效可跳过；倒计时变化不持续打扰读屏。",
+  "evidence_level": "http_dom",
+  "evidence_note": "Only recorded observations are facts. DOM structure does not prove visual composition, hidden state, source code, backend behavior or licenses. The runnable blueprint is an original recipe, not a source-site clone.",
+  "sources": [
+    {
+      "id": "2bac00757b987f9c",
+      "url": "https://www.awwwards.com/annual-awards/",
+      "family": "main.annual-awards",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T08:02:05.685310+00:00",
+      "source_sha256": "4809b3f1ef4ed1017909a934affce2051caaee6c03b8a6369babd185b834f008",
+      "structure": {
+        "headings": {},
+        "forms": 0,
+        "input_types": {},
+        "navigation_regions": 1,
+        "main_regions": 1,
+        "sections": 1,
+        "articles": 0,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 1,
+        "videos": 0,
+        "roles": {},
+        "anchor_count": 6
+      }
+    },
+    {
+      "id": "e9682eaa1252c5d3",
+      "url": "https://www.awwwards.com/annual-awards/about",
+      "family": "main.annual-awards",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T08:15:36.642908+00:00",
+      "source_sha256": "9c4e4f3bfa3a5424354e5e23bfa6bb354e93f7d974fa16ceb45e2ca50a955c16",
+      "structure": {
+        "headings": {
+          "h1": 1,
+          "h2": 2,
+          "h3": 2
+        },
+        "forms": 0,
+        "input_types": {},
+        "navigation_regions": 0,
+        "main_regions": 0,
+        "sections": 2,
+        "articles": 0,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 1,
+        "roles": {},
+        "anchor_count": 1
+      }
+    },
+    {
+      "id": "bceeeea01588130f",
+      "url": "https://www.awwwards.com/annual-awards/hall-of-fame",
+      "family": "main.annual-awards",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T08:15:36.674447+00:00",
+      "source_sha256": "c1eaae654ab717a52b3e0bfde7992113b9a094822632f088b1e112e8a60db858",
+      "structure": {
+        "headings": {
+          "h1": 1,
+          "h2": 1,
+          "h3": 2
+        },
+        "forms": 0,
+        "input_types": {},
+        "navigation_regions": 0,
+        "main_regions": 0,
+        "sections": 2,
+        "articles": 0,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 8,
+        "roles": {},
+        "anchor_count": 15
+      }
+    },
+    {
+      "id": "ea503c40b8a342a9",
+      "url": "https://www.awwwards.com/annual-awards/hall-of-fame/2020",
+      "family": "main.annual-awards",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T08:17:31.306403+00:00",
+      "source_sha256": "47ab0fe21d0bdfb58b531d5aed155a52a9ea80ea2f868c302f0f78fb1829095f",
+      "structure": {
+        "headings": {
+          "h1": 1,
+          "h2": 1,
+          "h3": 2
+        },
+        "forms": 0,
+        "input_types": {},
+        "navigation_regions": 0,
+        "main_regions": 0,
+        "sections": 2,
+        "articles": 0,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 8,
+        "roles": {},
+        "anchor_count": 16
+      }
+    },
+    {
+      "id": "80f2d4d94f6b039f",
+      "url": "https://www.awwwards.com/annual-awards/hall-of-fame/2021",
+      "family": "main.annual-awards",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T08:18:03.804118+00:00",
+      "source_sha256": "ab6360d5685828e6e362054031277049cc066fe0fa98798abb0c816620f97995",
+      "structure": {
+        "headings": {
+          "h1": 1,
+          "h2": 1,
+          "h3": 2
+        },
+        "forms": 0,
+        "input_types": {},
+        "navigation_regions": 0,
+        "main_regions": 0,
+        "sections": 2,
+        "articles": 0,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 9,
+        "roles": {},
+        "anchor_count": 16
+      }
+    },
+    {
+      "id": "6573cebea7ca0616",
+      "url": "https://www.awwwards.com/annual-awards/hall-of-fame/2022",
+      "family": "main.annual-awards",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T08:18:03.838918+00:00",
+      "source_sha256": "e591c8dbd6a0acc81c7be2aeb8aa923fc3e35c03163dd3038935ee8264f32843",
+      "structure": {
+        "headings": {
+          "h1": 1,
+          "h2": 1,
+          "h3": 2
+        },
+        "forms": 0,
+        "input_types": {},
+        "navigation_regions": 0,
+        "main_regions": 0,
+        "sections": 2,
+        "articles": 0,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 8,
+        "roles": {},
+        "anchor_count": 15
+      }
+    }
+  ],
+  "visual_metrics": [],
+  "source_coverage": "observed_examples",
+  "original_blueprint": true,
+  "business_mode": "local_preview",
+  "states": [
+    "default",
+    "loading",
+    "empty",
+    "error",
+    "success_preview",
+    "disabled",
+    "keyboard_focus",
+    "reduced_motion",
+    "narrow_view"
+  ],
+  "acceptance": [
+    "让用户理解内容层级，并进入当前最重要的任务。",
+    "未知结果显示待公布；不以投票数猜官方结果。",
+    "仪式性动效可跳过；倒计时变化不持续打扰读屏。",
+    "320、390、768、1440 宽度不出现整页横溢出；必要表格在独立区域滚动。",
+    "键盘可进入、操作、关闭对话框并返回触发点；错误不只靠颜色。",
+    "本地预览不得暗示真实支付、投稿、消息、账户或预约已生效。"
+  ],
+  "limitations": [
+    "Source interaction audit is not automatically performed",
+    "Source assets are not bundled",
+    "Real backend, production and physical-device acceptance are not included"
+  ]
+}

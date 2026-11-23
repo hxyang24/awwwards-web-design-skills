@@ -1,0 +1,282 @@
+{
+  "schema_version": "3.0",
+  "id": "external-home",
+  "skill": "awwwards-page-external-home",
+  "title": "获奖外站首页与品牌入口",
+  "kind": "portal",
+  "scope": "awarded external website inner page",
+  "source_families": [
+    "external.home"
+  ],
+  "goal": "让用户理解内容层级，并进入当前最重要的任务。",
+  "regions": [
+    "品牌身份",
+    "核心主张",
+    "主导航",
+    "内容分区",
+    "主要行动",
+    "联系"
+  ],
+  "workflow": [
+    "先记录原站当前状态和日期，不把历史获奖截图当作实时页面。",
+    "提取内容层级、网格、视觉节奏和主任务，使用授权或原创资产重建。",
+    "导航和主要行动先可用，再增加有明确回退的视觉增强。"
+  ],
+  "data_fields": [
+    "brand",
+    "primary_task",
+    "navigation",
+    "sections",
+    "licensed_assets",
+    "observations"
+  ],
+  "failure_recovery": "原站关停、改版或重定向时记录事实，不据旧资料声称完整复现。",
+  "motion_contract": "滚动、光标和 3D 增强必须有键盘、触屏与静态回退。",
+  "evidence_level": "rendered_geometry",
+  "evidence_note": "Only recorded observations are facts. DOM structure does not prove visual composition, hidden state, source code, backend behavior or licenses. The runnable blueprint is an original recipe, not a source-site clone.",
+  "sources": [
+    {
+      "id": "1e56626c0a2eb400",
+      "url": "http://www.because-recollection.com/",
+      "family": "external.home",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T08:04:59.667057+00:00",
+      "source_sha256": "3274618cd42fcb405ef9a266de61d66f06ba8e50a9cf204d7e7658b4234bc062",
+      "structure": {
+        "headings": {},
+        "forms": 0,
+        "input_types": {},
+        "navigation_regions": 0,
+        "main_regions": 0,
+        "sections": 0,
+        "articles": 0,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 0,
+        "roles": {},
+        "anchor_count": 5
+      }
+    },
+    {
+      "id": "dc4992187b05f55c",
+      "url": "http://www.blacknegative.com/",
+      "family": "external.home",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T08:05:13.599518+00:00",
+      "source_sha256": "3a543767a7e68f33aa71d1419fb23dd08e9e4f46426d7e6c7b41badf51145d8e",
+      "structure": {
+        "headings": {},
+        "forms": 0,
+        "input_types": {},
+        "navigation_regions": 0,
+        "main_regions": 0,
+        "sections": 0,
+        "articles": 0,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 0,
+        "roles": {},
+        "anchor_count": 17
+      }
+    },
+    {
+      "id": "6a1c34195f749a09",
+      "url": "https://a24.raviklaassens.com/",
+      "family": "external.home",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T08:03:50.201105+00:00",
+      "source_sha256": "a6976bec37981eb0f6a30b43d9f6e4c45daec5583d902824e42ac9f6a10fb8db",
+      "structure": {
+        "headings": {
+          "h2": 12,
+          "h1": 1
+        },
+        "forms": 0,
+        "input_types": {},
+        "navigation_regions": 1,
+        "main_regions": 1,
+        "sections": 1,
+        "articles": 0,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 0,
+        "roles": {
+          "list": 38,
+          "listitem": 110
+        },
+        "anchor_count": 32
+      }
+    },
+    {
+      "id": "f1a2bcc79e92badf",
+      "url": "https://accentboissons.com/",
+      "family": "external.home",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T08:03:56.329370+00:00",
+      "source_sha256": "03675b62d229a878705a4927de1e61c84fefa4b0f6c7750cfd6988517e49fe6c",
+      "structure": {
+        "headings": {
+          "h2": 11,
+          "h1": 1,
+          "h3": 4
+        },
+        "forms": 1,
+        "input_types": {
+          "number": 1
+        },
+        "navigation_regions": 0,
+        "main_regions": 1,
+        "sections": 6,
+        "articles": 4,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 1,
+        "videos": 1,
+        "roles": {
+          "listbox": 1
+        },
+        "anchor_count": 5
+      }
+    },
+    {
+      "id": "433180293c3d969b",
+      "url": "https://activetheory.net/",
+      "family": "external.home",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T08:04:00.435854+00:00",
+      "source_sha256": "e026e78b8db8823da1d2256fd7b011aa016b971d2bbd64e72e98f440f46626d5",
+      "structure": {
+        "headings": {},
+        "forms": 0,
+        "input_types": {},
+        "navigation_regions": 0,
+        "main_regions": 0,
+        "sections": 0,
+        "articles": 0,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 0,
+        "roles": {},
+        "anchor_count": 0
+      }
+    },
+    {
+      "id": "8aec7d303102589f",
+      "url": "https://adidaschile20.com/",
+      "family": "external.home",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T08:05:58.754132+00:00",
+      "source_sha256": "1ae426b88bf06d9270b897f51322739a2e385329a86288bde35de59b073b034a",
+      "structure": {
+        "headings": {},
+        "forms": 0,
+        "input_types": {},
+        "navigation_regions": 0,
+        "main_regions": 0,
+        "sections": 0,
+        "articles": 0,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 0,
+        "roles": {},
+        "anchor_count": 0
+      }
+    }
+  ],
+  "visual_metrics": [
+    {
+      "source_id": "1e56626c0a2eb400",
+      "url": "http://www.because-recollection.com/",
+      "family": "external.home",
+      "viewport": {
+        "width": 390,
+        "height": 1000,
+        "device_scale_factor": 1
+      },
+      "observed_at": "2026-11-23T08:20:27.283Z",
+      "interaction_inspection": "not_run",
+      "source_screenshots_redistributed": false,
+      "http_status": 200,
+      "final_url": "http://www.because-recollection.com/",
+      "render_state": "visible_content",
+      "metrics": {
+        "document_width": 390,
+        "viewport_width": 390,
+        "body_background": "rgb(0, 0, 0)",
+        "html_background": "rgb(0, 0, 0)",
+        "body_font": "Inconsolata",
+        "heading_geometry": [],
+        "navigation_regions": 0,
+        "visible_buttons": 3,
+        "visible_inputs": 0,
+        "canvas_count": 1,
+        "video_count": 0
+      },
+      "screenshot_sha256": "5bb93d972401ead138fe6ffcd096b47fab83559a9ab73117a923774d723e5b2f",
+      "status": "rendered_observed"
+    },
+    {
+      "source_id": "1e56626c0a2eb400",
+      "url": "http://www.because-recollection.com/",
+      "family": "external.home",
+      "viewport": {
+        "width": 1440,
+        "height": 1000,
+        "device_scale_factor": 1
+      },
+      "observed_at": "2026-11-23T08:20:31.871Z",
+      "interaction_inspection": "not_run",
+      "source_screenshots_redistributed": false,
+      "http_status": 200,
+      "final_url": "http://www.because-recollection.com/",
+      "render_state": "visible_content",
+      "metrics": {
+        "document_width": 1440,
+        "viewport_width": 1440,
+        "body_background": "rgb(0, 0, 0)",
+        "html_background": "rgb(0, 0, 0)",
+        "body_font": "Inconsolata",
+        "heading_geometry": [],
+        "navigation_regions": 0,
+        "visible_buttons": 2,
+        "visible_inputs": 0,
+        "canvas_count": 1,
+        "video_count": 0
+      },
+      "screenshot_sha256": "83fc49587f6ae9f456fc5d63dc36ea0993dac347965b1892a93d600250ba791e",
+      "status": "rendered_observed"
+    }
+  ],
+  "source_coverage": "observed_examples",
+  "original_blueprint": true,
+  "business_mode": "local_preview",
+  "states": [
+    "default",
+    "loading",
+    "empty",
+    "error",
+    "success_preview",
+    "disabled",
+    "keyboard_focus",
+    "reduced_motion",
+    "narrow_view"
+  ],
+  "acceptance": [
+    "让用户理解内容层级，并进入当前最重要的任务。",
+    "原站关停、改版或重定向时记录事实，不据旧资料声称完整复现。",
+    "滚动、光标和 3D 增强必须有键盘、触屏与静态回退。",
+    "320、390、768、1440 宽度不出现整页横溢出；必要表格在独立区域滚动。",
+    "键盘可进入、操作、关闭对话框并返回触发点；错误不只靠颜色。",
+    "本地预览不得暗示真实支付、投稿、消息、账户或预约已生效。"
+  ],
+  "limitations": [
+    "Source interaction audit is not automatically performed",
+    "Source assets are not bundled",
+    "Real backend, production and physical-device acceptance are not included"
+  ]
+}

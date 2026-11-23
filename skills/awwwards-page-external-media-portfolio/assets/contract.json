@@ -1,0 +1,96 @@
+{
+  "schema_version": "3.0",
+  "id": "external-media-portfolio",
+  "skill": "awwwards-page-external-media-portfolio",
+  "title": "获奖外站音乐视觉与动态作品索引",
+  "kind": "gallery",
+  "scope": "awarded external website inner page",
+  "source_families": [
+    "external.media-portfolio"
+  ],
+  "goal": "按主题浏览视觉作品，用可访问的查看器审阅并返回索引。",
+  "regions": [
+    "项目索引",
+    "年份",
+    "创作角色",
+    "视觉预览",
+    "观看入口",
+    "说明与媒体权利"
+  ],
+  "workflow": [
+    "将项目的身份、年份、创作角色和媒体资源分离，索引页保持可链接。",
+    "视频按用户手势播放，声音默认关闭或由用户选择；提供暂停、字幕或说明和失败替代。",
+    "蓝本示范原创条目索引与查看器；真实播放接入授权媒体后，另测加载、播放、暂停、结束、错误与资源清理。"
+  ],
+  "data_fields": [
+    "projects",
+    "year",
+    "creative_role",
+    "licensed_video",
+    "poster",
+    "captions",
+    "playback_state"
+  ],
+  "failure_recovery": "无授权素材或媒体失败时使用原创占位和文字，禁止复制原站音乐、视频或海报。",
+  "motion_contract": "离屏暂停与卸载清理媒体和事件监听；减少动画保留静态封面及明确播放选择。",
+  "evidence_level": "http_dom",
+  "evidence_note": "Only recorded observations are facts. DOM structure does not prove visual composition, hidden state, source code, backend behavior or licenses. The runnable blueprint is an original recipe, not a source-site clone.",
+  "sources": [
+    {
+      "id": "8d84af5a8fcee9a0",
+      "url": "https://artemiilebedev.com/alter-ego",
+      "family": "external.media-portfolio",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T08:04:45.884482+00:00",
+      "source_sha256": "4eb5ed5f3817e5a05255b9f793e97ebb92643dfaae99821c3f62f2a429c881c8",
+      "structure": {
+        "headings": {
+          "h1": 1
+        },
+        "forms": 0,
+        "input_types": {},
+        "navigation_regions": 1,
+        "main_regions": 1,
+        "sections": 0,
+        "articles": 0,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 17,
+        "roles": {
+          "list": 3,
+          "listitem": 28
+        },
+        "anchor_count": 39
+      }
+    }
+  ],
+  "visual_metrics": [],
+  "source_coverage": "observed_examples",
+  "original_blueprint": true,
+  "business_mode": "local_preview",
+  "states": [
+    "default",
+    "loading",
+    "empty",
+    "error",
+    "success_preview",
+    "disabled",
+    "keyboard_focus",
+    "reduced_motion",
+    "narrow_view"
+  ],
+  "acceptance": [
+    "按主题浏览视觉作品，用可访问的查看器审阅并返回索引。",
+    "无授权素材或媒体失败时使用原创占位和文字，禁止复制原站音乐、视频或海报。",
+    "离屏暂停与卸载清理媒体和事件监听；减少动画保留静态封面及明确播放选择。",
+    "320、390、768、1440 宽度不出现整页横溢出；必要表格在独立区域滚动。",
+    "键盘可进入、操作、关闭对话框并返回触发点；错误不只靠颜色。",
+    "本地预览不得暗示真实支付、投稿、消息、账户或预约已生效。"
+  ],
+  "limitations": [
+    "Source interaction audit is not automatically performed",
+    "Source assets are not bundled",
+    "Real backend, production and physical-device acceptance are not included"
+  ]
+}

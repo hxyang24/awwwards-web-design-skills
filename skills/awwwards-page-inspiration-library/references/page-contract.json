@@ -1,0 +1,95 @@
+{
+  "schema_version": "3.0",
+  "id": "inspiration-library",
+  "skill": "awwwards-page-inspiration-library",
+  "title": "灵感与组件参考库",
+  "kind": "listing",
+  "scope": "Awwwards main-site page family",
+  "source_families": [
+    "main.inspiration-library",
+    "main.element-library"
+  ],
+  "goal": "帮助用户在完整结果中定位条目，并进入详情或恢复空结果。",
+  "regions": [
+    "主题或组件分类",
+    "参考条目",
+    "来源",
+    "过滤",
+    "保存",
+    "详情预览"
+  ],
+  "workflow": [
+    "按导航、排版、表单、画廊、图表和交互机制建立独立索引。",
+    "每条参考保存来源和可使用范围，截图不等于可复制资产。",
+    "只保存结构观察与原创实现建议；受限条目记录未观察。"
+  ],
+  "data_fields": [
+    "component_kind",
+    "reference_url",
+    "observed_states",
+    "license_scope",
+    "recipe"
+  ],
+  "failure_recovery": "来源失效或访问受限仍显示证据边界，不能自动取别站图片补齐。",
+  "motion_contract": "预览不自动播放有声媒体；悬停预览有触屏按钮替代。",
+  "evidence_level": "http_dom",
+  "evidence_note": "Only recorded observations are facts. DOM structure does not prove visual composition, hidden state, source code, backend behavior or licenses. The runnable blueprint is an original recipe, not a source-site clone.",
+  "sources": [
+    {
+      "id": "68e5cb7b2e2e8fee",
+      "url": "https://www.awwwards.com/library/",
+      "family": "main.inspiration-library",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T08:02:33.106333+00:00",
+      "source_sha256": "0bbac73c0acbbdec3e1dcc1fcf5d387606014358a47e1510aa7a8eb33ea25071",
+      "structure": {
+        "headings": {
+          "h1": 1,
+          "h2": 3
+        },
+        "forms": 0,
+        "input_types": {
+          "text": 1
+        },
+        "navigation_regions": 2,
+        "main_regions": 0,
+        "sections": 1,
+        "articles": 0,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 0,
+        "roles": {},
+        "anchor_count": 80
+      }
+    }
+  ],
+  "visual_metrics": [],
+  "source_coverage": "observed_examples",
+  "original_blueprint": true,
+  "business_mode": "local_preview",
+  "states": [
+    "default",
+    "loading",
+    "empty",
+    "error",
+    "success_preview",
+    "disabled",
+    "keyboard_focus",
+    "reduced_motion",
+    "narrow_view"
+  ],
+  "acceptance": [
+    "帮助用户在完整结果中定位条目，并进入详情或恢复空结果。",
+    "来源失效或访问受限仍显示证据边界，不能自动取别站图片补齐。",
+    "预览不自动播放有声媒体；悬停预览有触屏按钮替代。",
+    "320、390、768、1440 宽度不出现整页横溢出；必要表格在独立区域滚动。",
+    "键盘可进入、操作、关闭对话框并返回触发点；错误不只靠颜色。",
+    "本地预览不得暗示真实支付、投稿、消息、账户或预约已生效。"
+  ],
+  "limitations": [
+    "Source interaction audit is not automatically performed",
+    "Source assets are not bundled",
+    "Real backend, production and physical-device acceptance are not included"
+  ]
+}

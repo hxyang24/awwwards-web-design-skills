@@ -1,0 +1,234 @@
+{
+  "schema_version": "3.0",
+  "id": "external-about",
+  "skill": "awwwards-page-external-about",
+  "title": "获奖外站团队与关于内页",
+  "kind": "about",
+  "scope": "awarded external website inner page",
+  "source_families": [
+    "external.about"
+  ],
+  "goal": "理解主体、团队和可核实的背景。",
+  "regions": [
+    "品牌故事",
+    "理念",
+    "团队",
+    "能力",
+    "历史",
+    "联系"
+  ],
+  "workflow": [
+    "从实际内页提取章节及信息层级，区分制作方与客户。",
+    "人员、角色、地点和资质按公开资料核验。",
+    "保留故事结构但用原创文案和已授权肖像。"
+  ],
+  "data_fields": [
+    "story",
+    "principles",
+    "team",
+    "capabilities",
+    "history",
+    "contact"
+  ],
+  "failure_recovery": "缺少照片或介绍时用明确占位；不编造团队成员。",
+  "motion_contract": "长叙事提供章节入口，手机保留内容顺序和可触达联系。",
+  "evidence_level": "http_dom",
+  "evidence_note": "Only recorded observations are facts. DOM structure does not prove visual composition, hidden state, source code, backend behavior or licenses. The runnable blueprint is an original recipe, not a source-site clone.",
+  "sources": [
+    {
+      "id": "987049facb4458b5",
+      "url": "https://aim.obys.agency/about",
+      "family": "external.about",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T08:04:09.948300+00:00",
+      "source_sha256": "0c2be77a8672d30052231ab506772d0d0ec2d22ef0317155ff326e99fb74c352",
+      "structure": {
+        "headings": {
+          "h3": 60,
+          "h2": 3,
+          "h1": 3
+        },
+        "forms": 0,
+        "input_types": {},
+        "navigation_regions": 1,
+        "main_regions": 0,
+        "sections": 6,
+        "articles": 0,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 0,
+        "roles": {},
+        "anchor_count": 30
+      }
+    },
+    {
+      "id": "376f7674c4c0d6d0",
+      "url": "https://aristidebenoist.com/about",
+      "family": "external.about",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T08:04:41.196079+00:00",
+      "source_sha256": "6c1a9b8bdbd7e3dff8b2a4dde65fbe7a31e75aed7855362bfe39b28649a26fa7",
+      "structure": {
+        "headings": {},
+        "forms": 0,
+        "input_types": {},
+        "navigation_regions": 0,
+        "main_regions": 1,
+        "sections": 0,
+        "articles": 0,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 0,
+        "roles": {},
+        "anchor_count": 0
+      }
+    },
+    {
+      "id": "26f620a2845d6ab8",
+      "url": "https://bennettandclive.com/about/",
+      "family": "external.about",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T08:05:03.673013+00:00",
+      "source_sha256": "32f4fcfc04ee43a65316daa82a37acf2265a4db9f92bcd555e5145243410dfae",
+      "structure": {
+        "headings": {
+          "h1": 1,
+          "h3": 2,
+          "h2": 4
+        },
+        "forms": 0,
+        "input_types": {},
+        "navigation_regions": 1,
+        "main_regions": 1,
+        "sections": 5,
+        "articles": 0,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 0,
+        "roles": {},
+        "anchor_count": 20
+      }
+    },
+    {
+      "id": "2238c3649920143e",
+      "url": "https://carterogunsola.com/about",
+      "family": "external.about",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T08:05:51.201638+00:00",
+      "source_sha256": "4b465da47a02d0e119540db30f7531ba384b1a530712880da09d7c67809e5784",
+      "structure": {
+        "headings": {
+          "h1": 1,
+          "h2": 2
+        },
+        "forms": 0,
+        "input_types": {
+          "text": 1
+        },
+        "navigation_regions": 3,
+        "main_regions": 1,
+        "sections": 4,
+        "articles": 4,
+        "tables": 0,
+        "dialogs": 3,
+        "canvases": 5,
+        "videos": 0,
+        "roles": {
+          "group": 1,
+          "img": 1,
+          "dialog": 3
+        },
+        "anchor_count": 59
+      }
+    },
+    {
+      "id": "4d13b0034a0c7ec2",
+      "url": "https://carterogunsola.com/studio",
+      "family": "external.about",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T08:05:51.206533+00:00",
+      "source_sha256": "e67de0dac73e3702ab3c5f4aee4ec582284acd48e8d4b47ef3d15cefd8b45ff1",
+      "structure": {
+        "headings": {
+          "h1": 1
+        },
+        "forms": 0,
+        "input_types": {
+          "text": 1
+        },
+        "navigation_regions": 2,
+        "main_regions": 1,
+        "sections": 1,
+        "articles": 0,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 6,
+        "videos": 0,
+        "roles": {
+          "group": 2,
+          "tooltip": 1,
+          "dialog": 3
+        },
+        "anchor_count": 34
+      }
+    },
+    {
+      "id": "9eeb454fa749d4d2",
+      "url": "https://www.197historiasilustradas.com/en/about-us",
+      "family": "external.about",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T08:03:08.628736+00:00",
+      "source_sha256": "02c3257ed0f95661e0dcdf25256809d34cf2350eb069207c14989ad93d137f40",
+      "structure": {
+        "headings": {
+          "h1": 2
+        },
+        "forms": 0,
+        "input_types": {
+          "search": 1
+        },
+        "navigation_regions": 0,
+        "main_regions": 1,
+        "sections": 3,
+        "articles": 7,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 0,
+        "roles": {},
+        "anchor_count": 141
+      }
+    }
+  ],
+  "visual_metrics": [],
+  "source_coverage": "observed_examples",
+  "original_blueprint": true,
+  "business_mode": "local_preview",
+  "states": [
+    "default",
+    "loading",
+    "empty",
+    "error",
+    "success_preview",
+    "disabled",
+    "keyboard_focus",
+    "reduced_motion",
+    "narrow_view"
+  ],
+  "acceptance": [
+    "理解主体、团队和可核实的背景。",
+    "缺少照片或介绍时用明确占位；不编造团队成员。",
+    "长叙事提供章节入口，手机保留内容顺序和可触达联系。",
+    "320、390、768、1440 宽度不出现整页横溢出；必要表格在独立区域滚动。",
+    "键盘可进入、操作、关闭对话框并返回触发点；错误不只靠颜色。",
+    "本地预览不得暗示真实支付、投稿、消息、账户或预约已生效。"
+  ],
+  "limitations": [
+    "Source interaction audit is not automatically performed",
+    "Source assets are not bundled",
+    "Real backend, production and physical-device acceptance are not included"
+  ]
+}

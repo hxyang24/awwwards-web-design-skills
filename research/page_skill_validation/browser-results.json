@@ -1,0 +1,288 @@
+{
+  "date": "2026-11-23T08:27:14.243Z",
+  "status": "passed",
+  "page_skills": 41,
+  "checks": [
+    {
+      "name": "All 41 standalone skill blueprints load and fit at 390",
+      "status": "passed"
+    },
+    {
+      "name": "All 41 standalone skill blueprints load and fit at 1440",
+      "status": "passed"
+    },
+    {
+      "name": "portal accessibility and original screenshot",
+      "status": "passed"
+    },
+    {
+      "name": "listing accessibility and original screenshot",
+      "status": "passed"
+    },
+    {
+      "name": "award accessibility and original screenshot",
+      "status": "passed"
+    },
+    {
+      "name": "directory accessibility and original screenshot",
+      "status": "passed"
+    },
+    {
+      "name": "profile accessibility and original screenshot",
+      "status": "passed"
+    },
+    {
+      "name": "course accessibility and original screenshot",
+      "status": "passed"
+    },
+    {
+      "name": "product accessibility and original screenshot",
+      "status": "passed"
+    },
+    {
+      "name": "job accessibility and original screenshot",
+      "status": "passed"
+    },
+    {
+      "name": "article accessibility and original screenshot",
+      "status": "passed"
+    },
+    {
+      "name": "pricing accessibility and original screenshot",
+      "status": "passed"
+    },
+    {
+      "name": "wizard accessibility and original screenshot",
+      "status": "passed"
+    },
+    {
+      "name": "faq accessibility and original screenshot",
+      "status": "passed"
+    },
+    {
+      "name": "about accessibility and original screenshot",
+      "status": "passed"
+    },
+    {
+      "name": "contact accessibility and original screenshot",
+      "status": "passed"
+    },
+    {
+      "name": "event accessibility and original screenshot",
+      "status": "passed"
+    },
+    {
+      "name": "project accessibility and original screenshot",
+      "status": "passed"
+    },
+    {
+      "name": "service accessibility and original screenshot",
+      "status": "passed"
+    },
+    {
+      "name": "gallery accessibility and original screenshot",
+      "status": "passed"
+    },
+    {
+      "name": "experiment accessibility and original screenshot",
+      "status": "passed"
+    },
+    {
+      "name": "notfound accessibility and original screenshot",
+      "status": "passed"
+    },
+    {
+      "name": "Search covers all pages, filters and recovers an empty result",
+      "status": "passed"
+    },
+    {
+      "name": "Menu dialog traps modality and returns focus after Escape",
+      "status": "passed"
+    },
+    {
+      "name": "Gallery supports next, arrow-key navigation and close",
+      "status": "passed"
+    },
+    {
+      "name": "Digital product selection recalculates and confirms locally",
+      "status": "passed"
+    },
+    {
+      "name": "Plan period changes billing total and review context",
+      "status": "passed"
+    },
+    {
+      "name": "Wizard validates, preserves unfinished back navigation and reviews consent",
+      "status": "passed"
+    },
+    {
+      "name": "Contact input remains text and editing clears a stale success state",
+      "status": "passed"
+    },
+    {
+      "name": "Course preview separates public lessons and local enrollment",
+      "status": "passed"
+    },
+    {
+      "name": "FAQ search recovers from no match",
+      "status": "passed"
+    },
+    {
+      "name": "Error-page recovery enters a usable local index",
+      "status": "passed"
+    },
+    {
+      "name": "Experiment supports play, pause and reset",
+      "status": "passed"
+    },
+    {
+      "name": "Reduced motion keeps experiment still",
+      "status": "passed"
+    },
+    {
+      "name": "No uncaught JavaScript errors or outside requests",
+      "status": "passed"
+    }
+  ],
+  "accessibility": [
+    {
+      "kind": "portal",
+      "skill": "discovery-home",
+      "violations": []
+    },
+    {
+      "kind": "listing",
+      "skill": "website-explorer",
+      "violations": []
+    },
+    {
+      "kind": "award",
+      "skill": "award-detail",
+      "violations": []
+    },
+    {
+      "kind": "directory",
+      "skill": "jury-directory",
+      "violations": []
+    },
+    {
+      "kind": "profile",
+      "skill": "creator-profile",
+      "violations": []
+    },
+    {
+      "kind": "course",
+      "skill": "course-detail",
+      "violations": []
+    },
+    {
+      "kind": "product",
+      "skill": "market-product",
+      "violations": []
+    },
+    {
+      "kind": "job",
+      "skill": "job-detail",
+      "violations": []
+    },
+    {
+      "kind": "article",
+      "skill": "editorial-article",
+      "violations": []
+    },
+    {
+      "kind": "pricing",
+      "skill": "membership-plans",
+      "violations": []
+    },
+    {
+      "kind": "wizard",
+      "skill": "submission-wizard",
+      "violations": []
+    },
+    {
+      "kind": "faq",
+      "skill": "faq-center",
+      "violations": []
+    },
+    {
+      "kind": "about",
+      "skill": "organization-about",
+      "violations": []
+    },
+    {
+      "kind": "contact",
+      "skill": "contact-page",
+      "violations": []
+    },
+    {
+      "kind": "event",
+      "skill": "conference-page",
+      "violations": []
+    },
+    {
+      "kind": "project",
+      "skill": "external-project",
+      "violations": []
+    },
+    {
+      "kind": "service",
+      "skill": "external-service",
+      "violations": []
+    },
+    {
+      "kind": "gallery",
+      "skill": "external-media-portfolio",
+      "violations": []
+    },
+    {
+      "kind": "experiment",
+      "skill": "external-experiment",
+      "violations": []
+    },
+    {
+      "kind": "notfound",
+      "skill": "external-not-found",
+      "violations": []
+    }
+  ],
+  "screenshots": [
+    "research/page_skill_validation/screenshots/portal-390.png",
+    "research/page_skill_validation/screenshots/listing-390.png",
+    "research/page_skill_validation/screenshots/award-390.png",
+    "research/page_skill_validation/screenshots/directory-390.png",
+    "research/page_skill_validation/screenshots/profile-390.png",
+    "research/page_skill_validation/screenshots/course-390.png",
+    "research/page_skill_validation/screenshots/product-390.png",
+    "research/page_skill_validation/screenshots/job-390.png",
+    "research/page_skill_validation/screenshots/article-390.png",
+    "research/page_skill_validation/screenshots/pricing-390.png",
+    "research/page_skill_validation/screenshots/wizard-390.png",
+    "research/page_skill_validation/screenshots/faq-390.png",
+    "research/page_skill_validation/screenshots/about-390.png",
+    "research/page_skill_validation/screenshots/contact-390.png",
+    "research/page_skill_validation/screenshots/event-390.png",
+    "research/page_skill_validation/screenshots/project-390.png",
+    "research/page_skill_validation/screenshots/service-390.png",
+    "research/page_skill_validation/screenshots/gallery-390.png",
+    "research/page_skill_validation/screenshots/experiment-390.png",
+    "research/page_skill_validation/screenshots/notfound-390.png"
+  ],
+  "errors": [],
+  "external_requests": [],
+  "environment": {
+    "platform": "win32",
+    "node": "v24.14.0",
+    "browser": "159.0.8154.6",
+    "viewport_widths": [
+      390,
+      1440
+    ],
+    "device_scale_factor": 1
+  },
+  "limitations": [
+    "Original blueprint checks do not certify source-site reconstruction",
+    "DOM/source observation does not prove hidden interactions",
+    "Automated accessibility is not full WCAG or physical-device acceptance"
+  ]
+}

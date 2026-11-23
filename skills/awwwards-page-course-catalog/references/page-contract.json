@@ -1,0 +1,396 @@
+{
+  "schema_version": "3.0",
+  "id": "course-catalog",
+  "skill": "awwwards-page-course-catalog",
+  "title": "课程目录与学习入口",
+  "kind": "listing",
+  "scope": "Awwwards main-site page family",
+  "source_families": [
+    "main.course-index"
+  ],
+  "goal": "帮助用户在完整结果中定位条目，并进入详情或恢复空结果。",
+  "regions": [
+    "课程分类",
+    "难度",
+    "讲师",
+    "评分",
+    "价格",
+    "筛选",
+    "课程详情"
+  ],
+  "workflow": [
+    "课程价格、访问方式、语言和时长是独立字段。",
+    "评分注明样本与来源，不编造学员或认证。",
+    "免费预览与购买后的学习内容分开，未购状态明确。"
+  ],
+  "data_fields": [
+    "courses",
+    "level",
+    "language",
+    "duration",
+    "instructor",
+    "price",
+    "access_type"
+  ],
+  "failure_recovery": "课程下架或未开放时保留说明，不伪装可购买。",
+  "motion_contract": "课程封面固定比例，播放按钮不是装饰。",
+  "evidence_level": "rendered_geometry",
+  "evidence_note": "Only recorded observations are facts. DOM structure does not prove visual composition, hidden state, source code, backend behavior or licenses. The runnable blueprint is an original recipe, not a source-site clone.",
+  "sources": [
+    {
+      "id": "b01a6ef67edb4051",
+      "url": "https://www.awwwards.com/academy/",
+      "family": "main.course-index",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T08:01:54.518781+00:00",
+      "source_sha256": "9cb583c02b7f0b686d0286b082f1bc846dd7b789355bdd66d96083d9248a4ec4",
+      "structure": {
+        "headings": {
+          "h2": 2,
+          "h1": 2,
+          "h3": 28
+        },
+        "forms": 0,
+        "input_types": {
+          "text": 3
+        },
+        "navigation_regions": 3,
+        "main_regions": 0,
+        "sections": 1,
+        "articles": 0,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 0,
+        "roles": {},
+        "anchor_count": 235
+      }
+    },
+    {
+      "id": "150916c34f670c08",
+      "url": "https://www.awwwards.com/academy/?category=creative-development",
+      "family": "main.course-index",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T08:20:11.538331+00:00",
+      "source_sha256": "0f892371c43a4d56c6bb5b80095bd38c055d0bf24c24a757a1a593d88cdc2c48",
+      "structure": {
+        "headings": {
+          "h3": 22,
+          "h2": 1,
+          "h1": 1
+        },
+        "forms": 0,
+        "input_types": {
+          "text": 3
+        },
+        "navigation_regions": 3,
+        "main_regions": 0,
+        "sections": 1,
+        "articles": 0,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 0,
+        "roles": {},
+        "anchor_count": 216
+      }
+    },
+    {
+      "id": "fe189f756006eeb3",
+      "url": "https://www.awwwards.com/academy/?category=design",
+      "family": "main.course-index",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T08:20:11.577982+00:00",
+      "source_sha256": "276ade2ef4f421093f24899e69943c002b6ec12025ffea4afab0848edcc54ba5",
+      "structure": {
+        "headings": {
+          "h3": 28,
+          "h2": 1,
+          "h1": 1
+        },
+        "forms": 0,
+        "input_types": {
+          "text": 3
+        },
+        "navigation_regions": 3,
+        "main_regions": 0,
+        "sections": 1,
+        "articles": 0,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 0,
+        "roles": {},
+        "anchor_count": 235
+      }
+    },
+    {
+      "id": "20bec638988cfa2c",
+      "url": "https://www.awwwards.com/academy/?category=marketing-business",
+      "family": "main.course-index",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T08:20:11.622436+00:00",
+      "source_sha256": "5f0e3dec10f88c828cc69a0ebc0e6f7df49b2928d871ab8fe521194e342f8fb6",
+      "structure": {
+        "headings": {
+          "h3": 14,
+          "h2": 1,
+          "h1": 1
+        },
+        "forms": 0,
+        "input_types": {
+          "text": 3
+        },
+        "navigation_regions": 3,
+        "main_regions": 0,
+        "sections": 1,
+        "articles": 0,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 0,
+        "roles": {},
+        "anchor_count": 192
+      }
+    },
+    {
+      "id": "cdc135feb0338b92",
+      "url": "https://www.awwwards.com/academy/?category=other",
+      "family": "main.course-index",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T08:21:23.450085+00:00",
+      "source_sha256": "b8b4966d9945f793c05d0fd57d891db2268d1325de79eadcd2ee476f82828a10",
+      "structure": {
+        "headings": {
+          "h3": 14,
+          "h2": 1,
+          "h1": 1
+        },
+        "forms": 0,
+        "input_types": {
+          "text": 3
+        },
+        "navigation_regions": 3,
+        "main_regions": 0,
+        "sections": 1,
+        "articles": 0,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 0,
+        "roles": {},
+        "anchor_count": 192
+      }
+    },
+    {
+      "id": "daad3e1e64e376a0",
+      "url": "https://www.awwwards.com/academy/?category=seo",
+      "family": "main.course-index",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T08:21:23.488871+00:00",
+      "source_sha256": "20f0e0079bf14531dc08341249390e526fd62a342e0de2406cb39607a4f21a31",
+      "structure": {
+        "headings": {
+          "h3": 1,
+          "h2": 1,
+          "h1": 1
+        },
+        "forms": 0,
+        "input_types": {
+          "text": 3
+        },
+        "navigation_regions": 3,
+        "main_regions": 0,
+        "sections": 1,
+        "articles": 0,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 0,
+        "roles": {},
+        "anchor_count": 153
+      }
+    }
+  ],
+  "visual_metrics": [
+    {
+      "source_id": "b01a6ef67edb4051",
+      "url": "https://www.awwwards.com/academy/",
+      "family": "main.course-index",
+      "viewport": {
+        "width": 390,
+        "height": 1000,
+        "device_scale_factor": 1
+      },
+      "observed_at": "2026-11-23T08:22:28.366Z",
+      "interaction_inspection": "not_run",
+      "source_screenshots_redistributed": false,
+      "http_status": 200,
+      "final_url": "https://www.awwwards.com/academy/",
+      "render_state": "visible_content",
+      "metrics": {
+        "document_width": 390,
+        "viewport_width": 390,
+        "body_background": "rgb(248, 248, 248)",
+        "html_background": "rgba(0, 0, 0, 0)",
+        "body_font": "\"Inter Tight\"",
+        "heading_geometry": [
+          {
+            "x": 16,
+            "y": 228,
+            "width": 358,
+            "height": 28,
+            "font_family": "\"Inter Tight\"",
+            "font_size": "14px",
+            "font_weight": "400",
+            "line_height": "28px",
+            "color": "rgb(34, 34, 34)"
+          },
+          {
+            "x": 16,
+            "y": 276,
+            "width": 358,
+            "height": 36,
+            "font_family": "\"Inter Tight\"",
+            "font_size": "36px",
+            "font_weight": "600",
+            "line_height": "36px",
+            "color": "rgb(34, 34, 34)"
+          },
+          {
+            "x": 16,
+            "y": 463,
+            "width": 358,
+            "height": 28,
+            "font_family": "\"Inter Tight\"",
+            "font_size": "14px",
+            "font_weight": "400",
+            "line_height": "28px",
+            "color": "rgb(34, 34, 34)"
+          },
+          {
+            "x": 16,
+            "y": 511,
+            "width": 358,
+            "height": 108,
+            "font_family": "\"Inter Tight\"",
+            "font_size": "36px",
+            "font_weight": "600",
+            "line_height": "36px",
+            "color": "rgb(34, 34, 34)"
+          }
+        ],
+        "navigation_regions": 3,
+        "visible_buttons": 1,
+        "visible_inputs": 1,
+        "canvas_count": 0,
+        "video_count": 0
+      },
+      "screenshot_sha256": "cfb808cb507180b329f2ac4b517b52ba29d6ea7f582db47661e931022396937a",
+      "status": "rendered_observed"
+    },
+    {
+      "source_id": "b01a6ef67edb4051",
+      "url": "https://www.awwwards.com/academy/",
+      "family": "main.course-index",
+      "viewport": {
+        "width": 1440,
+        "height": 1000,
+        "device_scale_factor": 1
+      },
+      "observed_at": "2026-11-23T08:22:38.409Z",
+      "interaction_inspection": "not_run",
+      "source_screenshots_redistributed": false,
+      "http_status": 200,
+      "final_url": "https://www.awwwards.com/academy/",
+      "render_state": "visible_content",
+      "metrics": {
+        "document_width": 1440,
+        "viewport_width": 1440,
+        "body_background": "rgb(248, 248, 248)",
+        "html_background": "rgba(0, 0, 0, 0)",
+        "body_font": "\"Inter Tight\"",
+        "heading_geometry": [
+          {
+            "x": 52,
+            "y": 219,
+            "width": 1336,
+            "height": 28,
+            "font_family": "\"Inter Tight\"",
+            "font_size": "14px",
+            "font_weight": "400",
+            "line_height": "28px",
+            "color": "rgb(34, 34, 34)"
+          },
+          {
+            "x": 52,
+            "y": 271,
+            "width": 1336,
+            "height": 74,
+            "font_family": "\"Inter Tight\"",
+            "font_size": "74.3944px",
+            "font_weight": "600",
+            "line_height": "74.3944px",
+            "color": "rgb(34, 34, 34)"
+          },
+          {
+            "x": 52,
+            "y": 1100,
+            "width": 1336,
+            "height": 28,
+            "font_family": "\"Inter Tight\"",
+            "font_size": "14px",
+            "font_weight": "400",
+            "line_height": "28px",
+            "color": "rgb(34, 34, 34)"
+          },
+          {
+            "x": 52,
+            "y": 1152,
+            "width": 1336,
+            "height": 149,
+            "font_family": "\"Inter Tight\"",
+            "font_size": "74.3944px",
+            "font_weight": "600",
+            "line_height": "74.3944px",
+            "color": "rgb(34, 34, 34)"
+          }
+        ],
+        "navigation_regions": 3,
+        "visible_buttons": 2,
+        "visible_inputs": 2,
+        "canvas_count": 0,
+        "video_count": 0
+      },
+      "screenshot_sha256": "ce7e90e55a69c74cf08eda1dd1ce75976cd95ac18661a02cc6833290cef52d32",
+      "status": "rendered_observed"
+    }
+  ],
+  "source_coverage": "observed_examples",
+  "original_blueprint": true,
+  "business_mode": "local_preview",
+  "states": [
+    "default",
+    "loading",
+    "empty",
+    "error",
+    "success_preview",
+    "disabled",
+    "keyboard_focus",
+    "reduced_motion",
+    "narrow_view"
+  ],
+  "acceptance": [
+    "帮助用户在完整结果中定位条目，并进入详情或恢复空结果。",
+    "课程下架或未开放时保留说明，不伪装可购买。",
+    "课程封面固定比例，播放按钮不是装饰。",
+    "320、390、768、1440 宽度不出现整页横溢出；必要表格在独立区域滚动。",
+    "键盘可进入、操作、关闭对话框并返回触发点；错误不只靠颜色。",
+    "本地预览不得暗示真实支付、投稿、消息、账户或预约已生效。"
+  ],
+  "limitations": [
+    "Source interaction audit is not automatically performed",
+    "Source assets are not bundled",
+    "Real backend, production and physical-device acceptance are not included"
+  ]
+}

@@ -1,0 +1,320 @@
+{
+  "schema_version": "3.0",
+  "id": "external-project",
+  "skill": "awwwards-page-external-project",
+  "title": "获奖外站项目与案例内页",
+  "kind": "project",
+  "scope": "awarded external website inner page",
+  "source_families": [
+    "external.project"
+  ],
+  "goal": "理解项目问题、过程、贡献和有证据的成果。",
+  "regions": [
+    "项目身份",
+    "问题",
+    "角色",
+    "过程",
+    "成果",
+    "媒体",
+    "证据",
+    "下一项目"
+  ],
+  "workflow": [
+    "将委托方目标、制作方贡献和实际成果分开。",
+    "项目媒体记录所有者与许可，不能因公开展示就打包复制。",
+    "使用语义章节重建叙事，再补媒体和转场；下一项目可直接链接。"
+  ],
+  "data_fields": [
+    "project",
+    "client",
+    "roles",
+    "problem",
+    "process",
+    "outcome",
+    "evidence",
+    "media_rights"
+  ],
+  "failure_recovery": "案例数据不足时保留未知；媒体失败不阻止阅读与导航。",
+  "motion_contract": "固定章节与图像过渡要保持正文可读；减少动画直接展示。",
+  "evidence_level": "rendered_geometry",
+  "evidence_note": "Only recorded observations are facts. DOM structure does not prove visual composition, hidden state, source code, backend behavior or licenses. The runnable blueprint is an original recipe, not a source-site clone.",
+  "sources": [
+    {
+      "id": "f28fe19f38633ce9",
+      "url": "https://alitwotimes.com/work/amazon-the-biggest-sale-of-the-year/",
+      "family": "external.project",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T08:18:00.072945+00:00",
+      "source_sha256": "273d6eceea3532b19230a95aaddc7f81adb46ce1a5bc852d1eca88f2a3a0bf63",
+      "structure": {
+        "headings": {
+          "h1": 1
+        },
+        "forms": 0,
+        "input_types": {
+          "range": 1
+        },
+        "navigation_regions": 1,
+        "main_regions": 1,
+        "sections": 2,
+        "articles": 1,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 1,
+        "roles": {},
+        "anchor_count": 8
+      }
+    },
+    {
+      "id": "86de68767ddb48b0",
+      "url": "https://alitwotimes.com/work/badya-life-imitates-art/",
+      "family": "external.project",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T08:18:00.113808+00:00",
+      "source_sha256": "0780c7c4d4a13fa037458f6589510cc41ee645a5ccf77c15d38b4477042e045d",
+      "structure": {
+        "headings": {
+          "h1": 1
+        },
+        "forms": 0,
+        "input_types": {
+          "range": 1
+        },
+        "navigation_regions": 1,
+        "main_regions": 1,
+        "sections": 2,
+        "articles": 1,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 1,
+        "roles": {},
+        "anchor_count": 8
+      }
+    },
+    {
+      "id": "9094e451ee9b4013",
+      "url": "https://alitwotimes.com/work/bud-light-millennial-beach/",
+      "family": "external.project",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T08:18:00.224693+00:00",
+      "source_sha256": "dd14d26e868a1179a08c8aa5011e5725581d535231ba4b587d58c7b6b2aa6828",
+      "structure": {
+        "headings": {
+          "h1": 1
+        },
+        "forms": 0,
+        "input_types": {
+          "range": 1
+        },
+        "navigation_regions": 1,
+        "main_regions": 1,
+        "sections": 2,
+        "articles": 1,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 1,
+        "roles": {},
+        "anchor_count": 8
+      }
+    },
+    {
+      "id": "c63204446c8e9358",
+      "url": "https://alitwotimes.com/work/changing-diner/",
+      "family": "external.project",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T08:19:30.257588+00:00",
+      "source_sha256": "c0d2282e6d640619d5326a0b6cbf76ed1a9f880e7d40044e0fd8464e57a9bc2d",
+      "structure": {
+        "headings": {
+          "h1": 1
+        },
+        "forms": 0,
+        "input_types": {
+          "range": 1
+        },
+        "navigation_regions": 1,
+        "main_regions": 1,
+        "sections": 2,
+        "articles": 1,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 1,
+        "roles": {},
+        "anchor_count": 8
+      }
+    },
+    {
+      "id": "1d36b532e1074e1c",
+      "url": "https://alitwotimes.com/work/cheers-to-all-fans/",
+      "family": "external.project",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T08:20:03.962961+00:00",
+      "source_sha256": "42b5f1fbd630191b5a956f1d9e0df694973e96ee46cee3273017fc2bc256a9ed",
+      "structure": {
+        "headings": {
+          "h1": 1
+        },
+        "forms": 0,
+        "input_types": {
+          "range": 1
+        },
+        "navigation_regions": 1,
+        "main_regions": 1,
+        "sections": 2,
+        "articles": 1,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 1,
+        "roles": {},
+        "anchor_count": 8
+      }
+    },
+    {
+      "id": "ffb02c529e2ecdea",
+      "url": "https://alitwotimes.com/work/du-tuesday-the-man-sitting-next-to-you/",
+      "family": "external.project",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T08:20:03.998549+00:00",
+      "source_sha256": "c30c4e3394739c3ff545e151da7423eea04ba08305f99b94a153e8b25fe8d991",
+      "structure": {
+        "headings": {
+          "h1": 1
+        },
+        "forms": 0,
+        "input_types": {
+          "range": 1
+        },
+        "navigation_regions": 1,
+        "main_regions": 1,
+        "sections": 2,
+        "articles": 1,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 1,
+        "roles": {},
+        "anchor_count": 8
+      }
+    }
+  ],
+  "visual_metrics": [
+    {
+      "source_id": "f28fe19f38633ce9",
+      "url": "https://alitwotimes.com/work/amazon-the-biggest-sale-of-the-year/",
+      "family": "external.project",
+      "viewport": {
+        "width": 390,
+        "height": 1000,
+        "device_scale_factor": 1
+      },
+      "observed_at": "2026-11-23T08:21:08.169Z",
+      "interaction_inspection": "not_run",
+      "source_screenshots_redistributed": false,
+      "http_status": 200,
+      "final_url": "https://alitwotimes.com/work/amazon-the-biggest-sale-of-the-year/",
+      "render_state": "visible_content",
+      "metrics": {
+        "document_width": 390,
+        "viewport_width": 390,
+        "body_background": "rgba(0, 0, 0, 0)",
+        "html_background": "rgba(0, 0, 0, 0)",
+        "body_font": "\"Monument Grotesk\"",
+        "heading_geometry": [
+          {
+            "x": 53,
+            "y": 1122,
+            "width": 140,
+            "height": 75,
+            "font_family": "\"Monument Grotesk\"",
+            "font_size": "27.0816px",
+            "font_weight": "500",
+            "line_height": "24.9171px",
+            "color": "rgb(252, 246, 244)"
+          }
+        ],
+        "navigation_regions": 1,
+        "visible_buttons": 1,
+        "visible_inputs": 1,
+        "canvas_count": 0,
+        "video_count": 1
+      },
+      "screenshot_sha256": "c3ee858becde7a6dca7c54c6b1b14ddd2d6555c4f4c458d5cd45530b63e191ce",
+      "status": "rendered_observed"
+    },
+    {
+      "source_id": "f28fe19f38633ce9",
+      "url": "https://alitwotimes.com/work/amazon-the-biggest-sale-of-the-year/",
+      "family": "external.project",
+      "viewport": {
+        "width": 1440,
+        "height": 1000,
+        "device_scale_factor": 1
+      },
+      "observed_at": "2026-11-23T08:21:11.806Z",
+      "interaction_inspection": "not_run",
+      "source_screenshots_redistributed": false,
+      "http_status": 200,
+      "final_url": "https://alitwotimes.com/work/amazon-the-biggest-sale-of-the-year/",
+      "render_state": "visible_content",
+      "metrics": {
+        "document_width": 1440,
+        "viewport_width": 1440,
+        "body_background": "rgba(0, 0, 0, 0)",
+        "html_background": "rgba(0, 0, 0, 0)",
+        "body_font": "\"Monument Grotesk\"",
+        "heading_geometry": [
+          {
+            "x": 197,
+            "y": 1240,
+            "width": 517,
+            "height": 43,
+            "font_family": "\"Monument Grotesk\"",
+            "font_size": "47.5056px",
+            "font_weight": "500",
+            "line_height": "42.9984px",
+            "color": "rgb(252, 246, 244)"
+          }
+        ],
+        "navigation_regions": 1,
+        "visible_buttons": 1,
+        "visible_inputs": 1,
+        "canvas_count": 0,
+        "video_count": 1
+      },
+      "screenshot_sha256": "1e1e4a62d7349b943f9fe84c28e75826d60403d67fb800352c40e104fa5048bd",
+      "status": "rendered_observed"
+    }
+  ],
+  "source_coverage": "observed_examples",
+  "original_blueprint": true,
+  "business_mode": "local_preview",
+  "states": [
+    "default",
+    "loading",
+    "empty",
+    "error",
+    "success_preview",
+    "disabled",
+    "keyboard_focus",
+    "reduced_motion",
+    "narrow_view"
+  ],
+  "acceptance": [
+    "理解项目问题、过程、贡献和有证据的成果。",
+    "案例数据不足时保留未知；媒体失败不阻止阅读与导航。",
+    "固定章节与图像过渡要保持正文可读；减少动画直接展示。",
+    "320、390、768、1440 宽度不出现整页横溢出；必要表格在独立区域滚动。",
+    "键盘可进入、操作、关闭对话框并返回触发点；错误不只靠颜色。",
+    "本地预览不得暗示真实支付、投稿、消息、账户或预约已生效。"
+  ],
+  "limitations": [
+    "Source interaction audit is not automatically performed",
+    "Source assets are not bundled",
+    "Real backend, production and physical-device acceptance are not included"
+  ]
+}

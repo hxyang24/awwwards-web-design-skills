@@ -1,0 +1,100 @@
+{
+  "schema_version": "3.0",
+  "id": "external-service",
+  "skill": "awwwards-page-external-service",
+  "title": "获奖外站服务与方案内页",
+  "kind": "service",
+  "scope": "awarded external website inner page",
+  "source_families": [
+    "external.service"
+  ],
+  "goal": "判断服务与当前问题的适配性，并进入咨询。",
+  "regions": [
+    "服务对象",
+    "问题",
+    "能力",
+    "交付",
+    "过程",
+    "案例",
+    "咨询"
+  ],
+  "workflow": [
+    "用客户任务组织服务，不以视觉术语代替实际交付。",
+    "适用边界、过程和证据清楚区分，案例可追溯。",
+    "咨询 CTA 在正文结束和关键决策点可见。"
+  ],
+  "data_fields": [
+    "audience",
+    "problem",
+    "capability",
+    "deliverables",
+    "process",
+    "case_refs",
+    "contact"
+  ],
+  "failure_recovery": "承诺没有证据时降为方案建议；不虚构收益。",
+  "motion_contract": "复杂流程在手机改为纵向步骤，保留阶段关系。",
+  "evidence_level": "http_dom",
+  "evidence_note": "Only recorded observations are facts. DOM structure does not prove visual composition, hidden state, source code, backend behavior or licenses. The runnable blueprint is an original recipe, not a source-site clone.",
+  "sources": [
+    {
+      "id": "d2e119040879c258",
+      "url": "https://www.a-lign.studio/process",
+      "family": "external.service",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T08:03:41.289544+00:00",
+      "source_sha256": "948fda68f6104128a707c1589571a858a192da187b3689f77bf50d44216c0cfb",
+      "structure": {
+        "headings": {
+          "h1": 1,
+          "h2": 8,
+          "h3": 17,
+          "h4": 6
+        },
+        "forms": 1,
+        "input_types": {},
+        "navigation_regions": 1,
+        "main_regions": 1,
+        "sections": 10,
+        "articles": 0,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 1,
+        "videos": 1,
+        "roles": {
+          "list": 9,
+          "listitem": 28
+        },
+        "anchor_count": 38
+      }
+    }
+  ],
+  "visual_metrics": [],
+  "source_coverage": "observed_examples",
+  "original_blueprint": true,
+  "business_mode": "local_preview",
+  "states": [
+    "default",
+    "loading",
+    "empty",
+    "error",
+    "success_preview",
+    "disabled",
+    "keyboard_focus",
+    "reduced_motion",
+    "narrow_view"
+  ],
+  "acceptance": [
+    "判断服务与当前问题的适配性，并进入咨询。",
+    "承诺没有证据时降为方案建议；不虚构收益。",
+    "复杂流程在手机改为纵向步骤，保留阶段关系。",
+    "320、390、768、1440 宽度不出现整页横溢出；必要表格在独立区域滚动。",
+    "键盘可进入、操作、关闭对话框并返回触发点；错误不只靠颜色。",
+    "本地预览不得暗示真实支付、投稿、消息、账户或预约已生效。"
+  ],
+  "limitations": [
+    "Source interaction audit is not automatically performed",
+    "Source assets are not bundled",
+    "Real backend, production and physical-device acceptance are not included"
+  ]
+}

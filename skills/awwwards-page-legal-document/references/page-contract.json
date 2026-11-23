@@ -1,0 +1,152 @@
+{
+  "schema_version": "3.0",
+  "id": "legal-document",
+  "skill": "awwwards-page-legal-document",
+  "title": "条款与政策阅读页",
+  "kind": "article",
+  "scope": "Awwwards main-site page family",
+  "source_families": [
+    "main.legal"
+  ],
+  "goal": "按章节持续阅读并追溯事实、版本和引用。",
+  "regions": [
+    "政策身份",
+    "生效日期",
+    "章节",
+    "权利或义务",
+    "联系入口",
+    "历史版本"
+  ],
+  "workflow": [
+    "法律政策采用用户提供或正式批准文本，不由设计模型虚构。",
+    "正文、更新日期和版本可引用，目录不改变条文顺序。",
+    "同意操作与单纯阅读分开，保存的同意记录来自服务端。"
+  ],
+  "data_fields": [
+    "document_type",
+    "version",
+    "effective_at",
+    "sections",
+    "contact",
+    "approved_source"
+  ],
+  "failure_recovery": "来源不完整标记未批准；模板不能被冒充适用所有地区的法律文件。",
+  "motion_contract": "正文支持缩放与打印，避免滚动劫持和强制动画。",
+  "evidence_level": "http_dom",
+  "evidence_note": "Only recorded observations are facts. DOM structure does not prove visual composition, hidden state, source code, backend behavior or licenses. The runnable blueprint is an original recipe, not a source-site clone.",
+  "sources": [
+    {
+      "id": "f8a6b374319c8fc2",
+      "url": "https://www.awwwards.com/cookies-policy/",
+      "family": "main.legal",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T08:02:11.351900+00:00",
+      "source_sha256": "509bb760dd6aa7f595acc4ade8b4076a611660713c88b32a93a707395f762691",
+      "structure": {
+        "headings": {
+          "h1": 1,
+          "h3": 6
+        },
+        "forms": 0,
+        "input_types": {
+          "text": 1
+        },
+        "navigation_regions": 2,
+        "main_regions": 0,
+        "sections": 1,
+        "articles": 0,
+        "tables": 1,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 0,
+        "roles": {},
+        "anchor_count": 102
+      }
+    },
+    {
+      "id": "516f1835ad1fb203",
+      "url": "https://www.awwwards.com/privacy-policy/",
+      "family": "main.legal",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T08:02:40.519531+00:00",
+      "source_sha256": "7cad0937810b4949c974370834f3cb9b9b621d8e499f8337dc843f0209d88329",
+      "structure": {
+        "headings": {
+          "h1": 1,
+          "h3": 9
+        },
+        "forms": 0,
+        "input_types": {
+          "text": 1
+        },
+        "navigation_regions": 2,
+        "main_regions": 0,
+        "sections": 1,
+        "articles": 0,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 0,
+        "roles": {},
+        "anchor_count": 102
+      }
+    },
+    {
+      "id": "d25aba6340fa7de7",
+      "url": "https://www.awwwards.com/terms/",
+      "family": "main.legal",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T08:02:45.725610+00:00",
+      "source_sha256": "0b166f0be2865c85a34947c43186f9755d8b0795531f10263b54cbf2a50201c8",
+      "structure": {
+        "headings": {
+          "h1": 1,
+          "h3": 6,
+          "h4": 12
+        },
+        "forms": 0,
+        "input_types": {
+          "text": 1
+        },
+        "navigation_regions": 2,
+        "main_regions": 0,
+        "sections": 1,
+        "articles": 0,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 0,
+        "roles": {},
+        "anchor_count": 105
+      }
+    }
+  ],
+  "visual_metrics": [],
+  "source_coverage": "observed_examples",
+  "original_blueprint": true,
+  "business_mode": "local_preview",
+  "states": [
+    "default",
+    "loading",
+    "empty",
+    "error",
+    "success_preview",
+    "disabled",
+    "keyboard_focus",
+    "reduced_motion",
+    "narrow_view"
+  ],
+  "acceptance": [
+    "按章节持续阅读并追溯事实、版本和引用。",
+    "来源不完整标记未批准；模板不能被冒充适用所有地区的法律文件。",
+    "正文支持缩放与打印，避免滚动劫持和强制动画。",
+    "320、390、768、1440 宽度不出现整页横溢出；必要表格在独立区域滚动。",
+    "键盘可进入、操作、关闭对话框并返回触发点；错误不只靠颜色。",
+    "本地预览不得暗示真实支付、投稿、消息、账户或预约已生效。"
+  ],
+  "limitations": [
+    "Source interaction audit is not automatically performed",
+    "Source assets are not bundled",
+    "Real backend, production and physical-device acceptance are not included"
+  ]
+}

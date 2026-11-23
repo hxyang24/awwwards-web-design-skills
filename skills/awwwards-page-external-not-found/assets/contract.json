@@ -1,0 +1,204 @@
+{
+  "schema_version": "3.0",
+  "id": "external-not-found",
+  "skill": "awwwards-page-external-not-found",
+  "title": "获奖外站 404 与恢复页面",
+  "kind": "notfound",
+  "scope": "awarded external website inner page",
+  "source_families": [
+    "external.not-found"
+  ],
+  "goal": "理解资源不可达的原因，并通过有效入口恢复任务。",
+  "regions": [
+    "错误身份",
+    "解释",
+    "主要返回",
+    "搜索或作品索引",
+    "联系入口"
+  ],
+  "workflow": [
+    "区分 HTTP 404、软 404 和权限拒绝；视觉上的 404 文案不证明响应码正确。",
+    "为错误提供可实际执行的返回、搜索或索引路径。",
+    "保留品牌语气与基本导航，但不泄漏内部路径、堆栈或受保护资源。"
+  ],
+  "data_fields": [
+    "http_status",
+    "requested_resource",
+    "recovery_routes",
+    "search_contract"
+  ],
+  "failure_recovery": "恢复入口失效时仍提供核心导航；错误页面不自动提交或跳转到无关外站。",
+  "motion_contract": "装饰动效可停止，核心错误说明和恢复操作稳定可达。",
+  "evidence_level": "rendered_geometry",
+  "evidence_note": "Only recorded observations are facts. DOM structure does not prove visual composition, hidden state, source code, backend behavior or licenses. The runnable blueprint is an original recipe, not a source-site clone.",
+  "sources": [
+    {
+      "id": "485a2254dfc9f37d",
+      "url": "https://a24.raviklaassens.com/404",
+      "family": "external.not-found",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T08:03:53.450057+00:00",
+      "source_sha256": "c47edaffad242e0c6166eefe813437fc78bcf733f162f6362590724a540de030",
+      "structure": {
+        "headings": {
+          "h1": 1
+        },
+        "forms": 0,
+        "input_types": {},
+        "navigation_regions": 1,
+        "main_regions": 1,
+        "sections": 1,
+        "articles": 0,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 0,
+        "roles": {},
+        "anchor_count": 4
+      }
+    },
+    {
+      "id": "669bec146f1d8d9f",
+      "url": "https://www.a-lign.studio/404",
+      "family": "external.not-found",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T08:03:35.616538+00:00",
+      "source_sha256": "5cd24c61b268e6509c70be41a96e5b6962695df817a4df77fd7b069139056873",
+      "structure": {
+        "headings": {
+          "h1": 1
+        },
+        "forms": 1,
+        "input_types": {},
+        "navigation_regions": 1,
+        "main_regions": 1,
+        "sections": 4,
+        "articles": 0,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 0,
+        "roles": {
+          "list": 6,
+          "listitem": 17
+        },
+        "anchor_count": 33
+      }
+    }
+  ],
+  "visual_metrics": [
+    {
+      "source_id": "485a2254dfc9f37d",
+      "url": "https://a24.raviklaassens.com/404",
+      "family": "external.not-found",
+      "viewport": {
+        "width": 390,
+        "height": 1000,
+        "device_scale_factor": 1
+      },
+      "observed_at": "2026-11-23T08:20:55.358Z",
+      "interaction_inspection": "not_run",
+      "source_screenshots_redistributed": false,
+      "http_status": 200,
+      "final_url": "https://a24.raviklaassens.com/404",
+      "render_state": "visible_content",
+      "metrics": {
+        "document_width": 390,
+        "viewport_width": 390,
+        "body_background": "rgb(242, 242, 242)",
+        "html_background": "rgba(0, 0, 0, 0)",
+        "body_font": "Ppneuemontreal, Arial, sans-serif",
+        "heading_geometry": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 390,
+            "height": 1000,
+            "font_family": "Ppeiko, Arial, sans-serif",
+            "font_size": "35.8246px",
+            "font_weight": "400",
+            "line_height": "35.8246px",
+            "color": "rgb(0, 0, 0)"
+          }
+        ],
+        "navigation_regions": 1,
+        "visible_buttons": 0,
+        "visible_inputs": 0,
+        "canvas_count": 1,
+        "video_count": 0
+      },
+      "screenshot_sha256": "faf166c847b689280c516e44065fbad215a5566d8c549dd671172d2f1458f17d",
+      "status": "rendered_observed"
+    },
+    {
+      "source_id": "485a2254dfc9f37d",
+      "url": "https://a24.raviklaassens.com/404",
+      "family": "external.not-found",
+      "viewport": {
+        "width": 1440,
+        "height": 1000,
+        "device_scale_factor": 1
+      },
+      "observed_at": "2026-11-23T08:20:59.706Z",
+      "interaction_inspection": "not_run",
+      "source_screenshots_redistributed": false,
+      "http_status": 200,
+      "final_url": "https://a24.raviklaassens.com/404",
+      "render_state": "visible_content",
+      "metrics": {
+        "document_width": 1440,
+        "viewport_width": 1440,
+        "body_background": "rgb(242, 242, 242)",
+        "html_background": "rgba(0, 0, 0, 0)",
+        "body_font": "Ppneuemontreal, Arial, sans-serif",
+        "heading_geometry": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1440,
+            "height": 1000,
+            "font_family": "Ppeiko, Arial, sans-serif",
+            "font_size": "72px",
+            "font_weight": "400",
+            "line_height": "72px",
+            "color": "rgb(0, 0, 0)"
+          }
+        ],
+        "navigation_regions": 1,
+        "visible_buttons": 0,
+        "visible_inputs": 0,
+        "canvas_count": 1,
+        "video_count": 0
+      },
+      "screenshot_sha256": "f5703289acbaa45fe5015477e13763af8271d4fd573e67140f632f2016eb5295",
+      "status": "rendered_observed"
+    }
+  ],
+  "source_coverage": "observed_examples",
+  "original_blueprint": true,
+  "business_mode": "local_preview",
+  "states": [
+    "default",
+    "loading",
+    "empty",
+    "error",
+    "success_preview",
+    "disabled",
+    "keyboard_focus",
+    "reduced_motion",
+    "narrow_view"
+  ],
+  "acceptance": [
+    "理解资源不可达的原因，并通过有效入口恢复任务。",
+    "恢复入口失效时仍提供核心导航；错误页面不自动提交或跳转到无关外站。",
+    "装饰动效可停止，核心错误说明和恢复操作稳定可达。",
+    "320、390、768、1440 宽度不出现整页横溢出；必要表格在独立区域滚动。",
+    "键盘可进入、操作、关闭对话框并返回触发点；错误不只靠颜色。",
+    "本地预览不得暗示真实支付、投稿、消息、账户或预约已生效。"
+  ],
+  "limitations": [
+    "Source interaction audit is not automatically performed",
+    "Source assets are not bundled",
+    "Real backend, production and physical-device acceptance are not included"
+  ]
+}

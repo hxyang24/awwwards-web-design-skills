@@ -1,0 +1,233 @@
+{
+  "schema_version": "3.0",
+  "id": "winner-index",
+  "skill": "awwwards-page-winner-index",
+  "title": "获奖档案与年度索引",
+  "kind": "listing",
+  "scope": "Awwwards main-site page family",
+  "source_families": [
+    "main.winner-index"
+  ],
+  "goal": "帮助用户在完整结果中定位条目，并进入详情或恢复空结果。",
+  "regions": [
+    "年度导航",
+    "获奖类别",
+    "作品列表",
+    "排名或分组",
+    "来源"
+  ],
+  "workflow": [
+    "先说明奖项统计口径，再以年份和类别浏览。",
+    "重复获奖保留独立奖项事件，作品实体去重。",
+    "缺失年份、候选或未揭晓状态不与正式获奖混合。"
+  ],
+  "data_fields": [
+    "years",
+    "categories",
+    "award_events",
+    "work_ids",
+    "source_urls"
+  ],
+  "failure_recovery": "年份无记录不推断没有奖项；显示未收集证据而非零获奖。",
+  "motion_contract": "年份切换保留标题焦点；大量结果先分页，不一次渲染所有档案。",
+  "evidence_level": "http_dom",
+  "evidence_note": "Only recorded observations are facts. DOM structure does not prove visual composition, hidden state, source code, backend behavior or licenses. The runnable blueprint is an original recipe, not a source-site clone.",
+  "sources": [
+    {
+      "id": "89f8280515846c52",
+      "url": "https://www.awwwards.com/winner-list/",
+      "family": "main.winner-index",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T08:02:57.130854+00:00",
+      "source_sha256": "fbf9be6c0b369f48e4f875428f58b747e8f67266d32f5ec606189987ccd4195e",
+      "structure": {
+        "headings": {
+          "h2": 2,
+          "h1": 1
+        },
+        "forms": 0,
+        "input_types": {
+          "text": 1
+        },
+        "navigation_regions": 2,
+        "main_regions": 0,
+        "sections": 1,
+        "articles": 0,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 0,
+        "roles": {},
+        "anchor_count": 158
+      }
+    },
+    {
+      "id": "cbab53fb29324326",
+      "url": "https://www.awwwards.com/winner-list/?page=10",
+      "family": "main.winner-index",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T08:21:09.783643+00:00",
+      "source_sha256": "e90b2611910909d317965ce60801d0471ae165fbf58d95e70ba8da35c5fed407",
+      "structure": {
+        "headings": {
+          "h2": 2,
+          "h1": 1
+        },
+        "forms": 0,
+        "input_types": {
+          "text": 1
+        },
+        "navigation_regions": 2,
+        "main_regions": 0,
+        "sections": 1,
+        "articles": 0,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 0,
+        "roles": {},
+        "anchor_count": 157
+      }
+    },
+    {
+      "id": "80b7dcb5fbd55c5a",
+      "url": "https://www.awwwards.com/winner-list/?page=11",
+      "family": "main.winner-index",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T08:22:04.809559+00:00",
+      "source_sha256": "676b9c246bdc99e3b6e75dbeb04d4870376d697ea04e8d8947d3d9117da5fadb",
+      "structure": {
+        "headings": {
+          "h2": 2,
+          "h1": 1
+        },
+        "forms": 0,
+        "input_types": {
+          "text": 1
+        },
+        "navigation_regions": 2,
+        "main_regions": 0,
+        "sections": 1,
+        "articles": 0,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 0,
+        "roles": {},
+        "anchor_count": 157
+      }
+    },
+    {
+      "id": "e96201b47319fd08",
+      "url": "https://www.awwwards.com/winner-list/?page=2",
+      "family": "main.winner-index",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T08:17:22.022302+00:00",
+      "source_sha256": "6809ef62a896a30616cfb4731a01af60201a24a85b5a74dd228e644484581211",
+      "structure": {
+        "headings": {
+          "h2": 2,
+          "h1": 1
+        },
+        "forms": 0,
+        "input_types": {
+          "text": 1
+        },
+        "navigation_regions": 2,
+        "main_regions": 0,
+        "sections": 1,
+        "articles": 0,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 0,
+        "roles": {},
+        "anchor_count": 158
+      }
+    },
+    {
+      "id": "6529f9819ea04345",
+      "url": "https://www.awwwards.com/winner-list/?page=3",
+      "family": "main.winner-index",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T08:17:22.055907+00:00",
+      "source_sha256": "f148210ad65eb02d07c3401922226a55ccd54018340a7f673c7a91b5d42e38a6",
+      "structure": {
+        "headings": {
+          "h2": 2,
+          "h1": 1
+        },
+        "forms": 0,
+        "input_types": {
+          "text": 1
+        },
+        "navigation_regions": 2,
+        "main_regions": 0,
+        "sections": 1,
+        "articles": 0,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 0,
+        "roles": {},
+        "anchor_count": 158
+      }
+    },
+    {
+      "id": "1ed1cb78d6452681",
+      "url": "https://www.awwwards.com/winner-list/?page=4",
+      "family": "main.winner-index",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T08:17:22.091194+00:00",
+      "source_sha256": "98dfdc78fa1a8091d817a23ae1a2cb23c03d9758b076a06e15f411db49c0807a",
+      "structure": {
+        "headings": {
+          "h2": 2,
+          "h1": 1
+        },
+        "forms": 0,
+        "input_types": {
+          "text": 1
+        },
+        "navigation_regions": 2,
+        "main_regions": 0,
+        "sections": 1,
+        "articles": 0,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 0,
+        "roles": {},
+        "anchor_count": 158
+      }
+    }
+  ],
+  "visual_metrics": [],
+  "source_coverage": "observed_examples",
+  "original_blueprint": true,
+  "business_mode": "local_preview",
+  "states": [
+    "default",
+    "loading",
+    "empty",
+    "error",
+    "success_preview",
+    "disabled",
+    "keyboard_focus",
+    "reduced_motion",
+    "narrow_view"
+  ],
+  "acceptance": [
+    "帮助用户在完整结果中定位条目，并进入详情或恢复空结果。",
+    "年份无记录不推断没有奖项；显示未收集证据而非零获奖。",
+    "年份切换保留标题焦点；大量结果先分页，不一次渲染所有档案。",
+    "320、390、768、1440 宽度不出现整页横溢出；必要表格在独立区域滚动。",
+    "键盘可进入、操作、关闭对话框并返回触发点；错误不只靠颜色。",
+    "本地预览不得暗示真实支付、投稿、消息、账户或预约已生效。"
+  ],
+  "limitations": [
+    "Source interaction audit is not automatically performed",
+    "Source assets are not bundled",
+    "Real backend, production and physical-device acceptance are not included"
+  ]
+}

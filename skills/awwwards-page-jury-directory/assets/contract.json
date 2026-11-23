@@ -1,0 +1,215 @@
+{
+  "schema_version": "3.0",
+  "id": "jury-directory",
+  "skill": "awwwards-page-jury-directory",
+  "title": "评委目录与年份浏览",
+  "kind": "directory",
+  "scope": "Awwwards main-site page family",
+  "source_families": [
+    "main.jury"
+  ],
+  "goal": "根据实体身份和明确筛选找到合适的对象。",
+  "regions": [
+    "年份",
+    "评委身份说明",
+    "人物列表",
+    "专业领域",
+    "个人详情入口"
+  ],
+  "workflow": [
+    "年份选择改变成员集合，而不是直接覆写人物的历史任期。",
+    "人物姓名、角色、机构和国家分别建模，头衔需要来源。",
+    "人物详情与其获奖作品、评审记录用稳定实体关联。"
+  ],
+  "data_fields": [
+    "year",
+    "members[].id",
+    "members[].role",
+    "members[].organization",
+    "source"
+  ],
+  "failure_recovery": "头像或资料缺失使用原创占位；不得编造资历或认可。",
+  "motion_contract": "人物网格自然重排；无 hover 仍可进入详情。",
+  "evidence_level": "http_dom",
+  "evidence_note": "Only recorded observations are facts. DOM structure does not prove visual composition, hidden state, source code, backend behavior or licenses. The runnable blueprint is an original recipe, not a source-site clone.",
+  "sources": [
+    {
+      "id": "b5ed136032440ace",
+      "url": "https://www.awwwards.com/jury/",
+      "family": "main.jury",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T08:15:52.286697+00:00",
+      "source_sha256": "0e64e3ec6cc4a85a7f7cfeb87db650579cc7d0699ebd5c731f25e74b05a570b0",
+      "structure": {
+        "headings": {},
+        "forms": 0,
+        "input_types": {
+          "text": 3
+        },
+        "navigation_regions": 3,
+        "main_regions": 0,
+        "sections": 1,
+        "articles": 0,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 0,
+        "roles": {},
+        "anchor_count": 234
+      }
+    },
+    {
+      "id": "df5b46f228dd5243",
+      "url": "https://www.awwwards.com/jury/2010/",
+      "family": "main.jury",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T08:15:52.317662+00:00",
+      "source_sha256": "81344d8f81dfd3dc6c65e4207a3b14191c9764c3ba506acdc30c043c44868912",
+      "structure": {
+        "headings": {},
+        "forms": 0,
+        "input_types": {
+          "text": 3
+        },
+        "navigation_regions": 3,
+        "main_regions": 0,
+        "sections": 1,
+        "articles": 0,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 0,
+        "roles": {},
+        "anchor_count": 186
+      }
+    },
+    {
+      "id": "ca5722ca34054978",
+      "url": "https://www.awwwards.com/jury/2011/",
+      "family": "main.jury",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T08:15:52.350640+00:00",
+      "source_sha256": "28a697574101fd865e547667771c7d029a60cb7cec508c07ac8085ec1b0f2dad",
+      "structure": {
+        "headings": {},
+        "forms": 0,
+        "input_types": {
+          "text": 3
+        },
+        "navigation_regions": 3,
+        "main_regions": 0,
+        "sections": 1,
+        "articles": 0,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 0,
+        "roles": {},
+        "anchor_count": 188
+      }
+    },
+    {
+      "id": "65e77503993fc9df",
+      "url": "https://www.awwwards.com/jury/2012/",
+      "family": "main.jury",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T08:17:49.385548+00:00",
+      "source_sha256": "3b887c763b8afabe4e9b25a80bf4054fd3c0b5bdd1526777b6b3d3a30840848b",
+      "structure": {
+        "headings": {},
+        "forms": 0,
+        "input_types": {
+          "text": 3
+        },
+        "navigation_regions": 3,
+        "main_regions": 0,
+        "sections": 1,
+        "articles": 0,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 0,
+        "roles": {},
+        "anchor_count": 199
+      }
+    },
+    {
+      "id": "388638ba8e62c0ce",
+      "url": "https://www.awwwards.com/jury/2013/",
+      "family": "main.jury",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T08:17:49.420637+00:00",
+      "source_sha256": "1eb9ea1b2bd2eac22900036391653c829847e2ebd86957169bacc9bfb3f083d2",
+      "structure": {
+        "headings": {},
+        "forms": 0,
+        "input_types": {
+          "text": 3
+        },
+        "navigation_regions": 3,
+        "main_regions": 0,
+        "sections": 1,
+        "articles": 0,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 0,
+        "roles": {},
+        "anchor_count": 202
+      }
+    },
+    {
+      "id": "7f9d0136b05eefc2",
+      "url": "https://www.awwwards.com/jury/2014/",
+      "family": "main.jury",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T08:17:49.461682+00:00",
+      "source_sha256": "50cb988147a67ee00d1c24d003470e79cbbf961fd05a264c39ab018c800c4639",
+      "structure": {
+        "headings": {},
+        "forms": 0,
+        "input_types": {
+          "text": 3
+        },
+        "navigation_regions": 3,
+        "main_regions": 0,
+        "sections": 1,
+        "articles": 0,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 0,
+        "roles": {},
+        "anchor_count": 200
+      }
+    }
+  ],
+  "visual_metrics": [],
+  "source_coverage": "observed_examples",
+  "original_blueprint": true,
+  "business_mode": "local_preview",
+  "states": [
+    "default",
+    "loading",
+    "empty",
+    "error",
+    "success_preview",
+    "disabled",
+    "keyboard_focus",
+    "reduced_motion",
+    "narrow_view"
+  ],
+  "acceptance": [
+    "根据实体身份和明确筛选找到合适的对象。",
+    "头像或资料缺失使用原创占位；不得编造资历或认可。",
+    "人物网格自然重排；无 hover 仍可进入详情。",
+    "320、390、768、1440 宽度不出现整页横溢出；必要表格在独立区域滚动。",
+    "键盘可进入、操作、关闭对话框并返回触发点；错误不只靠颜色。",
+    "本地预览不得暗示真实支付、投稿、消息、账户或预约已生效。"
+  ],
+  "limitations": [
+    "Source interaction audit is not automatically performed",
+    "Source assets are not bundled",
+    "Real backend, production and physical-device acceptance are not included"
+  ]
+}

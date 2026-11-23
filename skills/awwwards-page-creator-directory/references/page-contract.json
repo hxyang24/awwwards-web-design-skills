@@ -1,0 +1,231 @@
+{
+  "schema_version": "3.0",
+  "id": "creator-directory",
+  "skill": "awwwards-page-creator-directory",
+  "title": "创作者与机构目录",
+  "kind": "directory",
+  "scope": "Awwwards main-site page family",
+  "source_families": [
+    "main.creator-directory"
+  ],
+  "goal": "根据实体身份和明确筛选找到合适的对象。",
+  "regions": [
+    "目录定位",
+    "职业类型",
+    "地区",
+    "专业",
+    "卡片",
+    "作品和奖项",
+    "联系入口"
+  ],
+  "workflow": [
+    "个人、自由职业者和机构按实体类型筛选，不把地区与服务范围混用。",
+    "卡片中的作品数和奖项数说明口径、数据时间和缺失。",
+    "联系入口指向允许公开的渠道；不批量收集私人联系方式。"
+  ],
+  "data_fields": [
+    "entity_type",
+    "location",
+    "specialties",
+    "works_count",
+    "awards_count",
+    "public_contact"
+  ],
+  "failure_recovery": "无结果可移除地区或专业条件；未知统计保留未知。",
+  "motion_contract": "密集目录按内容压力重排，标签换行不截掉核心身份。",
+  "evidence_level": "http_dom",
+  "evidence_note": "Only recorded observations are facts. DOM structure does not prove visual composition, hidden state, source code, backend behavior or licenses. The runnable blueprint is an original recipe, not a source-site clone.",
+  "sources": [
+    {
+      "id": "375d66c18dad73f6",
+      "url": "https://www.awwwards.com/directory/",
+      "family": "main.creator-directory",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T08:02:17.213106+00:00",
+      "source_sha256": "d116da358b4bcf34c0e5a0ea420538c44bb729a2dfceb1d71eaa8588d9cca95c",
+      "structure": {
+        "headings": {
+          "h1": 1,
+          "h2": 2
+        },
+        "forms": 0,
+        "input_types": {
+          "text": 2
+        },
+        "navigation_regions": 3,
+        "main_regions": 0,
+        "sections": 1,
+        "articles": 0,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 0,
+        "roles": {},
+        "anchor_count": 264
+      }
+    },
+    {
+      "id": "29e2cad2a47401f3",
+      "url": "https://www.awwwards.com/directory/Algeria/",
+      "family": "main.creator-directory",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T08:18:12.065657+00:00",
+      "source_sha256": "96d3477ead1f7351cc3ee568ae48b9df30ba9fef01c80ed3cbec24b9a7915422",
+      "structure": {
+        "headings": {
+          "h2": 3
+        },
+        "forms": 0,
+        "input_types": {
+          "text": 2
+        },
+        "navigation_regions": 3,
+        "main_regions": 0,
+        "sections": 1,
+        "articles": 0,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 0,
+        "roles": {},
+        "anchor_count": 182
+      }
+    },
+    {
+      "id": "f37307677bb545c6",
+      "url": "https://www.awwwards.com/directory/Argentina/",
+      "family": "main.creator-directory",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T08:18:12.110499+00:00",
+      "source_sha256": "59563d11cc1c20a961e3002aa4a6c8ff9c543b91d0c321790cbee2c74239e1b5",
+      "structure": {
+        "headings": {
+          "h2": 3
+        },
+        "forms": 0,
+        "input_types": {
+          "text": 2
+        },
+        "navigation_regions": 3,
+        "main_regions": 0,
+        "sections": 1,
+        "articles": 0,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 0,
+        "roles": {},
+        "anchor_count": 216
+      }
+    },
+    {
+      "id": "9aa3225f9173e713",
+      "url": "https://www.awwwards.com/directory/Armenia/",
+      "family": "main.creator-directory",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T08:18:12.151772+00:00",
+      "source_sha256": "efc68cb1bc335554f0d3c488cd41da9d7a4beb9ef6e84ff292287bf9726d8053",
+      "structure": {
+        "headings": {
+          "h2": 3
+        },
+        "forms": 0,
+        "input_types": {
+          "text": 2
+        },
+        "navigation_regions": 3,
+        "main_regions": 0,
+        "sections": 1,
+        "articles": 0,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 0,
+        "roles": {},
+        "anchor_count": 183
+      }
+    },
+    {
+      "id": "6eb9298ec3464e08",
+      "url": "https://www.awwwards.com/directory/Australia/",
+      "family": "main.creator-directory",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T08:19:42.136751+00:00",
+      "source_sha256": "7951a522ac027a9997ac648601cbf387dd87adb9d05ceb2c66b1ab84e77845b7",
+      "structure": {
+        "headings": {
+          "h2": 3
+        },
+        "forms": 0,
+        "input_types": {
+          "text": 2
+        },
+        "navigation_regions": 3,
+        "main_regions": 0,
+        "sections": 1,
+        "articles": 0,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 0,
+        "roles": {},
+        "anchor_count": 264
+      }
+    },
+    {
+      "id": "9767064903eb9ee8",
+      "url": "https://www.awwwards.com/directory/Austria/",
+      "family": "main.creator-directory",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T08:19:42.172613+00:00",
+      "source_sha256": "2c6b40b6d37785903f9b3ba4d229a15fd21ba129e9374ac1b4080eb49c5856f7",
+      "structure": {
+        "headings": {
+          "h2": 3
+        },
+        "forms": 0,
+        "input_types": {
+          "text": 2
+        },
+        "navigation_regions": 3,
+        "main_regions": 0,
+        "sections": 1,
+        "articles": 0,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 0,
+        "roles": {},
+        "anchor_count": 232
+      }
+    }
+  ],
+  "visual_metrics": [],
+  "source_coverage": "observed_examples",
+  "original_blueprint": true,
+  "business_mode": "local_preview",
+  "states": [
+    "default",
+    "loading",
+    "empty",
+    "error",
+    "success_preview",
+    "disabled",
+    "keyboard_focus",
+    "reduced_motion",
+    "narrow_view"
+  ],
+  "acceptance": [
+    "根据实体身份和明确筛选找到合适的对象。",
+    "无结果可移除地区或专业条件；未知统计保留未知。",
+    "密集目录按内容压力重排，标签换行不截掉核心身份。",
+    "320、390、768、1440 宽度不出现整页横溢出；必要表格在独立区域滚动。",
+    "键盘可进入、操作、关闭对话框并返回触发点；错误不只靠颜色。",
+    "本地预览不得暗示真实支付、投稿、消息、账户或预约已生效。"
+  ],
+  "limitations": [
+    "Source interaction audit is not automatically performed",
+    "Source assets are not bundled",
+    "Real backend, production and physical-device acceptance are not included"
+  ]
+}

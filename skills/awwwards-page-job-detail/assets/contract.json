@@ -1,0 +1,238 @@
+{
+  "schema_version": "3.0",
+  "id": "job-detail",
+  "skill": "awwwards-page-job-detail",
+  "title": "职位详情与申请路径",
+  "kind": "job",
+  "scope": "Awwwards main-site page family",
+  "source_families": [
+    "main.job-detail"
+  ],
+  "goal": "理解岗位及申请条件，进入明确的申请路径。",
+  "regions": [
+    "岗位摘要",
+    "职责",
+    "要求",
+    "待遇",
+    "申请方式",
+    "有效期",
+    "机构"
+  ],
+  "workflow": [
+    "要求和优先条件分开，避免将营销内容混作任职门槛。",
+    "申请入口说明是站内表单、邮件还是外部系统。",
+    "演示只校验本地申请摘要，不发送简历或外部消息。"
+  ],
+  "data_fields": [
+    "job",
+    "responsibilities",
+    "requirements",
+    "benefits",
+    "application_channel",
+    "deadline"
+  ],
+  "failure_recovery": "已关闭职位阻止提交，保留已填输入用于用户保存。",
+  "motion_contract": "职位详情正文可缩放；固定申请按钮不遮挡正文或软键盘。",
+  "evidence_level": "http_dom",
+  "evidence_note": "Only recorded observations are facts. DOM structure does not prove visual composition, hidden state, source code, backend behavior or licenses. The runnable blueprint is an original recipe, not a source-site clone.",
+  "sources": [
+    {
+      "id": "98f68611497d64cc",
+      "url": "https://www.awwwards.com/jobs/France/",
+      "family": "main.job-detail",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T08:21:37.363780+00:00",
+      "source_sha256": "ac943cedf15272434e9a823c92f28e9f40e31c22e99583308b288d316729b16e",
+      "structure": {
+        "headings": {
+          "h3": 7
+        },
+        "forms": 0,
+        "input_types": {
+          "text": 1
+        },
+        "navigation_regions": 3,
+        "main_regions": 0,
+        "sections": 1,
+        "articles": 0,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 0,
+        "roles": {},
+        "anchor_count": 95
+      }
+    },
+    {
+      "id": "befc508e155236f8",
+      "url": "https://www.awwwards.com/jobs/Germany/",
+      "family": "main.job-detail",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T08:21:37.403529+00:00",
+      "source_sha256": "d4dc6c94dd9046a2650a0007e2b48a7d20e1bfa0bbf7393dcbd3415b0fb503a1",
+      "structure": {
+        "headings": {
+          "h3": 8
+        },
+        "forms": 0,
+        "input_types": {
+          "text": 1
+        },
+        "navigation_regions": 3,
+        "main_regions": 0,
+        "sections": 1,
+        "articles": 0,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 0,
+        "roles": {},
+        "anchor_count": 99
+      }
+    },
+    {
+      "id": "388e513f70b7c5b6",
+      "url": "https://www.awwwards.com/jobs/art-director-3.html",
+      "family": "main.job-detail",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T08:14:58.667887+00:00",
+      "source_sha256": "dae2a07847a7e9cba0053c0d105518b922ff7c9ceefcfd1a26c70c16c1fc5622",
+      "structure": {
+        "headings": {
+          "h3": 6,
+          "h1": 1,
+          "h2": 1
+        },
+        "forms": 0,
+        "input_types": {
+          "text": 1
+        },
+        "navigation_regions": 2,
+        "main_regions": 0,
+        "sections": 1,
+        "articles": 0,
+        "tables": 1,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 0,
+        "roles": {},
+        "anchor_count": 120
+      }
+    },
+    {
+      "id": "caad7d8725072978",
+      "url": "https://www.awwwards.com/jobs/creative-developer-12.html",
+      "family": "main.job-detail",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T08:14:58.699490+00:00",
+      "source_sha256": "7aab4c74ca5488ced771212dc1f62d328bff01066f26a41e74d733c4be330575",
+      "structure": {
+        "headings": {
+          "h3": 6,
+          "h1": 1,
+          "h2": 1
+        },
+        "forms": 0,
+        "input_types": {
+          "text": 1
+        },
+        "navigation_regions": 2,
+        "main_regions": 0,
+        "sections": 1,
+        "articles": 0,
+        "tables": 1,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 0,
+        "roles": {},
+        "anchor_count": 119
+      }
+    },
+    {
+      "id": "8b0761127af77acd",
+      "url": "https://www.awwwards.com/jobs/designer-directeur-artistique-web-ui-ux-paris.html",
+      "family": "main.job-detail",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T08:14:58.731485+00:00",
+      "source_sha256": "1360f2e44c4911eb03646837dd1ffabc12e73a8832dd5e9968efe26e5c3af464",
+      "structure": {
+        "headings": {
+          "h3": 6,
+          "h1": 1,
+          "h2": 1
+        },
+        "forms": 0,
+        "input_types": {
+          "text": 1
+        },
+        "navigation_regions": 2,
+        "main_regions": 0,
+        "sections": 1,
+        "articles": 0,
+        "tables": 1,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 0,
+        "roles": {},
+        "anchor_count": 119
+      }
+    },
+    {
+      "id": "f2ce299ce9fcb41b",
+      "url": "https://www.awwwards.com/jobs/digital-brand-designer-1.html",
+      "family": "main.job-detail",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T08:16:12.578545+00:00",
+      "source_sha256": "b13484aaa8015f867de1ca9176350e2d6e3cefcc7a71f9e13a472608b26cdcac",
+      "structure": {
+        "headings": {
+          "h3": 6,
+          "h1": 1,
+          "h2": 1
+        },
+        "forms": 0,
+        "input_types": {
+          "text": 1
+        },
+        "navigation_regions": 2,
+        "main_regions": 0,
+        "sections": 1,
+        "articles": 0,
+        "tables": 1,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 0,
+        "roles": {},
+        "anchor_count": 119
+      }
+    }
+  ],
+  "visual_metrics": [],
+  "source_coverage": "observed_examples",
+  "original_blueprint": true,
+  "business_mode": "local_preview",
+  "states": [
+    "default",
+    "loading",
+    "empty",
+    "error",
+    "success_preview",
+    "disabled",
+    "keyboard_focus",
+    "reduced_motion",
+    "narrow_view"
+  ],
+  "acceptance": [
+    "理解岗位及申请条件，进入明确的申请路径。",
+    "已关闭职位阻止提交，保留已填输入用于用户保存。",
+    "职位详情正文可缩放；固定申请按钮不遮挡正文或软键盘。",
+    "320、390、768、1440 宽度不出现整页横溢出；必要表格在独立区域滚动。",
+    "键盘可进入、操作、关闭对话框并返回触发点；错误不只靠颜色。",
+    "本地预览不得暗示真实支付、投稿、消息、账户或预约已生效。"
+  ],
+  "limitations": [
+    "Source interaction audit is not automatically performed",
+    "Source assets are not bundled",
+    "Real backend, production and physical-device acceptance are not included"
+  ]
+}

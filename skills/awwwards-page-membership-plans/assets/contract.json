@@ -1,0 +1,262 @@
+{
+  "schema_version": "3.0",
+  "id": "membership-plans",
+  "skill": "awwwards-page-membership-plans",
+  "title": "会员与套餐比较",
+  "kind": "pricing",
+  "scope": "Awwwards main-site page family",
+  "source_families": [
+    "main.membership"
+  ],
+  "goal": "理解计费周期和权益限制，再审阅明确的方案。",
+  "regions": [
+    "权益",
+    "周期",
+    "价格",
+    "功能矩阵",
+    "限制",
+    "FAQ",
+    "审阅"
+  ],
+  "workflow": [
+    "周期切换同时更新单价、计费周期和总额，避免误导。",
+    "权益与限制按可验证产品能力列出，已拥有状态独立。",
+    "演示不收款，不将选择套餐视为订阅成功。"
+  ],
+  "data_fields": [
+    "plans",
+    "billing_period",
+    "price",
+    "currency",
+    "features",
+    "limits",
+    "current_plan"
+  ],
+  "failure_recovery": "价格或权益读取失败时不显示过期成功；取消与退款条件来源明确。",
+  "motion_contract": "功能矩阵在手机可横滚且行列标题保留，不仅缩小字号。",
+  "evidence_level": "http_dom",
+  "evidence_note": "Only recorded observations are facts. DOM structure does not prove visual composition, hidden state, source code, backend behavior or licenses. The runnable blueprint is an original recipe, not a source-site clone.",
+  "sources": [
+    {
+      "id": "6bae1eaa7ca23513",
+      "url": "https://www.awwwards.com/plans/academy-basic-plan",
+      "family": "main.membership",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T08:18:34.087877+00:00",
+      "source_sha256": "7ef33e714f5773e86d65f0e7261effc2edb3fc1d145d096f61857ba47d3576b1",
+      "structure": {
+        "headings": {
+          "h2": 1,
+          "h3": 2
+        },
+        "forms": 2,
+        "input_types": {
+          "text": 3,
+          "hidden": 7,
+          "password": 3,
+          "checkbox": 1,
+          "email": 1,
+          "submit": 1
+        },
+        "navigation_regions": 2,
+        "main_regions": 0,
+        "sections": 1,
+        "articles": 0,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 0,
+        "roles": {},
+        "anchor_count": 121
+      }
+    },
+    {
+      "id": "685c86f91f95be40",
+      "url": "https://www.awwwards.com/plans/academy-directory-plan",
+      "family": "main.membership",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T08:18:34.121448+00:00",
+      "source_sha256": "21e7c19835639981bef8cd7bffece3a83038c4f09229e0bf48c224c27629c829",
+      "structure": {
+        "headings": {
+          "h2": 1,
+          "h3": 2
+        },
+        "forms": 2,
+        "input_types": {
+          "text": 3,
+          "hidden": 7,
+          "password": 3,
+          "checkbox": 1,
+          "email": 1,
+          "submit": 1
+        },
+        "navigation_regions": 2,
+        "main_regions": 0,
+        "sections": 1,
+        "articles": 0,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 0,
+        "roles": {},
+        "anchor_count": 121
+      }
+    },
+    {
+      "id": "18568fe3c1ed51d5",
+      "url": "https://www.awwwards.com/plans/academy-plan",
+      "family": "main.membership",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T08:16:23.187999+00:00",
+      "source_sha256": "aa6b8c820d88e4aad3e4f93f7e38c9f4075317dfd0e3965e0b73b0db33dfd268",
+      "structure": {
+        "headings": {
+          "h2": 1,
+          "h3": 2
+        },
+        "forms": 2,
+        "input_types": {
+          "text": 3,
+          "hidden": 7,
+          "password": 3,
+          "checkbox": 1,
+          "email": 1,
+          "submit": 1
+        },
+        "navigation_regions": 2,
+        "main_regions": 0,
+        "sections": 1,
+        "articles": 0,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 0,
+        "roles": {},
+        "anchor_count": 121
+      }
+    },
+    {
+      "id": "0f32217c85c16f7e",
+      "url": "https://www.awwwards.com/plans/basic-plan",
+      "family": "main.membership",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T08:16:23.234584+00:00",
+      "source_sha256": "2777f220e35a13a46cf51308400d8270b572a65c7e64b0ea24c6488eae990b1f",
+      "structure": {
+        "headings": {
+          "h2": 1,
+          "h3": 2
+        },
+        "forms": 2,
+        "input_types": {
+          "text": 3,
+          "hidden": 7,
+          "password": 3,
+          "checkbox": 1,
+          "email": 1,
+          "submit": 1
+        },
+        "navigation_regions": 2,
+        "main_regions": 0,
+        "sections": 1,
+        "articles": 0,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 0,
+        "roles": {},
+        "anchor_count": 121
+      }
+    },
+    {
+      "id": "ae5eca088fd6f570",
+      "url": "https://www.awwwards.com/plans/creative-pro-plans",
+      "family": "main.membership",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T08:16:23.278223+00:00",
+      "source_sha256": "61bf6fd845b10bdc647b6eb5e87385a517612d5dc335b7c180149c3cbc463f68",
+      "structure": {
+        "headings": {
+          "h3": 1
+        },
+        "forms": 0,
+        "input_types": {
+          "text": 1,
+          "checkbox": 1
+        },
+        "navigation_regions": 2,
+        "main_regions": 0,
+        "sections": 1,
+        "articles": 0,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 0,
+        "roles": {},
+        "anchor_count": 98
+      }
+    },
+    {
+      "id": "7d764ed2e514d3b7",
+      "url": "https://www.awwwards.com/plans/international-plan",
+      "family": "main.membership",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T08:18:34.155244+00:00",
+      "source_sha256": "527b8827ff0ee4f672d7361ceb325507d6cdf8a8f4a4dfa73e2b09af078f41c5",
+      "structure": {
+        "headings": {
+          "h2": 1,
+          "h3": 2
+        },
+        "forms": 2,
+        "input_types": {
+          "text": 3,
+          "hidden": 7,
+          "password": 3,
+          "checkbox": 1,
+          "email": 1,
+          "submit": 1
+        },
+        "navigation_regions": 2,
+        "main_regions": 0,
+        "sections": 1,
+        "articles": 0,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 0,
+        "roles": {},
+        "anchor_count": 121
+      }
+    }
+  ],
+  "visual_metrics": [],
+  "source_coverage": "observed_examples",
+  "original_blueprint": true,
+  "business_mode": "local_preview",
+  "states": [
+    "default",
+    "loading",
+    "empty",
+    "error",
+    "success_preview",
+    "disabled",
+    "keyboard_focus",
+    "reduced_motion",
+    "narrow_view"
+  ],
+  "acceptance": [
+    "理解计费周期和权益限制，再审阅明确的方案。",
+    "价格或权益读取失败时不显示过期成功；取消与退款条件来源明确。",
+    "功能矩阵在手机可横滚且行列标题保留，不仅缩小字号。",
+    "320、390、768、1440 宽度不出现整页横溢出；必要表格在独立区域滚动。",
+    "键盘可进入、操作、关闭对话框并返回触发点；错误不只靠颜色。",
+    "本地预览不得暗示真实支付、投稿、消息、账户或预约已生效。"
+  ],
+  "limitations": [
+    "Source interaction audit is not automatically performed",
+    "Source assets are not bundled",
+    "Real backend, production and physical-device acceptance are not included"
+  ]
+}

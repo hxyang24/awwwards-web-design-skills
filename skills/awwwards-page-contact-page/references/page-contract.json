@@ -1,0 +1,95 @@
+{
+  "schema_version": "3.0",
+  "id": "contact-page",
+  "skill": "awwwards-page-contact-page",
+  "title": "联系与询问表单",
+  "kind": "contact",
+  "scope": "Awwwards main-site page family",
+  "source_families": [
+    "main.contact"
+  ],
+  "goal": "完成可恢复的询问表单并理解提交的实际状态。",
+  "regions": [
+    "联系渠道",
+    "询问类型",
+    "最少必要字段",
+    "同意",
+    "校验",
+    "结果"
+  ],
+  "workflow": [
+    "根据询问类型展示必要字段，营销同意不可预勾选。",
+    "错误在字段旁说明并保留输入，提交后结果来自真实接口。",
+    "离线示例明确本地预览，不发送邮件或外部消息。"
+  ],
+  "data_fields": [
+    "reason",
+    "name",
+    "email",
+    "message",
+    "consent",
+    "submission_state"
+  ],
+  "failure_recovery": "防重复提交和可恢复错误；不把网络超时解释为邮件已发。",
+  "motion_contract": "软键盘出现后当前字段和提交可见，错误摘要可聚焦。",
+  "evidence_level": "http_dom",
+  "evidence_note": "Only recorded observations are facts. DOM structure does not prove visual composition, hidden state, source code, backend behavior or licenses. The runnable blueprint is an original recipe, not a source-site clone.",
+  "sources": [
+    {
+      "id": "bb03e03ebdec5f55",
+      "url": "https://www.awwwards.com/contact-us/",
+      "family": "main.contact",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T08:02:11.349830+00:00",
+      "source_sha256": "5ff7ed7634caf118997ceecfb4f1d4e224df7e7224d001268f34ffa9a4a75fa4",
+      "structure": {
+        "headings": {
+          "h1": 2,
+          "h2": 1
+        },
+        "forms": 0,
+        "input_types": {
+          "text": 1
+        },
+        "navigation_regions": 2,
+        "main_regions": 0,
+        "sections": 1,
+        "articles": 0,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 0,
+        "roles": {},
+        "anchor_count": 95
+      }
+    }
+  ],
+  "visual_metrics": [],
+  "source_coverage": "observed_examples",
+  "original_blueprint": true,
+  "business_mode": "local_preview",
+  "states": [
+    "default",
+    "loading",
+    "empty",
+    "error",
+    "success_preview",
+    "disabled",
+    "keyboard_focus",
+    "reduced_motion",
+    "narrow_view"
+  ],
+  "acceptance": [
+    "完成可恢复的询问表单并理解提交的实际状态。",
+    "防重复提交和可恢复错误；不把网络超时解释为邮件已发。",
+    "软键盘出现后当前字段和提交可见，错误摘要可聚焦。",
+    "320、390、768、1440 宽度不出现整页横溢出；必要表格在独立区域滚动。",
+    "键盘可进入、操作、关闭对话框并返回触发点；错误不只靠颜色。",
+    "本地预览不得暗示真实支付、投稿、消息、账户或预约已生效。"
+  ],
+  "limitations": [
+    "Source interaction audit is not automatically performed",
+    "Source assets are not bundled",
+    "Real backend, production and physical-device acceptance are not included"
+  ]
+}

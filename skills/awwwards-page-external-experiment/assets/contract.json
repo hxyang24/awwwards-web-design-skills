@@ -1,0 +1,97 @@
+{
+  "schema_version": "3.0",
+  "id": "external-experiment",
+  "skill": "awwwards-page-external-experiment",
+  "title": "获奖外站实验与互动内页",
+  "kind": "experiment",
+  "scope": "awarded external website inner page",
+  "source_families": [
+    "external.experiment"
+  ],
+  "goal": "理解输入方式并可控地体验、暂停和退出互动实验。",
+  "regions": [
+    "实验说明",
+    "输入方式",
+    "互动区域",
+    "状态",
+    "暂停重置",
+    "静态替代"
+  ],
+  "workflow": [
+    "先说明实验意图与可用输入，再展示交互；不要假设用户知道手势。",
+    "对指针、键盘、触屏和减少动画分别定义状态。",
+    "确定资源所有者、暂停条件和销毁方式；真实 shader 或物理行为要单独实测。"
+  ],
+  "data_fields": [
+    "experiment",
+    "inputs",
+    "state",
+    "motion_preferences",
+    "quality_budget",
+    "fallback"
+  ],
+  "failure_recovery": "缺少图形能力、资源失败或用户选择减少动画时保留说明和退出。",
+  "motion_contract": "只在需要时渲染；暂停、重置、离屏和卸载有明确行为。",
+  "evidence_level": "http_dom",
+  "evidence_note": "Only recorded observations are facts. DOM structure does not prove visual composition, hidden state, source code, backend behavior or licenses. The runnable blueprint is an original recipe, not a source-site clone.",
+  "sources": [
+    {
+      "id": "d3b31c0bc74eda2c",
+      "url": "https://carterogunsola.com/lab",
+      "family": "external.experiment",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T08:05:51.204022+00:00",
+      "source_sha256": "93bd61ec97d13f6f9c07baf086dbfb88ab8265e2051d9be5db8d6b80bef3683f",
+      "structure": {
+        "headings": {
+          "h1": 1
+        },
+        "forms": 0,
+        "input_types": {
+          "text": 1
+        },
+        "navigation_regions": 2,
+        "main_regions": 1,
+        "sections": 1,
+        "articles": 0,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 5,
+        "videos": 1,
+        "roles": {
+          "group": 2,
+          "dialog": 3
+        },
+        "anchor_count": 98
+      }
+    }
+  ],
+  "visual_metrics": [],
+  "source_coverage": "observed_examples",
+  "original_blueprint": true,
+  "business_mode": "local_preview",
+  "states": [
+    "default",
+    "loading",
+    "empty",
+    "error",
+    "success_preview",
+    "disabled",
+    "keyboard_focus",
+    "reduced_motion",
+    "narrow_view"
+  ],
+  "acceptance": [
+    "理解输入方式并可控地体验、暂停和退出互动实验。",
+    "缺少图形能力、资源失败或用户选择减少动画时保留说明和退出。",
+    "只在需要时渲染；暂停、重置、离屏和卸载有明确行为。",
+    "320、390、768、1440 宽度不出现整页横溢出；必要表格在独立区域滚动。",
+    "键盘可进入、操作、关闭对话框并返回触发点；错误不只靠颜色。",
+    "本地预览不得暗示真实支付、投稿、消息、账户或预约已生效。"
+  ],
+  "limitations": [
+    "Source interaction audit is not automatically performed",
+    "Source assets are not bundled",
+    "Real backend, production and physical-device acceptance are not included"
+  ]
+}

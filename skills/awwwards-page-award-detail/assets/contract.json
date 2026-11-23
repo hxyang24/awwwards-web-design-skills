@@ -1,0 +1,244 @@
+{
+  "schema_version": "3.0",
+  "id": "award-detail",
+  "skill": "awwwards-page-award-detail",
+  "title": "获奖作品详情与评审信息",
+  "kind": "award",
+  "scope": "Awwwards main-site page family",
+  "source_families": [
+    "main.award-detail"
+  ],
+  "goal": "理解作品、奖项与来源，并安全进入原站或相关内容。",
+  "regions": [
+    "作品标题",
+    "预览",
+    "访问原站",
+    "作者",
+    "奖项日期",
+    "评分维度",
+    "技术标签",
+    "相关作品"
+  ],
+  "workflow": [
+    "把 Awwwards 档案、原站实时观察和建议实现拆成三层证据。",
+    "评分显示维度、来源和时点；投票或收藏的登录条件需明确。",
+    "进入外站用可识别链接；技术标签不当作版本或源码证明。"
+  ],
+  "data_fields": [
+    "work_title",
+    "official_record",
+    "external_url",
+    "creator",
+    "award_claims",
+    "scores[]",
+    "tags[]"
+  ],
+  "failure_recovery": "原站失效保留档案；评论或投票接口不可用时不可伪造成功。",
+  "motion_contract": "预览保持尺寸；视频由用户启动并可暂停；原始素材无许可不打包。",
+  "evidence_level": "http_dom",
+  "evidence_note": "Only recorded observations are facts. DOM structure does not prove visual composition, hidden state, source code, backend behavior or licenses. The runnable blueprint is an original recipe, not a source-site clone.",
+  "sources": [
+    {
+      "id": "1f695e840492712e",
+      "url": "https://www.awwwards.com/sites/197-historias-ilustradas",
+      "family": "main.award-detail",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T08:02:57.133138+00:00",
+      "source_sha256": "faba1312c5e56f0c99a4984b65f4845f353b70447bf8e598923b50e5000bccae",
+      "structure": {
+        "headings": {
+          "h2": 9,
+          "h1": 1,
+          "h3": 45
+        },
+        "forms": 0,
+        "input_types": {
+          "text": 1
+        },
+        "navigation_regions": 2,
+        "main_regions": 0,
+        "sections": 1,
+        "articles": 0,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 14,
+        "roles": {},
+        "anchor_count": 255
+      }
+    },
+    {
+      "id": "8a801d006e102e7c",
+      "url": "https://www.awwwards.com/sites/20-years-of-xbox-museum",
+      "family": "main.award-detail",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T08:02:57.135415+00:00",
+      "source_sha256": "9c27e35b5b6092b72d656e0f228f334b0f7dd5f8b13476c0c986a56bbc8b1f7d",
+      "structure": {
+        "headings": {
+          "h2": 10,
+          "h1": 1,
+          "h3": 15
+        },
+        "forms": 0,
+        "input_types": {
+          "text": 1
+        },
+        "navigation_regions": 2,
+        "main_regions": 0,
+        "sections": 1,
+        "articles": 0,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 3,
+        "roles": {},
+        "anchor_count": 194
+      }
+    },
+    {
+      "id": "476a769230341e5b",
+      "url": "https://www.awwwards.com/sites/2018-year-in-review",
+      "family": "main.award-detail",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T08:03:17.494840+00:00",
+      "source_sha256": "99970354fb395d1d53d869f666668cb070ec7a077b0d079a3c8f612796500836",
+      "structure": {
+        "headings": {
+          "h2": 10,
+          "h1": 1,
+          "h3": 15
+        },
+        "forms": 0,
+        "input_types": {
+          "text": 1
+        },
+        "navigation_regions": 2,
+        "main_regions": 0,
+        "sections": 1,
+        "articles": 0,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 3,
+        "roles": {},
+        "anchor_count": 186
+      }
+    },
+    {
+      "id": "32353e3acbb0ce3b",
+      "url": "https://www.awwwards.com/sites/2021-virtual-webbys",
+      "family": "main.award-detail",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T08:03:17.498706+00:00",
+      "source_sha256": "22c6f8a84ccdcf1256291c0594a0476041e2a3644c30a4904393dd739619cc16",
+      "structure": {
+        "headings": {
+          "h2": 11,
+          "h1": 1,
+          "h3": 20
+        },
+        "forms": 0,
+        "input_types": {
+          "text": 1
+        },
+        "navigation_regions": 2,
+        "main_regions": 0,
+        "sections": 1,
+        "articles": 0,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 3,
+        "roles": {},
+        "anchor_count": 204
+      }
+    },
+    {
+      "id": "cf2861cd3a610aeb",
+      "url": "https://www.awwwards.com/sites/2degc-earth",
+      "family": "main.award-detail",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T08:03:21.582582+00:00",
+      "source_sha256": "bc77998d4ec15605a3210cd5ab86487e68768553b509f8498231c242dfe5f537",
+      "structure": {
+        "headings": {
+          "h2": 10,
+          "h1": 1,
+          "h3": 17
+        },
+        "forms": 0,
+        "input_types": {
+          "text": 1
+        },
+        "navigation_regions": 2,
+        "main_regions": 0,
+        "sections": 1,
+        "articles": 0,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 3,
+        "roles": {},
+        "anchor_count": 193
+      }
+    },
+    {
+      "id": "4738653a9627c873",
+      "url": "https://www.awwwards.com/sites/360-c2-b0-langstrasse-zurich",
+      "family": "main.award-detail",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T08:03:24.566120+00:00",
+      "source_sha256": "7ff3e3a378327242633ccce77a94a80c3256874585dd429450470f0fdd256d32",
+      "structure": {
+        "headings": {
+          "h2": 7,
+          "h1": 1,
+          "h3": 10
+        },
+        "forms": 0,
+        "input_types": {
+          "text": 1
+        },
+        "navigation_regions": 2,
+        "main_regions": 0,
+        "sections": 1,
+        "articles": 0,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 1,
+        "roles": {},
+        "anchor_count": 156
+      }
+    }
+  ],
+  "visual_metrics": [],
+  "source_coverage": "observed_examples",
+  "original_blueprint": true,
+  "business_mode": "local_preview",
+  "states": [
+    "default",
+    "loading",
+    "empty",
+    "error",
+    "success_preview",
+    "disabled",
+    "keyboard_focus",
+    "reduced_motion",
+    "narrow_view"
+  ],
+  "acceptance": [
+    "理解作品、奖项与来源，并安全进入原站或相关内容。",
+    "原站失效保留档案；评论或投票接口不可用时不可伪造成功。",
+    "预览保持尺寸；视频由用户启动并可暂停；原始素材无许可不打包。",
+    "320、390、768、1440 宽度不出现整页横溢出；必要表格在独立区域滚动。",
+    "键盘可进入、操作、关闭对话框并返回触发点；错误不只靠颜色。",
+    "本地预览不得暗示真实支付、投稿、消息、账户或预约已生效。"
+  ],
+  "limitations": [
+    "Source interaction audit is not automatically performed",
+    "Source assets are not bundled",
+    "Real backend, production and physical-device acceptance are not included"
+  ]
+}

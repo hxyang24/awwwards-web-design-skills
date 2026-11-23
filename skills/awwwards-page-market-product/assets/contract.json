@@ -1,0 +1,232 @@
+{
+  "schema_version": "3.0",
+  "id": "market-product",
+  "skill": "awwwards-page-market-product",
+  "title": "数字商品详情与许可选择",
+  "kind": "product",
+  "scope": "Awwwards main-site page family",
+  "source_families": [
+    "main.market-detail"
+  ],
+  "goal": "核对产品、规格、许可与费用，完成可核实的选择。",
+  "regions": [
+    "商品预览",
+    "作者",
+    "规格",
+    "兼容性",
+    "版本",
+    "许可",
+    "价格",
+    "购买或外站入口"
+  ],
+  "workflow": [
+    "先说明下载内容和使用许可，再展示购买行动。",
+    "版本和许可选择更新审阅摘要；外部商店需要明确标识。",
+    "无支付服务的示例只生成本地选择摘要，不收卡号或凭证。"
+  ],
+  "data_fields": [
+    "product",
+    "variants",
+    "license_options",
+    "compatibility",
+    "version",
+    "price",
+    "seller_url"
+  ],
+  "failure_recovery": "售罄或下架阻止购买；许可无法确认时提供联系作者。",
+  "motion_contract": "预览支持暂停和静态回退，不以动画阻挡许可文本。",
+  "evidence_level": "http_dom",
+  "evidence_note": "Only recorded observations are facts. DOM structure does not prove visual composition, hidden state, source code, backend behavior or licenses. The runnable blueprint is an original recipe, not a source-site clone.",
+  "sources": [
+    {
+      "id": "25bb89d70fa9dd85",
+      "url": "https://www.awwwards.com/market/product-prompts-by-martin-slaney",
+      "family": "main.market-detail",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T08:15:08.144794+00:00",
+      "source_sha256": "d7247a0d0c5a821c7b9b0858b826e501d2c574f37d1ee753f5283332fc053152",
+      "structure": {
+        "headings": {
+          "h3": 1
+        },
+        "forms": 0,
+        "input_types": {
+          "text": 1
+        },
+        "navigation_regions": 2,
+        "main_regions": 0,
+        "sections": 1,
+        "articles": 0,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 0,
+        "roles": {},
+        "anchor_count": 104
+      }
+    },
+    {
+      "id": "2e02fa82b945cfe8",
+      "url": "https://www.awwwards.com/market/product_6446e41b88ea4878892294",
+      "family": "main.market-detail",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T08:15:08.177299+00:00",
+      "source_sha256": "4c43aedfc79af8f2a77fd4f691423e17b1ff6261fecfca03d0b2d5288977f220",
+      "structure": {
+        "headings": {
+          "h3": 1
+        },
+        "forms": 0,
+        "input_types": {
+          "text": 1
+        },
+        "navigation_regions": 2,
+        "main_regions": 0,
+        "sections": 1,
+        "articles": 0,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 0,
+        "roles": {},
+        "anchor_count": 104
+      }
+    },
+    {
+      "id": "9c4641bdba2fdfcd",
+      "url": "https://www.awwwards.com/market/product_644c350e6076e266457678",
+      "family": "main.market-detail",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T08:15:08.210257+00:00",
+      "source_sha256": "ad75f7c1707fde589d683b6d5b8b39a5cf25d52b312272d77c40b7c652799ad4",
+      "structure": {
+        "headings": {
+          "h3": 1
+        },
+        "forms": 0,
+        "input_types": {
+          "text": 1
+        },
+        "navigation_regions": 2,
+        "main_regions": 0,
+        "sections": 1,
+        "articles": 0,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 0,
+        "roles": {},
+        "anchor_count": 104
+      }
+    },
+    {
+      "id": "da68c7d787075d6c",
+      "url": "https://www.awwwards.com/market/product_6454d687e5e60951544626",
+      "family": "main.market-detail",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T08:16:17.817504+00:00",
+      "source_sha256": "a3a7071fab86f20f162737b63b9a7b63fab4a6a722284a9a60ab92557ee61162",
+      "structure": {
+        "headings": {
+          "h3": 1
+        },
+        "forms": 0,
+        "input_types": {
+          "text": 1
+        },
+        "navigation_regions": 2,
+        "main_regions": 0,
+        "sections": 1,
+        "articles": 0,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 0,
+        "roles": {},
+        "anchor_count": 106
+      }
+    },
+    {
+      "id": "4a67883bfd27f71c",
+      "url": "https://www.awwwards.com/market/product_6473a6ea26e7b363656534",
+      "family": "main.market-detail",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T08:16:17.848666+00:00",
+      "source_sha256": "fe8110baf89a4383a031da20bd88a8304f454adb902e5077df4f89945360ce91",
+      "structure": {
+        "headings": {
+          "h3": 1
+        },
+        "forms": 0,
+        "input_types": {
+          "text": 1
+        },
+        "navigation_regions": 2,
+        "main_regions": 0,
+        "sections": 1,
+        "articles": 0,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 0,
+        "roles": {},
+        "anchor_count": 104
+      }
+    },
+    {
+      "id": "0bc5dd1af8a39429",
+      "url": "https://www.awwwards.com/market/product_64761833d870b385577312",
+      "family": "main.market-detail",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T08:16:17.881643+00:00",
+      "source_sha256": "48cc83a08419122ba68f560cee2e18602ff9303997933543720dceb733d081d3",
+      "structure": {
+        "headings": {
+          "h3": 1
+        },
+        "forms": 0,
+        "input_types": {
+          "text": 1
+        },
+        "navigation_regions": 2,
+        "main_regions": 0,
+        "sections": 1,
+        "articles": 0,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 0,
+        "roles": {},
+        "anchor_count": 104
+      }
+    }
+  ],
+  "visual_metrics": [],
+  "source_coverage": "observed_examples",
+  "original_blueprint": true,
+  "business_mode": "local_preview",
+  "states": [
+    "default",
+    "loading",
+    "empty",
+    "error",
+    "success_preview",
+    "disabled",
+    "keyboard_focus",
+    "reduced_motion",
+    "narrow_view"
+  ],
+  "acceptance": [
+    "核对产品、规格、许可与费用，完成可核实的选择。",
+    "售罄或下架阻止购买；许可无法确认时提供联系作者。",
+    "预览支持暂停和静态回退，不以动画阻挡许可文本。",
+    "320、390、768、1440 宽度不出现整页横溢出；必要表格在独立区域滚动。",
+    "键盘可进入、操作、关闭对话框并返回触发点；错误不只靠颜色。",
+    "本地预览不得暗示真实支付、投稿、消息、账户或预约已生效。"
+  ],
+  "limitations": [
+    "Source interaction audit is not automatically performed",
+    "Source assets are not bundled",
+    "Real backend, production and physical-device acceptance are not included"
+  ]
+}

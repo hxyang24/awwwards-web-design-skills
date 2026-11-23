@@ -1,0 +1,236 @@
+{
+  "schema_version": "3.0",
+  "id": "award-list",
+  "skill": "awwwards-page-award-list",
+  "title": "获奖与提名列表",
+  "kind": "listing",
+  "scope": "Awwwards main-site page family",
+  "source_families": [
+    "main.award-list",
+    "main.honors-list"
+  ],
+  "goal": "帮助用户在完整结果中定位条目，并进入详情或恢复空结果。",
+  "regions": [
+    "奖项说明",
+    "时间或类别",
+    "作品卡",
+    "作者",
+    "奖项标记",
+    "分页"
+  ],
+  "workflow": [
+    "独立保存奖项身份、SOTD 日期、SOTM 月份和年度，不根据排序补日期。",
+    "卡片标记清楚区分提名、荣誉、日奖、月奖和年奖。",
+    "翻页保持筛选；同月冲突或缺证据有可追溯入口。"
+  ],
+  "data_fields": [
+    "award_type",
+    "award_period",
+    "period_status",
+    "items[].site",
+    "items[].creator",
+    "pagination"
+  ],
+  "failure_recovery": "月份证据冲突显示冲突；历史作品不可达时保留档案与状态，不称在线复现。",
+  "motion_contract": "分页或加载更多不自动夺取焦点；保留可访问的下一页链接。",
+  "evidence_level": "http_dom",
+  "evidence_note": "Only recorded observations are facts. DOM structure does not prove visual composition, hidden state, source code, backend behavior or licenses. The runnable blueprint is an original recipe, not a source-site clone.",
+  "sources": [
+    {
+      "id": "a141c6dd7a8c130b",
+      "url": "https://www.awwwards.com/honors/about",
+      "family": "main.honors-list",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T08:16:06.525720+00:00",
+      "source_sha256": "028ece462eb4514a719f06b63d0fd51a95cfd0bf50df7b218e9e60ce33ee2432",
+      "structure": {
+        "headings": {
+          "h1": 1,
+          "h2": 4,
+          "h3": 16
+        },
+        "forms": 0,
+        "input_types": {
+          "text": 1
+        },
+        "navigation_regions": 2,
+        "main_regions": 0,
+        "sections": 1,
+        "articles": 0,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 0,
+        "roles": {},
+        "anchor_count": 103
+      }
+    },
+    {
+      "id": "ff581eeb624c298c",
+      "url": "https://www.awwwards.com/honors/business-services",
+      "family": "main.honors-list",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T08:16:06.556840+00:00",
+      "source_sha256": "2101aa96b5045f962466f9ee9ee08654216fe6f507c420bb70a1acd2f43e2fe3",
+      "structure": {
+        "headings": {
+          "h3": 43,
+          "h1": 1,
+          "h2": 2
+        },
+        "forms": 0,
+        "input_types": {
+          "text": 1
+        },
+        "navigation_regions": 2,
+        "main_regions": 0,
+        "sections": 1,
+        "articles": 0,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 0,
+        "roles": {},
+        "anchor_count": 187
+      }
+    },
+    {
+      "id": "bb4bdf2d1c78dcd8",
+      "url": "https://www.awwwards.com/honors/ecommerce",
+      "family": "main.honors-list",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T08:16:06.588886+00:00",
+      "source_sha256": "f0265487a90aa8acd736b6a9ab01e9fa7f48d26341aa1f97c77d5434a1a466bc",
+      "structure": {
+        "headings": {},
+        "forms": 0,
+        "input_types": {},
+        "navigation_regions": 0,
+        "main_regions": 0,
+        "sections": 0,
+        "articles": 0,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 0,
+        "roles": {},
+        "anchor_count": 0
+      }
+    },
+    {
+      "id": "6f95870ad6c12dde",
+      "url": "https://www.awwwards.com/honors/no-code",
+      "family": "main.honors-list",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T08:18:17.264464+00:00",
+      "source_sha256": "e0ce611b385ce7a65e0f672542f9475d93f6b2ee57b2c0ce1da89a2fa67789d3",
+      "structure": {
+        "headings": {
+          "h3": 23,
+          "h1": 1,
+          "h2": 2
+        },
+        "forms": 0,
+        "input_types": {
+          "text": 1
+        },
+        "navigation_regions": 2,
+        "main_regions": 0,
+        "sections": 1,
+        "articles": 0,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 0,
+        "roles": {},
+        "anchor_count": 149
+      }
+    },
+    {
+      "id": "31d873971b95dcf5",
+      "url": "https://www.awwwards.com/honors/nominees",
+      "family": "main.honors-list",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T08:15:47.229374+00:00",
+      "source_sha256": "93f23a950a430bb9195e63decedf76245ce2a1fcf0bc4cfcb670d41ecbfd0fca",
+      "structure": {
+        "headings": {
+          "h1": 1,
+          "h3": 64,
+          "h2": 1
+        },
+        "forms": 0,
+        "input_types": {
+          "text": 1
+        },
+        "navigation_regions": 2,
+        "main_regions": 0,
+        "sections": 1,
+        "articles": 0,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 0,
+        "roles": {},
+        "anchor_count": 217
+      }
+    },
+    {
+      "id": "07bb4d9fa7d4af59",
+      "url": "https://www.awwwards.com/honors/portfolio",
+      "family": "main.honors-list",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T08:18:17.298612+00:00",
+      "source_sha256": "847e8e6b432e7cab53433682e8796eac1b6577db1accf2cd9d9b0ebc72f5c0d3",
+      "structure": {
+        "headings": {
+          "h3": 43,
+          "h1": 1,
+          "h2": 2
+        },
+        "forms": 0,
+        "input_types": {
+          "text": 1
+        },
+        "navigation_regions": 2,
+        "main_regions": 0,
+        "sections": 1,
+        "articles": 0,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 0,
+        "roles": {},
+        "anchor_count": 187
+      }
+    }
+  ],
+  "visual_metrics": [],
+  "source_coverage": "observed_examples",
+  "original_blueprint": true,
+  "business_mode": "local_preview",
+  "states": [
+    "default",
+    "loading",
+    "empty",
+    "error",
+    "success_preview",
+    "disabled",
+    "keyboard_focus",
+    "reduced_motion",
+    "narrow_view"
+  ],
+  "acceptance": [
+    "帮助用户在完整结果中定位条目，并进入详情或恢复空结果。",
+    "月份证据冲突显示冲突；历史作品不可达时保留档案与状态，不称在线复现。",
+    "分页或加载更多不自动夺取焦点；保留可访问的下一页链接。",
+    "320、390、768、1440 宽度不出现整页横溢出；必要表格在独立区域滚动。",
+    "键盘可进入、操作、关闭对话框并返回触发点；错误不只靠颜色。",
+    "本地预览不得暗示真实支付、投稿、消息、账户或预约已生效。"
+  ],
+  "limitations": [
+    "Source interaction audit is not automatically performed",
+    "Source assets are not bundled",
+    "Real backend, production and physical-device acceptance are not included"
+  ]
+}

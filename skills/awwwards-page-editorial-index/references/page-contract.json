@@ -1,0 +1,235 @@
+{
+  "schema_version": "3.0",
+  "id": "editorial-index",
+  "skill": "awwwards-page-editorial-index",
+  "title": "编辑内容与博客索引",
+  "kind": "listing",
+  "scope": "Awwwards main-site page family",
+  "source_families": [
+    "main.editorial-index"
+  ],
+  "goal": "帮助用户在完整结果中定位条目，并进入详情或恢复空结果。",
+  "regions": [
+    "栏目",
+    "文章",
+    "作者",
+    "日期",
+    "摘要",
+    "搜索",
+    "主题与分页"
+  ],
+  "workflow": [
+    "区分编辑文章、赞助内容和教程。",
+    "封面只是入口，标题、日期、作者和主题是可检索文本。",
+    "列表页面不全文转载来源；详情按授权呈现。"
+  ],
+  "data_fields": [
+    "articles",
+    "topics",
+    "authors",
+    "published_at",
+    "sponsored"
+  ],
+  "failure_recovery": "搜索无结果提供相关主题和重置，不伪造文章。",
+  "motion_contract": "长标题允许换行，不用截断掩盖内容。",
+  "evidence_level": "http_dom",
+  "evidence_note": "Only recorded observations are facts. DOM structure does not prove visual composition, hidden state, source code, backend behavior or licenses. The runnable blueprint is an original recipe, not a source-site clone.",
+  "sources": [
+    {
+      "id": "e4db4c24ad6557af",
+      "url": "https://www.awwwards.com/blog/",
+      "family": "main.editorial-index",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T08:02:05.687500+00:00",
+      "source_sha256": "58ac1bf25146e87e44b94474e632efefe31ae4924f08a0da16bffe182270cb62",
+      "structure": {
+        "headings": {
+          "h1": 1,
+          "h2": 13
+        },
+        "forms": 0,
+        "input_types": {
+          "text": 2
+        },
+        "navigation_regions": 4,
+        "main_regions": 0,
+        "sections": 1,
+        "articles": 0,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 0,
+        "roles": {},
+        "anchor_count": 196
+      }
+    },
+    {
+      "id": "526a5cdd43d0bc9b",
+      "url": "https://www.awwwards.com/blog/?category=design-illustration",
+      "family": "main.editorial-index",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T08:15:41.778465+00:00",
+      "source_sha256": "ebc8842f69e9e158facdac0ce54e3a2980546dfd8cf84bb7ae56a0085cf04938",
+      "structure": {
+        "headings": {
+          "h1": 1,
+          "h2": 21
+        },
+        "forms": 0,
+        "input_types": {
+          "text": 2
+        },
+        "navigation_regions": 4,
+        "main_regions": 0,
+        "sections": 1,
+        "articles": 0,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 0,
+        "roles": {},
+        "anchor_count": 223
+      }
+    },
+    {
+      "id": "1808e1e1a71a61d4",
+      "url": "https://www.awwwards.com/blog/?category=design-illustration&page=2",
+      "family": "main.editorial-index",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T08:17:37.850590+00:00",
+      "source_sha256": "eb2cf10762975e349086173d9911eec63ec3b997bc46e9bc6813c1bc81bb7771",
+      "structure": {
+        "headings": {
+          "h1": 1,
+          "h2": 21
+        },
+        "forms": 0,
+        "input_types": {
+          "text": 2
+        },
+        "navigation_regions": 4,
+        "main_regions": 0,
+        "sections": 1,
+        "articles": 0,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 0,
+        "roles": {},
+        "anchor_count": 221
+      }
+    },
+    {
+      "id": "42c096757d0e9472",
+      "url": "https://www.awwwards.com/blog/?category=design-illustration&page=3",
+      "family": "main.editorial-index",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T08:17:37.893289+00:00",
+      "source_sha256": "268c2250e7efe39aecc52fd80a6ca6195e3c44fd7673ac7d05e8de1c1a593271",
+      "structure": {
+        "headings": {
+          "h1": 1,
+          "h2": 21
+        },
+        "forms": 0,
+        "input_types": {
+          "text": 2
+        },
+        "navigation_regions": 4,
+        "main_regions": 0,
+        "sections": 1,
+        "articles": 0,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 0,
+        "roles": {},
+        "anchor_count": 223
+      }
+    },
+    {
+      "id": "0dbc5eb55d2350bd",
+      "url": "https://www.awwwards.com/blog/?category=design-illustration&page=4",
+      "family": "main.editorial-index",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T08:17:37.938005+00:00",
+      "source_sha256": "fbb29f6e34f2f83d2068f5f1106c596d5e4680f7e994bf3494c011e3e94a324d",
+      "structure": {
+        "headings": {
+          "h1": 1,
+          "h2": 21
+        },
+        "forms": 0,
+        "input_types": {
+          "text": 2
+        },
+        "navigation_regions": 4,
+        "main_regions": 0,
+        "sections": 1,
+        "articles": 0,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 0,
+        "roles": {},
+        "anchor_count": 222
+      }
+    },
+    {
+      "id": "69f09d3970399cc5",
+      "url": "https://www.awwwards.com/blog/?category=design-illustration&page=5",
+      "family": "main.editorial-index",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T08:19:08.248601+00:00",
+      "source_sha256": "9ba4f92f05c8ce8129cfc899705e95fc37a9a63421b0c0df3bdceca3e834d5be",
+      "structure": {
+        "headings": {
+          "h1": 1,
+          "h2": 21
+        },
+        "forms": 0,
+        "input_types": {
+          "text": 2
+        },
+        "navigation_regions": 4,
+        "main_regions": 0,
+        "sections": 1,
+        "articles": 0,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 0,
+        "roles": {},
+        "anchor_count": 222
+      }
+    }
+  ],
+  "visual_metrics": [],
+  "source_coverage": "observed_examples",
+  "original_blueprint": true,
+  "business_mode": "local_preview",
+  "states": [
+    "default",
+    "loading",
+    "empty",
+    "error",
+    "success_preview",
+    "disabled",
+    "keyboard_focus",
+    "reduced_motion",
+    "narrow_view"
+  ],
+  "acceptance": [
+    "帮助用户在完整结果中定位条目，并进入详情或恢复空结果。",
+    "搜索无结果提供相关主题和重置，不伪造文章。",
+    "长标题允许换行，不用截断掩盖内容。",
+    "320、390、768、1440 宽度不出现整页横溢出；必要表格在独立区域滚动。",
+    "键盘可进入、操作、关闭对话框并返回触发点；错误不只靠颜色。",
+    "本地预览不得暗示真实支付、投稿、消息、账户或预约已生效。"
+  ],
+  "limitations": [
+    "Source interaction audit is not automatically performed",
+    "Source assets are not bundled",
+    "Real backend, production and physical-device acceptance are not included"
+  ]
+}

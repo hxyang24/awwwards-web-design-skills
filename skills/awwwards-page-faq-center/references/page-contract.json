@@ -1,0 +1,93 @@
+{
+  "schema_version": "3.0",
+  "id": "faq-center",
+  "skill": "awwwards-page-faq-center",
+  "title": "帮助中心与 FAQ",
+  "kind": "faq",
+  "scope": "Awwwards main-site page family",
+  "source_families": [
+    "main.faq"
+  ],
+  "goal": "找到相关答案，理解下一步及帮助渠道。",
+  "regions": [
+    "主题",
+    "问题搜索",
+    "问题展开",
+    "答案",
+    "联系路径"
+  ],
+  "workflow": [
+    "按用户问题组织主题，搜索匹配问题与答案。",
+    "展开和折叠使用原生 details 或正确 aria-expanded。",
+    "结果为空时保留联系方式和重置，不隐藏帮助入口。"
+  ],
+  "data_fields": [
+    "topics",
+    "questions[].id",
+    "question",
+    "answer",
+    "support_route"
+  ],
+  "failure_recovery": "答案无证据或过期时标记待确认；不生成未经授权的服务承诺。",
+  "motion_contract": "展开不强行滚动到顶部，减少动画时直接展开内容。",
+  "evidence_level": "http_dom",
+  "evidence_note": "Only recorded observations are facts. DOM structure does not prove visual composition, hidden state, source code, backend behavior or licenses. The runnable blueprint is an original recipe, not a source-site clone.",
+  "sources": [
+    {
+      "id": "7cf1a97d12d6dd5a",
+      "url": "https://www.awwwards.com/faqs/",
+      "family": "main.faq",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T08:02:22.668009+00:00",
+      "source_sha256": "c5b7eb77ec095e004c65c40ba531f2293cf0c2af09d63b1abb365d155e511bdf",
+      "structure": {
+        "headings": {
+          "h1": 1,
+          "h3": 4
+        },
+        "forms": 0,
+        "input_types": {
+          "text": 1
+        },
+        "navigation_regions": 2,
+        "main_regions": 0,
+        "sections": 1,
+        "articles": 0,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 0,
+        "roles": {},
+        "anchor_count": 114
+      }
+    }
+  ],
+  "visual_metrics": [],
+  "source_coverage": "observed_examples",
+  "original_blueprint": true,
+  "business_mode": "local_preview",
+  "states": [
+    "default",
+    "loading",
+    "empty",
+    "error",
+    "success_preview",
+    "disabled",
+    "keyboard_focus",
+    "reduced_motion",
+    "narrow_view"
+  ],
+  "acceptance": [
+    "找到相关答案，理解下一步及帮助渠道。",
+    "答案无证据或过期时标记待确认；不生成未经授权的服务承诺。",
+    "展开不强行滚动到顶部，减少动画时直接展开内容。",
+    "320、390、768、1440 宽度不出现整页横溢出；必要表格在独立区域滚动。",
+    "键盘可进入、操作、关闭对话框并返回触发点；错误不只靠颜色。",
+    "本地预览不得暗示真实支付、投稿、消息、账户或预约已生效。"
+  ],
+  "limitations": [
+    "Source interaction audit is not automatically performed",
+    "Source assets are not bundled",
+    "Real backend, production and physical-device acceptance are not included"
+  ]
+}

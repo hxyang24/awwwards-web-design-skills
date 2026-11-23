@@ -1,0 +1,259 @@
+{
+  "schema_version": "3.0",
+  "id": "course-detail",
+  "skill": "awwwards-page-course-detail",
+  "title": "课程详情与大纲",
+  "kind": "course",
+  "scope": "Awwwards main-site page family",
+  "source_families": [
+    "main.course-detail"
+  ],
+  "goal": "理解课程与大纲，明确公开预览和访问权限。",
+  "regions": [
+    "课程介绍",
+    "讲师",
+    "预览",
+    "大纲",
+    "先修条件",
+    "访问与价格",
+    "评价"
+  ],
+  "workflow": [
+    "按课程目标列出章节和先修条件，不仅展示营销大图。",
+    "区分可公开预览的课时和受购买或登录约束的课时。",
+    "切换章节保留播放位置的约定，停止时清理媒体。"
+  ],
+  "data_fields": [
+    "course",
+    "instructor",
+    "syllabus[].lessons",
+    "preview_access",
+    "purchase_state"
+  ],
+  "failure_recovery": "媒体加载失败提供文字说明；受限课时不尝试绕过门槛。",
+  "motion_contract": "大纲使用可访问展开控件，预览不自动有声播放。",
+  "evidence_level": "http_dom",
+  "evidence_note": "Only recorded observations are facts. DOM structure does not prove visual composition, hidden state, source code, backend behavior or licenses. The runnable blueprint is an original recipe, not a source-site clone.",
+  "sources": [
+    {
+      "id": "e6061db1b2fc754d",
+      "url": "https://www.awwwards.com/academy/course/advanced-prototyping-from-early-ideas-to-rich-interactions",
+      "family": "main.course-detail",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T08:06:17.195398+00:00",
+      "source_sha256": "b8256b2b940b91fab0ea7cde43d1c08b2a36c4f97bce9e018f0e002e1d93517c",
+      "structure": {
+        "headings": {
+          "h1": 2,
+          "h2": 3,
+          "h3": 15,
+          "h4": 1
+        },
+        "forms": 0,
+        "input_types": {
+          "text": 1
+        },
+        "navigation_regions": 2,
+        "main_regions": 0,
+        "sections": 1,
+        "articles": 0,
+        "tables": 1,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 1,
+        "roles": {
+          "region": 1
+        },
+        "anchor_count": 138
+      }
+    },
+    {
+      "id": "1cb93db4dbd1743f",
+      "url": "https://www.awwwards.com/academy/course/boost-your-conversion-rates-learn-landing-page-design-with-figma",
+      "family": "main.course-detail",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T08:06:22.681027+00:00",
+      "source_sha256": "5fa590059bd7582adeb21bfb92355d5caa4c191758b6a0edad839c113d4c4192",
+      "structure": {
+        "headings": {
+          "h1": 2,
+          "h2": 3,
+          "h3": 9,
+          "h4": 1
+        },
+        "forms": 0,
+        "input_types": {
+          "text": 1
+        },
+        "navigation_regions": 2,
+        "main_regions": 0,
+        "sections": 1,
+        "articles": 0,
+        "tables": 1,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 1,
+        "roles": {
+          "region": 1
+        },
+        "anchor_count": 126
+      }
+    },
+    {
+      "id": "117a814067dda5f4",
+      "url": "https://www.awwwards.com/academy/course/building-an-immersive-creative-website-from-scratch-without-frameworks",
+      "family": "main.course-detail",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T08:06:22.683519+00:00",
+      "source_sha256": "5fe158bdd13ae29dfa9a97bd80945975779305d70e35df574df50e953b6415c3",
+      "structure": {
+        "headings": {
+          "h1": 2,
+          "h2": 3,
+          "h3": 13,
+          "h4": 1
+        },
+        "forms": 0,
+        "input_types": {
+          "text": 1
+        },
+        "navigation_regions": 2,
+        "main_regions": 0,
+        "sections": 1,
+        "articles": 0,
+        "tables": 1,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 1,
+        "roles": {
+          "region": 1
+        },
+        "anchor_count": 134
+      }
+    },
+    {
+      "id": "0e2224463922b3a8",
+      "url": "https://www.awwwards.com/academy/course/creating-epic-e-commerce-experiences-for-brands-an-advanced-guide",
+      "family": "main.course-detail",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T08:06:22.685895+00:00",
+      "source_sha256": "99cbb479d5a85a27309073f5ceecf1cbde10d911a5c548f38bd200d779866c86",
+      "structure": {
+        "headings": {
+          "h1": 2,
+          "h2": 3,
+          "h3": 14,
+          "h4": 1
+        },
+        "forms": 0,
+        "input_types": {
+          "text": 1
+        },
+        "navigation_regions": 2,
+        "main_regions": 0,
+        "sections": 1,
+        "articles": 0,
+        "tables": 1,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 1,
+        "roles": {
+          "region": 1
+        },
+        "anchor_count": 136
+      }
+    },
+    {
+      "id": "d6b690599f1ce9c3",
+      "url": "https://www.awwwards.com/academy/course/creative-coding-2-0-in-js-animation-sound-color",
+      "family": "main.course-detail",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T08:06:27.967876+00:00",
+      "source_sha256": "099e9bf26e404066bc09532037f4d6cf4b287db55c2335a4ad557f761ea7a76d",
+      "structure": {
+        "headings": {
+          "h1": 2,
+          "h2": 4,
+          "h3": 16,
+          "h4": 1
+        },
+        "forms": 0,
+        "input_types": {
+          "text": 1
+        },
+        "navigation_regions": 2,
+        "main_regions": 0,
+        "sections": 1,
+        "articles": 0,
+        "tables": 1,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 1,
+        "roles": {
+          "region": 1
+        },
+        "anchor_count": 126
+      }
+    },
+    {
+      "id": "25128468bc9d593d",
+      "url": "https://www.awwwards.com/academy/course/creative-portfolios-a-powerful-visual-language-for-brands-online-course",
+      "family": "main.course-detail",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T08:06:27.970567+00:00",
+      "source_sha256": "fb1198700a60124ca0451c900914884bc1c8ef7b676316169498e0bf02a643f3",
+      "structure": {
+        "headings": {
+          "h1": 2,
+          "h2": 3,
+          "h3": 14,
+          "h4": 1
+        },
+        "forms": 0,
+        "input_types": {
+          "text": 1
+        },
+        "navigation_regions": 2,
+        "main_regions": 0,
+        "sections": 1,
+        "articles": 0,
+        "tables": 1,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 1,
+        "roles": {
+          "region": 1
+        },
+        "anchor_count": 136
+      }
+    }
+  ],
+  "visual_metrics": [],
+  "source_coverage": "observed_examples",
+  "original_blueprint": true,
+  "business_mode": "local_preview",
+  "states": [
+    "default",
+    "loading",
+    "empty",
+    "error",
+    "success_preview",
+    "disabled",
+    "keyboard_focus",
+    "reduced_motion",
+    "narrow_view"
+  ],
+  "acceptance": [
+    "理解课程与大纲，明确公开预览和访问权限。",
+    "媒体加载失败提供文字说明；受限课时不尝试绕过门槛。",
+    "大纲使用可访问展开控件，预览不自动有声播放。",
+    "320、390、768、1440 宽度不出现整页横溢出；必要表格在独立区域滚动。",
+    "键盘可进入、操作、关闭对话框并返回触发点；错误不只靠颜色。",
+    "本地预览不得暗示真实支付、投稿、消息、账户或预约已生效。"
+  ],
+  "limitations": [
+    "Source interaction audit is not automatically performed",
+    "Source assets are not bundled",
+    "Real backend, production and physical-device acceptance are not included"
+  ]
+}

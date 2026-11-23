@@ -1,0 +1,210 @@
+{
+  "schema_version": "3.0",
+  "id": "external-contact",
+  "skill": "awwwards-page-external-contact",
+  "title": "获奖外站联系内页",
+  "kind": "contact",
+  "scope": "awarded external website inner page",
+  "source_families": [
+    "external.contact"
+  ],
+  "goal": "完成可恢复的询问表单并理解提交的实际状态。",
+  "regions": [
+    "公开联系渠道",
+    "地点",
+    "需求分类",
+    "表单",
+    "隐私与反馈"
+  ],
+  "workflow": [
+    "分别记录原站可观察表单结构和建议的服务端提交契约。",
+    "公开地址和邮箱有来源；示例用虚构替代。",
+    "最少必要字段、同意状态、错误恢复和提交状态均明确。"
+  ],
+  "data_fields": [
+    "channels",
+    "locations",
+    "inquiry_fields",
+    "consent",
+    "response_contract"
+  ],
+  "failure_recovery": "原站无可用表单时不臆造后台；演示不实际发送。",
+  "motion_contract": "触屏和键盘都能完成，光标增强不干扰输入。",
+  "evidence_level": "http_dom",
+  "evidence_note": "Only recorded observations are facts. DOM structure does not prove visual composition, hidden state, source code, backend behavior or licenses. The runnable blueprint is an original recipe, not a source-site clone.",
+  "sources": [
+    {
+      "id": "6aaf81f3c82f2288",
+      "url": "http://www.blacknegative.com/contact/",
+      "family": "external.contact",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T08:15:57.567664+00:00",
+      "source_sha256": "ad0dd877b1e16b96a727a6bfdb4c3fb8c850eb5c221401998c7f21203e92ca1a",
+      "structure": {
+        "headings": {},
+        "forms": 0,
+        "input_types": {},
+        "navigation_regions": 0,
+        "main_regions": 0,
+        "sections": 0,
+        "articles": 0,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 0,
+        "roles": {},
+        "anchor_count": 17
+      }
+    },
+    {
+      "id": "d4e2612376d379ac",
+      "url": "https://alitwotimes.com/contact/",
+      "family": "external.contact",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T08:17:00.729358+00:00",
+      "source_sha256": "3aad14fa0940ee8d4ba2c9e68cd906b7e98cf8c62d3be7d7f73d9f14fdd70c54",
+      "structure": {
+        "headings": {
+          "h1": 1,
+          "h2": 3
+        },
+        "forms": 0,
+        "input_types": {},
+        "navigation_regions": 1,
+        "main_regions": 1,
+        "sections": 1,
+        "articles": 1,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 0,
+        "roles": {},
+        "anchor_count": 30
+      }
+    },
+    {
+      "id": "b3941ba433686291",
+      "url": "https://artemiilebedev.com/contact",
+      "family": "external.contact",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T08:04:45.887025+00:00",
+      "source_sha256": "b7f4b18c5b87ef27c2343c6c20c736be95573687ee6f7f5fc7121de4f97b2a3b",
+      "structure": {
+        "headings": {
+          "h1": 1
+        },
+        "forms": 1,
+        "input_types": {
+          "text": 2,
+          "email": 1,
+          "checkbox": 1,
+          "submit": 1
+        },
+        "navigation_regions": 1,
+        "main_regions": 1,
+        "sections": 0,
+        "articles": 0,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 1,
+        "roles": {},
+        "anchor_count": 39
+      }
+    },
+    {
+      "id": "61b6afc31fc69722",
+      "url": "https://carterogunsola.com/contact",
+      "family": "external.contact",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T08:17:31.226905+00:00",
+      "source_sha256": "012ae9a1e8587c0afdefcabeb9b21540c747cf05b6255455b6c3d309cd1b59c8",
+      "structure": {
+        "headings": {
+          "h1": 1
+        },
+        "forms": 1,
+        "input_types": {
+          "radio": 3,
+          "email": 1,
+          "text": 3
+        },
+        "navigation_regions": 2,
+        "main_regions": 1,
+        "sections": 1,
+        "articles": 0,
+        "tables": 0,
+        "dialogs": 1,
+        "canvases": 8,
+        "videos": 0,
+        "roles": {
+          "group": 1,
+          "button": 1,
+          "alert": 1,
+          "dialog": 3
+        },
+        "anchor_count": 34
+      }
+    },
+    {
+      "id": "c0efcd19973c0ae4",
+      "url": "https://www.a-lign.studio/contact",
+      "family": "external.contact",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T08:17:31.264667+00:00",
+      "source_sha256": "20545aef92de1358cce7f7da45205173e61d38e067ee07bb065ad74fc4d7fc54",
+      "structure": {
+        "headings": {
+          "h1": 1,
+          "h2": 2
+        },
+        "forms": 1,
+        "input_types": {
+          "text": 3
+        },
+        "navigation_regions": 1,
+        "main_regions": 1,
+        "sections": 5,
+        "articles": 0,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 0,
+        "roles": {
+          "list": 6,
+          "none": 3,
+          "listitem": 17
+        },
+        "anchor_count": 34
+      }
+    }
+  ],
+  "visual_metrics": [],
+  "source_coverage": "observed_examples",
+  "original_blueprint": true,
+  "business_mode": "local_preview",
+  "states": [
+    "default",
+    "loading",
+    "empty",
+    "error",
+    "success_preview",
+    "disabled",
+    "keyboard_focus",
+    "reduced_motion",
+    "narrow_view"
+  ],
+  "acceptance": [
+    "完成可恢复的询问表单并理解提交的实际状态。",
+    "原站无可用表单时不臆造后台；演示不实际发送。",
+    "触屏和键盘都能完成，光标增强不干扰输入。",
+    "320、390、768、1440 宽度不出现整页横溢出；必要表格在独立区域滚动。",
+    "键盘可进入、操作、关闭对话框并返回触发点；错误不只靠颜色。",
+    "本地预览不得暗示真实支付、投稿、消息、账户或预约已生效。"
+  ],
+  "limitations": [
+    "Source interaction audit is not automatically performed",
+    "Source assets are not bundled",
+    "Real backend, production and physical-device acceptance are not included"
+  ]
+}

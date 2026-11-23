@@ -1,0 +1,97 @@
+{
+  "schema_version": "3.0",
+  "id": "submission-wizard",
+  "skill": "awwwards-page-submission-wizard",
+  "title": "作品提交与审阅向导",
+  "kind": "wizard",
+  "scope": "Awwwards main-site page family",
+  "source_families": [
+    "main.submission"
+  ],
+  "goal": "分步收集最少必要输入，在最终行动前审阅和确认。",
+  "regions": [
+    "资格说明",
+    "项目信息",
+    "贡献者",
+    "素材许可",
+    "预览",
+    "费用",
+    "最终确认"
+  ],
+  "workflow": [
+    "先说明提交条件、审核和费用，再收集最少字段。",
+    "保存草稿、字段校验和最终审阅是不同状态。",
+    "没有真实服务端时不得假装已提交评奖或扣费。"
+  ],
+  "data_fields": [
+    "project_url",
+    "title",
+    "contributors",
+    "rights_confirmation",
+    "draft",
+    "review",
+    "submission_result"
+  ],
+  "failure_recovery": "验证或上传失败保留草稿；提交重试前查询原请求是否已执行。",
+  "motion_contract": "单步输入避免复杂横排；返回保值，焦点落在当前步骤标题。",
+  "evidence_level": "http_dom",
+  "evidence_note": "Only recorded observations are facts. DOM structure does not prove visual composition, hidden state, source code, backend behavior or licenses. The runnable blueprint is an original recipe, not a source-site clone.",
+  "sources": [
+    {
+      "id": "308df2451b1172dc",
+      "url": "https://www.awwwards.com/submit/",
+      "family": "main.submission",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T08:02:40.524199+00:00",
+      "source_sha256": "384ce51ea077aab8855a4ee6164ca7c3ed23ba48ddb67016680f950cb5acc1d6",
+      "structure": {
+        "headings": {
+          "h3": 2
+        },
+        "forms": 0,
+        "input_types": {
+          "text": 1,
+          "checkbox": 1
+        },
+        "navigation_regions": 2,
+        "main_regions": 0,
+        "sections": 1,
+        "articles": 0,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 0,
+        "roles": {},
+        "anchor_count": 101
+      }
+    }
+  ],
+  "visual_metrics": [],
+  "source_coverage": "observed_examples",
+  "original_blueprint": true,
+  "business_mode": "local_preview",
+  "states": [
+    "default",
+    "loading",
+    "empty",
+    "error",
+    "success_preview",
+    "disabled",
+    "keyboard_focus",
+    "reduced_motion",
+    "narrow_view"
+  ],
+  "acceptance": [
+    "分步收集最少必要输入，在最终行动前审阅和确认。",
+    "验证或上传失败保留草稿；提交重试前查询原请求是否已执行。",
+    "单步输入避免复杂横排；返回保值，焦点落在当前步骤标题。",
+    "320、390、768、1440 宽度不出现整页横溢出；必要表格在独立区域滚动。",
+    "键盘可进入、操作、关闭对话框并返回触发点；错误不只靠颜色。",
+    "本地预览不得暗示真实支付、投稿、消息、账户或预约已生效。"
+  ],
+  "limitations": [
+    "Source interaction audit is not automatically performed",
+    "Source assets are not bundled",
+    "Real backend, production and physical-device acceptance are not included"
+  ]
+}

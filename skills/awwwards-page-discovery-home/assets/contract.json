@@ -1,0 +1,297 @@
+{
+  "schema_version": "3.0",
+  "id": "discovery-home",
+  "skill": "awwwards-page-discovery-home",
+  "title": "发现型门户首页",
+  "kind": "portal",
+  "scope": "Awwwards main-site page family",
+  "source_families": [
+    "main.home"
+  ],
+  "goal": "让用户理解内容层级，并进入当前最重要的任务。",
+  "regions": [
+    "主导航",
+    "当日精选",
+    "最新提名",
+    "获奖作品",
+    "课程",
+    "合集",
+    "创作者",
+    "内容",
+    "市场",
+    "提交入口"
+  ],
+  "workflow": [
+    "按首要用户任务分组跨栏目入口，不把全部内容挤入一个无限网格。",
+    "精选作品独立呈现，奖项、日期和得分分别绑定数据字段。",
+    "每个栏目有少量可扫读内容与查看全部入口；没有内容的栏目显示原因。"
+  ],
+  "data_fields": [
+    "featured_work",
+    "award_date",
+    "score",
+    "sections[].kind",
+    "sections[].items",
+    "section_destination"
+  ],
+  "failure_recovery": "精选或某栏目加载失败时保留导航和其他内容；未知分数不显示为零。",
+  "motion_contract": "首屏信息先稳定呈现；卡片增强不阻止链接、键盘或减少动画。",
+  "evidence_level": "rendered_geometry",
+  "evidence_note": "Only recorded observations are facts. DOM structure does not prove visual composition, hidden state, source code, backend behavior or licenses. The runnable blueprint is an original recipe, not a source-site clone.",
+  "sources": [
+    {
+      "id": "3bb690a206a51974",
+      "url": "https://www.awwwards.com/",
+      "family": "main.home",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T08:01:54.514192+00:00",
+      "source_sha256": "bbff41474dfb85c4cb72d8f5fcb61e59179f769093685000b56f57dff5d59afd",
+      "structure": {
+        "headings": {
+          "h2": 11,
+          "h1": 1,
+          "h3": 41
+        },
+        "forms": 0,
+        "input_types": {
+          "text": 1
+        },
+        "navigation_regions": 2,
+        "main_regions": 0,
+        "sections": 1,
+        "articles": 0,
+        "tables": 1,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 0,
+        "roles": {},
+        "anchor_count": 206
+      }
+    }
+  ],
+  "visual_metrics": [
+    {
+      "source_id": "3bb690a206a51974",
+      "url": "https://www.awwwards.com/",
+      "family": "main.home",
+      "viewport": {
+        "width": 390,
+        "height": 1000,
+        "device_scale_factor": 1
+      },
+      "observed_at": "2026-11-23T08:21:22.797Z",
+      "interaction_inspection": "not_run",
+      "source_screenshots_redistributed": false,
+      "http_status": 200,
+      "final_url": "https://www.awwwards.com/",
+      "render_state": "visible_content",
+      "metrics": {
+        "document_width": 390,
+        "viewport_width": 390,
+        "body_background": "rgb(248, 248, 248)",
+        "html_background": "rgba(0, 0, 0, 0)",
+        "body_font": "\"Inter Tight\"",
+        "heading_geometry": [
+          {
+            "x": 16,
+            "y": 74,
+            "width": 358,
+            "height": 29,
+            "font_family": "\"Inter Tight\"",
+            "font_size": "14px",
+            "font_weight": "400",
+            "line_height": "28px",
+            "color": "rgb(34, 34, 34)"
+          },
+          {
+            "x": 16,
+            "y": 123,
+            "width": 358,
+            "height": 84,
+            "font_family": "\"Inter Tight\"",
+            "font_size": "42px",
+            "font_weight": "600",
+            "line_height": "42px",
+            "color": "rgb(34, 34, 34)"
+          },
+          {
+            "x": 16,
+            "y": 604,
+            "width": 358,
+            "height": 28,
+            "font_family": "\"Inter Tight\"",
+            "font_size": "14px",
+            "font_weight": "400",
+            "line_height": "28px",
+            "color": "rgb(34, 34, 34)"
+          },
+          {
+            "x": 16,
+            "y": 1664,
+            "width": 358,
+            "height": 28,
+            "font_family": "\"Inter Tight\"",
+            "font_size": "14px",
+            "font_weight": "400",
+            "line_height": "28px",
+            "color": "rgb(34, 34, 34)"
+          },
+          {
+            "x": 16,
+            "y": 4185,
+            "width": 358,
+            "height": 28,
+            "font_family": "\"Inter Tight\"",
+            "font_size": "14px",
+            "font_weight": "400",
+            "line_height": "28px",
+            "color": "rgb(34, 34, 34)"
+          },
+          {
+            "x": 16,
+            "y": 5376,
+            "width": 249,
+            "height": 28,
+            "font_family": "\"Inter Tight\"",
+            "font_size": "14px",
+            "font_weight": "400",
+            "line_height": "28px",
+            "color": "rgb(34, 34, 34)"
+          }
+        ],
+        "navigation_regions": 2,
+        "visible_buttons": 1,
+        "visible_inputs": 1,
+        "canvas_count": 0,
+        "video_count": 0
+      },
+      "screenshot_sha256": "39c53ea598f30cd1d1aa4ecc57033aea7e46977513928c65b3ef1cd881e9b4cd",
+      "status": "rendered_observed"
+    },
+    {
+      "source_id": "3bb690a206a51974",
+      "url": "https://www.awwwards.com/",
+      "family": "main.home",
+      "viewport": {
+        "width": 1440,
+        "height": 1000,
+        "device_scale_factor": 1
+      },
+      "observed_at": "2026-11-23T08:21:29.131Z",
+      "interaction_inspection": "not_run",
+      "source_screenshots_redistributed": false,
+      "http_status": 200,
+      "final_url": "https://www.awwwards.com/",
+      "render_state": "visible_content",
+      "metrics": {
+        "document_width": 1440,
+        "viewport_width": 1440,
+        "body_background": "rgb(248, 248, 248)",
+        "html_background": "rgba(0, 0, 0, 0)",
+        "body_font": "\"Inter Tight\"",
+        "heading_geometry": [
+          {
+            "x": 52,
+            "y": 105,
+            "width": 1336,
+            "height": 29,
+            "font_family": "\"Inter Tight\"",
+            "font_size": "14px",
+            "font_weight": "400",
+            "line_height": "28px",
+            "color": "rgb(34, 34, 34)"
+          },
+          {
+            "x": 176,
+            "y": 158,
+            "width": 1089,
+            "height": 127,
+            "font_family": "\"Inter Tight\"",
+            "font_size": "126.732px",
+            "font_weight": "600",
+            "line_height": "126.732px",
+            "color": "rgb(34, 34, 34)"
+          },
+          {
+            "x": 52,
+            "y": 1609,
+            "width": 1336,
+            "height": 28,
+            "font_family": "\"Inter Tight\"",
+            "font_size": "14px",
+            "font_weight": "400",
+            "line_height": "28px",
+            "color": "rgb(34, 34, 34)"
+          },
+          {
+            "x": 52,
+            "y": 2782,
+            "width": 1336,
+            "height": 28,
+            "font_family": "\"Inter Tight\"",
+            "font_size": "14px",
+            "font_weight": "400",
+            "line_height": "28px",
+            "color": "rgb(34, 34, 34)"
+          },
+          {
+            "x": 52,
+            "y": 5005,
+            "width": 1336,
+            "height": 28,
+            "font_family": "\"Inter Tight\"",
+            "font_size": "14px",
+            "font_weight": "400",
+            "line_height": "28px",
+            "color": "rgb(34, 34, 34)"
+          },
+          {
+            "x": 52,
+            "y": 6148,
+            "width": 401,
+            "height": 28,
+            "font_family": "\"Inter Tight\"",
+            "font_size": "14px",
+            "font_weight": "400",
+            "line_height": "28px",
+            "color": "rgb(34, 34, 34)"
+          }
+        ],
+        "navigation_regions": 2,
+        "visible_buttons": 1,
+        "visible_inputs": 1,
+        "canvas_count": 0,
+        "video_count": 0
+      },
+      "screenshot_sha256": "6a87ad96a486432fb53a7fda10e313021b0b75be587b0e2ab170ecd017495f58",
+      "status": "rendered_observed"
+    }
+  ],
+  "source_coverage": "observed_examples",
+  "original_blueprint": true,
+  "business_mode": "local_preview",
+  "states": [
+    "default",
+    "loading",
+    "empty",
+    "error",
+    "success_preview",
+    "disabled",
+    "keyboard_focus",
+    "reduced_motion",
+    "narrow_view"
+  ],
+  "acceptance": [
+    "让用户理解内容层级，并进入当前最重要的任务。",
+    "精选或某栏目加载失败时保留导航和其他内容；未知分数不显示为零。",
+    "首屏信息先稳定呈现；卡片增强不阻止链接、键盘或减少动画。",
+    "320、390、768、1440 宽度不出现整页横溢出；必要表格在独立区域滚动。",
+    "键盘可进入、操作、关闭对话框并返回触发点；错误不只靠颜色。",
+    "本地预览不得暗示真实支付、投稿、消息、账户或预约已生效。"
+  ],
+  "limitations": [
+    "Source interaction audit is not automatically performed",
+    "Source assets are not bundled",
+    "Real backend, production and physical-device acceptance are not included"
+  ]
+}

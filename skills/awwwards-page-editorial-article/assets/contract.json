@@ -1,0 +1,391 @@
+{
+  "schema_version": "3.0",
+  "id": "editorial-article",
+  "skill": "awwwards-page-editorial-article",
+  "title": "文章详情与技术拆解",
+  "kind": "article",
+  "scope": "Awwwards main-site page family",
+  "source_families": [
+    "main.article"
+  ],
+  "goal": "按章节持续阅读并追溯事实、版本和引用。",
+  "regions": [
+    "标题",
+    "作者与日期",
+    "目录",
+    "正文",
+    "示例",
+    "引用",
+    "相关内容"
+  ],
+  "workflow": [
+    "把公开事实、制作方说明、分析推断和原创实现分段标明。",
+    "技术版本以带日期的可靠来源为准。",
+    "代码片段和素材保留许可，不把可见图片自动写入项目。"
+  ],
+  "data_fields": [
+    "article",
+    "author",
+    "published_at",
+    "updated_at",
+    "sections",
+    "references",
+    "rights"
+  ],
+  "failure_recovery": "外链失效保留原引用和访问时间；不补造技术事实。",
+  "motion_contract": "目录与阅读进度不接管滚动，媒体可暂停，正文始终可读。",
+  "evidence_level": "rendered_geometry",
+  "evidence_note": "Only recorded observations are facts. DOM structure does not prove visual composition, hidden state, source code, backend behavior or licenses. The runnable blueprint is an original recipe, not a source-site clone.",
+  "sources": [
+    {
+      "id": "48ce006657cc7816",
+      "url": "https://www.awwwards.com/30-great-websites-with-parallax-scrolling.html",
+      "family": "main.article",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T08:06:12.968665+00:00",
+      "source_sha256": "e24015ea75f1802eeb65f290bf32b5929b8e70cc941d88f3a06984c47273adfe",
+      "structure": {
+        "headings": {
+          "h2": 3,
+          "h1": 1
+        },
+        "forms": 0,
+        "input_types": {
+          "text": 1
+        },
+        "navigation_regions": 3,
+        "main_regions": 0,
+        "sections": 1,
+        "articles": 0,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 28,
+        "roles": {},
+        "anchor_count": 194
+      }
+    },
+    {
+      "id": "905a57faea2c485b",
+      "url": "https://www.awwwards.com/a-studio-between-two-worlds.html",
+      "family": "main.article",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T08:06:17.192619+00:00",
+      "source_sha256": "94f11ec4471bc84e9751d05ecef76624c4000bac63cda748fadeb67968b72f15",
+      "structure": {
+        "headings": {
+          "h2": 2,
+          "h1": 1
+        },
+        "forms": 0,
+        "input_types": {
+          "text": 1
+        },
+        "navigation_regions": 3,
+        "main_regions": 0,
+        "sections": 1,
+        "articles": 0,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 0,
+        "roles": {},
+        "anchor_count": 101
+      }
+    },
+    {
+      "id": "a8ec108950a707ef",
+      "url": "https://www.awwwards.com/awwards-interview-bonhomme.html",
+      "family": "main.article",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T08:07:11.927199+00:00",
+      "source_sha256": "685cc457ad1f7386c97b0a412477cd9316d5eeb6677c03ae12a93262fb8ecba1",
+      "structure": {
+        "headings": {
+          "h2": 2,
+          "h1": 1,
+          "h3": 7
+        },
+        "forms": 0,
+        "input_types": {
+          "text": 1
+        },
+        "navigation_regions": 3,
+        "main_regions": 0,
+        "sections": 1,
+        "articles": 0,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 0,
+        "roles": {},
+        "anchor_count": 104
+      }
+    },
+    {
+      "id": "b2e36dbc2b3890ad",
+      "url": "https://www.awwwards.com/best-free-fonts.html",
+      "family": "main.article",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T08:07:54.326751+00:00",
+      "source_sha256": "50cffae1d88498004617177ee52d12f639217ed4ef3370bf3e3c27d87bc81e91",
+      "structure": {
+        "headings": {
+          "h2": 3,
+          "h1": 1
+        },
+        "forms": 0,
+        "input_types": {
+          "text": 1
+        },
+        "navigation_regions": 3,
+        "main_regions": 0,
+        "sections": 1,
+        "articles": 0,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 1,
+        "roles": {},
+        "anchor_count": 313
+      }
+    },
+    {
+      "id": "571e24256f80b4db",
+      "url": "https://www.awwwards.com/breaking-walls-of-conservatism.html",
+      "family": "main.article",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T08:08:01.320170+00:00",
+      "source_sha256": "aaec640fe18c2fe3eccc4d01fb2a13319b55ce5a7919c87fdb4cf88a4732ff87",
+      "structure": {
+        "headings": {
+          "h2": 2,
+          "h1": 1
+        },
+        "forms": 0,
+        "input_types": {
+          "text": 1
+        },
+        "navigation_regions": 3,
+        "main_regions": 0,
+        "sections": 1,
+        "articles": 0,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 0,
+        "roles": {},
+        "anchor_count": 101
+      }
+    },
+    {
+      "id": "c58e864d9f6637a4",
+      "url": "https://www.awwwards.com/capitolium-a-digital-hub-for-a-first-of-its-kind-sports-collaboration.html",
+      "family": "main.article",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T08:08:01.325591+00:00",
+      "source_sha256": "967c4b8fe3b963fc112149d2dbd25f4d7286d545385d15d21f0e74f0f2da7b9c",
+      "structure": {
+        "headings": {
+          "h2": 9,
+          "h1": 1
+        },
+        "forms": 0,
+        "input_types": {
+          "text": 1
+        },
+        "navigation_regions": 3,
+        "main_regions": 0,
+        "sections": 1,
+        "articles": 0,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 0,
+        "roles": {},
+        "anchor_count": 112
+      }
+    }
+  ],
+  "visual_metrics": [
+    {
+      "source_id": "48ce006657cc7816",
+      "url": "https://www.awwwards.com/30-great-websites-with-parallax-scrolling.html",
+      "family": "main.article",
+      "viewport": {
+        "width": 390,
+        "height": 1000,
+        "device_scale_factor": 1
+      },
+      "observed_at": "2026-11-23T08:21:37.060Z",
+      "interaction_inspection": "not_run",
+      "source_screenshots_redistributed": false,
+      "http_status": 200,
+      "final_url": "https://www.awwwards.com/30-great-websites-with-parallax-scrolling.html",
+      "render_state": "visible_content",
+      "metrics": {
+        "document_width": 390,
+        "viewport_width": 390,
+        "body_background": "rgb(248, 248, 248)",
+        "html_background": "rgba(0, 0, 0, 0)",
+        "body_font": "\"Inter Tight\"",
+        "heading_geometry": [
+          {
+            "x": 16,
+            "y": 164,
+            "width": 358,
+            "height": 28,
+            "font_family": "\"Inter Tight\"",
+            "font_size": "14px",
+            "font_weight": "400",
+            "line_height": "28px",
+            "color": "rgb(34, 34, 34)"
+          },
+          {
+            "x": 16,
+            "y": 212,
+            "width": 358,
+            "height": 108,
+            "font_family": "\"Inter Tight\"",
+            "font_size": "36px",
+            "font_weight": "600",
+            "line_height": "36px",
+            "color": "rgb(34, 34, 34)"
+          },
+          {
+            "x": 16,
+            "y": 626,
+            "width": 358,
+            "height": 346,
+            "font_family": "\"Inter Tight\"",
+            "font_size": "24px",
+            "font_weight": "400",
+            "line_height": "28.8px",
+            "color": "rgb(34, 34, 34)"
+          },
+          {
+            "x": 16,
+            "y": 1198,
+            "width": 358,
+            "height": 86,
+            "font_family": "\"Inter Tight\"",
+            "font_size": "24px",
+            "font_weight": "400",
+            "line_height": "28.8px",
+            "color": "rgb(34, 34, 34)"
+          }
+        ],
+        "navigation_regions": 2,
+        "visible_buttons": 1,
+        "visible_inputs": 1,
+        "canvas_count": 0,
+        "video_count": 28
+      },
+      "screenshot_sha256": "b4d8749f7eec883f5be1daf1f404ef626b62273d802144932be70f77555cd1a7",
+      "status": "rendered_observed"
+    },
+    {
+      "source_id": "48ce006657cc7816",
+      "url": "https://www.awwwards.com/30-great-websites-with-parallax-scrolling.html",
+      "family": "main.article",
+      "viewport": {
+        "width": 1440,
+        "height": 1000,
+        "device_scale_factor": 1
+      },
+      "observed_at": "2026-11-23T08:21:47.224Z",
+      "interaction_inspection": "not_run",
+      "source_screenshots_redistributed": false,
+      "http_status": 200,
+      "final_url": "https://www.awwwards.com/30-great-websites-with-parallax-scrolling.html",
+      "render_state": "visible_content",
+      "metrics": {
+        "document_width": 1440,
+        "viewport_width": 1440,
+        "body_background": "rgb(248, 248, 248)",
+        "html_background": "rgba(0, 0, 0, 0)",
+        "body_font": "\"Inter Tight\"",
+        "heading_geometry": [
+          {
+            "x": 52,
+            "y": 218,
+            "width": 1336,
+            "height": 28,
+            "font_family": "\"Inter Tight\"",
+            "font_size": "14px",
+            "font_weight": "400",
+            "line_height": "28px",
+            "color": "rgb(34, 34, 34)"
+          },
+          {
+            "x": 52,
+            "y": 270,
+            "width": 1336,
+            "height": 149,
+            "font_family": "\"Inter Tight\"",
+            "font_size": "74.3944px",
+            "font_weight": "600",
+            "line_height": "74.3944px",
+            "color": "rgb(34, 34, 34)"
+          },
+          {
+            "x": 255,
+            "y": 1189,
+            "width": 931,
+            "height": 396,
+            "font_family": "\"Inter Tight\"",
+            "font_size": "41.2113px",
+            "font_weight": "400",
+            "line_height": "49.4535px",
+            "color": "rgb(34, 34, 34)"
+          },
+          {
+            "x": 255,
+            "y": 1744,
+            "width": 931,
+            "height": 148,
+            "font_family": "\"Inter Tight\"",
+            "font_size": "41.2113px",
+            "font_weight": "400",
+            "line_height": "49.4535px",
+            "color": "rgb(34, 34, 34)"
+          }
+        ],
+        "navigation_regions": 3,
+        "visible_buttons": 1,
+        "visible_inputs": 1,
+        "canvas_count": 0,
+        "video_count": 28
+      },
+      "screenshot_sha256": "971a332db462349d1d4ee23099be0ab9210a0b2d75a151b4fbcbca946361e8cf",
+      "status": "rendered_observed"
+    }
+  ],
+  "source_coverage": "observed_examples",
+  "original_blueprint": true,
+  "business_mode": "local_preview",
+  "states": [
+    "default",
+    "loading",
+    "empty",
+    "error",
+    "success_preview",
+    "disabled",
+    "keyboard_focus",
+    "reduced_motion",
+    "narrow_view"
+  ],
+  "acceptance": [
+    "按章节持续阅读并追溯事实、版本和引用。",
+    "外链失效保留原引用和访问时间；不补造技术事实。",
+    "目录与阅读进度不接管滚动，媒体可暂停，正文始终可读。",
+    "320、390、768、1440 宽度不出现整页横溢出；必要表格在独立区域滚动。",
+    "键盘可进入、操作、关闭对话框并返回触发点；错误不只靠颜色。",
+    "本地预览不得暗示真实支付、投稿、消息、账户或预约已生效。"
+  ],
+  "limitations": [
+    "Source interaction audit is not automatically performed",
+    "Source assets are not bundled",
+    "Real backend, production and physical-device acceptance are not included"
+  ]
+}

@@ -1,0 +1,211 @@
+{
+  "schema_version": "3.0",
+  "id": "creator-profile",
+  "skill": "awwwards-page-creator-profile",
+  "title": "创作者或机构主页",
+  "kind": "profile",
+  "scope": "Awwwards main-site page family",
+  "source_families": [
+    "main.creator-profile"
+  ],
+  "goal": "理解身份、贡献、作品与公开联系边界。",
+  "regions": [
+    "身份与简介",
+    "服务或专业",
+    "作品",
+    "奖项",
+    "公开链接",
+    "关注或联系"
+  ],
+  "workflow": [
+    "将人物身份、公司身份和作品贡献角色分开。",
+    "按作品而非截图去重，列出贡献范围与来源。",
+    "关注和联系方式遵循可见权限，匿名状态提供明确入口。"
+  ],
+  "data_fields": [
+    "creator",
+    "bio",
+    "public_links",
+    "roles",
+    "works",
+    "awards",
+    "viewer_state"
+  ],
+  "failure_recovery": "个人资料不公开或账户删除时提供不泄漏信息的替代状态。",
+  "motion_contract": "作品预览可用键盘和触屏进入，减少动画不隐藏文本。",
+  "evidence_level": "http_dom",
+  "evidence_note": "Only recorded observations are facts. DOM structure does not prove visual composition, hidden state, source code, backend behavior or licenses. The runnable blueprint is an original recipe, not a source-site clone.",
+  "sources": [
+    {
+      "id": "7384b31f2b47a1a4",
+      "url": "https://www.awwwards.com/120Ventures/",
+      "family": "main.creator-profile",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T08:20:46.468367+00:00",
+      "source_sha256": "0d251d8b522ab813e9f38038c42446058bb7f21e7880e5040948d2c7205f1008",
+      "structure": {
+        "headings": {
+          "h1": 1,
+          "h2": 1
+        },
+        "forms": 0,
+        "input_types": {
+          "text": 1
+        },
+        "navigation_regions": 2,
+        "main_regions": 0,
+        "sections": 1,
+        "articles": 0,
+        "tables": 2,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 0,
+        "roles": {},
+        "anchor_count": 102
+      }
+    },
+    {
+      "id": "57fe9138bf5ddb89",
+      "url": "https://www.awwwards.com/12studio/",
+      "family": "main.creator-profile",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T08:21:17.498331+00:00",
+      "source_sha256": "8ed0efb97dab3207f2029b9ed40382d49d15a62b2863aadad09e59003ae3071f",
+      "structure": {
+        "headings": {
+          "h1": 1,
+          "h2": 2,
+          "h3": 11
+        },
+        "forms": 0,
+        "input_types": {
+          "text": 1
+        },
+        "navigation_regions": 2,
+        "main_regions": 0,
+        "sections": 1,
+        "articles": 0,
+        "tables": 2,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 0,
+        "roles": {},
+        "anchor_count": 131
+      }
+    },
+    {
+      "id": "69536733ea30348e",
+      "url": "https://www.awwwards.com/13treize.fr/",
+      "family": "main.creator-profile",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T08:21:17.538486+00:00",
+      "source_sha256": "8949ac912b16414b9fa4b7a06777ca156cfa4d136e46d4c898f5ba1956c59008",
+      "structure": {
+        "headings": {
+          "h1": 1,
+          "h3": 4
+        },
+        "forms": 0,
+        "input_types": {
+          "text": 1
+        },
+        "navigation_regions": 2,
+        "main_regions": 0,
+        "sections": 1,
+        "articles": 0,
+        "tables": 1,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 0,
+        "roles": {},
+        "anchor_count": 115
+      }
+    },
+    {
+      "id": "3ebc6f778d30098d",
+      "url": "https://www.awwwards.com/14islands/",
+      "family": "main.creator-profile",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T08:21:17.577310+00:00",
+      "source_sha256": "0ca6dfb815a0557cdc14355c0fd2707ca422579d3019b4e15c4a4a21802f15f8",
+      "structure": {
+        "headings": {
+          "h1": 1,
+          "h2": 2,
+          "h3": 25
+        },
+        "forms": 0,
+        "input_types": {
+          "text": 1
+        },
+        "navigation_regions": 2,
+        "main_regions": 0,
+        "sections": 1,
+        "articles": 0,
+        "tables": 2,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 0,
+        "roles": {},
+        "anchor_count": 173
+      }
+    },
+    {
+      "id": "348da1f3d077a72d",
+      "url": "https://www.awwwards.com/artemii-lebedev/",
+      "family": "main.creator-profile",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T08:07:11.924367+00:00",
+      "source_sha256": "72e933e2eafe0786f733651c41622a46dfb48bf9b27c0730a481ffee9092c33d",
+      "structure": {
+        "headings": {
+          "h1": 1,
+          "h2": 2,
+          "h3": 32
+        },
+        "forms": 0,
+        "input_types": {
+          "text": 1
+        },
+        "navigation_regions": 2,
+        "main_regions": 0,
+        "sections": 1,
+        "articles": 0,
+        "tables": 2,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 0,
+        "roles": {},
+        "anchor_count": 194
+      }
+    }
+  ],
+  "visual_metrics": [],
+  "source_coverage": "observed_examples",
+  "original_blueprint": true,
+  "business_mode": "local_preview",
+  "states": [
+    "default",
+    "loading",
+    "empty",
+    "error",
+    "success_preview",
+    "disabled",
+    "keyboard_focus",
+    "reduced_motion",
+    "narrow_view"
+  ],
+  "acceptance": [
+    "理解身份、贡献、作品与公开联系边界。",
+    "个人资料不公开或账户删除时提供不泄漏信息的替代状态。",
+    "作品预览可用键盘和触屏进入，减少动画不隐藏文本。",
+    "320、390、768、1440 宽度不出现整页横溢出；必要表格在独立区域滚动。",
+    "键盘可进入、操作、关闭对话框并返回触发点；错误不只靠颜色。",
+    "本地预览不得暗示真实支付、投稿、消息、账户或预约已生效。"
+  ],
+  "limitations": [
+    "Source interaction audit is not automatically performed",
+    "Source assets are not bundled",
+    "Real backend, production and physical-device acceptance are not included"
+  ]
+}
