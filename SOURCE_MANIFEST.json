@@ -25,13 +25,13 @@
     },
     {
       "path": "CREATIVE_PAGE_SKILLS.md",
-      "bytes": 4094,
-      "sha256": "1afb1c54e9cfd05bbdae548086a77470e68165524bc0d136c35ccc7fb5562b1a"
+      "bytes": 4628,
+      "sha256": "54c749718c00ae6e49c7f18b1fef7cbafb2a1955468ac3af1f4c83393f40a976"
     },
     {
       "path": "docs/FULL_SITE_SKILLS_GOAL.md",
-      "bytes": 5238,
-      "sha256": "880b73f2efb7e0ac6883b18d32eecb93d39bf38ea173b55c248ce7c302188db6"
+      "bytes": 5608,
+      "sha256": "d5dfd0bcbd170febed513599fa01107840a1cca85debb17406c07478825e3879"
     },
     {
       "path": "docs/OPEN_SOURCE_PUBLICATION.md",
@@ -1900,18 +1900,18 @@
     },
     {
       "path": "page_skills/definitions.py",
-      "bytes": 29517,
-      "sha256": "0fdd7104284f065007b45946e328982e120e77e03062c3028995756c365988a8"
+      "bytes": 29511,
+      "sha256": "934b36fe084b6059b1f0c523050e6c44b3ff47e662a1f8bb2ae76ba7d291c096"
     },
     {
       "path": "page_skills/index.html",
-      "bytes": 18830,
-      "sha256": "e30e57e6c51b49c9824874458fa72cd7faf68d6d591f15bd2c765b8f5c4a2dba"
+      "bytes": 18824,
+      "sha256": "880522aececf6c64e2dd3b03096529c1f84933435af6cdeed259befe827e38a6"
     },
     {
       "path": "page_skills/registry.json",
-      "bytes": 26053,
-      "sha256": "3c7439f68cc0e340a2d4822f7efbff874fa23d2f0104cda22dfc6308637b63f6"
+      "bytes": 26047,
+      "sha256": "1c7a3449cb867a0fb9da10042e349fb9cf3cd5cde1ef39e6b5b2550f8d3413e7"
     },
     {
       "path": "page_skills/runtime.css",
@@ -1925,8 +1925,8 @@
     },
     {
       "path": "PAGE_SKILLS.md",
-      "bytes": 13170,
-      "sha256": "58787d18345c8173f0f9806362ab3ba75e9bc623e83319fb17dcbe6efd409e2a"
+      "bytes": 13164,
+      "sha256": "f86b83fa4370acde14a33fc466d6d6d37899822b9f1d7cc2d00c91be5ac25508"
     },
     {
       "path": "README.md",
@@ -2021,7 +2021,7 @@
     {
       "path": "research/interaction_skill_validation/unit-results.json",
       "bytes": 257,
-      "sha256": "7c2696616475dafe17167473df2046557eb0befd00e30518c47bdaebe31a3545"
+      "sha256": "f6329a96f0e1a2153d968693c486859c6b887beb4adc57e247cddc826984d001"
     },
     {
       "path": "research/live_pages/coverage.json",
@@ -2191,12 +2191,22 @@
     {
       "path": "research/page_skill_validation/unit-results.json",
       "bytes": 293,
-      "sha256": "4722e2f678d68f37471e9042b7a6a03bc2a5be7f17db9477a9faa48bb7afa932"
+      "sha256": "63cabbd47dd258b36df01fd8acc611a10826f40bddea4707d73364f360010280"
+    },
+    {
+      "path": "research/skill_extraction/award-provenance-coverage.json",
+      "bytes": 560,
+      "sha256": "5c60d7433fe5ff1acf092d8263e3a3720e3f50ba6c89ee65155449fcb648f427"
     },
     {
       "path": "research/skill_extraction/coverage.json",
       "bytes": 846,
       "sha256": "b6610fa24ddb035636da795084d35bf9cf7d2e3849e81e8317618ad5fd2b9677"
+    },
+    {
+      "path": "research/skill_extraction/official-detail-title-labels.jsonl",
+      "bytes": 90536,
+      "sha256": "5e83952368d7bca154291699642db7b52a136ab3304cd455b71ddb5af4f3fdb2"
     },
     {
       "path": "research/skill_extraction/source-skill-map.jsonl",
@@ -3160,8 +3170,8 @@
     },
     {
       "path": "skills/awwwards-page-external-prompt-detail/assets/contract.json",
-      "bytes": 17149,
-      "sha256": "3685c2ccb630201566519d1d45df35de27a29715e4f1bf656b4f46cd2b3163b0"
+      "bytes": 17370,
+      "sha256": "3e348755202fd4b63a3096e4e9ce5abb0529056740438f241aa0befbfbdb924d"
     },
     {
       "path": "skills/awwwards-page-external-prompt-detail/assets/index.html",
@@ -3185,8 +3195,8 @@
     },
     {
       "path": "skills/awwwards-page-external-prompt-detail/references/page-contract.json",
-      "bytes": 17149,
-      "sha256": "3685c2ccb630201566519d1d45df35de27a29715e4f1bf656b4f46cd2b3163b0"
+      "bytes": 17370,
+      "sha256": "3e348755202fd4b63a3096e4e9ce5abb0529056740438f241aa0befbfbdb924d"
     },
     {
       "path": "skills/awwwards-page-external-prompt-detail/scripts/scaffold.py",
@@ -3195,8 +3205,8 @@
     },
     {
       "path": "skills/awwwards-page-external-prompt-detail/SKILL.md",
-      "bytes": 3768,
-      "sha256": "0f2b7d634cc704418eaa6418e6bc46cd81be8ff2a2d96a2e398dc62c7963cf24"
+      "bytes": 3762,
+      "sha256": "3ea8fd64a7d298130c9f40c6f3a7695e41ef5ec20ceaa0510b912d1707af60c6"
     },
     {
       "path": "skills/awwwards-page-external-service/assets/contract.json",
@@ -3879,14 +3889,19 @@
       "sha256": "bec1f2e428d4e785562f4a842a3c0e71af42b4bb64fc3bef85a1b9d2d11dc9c7"
     },
     {
+      "path": "tools/build_award_provenance.py",
+      "bytes": 2039,
+      "sha256": "2959d58950e90694173519e54dadc777060d45e43198eacb5bfb76ec49333d31"
+    },
+    {
       "path": "tools/build_interaction_skills.py",
       "bytes": 10415,
       "sha256": "91a50781399bb6ebabba040a401d65094f41ddb0654e4eb3b0db14e564c98228"
     },
     {
       "path": "tools/build_page_skills.py",
-      "bytes": 13342,
-      "sha256": "2fedc41d17e0e6a896b08bce8f57469116c890caab934071e6d4b0b09068a2d4"
+      "bytes": 13609,
+      "sha256": "b11b7d0defe58c6a3facf48d21e2e32da3906db0c6fbab329648b90bcf093a6c"
     },
     {
       "path": "tools/build_source_skill_map.py",

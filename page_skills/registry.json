@@ -1,6 +1,6 @@
 {
   "schema_version": "3.0",
-  "generated_at": "2026-11-23T09:50:59.232738+00:00",
+  "generated_at": "2026-11-23T09:59:30.236189+00:00",
   "core_skills_preserved": 24,
   "page_skills": 44,
   "status": "in_progress",
@@ -705,7 +705,7 @@
     {
       "id": "external-prompt-detail",
       "skill": "awwwards-page-external-prompt-detail",
-      "title": "获奖来源外站提示词与字体效果详情",
+      "title": "参照外站提示词与字体效果详情",
       "kind": "prompt",
       "runtime_variant": "creative-prompt",
       "source_families": [

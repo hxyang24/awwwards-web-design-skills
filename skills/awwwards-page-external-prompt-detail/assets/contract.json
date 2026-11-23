@@ -2,7 +2,7 @@
   "schema_version": "3.0",
   "id": "external-prompt-detail",
   "skill": "awwwards-page-external-prompt-detail",
-  "title": "获奖来源外站提示词与字体效果详情",
+  "title": "参照外站提示词与字体效果详情",
   "kind": "prompt",
   "scope": "Awwwards-linked external inner page; specific award status requires official evidence",
   "source_families": [
@@ -485,5 +485,6 @@
     "Source interaction audit is not automatically performed",
     "Source assets are not bundled",
     "Real backend, production and physical-device acceptance are not included"
-  ]
+  ],
+  "reference_eligibility_note": "The AIFont official work-detail title was Nominee at the recorded observation. This is a supplementary reference, not counted as a confirmed awarded-site case; a later live read was HTTP 403."
 }

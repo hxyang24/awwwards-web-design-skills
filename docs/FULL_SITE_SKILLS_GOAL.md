@@ -43,3 +43,5 @@
 来源的 `family` 只是 URL 模式提示；`research/skill_extraction/` 单独区分分类候选、待提炼与访问缺口。机制的实际实现及边界见 [说明](../INTERACTION_SKILLS.md)。
 
 外站计数依据作品详情中的明确外链，不独立证明每个站点的获奖状态；旧字段 awarded_external_hosts_discovered 为兼容保留，详细说明见当前 coverage.json。原始目标仍包括所有获奖外站及其内页，没有以这些候选替代完整范围。
+
+官方作品页标题的来源台账另有 205 个观察：103 个 SOTD、41 个 Honorable Mention、61 个 Nominee。这是作品详情页数量，不是外站主机数或获奖内页数。字体详情来源当前仅作为提名补充案例；不能因为列在 Awwwards 就计入已确认获奖范围。全部获奖来源的枚举与逐项资格核验仍未完成。

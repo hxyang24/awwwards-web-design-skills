@@ -3,7 +3,7 @@ name: awwwards-page-external-prompt-detail
 description: Design and implement a external prompt detail page with task-specific structure, state contracts, original runnable blueprint and explicit source-evidence boundaries.
 ---
 
-# 获奖来源外站提示词与字体效果详情
+# 参照外站提示词与字体效果详情
 
 ## 适用任务
 审阅并编辑分层提示词，理解样例来源并可靠复制原创配方。 使用于这一页面族；不要把它扩张为完整网站或所有业务的通用流程。现有项目优先保留其框架、品牌、路由和真实接口。

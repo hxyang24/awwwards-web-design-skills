@@ -36,3 +36,9 @@ python skills/awwwards-page-external-story-chapter/scripts/scaffold.py --output 
 来源到技能的候选映射现在关联了实际视口和状态记录；[变体待审账本](research/skill_extraction/variant-backlog.json) 按 DOM 结构特征聚合，帮助定位同类页面中的差异。出现 canvas 不证明使用 WebGL，出现表单不证明提交已验证，结构签名也不算视觉设计完成。
 
 外站来自主站作品详情的明确外链。这个关联不独立证明其获奖状态，也不代表当前内页单独获奖或保持历史版本。原站截图、漫画画格、提示词原文、图像、字体、声音和源代码不随新增技能分发。
+
+## 官方来源状态补核
+
+字体站的官方作品页在保存的 HTTP 观察中标为 Nominee（提名），后续实时读取返回 403；作为补充参照，不计为已确认获奖案例。漫画站官方作品页明确展示 SOTD，但这仍不表示每个当前内页单独获奖。
+
+[官方作品页标题状态台账](research/skill_extraction/award-provenance-coverage.json) 区分 SOTD、Honorable Mention、Nominee 和未确定。它记录来源报告，不能冒充全部获奖网站的枚举或逐一实时复核。

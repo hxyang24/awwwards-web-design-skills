@@ -51,7 +51,7 @@
 | `awwwards-page-external-not-found` | 获奖外站 404 与恢复页面 | rendered_geometry / 6 来源 | [external-not-found](skills/awwwards-page-external-not-found/SKILL.md) | [HTML](skills/awwwards-page-external-not-found/assets/index.html) |
 | `awwwards-page-external-story-index` | 获奖来源外站叙事章节索引 | rendered_source_observations / 1 来源 | [external-story-index](skills/awwwards-page-external-story-index/SKILL.md) | [HTML](skills/awwwards-page-external-story-index/assets/index.html) |
 | `awwwards-page-external-story-chapter` | 获奖来源外站交互叙事章节 | rendered_source_observations / 3 来源 | [external-story-chapter](skills/awwwards-page-external-story-chapter/SKILL.md) | [HTML](skills/awwwards-page-external-story-chapter/assets/index.html) |
-| `awwwards-page-external-prompt-detail` | 获奖来源外站提示词与字体效果详情 | rendered_source_observations / 1 来源 | [external-prompt-detail](skills/awwwards-page-external-prompt-detail/SKILL.md) | [HTML](skills/awwwards-page-external-prompt-detail/assets/index.html) |
+| `awwwards-page-external-prompt-detail` | 参照外站提示词与字体效果详情 | rendered_source_observations / 1 来源 | [external-prompt-detail](skills/awwwards-page-external-prompt-detail/SKILL.md) | [HTML](skills/awwwards-page-external-prompt-detail/assets/index.html) |
 
 ## 独立交互机制 Skills
 
