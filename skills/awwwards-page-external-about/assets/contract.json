@@ -37,6 +37,56 @@
   "evidence_note": "Only recorded observations are facts. DOM structure does not prove visual composition, hidden state, source code, backend behavior or licenses. The runnable blueprint is an original recipe, not a source-site clone.",
   "sources": [
     {
+      "id": "d5eed16d26b5961a",
+      "url": "https://2xa.studio/about",
+      "family": "external.about",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T18:24:00.234530+00:00",
+      "source_sha256": "c7babe6d320ed2502125dfea0b7d7aa86c603418226d8c8e1bf1af661b0f7a1c",
+      "structure": {
+        "headings": {
+          "h2": 15
+        },
+        "forms": 0,
+        "input_types": {},
+        "navigation_regions": 1,
+        "main_regions": 1,
+        "sections": 0,
+        "articles": 1,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 0,
+        "roles": {},
+        "anchor_count": 8
+      }
+    },
+    {
+      "id": "e725b391198cc025",
+      "url": "https://2xa.studio/about/",
+      "family": "external.about",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T18:24:13.030153+00:00",
+      "source_sha256": "2ad99f5f5db3516684b1ac0ed4f3fbf893e790cc87baaab11aee2065bb1677f1",
+      "structure": {
+        "headings": {
+          "h2": 15
+        },
+        "forms": 0,
+        "input_types": {},
+        "navigation_regions": 1,
+        "main_regions": 1,
+        "sections": 0,
+        "articles": 1,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 0,
+        "roles": {},
+        "anchor_count": 8
+      }
+    },
+    {
       "id": "0caeb559e23f5869",
       "url": "https://abatable.com/about-us",
       "family": "external.about",
@@ -171,65 +221,6 @@
           "dialog": 1
         },
         "anchor_count": 230
-      }
-    },
-    {
-      "id": "987049facb4458b5",
-      "url": "https://aim.obys.agency/about",
-      "family": "external.about",
-      "inspection_level": "http_dom",
-      "observed_at": "2026-11-23T08:04:09.948300+00:00",
-      "source_sha256": "0c2be77a8672d30052231ab506772d0d0ec2d22ef0317155ff326e99fb74c352",
-      "structure": {
-        "headings": {
-          "h3": 60,
-          "h2": 3,
-          "h1": 3
-        },
-        "forms": 0,
-        "input_types": {},
-        "navigation_regions": 1,
-        "main_regions": 0,
-        "sections": 6,
-        "articles": 0,
-        "tables": 0,
-        "dialogs": 0,
-        "canvases": 0,
-        "videos": 0,
-        "roles": {},
-        "anchor_count": 30
-      }
-    },
-    {
-      "id": "6f4ffa0273dd66d5",
-      "url": "https://alephstudios.ai/about/",
-      "family": "external.about",
-      "inspection_level": "http_dom",
-      "observed_at": "2026-11-23T08:48:28.451441+00:00",
-      "source_sha256": "e80c0781e92cbc81387d7121fff65fa244b3fb978c6b91120ffac292a1f25fa9",
-      "structure": {
-        "headings": {
-          "h1": 1,
-          "h2": 4
-        },
-        "forms": 1,
-        "input_types": {
-          "hidden": 9,
-          "text": 2,
-          "email": 1
-        },
-        "navigation_regions": 0,
-        "main_regions": 0,
-        "sections": 4,
-        "articles": 0,
-        "tables": 0,
-        "dialogs": 0,
-        "canvases": 0,
-        "videos": 0,
-        "roles": {
-          "document": 1
-        },
-        "anchor_count": 26
       }
     }
   ],

@@ -92,6 +92,31 @@
       }
     },
     {
+      "id": "d87b3147d092787a",
+      "url": "https://2xa.studio/contact",
+      "family": "external.contact",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T18:24:07.348302+00:00",
+      "source_sha256": "c48bce8bf9ae1951410f88ad2287cf1bcb97a9b790b0e3df8cf12808809c78cc",
+      "structure": {
+        "headings": {
+          "h2": 1
+        },
+        "forms": 0,
+        "input_types": {},
+        "navigation_regions": 1,
+        "main_regions": 1,
+        "sections": 0,
+        "articles": 1,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 1,
+        "videos": 0,
+        "roles": {},
+        "anchor_count": 8
+      }
+    },
+    {
       "id": "092e2ab8c462da3e",
       "url": "https://abatable.com/contact-us",
       "family": "external.contact",
@@ -196,31 +221,6 @@
           "status": 1
         },
         "anchor_count": 183
-      }
-    },
-    {
-      "id": "d4f12a65c3565496",
-      "url": "https://adinabuzatu.ro/contact",
-      "family": "external.contact",
-      "inspection_level": "http_dom",
-      "observed_at": "2026-11-23T08:47:22.387975+00:00",
-      "source_sha256": "73c14ef4f9fc78cf65df0de4f2a4b0bc7e126b04de36277f2eb91e4645b23e9c",
-      "structure": {
-        "headings": {
-          "h1": 1
-        },
-        "forms": 0,
-        "input_types": {},
-        "navigation_regions": 2,
-        "main_regions": 1,
-        "sections": 1,
-        "articles": 0,
-        "tables": 0,
-        "dialogs": 0,
-        "canvases": 0,
-        "videos": 0,
-        "roles": {},
-        "anchor_count": 51
       }
     }
   ],

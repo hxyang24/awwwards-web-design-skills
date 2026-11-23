@@ -1,14 +1,14 @@
 {
-  "date": "2026-11-23T17:58:36.659Z",
+  "date": "2026-11-23T18:59:40.348Z",
   "status": "passed",
-  "page_skills": 50,
+  "page_skills": 51,
   "checks": [
     {
-      "name": "All 50 standalone skill blueprints load and fit at 390",
+      "name": "All 51 standalone skill blueprints load and fit at 390",
       "status": "passed"
     },
     {
-      "name": "All 50 standalone skill blueprints load and fit at 1440",
+      "name": "All 51 standalone skill blueprints load and fit at 1440",
       "status": "passed"
     },
     {
@@ -125,6 +125,10 @@
     },
     {
       "name": "brand-guide accessibility and original screenshot",
+      "status": "passed"
+    },
+    {
+      "name": "property-explorer accessibility and original screenshot",
       "status": "passed"
     },
     {
@@ -325,6 +329,11 @@
       "kind": "brand-guide",
       "skill": "external-brand-guide",
       "violations": []
+    },
+    {
+      "kind": "property-explorer",
+      "skill": "external-property-explorer",
+      "violations": []
     }
   ],
   "screenshots": [
@@ -356,7 +365,8 @@
     "research/page_skill_validation/screenshots/shop-index-390.png",
     "research/page_skill_validation/screenshots/technical-product-390.png",
     "research/page_skill_validation/screenshots/reference-detail-390.png",
-    "research/page_skill_validation/screenshots/brand-guide-390.png"
+    "research/page_skill_validation/screenshots/brand-guide-390.png",
+    "research/page_skill_validation/screenshots/property-explorer-390.png"
   ],
   "errors": [],
   "external_requests": [],

@@ -1,3 +1,7 @@
 * -text
 *.png binary
 *.zip binary
+
+# Preserve frozen upstream Three bytes, including its original whitespace.
+page_skills/spatial/property/three.*.js -whitespace
+skills/awwwards-page-external-property-explorer/assets/three.*.js -whitespace

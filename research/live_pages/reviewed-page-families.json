@@ -122,6 +122,17 @@
       "evidence_id": "brand78-motion-390",
       "rationale": "Distinct guidance task; four section URLs inform one Skill, not four Skill counts. Limited rendered and local control evidence only.",
       "hash_scope": "Cached HTTP metadata anchor, not identity with browser DOM or historical source"
+    },
+    {
+      "url": "https://belgradearbor.rs/en/3d",
+      "source_id": "60e885c5833868e0",
+      "source_sha256": "f436dac50240708fc6a23b7e0be275aa9741a8061285b6bfe0be5f34732ba7dd",
+      "family": "external.property-explorer",
+      "reviewed_at": "2026-11-23T18:36:51.942727+00:00",
+      "evidence_file": "research/live_pages/property-page-observations.json",
+      "evidence_id": "property79-1440-no-preference",
+      "rationale": "Actual late-rendered3D scene, camera/time controls and instant residential filter panel operated; one task Skill, not a complete property inventory or whole-site extraction.",
+      "hash_scope": "Cached HTTP metadata anchor, not identity with browser DOM or historical source"
     }
   ]
 }

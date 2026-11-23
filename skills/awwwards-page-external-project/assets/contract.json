@@ -133,102 +133,81 @@
       }
     },
     {
-      "id": "8922a6977cf4f114",
-      "url": "https://abatable.com/case-studies/enabling-ap-moller-capital-to-meet-net-zero",
+      "id": "353dfbc340b842e3",
+      "url": "https://2xa.studio/projects",
       "family": "external.project",
       "inspection_level": "http_dom",
-      "observed_at": "2026-11-23T08:46:04.461416+00:00",
-      "source_sha256": "914fd058ddc1c027005043aabfc27abf2456de84559f31fb9836de9814a57ca8",
+      "observed_at": "2026-11-23T18:24:08.382087+00:00",
+      "source_sha256": "f492b82ede57f2f5f94c335ba03b269d6a431d50021daec03a1b3bfbf2c71515",
       "structure": {
         "headings": {
-          "h3": 12,
-          "h1": 1,
-          "h2": 7,
-          "h4": 1
+          "h2": 3,
+          "h3": 5
         },
         "forms": 0,
         "input_types": {},
         "navigation_regions": 1,
-        "main_regions": 0,
-        "sections": 15,
-        "articles": 0,
+        "main_regions": 1,
+        "sections": 0,
+        "articles": 1,
         "tables": 0,
         "dialogs": 0,
         "canvases": 0,
-        "videos": 0,
-        "roles": {
-          "region": 2,
-          "list": 8,
-          "listitem": 27,
-          "none": 1
-        },
-        "anchor_count": 54
+        "videos": 3,
+        "roles": {},
+        "anchor_count": 13
       }
     },
     {
-      "id": "50a6c900cebdbd0e",
-      "url": "https://abatable.com/case-studies/enabling-autotrader-to-support-carbon-removal",
+      "id": "ed8d58baf719a729",
+      "url": "https://2xa.studio/projects/",
       "family": "external.project",
       "inspection_level": "http_dom",
-      "observed_at": "2026-11-23T08:46:04.534206+00:00",
-      "source_sha256": "b02fca7140e4dfed1719f01fbf1787a886b8312d5db4d0a99e6c6e11ff701ef7",
+      "observed_at": "2026-11-23T18:24:13.549273+00:00",
+      "source_sha256": "f492b82ede57f2f5f94c335ba03b269d6a431d50021daec03a1b3bfbf2c71515",
       "structure": {
         "headings": {
-          "h3": 12,
-          "h1": 1,
-          "h2": 8,
-          "h4": 1
+          "h2": 3,
+          "h3": 5
         },
         "forms": 0,
         "input_types": {},
         "navigation_regions": 1,
-        "main_regions": 0,
-        "sections": 15,
-        "articles": 0,
+        "main_regions": 1,
+        "sections": 0,
+        "articles": 1,
         "tables": 0,
         "dialogs": 0,
         "canvases": 0,
-        "videos": 0,
-        "roles": {
-          "region": 2,
-          "list": 9,
-          "listitem": 27,
-          "none": 1
-        },
-        "anchor_count": 54
+        "videos": 3,
+        "roles": {},
+        "anchor_count": 13
       }
     },
     {
-      "id": "c174b7545b18d0dd",
-      "url": "https://abatable.com/case-studies/partnering-with-howden-to-advance-climate-resilience",
+      "id": "33d1ba466371462b",
+      "url": "https://2xa.studio/projects/abr-festival",
       "family": "external.project",
       "inspection_level": "http_dom",
-      "observed_at": "2026-11-23T08:46:04.610608+00:00",
-      "source_sha256": "252ed958f598aec48a7d5f685564882b0e869f6f33b6abf4a6b3f05e9f3eb819",
+      "observed_at": "2026-11-23T18:24:14.078005+00:00",
+      "source_sha256": "2f23d12c9395a5a979b167fe32c0ee8bc30ad15a9c538ee7938c052a779e9aa0",
       "structure": {
         "headings": {
-          "h3": 12,
-          "h1": 1,
-          "h2": 8,
-          "h4": 1
+          "h2": 2,
+          "h3": 2
         },
         "forms": 0,
         "input_types": {},
         "navigation_regions": 1,
-        "main_regions": 0,
-        "sections": 15,
-        "articles": 0,
+        "main_regions": 1,
+        "sections": 0,
+        "articles": 1,
         "tables": 0,
         "dialogs": 0,
         "canvases": 0,
-        "videos": 0,
-        "roles": {
-          "region": 2,
-          "list": 9,
-          "listitem": 27,
-          "none": 1
-        },
-        "anchor_count": 54
+        "videos": 9,
+        "roles": {},
+        "anchor_count": 17
       }
     }
   ],

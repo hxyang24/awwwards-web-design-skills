@@ -1,0 +1,99 @@
+Court / Yard / Original fictional study
+Catalogue revision 1.0
+Geometry, area and daylight are illustrative. Prices and real availability are not supplied. No inquiry is submitted.
+
+West 001 / business / west
+Example available
+Area: 72 m²
+Room units: Not supplied
+Floor: Ground
+Price: Not supplied
+An original fictional work space in the west building. The diagram shows identity and position only; dimensions and daylight are illustrative.
+
+West 002 / business / west
+Availability not supplied
+Area: 96 m²
+Room units: Not supplied
+Floor: Ground
+Price: Not supplied
+An original fictional work space in the west building. The diagram shows identity and position only; dimensions and daylight are illustrative.
+
+West 101 / residence / west
+Example available
+Area: 48.5 m²
+Room units: 1 room
+Floor: 01
+Price: Not supplied
+An original fictional residential study in the west building. The diagram shows identity and position only; dimensions and daylight are illustrative.
+
+West 102 / residence / west
+Example available
+Area: 62 m²
+Room units: 1.5 rooms
+Floor: 01
+Price: Not supplied
+An original fictional residential study in the west building. The diagram shows identity and position only; dimensions and daylight are illustrative.
+
+West 201 / residence / west
+Example reserved
+Area: 73.5 m²
+Room units: 2 rooms
+Floor: 02
+Price: Not supplied
+An original fictional residential study in the west building. The diagram shows identity and position only; dimensions and daylight are illustrative.
+
+West 202 / residence / west
+Example available
+Area: 91 m²
+Room units: 3 rooms
+Floor: 02
+Price: Not supplied
+An original fictional residential study in the west building. The diagram shows identity and position only; dimensions and daylight are illustrative.
+
+East 001 / business / east
+Availability not supplied
+Area: Not supplied
+Room units: Not supplied
+Floor: Ground
+Price: Not supplied
+An original fictional work space in the east building. The diagram shows identity and position only; dimensions and daylight are illustrative.
+
+East 002 / business / east
+Example available
+Area: 112 m²
+Room units: Not supplied
+Floor: Ground
+Price: Not supplied
+An original fictional work space in the east building. The diagram shows identity and position only; dimensions and daylight are illustrative.
+
+East 101 / residence / east
+Example available
+Area: 55 m²
+Room units: 1 room
+Floor: 01
+Price: Not supplied
+An original fictional residential study in the east building. The diagram shows identity and position only; dimensions and daylight are illustrative.
+
+East 102 / residence / east
+Example reserved
+Area: 64.5 m²
+Room units: 1.5 rooms
+Floor: 01
+Price: Not supplied
+An original fictional residential study in the east building. The diagram shows identity and position only; dimensions and daylight are illustrative.
+
+East 201 / residence / east
+Availability not supplied
+Area: 80 m²
+Room units: 2 rooms
+Floor: 02
+Price: Not supplied
+An original fictional residential study in the east building. The diagram shows identity and position only; dimensions and daylight are illustrative.
+
+East 202 / residence / east
+Example available
+Area: 104 m²
+Room units: 3 rooms
+Floor: 02
+Price: Not supplied
+An original fictional residential study in the east building. The diagram shows identity and position only; dimensions and daylight are illustrative.

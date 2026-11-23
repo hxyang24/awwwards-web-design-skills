@@ -20,6 +20,8 @@ def verify(check_seal=True):
   if (folder/'assets/contract.json').read_bytes()!=(folder/'references/page-contract.json').read_bytes():errors.append('Contract drift '+s['skill'])
   if s.get('runtime_variant')=='careers-pattern':
    pairs=[('main.mjs',R/'interaction_skills/page_adapter.mjs'),('runtime.mjs',R/'interaction_skills/assets/careers/main.mjs'),('style.css',R/'interaction_skills/assets/careers/style.css')]
+  elif s.get('runtime_variant')=='spatial-property':
+   source=R/'page_skills/spatial/property';pairs=[(file.name,file) for file in source.iterdir() if file.is_file()]
   elif s.get('runtime_variant')=='design-brand':
    source=R/'page_skills/design/brand';pairs=[(file.name,file) for file in source.iterdir() if file.is_file()]
   elif s.get('runtime_variant')=='people-creator':

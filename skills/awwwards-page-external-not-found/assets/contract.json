@@ -59,6 +59,31 @@
       }
     },
     {
+      "id": "8552971ddf521ffa",
+      "url": "https://artemartemartem.com/404",
+      "family": "external.not-found",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T18:24:54.419953+00:00",
+      "source_sha256": "57d787e568d74e990d43c9239a1ef97ed1f852d29518194afcbb29ce0224ed17",
+      "structure": {
+        "headings": {
+          "h1": 1
+        },
+        "forms": 0,
+        "input_types": {},
+        "navigation_regions": 1,
+        "main_regions": 1,
+        "sections": 0,
+        "articles": 0,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 0,
+        "roles": {},
+        "anchor_count": 4
+      }
+    },
+    {
       "id": "d25dc3eb5f830841",
       "url": "https://artworks.joe8lee.com/404",
       "family": "external.not-found",
@@ -142,35 +167,6 @@
       "family": "external.not-found",
       "inspection_level": "http_dom",
       "observed_at": "2026-11-23T12:16:39.347349+00:00",
-      "source_sha256": "5a87ed02193069ca2ff7d5ddb1733e4096f22f7015415028799703ff5e28b927",
-      "structure": {
-        "headings": {},
-        "forms": 1,
-        "input_types": {
-          "search": 1,
-          "radio": 2,
-          "text": 1,
-          "hidden": 4,
-          "checkbox": 20
-        },
-        "navigation_regions": 0,
-        "main_regions": 1,
-        "sections": 6,
-        "articles": 0,
-        "tables": 0,
-        "dialogs": 0,
-        "canvases": 0,
-        "videos": 0,
-        "roles": {},
-        "anchor_count": 58
-      }
-    },
-    {
-      "id": "75208d4e0c056341",
-      "url": "https://carnilove.ashfall.studio/cz/404/",
-      "family": "external.not-found",
-      "inspection_level": "http_dom",
-      "observed_at": "2026-11-23T12:16:39.656965+00:00",
       "source_sha256": "5a87ed02193069ca2ff7d5ddb1733e4096f22f7015415028799703ff5e28b927",
       "structure": {
         "headings": {},

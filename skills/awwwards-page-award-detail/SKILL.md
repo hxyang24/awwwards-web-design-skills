@@ -41,8 +41,8 @@ python scripts/scaffold.py --output YOUR_EMPTY_PROJECT_DIRECTORY
 - https://www.awwwards.com/sites/14islands（http_dom；2026-11-23T08:44:49.659423+00:00）
 - https://www.awwwards.com/sites/14islands-v4（http_dom；2026-11-23T08:44:52.763059+00:00）
 - https://www.awwwards.com/sites/197-historias-ilustradas（http_dom；2026-11-23T08:02:57.133138+00:00）
+- https://www.awwwards.com/sites/20-years-inspired-by-people（http_dom；2026-11-23T18:23:47.022814+00:00）
 - https://www.awwwards.com/sites/20-years-of-xbox-museum（http_dom；2026-11-23T08:02:57.135415+00:00）
 - https://www.awwwards.com/sites/2018-year-in-review（http_dom；2026-11-23T08:03:17.494840+00:00）
-- https://www.awwwards.com/sites/2021-virtual-webbys（http_dom；2026-11-23T08:03:17.498706+00:00）
 
 来源受各自版权和访问规则约束；只借鉴结构与机制，使用原创或已授权文案、图像、字体和模型。未知技术版本、隐藏状态和服务端行为不得根据截图补造。

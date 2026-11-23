@@ -1,0 +1,236 @@
+{
+  "schema_version": "3.0",
+  "id": "external-property-explorer",
+  "skill": "awwwards-page-external-property-explorer",
+  "title": "获奖来源外站房地产三维浏览、即时筛选与房源比较",
+  "kind": "property-explorer",
+  "scope": "Awwwards-linked external inner page; specific award status requires official evidence",
+  "source_families": [
+    "external.property-explorer"
+  ],
+  "goal": "在原创房地产空间研究中比较完整房源，使用三维或静态路径选择、返回并生成本地简报。",
+  "regions": [
+    "项目身份",
+    "原创静态图",
+    "可选真实三维",
+    "视角与时间",
+    "完整房源目录",
+    "即时筛选",
+    "选择与详情返回",
+    "本地研究简报",
+    "恢复与清理"
+  ],
+  "workflow": [
+    "先等待实际场景并人工核对，加载进度或画布尺寸不证明正常三维已显示；视觉大写不一定是实际可访问名称。",
+    "区分三维镜头、时间光照示意、楼栋房源和筛选抽屉，记录状态作用区域；归一化时间步长不等于小时。",
+    "核实筛选是即时还是关闭后应用；完整目录数量、已确认过滤和未完成输入分开，未知面积或状态不变成零或可售。",
+    "图形中选择与键盘列表提供等价路径；详情、返回与浏览器历史恢复筛选、视角、焦点和位置，深链不擅自离开页面。",
+    "原创图形按需绘制，有轻量档与静态路径；图形加载失败、上下文丢失、数据摘要变化和卸载分别恢复或清理。",
+    "只生成明确本地的研究简报；工程模型、校准日照、实时库存、价格、预约与询价必须通过真实数据和授权接口另行验收。"
+  ],
+  "data_fields": [
+    "catalogue_revision",
+    "units[].id",
+    "building",
+    "floor",
+    "bay",
+    "area_hundredths_or_null",
+    "rooms_half_or_null",
+    "availability_or_null",
+    "confirmed_filters",
+    "draft_validity",
+    "view",
+    "study_hour",
+    "selected_space",
+    "local_brief",
+    "owned_graphics_resources"
+  ],
+  "failure_recovery": "无效范围保留并标记上次已确认结果；数据失败保留完整原创目录；图形失败不阻断筛选和阅读；模块加载失败允许重新载入，图形上下文可重试；旧简报随选择或状态变化失效。",
+  "motion_contract": "无自动旋转或背景动画，显式操作更新镜头和光照；减少动态也保持静止，触摸滚动不误选；释放当前实例的几何、材质、监听和渲染器，静态内容仍在。",
+  "evidence_level": "rendered_source_observations",
+  "source_relationship_note": "An outbound work-detail association does not certify that every current inner page won an award or matches a historical version.",
+  "evidence_note": "Only recorded observations are facts. DOM structure does not prove visual composition, hidden state, source code, backend behavior or licenses. The runnable blueprint is an original recipe, not a source-site clone.",
+  "sources": [
+    {
+      "id": "60e885c5833868e0",
+      "url": "https://belgradearbor.rs/en/3d",
+      "family": "external.property-explorer",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T09:32:15.098546+00:00",
+      "source_sha256": "f436dac50240708fc6a23b7e0be275aa9741a8061285b6bfe0be5f34732ba7dd",
+      "structure": {
+        "headings": {},
+        "forms": 0,
+        "input_types": {},
+        "navigation_regions": 1,
+        "main_regions": 1,
+        "sections": 0,
+        "articles": 0,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 0,
+        "roles": {},
+        "anchor_count": 16
+      }
+    }
+  ],
+  "visual_metrics": [],
+  "source_state_observations": [
+    {
+      "id": "property79-1440-no-preference",
+      "source_id": "60e885c5833868e0",
+      "url": "https://belgradearbor.rs/en/3d",
+      "observed_at": "2026-11-23T18:18:03.588Z",
+      "status": "rendered_observed",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "motion_preference": "no-preference",
+      "readiness_boundary": "Initial loading percentages were not accepted as complete. Late source screenshots manually reviewed separately. Canvas size and generic readiness hints alone do not prove rendering.",
+      "source_assets_redistributed": false,
+      "official_relationship": {
+        "url": "https://www.awwwards.com/sites/belgrade-arbor",
+        "cached_title_label": "sotd",
+        "live_badge_audit": false,
+        "not_claimed": "Current inner page independently awarded or historical version equality",
+        "http_status": 200,
+        "observed_title": "Belgrade Arbor - Awwwards SOTD"
+      },
+      "source_limits": [
+        "No exhaustive unit inventory, commercial filters, inquiry or pricing audit",
+        "No source model, textures, brand, font, imagery or protected text distributed",
+        "No engineering, calibrated daylight, all devices or complete source accessibility claim"
+      ],
+      "operated_states": {
+        "camera": {
+          "pressed_before": "View angle 4",
+          "pressed_after": "View angle 2",
+          "changed_perspective_manually_reviewed": true
+        },
+        "time": {
+          "range": [
+            0,
+            1
+          ],
+          "before": 0.33,
+          "after_one_arrow_right": 0.331,
+          "not_claimed": "One step is not one hour; complete mapping and photometric accuracy not tested"
+        },
+        "property_type": "Properties menu -> Residences",
+        "filters": {
+          "reported_initial": 208,
+          "reported_after_one_room_choice": 80,
+          "updated_while_panel_open": true,
+          "after_close": 80,
+          "after_reopen": 80,
+          "visual_selected_choice_reviewed": true,
+          "selected_aria_pressed_not_reported": true,
+          "not_independent_stock_count": true
+        },
+        "inquiry_or_transaction_submitted": false,
+        "accessible_name_note": "CSS uppercases Properties visually; exact accessible name Properties was inspected before a successful unique click. Initial uppercase lookup timed out without clicking."
+      },
+      "authored_extension": "Original fictional12-space catalogue and procedural two-building WebGL study; native keyboard/list selection, original static plan, instant valid filters, preserved unknown values, view/time choices, local brief and resource cleanup. No source assets or backend."
+    },
+    {
+      "id": "property79-390-no-preference",
+      "source_id": "60e885c5833868e0",
+      "url": "https://belgradearbor.rs/en/3d",
+      "observed_at": "2026-11-23T18:18:32.938Z",
+      "status": "rendered_observed",
+      "viewport": {
+        "width": 390,
+        "height": 1000
+      },
+      "motion_preference": "no-preference",
+      "readiness_boundary": "Initial loading percentages were not accepted as complete. Late source screenshots manually reviewed separately. Canvas size and generic readiness hints alone do not prove rendering.",
+      "source_assets_redistributed": false,
+      "official_relationship": {
+        "url": "https://www.awwwards.com/sites/belgrade-arbor",
+        "cached_title_label": "sotd",
+        "live_badge_audit": false,
+        "not_claimed": "Current inner page independently awarded or historical version equality",
+        "http_status": 200,
+        "observed_title": "Belgrade Arbor - Awwwards SOTD"
+      },
+      "source_limits": [
+        "No exhaustive unit inventory, commercial filters, inquiry or pricing audit",
+        "No source model, textures, brand, font, imagery or protected text distributed",
+        "No engineering, calibrated daylight, all devices or complete source accessibility claim"
+      ],
+      "authored_extension": "Original fictional12-space catalogue and procedural two-building WebGL study; native keyboard/list selection, original static plan, instant valid filters, preserved unknown values, view/time choices, local brief and resource cleanup. No source assets or backend."
+    },
+    {
+      "id": "property79-390-reduce",
+      "source_id": "60e885c5833868e0",
+      "url": "https://belgradearbor.rs/en/3d",
+      "observed_at": "2026-11-23T18:18:54.944Z",
+      "status": "rendered_observed",
+      "viewport": {
+        "width": 390,
+        "height": 1000
+      },
+      "motion_preference": "reduce",
+      "readiness_boundary": "Initial loading percentages were not accepted as complete. Late source screenshots manually reviewed separately. Canvas size and generic readiness hints alone do not prove rendering.",
+      "source_assets_redistributed": false,
+      "official_relationship": {
+        "url": "https://www.awwwards.com/sites/belgrade-arbor",
+        "cached_title_label": "sotd",
+        "live_badge_audit": false,
+        "not_claimed": "Current inner page independently awarded or historical version equality",
+        "http_status": 200,
+        "observed_title": "Belgrade Arbor - Awwwards SOTD"
+      },
+      "source_limits": [
+        "No exhaustive unit inventory, commercial filters, inquiry or pricing audit",
+        "No source model, textures, brand, font, imagery or protected text distributed",
+        "No engineering, calibrated daylight, all devices or complete source accessibility claim"
+      ],
+      "authored_extension": "Original fictional12-space catalogue and procedural two-building WebGL study; native keyboard/list selection, original static plan, instant valid filters, preserved unknown values, view/time choices, local brief and resource cleanup. No source assets or backend."
+    }
+  ],
+  "source_coverage": "observed_examples",
+  "original_blueprint": true,
+  "business_mode": "local_preview",
+  "states": [
+    "default",
+    "loading",
+    "empty",
+    "error",
+    "success_preview",
+    "disabled",
+    "keyboard_focus",
+    "reduced_motion",
+    "narrow_view"
+  ],
+  "acceptance": [
+    "在原创房地产空间研究中比较完整房源，使用三维或静态路径选择、返回并生成本地简报。",
+    "无效范围保留并标记上次已确认结果；数据失败保留完整原创目录；图形失败不阻断筛选和阅读；模块加载失败允许重新载入，图形上下文可重试；旧简报随选择或状态变化失效。",
+    "无自动旋转或背景动画，显式操作更新镜头和光照；减少动态也保持静止，触摸滚动不误选；释放当前实例的几何、材质、监听和渲染器，静态内容仍在。",
+    "320、390、768、1440 宽度不出现整页横溢出；必要表格在独立区域滚动。",
+    "键盘可进入、操作、关闭对话框并返回触发点；错误不只靠颜色。",
+    "本地预览不得暗示真实支付、投稿、消息、账户或预约已生效。"
+  ],
+  "limitations": [
+    "Source interaction audit is not automatically performed",
+    "Source assets are not bundled",
+    "Real backend, production and physical-device acceptance are not included"
+  ],
+  "property_contract": {
+    "implementation": "Original procedural two-building scene,12 fictional spaces, SVG plan and authored notes; licensed frozen Three0.187.0",
+    "filter_timing": "Instant valid choices; modal closing retains confirmed results. Invalid area drafts retain explicitly labeled previous confirmed results",
+    "unknowns": "Null area, room count, availability and price remain unknown; nonempty area bounds exclude unknown area; half-room units preserve fractional labels",
+    "selection": "Only confirmed matching units are selectable; pointer raycasting and keyboard catalogue reach same details; Return/Back restore origin; deep links recover locally",
+    "graphics": "Explicit enable, on-demand redraw, capped DPR and light quality. Module failure retains DOM and can reload; context loss can retry; old in-flight enhancement cannot resurrect after static/dispose",
+    "brief": "On-device original JSON only; revoked when selected space or view changes; not an inquiry, reservation, calibrated sunlight or engineering document",
+    "editing": "Regenerate complete static catalogue and notes after catalogue.json edits; exact data digest gates optional controls",
+    "source_boundaries": [
+      "Reported208-to80 results not independently audited stock",
+      "Time0.33-to0.331 is a normalized keyboard step, not an hour",
+      "No source geometry/textures/brand or real inquiry/backend",
+      "No exhaustive commercial modes, range combinations, all units, devices or historical source acceptance"
+    ]
+  }
+}

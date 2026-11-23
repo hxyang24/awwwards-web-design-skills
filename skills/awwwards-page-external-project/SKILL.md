@@ -41,8 +41,8 @@ python scripts/scaffold.py --output YOUR_EMPTY_PROJECT_DIRECTORY
 - http://jesperlandberg.com/projects/book-of-happiness（http_dom；2026-11-23T11:48:13.115079+00:00）
 - http://jesperlandberg.com/projects/casa-di-solare（http_dom；2026-11-23T11:48:13.377119+00:00）
 - http://jesperlandberg.com/projects/discoveryland（http_dom；2026-11-23T11:48:13.639436+00:00）
-- https://abatable.com/case-studies/enabling-ap-moller-capital-to-meet-net-zero（http_dom；2026-11-23T08:46:04.461416+00:00）
-- https://abatable.com/case-studies/enabling-autotrader-to-support-carbon-removal（http_dom；2026-11-23T08:46:04.534206+00:00）
-- https://abatable.com/case-studies/partnering-with-howden-to-advance-climate-resilience（http_dom；2026-11-23T08:46:04.610608+00:00）
+- https://2xa.studio/projects（http_dom；2026-11-23T18:24:08.382087+00:00）
+- https://2xa.studio/projects/（http_dom；2026-11-23T18:24:13.549273+00:00）
+- https://2xa.studio/projects/abr-festival（http_dom；2026-11-23T18:24:14.078005+00:00）
 
 来源受各自版权和访问规则约束；只借鉴结构与机制，使用原创或已授权文案、图像、字体和模型。未知技术版本、隐藏状态和服务端行为不得根据截图补造。

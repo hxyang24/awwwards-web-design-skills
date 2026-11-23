@@ -1,0 +1,81 @@
+{
+  "date": "2026-11-23T18:55:06.345Z",
+  "status": "passed",
+  "checks": [
+    {
+      "name": "Original catalogue retains independent identities and unknown values",
+      "status": "passed"
+    },
+    {
+      "name": "Duplicate identities or physical diagram slots are rejected",
+      "status": "passed"
+    },
+    {
+      "name": "Unsupported coordinates dimensions and fake availability are rejected",
+      "status": "passed"
+    },
+    {
+      "name": "Area parsing uses exact hundredths and explicit bounds",
+      "status": "passed"
+    },
+    {
+      "name": "Unknown area rooms and status are not zeros or available claims",
+      "status": "passed"
+    },
+    {
+      "name": "All twelve records are searched including full descriptions",
+      "status": "passed"
+    },
+    {
+      "name": "Fractional room selection and type filters remain independent",
+      "status": "passed"
+    },
+    {
+      "name": "Features use all selected features and dimensions combine with AND",
+      "status": "passed"
+    },
+    {
+      "name": "Nonempty area bounds exclude unknowns and preserve inclusive fractional edges",
+      "status": "passed"
+    },
+    {
+      "name": "Invalid drafts are rejected without changing previous confirmed filters",
+      "status": "passed"
+    },
+    {
+      "name": "Unknown area sorts after known values in both directions",
+      "status": "passed"
+    },
+    {
+      "name": "View and study hour remain bounded and distinct from source normalized slider values",
+      "status": "passed"
+    },
+    {
+      "name": "Every parsed unit has a unique finite original position",
+      "status": "passed"
+    },
+    {
+      "name": "Owned route keys round trip while unrelated host query and hash survive",
+      "status": "passed"
+    },
+    {
+      "name": "Invalid bookmark groups reset with a truthful warning",
+      "status": "passed"
+    },
+    {
+      "name": "Removing owned defaults never removes unrelated host fields",
+      "status": "passed"
+    },
+    {
+      "name": "Local brief carries exact unknown fields and no source or host request data",
+      "status": "passed"
+    },
+    {
+      "name": "Bundled dependency bytes and license match the existing frozen Three package",
+      "status": "passed"
+    }
+  ],
+  "limitations": [
+    "Original fictional data and pure model fixtures, not engineering, source inventory or calibrated daylight acceptance"
+  ]
+}

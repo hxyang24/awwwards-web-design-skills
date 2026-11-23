@@ -1,8 +1,8 @@
 {
   "schema_version": "3.0",
-  "generated_at": "2026-11-23T17:55:48.090823+00:00",
+  "generated_at": "2026-11-23T18:53:32.465365+00:00",
   "core_skills_preserved": 24,
-  "page_skills": 50,
+  "page_skills": 51,
   "status": "in_progress",
   "scope": "Awwwards main pages and awarded external-site inner pages, organized into reusable task-specific skills",
   "not_claimed": [
@@ -812,6 +812,22 @@
       "evidence_level": "rendered_source_observations",
       "path": "skills/awwwards-page-external-brand-guide",
       "demo": "skills/awwwards-page-external-brand-guide/assets/",
+      "browser_validation": "See validation evidence; not inferred from generation"
+    },
+    {
+      "id": "external-property-explorer",
+      "skill": "awwwards-page-external-property-explorer",
+      "title": "获奖来源外站房地产三维浏览、即时筛选与房源比较",
+      "kind": "property-explorer",
+      "runtime_variant": "spatial-property",
+      "source_families": [
+        "external.property-explorer"
+      ],
+      "source_coverage": "observed_examples",
+      "source_count": 1,
+      "evidence_level": "rendered_source_observations",
+      "path": "skills/awwwards-page-external-property-explorer",
+      "demo": "skills/awwwards-page-external-property-explorer/assets/",
       "browser_validation": "See validation evidence; not inferred from generation"
     }
   ]

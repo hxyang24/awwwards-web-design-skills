@@ -40,9 +40,9 @@ python scripts/scaffold.py --output YOUR_EMPTY_PROJECT_DIRECTORY
 ## 已读取的来源
 - http://aonnoysengupta.com/contact（http_dom；2026-11-23T09:10:15.317285+00:00）
 - http://www.blacknegative.com/contact/（http_dom；2026-11-23T08:15:57.567664+00:00）
+- https://2xa.studio/contact（http_dom；2026-11-23T18:24:07.348302+00:00）
 - https://abatable.com/contact-us（http_dom；2026-11-23T08:46:08.613001+00:00）
 - https://abelfragrance.com/pages/contact（http_dom；2026-11-23T12:28:55.572143+00:00）
 - https://acmecups.nz/pages/contact-us（http_dom；2026-11-23T08:49:04.649027+00:00）
-- https://adinabuzatu.ro/contact（http_dom；2026-11-23T08:47:22.387975+00:00）
 
 来源受各自版权和访问规则约束；只借鉴结构与机制，使用原创或已授权文案、图像、字体和模型。未知技术版本、隐藏状态和服务端行为不得根据截图补造。

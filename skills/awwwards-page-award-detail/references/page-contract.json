@@ -127,6 +127,35 @@
       }
     },
     {
+      "id": "2fe48b0bfcd5b367",
+      "url": "https://www.awwwards.com/sites/20-years-inspired-by-people",
+      "family": "main.award-detail",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T18:23:47.022814+00:00",
+      "source_sha256": "7a5b6e2b21932e100929a2abbd008d9597eda2de369d90b92dccb70dc34278d6",
+      "structure": {
+        "headings": {
+          "h2": 11,
+          "h1": 1,
+          "h3": 26
+        },
+        "forms": 0,
+        "input_types": {
+          "text": 1
+        },
+        "navigation_regions": 2,
+        "main_regions": 0,
+        "sections": 1,
+        "articles": 0,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 6,
+        "roles": {},
+        "anchor_count": 208
+      }
+    },
+    {
       "id": "8a801d006e102e7c",
       "url": "https://www.awwwards.com/sites/20-years-of-xbox-museum",
       "family": "main.award-detail",
@@ -182,35 +211,6 @@
         "videos": 3,
         "roles": {},
         "anchor_count": 186
-      }
-    },
-    {
-      "id": "32353e3acbb0ce3b",
-      "url": "https://www.awwwards.com/sites/2021-virtual-webbys",
-      "family": "main.award-detail",
-      "inspection_level": "http_dom",
-      "observed_at": "2026-11-23T08:03:17.498706+00:00",
-      "source_sha256": "22c6f8a84ccdcf1256291c0594a0476041e2a3644c30a4904393dd739619cc16",
-      "structure": {
-        "headings": {
-          "h2": 11,
-          "h1": 1,
-          "h3": 20
-        },
-        "forms": 0,
-        "input_types": {
-          "text": 1
-        },
-        "navigation_regions": 2,
-        "main_regions": 0,
-        "sections": 1,
-        "articles": 0,
-        "tables": 0,
-        "dialogs": 0,
-        "canvases": 0,
-        "videos": 3,
-        "roles": {},
-        "anchor_count": 204
       }
     }
   ],

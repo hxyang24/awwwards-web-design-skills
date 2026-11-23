@@ -1,0 +1,129 @@
+{
+  "schema_version": "1.0",
+  "purpose": "Limited source observations for one real-estate property-explorer Skill",
+  "source_assets_redistributed": false,
+  "observations": [
+    {
+      "id": "property79-1440-no-preference",
+      "source_id": "60e885c5833868e0",
+      "url": "https://belgradearbor.rs/en/3d",
+      "observed_at": "2026-11-23T18:18:03.588Z",
+      "status": "rendered_observed",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "motion_preference": "no-preference",
+      "readiness_boundary": "Initial loading percentages were not accepted as complete. Late source screenshots manually reviewed separately. Canvas size and generic readiness hints alone do not prove rendering.",
+      "source_assets_redistributed": false,
+      "official_relationship": {
+        "url": "https://www.awwwards.com/sites/belgrade-arbor",
+        "cached_title_label": "sotd",
+        "live_badge_audit": false,
+        "not_claimed": "Current inner page independently awarded or historical version equality",
+        "http_status": 200,
+        "observed_title": "Belgrade Arbor - Awwwards SOTD"
+      },
+      "source_limits": [
+        "No exhaustive unit inventory, commercial filters, inquiry or pricing audit",
+        "No source model, textures, brand, font, imagery or protected text distributed",
+        "No engineering, calibrated daylight, all devices or complete source accessibility claim"
+      ],
+      "operated_states": {
+        "camera": {
+          "pressed_before": "View angle 4",
+          "pressed_after": "View angle 2",
+          "changed_perspective_manually_reviewed": true
+        },
+        "time": {
+          "range": [
+            0,
+            1
+          ],
+          "before": 0.33,
+          "after_one_arrow_right": 0.331,
+          "not_claimed": "One step is not one hour; complete mapping and photometric accuracy not tested"
+        },
+        "property_type": "Properties menu -> Residences",
+        "filters": {
+          "reported_initial": 208,
+          "reported_after_one_room_choice": 80,
+          "updated_while_panel_open": true,
+          "after_close": 80,
+          "after_reopen": 80,
+          "visual_selected_choice_reviewed": true,
+          "selected_aria_pressed_not_reported": true,
+          "not_independent_stock_count": true
+        },
+        "inquiry_or_transaction_submitted": false,
+        "accessible_name_note": "CSS uppercases Properties visually; exact accessible name Properties was inspected before a successful unique click. Initial uppercase lookup timed out without clicking."
+      },
+      "authored_extension": "Original fictional12-space catalogue and procedural two-building WebGL study; native keyboard/list selection, original static plan, instant valid filters, preserved unknown values, view/time choices, local brief and resource cleanup. No source assets or backend."
+    },
+    {
+      "id": "property79-390-no-preference",
+      "source_id": "60e885c5833868e0",
+      "url": "https://belgradearbor.rs/en/3d",
+      "observed_at": "2026-11-23T18:18:32.938Z",
+      "status": "rendered_observed",
+      "viewport": {
+        "width": 390,
+        "height": 1000
+      },
+      "motion_preference": "no-preference",
+      "readiness_boundary": "Initial loading percentages were not accepted as complete. Late source screenshots manually reviewed separately. Canvas size and generic readiness hints alone do not prove rendering.",
+      "source_assets_redistributed": false,
+      "official_relationship": {
+        "url": "https://www.awwwards.com/sites/belgrade-arbor",
+        "cached_title_label": "sotd",
+        "live_badge_audit": false,
+        "not_claimed": "Current inner page independently awarded or historical version equality",
+        "http_status": 200,
+        "observed_title": "Belgrade Arbor - Awwwards SOTD"
+      },
+      "source_limits": [
+        "No exhaustive unit inventory, commercial filters, inquiry or pricing audit",
+        "No source model, textures, brand, font, imagery or protected text distributed",
+        "No engineering, calibrated daylight, all devices or complete source accessibility claim"
+      ],
+      "authored_extension": "Original fictional12-space catalogue and procedural two-building WebGL study; native keyboard/list selection, original static plan, instant valid filters, preserved unknown values, view/time choices, local brief and resource cleanup. No source assets or backend."
+    },
+    {
+      "id": "property79-390-reduce",
+      "source_id": "60e885c5833868e0",
+      "url": "https://belgradearbor.rs/en/3d",
+      "observed_at": "2026-11-23T18:18:54.944Z",
+      "status": "rendered_observed",
+      "viewport": {
+        "width": 390,
+        "height": 1000
+      },
+      "motion_preference": "reduce",
+      "readiness_boundary": "Initial loading percentages were not accepted as complete. Late source screenshots manually reviewed separately. Canvas size and generic readiness hints alone do not prove rendering.",
+      "source_assets_redistributed": false,
+      "official_relationship": {
+        "url": "https://www.awwwards.com/sites/belgrade-arbor",
+        "cached_title_label": "sotd",
+        "live_badge_audit": false,
+        "not_claimed": "Current inner page independently awarded or historical version equality",
+        "http_status": 200,
+        "observed_title": "Belgrade Arbor - Awwwards SOTD"
+      },
+      "source_limits": [
+        "No exhaustive unit inventory, commercial filters, inquiry or pricing audit",
+        "No source model, textures, brand, font, imagery or protected text distributed",
+        "No engineering, calibrated daylight, all devices or complete source accessibility claim"
+      ],
+      "authored_extension": "Original fictional12-space catalogue and procedural two-building WebGL study; native keyboard/list selection, original static plan, instant valid filters, preserved unknown values, view/time choices, local brief and resource cleanup. No source assets or backend."
+    }
+  ],
+  "implementation_reference": {
+    "dependency": "Three.js0.187.0 existing licensed frozen copy",
+    "primary_docs": [
+      "https://threejs.org/docs/pages/WebGLRenderer.html",
+      "https://threejs.org/docs/pages/Raycaster.html",
+      "https://threejs.org/docs/pages/BoxGeometry.html"
+    ],
+    "not_source_framework_identification": true
+  }
+}

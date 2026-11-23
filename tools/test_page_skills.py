@@ -10,6 +10,15 @@ from install_all_skills import install
 def load(path,name):
  spec=importlib.util.spec_from_file_location(name,path);m=importlib.util.module_from_spec(spec);spec.loader.exec_module(m);return m
 class PageSkills(unittest.TestCase):
+ def test_property_static_generation_retains_full_spaces_unknowns_and_escaped_edits(self):
+  import shutil
+  with tempfile.TemporaryDirectory() as t:
+   target=Path(t)/'property';shutil.copytree(R/'page_skills/spatial/property',target);p=target/'catalogue.json';d=json.loads(p.read_text(encoding='utf-8'));d['units'][0]['label']='<Original space>';d['units'][3]['rooms_half']=5;p.write_text(json.dumps(d),encoding='utf-8');result=load(target/'render_static.py','property_static_fixture').render(target)
+   self.assertEqual(result,{'complete_spaces':12,'unknown_area':1});text=(target/'index.html').read_text(encoding='utf-8');notes=(target/'study-notes.txt').read_text(encoding='utf-8');self.assertIn('&lt;Original space&gt;',text);self.assertEqual(text.count('class="static-space"'),12);self.assertIn(hashlib.sha256(p.read_bytes()).hexdigest(),text);self.assertIn('value="5">2.5 rooms',text);self.assertIn('Not supplied',text)
+   for u in d['units']:self.assertIn(html.escape(u['label']),text);self.assertIn(u['description'],notes)
+ def test_property_review_requires_exact_source_revision_and_actual_task_evidence(self):
+  reviews=load_reviews(R);r=reviews['https://belgradearbor.rs/en/3d'];source={'url':r['url'],'id':r['source_id'],'source_sha256':r['source_sha256'],'inspection_level':'http_dom'};self.assertEqual(assign_family(source,reviews)['family'],'external.property-explorer');source['source_sha256']='0'*64;self.assertEqual(assign_family(source,reviews)['review_status'],'stale');self.assertEqual(len([p for p in definitions() if p[0]=='external-property-explorer']),1)
+
  def test_brand_static_guide_exports_complete_original_data_and_safe_text(self):
   import shutil
   with tempfile.TemporaryDirectory() as t:
@@ -34,7 +43,7 @@ class PageSkills(unittest.TestCase):
   reviews=load_reviews(R);targets={'https://www.awwwards.com/13treize.fr/submissions':'main.creator-profile','https://www.awwwards.com/inspiration/20-years-of-xbox-museum-3d-environments-microverse':'main.inspiration-detail','https://www.awwwards.com/inspiration/2021-virtual-webbys-cta-button-to-enter':'main.inspiration-detail'}
   for url,family_name in targets.items():
    review=reviews[url];source={'url':url,'id':review['source_id'],'source_sha256':review['source_sha256'],'inspection_level':'http_dom'};self.assertEqual(assign_family(source,reviews)['family'],family_name);source['source_sha256']='0'*64;self.assertEqual(assign_family(source,reviews)['review_status'],'stale')
-  self.assertEqual(len(definitions()),50)
+  self.assertEqual(len(definitions()),51)
  def test_reference_static_content_preserves_media_transcript_and_all_original_notes(self):
   import shutil
   with tempfile.TemporaryDirectory() as t:

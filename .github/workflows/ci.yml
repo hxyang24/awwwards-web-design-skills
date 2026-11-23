@@ -9,7 +9,7 @@ permissions:
 jobs:
   validate:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 20
     defaults:
       run:
         working-directory: package/v2
@@ -94,6 +94,10 @@ jobs:
         run: |
           node ../../tools/test_brand_model.mjs
           node ../../tools/test_brand_page.mjs
+      - name: Property selection, real WebGL, filter history and fallback
+        run: |
+          node ../../tools/test_property_model.mjs
+          node ../../tools/test_property_page.mjs
       - name: Upload validation evidence
         if: always()
         uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
@@ -109,6 +113,7 @@ jobs:
             research/pricing_skill_validation
             research/editorial_skill_validation
             research/product_skill_validation
+            research/property_skill_validation
             research/brand_skill_validation
             research/creator_skill_validation
             research/reference_skill_validation

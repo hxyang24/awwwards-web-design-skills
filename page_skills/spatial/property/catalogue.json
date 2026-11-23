@@ -1,0 +1,184 @@
+{
+  "schema_version": 1,
+  "id": "courtyard-study",
+  "revision": "1.0",
+  "origin": "original_fictional_study",
+  "title": "Court / Yard",
+  "summary": "Two small buildings around an open court. Explore an original spatial study, then compare the example spaces in the full catalogue.",
+  "units": [
+    {
+      "id": "west-001",
+      "label": "West 001",
+      "building": "west",
+      "floor": 0,
+      "bay": 0,
+      "type": "business",
+      "area_hundredths": 7200,
+      "rooms_half": null,
+      "availability": "available",
+      "features": [
+        "courtyard"
+      ],
+      "description": "An original fictional work space in the west building. The diagram shows identity and position only; dimensions and daylight are illustrative."
+    },
+    {
+      "id": "west-002",
+      "label": "West 002",
+      "building": "west",
+      "floor": 0,
+      "bay": 1,
+      "type": "business",
+      "area_hundredths": 9600,
+      "rooms_half": null,
+      "availability": null,
+      "features": [],
+      "description": "An original fictional work space in the west building. The diagram shows identity and position only; dimensions and daylight are illustrative."
+    },
+    {
+      "id": "west-101",
+      "label": "West 101",
+      "building": "west",
+      "floor": 1,
+      "bay": 0,
+      "type": "residence",
+      "area_hundredths": 4850,
+      "rooms_half": 2,
+      "availability": "available",
+      "features": [
+        "courtyard"
+      ],
+      "description": "An original fictional residential study in the west building. The diagram shows identity and position only; dimensions and daylight are illustrative."
+    },
+    {
+      "id": "west-102",
+      "label": "West 102",
+      "building": "west",
+      "floor": 1,
+      "bay": 1,
+      "type": "residence",
+      "area_hundredths": 6200,
+      "rooms_half": 3,
+      "availability": "available",
+      "features": [],
+      "description": "An original fictional residential study in the west building. The diagram shows identity and position only; dimensions and daylight are illustrative."
+    },
+    {
+      "id": "west-201",
+      "label": "West 201",
+      "building": "west",
+      "floor": 2,
+      "bay": 0,
+      "type": "residence",
+      "area_hundredths": 7350,
+      "rooms_half": 4,
+      "availability": "reserved",
+      "features": [
+        "courtyard",
+        "balcony"
+      ],
+      "description": "An original fictional residential study in the west building. The diagram shows identity and position only; dimensions and daylight are illustrative."
+    },
+    {
+      "id": "west-202",
+      "label": "West 202",
+      "building": "west",
+      "floor": 2,
+      "bay": 1,
+      "type": "residence",
+      "area_hundredths": 9100,
+      "rooms_half": 6,
+      "availability": "available",
+      "features": [
+        "balcony"
+      ],
+      "description": "An original fictional residential study in the west building. The diagram shows identity and position only; dimensions and daylight are illustrative."
+    },
+    {
+      "id": "east-001",
+      "label": "East 001",
+      "building": "east",
+      "floor": 0,
+      "bay": 0,
+      "type": "business",
+      "area_hundredths": null,
+      "rooms_half": null,
+      "availability": null,
+      "features": [
+        "courtyard"
+      ],
+      "description": "An original fictional work space in the east building. The diagram shows identity and position only; dimensions and daylight are illustrative."
+    },
+    {
+      "id": "east-002",
+      "label": "East 002",
+      "building": "east",
+      "floor": 0,
+      "bay": 1,
+      "type": "business",
+      "area_hundredths": 11200,
+      "rooms_half": null,
+      "availability": "available",
+      "features": [],
+      "description": "An original fictional work space in the east building. The diagram shows identity and position only; dimensions and daylight are illustrative."
+    },
+    {
+      "id": "east-101",
+      "label": "East 101",
+      "building": "east",
+      "floor": 1,
+      "bay": 0,
+      "type": "residence",
+      "area_hundredths": 5500,
+      "rooms_half": 2,
+      "availability": "available",
+      "features": [
+        "courtyard"
+      ],
+      "description": "An original fictional residential study in the east building. The diagram shows identity and position only; dimensions and daylight are illustrative."
+    },
+    {
+      "id": "east-102",
+      "label": "East 102",
+      "building": "east",
+      "floor": 1,
+      "bay": 1,
+      "type": "residence",
+      "area_hundredths": 6450,
+      "rooms_half": 3,
+      "availability": "reserved",
+      "features": [],
+      "description": "An original fictional residential study in the east building. The diagram shows identity and position only; dimensions and daylight are illustrative."
+    },
+    {
+      "id": "east-201",
+      "label": "East 201",
+      "building": "east",
+      "floor": 2,
+      "bay": 0,
+      "type": "residence",
+      "area_hundredths": 8000,
+      "rooms_half": 4,
+      "availability": null,
+      "features": [
+        "courtyard",
+        "balcony"
+      ],
+      "description": "An original fictional residential study in the east building. The diagram shows identity and position only; dimensions and daylight are illustrative."
+    },
+    {
+      "id": "east-202",
+      "label": "East 202",
+      "building": "east",
+      "floor": 2,
+      "bay": 1,
+      "type": "residence",
+      "area_hundredths": 10400,
+      "rooms_half": 6,
+      "availability": "available",
+      "features": [
+        "balcony"
+      ],
+      "description": "An original fictional residential study in the east building. The diagram shows identity and position only; dimensions and daylight are illustrative."
+    }
+  ]
+}

@@ -14,7 +14,7 @@ def load_reviews(root):
  data=json.loads(path.read_text(encoding='utf-8'));result={}
  if data.get('schema_version')!=1:raise ValueError('Unsupported family-review schema')
  for entry in data.get('reviews',[]):
-  if entry.get('family') not in ('external.brand-guide','main.creator-profile','main.inspiration-detail','external.product','external.technical-product','external.collection','external.editorial-index','external.article','external.project','external.service','external.about','external.contact','external.careers'):raise ValueError('Unsupported reviewed family')
+  if entry.get('family') not in ('external.property-explorer','external.brand-guide','main.creator-profile','main.inspiration-detail','external.product','external.technical-product','external.collection','external.editorial-index','external.article','external.project','external.service','external.about','external.contact','external.careers'):raise ValueError('Unsupported reviewed family')
   if not re.fullmatch(r'[a-f0-9]{64}',entry.get('source_sha256','')):raise ValueError('Review requires an exact source metadata hash')
   relative=Path(entry.get('evidence_file',''));evidence=(root/relative).resolve()
   allowed=(root/'research/live_pages').resolve()

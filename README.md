@@ -3,7 +3,7 @@
 [![CI](https://github.com/hxyang24/awwwards-web-design-skills/actions/workflows/ci.yml/badge.svg)](https://github.com/hxyang24/awwwards-web-design-skills/actions/workflows/ci.yml)
 [![Original code: MIT](https://img.shields.io/badge/original_code-MIT-green.svg)](LICENSE)
 
-> **当前新增页面专项 Skills 整理仍在进行，尚未完成全站与所有获奖外站内页覆盖。** 新增 50 套可单独安装的页面技能及 4 套具体交互机制，保留原 24 套核心技能，共 78 套。详细来源边界和缺口见 [页面技能目录](PAGE_SKILLS.md)。
+> **当前新增页面专项 Skills 整理仍在进行，尚未完成全站与所有获奖外站内页覆盖。** 新增 51 套可单独安装的页面技能及 4 套具体交互机制，保留原 24 套核心技能，共 79 套。详细来源边界和缺口见 [页面技能目录](PAGE_SKILLS.md)。
 
 [下载当前页面技能工作版](https://github.com/hxyang24/awwwards-web-design-skills/archive/refs/heads/main.zip) · [独立页面技能](skills) · [来源覆盖](research/live_pages/coverage.json)
 
@@ -115,3 +115,5 @@ npm run test:export
 本次升级既有 [作者作品主页 Skill](CREATOR_PROFILE_SKILL.md)，总数仍77套：八项完整原创作品、报告/目录/匹配/可见数量分离、未知与零、筛选展开、阅读返回、仅本机短名单和不可用回退。固定快照30组作者浏览器、12项模型、30项页面工具及完整49页43组通过。三个主站地址复用既有类型，不按网址重复增加Skill；全站仍未完成。
 
 最新新增 [品牌指南 Skill](BRAND_GUIDE_SKILL.md)：原创色板、标志、几何图标组合、对比度计算、复制回退、可控动效与完整静态资源。四个已观察来源章节合为一套任务技能。固定快照30组品牌浏览器、13项模型、32项页面工具、完整50页44组通过，原V1 187文件保持一致；全站仍未完成。此前77套作者主页增强保持兼容。
+
+最新新增 [房地产三维浏览 Skill](PROPERTY_EXPLORER_SKILL.md)：原创双楼栋与12空间、显式软件WebGL绘制、镜头/时间、射线点选与键盘列表、即时过滤、未知值、详情返回和本地简报。固定快照38组图形浏览器、18项模型、34项页面工具及完整51页45组通过。新增150个页面结果不是150套Skill；全站仍未完成。此前78套和原V1文件保持兼容。

@@ -25,3 +25,7 @@ The new `skills/awwwards-page-*` assets are original geometric blueprints. `rese
 ## Original brand-guide study
 
 Common Room guide code, text, colors, geometric symbols and SVG mark are original fictional MIT examples, not Dropbox assets. Source screenshots, brand palettes, fonts, logos, footage, protected HTML and copy are not distributed. Links and limited factual observations do not convey trademark or asset rights. Numeric contrast logic follows the public W3C WCAG2.2 specification; the documentation paraphrases numerical rules and links to primary sources rather than copying the explanatory publication. The local JSON format is authored and does not claim any design-token standard certification.
+
+## Original property-explorer study
+
+Court / Yard geometry, SVG plan, interface text, styles, notes and twelve-space catalogue are original fictional MIT examples. No source building, texture, mark, font, photo, footage, protected text or HTML is distributed. The frozen Three.js0.187.0 files are copied byte-for-byte from the existing licensed dependency; its MIT notice is preserved as [THREE-LICENSE](page_skills/spatial/property/THREE-LICENSE), with hashes in [asset-origin.json](page_skills/spatial/property/asset-origin.json). The diagram does not certify engineering scale, calibrated sunlight, real stock or pricing.

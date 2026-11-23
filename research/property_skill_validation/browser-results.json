@@ -1,0 +1,258 @@
+{
+  "date": "2026-11-23T18:57:43.370Z",
+  "status": "passed",
+  "filter": null,
+  "full_suite": true,
+  "checks": [
+    {
+      "name": "Property study fits and retains complete original catalogue 320",
+      "status": "passed"
+    },
+    {
+      "name": "Property study fits and retains complete original catalogue 390",
+      "status": "passed"
+    },
+    {
+      "name": "Property study fits and retains complete original catalogue 768",
+      "status": "passed"
+    },
+    {
+      "name": "Property study fits and retains complete original catalogue 1440",
+      "status": "passed"
+    },
+    {
+      "name": "Selected property accessibility rules 390",
+      "status": "passed"
+    },
+    {
+      "name": "Selected property accessibility rules 1440",
+      "status": "passed"
+    },
+    {
+      "name": "Full catalogue search is instant and includes descriptions",
+      "status": "passed"
+    },
+    {
+      "name": "Type half-room and unknown filters remain independent",
+      "status": "passed"
+    },
+    {
+      "name": "All chosen features and location dimensions combine",
+      "status": "passed"
+    },
+    {
+      "name": "Invalid area draft preserves and labels previous confirmed results",
+      "status": "passed"
+    },
+    {
+      "name": "Inverted bounds do not fabricate empty results and keyboard can recover",
+      "status": "passed"
+    },
+    {
+      "name": "Unknown areas sort after known values in both directions",
+      "status": "passed"
+    },
+    {
+      "name": "Mobile closing and reopening preserves instant confirmed choices",
+      "status": "passed"
+    },
+    {
+      "name": "Narrow result navigation closes the filter panel without reapplying or clearing",
+      "status": "passed"
+    },
+    {
+      "name": "Breakpoint movement recovers focus from both inline and modal filters",
+      "status": "passed"
+    },
+    {
+      "name": "Detail Return Back and Forward retain origin focus and scroll 390",
+      "status": "passed"
+    },
+    {
+      "name": "Detail Return Back and Forward retain origin focus and scroll 1440",
+      "status": "passed"
+    },
+    {
+      "name": "Deep space links return locally and invalid links explain recovery",
+      "status": "passed"
+    },
+    {
+      "name": "Unavailable deep space and unsupported choices reset without false selection",
+      "status": "passed"
+    },
+    {
+      "name": "Host URL and history fields survive filtering selection and return",
+      "status": "passed"
+    },
+    {
+      "name": "Search text cannot introduce markup",
+      "status": "passed"
+    },
+    {
+      "name": "Native study notes download is complete and byte-identical",
+      "status": "passed"
+    },
+    {
+      "name": "Local brief retains unknowns and is revoked on return",
+      "status": "passed"
+    },
+    {
+      "name": "No JavaScript keeps every original space note and native download",
+      "status": "passed"
+    },
+    {
+      "name": "Catalogue network failure retains full fallback and can retry",
+      "status": "passed"
+    },
+    {
+      "name": "Changed JSON is not mixed with the original static catalogue",
+      "status": "passed"
+    },
+    {
+      "name": "Actual software WebGL draws nonempty original geometry after explicit enable",
+      "status": "passed"
+    },
+    {
+      "name": "Camera and hour keyboard choices change actual pixels without autoplay",
+      "status": "passed"
+    },
+    {
+      "name": "Actual raycast selection reaches the same detail as the keyboard catalogue",
+      "status": "passed"
+    },
+    {
+      "name": "Filtered scene and pointer targets stay within confirmed matches",
+      "status": "passed"
+    },
+    {
+      "name": "Context loss releases owned resources and a new context can retry",
+      "status": "passed"
+    },
+    {
+      "name": "Unavailable WebGL leaves filters details and static plan usable",
+      "status": "passed"
+    },
+    {
+      "name": "Failed graphics module can reload and still retains the catalogue",
+      "status": "passed"
+    },
+    {
+      "name": "Choosing static during module loading cannot resurrect graphics later",
+      "status": "passed"
+    },
+    {
+      "name": "DPR quality replacement releases the old instance and preserves choices",
+      "status": "passed"
+    },
+    {
+      "name": "Real scene resize keeps its buffer bounded and controls usable",
+      "status": "passed"
+    },
+    {
+      "name": "Disposal releases WebGL and briefs while preserving host state and full fallback",
+      "status": "passed"
+    },
+    {
+      "name": "No uncaught script errors or outside requests",
+      "status": "passed"
+    }
+  ],
+  "accessibility": [
+    {
+      "tag": "default-390",
+      "violations": []
+    },
+    {
+      "tag": "default-1440",
+      "violations": []
+    },
+    {
+      "tag": "filter-modal",
+      "violations": []
+    },
+    {
+      "tag": "space-detail",
+      "violations": []
+    },
+    {
+      "tag": "actual-webgl",
+      "violations": []
+    }
+  ],
+  "screenshots": [
+    "research/property_skill_validation/screenshots/property-static-390.png",
+    "research/property_skill_validation/screenshots/property-static-1440.png",
+    "research/property_skill_validation/screenshots/property-webgl-1440.png"
+  ],
+  "webgl": [
+    {
+      "tag": "actual-software-render",
+      "mode": "ready",
+      "frames": 4,
+      "created": 23,
+      "disposed": 0,
+      "live_resources": 23,
+      "pixel_ratio": 1,
+      "width": 805,
+      "height": 548,
+      "draw_calls": 46,
+      "triangles": 388,
+      "context_version": "WebGL 2.0 (OpenGL ES 3.0 Chromium)",
+      "view": {
+        "view": "courtyard",
+        "hour": 10,
+        "yaw": 0,
+        "quality": "balanced"
+      },
+      "matching": 12,
+      "selected": null,
+      "distinct_sampled_colors": 456
+    }
+  ],
+  "console_messages": [
+    {
+      "type": "error",
+      "text": "Failed to load resource: net::ERR_FILE_NOT_FOUND"
+    },
+    {
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 503 (Service Unavailable)"
+    },
+    {
+      "type": "error",
+      "text": "THREE.WebGLRenderer: THREE.WebGLRenderer: Error creating WebGL context."
+    },
+    {
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 503 (Service Unavailable)"
+    },
+    {
+      "type": "error",
+      "text": "Failed to load resource: net::ERR_FILE_NOT_FOUND"
+    }
+  ],
+  "errors": [],
+  "external_requests": [],
+  "environment": {
+    "platform": "win32",
+    "node": "v24.14.0",
+    "browser": "157.0.8103.79",
+    "viewport_widths": [
+      320,
+      390,
+      768,
+      1440
+    ],
+    "software_webgl_requested": true,
+    "launch_flags": [
+      "--use-angle=swiftshader",
+      "--enable-unsafe-swiftshader"
+    ]
+  },
+  "limitations": [
+    "Original procedural diagram and fictional catalogue, not source building reconstruction",
+    "Actual software WebGL rendering tested; physical GPU, devices and production performance not accepted",
+    "Selected automated accessibility is not complete manual assistive-technology or WCAG acceptance",
+    "No engineering, calibrated sunlight, real stock, prices, inquiry or backend acceptance"
+  ]
+}
