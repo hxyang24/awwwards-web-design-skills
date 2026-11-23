@@ -36,6 +36,7 @@
   "failure_recovery": "原站失效保留档案；评论或投票接口不可用时不可伪造成功。",
   "motion_contract": "预览保持尺寸；视频由用户启动并可暂停；原始素材无许可不打包。",
   "evidence_level": "http_dom",
+  "source_relationship_note": "An outbound work-detail association does not certify that every current inner page won an award or matches a historical version.",
   "evidence_note": "Only recorded observations are facts. DOM structure does not prove visual composition, hidden state, source code, backend behavior or licenses. The runnable blueprint is an original recipe, not a source-site clone.",
   "sources": [
     {
@@ -214,6 +215,7 @@
     }
   ],
   "visual_metrics": [],
+  "source_state_observations": [],
   "source_coverage": "observed_examples",
   "original_blueprint": true,
   "business_mode": "local_preview",

@@ -31,6 +31,7 @@
   "failure_recovery": "答案无证据或过期时标记待确认；不生成未经授权的服务承诺。",
   "motion_contract": "展开不强行滚动到顶部，减少动画时直接展开内容。",
   "evidence_level": "http_dom",
+  "source_relationship_note": "An outbound work-detail association does not certify that every current inner page won an award or matches a historical version.",
   "evidence_note": "Only recorded observations are facts. DOM structure does not prove visual composition, hidden state, source code, backend behavior or licenses. The runnable blueprint is an original recipe, not a source-site clone.",
   "sources": [
     {
@@ -63,6 +64,7 @@
     }
   ],
   "visual_metrics": [],
+  "source_state_observations": [],
   "source_coverage": "observed_examples",
   "original_blueprint": true,
   "business_mode": "local_preview",

@@ -1,0 +1,146 @@
+{
+  "schema_version": "3.0",
+  "id": "external-story-index",
+  "skill": "awwwards-page-external-story-index",
+  "title": "获奖来源外站叙事章节索引",
+  "kind": "story-index",
+  "scope": "Awwwards-linked external inner page; specific award status requires official evidence",
+  "source_families": [
+    "external.story-index"
+  ],
+  "goal": "选择可用章节，理解阅读顺序并按需恢复已保存的位置。",
+  "regions": [
+    "故事身份",
+    "章节封面",
+    "可用状态",
+    "阅读入口",
+    "保存位置",
+    "阅读说明"
+  ],
+  "workflow": [
+    "将故事、章节、可用状态和阅读进度分别建模；未发布章节不伪造可点击入口。",
+    "保留章节的稳定地址与返回索引路径；媒体加载或画布失败不阻断章节标题和文字。",
+    "进度仅在明确选择后保存在本机；损坏或不可用的存储不影响阅读。",
+    "原创蓝本提供三章、逐格/全文阅读、可选本地记忆和不可用章节恢复；不复制源站角色、画面或音乐。"
+  ],
+  "data_fields": [
+    "story_id",
+    "chapters",
+    "availability",
+    "reading_progress",
+    "storage_consent",
+    "media_rights"
+  ],
+  "failure_recovery": "未发布、链接错误和本地存储失败分别说明；任何错误都能返回可用章节。",
+  "motion_contract": "章节不会自动跳转或强制播放；图形和声音是可拒绝的增强。",
+  "evidence_level": "rendered_source_observations",
+  "source_relationship_note": "An outbound work-detail association does not certify that every current inner page won an award or matches a historical version.",
+  "evidence_note": "Only recorded observations are facts. DOM structure does not prove visual composition, hidden state, source code, backend behavior or licenses. The runnable blueprint is an original recipe, not a source-site clone.",
+  "sources": [
+    {
+      "id": "8d87b1df60af5878",
+      "url": "https://ponpon-mania.com/chapters",
+      "family": "external.story-index",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T08:43:55.031216+00:00",
+      "source_sha256": "90255dbd3a6faba5aa3b44a6bc4f447fc1a8a7c06c31ee210167bb586302fba1",
+      "structure": {
+        "headings": {
+          "h1": 1
+        },
+        "forms": 0,
+        "input_types": {},
+        "navigation_regions": 0,
+        "main_regions": 1,
+        "sections": 0,
+        "articles": 0,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 1,
+        "videos": 0,
+        "roles": {},
+        "anchor_count": 11
+      }
+    }
+  ],
+  "visual_metrics": [],
+  "source_state_observations": [
+    {
+      "id": "story-index-phone",
+      "source_id": "8d87b1df60af5878",
+      "url": "https://ponpon-mania.com/chapters",
+      "viewport": {
+        "width": 390,
+        "height": 1000,
+        "device_scale_factor": 1
+      },
+      "observed_at": "2026-11-23T09:32:12.828Z",
+      "status": "rendered_content_observed",
+      "source_assets_redistributed": false,
+      "source_backend_validated": false,
+      "measured_geometry": {
+        "document_width": 390,
+        "viewport_width": 390,
+        "body_font": "\"Libre Franklin\", Helvetica, Arial, sans-serif",
+        "headings": [
+          {
+            "tag": "h1",
+            "rect": {
+              "x": 137,
+              "y": 15,
+              "width": 115,
+              "height": 53,
+              "font_family": "\"Libre Franklin\", Helvetica, Arial, sans-serif",
+              "font_size": "12px",
+              "line_height": "normal",
+              "font_weight": "700",
+              "color": "rgb(23, 23, 23)",
+              "background": "rgba(0, 0, 0, 0)"
+            }
+          }
+        ]
+      },
+      "actions": [
+        {
+          "role": "button",
+          "name": "Decline",
+          "action": "click",
+          "status": "acted_and_observed",
+          "observable_state_changed": false,
+          "local_preview_text_present": false,
+          "reason": null,
+          "selected_tabs_after": []
+        }
+      ],
+      "private_screenshot_sha256": "649e57f4c0af58fcc66b6205d2525bf792dc3559a1ae4f1e94ab221c262a2701",
+      "review_note": "At the 20-second observation, original chapter artwork/index content was visible. The earlier 3.5-second captures were still a loading screen. Audio playback, canvas gestures and all normal states were not validated."
+    }
+  ],
+  "source_coverage": "observed_examples",
+  "original_blueprint": true,
+  "business_mode": "local_preview",
+  "states": [
+    "default",
+    "loading",
+    "empty",
+    "error",
+    "success_preview",
+    "disabled",
+    "keyboard_focus",
+    "reduced_motion",
+    "narrow_view"
+  ],
+  "acceptance": [
+    "选择可用章节，理解阅读顺序并按需恢复已保存的位置。",
+    "未发布、链接错误和本地存储失败分别说明；任何错误都能返回可用章节。",
+    "章节不会自动跳转或强制播放；图形和声音是可拒绝的增强。",
+    "320、390、768、1440 宽度不出现整页横溢出；必要表格在独立区域滚动。",
+    "键盘可进入、操作、关闭对话框并返回触发点；错误不只靠颜色。",
+    "本地预览不得暗示真实支付、投稿、消息、账户或预约已生效。"
+  ],
+  "limitations": [
+    "Source interaction audit is not automatically performed",
+    "Source assets are not bundled",
+    "Real backend, production and physical-device acceptance are not included"
+  ]
+}

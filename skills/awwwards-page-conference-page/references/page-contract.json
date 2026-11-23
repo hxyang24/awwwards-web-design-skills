@@ -34,6 +34,7 @@
   "failure_recovery": "售罄、延期和取消状态优先展示；未知安排不自动补日期。",
   "motion_contract": "议程在手机保持时间和场次对应；地图和视频有文本替代。",
   "evidence_level": "http_dom",
+  "source_relationship_note": "An outbound work-detail association does not certify that every current inner page won an award or matches a historical version.",
   "evidence_note": "Only recorded observations are facts. DOM structure does not prove visual composition, hidden state, source code, backend behavior or licenses. The runnable blueprint is an original recipe, not a source-site clone.",
   "sources": [
     {
@@ -150,6 +151,7 @@
     }
   ],
   "visual_metrics": [],
+  "source_state_observations": [],
   "source_coverage": "observed_examples",
   "original_blueprint": true,
   "business_mode": "local_preview",

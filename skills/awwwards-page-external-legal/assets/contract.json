@@ -4,7 +4,7 @@
   "skill": "awwwards-page-external-legal",
   "title": "获奖外站政策与条款内页",
   "kind": "article",
-  "scope": "awarded external website inner page",
+  "scope": "Awwwards-linked external inner page; specific award status requires official evidence",
   "source_families": [
     "external.legal"
   ],
@@ -31,6 +31,7 @@
   "failure_recovery": "未批准内容保持草案或未知；不自动套用第三方主体。",
   "motion_contract": "文档可缩放和打印，静态导航可直接到达各章节。",
   "evidence_level": "http_dom",
+  "source_relationship_note": "An outbound work-detail association does not certify that every current inner page won an award or matches a historical version.",
   "evidence_note": "Only recorded observations are facts. DOM structure does not prove visual composition, hidden state, source code, backend behavior or licenses. The runnable blueprint is an original recipe, not a source-site clone.",
   "sources": [
     {
@@ -62,6 +63,40 @@
           "switch": 4
         },
         "anchor_count": 39
+      }
+    },
+    {
+      "id": "5810c4781a2fdeab",
+      "url": "https://8pm.it/policies/privacy-policy",
+      "family": "external.legal",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T09:30:27.270482+00:00",
+      "source_sha256": "a7d80aca88d8fb1c11b7e3ce938b0b9307aa27ce5d8d694759ec1a4220bb53e5",
+      "structure": {
+        "headings": {
+          "h2": 16,
+          "h1": 1,
+          "h3": 3
+        },
+        "forms": 7,
+        "input_types": {
+          "search": 3,
+          "hidden": 14,
+          "radio": 29,
+          "email": 2
+        },
+        "navigation_regions": 2,
+        "main_regions": 1,
+        "sections": 5,
+        "articles": 0,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 0,
+        "roles": {
+          "main": 1
+        },
+        "anchor_count": 137
       }
     },
     {
@@ -167,59 +202,28 @@
       }
     },
     {
-      "id": "7a215715b0a55581",
-      "url": "https://adsb.co.kr/policies/privacy-policy",
+      "id": "2bf217bf11543000",
+      "url": "https://acmecups.nz/pages/terms-and-conditions",
       "family": "external.legal",
       "inspection_level": "http_dom",
-      "observed_at": "2026-11-23T08:49:39.910436+00:00",
-      "source_sha256": "cc64c27618c28cc8ed57cb799a74aae7684e2dcfb42034d64cfac006f9fb2794",
+      "observed_at": "2026-11-23T09:35:13.107689+00:00",
+      "source_sha256": "d29fa5dd985f02029262dab4797f5f2e1766f74f606f00d5562607e95bd49322",
       "structure": {
         "headings": {
-          "h1": 8,
-          "h2": 9,
-          "h4": 5
+          "h1": 2,
+          "h6": 3,
+          "h4": 3,
+          "h5": 2,
+          "h3": 2
         },
-        "forms": 4,
+        "forms": 8,
         "input_types": {
-          "text": 2,
-          "hidden": 7,
-          "email": 1
+          "hidden": 20,
+          "text": 5,
+          "email": 2,
+          "number": 1
         },
-        "navigation_regions": 1,
-        "main_regions": 1,
-        "sections": 0,
-        "articles": 0,
-        "tables": 2,
-        "dialogs": 0,
-        "canvases": 0,
-        "videos": 0,
-        "roles": {
-          "dialog": 1
-        },
-        "anchor_count": 241
-      }
-    },
-    {
-      "id": "b513f060b9fe6f3c",
-      "url": "https://agnestoth.com/policies/privacy-policy",
-      "family": "external.legal",
-      "inspection_level": "http_dom",
-      "observed_at": "2026-11-23T08:49:44.060286+00:00",
-      "source_sha256": "6af81847752697a8b54e66fc9a865da91a14be958abf3e05e25bf84b15756339",
-      "structure": {
-        "headings": {
-          "h1": 1,
-          "h2": 3,
-          "h3": 13
-        },
-        "forms": 2,
-        "input_types": {
-          "hidden": 6,
-          "email": 1,
-          "text": 1,
-          "checkbox": 1
-        },
-        "navigation_regions": 3,
+        "navigation_regions": 0,
         "main_regions": 1,
         "sections": 0,
         "articles": 0,
@@ -228,18 +232,15 @@
         "canvases": 0,
         "videos": 0,
         "roles": {
-          "list": 6,
-          "img": 2,
-          "listbox": 2,
-          "option": 6,
           "main": 1,
           "status": 1
         },
-        "anchor_count": 31
+        "anchor_count": 147
       }
     }
   ],
   "visual_metrics": [],
+  "source_state_observations": [],
   "source_coverage": "observed_examples",
   "original_blueprint": true,
   "business_mode": "local_preview",

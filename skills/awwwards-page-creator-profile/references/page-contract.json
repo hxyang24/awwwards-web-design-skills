@@ -34,6 +34,7 @@
   "failure_recovery": "个人资料不公开或账户删除时提供不泄漏信息的替代状态。",
   "motion_contract": "作品预览可用键盘和触屏进入，减少动画不隐藏文本。",
   "evidence_level": "http_dom",
+  "source_relationship_note": "An outbound work-detail association does not certify that every current inner page won an award or matches a historical version.",
   "evidence_note": "Only recorded observations are facts. DOM structure does not prove visual composition, hidden state, source code, backend behavior or licenses. The runnable blueprint is an original recipe, not a source-site clone.",
   "sources": [
     {
@@ -181,6 +182,7 @@
     }
   ],
   "visual_metrics": [],
+  "source_state_observations": [],
   "source_coverage": "observed_examples",
   "original_blueprint": true,
   "business_mode": "local_preview",

@@ -32,6 +32,7 @@
   "failure_recovery": "关注失败回滚乐观状态；移除条目后保留可恢复提示。",
   "motion_contract": "条目重排不要改变键盘顺序；减少动画时直接呈现。",
   "evidence_level": "rendered_geometry",
+  "source_relationship_note": "An outbound work-detail association does not certify that every current inner page won an award or matches a historical version.",
   "evidence_note": "Only recorded observations are facts. DOM structure does not prove visual composition, hidden state, source code, backend behavior or licenses. The runnable blueprint is an original recipe, not a source-site clone.",
   "sources": [
     {
@@ -287,6 +288,7 @@
       "status": "rendered_observed"
     }
   ],
+  "source_state_observations": [],
   "source_coverage": "observed_examples",
   "original_blueprint": true,
   "business_mode": "local_preview",

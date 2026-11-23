@@ -33,6 +33,7 @@
   "failure_recovery": "空合集说明待添加内容；私密或删除合集不泄漏其条目。",
   "motion_contract": "封面保留比例；聚焦和触屏提供与 hover 等价入口。",
   "evidence_level": "http_dom",
+  "source_relationship_note": "An outbound work-detail association does not certify that every current inner page won an award or matches a historical version.",
   "evidence_note": "Only recorded observations are facts. DOM structure does not prove visual composition, hidden state, source code, backend behavior or licenses. The runnable blueprint is an original recipe, not a source-site clone.",
   "sources": [
     {
@@ -149,6 +150,7 @@
     }
   ],
   "visual_metrics": [],
+  "source_state_observations": [],
   "source_coverage": "observed_examples",
   "original_blueprint": true,
   "business_mode": "local_preview",

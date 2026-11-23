@@ -4,7 +4,7 @@
   "skill": "awwwards-page-external-home",
   "title": "获奖外站首页与品牌入口",
   "kind": "portal",
-  "scope": "awarded external website inner page",
+  "scope": "Awwwards-linked external inner page; specific award status requires official evidence",
   "source_families": [
     "external.home"
   ],
@@ -33,6 +33,7 @@
   "failure_recovery": "原站关停、改版或重定向时记录事实，不据旧资料声称完整复现。",
   "motion_contract": "滚动、光标和 3D 增强必须有键盘、触屏与静态回退。",
   "evidence_level": "rendered_geometry",
+  "source_relationship_note": "An outbound work-detail association does not certify that every current inner page won an award or matches a historical version.",
   "evidence_note": "Only recorded observations are facts. DOM structure does not prove visual composition, hidden state, source code, backend behavior or licenses. The runnable blueprint is an original recipe, not a source-site clone.",
   "sources": [
     {
@@ -279,6 +280,7 @@
       "status": "rendered_observed"
     }
   ],
+  "source_state_observations": [],
   "source_coverage": "observed_examples",
   "original_blueprint": true,
   "business_mode": "local_preview",

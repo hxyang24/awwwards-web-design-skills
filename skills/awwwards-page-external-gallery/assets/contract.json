@@ -4,7 +4,7 @@
   "skill": "awwwards-page-external-gallery",
   "title": "获奖外站画廊与作品档案",
   "kind": "gallery",
-  "scope": "awarded external website inner page",
+  "scope": "Awwwards-linked external inner page; specific award status requires official evidence",
   "source_families": [
     "external.gallery"
   ],
@@ -32,6 +32,7 @@
   "failure_recovery": "媒体加载失败不丢失当前位置；筛选后当前项不存在则回到有效索引。",
   "motion_contract": "空间或滚动增强不垄断导航，减少动画使用稳定网格。",
   "evidence_level": "http_dom",
+  "source_relationship_note": "An outbound work-detail association does not certify that every current inner page won an award or matches a historical version.",
   "evidence_note": "Only recorded observations are facts. DOM structure does not prove visual composition, hidden state, source code, backend behavior or licenses. The runnable blueprint is an original recipe, not a source-site clone.",
   "sources": [
     {
@@ -64,42 +65,16 @@
       }
     },
     {
-      "id": "6b9189309c8a7071",
-      "url": "https://www.197historiasilustradas.com/en/archive",
+      "id": "1f1508c35b749672",
+      "url": "https://bellussi.com/en/gallery/",
       "family": "external.gallery",
       "inspection_level": "http_dom",
-      "observed_at": "2026-11-23T08:03:08.631367+00:00",
-      "source_sha256": "d242a126c92f65e96d3eda5ec3fa640723167da479319ddff1af8c5f7942527a",
+      "observed_at": "2026-11-23T09:33:10.092077+00:00",
+      "source_sha256": "3bec4f9a5a676b751b96749af31842580dcada8ac256ef5cef78ed000bcb5bfd",
       "structure": {
         "headings": {
           "h1": 1
         },
-        "forms": 0,
-        "input_types": {
-          "search": 1,
-          "checkbox": 8
-        },
-        "navigation_regions": 1,
-        "main_regions": 1,
-        "sections": 1,
-        "articles": 0,
-        "tables": 0,
-        "dialogs": 0,
-        "canvases": 0,
-        "videos": 0,
-        "roles": {},
-        "anchor_count": 205
-      }
-    },
-    {
-      "id": "1b04e1213276e21d",
-      "url": "https://www.197historiasilustradas.com/en/gallery",
-      "family": "external.gallery",
-      "inspection_level": "http_dom",
-      "observed_at": "2026-11-23T08:03:17.491382+00:00",
-      "source_sha256": "c5f3ff169bb067614941ace1ddf69cbfba0fcd6e9aa103246119f7e487bf49cc",
-      "structure": {
-        "headings": {},
         "forms": 0,
         "input_types": {},
         "navigation_regions": 0,
@@ -108,118 +83,29 @@
         "articles": 0,
         "tables": 0,
         "dialogs": 0,
-        "canvases": 1,
-        "videos": 0,
-        "roles": {},
-        "anchor_count": 5
-      }
-    },
-    {
-      "id": "950a7e435c5994d2",
-      "url": "https://www.arteriorshome.com/gallery",
-      "family": "external.gallery",
-      "inspection_level": "http_dom",
-      "observed_at": "2026-11-23T09:11:07.523717+00:00",
-      "source_sha256": "30b2a679ac3625ad7c7ecb4aebb17941e87e1f490eb04f3eac73cf0ac2b9b226",
-      "structure": {
-        "headings": {
-          "h3": 13,
-          "h2": 2
-        },
-        "forms": 7,
-        "input_types": {
-          "hidden": 12,
-          "text": 3,
-          "email": 2,
-          "search": 1
-        },
-        "navigation_regions": 2,
-        "main_regions": 1,
-        "sections": 7,
-        "articles": 0,
-        "tables": 0,
-        "dialogs": 1,
-        "canvases": 0,
-        "videos": 2,
-        "roles": {
-          "alert": 1,
-          "img": 63,
-          "search": 3,
-          "dialog": 8,
-          "navigation": 1,
-          "button": 2,
-          "region": 2,
-          "status": 1
-        },
-        "anchor_count": 87
-      }
-    },
-    {
-      "id": "0af06ffb236fd808",
-      "url": "https://www.arteriorshome.com/gallery/submission",
-      "family": "external.gallery",
-      "inspection_level": "http_dom",
-      "observed_at": "2026-11-23T09:11:56.784283+00:00",
-      "source_sha256": "f93f74dba90d948c348aa46ef2b6a0fc98b3a80f419efcc5d090bce7096fac70",
-      "structure": {
-        "headings": {
-          "h1": 1,
-          "h3": 10,
-          "h2": 1
-        },
-        "forms": 8,
-        "input_types": {
-          "hidden": 14,
-          "text": 14,
-          "file": 2,
-          "email": 3,
-          "checkbox": 1,
-          "search": 1
-        },
-        "navigation_regions": 3,
-        "main_regions": 1,
-        "sections": 8,
-        "articles": 0,
-        "tables": 0,
-        "dialogs": 1,
         "canvases": 0,
         "videos": 0,
         "roles": {
-          "alert": 1,
-          "img": 50,
-          "search": 3,
-          "dialog": 7,
-          "navigation": 1,
-          "button": 2,
-          "region": 2,
-          "status": 1
+          "navigation": 3,
+          "img": 1,
+          "presentation": 1
         },
-        "anchor_count": 90
+        "anchor_count": 98
       }
     },
     {
-      "id": "907b32e9089837b7",
-      "url": "https://www.flooringxtra.co.nz/blogs/gallery",
+      "id": "9a86a50c167cf852",
+      "url": "https://bellussi.com/gallery/",
       "family": "external.gallery",
       "inspection_level": "http_dom",
-      "observed_at": "2026-11-23T08:46:57.523367+00:00",
-      "source_sha256": "6dfd1fa77cf532f7670318cad58baaee7a4c3ed4d0fcb2d79bd61931a2801a9a",
+      "observed_at": "2026-11-23T09:32:24.535601+00:00",
+      "source_sha256": "d5085fb2878f9f0cd6c1ffb157548c93ff9204b79ff0010bb9c015dd9e6c6566",
       "structure": {
         "headings": {
-          "h2": 7,
-          "h3": 12,
-          "h4": 6,
-          "h1": 1,
-          "h6": 5
+          "h1": 1
         },
-        "forms": 3,
-        "input_types": {
-          "text": 3,
-          "hidden": 4,
-          "email": 3,
-          "password": 1,
-          "submit": 1
-        },
+        "forms": 0,
+        "input_types": {},
         "navigation_regions": 0,
         "main_regions": 1,
         "sections": 0,
@@ -229,13 +115,114 @@
         "canvases": 0,
         "videos": 0,
         "roles": {
+          "navigation": 3,
+          "img": 1,
+          "presentation": 1
+        },
+        "anchor_count": 98
+      }
+    },
+    {
+      "id": "9ebd408008f19d3d",
+      "url": "https://bleibtgleich.dev/archive",
+      "family": "external.gallery",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T09:34:52.461869+00:00",
+      "source_sha256": "8b119c2d928c60728499531bb15217ce6506254025612de4272b01657ab97d4e",
+      "structure": {
+        "headings": {},
+        "forms": 0,
+        "input_types": {},
+        "navigation_regions": 1,
+        "main_regions": 1,
+        "sections": 2,
+        "articles": 0,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 0,
+        "roles": {
+          "list": 1,
+          "listitem": 34
+        },
+        "anchor_count": 5
+      }
+    },
+    {
+      "id": "27f1694ea66f30f8",
+      "url": "https://bluntumbrellas.co.nz/pages/archive",
+      "family": "external.gallery",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T09:40:23.354909+00:00",
+      "source_sha256": "0bc88f091cf1962df43d0abc825b3cb64cd88014d952e9e7c2072426d0714525",
+      "structure": {
+        "headings": {
+          "h6": 10,
+          "h4": 61,
+          "h3": 53
+        },
+        "forms": 2,
+        "input_types": {
+          "text": 1,
+          "hidden": 6,
+          "email": 2,
+          "password": 1,
+          "submit": 1,
+          "checkbox": 1
+        },
+        "navigation_regions": 0,
+        "main_regions": 1,
+        "sections": 2,
+        "articles": 0,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 0,
+        "roles": {
           "main": 1
         },
-        "anchor_count": 954
+        "anchor_count": 189
+      }
+    },
+    {
+      "id": "b8767ce5d88982e0",
+      "url": "https://bluntumbrellas.com/pages/archive/",
+      "family": "external.gallery",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T09:35:29.972323+00:00",
+      "source_sha256": "5640276a3d62c1b4093eca4f5a4b1259c1359003db3ef6aea4b11ab35d52d1c4",
+      "structure": {
+        "headings": {
+          "h6": 10,
+          "h4": 54,
+          "h3": 46
+        },
+        "forms": 2,
+        "input_types": {
+          "text": 1,
+          "hidden": 6,
+          "email": 2,
+          "password": 1,
+          "submit": 1,
+          "checkbox": 1
+        },
+        "navigation_regions": 0,
+        "main_regions": 1,
+        "sections": 2,
+        "articles": 0,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 0,
+        "roles": {
+          "main": 1
+        },
+        "anchor_count": 151
       }
     }
   ],
   "visual_metrics": [],
+  "source_state_observations": [],
   "source_coverage": "observed_examples",
   "original_blueprint": true,
   "business_mode": "local_preview",

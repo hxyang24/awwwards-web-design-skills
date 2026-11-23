@@ -1,8 +1,8 @@
 # 页面专项 Skills · 整理进行中
 
-现有 24 套核心技能继续保留；新增 41 套可单独安装的页面技能，再新增 3 套具体交互机制技能，共 68 套。新增技能中 41 套有当前页面来源，0 套仍需补来源。**这不是全站已经完成的声明。**
+现有 24 套核心技能继续保留；新增 44 套可单独安装的页面技能，再新增 3 套具体交互机制技能，共 71 套。页面技能中 44 套有当前页面来源，0 套仍需补来源。**这不是全站已经完成的声明。**
 
-已记录 1408 个页面结果，其中 900 个完整读取 HTTP DOM；已发现 134 个获奖外站主机。尚有 10613 个已发现地址待观察，发现范围仍可能增长。
+已记录 2408 个页面结果，其中 1342 个完整读取 HTTP DOM；已发现 203 个作品关联外站主机。尚有 13240 个已发现地址待观察，发现范围仍可能增长。
 
 网址数用于审计来源；每套技能都有任务、页面结构、数据字段、交互状态、恢复路径、响应式、动效、版权边界、独立蓝本和验收要求。网页 DOM、浏览器视觉度量、原创蓝本测试、原站交互验证分别记录，不混为同一种完成。
 
@@ -48,7 +48,10 @@
 | `awwwards-page-external-gallery` | 获奖外站画廊与作品档案 | http_dom / 6 来源 | [external-gallery](skills/awwwards-page-external-gallery/SKILL.md) | [HTML](skills/awwwards-page-external-gallery/assets/index.html) |
 | `awwwards-page-external-artwork` | 获奖外站单件作品与故事内页 | http_dom / 3 来源 | [external-artwork](skills/awwwards-page-external-artwork/SKILL.md) | [HTML](skills/awwwards-page-external-artwork/assets/index.html) |
 | `awwwards-page-external-experiment` | 获奖外站实验与互动内页 | http_dom / 1 来源 | [external-experiment](skills/awwwards-page-external-experiment/SKILL.md) | [HTML](skills/awwwards-page-external-experiment/assets/index.html) |
-| `awwwards-page-external-not-found` | 获奖外站 404 与恢复页面 | rendered_geometry / 5 来源 | [external-not-found](skills/awwwards-page-external-not-found/SKILL.md) | [HTML](skills/awwwards-page-external-not-found/assets/index.html) |
+| `awwwards-page-external-not-found` | 获奖外站 404 与恢复页面 | rendered_geometry / 6 来源 | [external-not-found](skills/awwwards-page-external-not-found/SKILL.md) | [HTML](skills/awwwards-page-external-not-found/assets/index.html) |
+| `awwwards-page-external-story-index` | 获奖来源外站叙事章节索引 | rendered_source_observations / 1 来源 | [external-story-index](skills/awwwards-page-external-story-index/SKILL.md) | [HTML](skills/awwwards-page-external-story-index/assets/index.html) |
+| `awwwards-page-external-story-chapter` | 获奖来源外站交互叙事章节 | rendered_source_observations / 3 来源 | [external-story-chapter](skills/awwwards-page-external-story-chapter/SKILL.md) | [HTML](skills/awwwards-page-external-story-chapter/assets/index.html) |
+| `awwwards-page-external-prompt-detail` | 获奖来源外站提示词与字体效果详情 | rendered_source_observations / 1 来源 | [external-prompt-detail](skills/awwwards-page-external-prompt-detail/SKILL.md) | [HTML](skills/awwwards-page-external-prompt-detail/assets/index.html) |
 
 ## 独立交互机制 Skills
 
@@ -78,5 +81,7 @@ python -m http.server 4180 --bind 127.0.0.1
 - 原创蓝本经过测试也不等于原站逐像素复刻、所有隐藏状态或生产后端完成。
 - 受 robots、登录、关停、访问拒绝或素材权利限制的部分继续保留缺口，不绕过或补造。
 - 独立视频、物理/Shader 等机制按真实素材与环境接入后另测；画廊蓝本不冒充已包含原站视频内容。
+
+外站数量来自主站作品详情的明确外链，不表示已逐一证明其获奖状态；具体内页也不因此被认定单独获奖。
 
 实时来源：[研究覆盖](research/live_pages/coverage.json) · [页面观察](research/live_pages/sources.jsonl) · [视觉度量](research/live_pages/visual-observations.json) · [蓝本验证](research/page_skill_validation/browser-results.json)。

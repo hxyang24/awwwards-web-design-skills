@@ -1,14 +1,14 @@
 {
-  "date": "2026-11-23T09:13:34.295Z",
+  "date": "2026-11-23T09:40:19.887Z",
   "status": "passed",
-  "page_skills": 41,
+  "page_skills": 44,
   "checks": [
     {
-      "name": "All 41 standalone skill blueprints load and fit at 390",
+      "name": "All 44 standalone skill blueprints load and fit at 390",
       "status": "passed"
     },
     {
-      "name": "All 41 standalone skill blueprints load and fit at 1440",
+      "name": "All 44 standalone skill blueprints load and fit at 1440",
       "status": "passed"
     },
     {
@@ -93,6 +93,18 @@
     },
     {
       "name": "notfound accessibility and original screenshot",
+      "status": "passed"
+    },
+    {
+      "name": "story-index accessibility and original screenshot",
+      "status": "passed"
+    },
+    {
+      "name": "story accessibility and original screenshot",
+      "status": "passed"
+    },
+    {
+      "name": "prompt accessibility and original screenshot",
       "status": "passed"
     },
     {
@@ -253,6 +265,21 @@
       "kind": "notfound",
       "skill": "external-not-found",
       "violations": []
+    },
+    {
+      "kind": "story-index",
+      "skill": "external-story-index",
+      "violations": []
+    },
+    {
+      "kind": "story",
+      "skill": "external-story-chapter",
+      "violations": []
+    },
+    {
+      "kind": "prompt",
+      "skill": "external-prompt-detail",
+      "violations": []
     }
   ],
   "screenshots": [
@@ -276,7 +303,10 @@
     "research/page_skill_validation/screenshots/careers-390.png",
     "research/page_skill_validation/screenshots/gallery-390.png",
     "research/page_skill_validation/screenshots/experiment-390.png",
-    "research/page_skill_validation/screenshots/notfound-390.png"
+    "research/page_skill_validation/screenshots/notfound-390.png",
+    "research/page_skill_validation/screenshots/story-index-390.png",
+    "research/page_skill_validation/screenshots/story-390.png",
+    "research/page_skill_validation/screenshots/prompt-390.png"
   ],
   "errors": [],
   "external_requests": [],

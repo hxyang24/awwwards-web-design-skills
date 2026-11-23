@@ -4,7 +4,7 @@
   "skill": "awwwards-page-external-not-found",
   "title": "获奖外站 404 与恢复页面",
   "kind": "notfound",
-  "scope": "awarded external website inner page",
+  "scope": "Awwwards-linked external inner page; specific award status requires official evidence",
   "source_families": [
     "external.not-found"
   ],
@@ -30,6 +30,7 @@
   "failure_recovery": "恢复入口失效时仍提供核心导航；错误页面不自动提交或跳转到无关外站。",
   "motion_contract": "装饰动效可停止，核心错误说明和恢复操作稳定可达。",
   "evidence_level": "rendered_geometry",
+  "source_relationship_note": "An outbound work-detail association does not certify that every current inner page won an award or matches a historical version.",
   "evidence_note": "Only recorded observations are facts. DOM structure does not prove visual composition, hidden state, source code, backend behavior or licenses. The runnable blueprint is an original recipe, not a source-site clone.",
   "sources": [
     {
@@ -103,6 +104,36 @@
         "videos": 0,
         "roles": {},
         "anchor_count": 32
+      }
+    },
+    {
+      "id": "7ce40419aac513b7",
+      "url": "https://brik.space/gallery/404",
+      "family": "external.not-found",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T09:38:29.067631+00:00",
+      "source_sha256": "87a4d52b80e90847fde9984926636fedb4a1d2278401a7087bd6f1b44297c98b",
+      "structure": {
+        "headings": {
+          "h1": 1,
+          "h2": 6
+        },
+        "forms": 0,
+        "input_types": {
+          "search": 1
+        },
+        "navigation_regions": 2,
+        "main_regions": 2,
+        "sections": 7,
+        "articles": 0,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 0,
+        "roles": {
+          "dialog": 1
+        },
+        "anchor_count": 50
       }
     },
     {
@@ -247,6 +278,7 @@
       "status": "rendered_observed"
     }
   ],
+  "source_state_observations": [],
   "source_coverage": "observed_examples",
   "original_blueprint": true,
   "business_mode": "local_preview",

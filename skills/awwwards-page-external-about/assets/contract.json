@@ -4,7 +4,7 @@
   "skill": "awwwards-page-external-about",
   "title": "获奖外站团队与关于内页",
   "kind": "about",
-  "scope": "awarded external website inner page",
+  "scope": "Awwwards-linked external inner page; specific award status requires official evidence",
   "source_families": [
     "external.about"
   ],
@@ -33,6 +33,7 @@
   "failure_recovery": "缺少照片或介绍时用明确占位；不编造团队成员。",
   "motion_contract": "长叙事提供章节入口，手机保留内容顺序和可触达联系。",
   "evidence_level": "http_dom",
+  "source_relationship_note": "An outbound work-detail association does not certify that every current inner page won an award or matches a historical version.",
   "evidence_note": "Only recorded observations are facts. DOM structure does not prove visual composition, hidden state, source code, backend behavior or licenses. The runnable blueprint is an original recipe, not a source-site clone.",
   "sources": [
     {
@@ -229,6 +230,7 @@
     }
   ],
   "visual_metrics": [],
+  "source_state_observations": [],
   "source_coverage": "observed_examples",
   "original_blueprint": true,
   "business_mode": "local_preview",

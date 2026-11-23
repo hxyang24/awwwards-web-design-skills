@@ -1,0 +1,489 @@
+{
+  "schema_version": "3.0",
+  "id": "external-prompt-detail",
+  "skill": "awwwards-page-external-prompt-detail",
+  "title": "获奖来源外站提示词与字体效果详情",
+  "kind": "prompt",
+  "scope": "Awwwards-linked external inner page; specific award status requires official evidence",
+  "source_families": [
+    "external.prompt-detail"
+  ],
+  "goal": "审阅并编辑分层提示词，理解样例来源并可靠复制原创配方。",
+  "regions": [
+    "效果身份",
+    "文字输入",
+    "分层配方",
+    "复制与失败恢复",
+    "结果对比",
+    "解释与服务边界"
+  ],
+  "workflow": [
+    "把用户文字、字形描述和场景描述分成可检查的层，保留 Unicode 和文本方向，不把图像提示词称作可安装字体。",
+    "编辑时更新本地组合文本；复制必须等待剪贴板实际成功，拒绝时提供选中和手动复制。",
+    "结果切换使用可访问选项卡或对比视图；模型结果必须来自真实记录，原创 CSS 示意不冒充模型基准。",
+    "生成入口与配方编辑分开；接入前确认提供者、费用、发送内容和素材许可，未接入时不宣称生成成功。"
+  ],
+  "data_fields": [
+    "exact_text",
+    "letterform_layer",
+    "scene_layer",
+    "composed_prompt",
+    "direction",
+    "clipboard_status",
+    "result_provenance",
+    "provider_boundary"
+  ],
+  "failure_recovery": "空文字、长度超限和剪贴板拒绝有可恢复提示；任何失败不丢失已编辑配方。",
+  "motion_contract": "移动端分层内容可折叠并保留完整可选文本；查看器、选项卡和关闭都有键盘路径。",
+  "evidence_level": "rendered_source_observations",
+  "source_relationship_note": "An outbound work-detail association does not certify that every current inner page won an award or matches a historical version.",
+  "evidence_note": "Only recorded observations are facts. DOM structure does not prove visual composition, hidden state, source code, backend behavior or licenses. The runnable blueprint is an original recipe, not a source-site clone.",
+  "sources": [
+    {
+      "id": "619b8560ee5995dd",
+      "url": "https://aifont.ai/fonts/tagging-letters",
+      "family": "external.prompt-detail",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T08:47:44.618386+00:00",
+      "source_sha256": "8c301efeca452350dde19b505979726fd386fbc8bf29c45dcbae75d0ad4d7b5e",
+      "structure": {
+        "headings": {
+          "h2": 12,
+          "h4": 3,
+          "h1": 1,
+          "h3": 15
+        },
+        "forms": 0,
+        "input_types": {
+          "text": 1
+        },
+        "navigation_regions": 3,
+        "main_regions": 1,
+        "sections": 10,
+        "articles": 0,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 0,
+        "roles": {
+          "menu": 2,
+          "menuitemradio": 14,
+          "dialog": 1,
+          "tablist": 2,
+          "presentation": 5,
+          "tab": 10
+        },
+        "anchor_count": 94
+      }
+    }
+  ],
+  "visual_metrics": [],
+  "source_state_observations": [
+    {
+      "id": "prompt-detail-wide",
+      "source_id": "619b8560ee5995dd",
+      "url": "https://aifont.ai/fonts/tagging-letters",
+      "viewport": {
+        "width": 1440,
+        "height": 1000,
+        "device_scale_factor": 1
+      },
+      "observed_at": "2026-11-23T09:31:00.105Z",
+      "status": "rendered_content_observed",
+      "source_assets_redistributed": false,
+      "source_backend_validated": false,
+      "measured_geometry": {
+        "document_width": 1440,
+        "viewport_width": 1440,
+        "body_font": "\"Bricolage Grotesque\", \"Bricolage Grotesque Fallback\", -apple-system, BlinkMacSystemFont, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", sans-serif",
+        "headings": [
+          {
+            "tag": "h2",
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "width": 1,
+              "height": 40,
+              "font_family": "Fraunces, \"Fraunces Fallback\", Georgia, serif",
+              "font_size": "24px",
+              "line_height": "39.6px",
+              "font_weight": "400",
+              "color": "rgb(20, 20, 20)",
+              "background": "rgba(0, 0, 0, 0)"
+            }
+          },
+          {
+            "tag": "h1",
+            "rect": {
+              "x": 72,
+              "y": 157,
+              "width": 664,
+              "height": 54,
+              "font_family": "Fraunces, \"Fraunces Fallback\", Georgia, serif",
+              "font_size": "51.84px",
+              "line_height": "53.9136px",
+              "font_weight": "400",
+              "color": "rgb(20, 20, 20)",
+              "background": "rgba(0, 0, 0, 0)"
+            }
+          },
+          {
+            "tag": "h2",
+            "rect": {
+              "x": 72,
+              "y": 889,
+              "width": 1296,
+              "height": 40,
+              "font_family": "Fraunces, \"Fraunces Fallback\", Georgia, serif",
+              "font_size": "36px",
+              "line_height": "39.6px",
+              "font_weight": "400",
+              "color": "rgb(20, 20, 20)",
+              "background": "rgba(0, 0, 0, 0)"
+            }
+          },
+          {
+            "tag": "h2",
+            "rect": {
+              "x": 105,
+              "y": 1413,
+              "width": 1011,
+              "height": 30,
+              "font_family": "Fraunces, \"Fraunces Fallback\", Georgia, serif",
+              "font_size": "26px",
+              "line_height": "29.9px",
+              "font_weight": "400",
+              "color": "rgb(20, 20, 20)",
+              "background": "rgba(0, 0, 0, 0)"
+            }
+          },
+          {
+            "tag": "h2",
+            "rect": {
+              "x": 72,
+              "y": 1603,
+              "width": 1296,
+              "height": 40,
+              "font_family": "Fraunces, \"Fraunces Fallback\", Georgia, serif",
+              "font_size": "36px",
+              "line_height": "39.6px",
+              "font_weight": "400",
+              "color": "rgb(20, 20, 20)",
+              "background": "rgba(0, 0, 0, 0)"
+            }
+          }
+        ]
+      },
+      "actions": [
+        {
+          "role": "tab",
+          "name": "Qwen-Image",
+          "action": "click",
+          "status": "acted_and_observed",
+          "observable_state_changed": true,
+          "local_preview_text_present": false,
+          "reason": null,
+          "selected_tabs_after": [
+            "Qwen-Image"
+          ]
+        },
+        {
+          "role": "button",
+          "name": "Compare",
+          "action": "click",
+          "status": "acted_and_observed",
+          "observable_state_changed": false,
+          "local_preview_text_present": false,
+          "reason": null,
+          "selected_tabs_after": [
+            "Qwen-Image"
+          ]
+        },
+        {
+          "role": "button",
+          "name": "View larger",
+          "action": "click",
+          "status": "acted_and_observed",
+          "observable_state_changed": true,
+          "local_preview_text_present": false,
+          "reason": null,
+          "selected_tabs_after": [
+            "Qwen-Image"
+          ]
+        }
+      ],
+      "private_screenshot_sha256": "7d24d486cf01e38fb6b5c1e4b4d7aa127938da637b9423e486de781021989425",
+      "review_note": "Result tabs, detail viewer or mobile folding/navigation were sampled. The site labels images by model; no generation or independent benchmark was run. The later local-word observation confirms text replacement; the initial role-name locator did not find the unlabeled field."
+    },
+    {
+      "id": "prompt-detail-phone",
+      "source_id": "619b8560ee5995dd",
+      "url": "https://aifont.ai/fonts/tagging-letters",
+      "viewport": {
+        "width": 390,
+        "height": 1000,
+        "device_scale_factor": 1
+      },
+      "observed_at": "2026-11-23T09:31:08.727Z",
+      "status": "rendered_content_observed",
+      "source_assets_redistributed": false,
+      "source_backend_validated": false,
+      "measured_geometry": {
+        "document_width": 390,
+        "viewport_width": 390,
+        "body_font": "\"Bricolage Grotesque\", \"Bricolage Grotesque Fallback\", -apple-system, BlinkMacSystemFont, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", sans-serif",
+        "headings": [
+          {
+            "tag": "h2",
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "width": 1,
+              "height": 40,
+              "font_family": "Fraunces, \"Fraunces Fallback\", Georgia, serif",
+              "font_size": "24px",
+              "line_height": "39.6px",
+              "font_weight": "400",
+              "color": "rgb(20, 20, 20)",
+              "background": "rgba(0, 0, 0, 0)"
+            }
+          },
+          {
+            "tag": "h1",
+            "rect": {
+              "x": 16,
+              "y": 511,
+              "width": 358,
+              "height": 42,
+              "font_family": "Fraunces, \"Fraunces Fallback\", Georgia, serif",
+              "font_size": "40px",
+              "line_height": "41.6px",
+              "font_weight": "400",
+              "color": "rgb(20, 20, 20)",
+              "background": "rgba(0, 0, 0, 0)"
+            }
+          },
+          {
+            "tag": "h2",
+            "rect": {
+              "x": 16,
+              "y": 1336,
+              "width": 346,
+              "height": 31,
+              "font_family": "Fraunces, \"Fraunces Fallback\", Georgia, serif",
+              "font_size": "28px",
+              "line_height": "30.8px",
+              "font_weight": "400",
+              "color": "rgb(20, 20, 20)",
+              "background": "rgba(0, 0, 0, 0)"
+            }
+          },
+          {
+            "tag": "h2",
+            "rect": {
+              "x": 41,
+              "y": 2432,
+              "width": 308,
+              "height": 60,
+              "font_family": "Fraunces, \"Fraunces Fallback\", Georgia, serif",
+              "font_size": "26px",
+              "line_height": "29.9px",
+              "font_weight": "400",
+              "color": "rgb(20, 20, 20)",
+              "background": "rgba(0, 0, 0, 0)"
+            }
+          },
+          {
+            "tag": "h2",
+            "rect": {
+              "x": 16,
+              "y": 2818,
+              "width": 346,
+              "height": 62,
+              "font_family": "Fraunces, \"Fraunces Fallback\", Georgia, serif",
+              "font_size": "28px",
+              "line_height": "30.8px",
+              "font_weight": "400",
+              "color": "rgb(20, 20, 20)",
+              "background": "rgba(0, 0, 0, 0)"
+            }
+          }
+        ]
+      },
+      "actions": [
+        {
+          "role": "textbox",
+          "name": "Type your word",
+          "action": "click",
+          "status": "not_observed",
+          "observable_state_changed": false,
+          "local_preview_text_present": false,
+          "reason": "locator.evaluate: Timeout 30000ms exceeded.",
+          "selected_tabs_after": []
+        },
+        {
+          "role": "button",
+          "name": "Show all",
+          "action": "click",
+          "status": "acted_and_observed",
+          "observable_state_changed": true,
+          "local_preview_text_present": false,
+          "reason": null,
+          "selected_tabs_after": [
+            "GPT Image1 / 5"
+          ]
+        },
+        {
+          "role": "button",
+          "name": "Open menu",
+          "action": "click",
+          "status": "acted_and_observed",
+          "observable_state_changed": true,
+          "local_preview_text_present": false,
+          "reason": null,
+          "selected_tabs_after": [
+            "GPT Image1 / 5"
+          ]
+        }
+      ],
+      "private_screenshot_sha256": "0298f5913a6ea7fdc250b620ad4bd9455b682f72fc426ebac38136b0f42673aa",
+      "review_note": "Result tabs, detail viewer or mobile folding/navigation were sampled. The site labels images by model; no generation or independent benchmark was run. The later local-word observation confirms text replacement; the initial role-name locator did not find the unlabeled field."
+    },
+    {
+      "id": "prompt-local-word-phone",
+      "source_id": "619b8560ee5995dd",
+      "url": "https://aifont.ai/fonts/tagging-letters",
+      "viewport": {
+        "width": 390,
+        "height": 1000,
+        "device_scale_factor": 1
+      },
+      "observed_at": "2026-11-23T09:44:25.574Z",
+      "status": "rendered_content_observed",
+      "source_assets_redistributed": false,
+      "source_backend_validated": false,
+      "measured_geometry": {
+        "document_width": 390,
+        "viewport_width": 390,
+        "body_font": "\"Bricolage Grotesque\", \"Bricolage Grotesque Fallback\", -apple-system, BlinkMacSystemFont, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", sans-serif",
+        "headings": [
+          {
+            "tag": "h2",
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "width": 1,
+              "height": 40,
+              "font_family": "Fraunces, \"Fraunces Fallback\", Georgia, serif",
+              "font_size": "24px",
+              "line_height": "39.6px",
+              "font_weight": "400",
+              "color": "rgb(20, 20, 20)",
+              "background": "rgba(0, 0, 0, 0)"
+            }
+          },
+          {
+            "tag": "h1",
+            "rect": {
+              "x": 16,
+              "y": 511,
+              "width": 358,
+              "height": 42,
+              "font_family": "Fraunces, \"Fraunces Fallback\", Georgia, serif",
+              "font_size": "40px",
+              "line_height": "41.6px",
+              "font_weight": "400",
+              "color": "rgb(20, 20, 20)",
+              "background": "rgba(0, 0, 0, 0)"
+            }
+          },
+          {
+            "tag": "h2",
+            "rect": {
+              "x": 16,
+              "y": 1336,
+              "width": 346,
+              "height": 31,
+              "font_family": "Fraunces, \"Fraunces Fallback\", Georgia, serif",
+              "font_size": "28px",
+              "line_height": "30.8px",
+              "font_weight": "400",
+              "color": "rgb(20, 20, 20)",
+              "background": "rgba(0, 0, 0, 0)"
+            }
+          },
+          {
+            "tag": "h2",
+            "rect": {
+              "x": 41,
+              "y": 2432,
+              "width": 308,
+              "height": 60,
+              "font_family": "Fraunces, \"Fraunces Fallback\", Georgia, serif",
+              "font_size": "26px",
+              "line_height": "29.9px",
+              "font_weight": "400",
+              "color": "rgb(20, 20, 20)",
+              "background": "rgba(0, 0, 0, 0)"
+            }
+          },
+          {
+            "tag": "h2",
+            "rect": {
+              "x": 16,
+              "y": 2818,
+              "width": 346,
+              "height": 62,
+              "font_family": "Fraunces, \"Fraunces Fallback\", Georgia, serif",
+              "font_size": "28px",
+              "line_height": "30.8px",
+              "font_weight": "400",
+              "color": "rgb(20, 20, 20)",
+              "background": "rgba(0, 0, 0, 0)"
+            }
+          }
+        ]
+      },
+      "actions": [
+        {
+          "role": "textbox",
+          "name": "Type your word",
+          "action": "fill",
+          "status": "acted_and_observed",
+          "observable_state_changed": true,
+          "text_input_value_changed": true,
+          "local_preview_text_present": true
+        }
+      ],
+      "private_screenshot_sha256": "f3d378e590e5b7aaefeed85d20b9eb7757318b599610eccc2b2276089188239f",
+      "review_note": "Result tabs, detail viewer or mobile folding/navigation were sampled. The site labels images by model; no generation or independent benchmark was run. The later local-word observation confirms text replacement; the initial role-name locator did not find the unlabeled field."
+    }
+  ],
+  "source_coverage": "observed_examples",
+  "original_blueprint": true,
+  "business_mode": "local_preview",
+  "states": [
+    "default",
+    "loading",
+    "empty",
+    "error",
+    "success_preview",
+    "disabled",
+    "keyboard_focus",
+    "reduced_motion",
+    "narrow_view"
+  ],
+  "acceptance": [
+    "审阅并编辑分层提示词，理解样例来源并可靠复制原创配方。",
+    "空文字、长度超限和剪贴板拒绝有可恢复提示；任何失败不丢失已编辑配方。",
+    "移动端分层内容可折叠并保留完整可选文本；查看器、选项卡和关闭都有键盘路径。",
+    "320、390、768、1440 宽度不出现整页横溢出；必要表格在独立区域滚动。",
+    "键盘可进入、操作、关闭对话框并返回触发点；错误不只靠颜色。",
+    "本地预览不得暗示真实支付、投稿、消息、账户或预约已生效。"
+  ],
+  "limitations": [
+    "Source interaction audit is not automatically performed",
+    "Source assets are not bundled",
+    "Real backend, production and physical-device acceptance are not included"
+  ]
+}

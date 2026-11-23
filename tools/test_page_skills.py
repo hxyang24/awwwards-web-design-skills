@@ -16,6 +16,11 @@ class PageSkills(unittest.TestCase):
     folder=R/row['path'];self.assertIn('name: '+row['skill'],(folder/'SKILL.md').read_text(encoding='utf-8'))
     module=load(folder/'scripts/scaffold.py',row['id']);out=Path(d)/row['id'];module.scaffold(out)
     for name in ['index.html','style.css','main.mjs','contract.json']:self.assertTrue((out/name).is_file())
+    expected={p.relative_to(folder/'assets').as_posix() for p in (folder/'assets').rglob('*') if p.is_file()};self.assertEqual(expected,{p.relative_to(out).as_posix() for p in out.rglob('*') if p.is_file()})
+    for relative in expected:
+     with (folder/'assets'/relative).open('rb') as f:a=hashlib.file_digest(f,'sha256').hexdigest()
+     with (out/relative).open('rb') as f:b=hashlib.file_digest(f,'sha256').hexdigest()
+     self.assertEqual(a,b)
     before=(out/'contract.json').read_bytes()
     with self.assertRaises(ValueError):module.scaffold(out)
     self.assertEqual((out/'contract.json').read_bytes(),before)
@@ -54,7 +59,7 @@ class PageSkills(unittest.TestCase):
   with tempfile.TemporaryDirectory() as d:
    p=Path(d);c=Collector(p/'state/db.sqlite',p/'public',p/'raw',interval=0);c.add('https://cooling.example/','https://www.awwwards.com/','external',1);c.add('https://available.example/','https://www.awwwards.com/','external',2);c.db.execute('INSERT INTO host_backoff VALUES(?,?)',('cooling.example',time.time()+60));c.db.commit();self.assertEqual(c.claim()[0],'https://available.example/');self.assertEqual(c.db.execute('SELECT state FROM queue WHERE url=?',('https://cooling.example/',)).fetchone()[0],'pending');c.db.close()
  def test_localized_inner_pages_are_not_discarded_as_generic_urls(self):
-  examples={'https://x.test/en/about-us':'external.about','https://x.test/en/archive':'external.gallery','https://x.test/en/artwork/113':'external.artwork','https://x.test/privacy-policy':'external.legal','https://x.test/lab':'external.experiment','https://x.test/404':'external.not-found','https://x.test/en/dispensa/item':'external.product'}
+  examples={'https://x.test/en/about-us':'external.about','https://x.test/en/archive':'external.gallery','https://x.test/en/artwork/113':'external.artwork','https://x.test/privacy-policy':'external.legal','https://x.test/lab':'external.experiment','https://x.test/404':'external.not-found','https://x.test/en/dispensa/item':'external.product','https://ponpon-mania.com/chapters':'external.story-index','https://ponpon-mania.com/chapter/1':'external.story-chapter','https://aifont.ai/fonts/tagging-letters':'external.prompt-detail','https://aifont.ai/ar/fonts/tagging-letters':'external.prompt-detail'}
   for u,f in examples.items():self.assertEqual(family(u),f)
  def test_structure_does_not_treat_script_text_as_observed_navigation(self):
   s=Structure();s.feed('<title>Original page</title><nav><a href="/about">About</a></nav><script>fake nav <a href="/secret">secret</a></script><main><h1>X</h1><form><input type="email"></form></main>');self.assertEqual(s.title,'Original page');self.assertEqual(s.inputs['email'],1);self.assertEqual(s.headings['h1'],1);self.assertEqual(s.links[0]['href'],'/about')

@@ -39,10 +39,10 @@ python scripts/scaffold.py --output YOUR_EMPTY_PROJECT_DIRECTORY
 
 ## 已读取的来源
 - http://aonnoysengupta.com/cookies（http_dom；2026-11-23T09:10:15.455204+00:00）
+- https://8pm.it/policies/privacy-policy（http_dom；2026-11-23T09:30:27.270482+00:00）
 - https://abatable.com/privacy-policy（http_dom；2026-11-23T08:46:08.760529+00:00）
 - https://abatable.com/terms-and-conditions（http_dom；2026-11-23T08:46:24.150828+00:00）
 - https://acmecups.nz/pages/privacy-policy（http_dom；2026-11-23T08:49:04.736741+00:00）
-- https://adsb.co.kr/policies/privacy-policy（http_dom；2026-11-23T08:49:39.910436+00:00）
-- https://agnestoth.com/policies/privacy-policy（http_dom；2026-11-23T08:49:44.060286+00:00）
+- https://acmecups.nz/pages/terms-and-conditions（http_dom；2026-11-23T09:35:13.107689+00:00）
 
 来源受各自版权和访问规则约束；只借鉴结构与机制，使用原创或已授权文案、图像、字体和模型。未知技术版本、隐藏状态和服务端行为不得根据截图补造。

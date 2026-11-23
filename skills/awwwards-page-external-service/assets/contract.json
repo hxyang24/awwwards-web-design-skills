@@ -4,7 +4,7 @@
   "skill": "awwwards-page-external-service",
   "title": "获奖外站服务与方案内页",
   "kind": "service",
-  "scope": "awarded external website inner page",
+  "scope": "Awwwards-linked external inner page; specific award status requires official evidence",
   "source_families": [
     "external.service"
   ],
@@ -35,6 +35,7 @@
   "failure_recovery": "承诺没有证据时降为方案建议；不虚构收益。",
   "motion_contract": "复杂流程在手机改为纵向步骤，保留阶段关系。",
   "evidence_level": "http_dom",
+  "source_relationship_note": "An outbound work-detail association does not certify that every current inner page won an award or matches a historical version.",
   "evidence_note": "Only recorded observations are facts. DOM structure does not prove visual composition, hidden state, source code, backend behavior or licenses. The runnable blueprint is an original recipe, not a source-site clone.",
   "sources": [
     {
@@ -232,6 +233,7 @@
     }
   ],
   "visual_metrics": [],
+  "source_state_observations": [],
   "source_coverage": "observed_examples",
   "original_blueprint": true,
   "business_mode": "local_preview",

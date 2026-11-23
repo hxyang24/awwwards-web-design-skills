@@ -4,7 +4,7 @@
   "skill": "awwwards-page-external-experiment",
   "title": "获奖外站实验与互动内页",
   "kind": "experiment",
-  "scope": "awarded external website inner page",
+  "scope": "Awwwards-linked external inner page; specific award status requires official evidence",
   "source_families": [
     "external.experiment"
   ],
@@ -33,6 +33,7 @@
   "failure_recovery": "缺少图形能力、资源失败或用户选择减少动画时保留说明和退出。",
   "motion_contract": "只在需要时渲染；暂停、重置、离屏和卸载有明确行为。",
   "evidence_level": "http_dom",
+  "source_relationship_note": "An outbound work-detail association does not certify that every current inner page won an award or matches a historical version.",
   "evidence_note": "Only recorded observations are facts. DOM structure does not prove visual composition, hidden state, source code, backend behavior or licenses. The runnable blueprint is an original recipe, not a source-site clone.",
   "sources": [
     {
@@ -67,6 +68,7 @@
     }
   ],
   "visual_metrics": [],
+  "source_state_observations": [],
   "source_coverage": "observed_examples",
   "original_blueprint": true,
   "business_mode": "local_preview",

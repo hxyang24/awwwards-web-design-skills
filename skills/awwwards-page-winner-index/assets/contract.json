@@ -31,6 +31,7 @@
   "failure_recovery": "年份无记录不推断没有奖项；显示未收集证据而非零获奖。",
   "motion_contract": "年份切换保留标题焦点；大量结果先分页，不一次渲染所有档案。",
   "evidence_level": "http_dom",
+  "source_relationship_note": "An outbound work-detail association does not certify that every current inner page won an award or matches a historical version.",
   "evidence_note": "Only recorded observations are facts. DOM structure does not prove visual composition, hidden state, source code, backend behavior or licenses. The runnable blueprint is an original recipe, not a source-site clone.",
   "sources": [
     {
@@ -203,6 +204,7 @@
     }
   ],
   "visual_metrics": [],
+  "source_state_observations": [],
   "source_coverage": "observed_examples",
   "original_blueprint": true,
   "business_mode": "local_preview",

@@ -41,6 +41,7 @@ python scripts/scaffold.py --output YOUR_EMPTY_PROJECT_DIRECTORY
 - https://a24.raviklaassens.com/404（http_dom；2026-11-23T08:03:53.450057+00:00）
 - https://artworks.joe8lee.com/404（http_dom；2026-11-23T09:11:03.291884+00:00）
 - https://axiom-power-template.webflow.io/404（http_dom；2026-11-23T09:13:37.115969+00:00）
+- https://brik.space/gallery/404（http_dom；2026-11-23T09:38:29.067631+00:00）
 - https://www.a-lign.studio/404（http_dom；2026-11-23T08:03:35.616538+00:00）
 - https://www.addifico.com/404（http_dom；2026-11-23T08:46:42.244788+00:00）
 

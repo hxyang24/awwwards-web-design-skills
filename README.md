@@ -3,7 +3,7 @@
 [![CI](https://github.com/hxyang24/awwwards-web-design-skills/actions/workflows/ci.yml/badge.svg)](https://github.com/hxyang24/awwwards-web-design-skills/actions/workflows/ci.yml)
 [![Original code: MIT](https://img.shields.io/badge/original_code-MIT-green.svg)](LICENSE)
 
-> **当前新增页面专项 Skills 整理仍在进行，尚未完成全站与所有获奖外站内页覆盖。** 新增 41 套可单独安装的页面技能及 3 套具体交互机制，保留原 24 套核心技能，共 68 套。详细来源边界和缺口见 [页面技能目录](PAGE_SKILLS.md)。
+> **当前新增页面专项 Skills 整理仍在进行，尚未完成全站与所有获奖外站内页覆盖。** 新增 44 套可单独安装的页面技能及 3 套具体交互机制，保留原 24 套核心技能，共 71 套。详细来源边界和缺口见 [页面技能目录](PAGE_SKILLS.md)。
 
 [下载当前页面技能工作版](https://github.com/hxyang24/awwwards-web-design-skills/archive/refs/heads/main.zip) · [独立页面技能](skills) · [来源覆盖](research/live_pages/coverage.json)
 
@@ -98,4 +98,6 @@ npm run test:export
 
 原站内容只作为观察证据。完整 HTML、原站截图、代码、图片、字体、视频及音乐不随新增公开研究记录分发。新增技能的几何插图和蓝本为原创。观察缺口、受限访问、未验证的隐藏交互与未接入服务端持续保留。
 
-具体机制包括发现门户导航、雇主品牌与价值观画廊、图形失败回退。它们具有独立实现及测试，入口见 [机制说明](INTERACTION_SKILLS.md)。本轮新增部分的 12 项页面工具检查、5 项机制工具检查、36 组页面浏览器检查及 31 组机制浏览器检查已在 Windows 通过；现有包 187 个 V1 文件与封存清单仍匹配。原站观察与原创蓝本验收分别记录。
+具体机制包括发现门户导航、雇主品牌与价值观画廊、图形失败回退，入口见 [机制说明](INTERACTION_SKILLS.md)。本轮另增加章节索引、交互叙事阅读与提示词详情三套独立页面蓝本，见 [新页面说明](CREATIVE_PAGE_SKILLS.md)。
+
+本轮 Windows 检查：12 项页面工具、5 项机制工具、39 组完整页面浏览器检查及 33 组叙事/提示词专项检查通过；既有机制蓝本另保留 31 组通过记录，在线 CI 会重跑。187 个 V1 文件与基础包封存清单仍匹配。来源观察、原创蓝本和真实业务验收分别记录。

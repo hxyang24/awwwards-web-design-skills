@@ -4,7 +4,7 @@
   "skill": "awwwards-page-external-careers",
   "title": "获奖外站招聘与雇主品牌内页",
   "kind": "careers",
-  "scope": "awarded external website inner page",
+  "scope": "Awwwards-linked external inner page; specific award status requires official evidence",
   "source_families": [
     "external.careers"
   ],
@@ -34,6 +34,7 @@
   "failure_recovery": "职位关闭或无岗位显示明确空态；保留可恢复筛选，不编造招聘。",
   "motion_contract": "画廊和视觉可暂停；初始尊重减少动画，固定入口不遮挡移动键盘。",
   "evidence_level": "http_dom",
+  "source_relationship_note": "An outbound work-detail association does not certify that every current inner page won an award or matches a historical version.",
   "evidence_note": "Only recorded observations are facts. DOM structure does not prove visual composition, hidden state, source code, backend behavior or licenses. The runnable blueprint is an original recipe, not a source-site clone.",
   "sources": [
     {
@@ -98,6 +99,38 @@
       }
     },
     {
+      "id": "cac4840effaada25",
+      "url": "https://gobranded.com/careers",
+      "family": "external.careers",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T09:37:04.076956+00:00",
+      "source_sha256": "21614a95d69e5ecb189cae111844b80d361e5f5063ff8ab7edc327e014f12e8e",
+      "structure": {
+        "headings": {
+          "h1": 1,
+          "h2": 1,
+          "h3": 3
+        },
+        "forms": 0,
+        "input_types": {},
+        "navigation_regions": 1,
+        "main_regions": 0,
+        "sections": 1,
+        "articles": 0,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 0,
+        "roles": {
+          "banner": 1,
+          "presentation": 1,
+          "tablist": 1,
+          "tab": 3
+        },
+        "anchor_count": 25
+      }
+    },
+    {
       "id": "b722cf7db75675cb",
       "url": "https://www.antler.co/careers",
       "family": "external.careers",
@@ -128,6 +161,45 @@
           "navigation": 5
         },
         "anchor_count": 110
+      }
+    },
+    {
+      "id": "8f3e16b133fbcd75",
+      "url": "https://cambrilearn.com/careers",
+      "family": "external.careers",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T09:41:07.618843+00:00",
+      "source_sha256": "70eb903fa43671379e67776c8c09f38cb1b4b5e927d7e180f4e6f726dd761e8a",
+      "structure": {
+        "headings": {
+          "h2": 8,
+          "h3": 20,
+          "h1": 1
+        },
+        "forms": 1,
+        "input_types": {
+          "text": 3,
+          "email": 1,
+          "tel": 1,
+          "file": 1,
+          "submit": 1
+        },
+        "navigation_regions": 7,
+        "main_regions": 0,
+        "sections": 9,
+        "articles": 4,
+        "tables": 0,
+        "dialogs": 2,
+        "canvases": 0,
+        "videos": 0,
+        "roles": {
+          "img": 11,
+          "list": 8,
+          "listitem": 1,
+          "alert": 1,
+          "status": 1
+        },
+        "anchor_count": 127
       }
     },
     {
@@ -167,88 +239,10 @@
         },
         "anchor_count": 170
       }
-    },
-    {
-      "id": "d40729d6c1a193e9",
-      "url": "https://www.academyux.com/careers",
-      "family": "external.careers",
-      "inspection_level": "http_dom",
-      "observed_at": "2026-11-23T08:46:20.364563+00:00",
-      "source_sha256": "bf715c55ca320570b947466817fb8510d50f07304ed0c9b50302fe30764a3485",
-      "structure": {
-        "headings": {
-          "h1": 1,
-          "h2": 11,
-          "h3": 30
-        },
-        "forms": 1,
-        "input_types": {
-          "checkbox": 3
-        },
-        "navigation_regions": 3,
-        "main_regions": 1,
-        "sections": 11,
-        "articles": 0,
-        "tables": 0,
-        "dialogs": 0,
-        "canvases": 1,
-        "videos": 0,
-        "roles": {
-          "button": 2,
-          "region": 9,
-          "dialog": 1,
-          "switch": 3
-        },
-        "anchor_count": 58
-      }
-    },
-    {
-      "id": "e619a5393173db12",
-      "url": "https://www.apple.com/careers/us/",
-      "family": "external.careers",
-      "inspection_level": "http_dom",
-      "observed_at": "2026-11-23T08:39:51.927611+00:00",
-      "source_sha256": "f1b9d69327a4a89c97e0f651f034d6282c595914cac489e891b033d432641195",
-      "structure": {
-        "headings": {
-          "h1": 1,
-          "h2": 4,
-          "h3": 20
-        },
-        "forms": 1,
-        "input_types": {
-          "text": 2,
-          "hidden": 4,
-          "checkbox": 1,
-          "search": 1
-        },
-        "navigation_regions": 4,
-        "main_regions": 1,
-        "sections": 9,
-        "articles": 0,
-        "tables": 0,
-        "dialogs": 0,
-        "canvases": 0,
-        "videos": 3,
-        "roles": {
-          "none": 12,
-          "button": 10,
-          "status": 2,
-          "navigation": 3,
-          "main": 1,
-          "img": 3,
-          "combobox": 1,
-          "listbox": 1,
-          "option": 5,
-          "list": 13,
-          "listitem": 76,
-          "contentinfo": 1
-        },
-        "anchor_count": 132
-      }
     }
   ],
   "visual_metrics": [],
+  "source_state_observations": [],
   "source_coverage": "observed_examples",
   "original_blueprint": true,
   "business_mode": "local_preview",

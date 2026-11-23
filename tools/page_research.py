@@ -43,8 +43,12 @@ def public_dns(host):
 def family(url):
  p=urllib.parse.urlsplit(url).path;host=urllib.parse.urlsplit(url).hostname
  if host!=MAIN:
-  p=re.sub(r'^/(?:en|en-us|en-gb|de|fr|es|it|pt|nl-nl)(?=/|$)','',p,flags=re.I) or '/'
+  p=re.sub(r'^/(?:en|en-us|en-gb|de|fr|es|it|pt|pt-br|nl-nl|ar|ja|zh|zh-cn)(?=/|$)','',p,flags=re.I) or '/'
   if p=='/':return 'external.home'
+  if host.removeprefix('www.')=='ponpon-mania.com':
+   if p.rstrip('/')=='/chapters':return 'external.story-index'
+   if re.fullmatch(r'/chapter/\d+/?',p):return 'external.story-chapter'
+  if host.removeprefix('www.')=='aifont.ai' and re.fullmatch(r'/fonts/[^/]+/?',p):return 'external.prompt-detail'
   if host.removeprefix('www.')=='artemiilebedev.com' and p=='/alter-ego':return 'external.media-portfolio'
   patterns=[('not-found',r'/404(?:/|$)'),('gallery',r'/(?:gallery|archive)(?=/|$)'),('artwork',r'/artwork(?=/|$)'),('experiment',r'/(?:lab|experiments?|playground)(?=/|$)'),('project',r'/(?:work|works|project|projects|case-stud(?:y|ies))(?=/|$)'),('about',r'/(?:about|about-us|studio|team|who-we-are)(?=/|$)'),('contact',r'/(?:contact|contact-us|get-in-touch)(?=/|$)'),('product',r'/(?:products?|shop|collections?|dispensa)(?=/|$)'),('article',r'/(?:journal|blog|news|stories|insights|writing)(?=/|$)'),('service',r'/(?:services?|solutions?|expertise|process)(?=/|$)'),('careers',r'/(?:careers?|jobs?)(?=/|$)'),('legal',r'/(?:privacy|privacy-policy|terms|terms-and-conditions|legal|cookies)(?=/|$)')]
   for name,pattern in patterns:
@@ -242,8 +246,10 @@ class Collector:
   return True
  def export(self):
   with self.lock:
-   rows=[json.loads(r) for (r,) in self.db.execute('SELECT record FROM queue WHERE record IS NOT NULL ORDER BY url')];counts=dict(self.db.execute('SELECT state,COUNT(*)FROM queue GROUP BY state'));roots=[{'host':h,'official_url':u} for h,u in self.db.execute('SELECT host,official_url FROM roots ORDER BY host')];pending=[{'url':u,'scope':s,'family':family(u)} for u,s in self.db.execute('SELECT url,scope FROM queue WHERE state!="done" ORDER BY priority,url')]
+   rows=[json.loads(r) for (r,) in self.db.execute('SELECT record FROM queue WHERE record IS NOT NULL ORDER BY url')];counts=dict(self.db.execute('SELECT state,COUNT(*)FROM queue GROUP BY state'));roots=[{'host':h,'official_url':u,'award_status':'not_independently_verified'} for h,u in self.db.execute('SELECT host,official_url FROM roots ORDER BY host')];pending=[{'url':u,'scope':s,'family':family(u)} for u,s in self.db.execute('SELECT url,scope FROM queue WHERE state!="done" ORDER BY priority,url')]
   statuses=Counter(r['status'] for r in rows);families=Counter(r['family'] for r in rows if r['inspection_level']=='http_dom');summary={'snapshot_at':now(),'goal':'Convert Awwwards main-site and awarded external-site page patterns into reusable skills','status':'in_progress','scope':['Awwwards public page families and concrete pages','Awarded external websites and their reachable inner pages'],'queue':counts,'observed_records':len(rows),'observed_complete_http_dom':sum(r['inspection_level']=='http_dom' for r in rows),'statuses':dict(statuses),'families_http_dom':dict(sorted(families.items())),'awarded_external_hosts_discovered':len(roots),'not_claimed':['Exhaustive discovery of every historical award','All external websites fully traversed','Visual or interaction completion from HTTP DOM','Skill completion solely from URL counts'],'raw_content_distribution':'not included','robots_respected':True}
+  summary['awwwards_linked_external_hosts_discovered']=len(roots)
+  summary['external_host_count_note']='The legacy awarded_external_hosts_discovered field counts explicit work-detail-linked hosts; winning status is not independently verified per host.'
   summary['pending_sample_count']=min(200,len(pending));summary['pending_sample_is_exhaustive']=len(pending)<=200
   summary['pending_families']=dict(sorted(Counter(p['family'] for p in pending).items()))
   for name,data in [('sources.jsonl',rows),('pending-pages.jsonl',pending[:200]),('external-targets.jsonl',roots)]:

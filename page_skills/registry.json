@@ -1,8 +1,8 @@
 {
   "schema_version": "3.0",
-  "generated_at": "2026-11-23T09:18:53.822649+00:00",
+  "generated_at": "2026-11-23T09:50:59.232738+00:00",
   "core_skills_preserved": 24,
-  "page_skills": 41,
+  "page_skills": 44,
   "status": "in_progress",
   "scope": "Awwwards main pages and awarded external-site inner pages, organized into reusable task-specific skills",
   "not_claimed": [
@@ -664,10 +664,58 @@
         "external.not-found"
       ],
       "source_coverage": "observed_examples",
-      "source_count": 5,
+      "source_count": 6,
       "evidence_level": "rendered_geometry",
       "path": "skills/awwwards-page-external-not-found",
       "demo": "skills/awwwards-page-external-not-found/assets/",
+      "browser_validation": "See validation evidence; not inferred from generation"
+    },
+    {
+      "id": "external-story-index",
+      "skill": "awwwards-page-external-story-index",
+      "title": "获奖来源外站叙事章节索引",
+      "kind": "story-index",
+      "runtime_variant": "creative-story",
+      "source_families": [
+        "external.story-index"
+      ],
+      "source_coverage": "observed_examples",
+      "source_count": 1,
+      "evidence_level": "rendered_source_observations",
+      "path": "skills/awwwards-page-external-story-index",
+      "demo": "skills/awwwards-page-external-story-index/assets/",
+      "browser_validation": "See validation evidence; not inferred from generation"
+    },
+    {
+      "id": "external-story-chapter",
+      "skill": "awwwards-page-external-story-chapter",
+      "title": "获奖来源外站交互叙事章节",
+      "kind": "story",
+      "runtime_variant": "creative-story",
+      "source_families": [
+        "external.story-chapter"
+      ],
+      "source_coverage": "observed_examples",
+      "source_count": 3,
+      "evidence_level": "rendered_source_observations",
+      "path": "skills/awwwards-page-external-story-chapter",
+      "demo": "skills/awwwards-page-external-story-chapter/assets/",
+      "browser_validation": "See validation evidence; not inferred from generation"
+    },
+    {
+      "id": "external-prompt-detail",
+      "skill": "awwwards-page-external-prompt-detail",
+      "title": "获奖来源外站提示词与字体效果详情",
+      "kind": "prompt",
+      "runtime_variant": "creative-prompt",
+      "source_families": [
+        "external.prompt-detail"
+      ],
+      "source_coverage": "observed_examples",
+      "source_count": 1,
+      "evidence_level": "rendered_source_observations",
+      "path": "skills/awwwards-page-external-prompt-detail",
+      "demo": "skills/awwwards-page-external-prompt-detail/assets/",
       "browser_validation": "See validation evidence; not inferred from generation"
     }
   ]

@@ -1,0 +1,533 @@
+{
+  "schema_version": "1.0",
+  "recorded_at": "2026-11-23T09:40:46.124337+00:00",
+  "scope": "Specific current public inner-page states; not full-site or backend acceptance",
+  "observations": [
+    {
+      "id": "prompt-detail-wide",
+      "source_id": "619b8560ee5995dd",
+      "url": "https://aifont.ai/fonts/tagging-letters",
+      "viewport": {
+        "width": 1440,
+        "height": 1000,
+        "device_scale_factor": 1
+      },
+      "observed_at": "2026-11-23T09:31:00.105Z",
+      "status": "rendered_content_observed",
+      "source_assets_redistributed": false,
+      "source_backend_validated": false,
+      "measured_geometry": {
+        "document_width": 1440,
+        "viewport_width": 1440,
+        "body_font": "\"Bricolage Grotesque\", \"Bricolage Grotesque Fallback\", -apple-system, BlinkMacSystemFont, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", sans-serif",
+        "headings": [
+          {
+            "tag": "h2",
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "width": 1,
+              "height": 40,
+              "font_family": "Fraunces, \"Fraunces Fallback\", Georgia, serif",
+              "font_size": "24px",
+              "line_height": "39.6px",
+              "font_weight": "400",
+              "color": "rgb(20, 20, 20)",
+              "background": "rgba(0, 0, 0, 0)"
+            }
+          },
+          {
+            "tag": "h1",
+            "rect": {
+              "x": 72,
+              "y": 157,
+              "width": 664,
+              "height": 54,
+              "font_family": "Fraunces, \"Fraunces Fallback\", Georgia, serif",
+              "font_size": "51.84px",
+              "line_height": "53.9136px",
+              "font_weight": "400",
+              "color": "rgb(20, 20, 20)",
+              "background": "rgba(0, 0, 0, 0)"
+            }
+          },
+          {
+            "tag": "h2",
+            "rect": {
+              "x": 72,
+              "y": 889,
+              "width": 1296,
+              "height": 40,
+              "font_family": "Fraunces, \"Fraunces Fallback\", Georgia, serif",
+              "font_size": "36px",
+              "line_height": "39.6px",
+              "font_weight": "400",
+              "color": "rgb(20, 20, 20)",
+              "background": "rgba(0, 0, 0, 0)"
+            }
+          },
+          {
+            "tag": "h2",
+            "rect": {
+              "x": 105,
+              "y": 1413,
+              "width": 1011,
+              "height": 30,
+              "font_family": "Fraunces, \"Fraunces Fallback\", Georgia, serif",
+              "font_size": "26px",
+              "line_height": "29.9px",
+              "font_weight": "400",
+              "color": "rgb(20, 20, 20)",
+              "background": "rgba(0, 0, 0, 0)"
+            }
+          },
+          {
+            "tag": "h2",
+            "rect": {
+              "x": 72,
+              "y": 1603,
+              "width": 1296,
+              "height": 40,
+              "font_family": "Fraunces, \"Fraunces Fallback\", Georgia, serif",
+              "font_size": "36px",
+              "line_height": "39.6px",
+              "font_weight": "400",
+              "color": "rgb(20, 20, 20)",
+              "background": "rgba(0, 0, 0, 0)"
+            }
+          }
+        ]
+      },
+      "actions": [
+        {
+          "role": "tab",
+          "name": "Qwen-Image",
+          "action": "click",
+          "status": "acted_and_observed",
+          "observable_state_changed": true,
+          "local_preview_text_present": false,
+          "reason": null,
+          "selected_tabs_after": [
+            "Qwen-Image"
+          ]
+        },
+        {
+          "role": "button",
+          "name": "Compare",
+          "action": "click",
+          "status": "acted_and_observed",
+          "observable_state_changed": false,
+          "local_preview_text_present": false,
+          "reason": null,
+          "selected_tabs_after": [
+            "Qwen-Image"
+          ]
+        },
+        {
+          "role": "button",
+          "name": "View larger",
+          "action": "click",
+          "status": "acted_and_observed",
+          "observable_state_changed": true,
+          "local_preview_text_present": false,
+          "reason": null,
+          "selected_tabs_after": [
+            "Qwen-Image"
+          ]
+        }
+      ],
+      "private_screenshot_sha256": "7d24d486cf01e38fb6b5c1e4b4d7aa127938da637b9423e486de781021989425",
+      "review_note": "Result tabs, detail viewer or mobile folding/navigation were sampled. The site labels images by model; no generation or independent benchmark was run. The later local-word observation confirms text replacement; the initial role-name locator did not find the unlabeled field."
+    },
+    {
+      "id": "prompt-detail-phone",
+      "source_id": "619b8560ee5995dd",
+      "url": "https://aifont.ai/fonts/tagging-letters",
+      "viewport": {
+        "width": 390,
+        "height": 1000,
+        "device_scale_factor": 1
+      },
+      "observed_at": "2026-11-23T09:31:08.727Z",
+      "status": "rendered_content_observed",
+      "source_assets_redistributed": false,
+      "source_backend_validated": false,
+      "measured_geometry": {
+        "document_width": 390,
+        "viewport_width": 390,
+        "body_font": "\"Bricolage Grotesque\", \"Bricolage Grotesque Fallback\", -apple-system, BlinkMacSystemFont, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", sans-serif",
+        "headings": [
+          {
+            "tag": "h2",
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "width": 1,
+              "height": 40,
+              "font_family": "Fraunces, \"Fraunces Fallback\", Georgia, serif",
+              "font_size": "24px",
+              "line_height": "39.6px",
+              "font_weight": "400",
+              "color": "rgb(20, 20, 20)",
+              "background": "rgba(0, 0, 0, 0)"
+            }
+          },
+          {
+            "tag": "h1",
+            "rect": {
+              "x": 16,
+              "y": 511,
+              "width": 358,
+              "height": 42,
+              "font_family": "Fraunces, \"Fraunces Fallback\", Georgia, serif",
+              "font_size": "40px",
+              "line_height": "41.6px",
+              "font_weight": "400",
+              "color": "rgb(20, 20, 20)",
+              "background": "rgba(0, 0, 0, 0)"
+            }
+          },
+          {
+            "tag": "h2",
+            "rect": {
+              "x": 16,
+              "y": 1336,
+              "width": 346,
+              "height": 31,
+              "font_family": "Fraunces, \"Fraunces Fallback\", Georgia, serif",
+              "font_size": "28px",
+              "line_height": "30.8px",
+              "font_weight": "400",
+              "color": "rgb(20, 20, 20)",
+              "background": "rgba(0, 0, 0, 0)"
+            }
+          },
+          {
+            "tag": "h2",
+            "rect": {
+              "x": 41,
+              "y": 2432,
+              "width": 308,
+              "height": 60,
+              "font_family": "Fraunces, \"Fraunces Fallback\", Georgia, serif",
+              "font_size": "26px",
+              "line_height": "29.9px",
+              "font_weight": "400",
+              "color": "rgb(20, 20, 20)",
+              "background": "rgba(0, 0, 0, 0)"
+            }
+          },
+          {
+            "tag": "h2",
+            "rect": {
+              "x": 16,
+              "y": 2818,
+              "width": 346,
+              "height": 62,
+              "font_family": "Fraunces, \"Fraunces Fallback\", Georgia, serif",
+              "font_size": "28px",
+              "line_height": "30.8px",
+              "font_weight": "400",
+              "color": "rgb(20, 20, 20)",
+              "background": "rgba(0, 0, 0, 0)"
+            }
+          }
+        ]
+      },
+      "actions": [
+        {
+          "role": "textbox",
+          "name": "Type your word",
+          "action": "click",
+          "status": "not_observed",
+          "observable_state_changed": false,
+          "local_preview_text_present": false,
+          "reason": "locator.evaluate: Timeout 30000ms exceeded.",
+          "selected_tabs_after": []
+        },
+        {
+          "role": "button",
+          "name": "Show all",
+          "action": "click",
+          "status": "acted_and_observed",
+          "observable_state_changed": true,
+          "local_preview_text_present": false,
+          "reason": null,
+          "selected_tabs_after": [
+            "GPT Image1 / 5"
+          ]
+        },
+        {
+          "role": "button",
+          "name": "Open menu",
+          "action": "click",
+          "status": "acted_and_observed",
+          "observable_state_changed": true,
+          "local_preview_text_present": false,
+          "reason": null,
+          "selected_tabs_after": [
+            "GPT Image1 / 5"
+          ]
+        }
+      ],
+      "private_screenshot_sha256": "0298f5913a6ea7fdc250b620ad4bd9455b682f72fc426ebac38136b0f42673aa",
+      "review_note": "Result tabs, detail viewer or mobile folding/navigation were sampled. The site labels images by model; no generation or independent benchmark was run. The later local-word observation confirms text replacement; the initial role-name locator did not find the unlabeled field."
+    },
+    {
+      "id": "story-chapter-wide",
+      "source_id": "63fd74a913e2ab27",
+      "url": "https://ponpon-mania.com/chapter/1",
+      "viewport": {
+        "width": 1440,
+        "height": 1000,
+        "device_scale_factor": 1
+      },
+      "observed_at": "2026-11-23T09:31:44.856Z",
+      "status": "rendered_content_observed",
+      "source_assets_redistributed": false,
+      "source_backend_validated": false,
+      "measured_geometry": {
+        "document_width": 1440,
+        "viewport_width": 1440,
+        "body_font": "\"Libre Franklin\", Helvetica, Arial, sans-serif",
+        "headings": [
+          {
+            "tag": "h1",
+            "rect": {
+              "x": 650,
+              "y": 12,
+              "width": 140,
+              "height": 69,
+              "font_family": "\"Libre Franklin\", Helvetica, Arial, sans-serif",
+              "font_size": "12px",
+              "line_height": "normal",
+              "font_weight": "700",
+              "color": "rgb(23, 23, 23)",
+              "background": "rgba(0, 0, 0, 0)"
+            }
+          }
+        ]
+      },
+      "actions": [
+        {
+          "role": "button",
+          "name": "Decline",
+          "action": "click",
+          "status": "acted_and_observed",
+          "observable_state_changed": false,
+          "local_preview_text_present": false,
+          "reason": null,
+          "selected_tabs_after": []
+        },
+        {
+          "role": "link",
+          "name": "chapters",
+          "action": "click",
+          "status": "acted_and_observed",
+          "observable_state_changed": true,
+          "local_preview_text_present": false,
+          "reason": null,
+          "selected_tabs_after": []
+        }
+      ],
+      "private_screenshot_sha256": "70269d0b39ce16132eb1f6e5a5dcfacb069b68c7487244b36fa1ae0a78b4e3ed",
+      "review_note": "At the 20-second observation, original chapter artwork/index content was visible. The earlier 3.5-second captures were still a loading screen. Audio playback, canvas gestures and all normal states were not validated."
+    },
+    {
+      "id": "story-index-phone",
+      "source_id": "8d87b1df60af5878",
+      "url": "https://ponpon-mania.com/chapters",
+      "viewport": {
+        "width": 390,
+        "height": 1000,
+        "device_scale_factor": 1
+      },
+      "observed_at": "2026-11-23T09:32:12.828Z",
+      "status": "rendered_content_observed",
+      "source_assets_redistributed": false,
+      "source_backend_validated": false,
+      "measured_geometry": {
+        "document_width": 390,
+        "viewport_width": 390,
+        "body_font": "\"Libre Franklin\", Helvetica, Arial, sans-serif",
+        "headings": [
+          {
+            "tag": "h1",
+            "rect": {
+              "x": 137,
+              "y": 15,
+              "width": 115,
+              "height": 53,
+              "font_family": "\"Libre Franklin\", Helvetica, Arial, sans-serif",
+              "font_size": "12px",
+              "line_height": "normal",
+              "font_weight": "700",
+              "color": "rgb(23, 23, 23)",
+              "background": "rgba(0, 0, 0, 0)"
+            }
+          }
+        ]
+      },
+      "actions": [
+        {
+          "role": "button",
+          "name": "Decline",
+          "action": "click",
+          "status": "acted_and_observed",
+          "observable_state_changed": false,
+          "local_preview_text_present": false,
+          "reason": null,
+          "selected_tabs_after": []
+        }
+      ],
+      "private_screenshot_sha256": "649e57f4c0af58fcc66b6205d2525bf792dc3559a1ae4f1e94ab221c262a2701",
+      "review_note": "At the 20-second observation, original chapter artwork/index content was visible. The earlier 3.5-second captures were still a loading screen. Audio playback, canvas gestures and all normal states were not validated."
+    },
+    {
+      "id": "prompt-local-word-phone",
+      "source_id": "619b8560ee5995dd",
+      "url": "https://aifont.ai/fonts/tagging-letters",
+      "viewport": {
+        "width": 390,
+        "height": 1000,
+        "device_scale_factor": 1
+      },
+      "observed_at": "2026-11-23T09:44:25.574Z",
+      "status": "rendered_content_observed",
+      "source_assets_redistributed": false,
+      "source_backend_validated": false,
+      "measured_geometry": {
+        "document_width": 390,
+        "viewport_width": 390,
+        "body_font": "\"Bricolage Grotesque\", \"Bricolage Grotesque Fallback\", -apple-system, BlinkMacSystemFont, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", sans-serif",
+        "headings": [
+          {
+            "tag": "h2",
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "width": 1,
+              "height": 40,
+              "font_family": "Fraunces, \"Fraunces Fallback\", Georgia, serif",
+              "font_size": "24px",
+              "line_height": "39.6px",
+              "font_weight": "400",
+              "color": "rgb(20, 20, 20)",
+              "background": "rgba(0, 0, 0, 0)"
+            }
+          },
+          {
+            "tag": "h1",
+            "rect": {
+              "x": 16,
+              "y": 511,
+              "width": 358,
+              "height": 42,
+              "font_family": "Fraunces, \"Fraunces Fallback\", Georgia, serif",
+              "font_size": "40px",
+              "line_height": "41.6px",
+              "font_weight": "400",
+              "color": "rgb(20, 20, 20)",
+              "background": "rgba(0, 0, 0, 0)"
+            }
+          },
+          {
+            "tag": "h2",
+            "rect": {
+              "x": 16,
+              "y": 1336,
+              "width": 346,
+              "height": 31,
+              "font_family": "Fraunces, \"Fraunces Fallback\", Georgia, serif",
+              "font_size": "28px",
+              "line_height": "30.8px",
+              "font_weight": "400",
+              "color": "rgb(20, 20, 20)",
+              "background": "rgba(0, 0, 0, 0)"
+            }
+          },
+          {
+            "tag": "h2",
+            "rect": {
+              "x": 41,
+              "y": 2432,
+              "width": 308,
+              "height": 60,
+              "font_family": "Fraunces, \"Fraunces Fallback\", Georgia, serif",
+              "font_size": "26px",
+              "line_height": "29.9px",
+              "font_weight": "400",
+              "color": "rgb(20, 20, 20)",
+              "background": "rgba(0, 0, 0, 0)"
+            }
+          },
+          {
+            "tag": "h2",
+            "rect": {
+              "x": 16,
+              "y": 2818,
+              "width": 346,
+              "height": 62,
+              "font_family": "Fraunces, \"Fraunces Fallback\", Georgia, serif",
+              "font_size": "28px",
+              "line_height": "30.8px",
+              "font_weight": "400",
+              "color": "rgb(20, 20, 20)",
+              "background": "rgba(0, 0, 0, 0)"
+            }
+          }
+        ]
+      },
+      "actions": [
+        {
+          "role": "textbox",
+          "name": "Type your word",
+          "action": "fill",
+          "status": "acted_and_observed",
+          "observable_state_changed": true,
+          "text_input_value_changed": true,
+          "local_preview_text_present": true
+        }
+      ],
+      "private_screenshot_sha256": "f3d378e590e5b7aaefeed85d20b9eb7757318b599610eccc2b2276089188239f",
+      "review_note": "Result tabs, detail viewer or mobile folding/navigation were sampled. The site labels images by model; no generation or independent benchmark was run. The later local-word observation confirms text replacement; the initial role-name locator did not find the unlabeled field."
+    },
+    {
+      "id": "story-initial-loading-1440",
+      "source_id": "63fd74a913e2ab27",
+      "url": "https://ponpon-mania.com/chapter/1",
+      "viewport": {
+        "width": 1440,
+        "height": 1000,
+        "device_scale_factor": 1
+      },
+      "observed_at": "2026-11-23T09:29:12.857Z",
+      "status": "loading_incomplete",
+      "source_assets_redistributed": false,
+      "private_screenshot_sha256": "d041aea34ab4426f9cca2f8a3b46fef86ef4f52340c5b8590445d80f3f2a57d2",
+      "actions": [],
+      "review_note": "Visual inspection showed the preloader. DOM links behind an overlay do not establish that the reading interface was ready."
+    },
+    {
+      "id": "story-initial-loading-390",
+      "source_id": "63fd74a913e2ab27",
+      "url": "https://ponpon-mania.com/chapter/1",
+      "viewport": {
+        "width": 390,
+        "height": 1000,
+        "device_scale_factor": 1
+      },
+      "observed_at": "2026-11-23T09:29:18.851Z",
+      "status": "loading_incomplete",
+      "source_assets_redistributed": false,
+      "private_screenshot_sha256": "81bc97209b06ded74a7c464da2c63b9867b9c27243b4c0865ce9c949de8de16b",
+      "actions": [],
+      "review_note": "Visual inspection showed the preloader. DOM links behind an overlay do not establish that the reading interface was ready."
+    }
+  ],
+  "limitations": [
+    "No source image, prompt prose, comic panels or audio is redistributed",
+    "The initial text-field locator failure and unchanged actions remain recorded",
+    "Software-rendered observations do not certify all devices or all hidden states"
+  ]
+}

@@ -1,0 +1,199 @@
+{
+  "recorded_at": "2026-11-23T09:49:33.651Z",
+  "status": "passed",
+  "new_page_skills": 3,
+  "checks": [
+    {
+      "name": "external-story-index loads and fits at 320",
+      "status": "passed"
+    },
+    {
+      "name": "external-story-index loads and fits at 390",
+      "status": "passed"
+    },
+    {
+      "name": "external-story-index loads and fits at 768",
+      "status": "passed"
+    },
+    {
+      "name": "external-story-index loads and fits at 1440",
+      "status": "passed"
+    },
+    {
+      "name": "external-story-chapter loads and fits at 320",
+      "status": "passed"
+    },
+    {
+      "name": "external-story-chapter loads and fits at 390",
+      "status": "passed"
+    },
+    {
+      "name": "external-story-chapter loads and fits at 768",
+      "status": "passed"
+    },
+    {
+      "name": "external-story-chapter loads and fits at 1440",
+      "status": "passed"
+    },
+    {
+      "name": "external-prompt-detail loads and fits at 320",
+      "status": "passed"
+    },
+    {
+      "name": "external-prompt-detail loads and fits at 390",
+      "status": "passed"
+    },
+    {
+      "name": "external-prompt-detail loads and fits at 768",
+      "status": "passed"
+    },
+    {
+      "name": "external-prompt-detail loads and fits at 1440",
+      "status": "passed"
+    },
+    {
+      "name": "external-story-index selected accessibility rules at 390",
+      "status": "passed"
+    },
+    {
+      "name": "external-story-index selected accessibility rules at 1440",
+      "status": "passed"
+    },
+    {
+      "name": "external-story-chapter selected accessibility rules at 390",
+      "status": "passed"
+    },
+    {
+      "name": "external-story-chapter selected accessibility rules at 1440",
+      "status": "passed"
+    },
+    {
+      "name": "external-prompt-detail selected accessibility rules at 390",
+      "status": "passed"
+    },
+    {
+      "name": "external-prompt-detail selected accessibility rules at 1440",
+      "status": "passed"
+    },
+    {
+      "name": "Chapter index opens available chapters and has no false unreleased entry",
+      "status": "passed"
+    },
+    {
+      "name": "Panel reader handles chapter boundaries and keyboard direction",
+      "status": "passed"
+    },
+    {
+      "name": "Full text, horizontal strip and step reading preserve position",
+      "status": "passed"
+    },
+    {
+      "name": "Unavailable chapter recovers without losing the in-memory position",
+      "status": "passed"
+    },
+    {
+      "name": "Device progress requires opt-in and can be resumed and cleared",
+      "status": "passed"
+    },
+    {
+      "name": "Corrupt or unavailable device storage keeps reading usable",
+      "status": "passed"
+    },
+    {
+      "name": "Hiding story enhancement retains the text and transcript",
+      "status": "passed"
+    },
+    {
+      "name": "Prompt layers preserve Unicode and direction without outside generation",
+      "status": "passed"
+    },
+    {
+      "name": "Prompt empty, excessive and missing-layer inputs have recovery",
+      "status": "passed"
+    },
+    {
+      "name": "Prompt input remains data rather than injected markup",
+      "status": "passed"
+    },
+    {
+      "name": "Clipboard success UI waits for API resolution; denied API selects manual text",
+      "status": "passed"
+    },
+    {
+      "name": "Editing during a pending copy cannot report the new recipe as copied",
+      "status": "passed"
+    },
+    {
+      "name": "Specimen tabs support roving focus; viewer closes to its trigger",
+      "status": "passed"
+    },
+    {
+      "name": "JavaScript-disabled story and prompt retain meaningful original content",
+      "status": "passed"
+    },
+    {
+      "name": "No uncaught script errors or outside requests",
+      "status": "passed"
+    }
+  ],
+  "accessibility": [
+    {
+      "skill": "external-story-index",
+      "width": 390,
+      "violations": []
+    },
+    {
+      "skill": "external-story-index",
+      "width": 1440,
+      "violations": []
+    },
+    {
+      "skill": "external-story-chapter",
+      "width": 390,
+      "violations": []
+    },
+    {
+      "skill": "external-story-chapter",
+      "width": 1440,
+      "violations": []
+    },
+    {
+      "skill": "external-prompt-detail",
+      "width": 390,
+      "violations": []
+    },
+    {
+      "skill": "external-prompt-detail",
+      "width": 1440,
+      "violations": []
+    }
+  ],
+  "screenshots": [
+    "research/creative_page_validation/screenshots/external-story-index-390.png",
+    "research/creative_page_validation/screenshots/external-story-index-1440.png",
+    "research/creative_page_validation/screenshots/external-story-chapter-390.png",
+    "research/creative_page_validation/screenshots/external-story-chapter-1440.png",
+    "research/creative_page_validation/screenshots/external-prompt-detail-390.png",
+    "research/creative_page_validation/screenshots/external-prompt-detail-1440.png"
+  ],
+  "errors": [],
+  "external_requests": [],
+  "environment": {
+    "platform": "win32",
+    "node": "v24.14.0",
+    "browser": "159.0.8154.6",
+    "viewport_widths": [
+      320,
+      390,
+      768,
+      1440
+    ],
+    "device_scale_factor": 1
+  },
+  "limitations": [
+    "Only original fixtures tested; not full source-site reconstruction",
+    "Clipboard API success and denial use controlled doubles; OS clipboard not validated",
+    "No model generation, production backend, physical-device or Safari/Firefox acceptance",
+    "Automated accessibility is not full WCAG acceptance"
+  ]
+}

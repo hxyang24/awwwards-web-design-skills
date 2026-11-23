@@ -1,0 +1,239 @@
+{
+  "schema_version": "3.0",
+  "id": "external-story-chapter",
+  "skill": "awwwards-page-external-story-chapter",
+  "title": "获奖来源外站交互叙事章节",
+  "kind": "story",
+  "scope": "Awwwards-linked external inner page; specific award status requires official evidence",
+  "source_families": [
+    "external.story-chapter"
+  ],
+  "goal": "以明确顺序阅读当前章节，并能切换阅读方式、继续或退出。",
+  "regions": [
+    "章节身份",
+    "画格或场景",
+    "叙事文本",
+    "阅读进度",
+    "前后操作",
+    "文字替代与退出"
+  ],
+  "workflow": [
+    "为横向画格或空间叙事提供明确阅读顺序、当前位置和与手势等价的键盘入口。",
+    "先让正文、章节边界和退出入口可用；加载、音画失败和减少动画保持文字路径。",
+    "区分逐格、全文和可选图形状态；切换阅读方式不销毁用户位置。",
+    "实际测试前后画格、章节尾部、失效地址、文字替代和可选本地进度；原站声音播放未测时不得宣称已复现。"
+  ],
+  "data_fields": [
+    "chapter_id",
+    "panels",
+    "transcript",
+    "position",
+    "reading_mode",
+    "adjacent_chapters",
+    "audio_policy"
+  ],
+  "failure_recovery": "媒体不可用仍能阅读文字；越界章节有恢复入口，跳章不丢失已保存位置。",
+  "motion_contract": "不劫持整页滚动，不自动前进；声音由用户主动开启并可停止，原站素材不分发。",
+  "evidence_level": "rendered_source_observations",
+  "source_relationship_note": "An outbound work-detail association does not certify that every current inner page won an award or matches a historical version.",
+  "evidence_note": "Only recorded observations are facts. DOM structure does not prove visual composition, hidden state, source code, backend behavior or licenses. The runnable blueprint is an original recipe, not a source-site clone.",
+  "sources": [
+    {
+      "id": "63fd74a913e2ab27",
+      "url": "https://ponpon-mania.com/chapter/1",
+      "family": "external.story-chapter",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T08:43:43.407671+00:00",
+      "source_sha256": "da95aa4057e154240a3baef28dec09882773c4a9e5456223bb49076500a730a4",
+      "structure": {
+        "headings": {
+          "h1": 1
+        },
+        "forms": 0,
+        "input_types": {},
+        "navigation_regions": 0,
+        "main_regions": 1,
+        "sections": 0,
+        "articles": 0,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 1,
+        "videos": 0,
+        "roles": {},
+        "anchor_count": 6
+      }
+    },
+    {
+      "id": "50054913b237a487",
+      "url": "https://ponpon-mania.com/chapter/2",
+      "family": "external.story-chapter",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T08:43:54.896673+00:00",
+      "source_sha256": "713bafb842a5029301fa89f3b9f70a8da137f8c468f537f387a6d9bf0744a5fa",
+      "structure": {
+        "headings": {
+          "h1": 1
+        },
+        "forms": 0,
+        "input_types": {},
+        "navigation_regions": 0,
+        "main_regions": 1,
+        "sections": 0,
+        "articles": 0,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 1,
+        "videos": 0,
+        "roles": {},
+        "anchor_count": 6
+      }
+    },
+    {
+      "id": "7e7f5c1bcc39c47d",
+      "url": "https://ponpon-mania.com/chapter/3",
+      "family": "external.story-chapter",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T08:43:54.963741+00:00",
+      "source_sha256": "c3b13b153e63b6c5920ecb37bf6ee7cbe1d229320df271abe55ff62d364e174f",
+      "structure": {
+        "headings": {
+          "h1": 1
+        },
+        "forms": 0,
+        "input_types": {},
+        "navigation_regions": 0,
+        "main_regions": 1,
+        "sections": 0,
+        "articles": 0,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 1,
+        "videos": 0,
+        "roles": {},
+        "anchor_count": 5
+      }
+    }
+  ],
+  "visual_metrics": [],
+  "source_state_observations": [
+    {
+      "id": "story-chapter-wide",
+      "source_id": "63fd74a913e2ab27",
+      "url": "https://ponpon-mania.com/chapter/1",
+      "viewport": {
+        "width": 1440,
+        "height": 1000,
+        "device_scale_factor": 1
+      },
+      "observed_at": "2026-11-23T09:31:44.856Z",
+      "status": "rendered_content_observed",
+      "source_assets_redistributed": false,
+      "source_backend_validated": false,
+      "measured_geometry": {
+        "document_width": 1440,
+        "viewport_width": 1440,
+        "body_font": "\"Libre Franklin\", Helvetica, Arial, sans-serif",
+        "headings": [
+          {
+            "tag": "h1",
+            "rect": {
+              "x": 650,
+              "y": 12,
+              "width": 140,
+              "height": 69,
+              "font_family": "\"Libre Franklin\", Helvetica, Arial, sans-serif",
+              "font_size": "12px",
+              "line_height": "normal",
+              "font_weight": "700",
+              "color": "rgb(23, 23, 23)",
+              "background": "rgba(0, 0, 0, 0)"
+            }
+          }
+        ]
+      },
+      "actions": [
+        {
+          "role": "button",
+          "name": "Decline",
+          "action": "click",
+          "status": "acted_and_observed",
+          "observable_state_changed": false,
+          "local_preview_text_present": false,
+          "reason": null,
+          "selected_tabs_after": []
+        },
+        {
+          "role": "link",
+          "name": "chapters",
+          "action": "click",
+          "status": "acted_and_observed",
+          "observable_state_changed": true,
+          "local_preview_text_present": false,
+          "reason": null,
+          "selected_tabs_after": []
+        }
+      ],
+      "private_screenshot_sha256": "70269d0b39ce16132eb1f6e5a5dcfacb069b68c7487244b36fa1ae0a78b4e3ed",
+      "review_note": "At the 20-second observation, original chapter artwork/index content was visible. The earlier 3.5-second captures were still a loading screen. Audio playback, canvas gestures and all normal states were not validated."
+    },
+    {
+      "id": "story-initial-loading-1440",
+      "source_id": "63fd74a913e2ab27",
+      "url": "https://ponpon-mania.com/chapter/1",
+      "viewport": {
+        "width": 1440,
+        "height": 1000,
+        "device_scale_factor": 1
+      },
+      "observed_at": "2026-11-23T09:29:12.857Z",
+      "status": "loading_incomplete",
+      "source_assets_redistributed": false,
+      "private_screenshot_sha256": "d041aea34ab4426f9cca2f8a3b46fef86ef4f52340c5b8590445d80f3f2a57d2",
+      "actions": [],
+      "review_note": "Visual inspection showed the preloader. DOM links behind an overlay do not establish that the reading interface was ready."
+    },
+    {
+      "id": "story-initial-loading-390",
+      "source_id": "63fd74a913e2ab27",
+      "url": "https://ponpon-mania.com/chapter/1",
+      "viewport": {
+        "width": 390,
+        "height": 1000,
+        "device_scale_factor": 1
+      },
+      "observed_at": "2026-11-23T09:29:18.851Z",
+      "status": "loading_incomplete",
+      "source_assets_redistributed": false,
+      "private_screenshot_sha256": "81bc97209b06ded74a7c464da2c63b9867b9c27243b4c0865ce9c949de8de16b",
+      "actions": [],
+      "review_note": "Visual inspection showed the preloader. DOM links behind an overlay do not establish that the reading interface was ready."
+    }
+  ],
+  "source_coverage": "observed_examples",
+  "original_blueprint": true,
+  "business_mode": "local_preview",
+  "states": [
+    "default",
+    "loading",
+    "empty",
+    "error",
+    "success_preview",
+    "disabled",
+    "keyboard_focus",
+    "reduced_motion",
+    "narrow_view"
+  ],
+  "acceptance": [
+    "以明确顺序阅读当前章节，并能切换阅读方式、继续或退出。",
+    "媒体不可用仍能阅读文字；越界章节有恢复入口，跳章不丢失已保存位置。",
+    "不劫持整页滚动，不自动前进；声音由用户主动开启并可停止，原站素材不分发。",
+    "320、390、768、1440 宽度不出现整页横溢出；必要表格在独立区域滚动。",
+    "键盘可进入、操作、关闭对话框并返回触发点；错误不只靠颜色。",
+    "本地预览不得暗示真实支付、投稿、消息、账户或预约已生效。"
+  ],
+  "limitations": [
+    "Source interaction audit is not automatically performed",
+    "Source assets are not bundled",
+    "Real backend, production and physical-device acceptance are not included"
+  ]
+}

@@ -4,7 +4,7 @@
   "skill": "awwwards-page-external-article",
   "title": "获奖外站日志与文章内页",
   "kind": "article",
-  "scope": "awarded external website inner page",
+  "scope": "Awwwards-linked external inner page; specific award status requires official evidence",
   "source_families": [
     "external.article"
   ],
@@ -35,6 +35,7 @@
   "failure_recovery": "图片或嵌入失效时保留说明；不存在的文章有回到列表的入口。",
   "motion_contract": "动效不使文本消失；支持缩放与减少动画。",
   "evidence_level": "http_dom",
+  "source_relationship_note": "An outbound work-detail association does not certify that every current inner page won an award or matches a historical version.",
   "evidence_note": "Only recorded observations are facts. DOM structure does not prove visual composition, hidden state, source code, backend behavior or licenses. The runnable blueprint is an original recipe, not a source-site clone.",
   "sources": [
     {
@@ -237,6 +238,7 @@
     }
   ],
   "visual_metrics": [],
+  "source_state_observations": [],
   "source_coverage": "observed_examples",
   "original_blueprint": true,
   "business_mode": "local_preview",

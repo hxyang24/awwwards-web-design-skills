@@ -4,7 +4,7 @@
   "skill": "awwwards-page-external-product",
   "title": "获奖外站产品与商店内页",
   "kind": "product",
-  "scope": "awarded external website inner page",
+  "scope": "Awwwards-linked external inner page; specific award status requires official evidence",
   "source_families": [
     "external.product"
   ],
@@ -36,6 +36,7 @@
   "failure_recovery": "缺货、价格改变和支付失败均可恢复；不可伪造购买。",
   "motion_contract": "3D 预览是增强，规格与购买条件保留在 DOM。",
   "evidence_level": "http_dom",
+  "source_relationship_note": "An outbound work-detail association does not certify that every current inner page won an award or matches a historical version.",
   "evidence_note": "Only recorded observations are facts. DOM structure does not prove visual composition, hidden state, source code, backend behavior or licenses. The runnable blueprint is an original recipe, not a source-site clone.",
   "sources": [
     {
@@ -76,6 +77,86 @@
           "status": 1
         },
         "anchor_count": 173
+      }
+    },
+    {
+      "id": "f9ab3750ac6d91e9",
+      "url": "https://acmecups.nz/collections?page=2",
+      "family": "external.product",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T09:34:05.987624+00:00",
+      "source_sha256": "0b047ad0c7c6f88469ed73be73f812dc65185c43a4d5267772de827b14742e74",
+      "structure": {
+        "headings": {
+          "h1": 2,
+          "h4": 2,
+          "h6": 2,
+          "h5": 2,
+          "h3": 2
+        },
+        "forms": 8,
+        "input_types": {
+          "hidden": 20,
+          "text": 5,
+          "email": 2,
+          "number": 1
+        },
+        "navigation_regions": 0,
+        "main_regions": 1,
+        "sections": 0,
+        "articles": 0,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 0,
+        "roles": {
+          "main": 1,
+          "navigation": 1,
+          "list": 1,
+          "link": 1,
+          "status": 1
+        },
+        "anchor_count": 173
+      }
+    },
+    {
+      "id": "9a32cd44e2282aaa",
+      "url": "https://acmecups.nz/collections?page=3",
+      "family": "external.product",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T09:34:06.160014+00:00",
+      "source_sha256": "532cea7154b2da760796457fbc09f3585cae3b68afb494724d9365578e1cc344",
+      "structure": {
+        "headings": {
+          "h1": 2,
+          "h4": 2,
+          "h6": 2,
+          "h5": 2,
+          "h3": 2
+        },
+        "forms": 8,
+        "input_types": {
+          "hidden": 20,
+          "text": 5,
+          "email": 2,
+          "number": 1
+        },
+        "navigation_regions": 0,
+        "main_regions": 1,
+        "sections": 0,
+        "articles": 0,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 0,
+        "roles": {
+          "main": 1,
+          "navigation": 1,
+          "list": 1,
+          "link": 1,
+          "status": 1
+        },
+        "anchor_count": 170
       }
     },
     {
@@ -152,83 +233,10 @@
         "roles": {},
         "anchor_count": 108
       }
-    },
-    {
-      "id": "5ec70b84e095774e",
-      "url": "https://adsb.co.kr/collections",
-      "family": "external.product",
-      "inspection_level": "http_dom",
-      "observed_at": "2026-11-23T08:49:36.226426+00:00",
-      "source_sha256": "43d188adf646bdb7659a006e9c5675af0d700683be3f3cdf64ebb34364228d85",
-      "structure": {
-        "headings": {
-          "h1": 2,
-          "h4": 122
-        },
-        "forms": 4,
-        "input_types": {
-          "text": 2,
-          "hidden": 7,
-          "email": 1
-        },
-        "navigation_regions": 1,
-        "main_regions": 1,
-        "sections": 1,
-        "articles": 0,
-        "tables": 0,
-        "dialogs": 0,
-        "canvases": 0,
-        "videos": 0,
-        "roles": {
-          "dialog": 1
-        },
-        "anchor_count": 459
-      }
-    },
-    {
-      "id": "41e5da43e1cd97ff",
-      "url": "https://almadalabel.com/collections/autumn-winter-26",
-      "family": "external.product",
-      "inspection_level": "http_dom",
-      "observed_at": "2026-11-23T09:09:50.089259+00:00",
-      "source_sha256": "ab33129e36240091157a25734daac7dd2e7db97a354ba05e18c1c1dc933e2141",
-      "structure": {
-        "headings": {
-          "h5": 2,
-          "h2": 4,
-          "h3": 4
-        },
-        "forms": 3,
-        "input_types": {
-          "email": 2,
-          "checkbox": 1,
-          "search": 2,
-          "hidden": 14
-        },
-        "navigation_regions": 2,
-        "main_regions": 1,
-        "sections": 1,
-        "articles": 1,
-        "tables": 0,
-        "dialogs": 0,
-        "canvases": 0,
-        "videos": 3,
-        "roles": {
-          "dialog": 2,
-          "list": 11,
-          "status": 3,
-          "listitem": 1,
-          "main": 1,
-          "search": 1,
-          "listbox": 1,
-          "option": 3,
-          "alert": 1
-        },
-        "anchor_count": 438
-      }
     }
   ],
   "visual_metrics": [],
+  "source_state_observations": [],
   "source_coverage": "observed_examples",
   "original_blueprint": true,
   "business_mode": "local_preview",
