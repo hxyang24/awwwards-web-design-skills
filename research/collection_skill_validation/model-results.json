@@ -1,0 +1,82 @@
+{
+  "recorded_at": "2026-11-23T14:27:28.825Z",
+  "status": "passed",
+  "checks": [
+    {
+      "name": "Full catalog search reaches description beyond the first loaded page",
+      "status": "passed"
+    },
+    {
+      "name": "Category OR and cross-dimension AND produce the intended identities",
+      "status": "passed"
+    },
+    {
+      "name": "Facet counts exclude their own dimension and respect the others",
+      "status": "passed"
+    },
+    {
+      "name": "Unknown price is distinct from zero and remains last in both price orders",
+      "status": "passed"
+    },
+    {
+      "name": "Unknown availability remains distinct from unavailable",
+      "status": "passed"
+    },
+    {
+      "name": "Newest order uses valid dates and leaves the unknown date last",
+      "status": "passed"
+    },
+    {
+      "name": "Paging is complete stable and duplicate-free",
+      "status": "passed"
+    },
+    {
+      "name": "Cursor is rejected for a changed search or facet selection",
+      "status": "passed"
+    },
+    {
+      "name": "Content edits invalidate old cursors even when declared version is unchanged",
+      "status": "passed"
+    },
+    {
+      "name": "Expanded catalog pages beyond the original eighteen without a fixed cap",
+      "status": "passed"
+    },
+    {
+      "name": "Malformed oversized and out-of-range cursor and page inputs fail explicitly",
+      "status": "passed"
+    },
+    {
+      "name": "Search is normalized Unicode text and not an executable expression",
+      "status": "passed"
+    },
+    {
+      "name": "URL roundtrip retains filters ordering expanded position and reading identity",
+      "status": "passed"
+    },
+    {
+      "name": "Invalid link filters have a problem state rather than a fake empty result",
+      "status": "passed"
+    },
+    {
+      "name": "Malformed identities price styles dates duplicates and stock values are rejected",
+      "status": "passed"
+    },
+    {
+      "name": "Catalog size is bounded and parsing does not retain caller-owned records",
+      "status": "passed"
+    },
+    {
+      "name": "Aborted async query never returns stale results",
+      "status": "passed"
+    },
+    {
+      "name": "Failed query can retry while a true empty result remains a confirmed zero",
+      "status": "passed"
+    }
+  ],
+  "limitations": [
+    "Original fictional catalog and local adapter; no real store stock, commerce or large-catalog performance acceptance",
+    "Client continuation token is a demo cursor, not an authorization token"
+  ]
+}

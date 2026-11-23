@@ -1,5 +1,5 @@
 {
-  "recorded_at": "2026-11-23T13:34:41.204833+00:00",
+  "recorded_at": "2026-11-23T14:26:31.888354+00:00",
   "status": "in_progress",
   "recorded_sources": 6408,
   "states": {
@@ -12,9 +12,9 @@
     "external.other": 187,
     "main.other": 4
   },
-  "contract_reference_sources": 208,
-  "sources_with_recorded_view_or_state_evidence": 20,
-  "dom_signature_variant_candidates": 1464,
+  "contract_reference_sources": 214,
+  "sources_with_recorded_view_or_state_evidence": 21,
+  "dom_signature_variant_candidates": 1474,
   "all_pages_completed": false,
   "limitations": [
     "A family match is a navigation aid, not completed individual-page analysis",

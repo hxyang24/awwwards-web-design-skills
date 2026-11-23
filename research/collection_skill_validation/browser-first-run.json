@@ -1,0 +1,207 @@
+{
+  "recorded_at": "2026-11-23T14:21:48.703Z",
+  "status": "failed",
+  "checks": [
+    {
+      "name": "Collection layout at 320",
+      "status": "passed"
+    },
+    {
+      "name": "Collection layout at 390",
+      "status": "passed"
+    },
+    {
+      "name": "Collection layout at 768",
+      "status": "passed"
+    },
+    {
+      "name": "Collection layout at 1440",
+      "status": "passed"
+    },
+    {
+      "name": "Collection selected accessibility rules at 390",
+      "status": "failed",
+      "error": "{\"tag\":\"default-390\",\"violations\":[{\"id\":\"aria-prohibited-attr\",\"nodes\":[[\"#active-filters\"]]}]}\n\nexpect(received).toHaveLength(expected)\n\nExpected length: 0\nReceived length: 1\nReceived array:  [{\"description\": \"Ensure ARIA attributes are not prohibited for an element's role\", \"help\": \"Elements must only use permitted ARIA attributes\", \"helpUrl\": \"https://dequeuniversity.com/rules/axe/4.14/aria-prohibited-attr?application=playwright\", \"id\": \"aria-prohibited-attr\", \"impact\": \"serious\", \"nodes\": [{\"all\": [], \"any\": [], \"failureSummary\": \"Fix all of the following:\n  aria-label attribute cannot be used on \\\"div\\\" elements with no valid role attribute.\", \"html\": \"<div id=\\\"active-filters\\\" class=\\\"chips\\\" aria-label=\\\"Confirmed filters\\\"></div>\", \"impact\": \"serious\", \"none\": [{\"data\": {\"messageKey\": \"noRoleSingular\", \"nodeName\": \"div\", \"prohibited\": [\"aria-label\"], \"role\": null}, \"id\": \"aria-prohibited-attr\", \"impact\": \"serious\", \"message\": \"aria-label attribute cannot be used on \\\"div\\\" elements with no valid role attribute.\", \"relatedNodes\": []}], \"target\": [\"#active-filters\"]}], \"tags\": [\"cat.aria\", \"wcag2a\", \"wcag412\", \"EN-301-549\", \"EN-9.4.1.2\", \"RGAAv4\", \"RGAA-7.1.1\"]}]"
+    },
+    {
+      "name": "Collection selected accessibility rules at 1440",
+      "status": "failed",
+      "error": "{\"tag\":\"default-1440\",\"violations\":[{\"id\":\"aria-prohibited-attr\",\"nodes\":[[\"#active-filters\"]]}]}\n\nexpect(received).toHaveLength(expected)\n\nExpected length: 0\nReceived length: 1\nReceived array:  [{\"description\": \"Ensure ARIA attributes are not prohibited for an element's role\", \"help\": \"Elements must only use permitted ARIA attributes\", \"helpUrl\": \"https://dequeuniversity.com/rules/axe/4.14/aria-prohibited-attr?application=playwright\", \"id\": \"aria-prohibited-attr\", \"impact\": \"serious\", \"nodes\": [{\"all\": [], \"any\": [], \"failureSummary\": \"Fix all of the following:\n  aria-label attribute cannot be used on \\\"div\\\" elements with no valid role attribute.\", \"html\": \"<div id=\\\"active-filters\\\" class=\\\"chips\\\" aria-label=\\\"Confirmed filters\\\"></div>\", \"impact\": \"serious\", \"none\": [{\"data\": {\"messageKey\": \"noRoleSingular\", \"nodeName\": \"div\", \"prohibited\": [\"aria-label\"], \"role\": null}, \"id\": \"aria-prohibited-attr\", \"impact\": \"serious\", \"message\": \"aria-label attribute cannot be used on \\\"div\\\" elements with no valid role attribute.\", \"relatedNodes\": []}], \"target\": [\"#active-filters\"]}], \"tags\": [\"cat.aria\", \"wcag2a\", \"wcag412\", \"EN-301-549\", \"EN-9.4.1.2\", \"RGAAv4\", \"RGAA-7.1.1\"]}]"
+    },
+    {
+      "name": "Live filters update before drawer closes and remain after reopening at 390",
+      "status": "passed"
+    },
+    {
+      "name": "Live filters update before drawer closes and remain after reopening at 1440",
+      "status": "passed"
+    },
+    {
+      "name": "Facet OR AND counts and confirmed chip removal stay consistent",
+      "status": "passed"
+    },
+    {
+      "name": "Native checkbox and radio choices work from the keyboard",
+      "status": "passed"
+    },
+    {
+      "name": "Search covers full descriptions beyond the loaded page",
+      "status": "passed"
+    },
+    {
+      "name": "Query markup remains literal text and a confirmed empty state is recoverable",
+      "status": "passed"
+    },
+    {
+      "name": "Price sorts retain unknown values at the end in either direction",
+      "status": "passed"
+    },
+    {
+      "name": "Load more retains original nodes supports a jump and ends without duplicates",
+      "status": "passed"
+    },
+    {
+      "name": "Load-more failure preserves cards and retries the same cursor",
+      "status": "passed"
+    },
+    {
+      "name": "Failed live filter keeps previous URL cards and confirmed count",
+      "status": "passed"
+    },
+    {
+      "name": "Retry preserves intended filter without converting failure into zero",
+      "status": "passed"
+    },
+    {
+      "name": "Aborted older selection cannot replace a newer live query",
+      "status": "passed"
+    },
+    {
+      "name": "Closing while a live query is pending keeps the intended update",
+      "status": "passed"
+    },
+    {
+      "name": "Filter change cancels a pending append rather than mixing result sets",
+      "status": "passed"
+    },
+    {
+      "name": "Object reading and Back restore order expanded cards focus and scroll",
+      "status": "passed"
+    },
+    {
+      "name": "Direct object link returns to a usable filtered collection",
+      "status": "passed"
+    },
+    {
+      "name": "Native object fragment also opens its enhanced full information",
+      "status": "passed"
+    },
+    {
+      "name": "Back and Forward restore confirmed filter history without duplicate entries",
+      "status": "passed"
+    },
+    {
+      "name": "A true empty result is confirmed and can clear back to all objects",
+      "status": "passed"
+    },
+    {
+      "name": "Unsupported URL filters explain fallback rather than fake an empty result",
+      "status": "passed"
+    },
+    {
+      "name": "Unknown object has a valid return path",
+      "status": "passed"
+    },
+    {
+      "name": "No JavaScript retains complete catalog details prices and native destinations",
+      "status": "passed"
+    },
+    {
+      "name": "Data failure retains full static information and a working retry",
+      "status": "passed"
+    },
+    {
+      "name": "Missing enhancement module retains all original information",
+      "status": "passed"
+    },
+    {
+      "name": "Malformed catalog never enables controls or injects markup",
+      "status": "passed"
+    },
+    {
+      "name": "Dispose cancels owned work restores static reading and preserves host actions",
+      "status": "passed"
+    },
+    {
+      "name": "Drawer selected accessibility rules",
+      "status": "passed"
+    },
+    {
+      "name": "Object information selected accessibility rules",
+      "status": "passed"
+    },
+    {
+      "name": "Empty result selected accessibility rules",
+      "status": "passed"
+    },
+    {
+      "name": "Reduced motion remains static and filtering remains usable",
+      "status": "passed"
+    },
+    {
+      "name": "No uncaught errors or outside requests in collection flows",
+      "status": "passed"
+    }
+  ],
+  "accessibility": [
+    {
+      "tag": "default-390",
+      "violations": [
+        {
+          "id": "aria-prohibited-attr",
+          "nodes": [
+            [
+              "#active-filters"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "tag": "default-1440",
+      "violations": [
+        {
+          "id": "aria-prohibited-attr",
+          "nodes": [
+            [
+              "#active-filters"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "tag": "drawer",
+      "violations": []
+    },
+    {
+      "tag": "object-info",
+      "violations": []
+    },
+    {
+      "tag": "empty",
+      "violations": []
+    }
+  ],
+  "screenshots": [
+    "research/collection_skill_validation/screenshots/collection-390.png",
+    "research/collection_skill_validation/screenshots/collection-1440.png"
+  ],
+  "uncaught_errors": [],
+  "external_requests": [],
+  "limitations": [
+    "Original fictional catalog and local async adapter; no live stock, orders or production search acceptance",
+    "Automated selected accessibility rules do not replace manual assistive-technology testing",
+    "No physical-device, Safari/Firefox, exhaustive source facets, source error states or true cross-browser BFCache acceptance"
+  ]
+}

@@ -1,8 +1,8 @@
 {
   "schema_version": "3.0",
-  "generated_at": "2026-11-23T13:34:40.607700+00:00",
+  "generated_at": "2026-11-23T14:26:31.285403+00:00",
   "core_skills_preserved": 24,
-  "page_skills": 46,
+  "page_skills": 47,
   "status": "in_progress",
   "scope": "Awwwards main pages and awarded external-site inner pages, organized into reusable task-specific skills",
   "not_claimed": [
@@ -748,6 +748,22 @@
       "evidence_level": "rendered_source_observations",
       "path": "skills/awwwards-page-external-editorial-index",
       "demo": "skills/awwwards-page-external-editorial-index/assets/",
+      "browser_validation": "See validation evidence; not inferred from generation"
+    },
+    {
+      "id": "external-collection",
+      "skill": "awwwards-page-external-collection",
+      "title": "获奖来源外站商店、商品集合与即时筛选",
+      "kind": "shop-index",
+      "runtime_variant": "business-collection",
+      "source_families": [
+        "external.collection"
+      ],
+      "source_coverage": "observed_examples",
+      "source_count": 6,
+      "evidence_level": "rendered_source_observations",
+      "path": "skills/awwwards-page-external-collection",
+      "demo": "skills/awwwards-page-external-collection/assets/",
       "browser_validation": "See validation evidence; not inferred from generation"
     }
   ]

@@ -10,6 +10,20 @@ from install_all_skills import install
 def load(path,name):
  spec=importlib.util.spec_from_file_location(name,path);m=importlib.util.module_from_spec(spec);spec.loader.exec_module(m);return m
 class PageSkills(unittest.TestCase):
+ def test_shop_collection_and_product_candidates_are_separate(self):
+  for url in ['https://example.com/shop/','https://example.com/products/','https://example.com/en/collections','https://example.com/collections/lighting?page=2','https://example.com/product-category/lamps']:
+   self.assertEqual(family(url),'external.collection')
+  for url in ['https://example.com/products/arc','https://example.com/collections/lighting/products/arc']:
+   self.assertEqual(family(url),'external.product')
+ def test_collection_static_generator_preserves_complete_original_information(self):
+  folder=R/'page_skills/business/collection';data=json.loads((folder/'catalog.json').read_text(encoding='utf-8'));markup=(folder/'index.html').read_text(encoding='utf-8')
+  for p in data['products']:
+   self.assertIn('id="object-'+p['id']+'"',markup);self.assertIn('href="#object-'+p['id']+'"',markup);self.assertIn(html.escape(p['detail']),markup);self.assertIn(html.escape(p['description']),markup)
+  renderer=load(folder/'render_static.py','collection_static_test')
+  with tempfile.TemporaryDirectory() as d:
+   temp=Path(d)
+   for name in ['index.html','catalog.json']:(temp/name).write_bytes((folder/name).read_bytes())
+   changed=json.loads((temp/'catalog.json').read_text(encoding='utf-8'));changed['products'][0]['title']='Edited <original>';changed['products'][0]['price_cents']=12345;(temp/'catalog.json').write_text(json.dumps(changed),encoding='utf-8');self.assertEqual(renderer.render(temp),18);text=(temp/'index.html').read_text(encoding='utf-8');self.assertIn('Edited &lt;original&gt;',text);self.assertIn('$123.45 USD',text)
  def test_exact_url_review_assigns_arbitrary_slug_without_generalizing(self):
   reviews=load_reviews(R)
   with (R/'research/live_pages/sources.jsonl').open(encoding='utf-8') as f:

@@ -39,11 +39,11 @@ python scripts/scaffold.py --output YOUR_EMPTY_PROJECT_DIRECTORY
 
 ## 已读取的来源
 - https://marryandbride.com/come-fly-with-me-braut-cape/（http_dom；2026-11-23T12:28:50.024570+00:00）
-- http://www.delvaux.com/en/collections（http_dom；2026-11-23T10:39:56.699707+00:00）
 - http://www.delvaux.com/en/products/accessories/brillant-charms-box-calf-black-dore（http_dom；2026-11-23T10:39:57.242692+00:00）
-- https://acmecups.nz/collections（http_dom；2026-11-23T08:47:53.086202+00:00）
-- https://acmecups.nz/collections?page=2（http_dom；2026-11-23T09:34:05.987624+00:00）
-- https://acmecups.nz/collections?page=3（http_dom；2026-11-23T09:34:06.160014+00:00）
+- https://aoiofficial.com/us/collections/1-of-1（http_dom；2026-11-23T08:49:12.864912+00:00）
+- https://aoiofficial.com/us/collections/all（http_dom；2026-11-23T08:49:12.957777+00:00）
+- https://aoiofficial.com/us/collections/cashmere（http_dom；2026-11-23T08:49:13.049441+00:00）
+- https://becore.se/pages/shop（http_dom；2026-11-23T09:29:40.622673+00:00）
 
 来源受各自版权和访问规则约束；只借鉴结构与机制，使用原创或已授权文案、图像、字体和模型。未知技术版本、隐藏状态和服务端行为不得根据截图补造。
 

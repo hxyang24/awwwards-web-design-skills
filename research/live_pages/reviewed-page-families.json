@@ -12,6 +12,17 @@
       "evidence_id": "marry-options-390",
       "rationale": "Rendered product identity, image tabs, color swatch, express option and product information disclosures. Arbitrary URL slug was previously external.other.",
       "hash_scope": "Cached HTTP metadata revision anchor; not a claim that a browser DOM hash equals this static response."
+    },
+    {
+      "url": "https://marryandbride.com/shop/",
+      "source_id": "1c38bba0ec8fd63f",
+      "source_sha256": "ecc098ad11a6bfe03d20bc5da2dc6500d28adcbda9443f1d0990a216f7911fad",
+      "family": "external.collection",
+      "reviewed_at": "2026-11-23T14:17:01.028035+00:00",
+      "evidence_file": "research/live_pages/collection-page-observations.json",
+      "evidence_id": "marry-confirmed-collection-390",
+      "rationale": "Rendered shop collection, immediate facet query, updated result count, close/reopen and ordering. Distinct task from product detail.",
+      "hash_scope": "Cached HTTP metadata anchor; not a claim that the browser DOM equals this static response hash."
     }
   ]
 }

@@ -1,0 +1,38 @@
+{
+  "recorded_at": "2026-11-23T14:28:11.707Z",
+  "status": "passed",
+  "checks": [
+    {
+      "name": "Explicit preservation permits a dependent facet and label selection",
+      "status": "passed"
+    },
+    {
+      "name": "Default isolated observation still closes a newly opened dialog",
+      "status": "passed"
+    },
+    {
+      "name": "Explicit Escape overrides preservation and records actual close",
+      "status": "passed"
+    },
+    {
+      "name": "Nested default cleanup closes only the new inner dialog",
+      "status": "passed"
+    },
+    {
+      "name": "A prevented Escape is not reported as proof of closure",
+      "status": "passed"
+    },
+    {
+      "name": "Unknown counts and opt-in preservation do not send arbitrary Escape",
+      "status": "passed"
+    },
+    {
+      "name": "Invalid preservation data is rejected before changing source state",
+      "status": "passed"
+    }
+  ],
+  "limitations": [
+    "Original local fixtures; continuous source steps must still name inspected unique controls",
+    "A decreasing visible-dialog count does not alone certify correct destination, focus or source business behavior"
+  ]
+}

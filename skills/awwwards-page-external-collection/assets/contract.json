@@ -1,0 +1,484 @@
+{
+  "schema_version": "3.0",
+  "id": "external-collection",
+  "skill": "awwwards-page-external-collection",
+  "title": "获奖来源外站商店、商品集合与即时筛选",
+  "kind": "shop-index",
+  "scope": "Awwwards-linked external inner page; specific award status requires official evidence",
+  "source_families": [
+    "external.collection"
+  ],
+  "goal": "按明确的即时筛选与完整目录查询发现商品，并可靠继续浏览、查看信息和返回。",
+  "regions": [
+    "集合身份",
+    "完整目录搜索",
+    "排序",
+    "即时筛选抽屉",
+    "当前筛选",
+    "结果与数量",
+    "渐进加载",
+    "商品信息与返回",
+    "完整静态目录"
+  ],
+  "workflow": [
+    "把商品集合与单个商品详情区分；稳定商品身份、分类、价格未知值和可用状态分别建模。",
+    "先实际观察筛选是即时查询还是明确应用，再制定地址、数量、关闭与返回规则；关闭即时筛选抽屉不会撤销已确认选择。",
+    "完整目录查询与当前已加载条目分开；分类内多选采用 OR，不同维度采用 AND，并说明各选项数量的计算口径。",
+    "失败保留已确认结果、已加载位置和重试入口；请求中的选择、已确认结果和未知数量不能混成同一状态。",
+    "商品信息入口有完整文字与稳定地址；返回恢复筛选、排序、展开位置和触发焦点，数据编辑后重新生成无脚本内容。"
+  ],
+  "data_fields": [
+    "catalog_revision",
+    "products[].id",
+    "category",
+    "price_cents_or_null",
+    "availability",
+    "query",
+    "sort",
+    "selected_facets",
+    "facet_counts",
+    "confirmed_total",
+    "cursor",
+    "shown_count",
+    "reading_origin"
+  ],
+  "failure_recovery": "查询失败不表示零结果；旧请求不得覆盖新选择，加载更多失败保留卡片与游标；无脚本和数据失败可读取全部原创商品信息。",
+  "motion_contract": "筛选结果依靠可读数量和状态传达；抽屉可键盘关闭并恢复焦点，移动重排不遮挡核心控件。",
+  "evidence_level": "rendered_source_observations",
+  "source_relationship_note": "An outbound work-detail association does not certify that every current inner page won an award or matches a historical version.",
+  "evidence_note": "Only recorded observations are facts. DOM structure does not prove visual composition, hidden state, source code, backend behavior or licenses. The runnable blueprint is an original recipe, not a source-site clone.",
+  "sources": [
+    {
+      "id": "1c38bba0ec8fd63f",
+      "url": "https://marryandbride.com/shop/",
+      "family": "external.collection",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T12:28:50.349620+00:00",
+      "source_sha256": "ecc098ad11a6bfe03d20bc5da2dc6500d28adcbda9443f1d0990a216f7911fad",
+      "structure": {
+        "headings": {
+          "h1": 1,
+          "h2": 90,
+          "h3": 12
+        },
+        "forms": 0,
+        "input_types": {
+          "radio": 21
+        },
+        "navigation_regions": 5,
+        "main_regions": 1,
+        "sections": 3,
+        "articles": 0,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 0,
+        "roles": {
+          "region": 5,
+          "button": 4,
+          "list": 2,
+          "group": 1,
+          "img": 4,
+          "presentation": 1
+        },
+        "anchor_count": 158
+      }
+    },
+    {
+      "id": "ee1ff5a8fffa40ad",
+      "url": "http://www.delvaux.com/en/collections",
+      "family": "external.collection",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T10:39:56.699707+00:00",
+      "source_sha256": "0519e41ce18c4bb0a099137a77e4fe98466ae8b041ffc5817cd6d93bc564d96f",
+      "structure": {
+        "headings": {
+          "h1": 1,
+          "h2": 13,
+          "h6": 5
+        },
+        "forms": 4,
+        "input_types": {
+          "text": 10,
+          "email": 7,
+          "password": 1,
+          "checkbox": 3,
+          "hidden": 8,
+          "tel": 2
+        },
+        "navigation_regions": 4,
+        "main_regions": 0,
+        "sections": 0,
+        "articles": 0,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 0,
+        "roles": {
+          "button": 5,
+          "combobox": 4,
+          "alert": 4,
+          "listbox": 4,
+          "option": 27
+        },
+        "anchor_count": 40
+      }
+    },
+    {
+      "id": "c5456d3dbfbe6cf9",
+      "url": "https://acmecups.nz/collections",
+      "family": "external.collection",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T08:47:53.086202+00:00",
+      "source_sha256": "da70546ac4055537cb1fcd8565ecfd5999e6d61dc24e4e50cf53d31eb074422d",
+      "structure": {
+        "headings": {
+          "h1": 2,
+          "h4": 2,
+          "h6": 2,
+          "h5": 2,
+          "h3": 2
+        },
+        "forms": 8,
+        "input_types": {
+          "hidden": 20,
+          "text": 5,
+          "email": 2,
+          "number": 1
+        },
+        "navigation_regions": 0,
+        "main_regions": 1,
+        "sections": 0,
+        "articles": 0,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 0,
+        "roles": {
+          "main": 1,
+          "navigation": 1,
+          "list": 1,
+          "link": 1,
+          "status": 1
+        },
+        "anchor_count": 173
+      }
+    },
+    {
+      "id": "f9ab3750ac6d91e9",
+      "url": "https://acmecups.nz/collections?page=2",
+      "family": "external.collection",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T09:34:05.987624+00:00",
+      "source_sha256": "0b047ad0c7c6f88469ed73be73f812dc65185c43a4d5267772de827b14742e74",
+      "structure": {
+        "headings": {
+          "h1": 2,
+          "h4": 2,
+          "h6": 2,
+          "h5": 2,
+          "h3": 2
+        },
+        "forms": 8,
+        "input_types": {
+          "hidden": 20,
+          "text": 5,
+          "email": 2,
+          "number": 1
+        },
+        "navigation_regions": 0,
+        "main_regions": 1,
+        "sections": 0,
+        "articles": 0,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 0,
+        "roles": {
+          "main": 1,
+          "navigation": 1,
+          "list": 1,
+          "link": 1,
+          "status": 1
+        },
+        "anchor_count": 173
+      }
+    },
+    {
+      "id": "9a32cd44e2282aaa",
+      "url": "https://acmecups.nz/collections?page=3",
+      "family": "external.collection",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T09:34:06.160014+00:00",
+      "source_sha256": "532cea7154b2da760796457fbc09f3585cae3b68afb494724d9365578e1cc344",
+      "structure": {
+        "headings": {
+          "h1": 2,
+          "h4": 2,
+          "h6": 2,
+          "h5": 2,
+          "h3": 2
+        },
+        "forms": 8,
+        "input_types": {
+          "hidden": 20,
+          "text": 5,
+          "email": 2,
+          "number": 1
+        },
+        "navigation_regions": 0,
+        "main_regions": 1,
+        "sections": 0,
+        "articles": 0,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 0,
+        "roles": {
+          "main": 1,
+          "navigation": 1,
+          "list": 1,
+          "link": 1,
+          "status": 1
+        },
+        "anchor_count": 170
+      }
+    },
+    {
+      "id": "4da7f8cc9bece608",
+      "url": "https://adinabuzatu.ro/collection/abc",
+      "family": "external.collection",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T08:47:18.578544+00:00",
+      "source_sha256": "df317508c0c7cc8ea04b71385cb678751d1f4b58916b997022b233ece46290e0",
+      "structure": {
+        "headings": {
+          "h1": 1
+        },
+        "forms": 0,
+        "input_types": {},
+        "navigation_regions": 2,
+        "main_regions": 1,
+        "sections": 1,
+        "articles": 0,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 0,
+        "roles": {},
+        "anchor_count": 121
+      }
+    }
+  ],
+  "visual_metrics": [],
+  "source_state_observations": [
+    {
+      "id": "marry-confirmed-collection-390",
+      "source_id": "1c38bba0ec8fd63f",
+      "url": "https://marryandbride.com/shop/",
+      "viewport": {
+        "width": 390,
+        "height": 1000,
+        "device_scale_factor": 1
+      },
+      "observed_at": "2026-11-23T14:14:04.339Z",
+      "status": "rendered_observed",
+      "official_relationship": {
+        "url": "https://www.awwwards.com/sites/marry-bride",
+        "label": "honorable_mention",
+        "award_date": "2026-08-05",
+        "verification": "Official work detail verified in the preceding product update; this current collection page is not independently certified as awarded"
+      },
+      "live_filter_selection": {
+        "observable_state_changed": true,
+        "before_reported_count": 86,
+        "after_reported_count": 50,
+        "before_visible_text_links": 88,
+        "after_visible_text_links": 52,
+        "url_after": "https://marryandbride.com/shop/?brx_vvzyzg=1",
+        "result_identities_changed": true,
+        "drawer_remained_open": true
+      },
+      "actions": [
+        {
+          "name": "Show current results closes drawer",
+          "status": "acted_and_observed",
+          "url": "https://marryandbride.com/shop/?brx_vvzyzg=1",
+          "visible_text_link_count": 52,
+          "accessible_visible_dialogs": 0,
+          "reported_result_count": 50,
+          "observable_state_changed": true
+        },
+        {
+          "name": "Reopen retains live selection",
+          "status": "acted_and_observed",
+          "url": "https://marryandbride.com/shop/?brx_vvzyzg=1",
+          "visible_text_link_count": 52,
+          "accessible_visible_dialogs": 1,
+          "reported_result_count": 50,
+          "observable_state_changed": true
+        },
+        {
+          "name": "All selection restores results",
+          "status": "acted_and_observed",
+          "url": "https://marryandbride.com/shop/",
+          "visible_text_link_count": 88,
+          "accessible_visible_dialogs": 1,
+          "reported_result_count": 86,
+          "observable_state_changed": true
+        },
+        {
+          "name": "Inspected price sort changes visible order",
+          "status": "acted_and_observed",
+          "url": "https://marryandbride.com/shop/?brx_jfouoy=_price_ASC",
+          "visible_text_link_count": 88,
+          "accessible_visible_dialogs": 1,
+          "reported_result_count": 86,
+          "observable_state_changed": true
+        }
+      ],
+      "normal_query_response_statuses": [
+        200,
+        200,
+        200
+      ],
+      "network_policy": "Anonymous GET/HEAD plus native UI requests to the observed same-origin query_result read endpoint; no hand-crafted payload, form submission, cart, purchase or messaging. Other POSTs remained blocked.",
+      "synchronization": "Waited for query response and a settled changed numeric result label; earlier fixed-delay snapshots captured stale counts and are not used as primary result evidence.",
+      "not_claimed": [
+        "Reported counts are not an exhaustive product or live-stock audit",
+        "All facets, pagination and combinations",
+        "Source empty/error, detail Back restoration or backend implementation version",
+        "Independent award or historical-version match for the current inner page"
+      ],
+      "private_source_screenshot_sha256": "e91a5df0e6e4b6595a3bf641fc1fa75becdfa359687784350ca03249ac28b69a"
+    },
+    {
+      "id": "marry-confirmed-collection-1440",
+      "source_id": "1c38bba0ec8fd63f",
+      "url": "https://marryandbride.com/shop/",
+      "viewport": {
+        "width": 1440,
+        "height": 1000,
+        "device_scale_factor": 1
+      },
+      "observed_at": "2026-11-23T14:14:32.178Z",
+      "status": "rendered_observed",
+      "official_relationship": {
+        "url": "https://www.awwwards.com/sites/marry-bride",
+        "label": "honorable_mention",
+        "award_date": "2026-08-05",
+        "verification": "Official work detail verified in the preceding product update; this current collection page is not independently certified as awarded"
+      },
+      "live_filter_selection": {
+        "observable_state_changed": true,
+        "before_reported_count": 86,
+        "after_reported_count": 50,
+        "before_visible_text_links": 88,
+        "after_visible_text_links": 52,
+        "url_after": "https://marryandbride.com/shop/?brx_vvzyzg=1",
+        "result_identities_changed": true,
+        "drawer_remained_open": true
+      },
+      "actions": [
+        {
+          "name": "Show current results closes drawer",
+          "status": "acted_and_observed",
+          "url": "https://marryandbride.com/shop/?brx_vvzyzg=1",
+          "visible_text_link_count": 52,
+          "accessible_visible_dialogs": 0,
+          "reported_result_count": 50,
+          "observable_state_changed": true
+        },
+        {
+          "name": "Reopen retains live selection",
+          "status": "acted_and_observed",
+          "url": "https://marryandbride.com/shop/?brx_vvzyzg=1",
+          "visible_text_link_count": 52,
+          "accessible_visible_dialogs": 1,
+          "reported_result_count": 50,
+          "observable_state_changed": true
+        },
+        {
+          "name": "All selection restores results",
+          "status": "acted_and_observed",
+          "url": "https://marryandbride.com/shop/",
+          "visible_text_link_count": 88,
+          "accessible_visible_dialogs": 1,
+          "reported_result_count": 86,
+          "observable_state_changed": true
+        },
+        {
+          "name": "Inspected price sort changes visible order",
+          "status": "acted_and_observed",
+          "url": "https://marryandbride.com/shop/?brx_jfouoy=_price_ASC",
+          "visible_text_link_count": 88,
+          "accessible_visible_dialogs": 1,
+          "reported_result_count": 86,
+          "observable_state_changed": true
+        }
+      ],
+      "normal_query_response_statuses": [
+        200,
+        200,
+        200
+      ],
+      "network_policy": "Anonymous GET/HEAD plus native UI requests to the observed same-origin query_result read endpoint; no hand-crafted payload, form submission, cart, purchase or messaging. Other POSTs remained blocked.",
+      "synchronization": "Waited for query response and a settled changed numeric result label; earlier fixed-delay snapshots captured stale counts and are not used as primary result evidence.",
+      "not_claimed": [
+        "Reported counts are not an exhaustive product or live-stock audit",
+        "All facets, pagination and combinations",
+        "Source empty/error, detail Back restoration or backend implementation version",
+        "Independent award or historical-version match for the current inner page"
+      ],
+      "private_source_screenshot_sha256": "c7ea473bb95775f967efa72b79e4cd4f09460938e8e4b98896d255a98661c1d7"
+    }
+  ],
+  "source_coverage": "observed_examples",
+  "original_blueprint": true,
+  "business_mode": "local_preview",
+  "states": [
+    "default",
+    "loading",
+    "empty",
+    "error",
+    "success_preview",
+    "disabled",
+    "keyboard_focus",
+    "reduced_motion",
+    "narrow_view"
+  ],
+  "acceptance": [
+    "按明确的即时筛选与完整目录查询发现商品，并可靠继续浏览、查看信息和返回。",
+    "查询失败不表示零结果；旧请求不得覆盖新选择，加载更多失败保留卡片与游标；无脚本和数据失败可读取全部原创商品信息。",
+    "筛选结果依靠可读数量和状态传达；抽屉可键盘关闭并恢复焦点，移动重排不遮挡核心控件。",
+    "320、390、768、1440 宽度不出现整页横溢出；必要表格在独立区域滚动。",
+    "键盘可进入、操作、关闭对话框并返回触发点；错误不只靠颜色。",
+    "本地预览不得暗示真实支付、投稿、消息、账户或预约已生效。",
+    "即时筛选不等待关闭才更新；Esc/关闭保留已确认选择，显示结果后有明确焦点落点。",
+    "数量来自完整查询；失败不可冒充空结果，待定选择与已确认结果有可读区分。",
+    "同类多选 OR、维度之间 AND；选项数量口径明确，过期响应不能覆盖较新筛选。",
+    "加载更多保留卡片与游标；返回商品列表恢复查询、排序、展开位置与触发焦点。",
+    "无脚本与数据失败保留全部原创商品信息；价格未知不显示为零，原站资产与真实库存不随包交付。"
+  ],
+  "limitations": [
+    "Source interaction audit is not automatically performed",
+    "Source assets are not bundled",
+    "Real backend, production and physical-device acceptance are not included"
+  ],
+  "collection_contract": {
+    "implementation": "Eighteen original fictional objects with CSS illustrations, complete static descriptions and local asynchronous queries",
+    "filter_timing": "Live: selection triggers query while drawer remains open; Show objects closes without discarding confirmed filters",
+    "query_scope": "Full original catalog, not just currently loaded cards; OR within category, AND across dimensions",
+    "facet_counts": "Each dimension excludes its own selection while respecting search and other dimensions",
+    "confirmed_state": "URL and counts represent confirmed results; failure preserves previous confirmed cards and offers retry or restore",
+    "cursor": "Bound to catalog content revision and normalized query; not an authorization token",
+    "unknown_values": "Unknown price stays null and sorts after known prices in both directions; availability unknown is distinct from unavailable",
+    "reading_return": "Restore query, sort, shown position, origin focus and scroll",
+    "static_editing": "After catalog.json edits, run python render_static.py in the exported template and repeat validation",
+    "source_boundaries": [
+      "Reported source counts are not a full stock audit",
+      "Normal query-result read POST was permitted only for native anonymous filter UI; other POSTs remained blocked",
+      "Source pagination, exhaustive combinations and purchase states untested"
+    ]
+  }
+}

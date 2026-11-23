@@ -22,6 +22,8 @@ def verify(check_seal=True):
    pairs=[('main.mjs',R/'interaction_skills/page_adapter.mjs'),('runtime.mjs',R/'interaction_skills/assets/careers/main.mjs'),('style.css',R/'interaction_skills/assets/careers/style.css')]
   elif s.get('runtime_variant')=='editorial-magazine':
    source=R/'page_skills/editorial/magazine';pairs=[(file.name,file) for file in source.iterdir() if file.is_file()]
+  elif s.get('runtime_variant')=='business-collection':
+   source=R/'page_skills/business/collection';pairs=[(file.name,file) for file in source.iterdir() if file.is_file()]
   elif s.get('runtime_variant')=='business-product':
    source=R/'page_skills/business/product';pairs=[(file.name,file) for file in source.iterdir() if file.is_file()]
   elif s.get('runtime_variant')=='business-pricing':

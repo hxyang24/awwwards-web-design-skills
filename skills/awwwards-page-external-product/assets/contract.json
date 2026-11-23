@@ -80,46 +80,6 @@
       }
     },
     {
-      "id": "ee1ff5a8fffa40ad",
-      "url": "http://www.delvaux.com/en/collections",
-      "family": "external.product",
-      "inspection_level": "http_dom",
-      "observed_at": "2026-11-23T10:39:56.699707+00:00",
-      "source_sha256": "0519e41ce18c4bb0a099137a77e4fe98466ae8b041ffc5817cd6d93bc564d96f",
-      "structure": {
-        "headings": {
-          "h1": 1,
-          "h2": 13,
-          "h6": 5
-        },
-        "forms": 4,
-        "input_types": {
-          "text": 10,
-          "email": 7,
-          "password": 1,
-          "checkbox": 3,
-          "hidden": 8,
-          "tel": 2
-        },
-        "navigation_regions": 4,
-        "main_regions": 0,
-        "sections": 0,
-        "articles": 0,
-        "tables": 0,
-        "dialogs": 0,
-        "canvases": 0,
-        "videos": 0,
-        "roles": {
-          "button": 5,
-          "combobox": 4,
-          "alert": 4,
-          "listbox": 4,
-          "option": 27
-        },
-        "anchor_count": 40
-      }
-    },
-    {
       "id": "aad6872ee0de11a6",
       "url": "http://www.delvaux.com/en/products/accessories/brillant-charms-box-calf-black-dore",
       "family": "external.product",
@@ -163,123 +123,144 @@
       }
     },
     {
-      "id": "c5456d3dbfbe6cf9",
-      "url": "https://acmecups.nz/collections",
+      "id": "67ffb22fe1eb6e23",
+      "url": "https://aoiofficial.com/us/collections/1-of-1",
       "family": "external.product",
       "inspection_level": "http_dom",
-      "observed_at": "2026-11-23T08:47:53.086202+00:00",
-      "source_sha256": "da70546ac4055537cb1fcd8565ecfd5999e6d61dc24e4e50cf53d31eb074422d",
+      "observed_at": "2026-11-23T08:49:12.864912+00:00",
+      "source_sha256": "1c935a9822e42dd159162efcc811e1bc7266f004445bb9e7f0b90b19cb0c0d19",
       "structure": {
         "headings": {
-          "h1": 2,
-          "h4": 2,
-          "h6": 2,
-          "h5": 2,
-          "h3": 2
+          "h1": 1,
+          "h3": 4
         },
-        "forms": 8,
+        "forms": 0,
         "input_types": {
-          "hidden": 20,
-          "text": 5,
-          "email": 2,
-          "number": 1
+          "checkbox": 6
         },
-        "navigation_regions": 0,
+        "navigation_regions": 2,
         "main_regions": 1,
-        "sections": 0,
+        "sections": 1,
         "articles": 0,
         "tables": 0,
         "dialogs": 0,
         "canvases": 0,
         "videos": 0,
         "roles": {
-          "main": 1,
-          "navigation": 1,
-          "list": 1,
-          "link": 1,
-          "status": 1
+          "combobox": 1,
+          "button": 6,
+          "checkbox": 6,
+          "region": 12,
+          "group": 24
         },
-        "anchor_count": 173
+        "anchor_count": 57
       }
     },
     {
-      "id": "f9ab3750ac6d91e9",
-      "url": "https://acmecups.nz/collections?page=2",
+      "id": "a8e99bc272787e8a",
+      "url": "https://aoiofficial.com/us/collections/all",
       "family": "external.product",
       "inspection_level": "http_dom",
-      "observed_at": "2026-11-23T09:34:05.987624+00:00",
-      "source_sha256": "0b047ad0c7c6f88469ed73be73f812dc65185c43a4d5267772de827b14742e74",
+      "observed_at": "2026-11-23T08:49:12.957777+00:00",
+      "source_sha256": "4b8f28589e095a284af93f6cb87b115c86373c973190ee61627dad4e873d736b",
       "structure": {
         "headings": {
-          "h1": 2,
-          "h4": 2,
-          "h6": 2,
-          "h5": 2,
-          "h3": 2
+          "h1": 1,
+          "h3": 5
         },
-        "forms": 8,
+        "forms": 0,
         "input_types": {
-          "hidden": 20,
-          "text": 5,
-          "email": 2,
-          "number": 1
+          "checkbox": 36
         },
-        "navigation_regions": 0,
+        "navigation_regions": 2,
         "main_regions": 1,
-        "sections": 0,
+        "sections": 1,
         "articles": 0,
         "tables": 0,
         "dialogs": 0,
         "canvases": 0,
         "videos": 0,
         "roles": {
-          "main": 1,
-          "navigation": 1,
-          "list": 1,
-          "link": 1,
-          "status": 1
+          "combobox": 1,
+          "button": 36,
+          "checkbox": 36,
+          "region": 12,
+          "group": 48
         },
-        "anchor_count": 173
+        "anchor_count": 57
       }
     },
     {
-      "id": "9a32cd44e2282aaa",
-      "url": "https://acmecups.nz/collections?page=3",
+      "id": "d34e64b419c66402",
+      "url": "https://aoiofficial.com/us/collections/cashmere",
       "family": "external.product",
       "inspection_level": "http_dom",
-      "observed_at": "2026-11-23T09:34:06.160014+00:00",
-      "source_sha256": "532cea7154b2da760796457fbc09f3585cae3b68afb494724d9365578e1cc344",
+      "observed_at": "2026-11-23T08:49:13.049441+00:00",
+      "source_sha256": "75c2735af9cd652657388328618855520be6131711c1e307a12b7a9a0de242fd",
       "structure": {
         "headings": {
-          "h1": 2,
-          "h4": 2,
-          "h6": 2,
-          "h5": 2,
-          "h3": 2
+          "h1": 1,
+          "h3": 5
         },
-        "forms": 8,
+        "forms": 0,
         "input_types": {
-          "hidden": 20,
-          "text": 5,
-          "email": 2,
-          "number": 1
+          "checkbox": 14
         },
-        "navigation_regions": 0,
+        "navigation_regions": 2,
         "main_regions": 1,
-        "sections": 0,
+        "sections": 1,
         "articles": 0,
         "tables": 0,
         "dialogs": 0,
         "canvases": 0,
         "videos": 0,
         "roles": {
-          "main": 1,
-          "navigation": 1,
-          "list": 1,
-          "link": 1,
-          "status": 1
+          "combobox": 1,
+          "button": 14,
+          "checkbox": 14,
+          "region": 12,
+          "group": 48
         },
-        "anchor_count": 170
+        "anchor_count": 57
+      }
+    },
+    {
+      "id": "d52353c43010a01d",
+      "url": "https://becore.se/pages/shop",
+      "family": "external.product",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T09:29:40.622673+00:00",
+      "source_sha256": "ad14092ac95edd969ead2dc33697a831e9816806fb8cac301bd54d5305616680",
+      "structure": {
+        "headings": {
+          "h2": 3,
+          "h1": 1
+        },
+        "forms": 11,
+        "input_types": {
+          "search": 1,
+          "radio": 30,
+          "hidden": 47,
+          "email": 1
+        },
+        "navigation_regions": 3,
+        "main_regions": 1,
+        "sections": 8,
+        "articles": 0,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 0,
+        "roles": {
+          "list": 9,
+          "search": 1,
+          "region": 1,
+          "group": 1,
+          "tablist": 2,
+          "tab": 2,
+          "option": 30
+        },
+        "anchor_count": 160
       }
     }
   ],

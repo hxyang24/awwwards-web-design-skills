@@ -151,3 +151,9 @@ PAGES.append(('external-editorial-index',['external.editorial-index'],'获奖来
  ['catalog_version','featured_article','topics','articles[].id','title','summary','author','published_at_or_null','query','sort','cursor','confirmed_total','loaded_count','reading_origin'],
  '目录请求失败不能冒充零文章；加载更多失败保留已展示条目与旧游标；无效阅读地址可返回有效目录。',
  '不依赖动效传达更新；新增条目不整页重排，键盘可跳转到新条目；移动端主题换行且控件不遮挡阅读。'))
+
+PAGES.append(('external-collection',['external.collection'],'获奖来源外站商店、商品集合与即时筛选','shop-index','集合身份、完整目录搜索、排序、即时筛选抽屉、当前筛选、结果与数量、渐进加载、商品信息与返回、完整静态目录',
+ ['把商品集合与单个商品详情区分；稳定商品身份、分类、价格未知值和可用状态分别建模。','先实际观察筛选是即时查询还是明确应用，再制定地址、数量、关闭与返回规则；关闭即时筛选抽屉不会撤销已确认选择。','完整目录查询与当前已加载条目分开；分类内多选采用 OR，不同维度采用 AND，并说明各选项数量的计算口径。','失败保留已确认结果、已加载位置和重试入口；请求中的选择、已确认结果和未知数量不能混成同一状态。','商品信息入口有完整文字与稳定地址；返回恢复筛选、排序、展开位置和触发焦点，数据编辑后重新生成无脚本内容。'],
+ ['catalog_revision','products[].id','category','price_cents_or_null','availability','query','sort','selected_facets','facet_counts','confirmed_total','cursor','shown_count','reading_origin'],
+ '查询失败不表示零结果；旧请求不得覆盖新选择，加载更多失败保留卡片与游标；无脚本和数据失败可读取全部原创商品信息。',
+ '筛选结果依靠可读数量和状态传达；抽屉可键盘关闭并恢复焦点，移动重排不遮挡核心控件。'))

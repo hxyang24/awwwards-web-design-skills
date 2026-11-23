@@ -335,8 +335,8 @@
       "not_claimed": "DOM element counts do not prove visible layout, technology, state or completed skill extraction"
     },
     {
-      "id": "f38c66eff61589de",
-      "family_hint": "external.product",
+      "id": "c05ae30f4ebb3ee8",
+      "family_hint": "external.collection",
       "observed_dom_signature": {
         "forms": 4,
         "tables": 0,
@@ -354,14 +354,13 @@
           "text"
         ]
       },
-      "pages": 3,
+      "pages": 2,
       "example_source_ids": [
         "ee1ff5a8fffa40ad",
-        "90802008a575545f",
-        "db1685dea57213ca"
+        "90802008a575545f"
       ],
       "candidate_page_skills": [
-        "awwwards-page-external-product"
+        "awwwards-page-external-collection"
       ],
       "status": "requires_variant_review",
       "not_claimed": "DOM element counts do not prove visible layout, technology, state or completed skill extraction"
@@ -1200,8 +1199,8 @@
       "not_claimed": "DOM element counts do not prove visible layout, technology, state or completed skill extraction"
     },
     {
-      "id": "c3087503e389e808",
-      "family_hint": "external.product",
+      "id": "4980cdad922be9da",
+      "family_hint": "external.collection",
       "observed_dom_signature": {
         "forms": 8,
         "tables": 0,
@@ -1224,7 +1223,7 @@
         "9a32cd44e2282aaa"
       ],
       "candidate_page_skills": [
-        "awwwards-page-external-product"
+        "awwwards-page-external-collection"
       ],
       "status": "requires_variant_review",
       "not_claimed": "DOM element counts do not prove visible layout, technology, state or completed skill extraction"
@@ -1424,8 +1423,8 @@
       "not_claimed": "DOM element counts do not prove visible layout, technology, state or completed skill extraction"
     },
     {
-      "id": "e1fbd3e6054c780e",
-      "family_hint": "external.product",
+      "id": "26e483e016ba6031",
+      "family_hint": "external.collection",
       "observed_dom_signature": {
         "forms": 0,
         "tables": 0,
@@ -1436,16 +1435,16 @@
         "content_state_hint": "unclassified",
         "input_types": []
       },
-      "pages": 10,
+      "pages": 5,
       "example_source_ids": [
         "4da7f8cc9bece608",
         "8951f0ec4b7a9daf",
         "5f5c7334f19d2c5d",
         "ceb2eee1f48921df",
-        "468005110ea79407"
+        "189f0c9cf5799d16"
       ],
       "candidate_page_skills": [
-        "awwwards-page-external-product"
+        "awwwards-page-external-collection"
       ],
       "status": "requires_variant_review",
       "not_claimed": "DOM element counts do not prove visible layout, technology, state or completed skill extraction"
@@ -1530,8 +1529,8 @@
       "not_claimed": "DOM element counts do not prove visible layout, technology, state or completed skill extraction"
     },
     {
-      "id": "52aab1482260d45e",
-      "family_hint": "external.product",
+      "id": "4d2617b276e68233",
+      "family_hint": "external.collection",
       "observed_dom_signature": {
         "forms": 4,
         "tables": 0,
@@ -1551,7 +1550,7 @@
         "5ec70b84e095774e"
       ],
       "candidate_page_skills": [
-        "awwwards-page-external-product"
+        "awwwards-page-external-collection"
       ],
       "status": "requires_variant_review",
       "not_claimed": "DOM element counts do not prove visible layout, technology, state or completed skill extraction"
@@ -2170,8 +2169,8 @@
       "not_claimed": "DOM element counts do not prove visible layout, technology, state or completed skill extraction"
     },
     {
-      "id": "4a579254569266ad",
-      "family_hint": "external.product",
+      "id": "8edd5d88f28a8da6",
+      "family_hint": "external.collection",
       "observed_dom_signature": {
         "forms": 3,
         "tables": 0,
@@ -2192,14 +2191,14 @@
         "41e5da43e1cd97ff"
       ],
       "candidate_page_skills": [
-        "awwwards-page-external-product"
+        "awwwards-page-external-collection"
       ],
       "status": "requires_variant_review",
       "not_claimed": "DOM element counts do not prove visible layout, technology, state or completed skill extraction"
     },
     {
-      "id": "e2026946d53cc9f6",
-      "family_hint": "external.product",
+      "id": "670127480f11650e",
+      "family_hint": "external.collection",
       "observed_dom_signature": {
         "forms": 4,
         "tables": 0,
@@ -2221,7 +2220,7 @@
         "f05907d32887cd72"
       ],
       "candidate_page_skills": [
-        "awwwards-page-external-product"
+        "awwwards-page-external-collection"
       ],
       "status": "requires_variant_review",
       "not_claimed": "DOM element counts do not prove visible layout, technology, state or completed skill extraction"
@@ -2726,8 +2725,8 @@
       "not_claimed": "DOM element counts do not prove visible layout, technology, state or completed skill extraction"
     },
     {
-      "id": "dbb3c8578b44890b",
-      "family_hint": "external.product",
+      "id": "875b824e71154a22",
+      "family_hint": "external.collection",
       "observed_dom_signature": {
         "forms": 8,
         "tables": 0,
@@ -2747,7 +2746,7 @@
         "92f2e62efbbf41a3"
       ],
       "candidate_page_skills": [
-        "awwwards-page-external-product"
+        "awwwards-page-external-collection"
       ],
       "status": "requires_variant_review",
       "not_claimed": "DOM element counts do not prove visible layout, technology, state or completed skill extraction"
@@ -3354,8 +3353,8 @@
       "not_claimed": "DOM element counts do not prove visible layout, technology, state or completed skill extraction"
     },
     {
-      "id": "ada1a82f61bcc78f",
-      "family_hint": "external.product",
+      "id": "e599de646a8e64ba",
+      "family_hint": "external.collection",
       "observed_dom_signature": {
         "forms": 5,
         "tables": 0,
@@ -3375,14 +3374,14 @@
         "a0bb34373544083f"
       ],
       "candidate_page_skills": [
-        "awwwards-page-external-product"
+        "awwwards-page-external-collection"
       ],
       "status": "requires_variant_review",
       "not_claimed": "DOM element counts do not prove visible layout, technology, state or completed skill extraction"
     },
     {
-      "id": "d42140af67ea2b72",
-      "family_hint": "external.product",
+      "id": "5be987082ce4fe96",
+      "family_hint": "external.collection",
       "observed_dom_signature": {
         "forms": 9,
         "tables": 0,
@@ -3402,7 +3401,7 @@
         "96ef097849e700d8"
       ],
       "candidate_page_skills": [
-        "awwwards-page-external-product"
+        "awwwards-page-external-collection"
       ],
       "status": "requires_variant_review",
       "not_claimed": "DOM element counts do not prove visible layout, technology, state or completed skill extraction"
@@ -3624,8 +3623,8 @@
       "not_claimed": "DOM element counts do not prove visible layout, technology, state or completed skill extraction"
     },
     {
-      "id": "5d970f9c6bb304f0",
-      "family_hint": "external.product",
+      "id": "8dd3ba4595960ee4",
+      "family_hint": "external.collection",
       "observed_dom_signature": {
         "forms": 7,
         "tables": 0,
@@ -3645,7 +3644,7 @@
         "0fc85a6b217b91d5"
       ],
       "candidate_page_skills": [
-        "awwwards-page-external-product"
+        "awwwards-page-external-collection"
       ],
       "status": "requires_variant_review",
       "not_claimed": "DOM element counts do not prove visible layout, technology, state or completed skill extraction"
@@ -4032,8 +4031,8 @@
       "not_claimed": "DOM element counts do not prove visible layout, technology, state or completed skill extraction"
     },
     {
-      "id": "c69676b5cba22ed8",
-      "family_hint": "external.product",
+      "id": "dd8db43fb2411b0a",
+      "family_hint": "external.collection",
       "observed_dom_signature": {
         "forms": 1,
         "tables": 0,
@@ -4052,7 +4051,7 @@
         "d6890939176ba0a1"
       ],
       "candidate_page_skills": [
-        "awwwards-page-external-product"
+        "awwwards-page-external-collection"
       ],
       "status": "requires_variant_review",
       "not_claimed": "DOM element counts do not prove visible layout, technology, state or completed skill extraction"
@@ -4273,8 +4272,8 @@
       "not_claimed": "DOM element counts do not prove visible layout, technology, state or completed skill extraction"
     },
     {
-      "id": "92e6395deec0e7dc",
-      "family_hint": "external.product",
+      "id": "2e9b8e4606efd0dd",
+      "family_hint": "external.collection",
       "observed_dom_signature": {
         "forms": 0,
         "tables": 0,
@@ -4285,16 +4284,16 @@
         "content_state_hint": "unclassified",
         "input_types": []
       },
-      "pages": 9,
+      "pages": 7,
       "example_source_ids": [
         "c070407cf2e08f27",
         "21ddeae6eec79d45",
         "b3ce44336ed17999",
-        "c57400488db9bf7f",
-        "1441821847946640"
+        "3b8fb381526c516d",
+        "ee53cf9b994c9f97"
       ],
       "candidate_page_skills": [
-        "awwwards-page-external-product"
+        "awwwards-page-external-collection"
       ],
       "status": "requires_variant_review",
       "not_claimed": "DOM element counts do not prove visible layout, technology, state or completed skill extraction"
@@ -4588,8 +4587,8 @@
       "not_claimed": "DOM element counts do not prove visible layout, technology, state or completed skill extraction"
     },
     {
-      "id": "d48cbfabb6bf62f5",
-      "family_hint": "external.product",
+      "id": "152d6e4f1554a227",
+      "family_hint": "external.collection",
       "observed_dom_signature": {
         "forms": 5,
         "tables": 0,
@@ -4613,7 +4612,7 @@
         "8eeeb57806cac5d5"
       ],
       "candidate_page_skills": [
-        "awwwards-page-external-product"
+        "awwwards-page-external-collection"
       ],
       "status": "requires_variant_review",
       "not_claimed": "DOM element counts do not prove visible layout, technology, state or completed skill extraction"
@@ -5245,8 +5244,8 @@
       "not_claimed": "DOM element counts do not prove visible layout, technology, state or completed skill extraction"
     },
     {
-      "id": "d9f6ec6db93e928b",
-      "family_hint": "external.product",
+      "id": "7c8663d596324866",
+      "family_hint": "external.collection",
       "observed_dom_signature": {
         "forms": 1,
         "tables": 0,
@@ -5267,7 +5266,7 @@
         "ece14636787252bf"
       ],
       "candidate_page_skills": [
-        "awwwards-page-external-product"
+        "awwwards-page-external-collection"
       ],
       "status": "requires_variant_review",
       "not_claimed": "DOM element counts do not prove visible layout, technology, state or completed skill extraction"
@@ -5285,13 +5284,12 @@
         "content_state_hint": "unclassified",
         "input_types": []
       },
-      "pages": 6,
+      "pages": 4,
       "example_source_ids": [
         "de067b2c5bda4cd5",
         "7efa74ce2899fdf4",
         "f8de49c925bb38c7",
-        "f883e88503348f06",
-        "d9ebc1dc82234060"
+        "f883e88503348f06"
       ],
       "candidate_page_skills": [
         "awwwards-page-external-product"
@@ -5690,6 +5688,33 @@
       "not_claimed": "DOM element counts do not prove visible layout, technology, state or completed skill extraction"
     },
     {
+      "id": "e1fbd3e6054c780e",
+      "family_hint": "external.product",
+      "observed_dom_signature": {
+        "forms": 0,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 0,
+        "navigation_regions": 2,
+        "content_state_hint": "unclassified",
+        "input_types": []
+      },
+      "pages": 5,
+      "example_source_ids": [
+        "468005110ea79407",
+        "e16a31fa65c5de81",
+        "9046dcd309d63440",
+        "d69af7a8b103fcb3",
+        "4211a96c98147859"
+      ],
+      "candidate_page_skills": [
+        "awwwards-page-external-product"
+      ],
+      "status": "requires_variant_review",
+      "not_claimed": "DOM element counts do not prove visible layout, technology, state or completed skill extraction"
+    },
+    {
       "id": "10aec96c29016bd9",
       "family_hint": "external.other",
       "observed_dom_signature": {
@@ -5789,8 +5814,8 @@
       "not_claimed": "DOM element counts do not prove visible layout, technology, state or completed skill extraction"
     },
     {
-      "id": "a6c97a0fa0257d3d",
-      "family_hint": "external.product",
+      "id": "0f02bbdd62d314e5",
+      "family_hint": "external.collection",
       "observed_dom_signature": {
         "forms": 5,
         "tables": 0,
@@ -5809,14 +5834,14 @@
         "4c609b56c1a2048d"
       ],
       "candidate_page_skills": [
-        "awwwards-page-external-product"
+        "awwwards-page-external-collection"
       ],
       "status": "requires_variant_review",
       "not_claimed": "DOM element counts do not prove visible layout, technology, state or completed skill extraction"
     },
     {
-      "id": "b7957b43ad93082e",
-      "family_hint": "external.product",
+      "id": "72e27d3e4d4761d8",
+      "family_hint": "external.collection",
       "observed_dom_signature": {
         "forms": 5,
         "tables": 0,
@@ -5836,7 +5861,7 @@
         "2e7c54ad350c43d0"
       ],
       "candidate_page_skills": [
-        "awwwards-page-external-product"
+        "awwwards-page-external-collection"
       ],
       "status": "requires_variant_review",
       "not_claimed": "DOM element counts do not prove visible layout, technology, state or completed skill extraction"
@@ -7546,8 +7571,8 @@
       "not_claimed": "DOM element counts do not prove visible layout, technology, state or completed skill extraction"
     },
     {
-      "id": "eac377ce36c1e7c3",
-      "family_hint": "external.product",
+      "id": "f5b980919d6d0b83",
+      "family_hint": "external.collection",
       "observed_dom_signature": {
         "forms": 1,
         "tables": 1,
@@ -7569,7 +7594,7 @@
         "c4c9032a476e2d37"
       ],
       "candidate_page_skills": [
-        "awwwards-page-external-product"
+        "awwwards-page-external-collection"
       ],
       "status": "requires_variant_review",
       "not_claimed": "DOM element counts do not prove visible layout, technology, state or completed skill extraction"
@@ -7804,14 +7829,44 @@
           "text"
         ]
       },
-      "pages": 3,
+      "pages": 2,
       "example_source_ids": [
         "782735b3f6d217f7",
-        "4f91d0a229b17574",
-        "4031bc4bc3de1c1d"
+        "4f91d0a229b17574"
       ],
       "candidate_page_skills": [
         "awwwards-page-external-product"
+      ],
+      "status": "requires_variant_review",
+      "not_claimed": "DOM element counts do not prove visible layout, technology, state or completed skill extraction"
+    },
+    {
+      "id": "bf5aab00e3774b8f",
+      "family_hint": "external.collection",
+      "observed_dom_signature": {
+        "forms": 3,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 0,
+        "navigation_regions": 2,
+        "content_state_hint": "unclassified",
+        "input_types": [
+          "checkbox",
+          "email",
+          "file",
+          "hidden",
+          "submit",
+          "tel",
+          "text"
+        ]
+      },
+      "pages": 1,
+      "example_source_ids": [
+        "4031bc4bc3de1c1d"
+      ],
+      "candidate_page_skills": [
+        "awwwards-page-external-collection"
       ],
       "status": "requires_variant_review",
       "not_claimed": "DOM element counts do not prove visible layout, technology, state or completed skill extraction"
@@ -7942,8 +7997,8 @@
       "not_claimed": "DOM element counts do not prove visible layout, technology, state or completed skill extraction"
     },
     {
-      "id": "520f35e52d9aebd9",
-      "family_hint": "external.product",
+      "id": "2acf780850ee62f8",
+      "family_hint": "external.collection",
       "observed_dom_signature": {
         "forms": 6,
         "tables": 0,
@@ -7964,14 +8019,14 @@
         "8ef81b9c15e25805"
       ],
       "candidate_page_skills": [
-        "awwwards-page-external-product"
+        "awwwards-page-external-collection"
       ],
       "status": "requires_variant_review",
       "not_claimed": "DOM element counts do not prove visible layout, technology, state or completed skill extraction"
     },
     {
-      "id": "95f2db59932ae752",
-      "family_hint": "external.product",
+      "id": "f8ca0389c8a246f2",
+      "family_hint": "external.collection",
       "observed_dom_signature": {
         "forms": 6,
         "tables": 0,
@@ -7992,7 +8047,7 @@
         "688da27851660b49"
       ],
       "candidate_page_skills": [
-        "awwwards-page-external-product"
+        "awwwards-page-external-collection"
       ],
       "status": "requires_variant_review",
       "not_claimed": "DOM element counts do not prove visible layout, technology, state or completed skill extraction"
@@ -8403,8 +8458,8 @@
       "not_claimed": "DOM element counts do not prove visible layout, technology, state or completed skill extraction"
     },
     {
-      "id": "e0807ba61148765b",
-      "family_hint": "external.product",
+      "id": "9845480ddc65ab3e",
+      "family_hint": "external.collection",
       "observed_dom_signature": {
         "forms": 35,
         "tables": 0,
@@ -8425,14 +8480,14 @@
         "076ae292dfd30d06"
       ],
       "candidate_page_skills": [
-        "awwwards-page-external-product"
+        "awwwards-page-external-collection"
       ],
       "status": "requires_variant_review",
       "not_claimed": "DOM element counts do not prove visible layout, technology, state or completed skill extraction"
     },
     {
-      "id": "657ebe2bd137ecdb",
-      "family_hint": "external.product",
+      "id": "6c1ccad77db410bf",
+      "family_hint": "external.collection",
       "observed_dom_signature": {
         "forms": 14,
         "tables": 0,
@@ -8453,7 +8508,7 @@
         "64b654052fc2d3e9"
       ],
       "candidate_page_skills": [
-        "awwwards-page-external-product"
+        "awwwards-page-external-collection"
       ],
       "status": "requires_variant_review",
       "not_claimed": "DOM element counts do not prove visible layout, technology, state or completed skill extraction"
@@ -9601,8 +9656,8 @@
       "not_claimed": "DOM element counts do not prove visible layout, technology, state or completed skill extraction"
     },
     {
-      "id": "4bfcd2fbe00163ba",
-      "family_hint": "external.product",
+      "id": "927722e4e4d5867b",
+      "family_hint": "external.collection",
       "observed_dom_signature": {
         "forms": 2,
         "tables": 0,
@@ -9622,7 +9677,7 @@
         "24d7422e4f7a0326"
       ],
       "candidate_page_skills": [
-        "awwwards-page-external-product"
+        "awwwards-page-external-collection"
       ],
       "status": "requires_variant_review",
       "not_claimed": "DOM element counts do not prove visible layout, technology, state or completed skill extraction"
@@ -9781,8 +9836,8 @@
       "not_claimed": "DOM element counts do not prove visible layout, technology, state or completed skill extraction"
     },
     {
-      "id": "3423b4dd6e3862b4",
-      "family_hint": "external.product",
+      "id": "f98f87f5ca15741b",
+      "family_hint": "external.collection",
       "observed_dom_signature": {
         "forms": 1,
         "tables": 0,
@@ -9795,15 +9850,14 @@
           "email"
         ]
       },
-      "pages": 4,
+      "pages": 3,
       "example_source_ids": [
         "ac4e94e5ced4c248",
         "8f9c87a70af1183a",
-        "6eeb0ec7b8e91901",
-        "cc4c71285aa9fb14"
+        "6eeb0ec7b8e91901"
       ],
       "candidate_page_skills": [
-        "awwwards-page-external-product"
+        "awwwards-page-external-collection"
       ],
       "status": "requires_variant_review",
       "not_claimed": "DOM element counts do not prove visible layout, technology, state or completed skill extraction"
@@ -10032,8 +10086,8 @@
       "not_claimed": "DOM element counts do not prove visible layout, technology, state or completed skill extraction"
     },
     {
-      "id": "d4f0b4f10ccf6f1e",
-      "family_hint": "external.product",
+      "id": "202b64d26d46dfab",
+      "family_hint": "external.collection",
       "observed_dom_signature": {
         "forms": 0,
         "tables": 0,
@@ -10051,7 +10105,7 @@
         "d7467cce6879eaa0"
       ],
       "candidate_page_skills": [
-        "awwwards-page-external-product"
+        "awwwards-page-external-collection"
       ],
       "status": "requires_variant_review",
       "not_claimed": "DOM element counts do not prove visible layout, technology, state or completed skill extraction"
@@ -10235,8 +10289,8 @@
       "not_claimed": "DOM element counts do not prove visible layout, technology, state or completed skill extraction"
     },
     {
-      "id": "1ae41067123f85c2",
-      "family_hint": "external.product",
+      "id": "647b7c7a0e74e37f",
+      "family_hint": "external.collection",
       "observed_dom_signature": {
         "forms": 3,
         "tables": 0,
@@ -10258,7 +10312,7 @@
         "e364e01b1bf89844"
       ],
       "candidate_page_skills": [
-        "awwwards-page-external-product"
+        "awwwards-page-external-collection"
       ],
       "status": "requires_variant_review",
       "not_claimed": "DOM element counts do not prove visible layout, technology, state or completed skill extraction"
@@ -11742,6 +11796,36 @@
       "not_claimed": "DOM element counts do not prove visible layout, technology, state or completed skill extraction"
     },
     {
+      "id": "f38c66eff61589de",
+      "family_hint": "external.product",
+      "observed_dom_signature": {
+        "forms": 4,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 0,
+        "navigation_regions": 4,
+        "content_state_hint": "unclassified",
+        "input_types": [
+          "checkbox",
+          "email",
+          "hidden",
+          "password",
+          "tel",
+          "text"
+        ]
+      },
+      "pages": 1,
+      "example_source_ids": [
+        "db1685dea57213ca"
+      ],
+      "candidate_page_skills": [
+        "awwwards-page-external-product"
+      ],
+      "status": "requires_variant_review",
+      "not_claimed": "DOM element counts do not prove visible layout, technology, state or completed skill extraction"
+    },
+    {
       "id": "d9bd40aa822f7695",
       "family_hint": "external.home",
       "observed_dom_signature": {
@@ -12042,6 +12126,31 @@
       "not_claimed": "DOM element counts do not prove visible layout, technology, state or completed skill extraction"
     },
     {
+      "id": "f6dc37393e1cfa5c",
+      "family_hint": "external.collection",
+      "observed_dom_signature": {
+        "forms": 1,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 1,
+        "navigation_regions": 1,
+        "content_state_hint": "unclassified",
+        "input_types": [
+          "email"
+        ]
+      },
+      "pages": 1,
+      "example_source_ids": [
+        "171081b56a55f33a"
+      ],
+      "candidate_page_skills": [
+        "awwwards-page-external-collection"
+      ],
+      "status": "requires_variant_review",
+      "not_claimed": "DOM element counts do not prove visible layout, technology, state or completed skill extraction"
+    },
+    {
       "id": "91c3dc8dedafd82d",
       "family_hint": "external.product",
       "observed_dom_signature": {
@@ -12056,9 +12165,8 @@
           "email"
         ]
       },
-      "pages": 3,
+      "pages": 2,
       "example_source_ids": [
-        "171081b56a55f33a",
         "9be92ad9bc47de7d",
         "9d4bc4bc70a764d7"
       ],
@@ -12404,8 +12512,8 @@
       "not_claimed": "DOM element counts do not prove visible layout, technology, state or completed skill extraction"
     },
     {
-      "id": "675f7c1ad8376070",
-      "family_hint": "external.product",
+      "id": "175c1913bc522f01",
+      "family_hint": "external.collection",
       "observed_dom_signature": {
         "forms": 5,
         "tables": 0,
@@ -12426,7 +12534,7 @@
         "dfaca1cdafc51ef7"
       ],
       "candidate_page_skills": [
-        "awwwards-page-external-product"
+        "awwwards-page-external-collection"
       ],
       "status": "requires_variant_review",
       "not_claimed": "DOM element counts do not prove visible layout, technology, state or completed skill extraction"
@@ -12571,8 +12679,8 @@
       "not_claimed": "DOM element counts do not prove visible layout, technology, state or completed skill extraction"
     },
     {
-      "id": "094f3d0b15e7cdad",
-      "family_hint": "external.product",
+      "id": "f8cab388e2423b47",
+      "family_hint": "external.collection",
       "observed_dom_signature": {
         "forms": 14,
         "tables": 0,
@@ -12594,7 +12702,7 @@
         "087f559eedd78513"
       ],
       "candidate_page_skills": [
-        "awwwards-page-external-product"
+        "awwwards-page-external-collection"
       ],
       "status": "requires_variant_review",
       "not_claimed": "DOM element counts do not prove visible layout, technology, state or completed skill extraction"
@@ -12774,8 +12882,8 @@
       "not_claimed": "DOM element counts do not prove visible layout, technology, state or completed skill extraction"
     },
     {
-      "id": "33266515b02fbf48",
-      "family_hint": "external.product",
+      "id": "ae2e9c1a04667383",
+      "family_hint": "external.collection",
       "observed_dom_signature": {
         "forms": 1,
         "tables": 0,
@@ -12795,7 +12903,7 @@
         "9338f4322e7e4a14"
       ],
       "candidate_page_skills": [
-        "awwwards-page-external-product"
+        "awwwards-page-external-collection"
       ],
       "status": "requires_variant_review",
       "not_claimed": "DOM element counts do not prove visible layout, technology, state or completed skill extraction"
@@ -13422,13 +13530,11 @@
           "text"
         ]
       },
-      "pages": 5,
+      "pages": 3,
       "example_source_ids": [
         "5c6cf47dfe882bbe",
         "b466cde2c5ffb8ed",
-        "aa243cace95c8b74",
-        "546edc578ab3e06d",
-        "9e39898713c8ecbf"
+        "aa243cace95c8b74"
       ],
       "candidate_page_skills": [
         "awwwards-page-external-product"
@@ -13462,6 +13568,34 @@
       ],
       "candidate_page_skills": [
         "awwwards-page-external-legal"
+      ],
+      "status": "requires_variant_review",
+      "not_claimed": "DOM element counts do not prove visible layout, technology, state or completed skill extraction"
+    },
+    {
+      "id": "6edfe11bb6900722",
+      "family_hint": "external.collection",
+      "observed_dom_signature": {
+        "forms": 1,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 0,
+        "navigation_regions": 0,
+        "content_state_hint": "unclassified",
+        "input_types": [
+          "email",
+          "hidden",
+          "text"
+        ]
+      },
+      "pages": 2,
+      "example_source_ids": [
+        "546edc578ab3e06d",
+        "9e39898713c8ecbf"
+      ],
+      "candidate_page_skills": [
+        "awwwards-page-external-collection"
       ],
       "status": "requires_variant_review",
       "not_claimed": "DOM element counts do not prove visible layout, technology, state or completed skill extraction"
@@ -13541,8 +13675,32 @@
       "not_claimed": "DOM element counts do not prove visible layout, technology, state or completed skill extraction"
     },
     {
-      "id": "dc14f32ad2e46ea6",
-      "family_hint": "external.product",
+      "id": "45082e504d18dfde",
+      "family_hint": "external.collection",
+      "observed_dom_signature": {
+        "forms": 0,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 0,
+        "navigation_regions": 1,
+        "content_state_hint": "unclassified",
+        "input_types": []
+      },
+      "pages": 2,
+      "example_source_ids": [
+        "d9ebc1dc82234060",
+        "25d9edf421405f67"
+      ],
+      "candidate_page_skills": [
+        "awwwards-page-external-collection"
+      ],
+      "status": "requires_variant_review",
+      "not_claimed": "DOM element counts do not prove visible layout, technology, state or completed skill extraction"
+    },
+    {
+      "id": "ca11b19b257fb27b",
+      "family_hint": "external.collection",
       "observed_dom_signature": {
         "forms": 0,
         "tables": 4,
@@ -13558,7 +13716,7 @@
         "6f2ca50879f36f7b"
       ],
       "candidate_page_skills": [
-        "awwwards-page-external-product"
+        "awwwards-page-external-collection"
       ],
       "status": "requires_variant_review",
       "not_claimed": "DOM element counts do not prove visible layout, technology, state or completed skill extraction"
@@ -13902,8 +14060,8 @@
       "not_claimed": "DOM element counts do not prove visible layout, technology, state or completed skill extraction"
     },
     {
-      "id": "8265f614c5162c55",
-      "family_hint": "external.product",
+      "id": "fa9636d278c900d3",
+      "family_hint": "external.collection",
       "observed_dom_signature": {
         "forms": 0,
         "tables": 0,
@@ -13922,7 +14080,7 @@
         "5bff55622d4a08e4"
       ],
       "candidate_page_skills": [
-        "awwwards-page-external-product"
+        "awwwards-page-external-collection"
       ],
       "status": "requires_variant_review",
       "not_claimed": "DOM element counts do not prove visible layout, technology, state or completed skill extraction"
@@ -14544,8 +14702,8 @@
       "not_claimed": "DOM element counts do not prove visible layout, technology, state or completed skill extraction"
     },
     {
-      "id": "e32be2f614594ca2",
-      "family_hint": "external.product",
+      "id": "48e4291b7ec2c440",
+      "family_hint": "external.collection",
       "observed_dom_signature": {
         "forms": 1,
         "tables": 0,
@@ -14564,7 +14722,7 @@
         "8620d20263ea4b2b"
       ],
       "candidate_page_skills": [
-        "awwwards-page-external-product"
+        "awwwards-page-external-collection"
       ],
       "status": "requires_variant_review",
       "not_claimed": "DOM element counts do not prove visible layout, technology, state or completed skill extraction"
@@ -15275,8 +15433,8 @@
       "not_claimed": "DOM element counts do not prove visible layout, technology, state or completed skill extraction"
     },
     {
-      "id": "e6ef1f755b81cd36",
-      "family_hint": "external.product",
+      "id": "97627cd1f8fbee9d",
+      "family_hint": "external.collection",
       "observed_dom_signature": {
         "forms": 3,
         "tables": 0,
@@ -15295,7 +15453,7 @@
         "96be211095b2104b"
       ],
       "candidate_page_skills": [
-        "awwwards-page-external-product"
+        "awwwards-page-external-collection"
       ],
       "status": "requires_variant_review",
       "not_claimed": "DOM element counts do not prove visible layout, technology, state or completed skill extraction"
@@ -16638,8 +16796,8 @@
       "not_claimed": "DOM element counts do not prove visible layout, technology, state or completed skill extraction"
     },
     {
-      "id": "8fa7036aa82b383d",
-      "family_hint": "external.product",
+      "id": "efd5354d45cd41ac",
+      "family_hint": "external.collection",
       "observed_dom_signature": {
         "forms": 0,
         "tables": 0,
@@ -16655,7 +16813,7 @@
         "9e2958e39302120d"
       ],
       "candidate_page_skills": [
-        "awwwards-page-external-product"
+        "awwwards-page-external-collection"
       ],
       "status": "requires_variant_review",
       "not_claimed": "DOM element counts do not prove visible layout, technology, state or completed skill extraction"
@@ -17288,8 +17446,8 @@
       "not_claimed": "DOM element counts do not prove visible layout, technology, state or completed skill extraction"
     },
     {
-      "id": "b88ef8dce74321d2",
-      "family_hint": "external.product",
+      "id": "6e1cecb79bd906ce",
+      "family_hint": "external.collection",
       "observed_dom_signature": {
         "forms": 16,
         "tables": 0,
@@ -17310,7 +17468,7 @@
         "0577c4e412cfe4c6"
       ],
       "candidate_page_skills": [
-        "awwwards-page-external-product"
+        "awwwards-page-external-collection"
       ],
       "status": "requires_variant_review",
       "not_claimed": "DOM element counts do not prove visible layout, technology, state or completed skill extraction"
@@ -19728,8 +19886,8 @@
       "not_claimed": "DOM element counts do not prove visible layout, technology, state or completed skill extraction"
     },
     {
-      "id": "fec2ff3272ea58e6",
-      "family_hint": "external.product",
+      "id": "2aee58898c110387",
+      "family_hint": "external.collection",
       "observed_dom_signature": {
         "forms": 12,
         "tables": 0,
@@ -19750,7 +19908,7 @@
         "10b297891793e439"
       ],
       "candidate_page_skills": [
-        "awwwards-page-external-product"
+        "awwwards-page-external-collection"
       ],
       "status": "requires_variant_review",
       "not_claimed": "DOM element counts do not prove visible layout, technology, state or completed skill extraction"
@@ -20369,8 +20527,8 @@
       "not_claimed": "DOM element counts do not prove visible layout, technology, state or completed skill extraction"
     },
     {
-      "id": "aeb77a381c989c49",
-      "family_hint": "external.product",
+      "id": "51a0e305fcd4a4c0",
+      "family_hint": "external.collection",
       "observed_dom_signature": {
         "forms": 0,
         "tables": 0,
@@ -20388,7 +20546,7 @@
         "1c38bba0ec8fd63f"
       ],
       "candidate_page_skills": [
-        "awwwards-page-external-product"
+        "awwwards-page-external-collection"
       ],
       "status": "requires_variant_review",
       "not_claimed": "DOM element counts do not prove visible layout, technology, state or completed skill extraction"
@@ -21785,8 +21943,8 @@
       "not_claimed": "DOM element counts do not prove visible layout, technology, state or completed skill extraction"
     },
     {
-      "id": "c8eb5dc74e024c59",
-      "family_hint": "external.product",
+      "id": "1ff8859ce46f0aad",
+      "family_hint": "external.collection",
       "observed_dom_signature": {
         "forms": 2,
         "tables": 0,
@@ -21805,7 +21963,7 @@
         "e282fca9dd2e4d9d"
       ],
       "candidate_page_skills": [
-        "awwwards-page-external-product"
+        "awwwards-page-external-collection"
       ],
       "status": "requires_variant_review",
       "not_claimed": "DOM element counts do not prove visible layout, technology, state or completed skill extraction"
@@ -22422,8 +22580,8 @@
       "not_claimed": "DOM element counts do not prove visible layout, technology, state or completed skill extraction"
     },
     {
-      "id": "4ef697d41b747961",
-      "family_hint": "external.product",
+      "id": "e9edfc14bd9523f2",
+      "family_hint": "external.collection",
       "observed_dom_signature": {
         "forms": 1,
         "tables": 0,
@@ -22441,7 +22599,7 @@
         "cd866d2f1e875fd6"
       ],
       "candidate_page_skills": [
-        "awwwards-page-external-product"
+        "awwwards-page-external-collection"
       ],
       "status": "requires_variant_review",
       "not_claimed": "DOM element counts do not prove visible layout, technology, state or completed skill extraction"
@@ -22499,8 +22657,8 @@
       "not_claimed": "DOM element counts do not prove visible layout, technology, state or completed skill extraction"
     },
     {
-      "id": "e9fdbcc3425c9cfb",
-      "family_hint": "external.product",
+      "id": "55e1842713c280de",
+      "family_hint": "external.collection",
       "observed_dom_signature": {
         "forms": 1,
         "tables": 0,
@@ -22518,7 +22676,7 @@
         "602524dda4e91d79"
       ],
       "candidate_page_skills": [
-        "awwwards-page-external-product"
+        "awwwards-page-external-collection"
       ],
       "status": "requires_variant_review",
       "not_claimed": "DOM element counts do not prove visible layout, technology, state or completed skill extraction"
@@ -22940,8 +23098,8 @@
       "not_claimed": "DOM element counts do not prove visible layout, technology, state or completed skill extraction"
     },
     {
-      "id": "455a158a026909a2",
-      "family_hint": "external.product",
+      "id": "8e8e0cbbe3ba1181",
+      "family_hint": "external.collection",
       "observed_dom_signature": {
         "forms": 14,
         "tables": 0,
@@ -22964,7 +23122,7 @@
         "dec2087abe92be83"
       ],
       "candidate_page_skills": [
-        "awwwards-page-external-product"
+        "awwwards-page-external-collection"
       ],
       "status": "requires_variant_review",
       "not_claimed": "DOM element counts do not prove visible layout, technology, state or completed skill extraction"
@@ -24710,8 +24868,8 @@
       "not_claimed": "DOM element counts do not prove visible layout, technology, state or completed skill extraction"
     },
     {
-      "id": "b9d0054317d00526",
-      "family_hint": "external.product",
+      "id": "11fd3e01e63353d5",
+      "family_hint": "external.collection",
       "observed_dom_signature": {
         "forms": 3,
         "tables": 0,
@@ -24732,14 +24890,14 @@
         "415b88881f24b534"
       ],
       "candidate_page_skills": [
-        "awwwards-page-external-product"
+        "awwwards-page-external-collection"
       ],
       "status": "requires_variant_review",
       "not_claimed": "DOM element counts do not prove visible layout, technology, state or completed skill extraction"
     },
     {
-      "id": "5f1413d96342ee03",
-      "family_hint": "external.product",
+      "id": "85a5c49a5f451acb",
+      "family_hint": "external.collection",
       "observed_dom_signature": {
         "forms": 3,
         "tables": 0,
@@ -24759,7 +24917,7 @@
         "3b11d8000df7b0f4"
       ],
       "candidate_page_skills": [
-        "awwwards-page-external-product"
+        "awwwards-page-external-collection"
       ],
       "status": "requires_variant_review",
       "not_claimed": "DOM element counts do not prove visible layout, technology, state or completed skill extraction"
@@ -25034,8 +25192,8 @@
       "not_claimed": "DOM element counts do not prove visible layout, technology, state or completed skill extraction"
     },
     {
-      "id": "674f5750dd21f426",
-      "family_hint": "external.product",
+      "id": "c7951b9ace628f7f",
+      "family_hint": "external.collection",
       "observed_dom_signature": {
         "forms": 4,
         "tables": 0,
@@ -25059,14 +25217,14 @@
         "a35ac34a29e4241d"
       ],
       "candidate_page_skills": [
-        "awwwards-page-external-product"
+        "awwwards-page-external-collection"
       ],
       "status": "requires_variant_review",
       "not_claimed": "DOM element counts do not prove visible layout, technology, state or completed skill extraction"
     },
     {
-      "id": "8e704ef569abfcaa",
-      "family_hint": "external.product",
+      "id": "d6c1bcd584bfd292",
+      "family_hint": "external.collection",
       "observed_dom_signature": {
         "forms": 4,
         "tables": 0,
@@ -25090,7 +25248,7 @@
         "b37792b832facea2"
       ],
       "candidate_page_skills": [
-        "awwwards-page-external-product"
+        "awwwards-page-external-collection"
       ],
       "status": "requires_variant_review",
       "not_claimed": "DOM element counts do not prove visible layout, technology, state or completed skill extraction"
@@ -29028,8 +29186,8 @@
       "not_claimed": "DOM element counts do not prove visible layout, technology, state or completed skill extraction"
     },
     {
-      "id": "68572ccffb13a686",
-      "family_hint": "external.product",
+      "id": "3c9d8c7a00ca1574",
+      "family_hint": "external.collection",
       "observed_dom_signature": {
         "forms": 6,
         "tables": 0,
@@ -29050,7 +29208,7 @@
         "0966526c5dff8747"
       ],
       "candidate_page_skills": [
-        "awwwards-page-external-product"
+        "awwwards-page-external-collection"
       ],
       "status": "requires_variant_review",
       "not_claimed": "DOM element counts do not prove visible layout, technology, state or completed skill extraction"
@@ -29374,6 +29532,32 @@
       "not_claimed": "DOM element counts do not prove visible layout, technology, state or completed skill extraction"
     },
     {
+      "id": "801789a19f1a6ed4",
+      "family_hint": "external.collection",
+      "observed_dom_signature": {
+        "forms": 1,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 0,
+        "navigation_regions": 1,
+        "content_state_hint": "unclassified",
+        "input_types": [
+          "email",
+          "submit"
+        ]
+      },
+      "pages": 1,
+      "example_source_ids": [
+        "4646f1f69e451a28"
+      ],
+      "candidate_page_skills": [
+        "awwwards-page-external-collection"
+      ],
+      "status": "requires_variant_review",
+      "not_claimed": "DOM element counts do not prove visible layout, technology, state or completed skill extraction"
+    },
+    {
       "id": "15f20bcad46b7ccb",
       "family_hint": "external.product",
       "observed_dom_signature": {
@@ -29389,9 +29573,8 @@
           "submit"
         ]
       },
-      "pages": 4,
+      "pages": 3,
       "example_source_ids": [
-        "4646f1f69e451a28",
         "246ba198e6b01c05",
         "4a722d80079b721b",
         "dfbc616bde766b10"
@@ -30142,6 +30325,35 @@
       "not_claimed": "DOM element counts do not prove visible layout, technology, state or completed skill extraction"
     },
     {
+      "id": "e10f4a3efe708fa4",
+      "family_hint": "external.collection",
+      "observed_dom_signature": {
+        "forms": 5,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 0,
+        "navigation_regions": 4,
+        "content_state_hint": "unclassified",
+        "input_types": [
+          "email",
+          "number",
+          "submit",
+          "tel",
+          "text"
+        ]
+      },
+      "pages": 1,
+      "example_source_ids": [
+        "a3f2acede1a2d9b4"
+      ],
+      "candidate_page_skills": [
+        "awwwards-page-external-collection"
+      ],
+      "status": "requires_variant_review",
+      "not_claimed": "DOM element counts do not prove visible layout, technology, state or completed skill extraction"
+    },
+    {
       "id": "f5d015148109a34e",
       "family_hint": "external.product",
       "observed_dom_signature": {
@@ -30160,9 +30372,8 @@
           "text"
         ]
       },
-      "pages": 2,
+      "pages": 1,
       "example_source_ids": [
-        "a3f2acede1a2d9b4",
         "3f48cc9e89566e04"
       ],
       "candidate_page_skills": [
@@ -31423,6 +31634,30 @@
       "not_claimed": "DOM element counts do not prove visible layout, technology, state or completed skill extraction"
     },
     {
+      "id": "92e6395deec0e7dc",
+      "family_hint": "external.product",
+      "observed_dom_signature": {
+        "forms": 0,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 0,
+        "navigation_regions": 0,
+        "content_state_hint": "unclassified",
+        "input_types": []
+      },
+      "pages": 2,
+      "example_source_ids": [
+        "c57400488db9bf7f",
+        "1441821847946640"
+      ],
+      "candidate_page_skills": [
+        "awwwards-page-external-product"
+      ],
+      "status": "requires_variant_review",
+      "not_claimed": "DOM element counts do not prove visible layout, technology, state or completed skill extraction"
+    },
+    {
       "id": "54e53a0b0ac591e5",
       "family_hint": "external.other",
       "observed_dom_signature": {
@@ -31528,8 +31763,8 @@
       "not_claimed": "DOM element counts do not prove visible layout, technology, state or completed skill extraction"
     },
     {
-      "id": "95df42ab14507adc",
-      "family_hint": "external.product",
+      "id": "3c5f9c93b8d0c1ca",
+      "family_hint": "external.collection",
       "observed_dom_signature": {
         "forms": 2,
         "tables": 0,
@@ -31549,7 +31784,7 @@
         "36a88f270b41bcb2"
       ],
       "candidate_page_skills": [
-        "awwwards-page-external-product"
+        "awwwards-page-external-collection"
       ],
       "status": "requires_variant_review",
       "not_claimed": "DOM element counts do not prove visible layout, technology, state or completed skill extraction"
@@ -32197,8 +32432,8 @@
       "not_claimed": "DOM element counts do not prove visible layout, technology, state or completed skill extraction"
     },
     {
-      "id": "df8b3f7335c5884f",
-      "family_hint": "external.product",
+      "id": "dddd9ed6f9db2f82",
+      "family_hint": "external.collection",
       "observed_dom_signature": {
         "forms": 10,
         "tables": 0,
@@ -32220,7 +32455,7 @@
         "f5715c659c26d8af"
       ],
       "candidate_page_skills": [
-        "awwwards-page-external-product"
+        "awwwards-page-external-collection"
       ],
       "status": "requires_variant_review",
       "not_claimed": "DOM element counts do not prove visible layout, technology, state or completed skill extraction"
@@ -32380,8 +32615,8 @@
       "not_claimed": "DOM element counts do not prove visible layout, technology, state or completed skill extraction"
     },
     {
-      "id": "92ad8e71c85844d2",
-      "family_hint": "external.product",
+      "id": "4a2a3fb2b454bde2",
+      "family_hint": "external.collection",
       "observed_dom_signature": {
         "forms": 0,
         "tables": 0,
@@ -32399,7 +32634,7 @@
         "5d9057729778a967"
       ],
       "candidate_page_skills": [
-        "awwwards-page-external-product"
+        "awwwards-page-external-collection"
       ],
       "status": "requires_variant_review",
       "not_claimed": "DOM element counts do not prove visible layout, technology, state or completed skill extraction"
@@ -32653,8 +32888,8 @@
       "not_claimed": "DOM element counts do not prove visible layout, technology, state or completed skill extraction"
     },
     {
-      "id": "70c4a46320ac0d32",
-      "family_hint": "external.product",
+      "id": "92cadd4a1d79bc49",
+      "family_hint": "external.collection",
       "observed_dom_signature": {
         "forms": 4,
         "tables": 0,
@@ -32674,7 +32909,7 @@
         "1a6c4b68ab0d6e51"
       ],
       "candidate_page_skills": [
-        "awwwards-page-external-product"
+        "awwwards-page-external-collection"
       ],
       "status": "requires_variant_review",
       "not_claimed": "DOM element counts do not prove visible layout, technology, state or completed skill extraction"
@@ -33829,8 +34064,8 @@
       "not_claimed": "DOM element counts do not prove visible layout, technology, state or completed skill extraction"
     },
     {
-      "id": "72c75554fb7c4138",
-      "family_hint": "external.product",
+      "id": "e1bf52728662b436",
+      "family_hint": "external.collection",
       "observed_dom_signature": {
         "forms": 3,
         "tables": 0,
@@ -33852,7 +34087,7 @@
         "9e64a3205a8038fa"
       ],
       "candidate_page_skills": [
-        "awwwards-page-external-product"
+        "awwwards-page-external-collection"
       ],
       "status": "requires_variant_review",
       "not_claimed": "DOM element counts do not prove visible layout, technology, state or completed skill extraction"
@@ -34009,6 +34244,31 @@
       ],
       "candidate_page_skills": [
         "awwwards-page-external-legal"
+      ],
+      "status": "requires_variant_review",
+      "not_claimed": "DOM element counts do not prove visible layout, technology, state or completed skill extraction"
+    },
+    {
+      "id": "3423b4dd6e3862b4",
+      "family_hint": "external.product",
+      "observed_dom_signature": {
+        "forms": 1,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 0,
+        "navigation_regions": 4,
+        "content_state_hint": "unclassified",
+        "input_types": [
+          "email"
+        ]
+      },
+      "pages": 1,
+      "example_source_ids": [
+        "cc4c71285aa9fb14"
+      ],
+      "candidate_page_skills": [
+        "awwwards-page-external-product"
       ],
       "status": "requires_variant_review",
       "not_claimed": "DOM element counts do not prove visible layout, technology, state or completed skill extraction"
@@ -34442,8 +34702,8 @@
       "not_claimed": "DOM element counts do not prove visible layout, technology, state or completed skill extraction"
     },
     {
-      "id": "cf5560b9a3663a6b",
-      "family_hint": "external.product",
+      "id": "3cd691604b31584f",
+      "family_hint": "external.collection",
       "observed_dom_signature": {
         "forms": 10,
         "tables": 0,
@@ -34466,7 +34726,7 @@
         "3daf9fc6c8a13b5e"
       ],
       "candidate_page_skills": [
-        "awwwards-page-external-product"
+        "awwwards-page-external-collection"
       ],
       "status": "requires_variant_review",
       "not_claimed": "DOM element counts do not prove visible layout, technology, state or completed skill extraction"
@@ -34592,8 +34852,8 @@
       "not_claimed": "DOM element counts do not prove visible layout, technology, state or completed skill extraction"
     },
     {
-      "id": "8ed6b6f5dcf67191",
-      "family_hint": "external.product",
+      "id": "5050221ef3bc6a4b",
+      "family_hint": "external.collection",
       "observed_dom_signature": {
         "forms": 10,
         "tables": 0,
@@ -34618,7 +34878,7 @@
         "87aba50834721076"
       ],
       "candidate_page_skills": [
-        "awwwards-page-external-product"
+        "awwwards-page-external-collection"
       ],
       "status": "requires_variant_review",
       "not_claimed": "DOM element counts do not prove visible layout, technology, state or completed skill extraction"
@@ -34808,8 +35068,8 @@
       "not_claimed": "DOM element counts do not prove visible layout, technology, state or completed skill extraction"
     },
     {
-      "id": "46278d9654cf1a00",
-      "family_hint": "external.product",
+      "id": "839211503bae79be",
+      "family_hint": "external.collection",
       "observed_dom_signature": {
         "forms": 5,
         "tables": 0,
@@ -34831,7 +35091,7 @@
         "d1deb31158bcc827"
       ],
       "candidate_page_skills": [
-        "awwwards-page-external-product"
+        "awwwards-page-external-collection"
       ],
       "status": "requires_variant_review",
       "not_claimed": "DOM element counts do not prove visible layout, technology, state or completed skill extraction"
@@ -34953,8 +35213,8 @@
       "not_claimed": "DOM element counts do not prove visible layout, technology, state or completed skill extraction"
     },
     {
-      "id": "8667995077fe1104",
-      "family_hint": "external.product",
+      "id": "ccc4844d9925d99e",
+      "family_hint": "external.collection",
       "observed_dom_signature": {
         "forms": 3,
         "tables": 0,
@@ -34974,7 +35234,7 @@
         "d5380a6c7c849364"
       ],
       "candidate_page_skills": [
-        "awwwards-page-external-product"
+        "awwwards-page-external-collection"
       ],
       "status": "requires_variant_review",
       "not_claimed": "DOM element counts do not prove visible layout, technology, state or completed skill extraction"
@@ -35752,8 +36012,8 @@
       "not_claimed": "DOM element counts do not prove visible layout, technology, state or completed skill extraction"
     },
     {
-      "id": "0328f7eb9b2b5e03",
-      "family_hint": "external.product",
+      "id": "4ad3647f47be6f4f",
+      "family_hint": "external.collection",
       "observed_dom_signature": {
         "forms": 1,
         "tables": 0,
@@ -35771,7 +36031,7 @@
         "ffa5c45d17825f27"
       ],
       "candidate_page_skills": [
-        "awwwards-page-external-product"
+        "awwwards-page-external-collection"
       ],
       "status": "requires_variant_review",
       "not_claimed": "DOM element counts do not prove visible layout, technology, state or completed skill extraction"
@@ -35831,8 +36091,8 @@
       "not_claimed": "DOM element counts do not prove visible layout, technology, state or completed skill extraction"
     },
     {
-      "id": "de91eb26b6438eb9",
-      "family_hint": "external.product",
+      "id": "cef2ac4118ed10f7",
+      "family_hint": "external.collection",
       "observed_dom_signature": {
         "forms": 10,
         "tables": 0,
@@ -35852,7 +36112,7 @@
         "5d68ff73a95b7dfc"
       ],
       "candidate_page_skills": [
-        "awwwards-page-external-product"
+        "awwwards-page-external-collection"
       ],
       "status": "requires_variant_review",
       "not_claimed": "DOM element counts do not prove visible layout, technology, state or completed skill extraction"
@@ -36114,8 +36374,8 @@
       "not_claimed": "DOM element counts do not prove visible layout, technology, state or completed skill extraction"
     },
     {
-      "id": "9708a2d574033e71",
-      "family_hint": "external.product",
+      "id": "ba85c109f4866978",
+      "family_hint": "external.collection",
       "observed_dom_signature": {
         "forms": 2,
         "tables": 0,
@@ -36138,7 +36398,7 @@
         "6f09c38b3e645c88"
       ],
       "candidate_page_skills": [
-        "awwwards-page-external-product"
+        "awwwards-page-external-collection"
       ],
       "status": "requires_variant_review",
       "not_claimed": "DOM element counts do not prove visible layout, technology, state or completed skill extraction"
@@ -36535,8 +36795,8 @@
       "not_claimed": "DOM element counts do not prove visible layout, technology, state or completed skill extraction"
     },
     {
-      "id": "10782bf73d9c3bc0",
-      "family_hint": "external.product",
+      "id": "1d5c0d9b018b0167",
+      "family_hint": "external.collection",
       "observed_dom_signature": {
         "forms": 11,
         "tables": 0,
@@ -36559,7 +36819,7 @@
         "6681f05a6afa9405"
       ],
       "candidate_page_skills": [
-        "awwwards-page-external-product"
+        "awwwards-page-external-collection"
       ],
       "status": "requires_variant_review",
       "not_claimed": "DOM element counts do not prove visible layout, technology, state or completed skill extraction"
@@ -38153,8 +38413,8 @@
       "not_claimed": "DOM element counts do not prove visible layout, technology, state or completed skill extraction"
     },
     {
-      "id": "0123b6a834448505",
-      "family_hint": "external.product",
+      "id": "2f8d9ee195dfaf83",
+      "family_hint": "external.collection",
       "observed_dom_signature": {
         "forms": 1,
         "tables": 0,
@@ -38173,7 +38433,7 @@
         "a9128909902a9812"
       ],
       "candidate_page_skills": [
-        "awwwards-page-external-product"
+        "awwwards-page-external-collection"
       ],
       "status": "requires_variant_review",
       "not_claimed": "DOM element counts do not prove visible layout, technology, state or completed skill extraction"

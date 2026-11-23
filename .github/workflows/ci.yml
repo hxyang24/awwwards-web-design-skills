@@ -41,6 +41,8 @@ jobs:
         run: node ../../tools/test_editorial_catalog.mjs
       - name: Product estimate, stock and unknown fees
         run: node ../../tools/test_product_model.mjs
+      - name: Collection queries, facets and cursor revisions
+        run: node ../../tools/test_collection_model.mjs
       - name: Page-skill contracts, source linkage and standalone exports
         run: python ../../tools/test_page_skills.py
       - name: Interaction patterns and license preservation
@@ -63,6 +65,8 @@ jobs:
         run: node ../../tools/test_source_target.mjs
       - name: Styled source fields and visible associated labels
         run: node ../../tools/test_source_fields.mjs
+      - name: Continuous source dialogs and verified close
+        run: node ../../tools/test_source_sequence.mjs
       - name: Bounded physics inputs and lifecycle
         run: node ../../tools/test_physics_pattern.mjs
       - name: Pricing comparison and estimate recovery
@@ -71,6 +75,8 @@ jobs:
         run: node ../../tools/test_editorial_page.mjs
       - name: Product gallery, options and estimate recovery
         run: node ../../tools/test_product_page.mjs
+      - name: Collection live filters, details and recovery
+        run: node ../../tools/test_collection_page.mjs
       - name: Upload validation evidence
         if: always()
         uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
@@ -86,4 +92,5 @@ jobs:
             research/pricing_skill_validation
             research/editorial_skill_validation
             research/product_skill_validation
+            research/collection_skill_validation
           retention-days: 14

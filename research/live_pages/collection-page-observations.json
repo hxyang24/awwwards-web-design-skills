@@ -1,0 +1,169 @@
+{
+  "schema_version": "1.0",
+  "purpose": "Limited source-backed live collection mechanisms for a separately authored standalone Skill",
+  "source_media_redistributed": false,
+  "source_screenshots_redistributed": false,
+  "observations": [
+    {
+      "id": "marry-confirmed-collection-390",
+      "source_id": "1c38bba0ec8fd63f",
+      "url": "https://marryandbride.com/shop/",
+      "viewport": {
+        "width": 390,
+        "height": 1000,
+        "device_scale_factor": 1
+      },
+      "observed_at": "2026-11-23T14:14:04.339Z",
+      "status": "rendered_observed",
+      "official_relationship": {
+        "url": "https://www.awwwards.com/sites/marry-bride",
+        "label": "honorable_mention",
+        "award_date": "2026-08-05",
+        "verification": "Official work detail verified in the preceding product update; this current collection page is not independently certified as awarded"
+      },
+      "live_filter_selection": {
+        "observable_state_changed": true,
+        "before_reported_count": 86,
+        "after_reported_count": 50,
+        "before_visible_text_links": 88,
+        "after_visible_text_links": 52,
+        "url_after": "https://marryandbride.com/shop/?brx_vvzyzg=1",
+        "result_identities_changed": true,
+        "drawer_remained_open": true
+      },
+      "actions": [
+        {
+          "name": "Show current results closes drawer",
+          "status": "acted_and_observed",
+          "url": "https://marryandbride.com/shop/?brx_vvzyzg=1",
+          "visible_text_link_count": 52,
+          "accessible_visible_dialogs": 0,
+          "reported_result_count": 50,
+          "observable_state_changed": true
+        },
+        {
+          "name": "Reopen retains live selection",
+          "status": "acted_and_observed",
+          "url": "https://marryandbride.com/shop/?brx_vvzyzg=1",
+          "visible_text_link_count": 52,
+          "accessible_visible_dialogs": 1,
+          "reported_result_count": 50,
+          "observable_state_changed": true
+        },
+        {
+          "name": "All selection restores results",
+          "status": "acted_and_observed",
+          "url": "https://marryandbride.com/shop/",
+          "visible_text_link_count": 88,
+          "accessible_visible_dialogs": 1,
+          "reported_result_count": 86,
+          "observable_state_changed": true
+        },
+        {
+          "name": "Inspected price sort changes visible order",
+          "status": "acted_and_observed",
+          "url": "https://marryandbride.com/shop/?brx_jfouoy=_price_ASC",
+          "visible_text_link_count": 88,
+          "accessible_visible_dialogs": 1,
+          "reported_result_count": 86,
+          "observable_state_changed": true
+        }
+      ],
+      "normal_query_response_statuses": [
+        200,
+        200,
+        200
+      ],
+      "network_policy": "Anonymous GET/HEAD plus native UI requests to the observed same-origin query_result read endpoint; no hand-crafted payload, form submission, cart, purchase or messaging. Other POSTs remained blocked.",
+      "synchronization": "Waited for query response and a settled changed numeric result label; earlier fixed-delay snapshots captured stale counts and are not used as primary result evidence.",
+      "not_claimed": [
+        "Reported counts are not an exhaustive product or live-stock audit",
+        "All facets, pagination and combinations",
+        "Source empty/error, detail Back restoration or backend implementation version",
+        "Independent award or historical-version match for the current inner page"
+      ],
+      "private_source_screenshot_sha256": "e91a5df0e6e4b6595a3bf641fc1fa75becdfa359687784350ca03249ac28b69a"
+    },
+    {
+      "id": "marry-confirmed-collection-1440",
+      "source_id": "1c38bba0ec8fd63f",
+      "url": "https://marryandbride.com/shop/",
+      "viewport": {
+        "width": 1440,
+        "height": 1000,
+        "device_scale_factor": 1
+      },
+      "observed_at": "2026-11-23T14:14:32.178Z",
+      "status": "rendered_observed",
+      "official_relationship": {
+        "url": "https://www.awwwards.com/sites/marry-bride",
+        "label": "honorable_mention",
+        "award_date": "2026-08-05",
+        "verification": "Official work detail verified in the preceding product update; this current collection page is not independently certified as awarded"
+      },
+      "live_filter_selection": {
+        "observable_state_changed": true,
+        "before_reported_count": 86,
+        "after_reported_count": 50,
+        "before_visible_text_links": 88,
+        "after_visible_text_links": 52,
+        "url_after": "https://marryandbride.com/shop/?brx_vvzyzg=1",
+        "result_identities_changed": true,
+        "drawer_remained_open": true
+      },
+      "actions": [
+        {
+          "name": "Show current results closes drawer",
+          "status": "acted_and_observed",
+          "url": "https://marryandbride.com/shop/?brx_vvzyzg=1",
+          "visible_text_link_count": 52,
+          "accessible_visible_dialogs": 0,
+          "reported_result_count": 50,
+          "observable_state_changed": true
+        },
+        {
+          "name": "Reopen retains live selection",
+          "status": "acted_and_observed",
+          "url": "https://marryandbride.com/shop/?brx_vvzyzg=1",
+          "visible_text_link_count": 52,
+          "accessible_visible_dialogs": 1,
+          "reported_result_count": 50,
+          "observable_state_changed": true
+        },
+        {
+          "name": "All selection restores results",
+          "status": "acted_and_observed",
+          "url": "https://marryandbride.com/shop/",
+          "visible_text_link_count": 88,
+          "accessible_visible_dialogs": 1,
+          "reported_result_count": 86,
+          "observable_state_changed": true
+        },
+        {
+          "name": "Inspected price sort changes visible order",
+          "status": "acted_and_observed",
+          "url": "https://marryandbride.com/shop/?brx_jfouoy=_price_ASC",
+          "visible_text_link_count": 88,
+          "accessible_visible_dialogs": 1,
+          "reported_result_count": 86,
+          "observable_state_changed": true
+        }
+      ],
+      "normal_query_response_statuses": [
+        200,
+        200,
+        200
+      ],
+      "network_policy": "Anonymous GET/HEAD plus native UI requests to the observed same-origin query_result read endpoint; no hand-crafted payload, form submission, cart, purchase or messaging. Other POSTs remained blocked.",
+      "synchronization": "Waited for query response and a settled changed numeric result label; earlier fixed-delay snapshots captured stale counts and are not used as primary result evidence.",
+      "not_claimed": [
+        "Reported counts are not an exhaustive product or live-stock audit",
+        "All facets, pagination and combinations",
+        "Source empty/error, detail Back restoration or backend implementation version",
+        "Independent award or historical-version match for the current inner page"
+      ],
+      "private_source_screenshot_sha256": "c7ea473bb95775f967efa72b79e4cd4f09460938e8e4b98896d255a98661c1d7"
+    }
+  ],
+  "probe_correction": "Default isolated-action cleanup Escaped a newly opened drawer before nested actions. Explicit preserve_open now permits dependent steps; explicit Escape takes precedence and actual remaining dialog count is recorded. Failed earlier attempts did not prove missing source controls."
+}

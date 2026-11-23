@@ -53,6 +53,7 @@ def family(url):
  if host!=MAIN:
   p=re.sub(r'^/(?:en|en-us|en-gb|de|fr|es|it|pt|pt-br|nl-nl|ar|ja|zh|zh-cn)(?=/|$)','',p,flags=re.I) or '/'
   if p=='/':return 'external.home'
+  if re.fullmatch(r'/(?:shop|products|collections?)/?',p,re.I) or re.fullmatch(r'/(?:collections?|product-category)/[^/]+/?',p,re.I):return 'external.collection'
   if host.removeprefix('www.')=='ponpon-mania.com':
    if p.rstrip('/')=='/chapters':return 'external.story-index'
    if re.fullmatch(r'/chapter/\d+/?',p):return 'external.story-chapter'
