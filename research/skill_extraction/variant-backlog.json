@@ -27124,36 +27124,14 @@
           "text"
         ]
       },
-      "pages": 1,
+      "pages": 2,
       "example_source_ids": [
-        "69536733ea30348e"
+        "69536733ea30348e",
+        "8a99a49e64061fe3"
       ],
       "candidate_page_skills": [
         "awwwards-page-creator-profile"
       ],
-      "status": "requires_variant_review",
-      "not_claimed": "DOM element counts do not prove visible layout, technology, state or completed skill extraction"
-    },
-    {
-      "id": "cdd311c541116521",
-      "family_hint": "main.other",
-      "observed_dom_signature": {
-        "forms": 0,
-        "tables": 1,
-        "dialogs": 0,
-        "canvases": 0,
-        "videos": 0,
-        "navigation_regions": 2,
-        "content_state_hint": "unclassified",
-        "input_types": [
-          "text"
-        ]
-      },
-      "pages": 1,
-      "example_source_ids": [
-        "8a99a49e64061fe3"
-      ],
-      "candidate_page_skills": [],
       "status": "requires_variant_review",
       "not_claimed": "DOM element counts do not prove visible layout, technology, state or completed skill extraction"
     },
@@ -28193,8 +28171,8 @@
       "not_claimed": "DOM element counts do not prove visible layout, technology, state or completed skill extraction"
     },
     {
-      "id": "53eff20c59579a86",
-      "family_hint": "main.other",
+      "id": "f60e68edb0c011d8",
+      "family_hint": "main.inspiration-detail",
       "observed_dom_signature": {
         "forms": 0,
         "tables": 0,
@@ -28211,7 +28189,9 @@
       "example_source_ids": [
         "f9798fcdeda5ca16"
       ],
-      "candidate_page_skills": [],
+      "candidate_page_skills": [
+        "awwwards-page-inspiration-detail"
+      ],
       "status": "requires_variant_review",
       "not_claimed": "DOM element counts do not prove visible layout, technology, state or completed skill extraction"
     },
@@ -28241,8 +28221,8 @@
       "not_claimed": "DOM element counts do not prove visible layout, technology, state or completed skill extraction"
     },
     {
-      "id": "7519954bc54861cb",
-      "family_hint": "main.other",
+      "id": "276ffbedf994f621",
+      "family_hint": "main.inspiration-detail",
       "observed_dom_signature": {
         "forms": 0,
         "tables": 0,
@@ -28259,7 +28239,9 @@
       "example_source_ids": [
         "99fb4a8408df136e"
       ],
-      "candidate_page_skills": [],
+      "candidate_page_skills": [
+        "awwwards-page-inspiration-detail"
+      ],
       "status": "requires_variant_review",
       "not_claimed": "DOM element counts do not prove visible layout, technology, state or completed skill extraction"
     },

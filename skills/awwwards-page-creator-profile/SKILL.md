@@ -9,7 +9,7 @@ description: Design and implement a creator profile page with task-specific stru
 理解身份、贡献、作品与公开联系边界。 使用于这一页面族；不要把它扩张为完整网站或所有业务的通用流程。现有项目优先保留其框架、品牌、路由和真实接口。
 
 ## 先读取
-读取 [页面契约](references/page-contract.json)。其中 regions 是建议结构，workflow 是原创实现步骤，sources/visual_metrics 才是已记录观察。当前证据层级 `http_dom`；页面族覆盖 `observed_examples`。同类页面共用此技能，但这不证明该页面族所有网站均已逐页检查。
+读取 [页面契约](references/page-contract.json)。其中 regions 是建议结构，workflow 是原创实现步骤，sources/visual_metrics 才是已记录观察。当前证据层级 `rendered_source_observations`；页面族覆盖 `observed_examples`。同类页面共用此技能，但这不证明该页面族所有网站均已逐页检查。
 
 ## 页面结构与实施
 建议区域：身份与简介、服务或专业、作品、奖项、公开链接、关注或联系。
@@ -38,6 +38,7 @@ python scripts/scaffold.py --output YOUR_EMPTY_PROJECT_DIRECTORY
 交付路由/组件边界、状态矩阵、数据契约、来源和素材台账、实际运行命令、截图及未测项。检查契约中的每条 acceptance，记录 passed/failed/blocked/not_run 并给出证据。不要从一个测试通过推断整站、全部设备或生产已验收。
 
 ## 已读取的来源
+- https://www.awwwards.com/13treize.fr/submissions（http_dom；2026-11-23T08:22:09.554172+00:00）
 - https://www.awwwards.com/120Ventures/（http_dom；2026-11-23T08:20:46.468367+00:00）
 - https://www.awwwards.com/12studio/（http_dom；2026-11-23T08:21:17.498331+00:00）
 - https://www.awwwards.com/13treize.fr/（http_dom；2026-11-23T08:21:17.538486+00:00）
@@ -45,3 +46,6 @@ python scripts/scaffold.py --output YOUR_EMPTY_PROJECT_DIRECTORY
 - https://www.awwwards.com/artemii-lebedev/（http_dom；2026-11-23T08:07:11.924367+00:00）
 
 来源受各自版权和访问规则约束；只借鉴结构与机制，使用原创或已授权文案、图像、字体和模型。未知技术版本、隐藏状态和服务端行为不得根据截图补造。
+
+## 作者作品主页专项
+读取 `assets/profile.json`、`assets/model.mjs` 与 `creator_contract`。区分个人/机构、作品身份与贡献；分别记录平台报告、完整本地目录、当前匹配结果和已显示数量。未知报告不能记为零，也不能从加载卡片数推断完整职业或获奖历史。源站匿名关注打开登录；蓝本只提供明确的本机短名单，不调用账户关注。原创八项作品有完整无脚本路径、筛选、展开、阅读与返回。编辑后运行 `python render_static.py`；真实私有数据必须在服务端授权后再交付，客户端隐藏不能建立保密性。

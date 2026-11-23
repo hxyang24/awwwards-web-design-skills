@@ -45,6 +45,39 @@
       "evidence_id": "inspiration-detail77-390",
       "rationale": "Rendered individual reference media, attribution, static topic tags and anonymous account gate. Distinct from inspiration index and source interaction.",
       "hash_scope": "Cached HTTP metadata anchor, not browser DOM or historical-version equality."
+    },
+    {
+      "url": "https://www.awwwards.com/13treize.fr/submissions",
+      "source_id": "8a99a49e64061fe3",
+      "source_sha256": "4bcc574d0a1a128ec2c1d652065ffed6b547e9d63b9282edd43acb2f755af7ee",
+      "family": "main.creator-profile",
+      "reviewed_at": "2026-11-23T17:07:05.949068+00:00",
+      "evidence_file": "research/live_pages/creator-page-observations.json",
+      "evidence_id": "creator-follow78-390",
+      "rationale": "Rendered page task matches an existing Skill; no duplicate Skill count and no complete individual-page extraction claim.",
+      "hash_scope": "Cached HTTP metadata anchor, not equality with browser DOM or a historical version."
+    },
+    {
+      "url": "https://www.awwwards.com/inspiration/20-years-of-xbox-museum-3d-environments-microverse",
+      "source_id": "f9798fcdeda5ca16",
+      "source_sha256": "1bd3c89269567e826f2412a0511545569d2e7ed94145b1631465714bcfe4c9ab",
+      "family": "main.inspiration-detail",
+      "reviewed_at": "2026-11-23T17:07:05.949090+00:00",
+      "evidence_file": "research/live_pages/reference-page-observations.json",
+      "evidence_id": "reference-3d78-390",
+      "rationale": "Rendered page task matches an existing Skill; no duplicate Skill count and no complete individual-page extraction claim.",
+      "hash_scope": "Cached HTTP metadata anchor, not equality with browser DOM or a historical version."
+    },
+    {
+      "url": "https://www.awwwards.com/inspiration/2021-virtual-webbys-cta-button-to-enter",
+      "source_id": "99fb4a8408df136e",
+      "source_sha256": "05255f254b299a0fde7d98c7c75dec739a91e3e059823b63d4eec46f72864ceb",
+      "family": "main.inspiration-detail",
+      "reviewed_at": "2026-11-23T17:07:05.949097+00:00",
+      "evidence_file": "research/live_pages/reference-page-observations.json",
+      "evidence_id": "reference-cta78-390",
+      "rationale": "Rendered page task matches an existing Skill; no duplicate Skill count and no complete individual-page extraction claim.",
+      "hash_scope": "Cached HTTP metadata anchor, not equality with browser DOM or a historical version."
     }
   ]
 }

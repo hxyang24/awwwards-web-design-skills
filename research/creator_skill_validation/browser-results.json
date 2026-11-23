@@ -1,0 +1,171 @@
+{
+  "date": "2026-11-23T17:14:07.641Z",
+  "status": "passed",
+  "filter": null,
+  "checks": [
+    {
+      "name": "Creator public profile fits 320",
+      "status": "passed"
+    },
+    {
+      "name": "Creator public profile fits 390",
+      "status": "passed"
+    },
+    {
+      "name": "Creator public profile fits 768",
+      "status": "passed"
+    },
+    {
+      "name": "Creator public profile fits 1440",
+      "status": "passed"
+    },
+    {
+      "name": "Selected creator accessibility rules 390",
+      "status": "passed"
+    },
+    {
+      "name": "Selected creator accessibility rules 1440",
+      "status": "passed"
+    },
+    {
+      "name": "Full catalog search finds an unrevealed work and report metrics do not change",
+      "status": "passed"
+    },
+    {
+      "name": "Combined filters empty result and reset preserve known and unknown values",
+      "status": "passed"
+    },
+    {
+      "name": "Reveal groups and view choice preserve the complete result total",
+      "status": "passed"
+    },
+    {
+      "name": "Known dates sort ahead of missing dates and title order stays deliberate",
+      "status": "passed"
+    },
+    {
+      "name": "Keyboard can apply search and open a work",
+      "status": "passed"
+    },
+    {
+      "name": "Reading Return and Back restore revealed cards focus and scroll 390",
+      "status": "passed"
+    },
+    {
+      "name": "Reading Return and Back restore revealed cards focus and scroll 1440",
+      "status": "passed"
+    },
+    {
+      "name": "Deep-link work returns safely without navigating outside the local profile",
+      "status": "passed"
+    },
+    {
+      "name": "Invalid routes recover with defaults and an explanation",
+      "status": "passed"
+    },
+    {
+      "name": "History retains unrelated host fields",
+      "status": "passed"
+    },
+    {
+      "name": "Device shortlist survives reload without making a real account follow",
+      "status": "passed"
+    },
+    {
+      "name": "Shortlist quota failure is tab-only and disappears on reload",
+      "status": "passed"
+    },
+    {
+      "name": "Failed removal cannot claim the stored studio was removed",
+      "status": "passed"
+    },
+    {
+      "name": "Malformed saved studio is explicit and a deliberate save replaces only its key",
+      "status": "passed"
+    },
+    {
+      "name": "Cross-tab shortlist changes update the other view",
+      "status": "passed"
+    },
+    {
+      "name": "Search input stays text rather than creating HTML",
+      "status": "passed"
+    },
+    {
+      "name": "No JavaScript retains identity all works contributions and native destinations",
+      "status": "passed"
+    },
+    {
+      "name": "Unavailable response clears profile UI and does not resurrect identity on dispose",
+      "status": "passed"
+    },
+    {
+      "name": "Minimal unavailable data never renders identity or works",
+      "status": "passed"
+    },
+    {
+      "name": "Access refusal retry can restore the public fictional profile",
+      "status": "passed"
+    },
+    {
+      "name": "Network failure retains full public fallback and retry enables controls",
+      "status": "passed"
+    },
+    {
+      "name": "Edited JSON requires regeneration rather than silently drifting from static content",
+      "status": "passed"
+    },
+    {
+      "name": "Dispose restores complete static works and preserves host actions",
+      "status": "passed"
+    },
+    {
+      "name": "No decorative animations or outside business requests",
+      "status": "passed"
+    }
+  ],
+  "accessibility": [
+    {
+      "tag": "default-390",
+      "violations": []
+    },
+    {
+      "tag": "default-1440",
+      "violations": []
+    },
+    {
+      "tag": "reader-390",
+      "violations": []
+    },
+    {
+      "tag": "reader-1440",
+      "violations": []
+    },
+    {
+      "tag": "unavailable",
+      "violations": []
+    }
+  ],
+  "screenshots": [
+    "research/creator_skill_validation/screenshots/creator-390.png",
+    "research/creator_skill_validation/screenshots/creator-1440.png"
+  ],
+  "errors": [],
+  "external_requests": [],
+  "environment": {
+    "node": "v24.14.0",
+    "platform": "win32",
+    "browser": "157.0.8103.79",
+    "viewport_widths": [
+      320,
+      390,
+      768,
+      1440
+    ]
+  },
+  "limitations": [
+    "Original fictional public profile; client UI clearing is not a server privacy guarantee",
+    "Source report values are not independent award or career-history audits",
+    "No authenticated follow, notifications, contact backend, physical devices or complete manual assistive-technology acceptance"
+  ]
+}

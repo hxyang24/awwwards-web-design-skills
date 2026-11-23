@@ -1,0 +1,83 @@
+{
+  "schema_version": "1.0",
+  "purpose": "Limited source facts for upgrading the existing creator-profile Skill",
+  "source_assets_redistributed": false,
+  "observations": [
+    {
+      "id": "creator-follow78-390",
+      "source_id": "8a99a49e64061fe3",
+      "url": "https://www.awwwards.com/13treize.fr/submissions",
+      "observed_at": "2026-11-23T16:46:22.771Z",
+      "viewport": {
+        "width": 390,
+        "height": 1000,
+        "device_scale_factor": 1
+      },
+      "status": "rendered_observed",
+      "page_task": "Public creator/organization profile with submissions; same task family as creator profile, not a new Skill per URL",
+      "source_reported_metrics": {
+        "works": 2,
+        "sotm": 0,
+        "sotd": 0,
+        "hm": 2,
+        "interpretation": "Explicit source UI values, not independently recomputed awards or complete career history"
+      },
+      "inspected_work_figures": 2,
+      "work_identity_note": "Two distinct official work-detail links were found, each with its own external-site link. Figure counts do not prove all career works or external site availability.",
+      "anonymous_follow": {
+        "status": "acted_and_observed",
+        "visible_login_control": "Log in now",
+        "url_unchanged": true,
+        "native_dialogs": 0,
+        "no_login_or_authenticated_follow_submitted": true,
+        "interpretation": "Private screenshot shows login pane; native dialog count0 does not mean no UI opened"
+      },
+      "private_screenshot_sha256": "1547067f2eacf4f1023e0945e2044cf86ae224be685e535510f4c5107d996af1",
+      "source_assets_redistributed": false,
+      "not_claimed": [
+        "Authenticated following or notifications",
+        "All award details, external sites or historical versions audited",
+        "Source pagination, search or all account/error states operated"
+      ],
+      "authored_extension": "Original fictional studio, eight complete original works, reported-vs-local counts, search/filter/reveal/read-return, device-only shortlist and recovery. No real award or account service."
+    },
+    {
+      "id": "creator-follow78-1440",
+      "source_id": "8a99a49e64061fe3",
+      "url": "https://www.awwwards.com/13treize.fr/submissions",
+      "observed_at": "2026-11-23T16:46:32.702Z",
+      "viewport": {
+        "width": 1440,
+        "height": 1000,
+        "device_scale_factor": 1
+      },
+      "status": "rendered_observed",
+      "page_task": "Public creator/organization profile with submissions; same task family as creator profile, not a new Skill per URL",
+      "source_reported_metrics": {
+        "works": 2,
+        "sotm": 0,
+        "sotd": 0,
+        "hm": 2,
+        "interpretation": "Explicit source UI values, not independently recomputed awards or complete career history"
+      },
+      "inspected_work_figures": 2,
+      "work_identity_note": "Two distinct official work-detail links were found, each with its own external-site link. Figure counts do not prove all career works or external site availability.",
+      "anonymous_follow": {
+        "status": "acted_and_observed",
+        "visible_login_control": "Log in now",
+        "url_unchanged": true,
+        "native_dialogs": 0,
+        "no_login_or_authenticated_follow_submitted": true,
+        "interpretation": "Private screenshot shows login pane; native dialog count0 does not mean no UI opened"
+      },
+      "private_screenshot_sha256": "960988b472b87a3d8340113fcafe4d3ccf8a7f5959cc71dab96a14d2d994db85",
+      "source_assets_redistributed": false,
+      "not_claimed": [
+        "Authenticated following or notifications",
+        "All award details, external sites or historical versions audited",
+        "Source pagination, search or all account/error states operated"
+      ],
+      "authored_extension": "Original fictional studio, eight complete original works, reported-vs-local counts, search/filter/reveal/read-return, device-only shortlist and recovery. No real award or account service."
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 {
   "schema_version": "3.0",
-  "generated_at": "2026-11-23T16:28:44.231146+00:00",
+  "generated_at": "2026-11-23T17:13:12.290169+00:00",
   "core_skills_preserved": 24,
   "page_skills": 49,
   "status": "in_progress",
@@ -195,13 +195,13 @@
       "skill": "awwwards-page-creator-profile",
       "title": "创作者或机构主页",
       "kind": "profile",
-      "runtime_variant": "generic-page",
+      "runtime_variant": "people-creator",
       "source_families": [
         "main.creator-profile"
       ],
       "source_coverage": "observed_examples",
-      "source_count": 5,
-      "evidence_level": "http_dom",
+      "source_count": 6,
+      "evidence_level": "rendered_source_observations",
       "path": "skills/awwwards-page-creator-profile",
       "demo": "skills/awwwards-page-creator-profile/assets/",
       "browser_validation": "See validation evidence; not inferred from generation"
@@ -792,7 +792,7 @@
         "main.inspiration-detail"
       ],
       "source_coverage": "observed_examples",
-      "source_count": 1,
+      "source_count": 3,
       "evidence_level": "rendered_source_observations",
       "path": "skills/awwwards-page-inspiration-detail",
       "demo": "skills/awwwards-page-inspiration-detail/assets/",

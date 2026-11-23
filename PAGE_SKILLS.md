@@ -19,7 +19,7 @@
 | `awwwards-page-collection-detail` | 策展合集详情 | rendered_geometry / 6 来源 | [collection-detail](skills/awwwards-page-collection-detail/SKILL.md) | [HTML](skills/awwwards-page-collection-detail/assets/index.html) |
 | `awwwards-page-inspiration-library` | 灵感与组件参考库 | http_dom / 1 来源 | [inspiration-library](skills/awwwards-page-inspiration-library/SKILL.md) | [HTML](skills/awwwards-page-inspiration-library/assets/index.html) |
 | `awwwards-page-creator-directory` | 创作者与机构目录 | http_dom / 6 来源 | [creator-directory](skills/awwwards-page-creator-directory/SKILL.md) | [HTML](skills/awwwards-page-creator-directory/assets/index.html) |
-| `awwwards-page-creator-profile` | 创作者或机构主页 | http_dom / 5 来源 | [creator-profile](skills/awwwards-page-creator-profile/SKILL.md) | [HTML](skills/awwwards-page-creator-profile/assets/index.html) |
+| `awwwards-page-creator-profile` | 创作者或机构主页 | rendered_source_observations / 6 来源 | [creator-profile](skills/awwwards-page-creator-profile/SKILL.md) | [HTML](skills/awwwards-page-creator-profile/assets/index.html) |
 | `awwwards-page-course-catalog` | 课程目录与学习入口 | rendered_geometry / 6 来源 | [course-catalog](skills/awwwards-page-course-catalog/SKILL.md) | [HTML](skills/awwwards-page-course-catalog/assets/index.html) |
 | `awwwards-page-course-detail` | 课程详情与大纲 | http_dom / 6 来源 | [course-detail](skills/awwwards-page-course-detail/SKILL.md) | [HTML](skills/awwwards-page-course-detail/assets/index.html) |
 | `awwwards-page-market-catalog` | 数字产品市场列表 | http_dom / 1 来源 | [market-catalog](skills/awwwards-page-market-catalog/SKILL.md) | [HTML](skills/awwwards-page-market-catalog/assets/index.html) |
@@ -56,7 +56,7 @@
 | `awwwards-page-external-editorial-index` | 获奖来源外站杂志与文章索引 | rendered_source_observations / 6 来源 | [external-editorial-index](skills/awwwards-page-external-editorial-index/SKILL.md) | [HTML](skills/awwwards-page-external-editorial-index/assets/index.html) |
 | `awwwards-page-external-collection` | 获奖来源外站商店、商品集合与即时筛选 | rendered_source_observations / 6 来源 | [external-collection](skills/awwwards-page-external-collection/SKILL.md) | [HTML](skills/awwwards-page-external-collection/assets/index.html) |
 | `awwwards-page-external-technical-product` | 获奖来源外站技术产品详情与证据分级 | rendered_source_observations / 1 来源 | [external-technical-product](skills/awwwards-page-external-technical-product/SKILL.md) | [HTML](skills/awwwards-page-external-technical-product/assets/index.html) |
-| `awwwards-page-inspiration-detail` | 主站灵感参考详情、媒体说明与本地笔记 | rendered_source_observations / 1 来源 | [inspiration-detail](skills/awwwards-page-inspiration-detail/SKILL.md) | [HTML](skills/awwwards-page-inspiration-detail/assets/index.html) |
+| `awwwards-page-inspiration-detail` | 主站灵感参考详情、媒体说明与本地笔记 | rendered_source_observations / 3 来源 | [inspiration-detail](skills/awwwards-page-inspiration-detail/SKILL.md) | [HTML](skills/awwwards-page-inspiration-detail/assets/index.html) |
 
 ## 独立交互机制 Skills
 

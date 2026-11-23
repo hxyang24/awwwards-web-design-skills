@@ -48,6 +48,35 @@
   "evidence_note": "Only recorded observations are facts. DOM structure does not prove visual composition, hidden state, source code, backend behavior or licenses. The runnable blueprint is an original recipe, not a source-site clone.",
   "sources": [
     {
+      "id": "f9798fcdeda5ca16",
+      "url": "https://www.awwwards.com/inspiration/20-years-of-xbox-museum-3d-environments-microverse",
+      "family": "main.inspiration-detail",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T08:40:27.306104+00:00",
+      "source_sha256": "1bd3c89269567e826f2412a0511545569d2e7ed94145b1631465714bcfe4c9ab",
+      "structure": {
+        "headings": {
+          "h1": 1,
+          "h2": 1,
+          "h3": 9
+        },
+        "forms": 0,
+        "input_types": {
+          "text": 1
+        },
+        "navigation_regions": 2,
+        "main_regions": 0,
+        "sections": 1,
+        "articles": 0,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 9,
+        "roles": {},
+        "anchor_count": 122
+      }
+    },
+    {
       "id": "7ef53b130fdfbfb5",
       "url": "https://www.awwwards.com/inspiration/20-years-of-xbox-museum-timeline",
       "family": "main.inspiration-detail",
@@ -74,6 +103,35 @@
         "videos": 8,
         "roles": {},
         "anchor_count": 122
+      }
+    },
+    {
+      "id": "99fb4a8408df136e",
+      "url": "https://www.awwwards.com/inspiration/2021-virtual-webbys-cta-button-to-enter",
+      "family": "main.inspiration-detail",
+      "inspection_level": "http_dom",
+      "observed_at": "2026-11-23T08:40:27.424218+00:00",
+      "source_sha256": "05255f254b299a0fde7d98c7c75dec739a91e3e059823b63d4eec46f72864ceb",
+      "structure": {
+        "headings": {
+          "h1": 1,
+          "h3": 12,
+          "h2": 1
+        },
+        "forms": 0,
+        "input_types": {
+          "text": 1
+        },
+        "navigation_regions": 2,
+        "main_regions": 0,
+        "sections": 1,
+        "articles": 0,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 10,
+        "roles": {},
+        "anchor_count": 127
       }
     }
   ],
@@ -189,6 +247,114 @@
         "All tag interactions or related navigation",
         "Original external website behavior or historical award equivalence",
         "All frames, responsive source variants or production behavior"
+      ]
+    },
+    {
+      "id": "reference-3d78-390",
+      "source_id": "f9798fcdeda5ca16",
+      "url": "https://www.awwwards.com/inspiration/20-years-of-xbox-museum-3d-environments-microverse",
+      "observed_at": "2026-11-23T16:41:40.232Z",
+      "viewport": {
+        "width": 390,
+        "height": 1000,
+        "device_scale_factor": 1
+      },
+      "status": "rendered_observed",
+      "main_site_reference": true,
+      "source_page_task": "Individual media reference detail with title, source attribution and topic labels; not the original interactive experience",
+      "native_media_sample": {
+        "before": [
+          {
+            "paused": false,
+            "ended": false,
+            "muted": true,
+            "autoplay": true,
+            "loop": true,
+            "controls": false,
+            "readyState": 4,
+            "networkState": 1,
+            "currentTime": 4.4933,
+            "duration": 9.833333,
+            "error": null
+          }
+        ],
+        "after": [
+          {
+            "paused": false,
+            "ended": false,
+            "muted": true,
+            "autoplay": true,
+            "loop": true,
+            "controls": false,
+            "readyState": 4,
+            "networkState": 1,
+            "currentTime": 5.7481,
+            "duration": 9.833333,
+            "error": null
+          }
+        ],
+        "interval_ms": 1250,
+        "interpretation": "Readiness and changed currentTime observed, including a loop wrap for the CTA clip. Initial black frame is not by itself playback failure or graphics correctness proof."
+      },
+      "private_screenshot_sha256": "8d2f9602a007a175f4ce69194267d4b0cc8aa13dfa105ca4abb4a38d82ebb156",
+      "source_assets_redistributed": false,
+      "not_claimed": [
+        "Original external3D, CTA interaction, all footage/frames or historical version audited",
+        "Source share or authenticated collection behavior for these two references"
+      ]
+    },
+    {
+      "id": "reference-cta78-390",
+      "source_id": "99fb4a8408df136e",
+      "url": "https://www.awwwards.com/inspiration/2021-virtual-webbys-cta-button-to-enter",
+      "observed_at": "2026-11-23T16:41:48.532Z",
+      "viewport": {
+        "width": 390,
+        "height": 1000,
+        "device_scale_factor": 1
+      },
+      "status": "rendered_observed",
+      "main_site_reference": true,
+      "source_page_task": "Individual media reference detail with title, source attribution and topic labels; not the original interactive experience",
+      "native_media_sample": {
+        "before": [
+          {
+            "paused": false,
+            "ended": false,
+            "muted": true,
+            "autoplay": true,
+            "loop": true,
+            "controls": false,
+            "readyState": 4,
+            "networkState": 1,
+            "currentTime": 4.3607,
+            "duration": 4.866667,
+            "error": null
+          }
+        ],
+        "after": [
+          {
+            "paused": false,
+            "ended": false,
+            "muted": true,
+            "autoplay": true,
+            "loop": true,
+            "controls": false,
+            "readyState": 4,
+            "networkState": 1,
+            "currentTime": 0.7526,
+            "duration": 4.866667,
+            "error": null
+          }
+        ],
+        "interval_ms": 1250,
+        "interpretation": "Readiness and changed currentTime observed, including a loop wrap for the CTA clip. Initial black frame is not by itself playback failure or graphics correctness proof."
+      },
+      "private_screenshot_sha256": "9858fc5307ac187932e61e49ce73fa5ec4a3e15723db8aa4a8bd7036e764e05c",
+      "source_assets_redistributed": false,
+      "not_claimed": [
+        "Original external3D, CTA interaction, all footage/frames or historical version audited",
+        "Source share or authenticated collection behavior for these two references"
       ]
     }
   ],

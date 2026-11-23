@@ -1,0 +1,57 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "name": "Organization identity and every authored work are parsed as independent records",
+      "status": "passed"
+    },
+    {
+      "name": "Unavailable schema cannot carry concealed identity or works",
+      "status": "passed"
+    },
+    {
+      "name": "Unknown zero and report values are not reconstructed from cards",
+      "status": "passed"
+    },
+    {
+      "name": "Real calendar dates and missing dates stay distinct",
+      "status": "passed"
+    },
+    {
+      "name": "Public links reject executable schemes credentials and oversize values",
+      "status": "passed"
+    },
+    {
+      "name": "Invalid duplicate and oversized work records fail before enhancement",
+      "status": "passed"
+    },
+    {
+      "name": "Search covers full text beyond the first visible group and normalizes comparison",
+      "status": "passed"
+    },
+    {
+      "name": "Discipline and study labels combine without changing supplied report totals",
+      "status": "passed"
+    },
+    {
+      "name": "Title order is stable and original data order is not mutated",
+      "status": "passed"
+    },
+    {
+      "name": "Filter view shown count and deep reading routes round trip",
+      "status": "passed"
+    },
+    {
+      "name": "Repeated invalid and overlong link parameters recover with warnings",
+      "status": "passed"
+    },
+    {
+      "name": "Shortlist is versioned scoped to one identity and carries no account action",
+      "status": "passed"
+    }
+  ],
+  "limitations": [
+    "Fictional public local catalog and supplied report fixtures only",
+    "No independent source award audit, privacy enforcement or account following acceptance"
+  ]
+}

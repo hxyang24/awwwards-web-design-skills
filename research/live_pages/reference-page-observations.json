@@ -114,6 +114,114 @@
         "Original external website behavior or historical award equivalence",
         "All frames, responsive source variants or production behavior"
       ]
+    },
+    {
+      "id": "reference-3d78-390",
+      "source_id": "f9798fcdeda5ca16",
+      "url": "https://www.awwwards.com/inspiration/20-years-of-xbox-museum-3d-environments-microverse",
+      "observed_at": "2026-11-23T16:41:40.232Z",
+      "viewport": {
+        "width": 390,
+        "height": 1000,
+        "device_scale_factor": 1
+      },
+      "status": "rendered_observed",
+      "main_site_reference": true,
+      "source_page_task": "Individual media reference detail with title, source attribution and topic labels; not the original interactive experience",
+      "native_media_sample": {
+        "before": [
+          {
+            "paused": false,
+            "ended": false,
+            "muted": true,
+            "autoplay": true,
+            "loop": true,
+            "controls": false,
+            "readyState": 4,
+            "networkState": 1,
+            "currentTime": 4.4933,
+            "duration": 9.833333,
+            "error": null
+          }
+        ],
+        "after": [
+          {
+            "paused": false,
+            "ended": false,
+            "muted": true,
+            "autoplay": true,
+            "loop": true,
+            "controls": false,
+            "readyState": 4,
+            "networkState": 1,
+            "currentTime": 5.7481,
+            "duration": 9.833333,
+            "error": null
+          }
+        ],
+        "interval_ms": 1250,
+        "interpretation": "Readiness and changed currentTime observed, including a loop wrap for the CTA clip. Initial black frame is not by itself playback failure or graphics correctness proof."
+      },
+      "private_screenshot_sha256": "8d2f9602a007a175f4ce69194267d4b0cc8aa13dfa105ca4abb4a38d82ebb156",
+      "source_assets_redistributed": false,
+      "not_claimed": [
+        "Original external3D, CTA interaction, all footage/frames or historical version audited",
+        "Source share or authenticated collection behavior for these two references"
+      ]
+    },
+    {
+      "id": "reference-cta78-390",
+      "source_id": "99fb4a8408df136e",
+      "url": "https://www.awwwards.com/inspiration/2021-virtual-webbys-cta-button-to-enter",
+      "observed_at": "2026-11-23T16:41:48.532Z",
+      "viewport": {
+        "width": 390,
+        "height": 1000,
+        "device_scale_factor": 1
+      },
+      "status": "rendered_observed",
+      "main_site_reference": true,
+      "source_page_task": "Individual media reference detail with title, source attribution and topic labels; not the original interactive experience",
+      "native_media_sample": {
+        "before": [
+          {
+            "paused": false,
+            "ended": false,
+            "muted": true,
+            "autoplay": true,
+            "loop": true,
+            "controls": false,
+            "readyState": 4,
+            "networkState": 1,
+            "currentTime": 4.3607,
+            "duration": 4.866667,
+            "error": null
+          }
+        ],
+        "after": [
+          {
+            "paused": false,
+            "ended": false,
+            "muted": true,
+            "autoplay": true,
+            "loop": true,
+            "controls": false,
+            "readyState": 4,
+            "networkState": 1,
+            "currentTime": 0.7526,
+            "duration": 4.866667,
+            "error": null
+          }
+        ],
+        "interval_ms": 1250,
+        "interpretation": "Readiness and changed currentTime observed, including a loop wrap for the CTA clip. Initial black frame is not by itself playback failure or graphics correctness proof."
+      },
+      "private_screenshot_sha256": "9858fc5307ac187932e61e49ce73fa5ec4a3e15723db8aa4a8bd7036e764e05c",
+      "source_assets_redistributed": false,
+      "not_claimed": [
+        "Original external3D, CTA interaction, all footage/frames or historical version audited",
+        "Source share or authenticated collection behavior for these two references"
+      ]
     }
   ]
 }

@@ -10,6 +10,19 @@ from install_all_skills import install
 def load(path,name):
  spec=importlib.util.spec_from_file_location(name,path);m=importlib.util.module_from_spec(spec);spec.loader.exec_module(m);return m
 class PageSkills(unittest.TestCase):
+ def test_creator_static_generation_preserves_all_original_works_and_unavailable_has_no_identity(self):
+  import shutil
+  with tempfile.TemporaryDirectory() as t:
+   target=Path(t)/'creator';shutil.copytree(R/'page_skills/people/creator',target);p=target/'profile.json';original=p.read_bytes();data=json.loads(original);module=load(target/'render_static.py','creator_static_fixture')
+   self.assertEqual(module.render(target)['complete_works'],8);text=(target/'index.html').read_text(encoding='utf-8');self.assertEqual(text.count('class="reading"'),8);self.assertIn(html.escape(data['bio']),text);self.assertIn(hashlib.sha256(original).hexdigest(),text);self.assertIn('Not supplied',text)
+   for w in data['works']:self.assertIn(html.escape(w['contribution']),text);self.assertIn(html.escape(w['body']),text)
+   p.write_text(json.dumps({'schema_version':1,'visibility':'unavailable'}),encoding='utf-8');self.assertFalse(module.render(target)['public']);hidden=(target/'index.html').read_text(encoding='utf-8');self.assertIn('Profile unavailable',hidden);self.assertNotIn(data['name'],hidden);self.assertNotIn(data['works'][0]['body'],hidden);self.assertNotIn('class="reading"',hidden)
+   p.write_bytes(original);module.render(target);restored=(target/'index.html').read_text(encoding='utf-8');self.assertIn(data['name'],restored);self.assertEqual(restored.count('class="reading"'),8);self.assertNotIn('id="work-section" hidden',restored)
+ def test_three_reviewed_main_urls_reuse_existing_skill_families_without_duplicate_skills(self):
+  reviews=load_reviews(R);targets={'https://www.awwwards.com/13treize.fr/submissions':'main.creator-profile','https://www.awwwards.com/inspiration/20-years-of-xbox-museum-3d-environments-microverse':'main.inspiration-detail','https://www.awwwards.com/inspiration/2021-virtual-webbys-cta-button-to-enter':'main.inspiration-detail'}
+  for url,family_name in targets.items():
+   review=reviews[url];source={'url':url,'id':review['source_id'],'source_sha256':review['source_sha256'],'inspection_level':'http_dom'};self.assertEqual(assign_family(source,reviews)['family'],family_name);source['source_sha256']='0'*64;self.assertEqual(assign_family(source,reviews)['review_status'],'stale')
+  self.assertEqual(len(definitions()),49)
  def test_reference_static_content_preserves_media_transcript_and_all_original_notes(self):
   import shutil
   with tempfile.TemporaryDirectory() as t:
