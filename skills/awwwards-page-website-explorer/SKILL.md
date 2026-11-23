@@ -42,8 +42,8 @@ python scripts/scaffold.py --output YOUR_EMPTY_PROJECT_DIRECTORY
 - https://www.awwwards.com/websites/e-commerce/（http_dom；2026-11-23T08:15:13.346957+00:00）
 - https://www.awwwards.com/websites/e-commerce/?page=10（http_dom；2026-11-23T08:21:03.272083+00:00）
 - https://www.awwwards.com/websites/e-commerce/?page=11（http_dom；2026-11-23T08:22:04.768812+00:00）
+- https://www.awwwards.com/websites/e-commerce/?page=12（http_dom；2026-11-23T16:15:54.320259+00:00）
 - https://www.awwwards.com/websites/e-commerce/?page=2（http_dom；2026-11-23T08:17:16.950018+00:00）
-- https://www.awwwards.com/websites/e-commerce/?page=3（http_dom；2026-11-23T08:17:16.998355+00:00）
 
 来源受各自版权和访问规则约束；只借鉴结构与机制，使用原创或已授权文案、图像、字体和模型。未知技术版本、隐藏状态和服务端行为不得根据截图补造。
 

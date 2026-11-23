@@ -82,6 +82,10 @@ jobs:
           node ../../tools/test_technical_model.mjs
           node ../../tools/test_technical_page.mjs
           node ../../tools/test_source_region.mjs
+      - name: Reference media, local notes and truthful copy recovery
+        run: |
+          node ../../tools/test_reference_model.mjs
+          node ../../tools/test_reference_page.mjs
       - name: Upload validation evidence
         if: always()
         uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
@@ -97,6 +101,7 @@ jobs:
             research/pricing_skill_validation
             research/editorial_skill_validation
             research/product_skill_validation
+            research/reference_skill_validation
             research/technical_skill_validation
             research/collection_skill_validation
           retention-days: 14

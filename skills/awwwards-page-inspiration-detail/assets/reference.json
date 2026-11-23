@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "id": "three-beats",
+  "title": "Three beats / a motion reference",
+  "creator": "Field Notes Lab",
+  "summary": "A small original study of arrival, alignment and rest. Watch the movement, read the timing, and keep your own observation.",
+  "source": {"label": "Original Field Notes study", "url": null},
+  "tags": ["motion", "timing", "composition"],
+  "media": {"file": "three-beats.webm", "poster": "poster.svg", "captions": "captions.vtt", "type": "video/webm", "expected_seconds": 6},
+  "transcript": [
+    {"start": 0, "end": 2, "title": "Arrival", "text": "An orange marker moves from the left toward the first station on a line."},
+    {"start": 2, "end": 4, "title": "Alignment", "text": "The marker crosses the middle station while three pale circles settle into a row."},
+    {"start": 4, "end": 6, "title": "Rest", "text": "The marker reaches the final station. The circles remain in place for a quiet ending."}
+  ],
+  "related": [
+    {"id": "spacing", "title": "Room between objects", "tags": ["composition"], "summary": "An original note on whitespace.", "body": "A row becomes easier to scan when its gaps follow a repeatable rhythm. Leave enough room to distinguish each object before using color or movement."},
+    {"id": "feedback", "title": "A response you can follow", "tags": ["timing"], "summary": "An original note on visible feedback.", "body": "Give each action a clear result. A paused movement should remain paused, and a failed copy action should offer a manual route instead of announcing success."},
+    {"id": "quiet", "title": "A quiet first frame", "tags": ["composition", "timing"], "summary": "An original note on motion restraint.", "body": "Start with a legible still image. Let the viewer choose to play, and keep a text description available when moving media cannot be loaded."}
+  ]
+}

@@ -152,12 +152,12 @@
       }
     },
     {
-      "id": "0c4ff90f41f14389",
-      "url": "https://www.awwwards.com/websites/e-commerce/?page=2",
+      "id": "79a1d3cc2366fd7f",
+      "url": "https://www.awwwards.com/websites/e-commerce/?page=12",
       "family": "main.category-list",
       "inspection_level": "http_dom",
-      "observed_at": "2026-11-23T08:17:16.950018+00:00",
-      "source_sha256": "385a4fbac4953dfb1e8375f1caf1ee1a92dcd41270b8cff10cb53e22609b654d",
+      "observed_at": "2026-11-23T16:15:54.320259+00:00",
+      "source_sha256": "ff30cace5c84622c62fe2b232f364c0c1b077fd27d8c3a2312d1247ee077306a",
       "structure": {
         "headings": {
           "h1": 1,
@@ -176,16 +176,16 @@
         "canvases": 0,
         "videos": 0,
         "roles": {},
-        "anchor_count": 629
+        "anchor_count": 628
       }
     },
     {
-      "id": "cbf97bdaaa89be48",
-      "url": "https://www.awwwards.com/websites/e-commerce/?page=3",
+      "id": "0c4ff90f41f14389",
+      "url": "https://www.awwwards.com/websites/e-commerce/?page=2",
       "family": "main.category-list",
       "inspection_level": "http_dom",
-      "observed_at": "2026-11-23T08:17:16.998355+00:00",
-      "source_sha256": "7998c4bd4d90f719497cbed79635ff6c98a7dfa7e0bb3291e466cefd8becd3c9",
+      "observed_at": "2026-11-23T08:17:16.950018+00:00",
+      "source_sha256": "385a4fbac4953dfb1e8375f1caf1ee1a92dcd41270b8cff10cb53e22609b654d",
       "structure": {
         "headings": {
           "h1": 1,

@@ -34,6 +34,17 @@
       "evidence_id": "fluid-technical-confirmed-390",
       "rationale": "Rendered technical product identity and four verified content panels; /collection/ URL heuristic is not the user task.",
       "hash_scope": "Cached HTTP metadata anchor, not a browser DOM or historical-version equivalence claim."
+    },
+    {
+      "url": "https://www.awwwards.com/inspiration/20-years-of-xbox-museum-timeline",
+      "source_id": "7ef53b130fdfbfb5",
+      "source_sha256": "84f0368e866a4126f32e541dd093ae2b0599d95ae7ac925b809a67bd118dbfa4",
+      "family": "main.inspiration-detail",
+      "reviewed_at": "2026-11-23T16:09:04.472632+00:00",
+      "evidence_file": "research/live_pages/reference-page-observations.json",
+      "evidence_id": "inspiration-detail77-390",
+      "rationale": "Rendered individual reference media, attribution, static topic tags and anonymous account gate. Distinct from inspiration index and source interaction.",
+      "hash_scope": "Cached HTTP metadata anchor, not browser DOM or historical-version equality."
     }
   ]
 }

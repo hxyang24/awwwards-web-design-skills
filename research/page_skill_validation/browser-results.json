@@ -1,14 +1,14 @@
 {
-  "date": "2026-11-23T15:40:57.854Z",
+  "date": "2026-11-23T16:31:29.399Z",
   "status": "passed",
-  "page_skills": 48,
+  "page_skills": 49,
   "checks": [
     {
-      "name": "All 48 standalone skill blueprints load and fit at 390",
+      "name": "All 49 standalone skill blueprints load and fit at 390",
       "status": "passed"
     },
     {
-      "name": "All 48 standalone skill blueprints load and fit at 1440",
+      "name": "All 49 standalone skill blueprints load and fit at 1440",
       "status": "passed"
     },
     {
@@ -117,6 +117,10 @@
     },
     {
       "name": "technical-product accessibility and original screenshot",
+      "status": "passed"
+    },
+    {
+      "name": "reference-detail accessibility and original screenshot",
       "status": "passed"
     },
     {
@@ -307,6 +311,11 @@
       "kind": "technical-product",
       "skill": "external-technical-product",
       "violations": []
+    },
+    {
+      "kind": "reference-detail",
+      "skill": "inspiration-detail",
+      "violations": []
     }
   ],
   "screenshots": [
@@ -336,7 +345,8 @@
     "research/page_skill_validation/screenshots/prompt-390.png",
     "research/page_skill_validation/screenshots/editorial-index-390.png",
     "research/page_skill_validation/screenshots/shop-index-390.png",
-    "research/page_skill_validation/screenshots/technical-product-390.png"
+    "research/page_skill_validation/screenshots/technical-product-390.png",
+    "research/page_skill_validation/screenshots/reference-detail-390.png"
   ],
   "errors": [],
   "external_requests": [],

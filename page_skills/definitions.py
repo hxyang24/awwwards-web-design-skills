@@ -163,3 +163,9 @@ PAGES.append(('external-technical-product',['external.technical-product'],'获�
  ['product_identity','example_dimensions_mm','performance[].value_or_null','performance[].basis','performance[].reference','finishes','symbolic_layouts','active_panel','selection_route','local_brief'],
  '数据失败保留完整静态四节与下载；未知性能不能记为零或认证；编辑后废弃旧简报。',
  '默认静态原创图示，无自动视频；减弱动态时无装饰运动；二维配置示意不冒充工程或三维配置器。'))
+
+PAGES.append(('inspiration-detail',['main.inspiration-detail'],'主站灵感参考详情、媒体说明与本地笔记','reference-detail','参考身份、出处与创作者、原创媒体、播放状态、文字稿、静态主题、本地笔记、链接复制、相关参考与返回',
+ ['区分参考媒体与源站真实互动，不将视频当作可运行原作','核查媒体时间与错误，而不是仅看海报','确认标签是说明还是入口，匿名收藏是否要求账户','明确播放并可暂停或回到首帧，文字稿始终保留','本机笔记明确保存范围，复制失败提供手工路径'],
+ ['reference_id','creator','source_url_or_null','media_file','media_duration','transcript_segments','static_tags','related_notes','notebook_version','local_notes','persistence_scope','clipboard_result'],
+ '媒体失败保留海报与完整文字稿；存储不可用只保留当前标签页并说明旧记录可能存在；编辑后下载失效；复制未确认不报成功。',
+ '蓝本没有自动播放；明确点击才播放原创静音短片；支持暂停、定位、重置，减少动态时仍默认静态并保留全文。'))

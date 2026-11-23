@@ -1,0 +1,119 @@
+{
+  "schema_version": "1.0",
+  "purpose": "Limited source reference-detail facts for a separately authored standalone Skill",
+  "source_media_redistributed": false,
+  "observations": [
+    {
+      "id": "inspiration-detail77-390",
+      "source_id": "7ef53b130fdfbfb5",
+      "url": "https://www.awwwards.com/inspiration/20-years-of-xbox-museum-timeline",
+      "observed_at": "2026-11-23T15:49:53.515Z",
+      "viewport": {
+        "width": 390,
+        "height": 1000,
+        "device_scale_factor": 1
+      },
+      "status": "rendered_observed",
+      "main_site_reference": true,
+      "work_detail_url": "https://www.awwwards.com/sites/20-years-of-xbox-museum",
+      "source_page_task": "Inspiration reference detail with media, tags, attribution, source link and related references; it is not the original external interaction",
+      "metadata_tags": "Observed timeline label is strong.button.button--tag.no-pointer inside li; no href or data-action. Recorded as static taxonomy, not an operated filter.",
+      "anonymous_collect": {
+        "status": "acted_and_observed",
+        "observable_state_changed": true,
+        "visible_login_control": "Log in now",
+        "native_dialog_count_after": 0,
+        "interpretation": "Login pane visible in private screenshot, even though no native/ARIA dialog counted. No credentials entered or login submitted."
+      },
+      "share_entry": {
+        "attempted": true,
+        "intended_result_confirmed": false,
+        "coarse_state_changed": false,
+        "not_claimed": "No native share, copied link, social post or share menu success was confirmed"
+      },
+      "targeting": "Desktop floating and main toolbars are duplicates. Initial selector refused two matches; scoped to inspected .head-toolbar__right, not first matching target.",
+      "private_screenshot_sha256": "801f779ae0f8d446da134fb595ffcd4613ac24dbe3c0a5f5b73b22959cca1427",
+      "source_media_redistributed": false,
+      "source_screenshots_redistributed": false,
+      "not_claimed": [
+        "Authentication, actual collection persistence or account states",
+        "All tag interactions or related navigation",
+        "Original external website behavior or historical award equivalence",
+        "All frames, responsive source variants or production behavior"
+      ],
+      "native_media_sample": {
+        "before": [
+          {
+            "paused": false,
+            "ended": false,
+            "muted": true,
+            "autoplay": true,
+            "loop": true,
+            "controls": false,
+            "readyState": 4,
+            "networkState": 1,
+            "currentTime": 4.3919,
+            "duration": 9.833333,
+            "error": null
+          }
+        ],
+        "after": [
+          {
+            "paused": false,
+            "ended": false,
+            "muted": true,
+            "autoplay": true,
+            "loop": true,
+            "controls": false,
+            "readyState": 4,
+            "networkState": 1,
+            "currentTime": 5.6533,
+            "duration": 9.833333,
+            "error": null
+          }
+        ],
+        "interval_ms": 1250,
+        "interpretation": "Current time advanced with readyState4 and no reported native media error. Playback signal only; no source footage saved or bundled."
+      }
+    },
+    {
+      "id": "inspiration-detail77-corrected-1440",
+      "source_id": "7ef53b130fdfbfb5",
+      "url": "https://www.awwwards.com/inspiration/20-years-of-xbox-museum-timeline",
+      "observed_at": "2026-11-23T15:52:12.169Z",
+      "viewport": {
+        "width": 1440,
+        "height": 1000,
+        "device_scale_factor": 1
+      },
+      "status": "rendered_observed",
+      "main_site_reference": true,
+      "work_detail_url": "https://www.awwwards.com/sites/20-years-of-xbox-museum",
+      "source_page_task": "Inspiration reference detail with media, tags, attribution, source link and related references; it is not the original external interaction",
+      "metadata_tags": "Observed timeline label is strong.button.button--tag.no-pointer inside li; no href or data-action. Recorded as static taxonomy, not an operated filter.",
+      "anonymous_collect": {
+        "status": "acted_and_observed",
+        "observable_state_changed": true,
+        "visible_login_control": "Log in now",
+        "native_dialog_count_after": 0,
+        "interpretation": "Login pane visible in private screenshot, even though no native/ARIA dialog counted. No credentials entered or login submitted."
+      },
+      "share_entry": {
+        "attempted": true,
+        "intended_result_confirmed": false,
+        "coarse_state_changed": false,
+        "not_claimed": "No native share, copied link, social post or share menu success was confirmed"
+      },
+      "targeting": "Desktop floating and main toolbars are duplicates. Initial selector refused two matches; scoped to inspected .head-toolbar__right, not first matching target.",
+      "private_screenshot_sha256": "dd13d5478a4a481957ba3bfa580e0bd7f69861939e9493871804b2f70d93c060",
+      "source_media_redistributed": false,
+      "source_screenshots_redistributed": false,
+      "not_claimed": [
+        "Authentication, actual collection persistence or account states",
+        "All tag interactions or related navigation",
+        "Original external website behavior or historical award equivalence",
+        "All frames, responsive source variants or production behavior"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "license": "MIT",
+  "origin": "Original authored Canvas geometry and text recorded with MediaRecorder VP8; no source-site footage, audio, fonts or other external assets",
+  "generator": "tools/create_reference_media.mjs",
+  "bytes": 236569,
+  "sha256": "f077746ea7a085008f674c64f6917493b7dc1b7354acdd68f05088f06bcba02f",
+  "nominal_seconds": 6,
+  "not_claimed": "This is an original timing illustration, not a source-site capture or external interactive implementation",
+  "raw_recorder_sha256": "af8882386d0d0fd73d029809581aa57dec0a8b7a51013eec0d07009655cb8fba",
+  "container_remux": "Own VP8 packets only; PyAV 16.1.0, no re-encoding or external footage",
+  "finalizer": "tools/finalize_reference_media.py",
+  "verified_seconds": 5.838,
+  "decoded_frames": 122,
+  "remux_packets": 122
+}

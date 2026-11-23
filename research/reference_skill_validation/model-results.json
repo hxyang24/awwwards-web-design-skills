@@ -1,0 +1,57 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "name": "Reference identity and original fixture stay distinct from an external original",
+      "status": "passed"
+    },
+    {
+      "name": "Unreviewed media and malformed timed descriptions are rejected",
+      "status": "passed"
+    },
+    {
+      "name": "Bounded identities, tags and related notes are enforced",
+      "status": "passed"
+    },
+    {
+      "name": "Public attribution URLs reject credentials and executable schemes",
+      "status": "passed"
+    },
+    {
+      "name": "Related topic filtering covers the complete original list including empty",
+      "status": "passed"
+    },
+    {
+      "name": "Route repeated and unknown values do not produce a fake empty result",
+      "status": "passed"
+    },
+    {
+      "name": "Copied HTTP link excludes query and fragment note material",
+      "status": "passed"
+    },
+    {
+      "name": "Versioned note record round trips only under its own reference identity",
+      "status": "passed"
+    },
+    {
+      "name": "Notes are bounded plain text with valid timestamps",
+      "status": "passed"
+    },
+    {
+      "name": "Export labels persistence boundaries and never invents an external source",
+      "status": "passed"
+    },
+    {
+      "name": "Media provenance matches the original shipped file with decoded authoring evidence",
+      "status": "passed"
+    },
+    {
+      "name": "Captions cover all three original descriptions",
+      "status": "passed"
+    }
+  ],
+  "limitations": [
+    "Fictional reference data and an original authored media fixture",
+    "No source footage, cloud persistence, native share or original external interaction acceptance"
+  ]
+}

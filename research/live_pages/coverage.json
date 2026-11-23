@@ -1,5 +1,5 @@
 {
-  "snapshot_at": "2026-11-23T15:38:58.701670+00:00",
+  "snapshot_at": "2026-11-23T16:28:43.078953+00:00",
   "goal": "Convert Awwwards main-site and awarded external-site page patterns into reusable skills",
   "status": "in_progress",
   "scope": [
@@ -7,15 +7,15 @@
     "Awarded external websites and their reachable inner pages"
   ],
   "queue": {
-    "done": 6908,
-    "pending": 24992
+    "done": 6914,
+    "pending": 25098
   },
-  "observed_records": 6908,
-  "observed_complete_http_dom": 3205,
+  "observed_records": 6914,
+  "observed_complete_http_dom": 3211,
   "statuses": {
     "robots_unavailable": 134,
     "redirect": 199,
-    "http_observed": 3150,
+    "http_observed": 3156,
     "http_not_found": 56,
     "http_unavailable": 122,
     "http_blocked": 3103,
@@ -49,8 +49,8 @@
     "main.annual-awards": 11,
     "main.article": 17,
     "main.award-detail": 492,
-    "main.award-list": 11,
-    "main.category-list": 11,
+    "main.award-list": 16,
+    "main.category-list": 12,
     "main.collection-detail": 23,
     "main.collection-index": 4,
     "main.conference": 4,
@@ -88,7 +88,7 @@
   "http_dom_content_state_hints": {
     "http_not_found_reference": 31,
     "possible_not_found": 35,
-    "unclassified": 3139
+    "unclassified": 3145
   },
   "content_state_hint_note": "Title/heading heuristics only. Unclassified is not normal UI proof; complete HTTP DOM includes readable HTTP-error references.",
   "awwwards_linked_external_hosts_discovered": 483,
@@ -114,14 +114,14 @@
     "external.prompt-detail": 116,
     "external.service": 170,
     "main.article": 432,
-    "main.award-detail": 610,
-    "main.award-list": 8,
+    "main.award-detail": 692,
+    "main.award-list": 4,
     "main.category-list": 574,
     "main.collection-detail": 132,
     "main.course-detail": 71,
     "main.course-index": 26,
     "main.creator-directory": 145,
-    "main.creator-profile": 2968,
+    "main.creator-profile": 2996,
     "main.editorial-index": 79,
     "main.job-detail": 24,
     "main.job-index": 1,

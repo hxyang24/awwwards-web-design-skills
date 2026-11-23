@@ -10,6 +10,17 @@ from install_all_skills import install
 def load(path,name):
  spec=importlib.util.spec_from_file_location(name,path);m=importlib.util.module_from_spec(spec);spec.loader.exec_module(m);return m
 class PageSkills(unittest.TestCase):
+ def test_reference_static_content_preserves_media_transcript_and_all_original_notes(self):
+  import shutil
+  with tempfile.TemporaryDirectory() as t:
+   target=Path(t)/'reference';shutil.copytree(R/'page_skills/editorial/reference',target)
+   p=target/'reference.json';d=json.loads(p.read_text(encoding='utf-8'));d['title']='<Reference fixture>';p.write_text(json.dumps(d),encoding='utf-8')
+   result=load(target/'render_static.py','reference_static_fixture').render(target);self.assertEqual(result,{'transcript_segments':3,'related_notes':3})
+   text=(target/'index.html').read_text(encoding='utf-8');self.assertIn('&lt;Reference fixture&gt;',text);self.assertIn(hashlib.sha256(p.read_bytes()).hexdigest(),text);self.assertEqual(text.count('class="reading"'),3);self.assertIn('captions.vtt',text);self.assertIn('controls playsinline muted',text);self.assertNotIn('<video autoplay',text);self.assertIn(html.escape(d['summary']),text);self.assertIn(html.escape(d['creator']),text)
+   for note in d['related']:self.assertIn(html.escape(note['body']),text)
+ def test_reference_review_is_main_site_detail_and_not_the_external_experience(self):
+  reviews=load_reviews(R);review=reviews['https://www.awwwards.com/inspiration/20-years-of-xbox-museum-timeline'];source={'url':review['url'],'id':review['source_id'],'source_sha256':review['source_sha256'],'inspection_level':'http_dom'}
+  self.assertEqual(assign_family(source,reviews)['family'],'main.inspiration-detail');source['source_sha256']='0'*64;self.assertEqual(assign_family(source,reviews)['review_status'],'stale')
  def test_technical_static_regeneration_updates_digest_and_preserves_four_sections(self):
   import shutil
   with tempfile.TemporaryDirectory() as t:

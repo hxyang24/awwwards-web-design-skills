@@ -1,0 +1,32 @@
+{
+  "date": "2026-11-23T16:22:55.500Z",
+  "status": "passed",
+  "filter": "Explicit play",
+  "checks": [
+    {
+      "name": "Explicit play pause seek restart and end are real media states",
+      "status": "passed"
+    }
+  ],
+  "accessibility": [],
+  "screenshots": [],
+  "errors": [],
+  "external_requests": [],
+  "environment": {
+    "node": "v24.14.0",
+    "platform": "win32",
+    "browser": "157.0.8103.79",
+    "viewport_widths": [
+      320,
+      390,
+      768,
+      1440
+    ],
+    "reduced_motion": "reduce"
+  },
+  "limitations": [
+    "Original authored VP8 fixture, not source footage or original external interaction",
+    "Selected automated accessibility rules; no physical devices, Safari/Firefox or full assistive-technology acceptance",
+    "No native share, external account, cloud collection, messaging or production acceptance"
+  ]
+}

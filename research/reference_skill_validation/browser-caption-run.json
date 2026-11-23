@@ -1,0 +1,149 @@
+{
+  "date": "2026-11-23T16:25:12.728Z",
+  "status": "failed",
+  "filter": null,
+  "checks": [
+    {
+      "name": "Reference layout and explicit static start 320",
+      "status": "passed"
+    },
+    {
+      "name": "Reference layout and explicit static start 390",
+      "status": "passed"
+    },
+    {
+      "name": "Reference layout and explicit static start 768",
+      "status": "passed"
+    },
+    {
+      "name": "Reference layout and explicit static start 1440",
+      "status": "passed"
+    },
+    {
+      "name": "Selected reference accessibility rules 390",
+      "status": "passed"
+    },
+    {
+      "name": "Selected reference accessibility rules 1440",
+      "status": "passed"
+    },
+    {
+      "name": "Original video has finite duration, decoded frames and loaded caption cues",
+      "status": "passed"
+    },
+    {
+      "name": "Explicit play pause seek restart and end are real media states",
+      "status": "passed"
+    },
+    {
+      "name": "Denied play promises never report playing and expose recovery",
+      "status": "passed"
+    },
+    {
+      "name": "Missing media retains full description and retry can load original film",
+      "status": "passed"
+    },
+    {
+      "name": "Missing captions retain the complete accessible description",
+      "status": "failed",
+      "error": "expect(locator).toContainText(expected) failed\n\nLocator: locator('#media-status')\nExpected substring: \"Caption track unavailable\"\nReceived string:    \"Original study ready for local playback. Choose Play; no automatic motion starts.\"\nTimeout: 5000ms\n\nCall log:\n  - Expect \"toContainText\" locator('#media-status') with timeout 5000ms\n  - waiting for locator('#media-status')\n    14 × locator resolved to <p role=\"status\" id=\"media-status\">Original study ready for local playback. Choose P…</p>\n       - unexpected value \"Original study ready for local playback. Choose Play; no automatic motion starts.\"\n"
+    },
+    {
+      "name": "Mismatched original media digest retains truthful native fallback",
+      "status": "passed"
+    },
+    {
+      "name": "Saving survives reload, plain notes export and edits invalidate download",
+      "status": "passed"
+    },
+    {
+      "name": "Remove affects only this reference and keeps the unsaved field",
+      "status": "passed"
+    },
+    {
+      "name": "Unavailable storage is honestly tab-only and does not fake persistence",
+      "status": "passed"
+    },
+    {
+      "name": "Failed removal preserves knowledge of the saved browser record",
+      "status": "passed"
+    },
+    {
+      "name": "Malformed stored data can be replaced explicitly without reading other keys",
+      "status": "passed"
+    },
+    {
+      "name": "A cross-tab change keeps an unsaved draft and invalidates stale export",
+      "status": "passed"
+    },
+    {
+      "name": "Confirmed clipboard copy excludes private query and fragment",
+      "status": "passed"
+    },
+    {
+      "name": "Clipboard denial and timeout offer a selected manual route",
+      "status": "passed"
+    },
+    {
+      "name": "Related empty result reset route Back and native reading are recoverable",
+      "status": "passed"
+    },
+    {
+      "name": "Invalid topic link falls back rather than claiming no results",
+      "status": "passed"
+    },
+    {
+      "name": "Without JavaScript native media and complete original readings remain",
+      "status": "passed"
+    },
+    {
+      "name": "Reference data failure leaves full content and retry recovers controls",
+      "status": "passed"
+    },
+    {
+      "name": "Edited data must match regenerated static content",
+      "status": "passed"
+    },
+    {
+      "name": "Dispose pauses media, cancels pending copy and preserves host state",
+      "status": "passed"
+    },
+    {
+      "name": "No uncaught errors or outside business requests",
+      "status": "passed"
+    }
+  ],
+  "accessibility": [
+    {
+      "tag": "default-390",
+      "violations": []
+    },
+    {
+      "tag": "default-1440",
+      "violations": []
+    }
+  ],
+  "screenshots": [
+    "research/reference_skill_validation/screenshots/reference-390.png",
+    "research/reference_skill_validation/screenshots/reference-1440.png"
+  ],
+  "errors": [],
+  "external_requests": [],
+  "environment": {
+    "node": "v24.14.0",
+    "platform": "win32",
+    "browser": "157.0.8103.79",
+    "viewport_widths": [
+      320,
+      390,
+      768,
+      1440
+    ],
+    "reduced_motion": "reduce"
+  },
+  "limitations": [
+    "Original authored VP8 fixture, not source footage or original external interaction",
+    "Selected automated accessibility rules; no physical devices, Safari/Firefox or full assistive-technology acceptance",
+    "No native share, external account, cloud collection, messaging or production acceptance"
+  ]
+}
