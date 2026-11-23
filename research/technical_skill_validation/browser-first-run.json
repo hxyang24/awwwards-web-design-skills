@@ -1,0 +1,11 @@
+{
+  "status": "interrupted",
+  "recorded_at": "2026-11-23T15:36:43.736373+00:00",
+  "observed_failures": [
+    "Display unit middle-dot encoding",
+    "Selection caption middle-dot encoding",
+    "Enhanced sheet middle-dot encoding"
+  ],
+  "reason": "No-JavaScript AxeBuilder scan did not return; stopped this owned test process. No-JavaScript reading/download are still tested; Axe scans are applied to enhanced panels and dialog.",
+  "not_counted_as_passed": true
+}

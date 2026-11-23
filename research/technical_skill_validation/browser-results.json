@@ -1,0 +1,150 @@
+{
+  "date": "2026-11-23T15:37:05.908Z",
+  "status": "passed",
+  "checks": [
+    {
+      "name": "Technical layout fits 320",
+      "status": "passed"
+    },
+    {
+      "name": "Technical layout fits 390",
+      "status": "passed"
+    },
+    {
+      "name": "Technical layout fits 768",
+      "status": "passed"
+    },
+    {
+      "name": "Technical layout fits 1440",
+      "status": "passed"
+    },
+    {
+      "name": "All four technical panels and selected accessibility rules 390",
+      "status": "passed"
+    },
+    {
+      "name": "All four technical panels and selected accessibility rules 1440",
+      "status": "passed"
+    },
+    {
+      "name": "Roving tabs support arrows Home End and Space",
+      "status": "passed"
+    },
+    {
+      "name": "Display units preserve example values and null depth",
+      "status": "passed"
+    },
+    {
+      "name": "Native choices change original illustrations and URL",
+      "status": "passed"
+    },
+    {
+      "name": "Back restores panels and does not leave focus hidden",
+      "status": "passed"
+    },
+    {
+      "name": "Invalid route falls back with an explanation",
+      "status": "passed"
+    },
+    {
+      "name": "Unrelated hash preserves current panel",
+      "status": "passed"
+    },
+    {
+      "name": "Brief input stays text, edits invalidate it and Escape returns focus",
+      "status": "passed"
+    },
+    {
+      "name": "Blank project is rejected and reopening discards stale brief",
+      "status": "passed"
+    },
+    {
+      "name": "Enhanced sheet reflects current local units and selection",
+      "status": "passed"
+    },
+    {
+      "name": "No JavaScript retains four full sections, FAQ and static download",
+      "status": "passed"
+    },
+    {
+      "name": "Data failure leaves complete fallback and retry can recover",
+      "status": "passed"
+    },
+    {
+      "name": "Changed JSON cannot silently diverge from static fallback",
+      "status": "passed"
+    },
+    {
+      "name": "Dispose closes owned dialog and restores native static sections",
+      "status": "passed"
+    },
+    {
+      "name": "No decorative animation starts under reduced motion",
+      "status": "passed"
+    },
+    {
+      "name": "No uncaught errors or outside business requests",
+      "status": "passed"
+    }
+  ],
+  "accessibility": [
+    {
+      "tag": "Specification-390",
+      "violations": []
+    },
+    {
+      "tag": "Performance-390",
+      "violations": []
+    },
+    {
+      "tag": "Options-390",
+      "violations": []
+    },
+    {
+      "tag": "Configurations-390",
+      "violations": []
+    },
+    {
+      "tag": "Specification-1440",
+      "violations": []
+    },
+    {
+      "tag": "Performance-1440",
+      "violations": []
+    },
+    {
+      "tag": "Options-1440",
+      "violations": []
+    },
+    {
+      "tag": "Configurations-1440",
+      "violations": []
+    },
+    {
+      "tag": "brief-dialog",
+      "violations": []
+    }
+  ],
+  "screenshots": [
+    "research/technical_skill_validation/screenshots/technical-390.png",
+    "research/technical_skill_validation/screenshots/technical-1440.png"
+  ],
+  "errors": [],
+  "external_requests": [],
+  "environment": {
+    "node": "v24.14.0",
+    "platform": "win32",
+    "browser": "157.0.8103.79",
+    "viewport_widths": [
+      320,
+      390,
+      768,
+      1440
+    ]
+  },
+  "limitations": [
+    "Original fictional template, not pixel reproduction or source configurator",
+    "Selected automated accessibility rules, not full WCAG or physical-device acceptance",
+    "No engineering, backend, quote, order, live certificate or production validation"
+  ]
+}

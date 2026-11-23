@@ -354,10 +354,12 @@
           "text"
         ]
       },
-      "pages": 2,
+      "pages": 4,
       "example_source_ids": [
         "ee1ff5a8fffa40ad",
-        "90802008a575545f"
+        "90802008a575545f",
+        "49c3a0ebabc15fc6",
+        "006c4f298d2bc109"
       ],
       "candidate_page_skills": [
         "awwwards-page-external-collection"
@@ -1435,13 +1437,13 @@
         "content_state_hint": "unclassified",
         "input_types": []
       },
-      "pages": 5,
+      "pages": 8,
       "example_source_ids": [
         "4da7f8cc9bece608",
         "8951f0ec4b7a9daf",
         "5f5c7334f19d2c5d",
-        "ceb2eee1f48921df",
-        "189f0c9cf5799d16"
+        "59a42d14b752de1c",
+        "39e977afb6f37de9"
       ],
       "candidate_page_skills": [
         "awwwards-page-external-collection"
@@ -2215,9 +2217,11 @@
           "search"
         ]
       },
-      "pages": 1,
+      "pages": 3,
       "example_source_ids": [
-        "f05907d32887cd72"
+        "f05907d32887cd72",
+        "245fcc54f101d5b4",
+        "3686966b1585fb33"
       ],
       "candidate_page_skills": [
         "awwwards-page-external-collection"
@@ -4284,7 +4288,7 @@
         "content_state_hint": "unclassified",
         "input_types": []
       },
-      "pages": 7,
+      "pages": 9,
       "example_source_ids": [
         "c070407cf2e08f27",
         "21ddeae6eec79d45",
@@ -8014,9 +8018,12 @@
           "text"
         ]
       },
-      "pages": 1,
+      "pages": 4,
       "example_source_ids": [
-        "8ef81b9c15e25805"
+        "8ef81b9c15e25805",
+        "8f55df07c712769e",
+        "9865ad79dcab2471",
+        "f7946aaa3730e58b"
       ],
       "candidate_page_skills": [
         "awwwards-page-external-collection"
@@ -8506,6 +8513,90 @@
       "pages": 1,
       "example_source_ids": [
         "64b654052fc2d3e9"
+      ],
+      "candidate_page_skills": [
+        "awwwards-page-external-collection"
+      ],
+      "status": "requires_variant_review",
+      "not_claimed": "DOM element counts do not prove visible layout, technology, state or completed skill extraction"
+    },
+    {
+      "id": "2749b05d7ae2857b",
+      "family_hint": "external.collection",
+      "observed_dom_signature": {
+        "forms": 20,
+        "tables": 0,
+        "dialogs": 1,
+        "canvases": 0,
+        "videos": 0,
+        "navigation_regions": 2,
+        "content_state_hint": "unclassified",
+        "input_types": [
+          "email",
+          "hidden",
+          "search",
+          "tel"
+        ]
+      },
+      "pages": 1,
+      "example_source_ids": [
+        "3e3309c85c48522d"
+      ],
+      "candidate_page_skills": [
+        "awwwards-page-external-collection"
+      ],
+      "status": "requires_variant_review",
+      "not_claimed": "DOM element counts do not prove visible layout, technology, state or completed skill extraction"
+    },
+    {
+      "id": "645b64936b01569a",
+      "family_hint": "external.collection",
+      "observed_dom_signature": {
+        "forms": 22,
+        "tables": 0,
+        "dialogs": 1,
+        "canvases": 0,
+        "videos": 0,
+        "navigation_regions": 2,
+        "content_state_hint": "unclassified",
+        "input_types": [
+          "email",
+          "hidden",
+          "search",
+          "tel"
+        ]
+      },
+      "pages": 1,
+      "example_source_ids": [
+        "c108216db45b09b1"
+      ],
+      "candidate_page_skills": [
+        "awwwards-page-external-collection"
+      ],
+      "status": "requires_variant_review",
+      "not_claimed": "DOM element counts do not prove visible layout, technology, state or completed skill extraction"
+    },
+    {
+      "id": "42c1eafde2bd30c5",
+      "family_hint": "external.collection",
+      "observed_dom_signature": {
+        "forms": 67,
+        "tables": 0,
+        "dialogs": 1,
+        "canvases": 0,
+        "videos": 0,
+        "navigation_regions": 2,
+        "content_state_hint": "unclassified",
+        "input_types": [
+          "email",
+          "hidden",
+          "search",
+          "tel"
+        ]
+      },
+      "pages": 1,
+      "example_source_ids": [
+        "c8da3cdd781fca9a"
       ],
       "candidate_page_skills": [
         "awwwards-page-external-collection"
@@ -9850,11 +9941,13 @@
           "email"
         ]
       },
-      "pages": 3,
+      "pages": 6,
       "example_source_ids": [
         "ac4e94e5ced4c248",
         "8f9c87a70af1183a",
-        "6eeb0ec7b8e91901"
+        "6eeb0ec7b8e91901",
+        "474d2d95e371cc37",
+        "5012bdc71d6251c2"
       ],
       "candidate_page_skills": [
         "awwwards-page-external-collection"
@@ -11796,6 +11889,36 @@
       "not_claimed": "DOM element counts do not prove visible layout, technology, state or completed skill extraction"
     },
     {
+      "id": "45c487f98a656972",
+      "family_hint": "external.collection",
+      "observed_dom_signature": {
+        "forms": 4,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 2,
+        "navigation_regions": 4,
+        "content_state_hint": "unclassified",
+        "input_types": [
+          "checkbox",
+          "email",
+          "hidden",
+          "password",
+          "tel",
+          "text"
+        ]
+      },
+      "pages": 1,
+      "example_source_ids": [
+        "cfc47645e96916e4"
+      ],
+      "candidate_page_skills": [
+        "awwwards-page-external-collection"
+      ],
+      "status": "requires_variant_review",
+      "not_claimed": "DOM element counts do not prove visible layout, technology, state or completed skill extraction"
+    },
+    {
       "id": "f38c66eff61589de",
       "family_hint": "external.product",
       "observed_dom_signature": {
@@ -12140,9 +12263,10 @@
           "email"
         ]
       },
-      "pages": 1,
+      "pages": 2,
       "example_source_ids": [
-        "171081b56a55f33a"
+        "171081b56a55f33a",
+        "d215539be0c46695"
       ],
       "candidate_page_skills": [
         "awwwards-page-external-collection"
@@ -13687,10 +13811,80 @@
         "content_state_hint": "unclassified",
         "input_types": []
       },
-      "pages": 2,
+      "pages": 3,
       "example_source_ids": [
         "d9ebc1dc82234060",
+        "5a5af064b68bf4df",
         "25d9edf421405f67"
+      ],
+      "candidate_page_skills": [
+        "awwwards-page-external-collection"
+      ],
+      "status": "requires_variant_review",
+      "not_claimed": "DOM element counts do not prove visible layout, technology, state or completed skill extraction"
+    },
+    {
+      "id": "2f93b653df506419",
+      "family_hint": "external.collection",
+      "observed_dom_signature": {
+        "forms": 0,
+        "tables": 1,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 0,
+        "navigation_regions": 1,
+        "content_state_hint": "unclassified",
+        "input_types": []
+      },
+      "pages": 1,
+      "example_source_ids": [
+        "88b60d0a33c2dffb"
+      ],
+      "candidate_page_skills": [
+        "awwwards-page-external-collection"
+      ],
+      "status": "requires_variant_review",
+      "not_claimed": "DOM element counts do not prove visible layout, technology, state or completed skill extraction"
+    },
+    {
+      "id": "65b85f598ff402ca",
+      "family_hint": "external.technical-product",
+      "observed_dom_signature": {
+        "forms": 0,
+        "tables": 3,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 1,
+        "navigation_regions": 1,
+        "content_state_hint": "unclassified",
+        "input_types": []
+      },
+      "pages": 1,
+      "example_source_ids": [
+        "6e67775aee2d10c0"
+      ],
+      "candidate_page_skills": [
+        "awwwards-page-external-technical-product"
+      ],
+      "status": "requires_variant_review",
+      "not_claimed": "DOM element counts do not prove visible layout, technology, state or completed skill extraction"
+    },
+    {
+      "id": "9e8e9ff0ff5deba2",
+      "family_hint": "external.collection",
+      "observed_dom_signature": {
+        "forms": 0,
+        "tables": 4,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 0,
+        "navigation_regions": 1,
+        "content_state_hint": "unclassified",
+        "input_types": []
+      },
+      "pages": 1,
+      "example_source_ids": [
+        "37a85fe463d24bea"
       ],
       "candidate_page_skills": [
         "awwwards-page-external-collection"
@@ -16379,6 +16573,30 @@
       "not_claimed": "DOM element counts do not prove visible layout, technology, state or completed skill extraction"
     },
     {
+      "id": "2df8c92180a5ea80",
+      "family_hint": "external.collection",
+      "observed_dom_signature": {
+        "forms": 0,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 0,
+        "navigation_regions": 9,
+        "content_state_hint": "unclassified",
+        "input_types": []
+      },
+      "pages": 2,
+      "example_source_ids": [
+        "a5b7bce48e293137",
+        "26b82df08455a8b6"
+      ],
+      "candidate_page_skills": [
+        "awwwards-page-external-collection"
+      ],
+      "status": "requires_variant_review",
+      "not_claimed": "DOM element counts do not prove visible layout, technology, state or completed skill extraction"
+    },
+    {
       "id": "b5fd73ab1102ce6b",
       "family_hint": "external.product",
       "observed_dom_signature": {
@@ -17818,6 +18036,58 @@
       ],
       "candidate_page_skills": [
         "awwwards-page-external-editorial-index"
+      ],
+      "status": "requires_variant_review",
+      "not_claimed": "DOM element counts do not prove visible layout, technology, state or completed skill extraction"
+    },
+    {
+      "id": "015695f7f775bad4",
+      "family_hint": "external.collection",
+      "observed_dom_signature": {
+        "forms": 2,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 0,
+        "navigation_regions": 1,
+        "content_state_hint": "unclassified",
+        "input_types": [
+          "email",
+          "hidden"
+        ]
+      },
+      "pages": 1,
+      "example_source_ids": [
+        "356871a260e4a689"
+      ],
+      "candidate_page_skills": [
+        "awwwards-page-external-collection"
+      ],
+      "status": "requires_variant_review",
+      "not_claimed": "DOM element counts do not prove visible layout, technology, state or completed skill extraction"
+    },
+    {
+      "id": "9df301c9ff8b0b71",
+      "family_hint": "external.collection",
+      "observed_dom_signature": {
+        "forms": 2,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 0,
+        "navigation_regions": 2,
+        "content_state_hint": "unclassified",
+        "input_types": [
+          "email",
+          "hidden"
+        ]
+      },
+      "pages": 1,
+      "example_source_ids": [
+        "92761e32390d74cd"
+      ],
+      "candidate_page_skills": [
+        "awwwards-page-external-collection"
       ],
       "status": "requires_variant_review",
       "not_claimed": "DOM element counts do not prove visible layout, technology, state or completed skill extraction"
@@ -20630,6 +20900,34 @@
       "not_claimed": "DOM element counts do not prove visible layout, technology, state or completed skill extraction"
     },
     {
+      "id": "82e2a33800f1c749",
+      "family_hint": "external.collection",
+      "observed_dom_signature": {
+        "forms": 55,
+        "tables": 0,
+        "dialogs": 5,
+        "canvases": 0,
+        "videos": 0,
+        "navigation_regions": 5,
+        "content_state_hint": "unclassified",
+        "input_types": [
+          "checkbox",
+          "hidden",
+          "radio",
+          "search"
+        ]
+      },
+      "pages": 1,
+      "example_source_ids": [
+        "d60e3e9ae52eb8bd"
+      ],
+      "candidate_page_skills": [
+        "awwwards-page-external-collection"
+      ],
+      "status": "requires_variant_review",
+      "not_claimed": "DOM element counts do not prove visible layout, technology, state or completed skill extraction"
+    },
+    {
       "id": "64c0dd15d12d2dfe",
       "family_hint": "external.home",
       "observed_dom_signature": {
@@ -22305,6 +22603,31 @@
       ],
       "candidate_page_skills": [
         "awwwards-page-external-product"
+      ],
+      "status": "requires_variant_review",
+      "not_claimed": "DOM element counts do not prove visible layout, technology, state or completed skill extraction"
+    },
+    {
+      "id": "34236402ab75f640",
+      "family_hint": "external.collection",
+      "observed_dom_signature": {
+        "forms": 2,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 1,
+        "navigation_regions": 1,
+        "content_state_hint": "unclassified",
+        "input_types": [
+          "text"
+        ]
+      },
+      "pages": 1,
+      "example_source_ids": [
+        "96c56d971c4c9966"
+      ],
+      "candidate_page_skills": [
+        "awwwards-page-external-collection"
       ],
       "status": "requires_variant_review",
       "not_claimed": "DOM element counts do not prove visible layout, technology, state or completed skill extraction"
@@ -24884,10 +25207,11 @@
           "radio"
         ]
       },
-      "pages": 2,
+      "pages": 3,
       "example_source_ids": [
         "c792b81ffb833270",
-        "415b88881f24b534"
+        "415b88881f24b534",
+        "5d1ca1b79753c146"
       ],
       "candidate_page_skills": [
         "awwwards-page-external-collection"
@@ -24915,6 +25239,61 @@
       "pages": 1,
       "example_source_ids": [
         "3b11d8000df7b0f4"
+      ],
+      "candidate_page_skills": [
+        "awwwards-page-external-collection"
+      ],
+      "status": "requires_variant_review",
+      "not_claimed": "DOM element counts do not prove visible layout, technology, state or completed skill extraction"
+    },
+    {
+      "id": "3ef928c58ec2577a",
+      "family_hint": "external.collection",
+      "observed_dom_signature": {
+        "forms": 3,
+        "tables": 1,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 17,
+        "navigation_regions": 1,
+        "content_state_hint": "unclassified",
+        "input_types": [
+          "email",
+          "password",
+          "radio"
+        ]
+      },
+      "pages": 2,
+      "example_source_ids": [
+        "9ecad9718ee489fe",
+        "74d655e5cc2134b0"
+      ],
+      "candidate_page_skills": [
+        "awwwards-page-external-collection"
+      ],
+      "status": "requires_variant_review",
+      "not_claimed": "DOM element counts do not prove visible layout, technology, state or completed skill extraction"
+    },
+    {
+      "id": "ff595c27f82fb24f",
+      "family_hint": "external.collection",
+      "observed_dom_signature": {
+        "forms": 3,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 16,
+        "navigation_regions": 1,
+        "content_state_hint": "unclassified",
+        "input_types": [
+          "email",
+          "password",
+          "radio"
+        ]
+      },
+      "pages": 1,
+      "example_source_ids": [
+        "9119381a8fca7d3f"
       ],
       "candidate_page_skills": [
         "awwwards-page-external-collection"
@@ -25212,9 +25591,10 @@
           "search"
         ]
       },
-      "pages": 1,
+      "pages": 2,
       "example_source_ids": [
-        "a35ac34a29e4241d"
+        "a35ac34a29e4241d",
+        "e7e3d9baed7de9ae"
       ],
       "candidate_page_skills": [
         "awwwards-page-external-collection"
@@ -33188,6 +33568,34 @@
       "not_claimed": "DOM element counts do not prove visible layout, technology, state or completed skill extraction"
     },
     {
+      "id": "aea40bd3bd3fcf23",
+      "family_hint": "external.collection",
+      "observed_dom_signature": {
+        "forms": 5,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 0,
+        "navigation_regions": 4,
+        "content_state_hint": "unclassified",
+        "input_types": [
+          "checkbox",
+          "email",
+          "hidden",
+          "search"
+        ]
+      },
+      "pages": 1,
+      "example_source_ids": [
+        "809dedaa9503c77a"
+      ],
+      "candidate_page_skills": [
+        "awwwards-page-external-collection"
+      ],
+      "status": "requires_variant_review",
+      "not_claimed": "DOM element counts do not prove visible layout, technology, state or completed skill extraction"
+    },
+    {
       "id": "486a90d0f7d6e5d9",
       "family_hint": "external.legal",
       "observed_dom_signature": {
@@ -33943,6 +34351,38 @@
       ],
       "candidate_page_skills": [
         "awwwards-page-external-article"
+      ],
+      "status": "requires_variant_review",
+      "not_claimed": "DOM element counts do not prove visible layout, technology, state or completed skill extraction"
+    },
+    {
+      "id": "8487904d5b46c5a0",
+      "family_hint": "external.collection",
+      "observed_dom_signature": {
+        "forms": 5,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 0,
+        "navigation_regions": 0,
+        "content_state_hint": "unclassified",
+        "input_types": [
+          "checkbox",
+          "email",
+          "hidden",
+          "password",
+          "radio",
+          "range",
+          "submit",
+          "text"
+        ]
+      },
+      "pages": 1,
+      "example_source_ids": [
+        "142521dc98308f96"
+      ],
+      "candidate_page_skills": [
+        "awwwards-page-external-collection"
       ],
       "status": "requires_variant_review",
       "not_claimed": "DOM element counts do not prove visible layout, technology, state or completed skill extraction"
@@ -34872,10 +35312,41 @@
           "text"
         ]
       },
-      "pages": 2,
+      "pages": 3,
       "example_source_ids": [
         "abc1e1e0e117927f",
-        "87aba50834721076"
+        "87aba50834721076",
+        "8b083d44ec143bb2"
+      ],
+      "candidate_page_skills": [
+        "awwwards-page-external-collection"
+      ],
+      "status": "requires_variant_review",
+      "not_claimed": "DOM element counts do not prove visible layout, technology, state or completed skill extraction"
+    },
+    {
+      "id": "7022d09ddad22486",
+      "family_hint": "external.collection",
+      "observed_dom_signature": {
+        "forms": 8,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 0,
+        "navigation_regions": 1,
+        "content_state_hint": "unclassified",
+        "input_types": [
+          "date",
+          "email",
+          "hidden",
+          "radio",
+          "tel",
+          "text"
+        ]
+      },
+      "pages": 1,
+      "example_source_ids": [
+        "cdf483c404164da9"
       ],
       "candidate_page_skills": [
         "awwwards-page-external-collection"
@@ -36817,6 +37288,36 @@
       "pages": 1,
       "example_source_ids": [
         "6681f05a6afa9405"
+      ],
+      "candidate_page_skills": [
+        "awwwards-page-external-collection"
+      ],
+      "status": "requires_variant_review",
+      "not_claimed": "DOM element counts do not prove visible layout, technology, state or completed skill extraction"
+    },
+    {
+      "id": "2d20566012288aa5",
+      "family_hint": "external.collection",
+      "observed_dom_signature": {
+        "forms": 11,
+        "tables": 0,
+        "dialogs": 0,
+        "canvases": 0,
+        "videos": 1,
+        "navigation_regions": 4,
+        "content_state_hint": "unclassified",
+        "input_types": [
+          "checkbox",
+          "email",
+          "hidden",
+          "radio",
+          "search",
+          "text"
+        ]
+      },
+      "pages": 1,
+      "example_source_ids": [
+        "2c24baca55fd9402"
       ],
       "candidate_page_skills": [
         "awwwards-page-external-collection"

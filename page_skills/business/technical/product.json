@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "id": "folio-display",
+  "title": "Folio display system",
+  "summary": "A modular display concept for temporary exhibitions, calm corners and changing ideas.",
+  "mode": "fictional_design_study",
+  "dimensions": {"width_mm": 900, "height_mm": 1800, "depth_mm": null},
+  "finishes": [
+    {"id": "chalk", "label": "Chalk", "color": "#dae3e9", "description": "A pale matte surface in this original visual study."},
+    {"id": "graphite", "label": "Graphite", "color": "#40566a", "description": "A dark neutral surface for the original display concept."},
+    {"id": "clay", "label": "Clay", "color": "#bc8e73", "description": "A warm surface variation, illustrated without a material certification."}
+  ],
+  "layouts": [
+    {"id": "line-two", "label": "Two-panel line", "panels": 2, "turn": 0},
+    {"id": "line-three", "label": "Three-panel line", "panels": 3, "turn": 0},
+    {"id": "corner-three", "label": "Three-panel corner", "panels": 3, "turn": 90}
+  ],
+  "performance": [
+    {"id": "fire", "label": "Fire classification", "value": null, "unit": "", "basis": "unknown", "reference": null},
+    {"id": "acoustic", "label": "Sound reduction", "value": null, "unit": "dB", "basis": "unknown", "reference": null},
+    {"id": "recycled", "label": "Recycled content", "value": null, "unit": "%", "basis": "unknown", "reference": null}
+  ],
+  "faq": [
+    {"question": "Are these engineering specifications?", "answer": "This is an original fictional design study. The example dimensions and illustrations do not establish structural, fire, acoustic or manufacturing performance."},
+    {"question": "Does a brief request a quotation?", "answer": "A local brief is a text file created in this browser. It does not send a message, reserve inventory or request a real quotation."},
+    {"question": "What remains unknown?", "answer": "Verified performance, depth, pricing, availability, installation requirements and final manufacturing details are not supplied by this study."}
+  ]
+}

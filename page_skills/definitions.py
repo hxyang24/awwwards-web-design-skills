@@ -157,3 +157,9 @@ PAGES.append(('external-collection',['external.collection'],'获奖来源外站�
  ['catalog_revision','products[].id','category','price_cents_or_null','availability','query','sort','selected_facets','facet_counts','confirmed_total','cursor','shown_count','reading_origin'],
  '查询失败不表示零结果；旧请求不得覆盖新选择，加载更多失败保留卡片与游标；无脚本和数据失败可读取全部原创商品信息。',
  '筛选结果依靠可读数量和状态传达；抽屉可键盘关闭并恢复焦点，移动重排不遮挡核心控件。'))
+
+PAGES.append(('external-technical-product',['external.technical-product'],'获奖来源外站技术产品详情与证据分级','technical-product','产品身份、原创示意、规格、性能证据、饰面、配置示意、下载、本地项目简报、常见问题',
+ ['辨认详情任务，不按 collection 路径误分为集合页','核实面板切换、预设状态和实际滚动容器','区分示例尺寸、未知性能与带文档输入','用键盘选择面板、饰面和示意布局','生成本地简报并说明未提交任何询价'],
+ ['product_identity','example_dimensions_mm','performance[].value_or_null','performance[].basis','performance[].reference','finishes','symbolic_layouts','active_panel','selection_route','local_brief'],
+ '数据失败保留完整静态四节与下载；未知性能不能记为零或认证；编辑后废弃旧简报。',
+ '默认静态原创图示，无自动视频；减弱动态时无装饰运动；二维配置示意不冒充工程或三维配置器。'))

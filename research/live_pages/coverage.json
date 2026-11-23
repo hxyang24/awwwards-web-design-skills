@@ -1,5 +1,5 @@
 {
-  "snapshot_at": "2026-11-23T14:26:30.158161+00:00",
+  "snapshot_at": "2026-11-23T15:38:58.701670+00:00",
   "goal": "Convert Awwwards main-site and awarded external-site page patterns into reusable skills",
   "status": "in_progress",
   "scope": [
@@ -7,19 +7,19 @@
     "Awarded external websites and their reachable inner pages"
   ],
   "queue": {
-    "done": 6408,
-    "pending": 24750
+    "done": 6908,
+    "pending": 24992
   },
-  "observed_records": 6408,
-  "observed_complete_http_dom": 3165,
+  "observed_records": 6908,
+  "observed_complete_http_dom": 3205,
   "statuses": {
-    "robots_unavailable": 104,
-    "redirect": 197,
-    "http_observed": 3109,
+    "robots_unavailable": 134,
+    "redirect": 199,
+    "http_observed": 3150,
     "http_not_found": 56,
-    "http_unavailable": 121,
-    "http_blocked": 2678,
-    "request_error": 63,
+    "http_unavailable": 122,
+    "http_blocked": 3103,
+    "request_error": 64,
     "robots_disallowed": 78,
     "non_html": 2
   },
@@ -28,6 +28,7 @@
     "external.article": 245,
     "external.artwork": 3,
     "external.careers": 84,
+    "external.collection": 40,
     "external.contact": 209,
     "external.editorial-index": 188,
     "external.experiment": 2,
@@ -87,7 +88,7 @@
   "http_dom_content_state_hints": {
     "http_not_found_reference": 31,
     "possible_not_found": 35,
-    "unclassified": 3099
+    "unclassified": 3139
   },
   "content_state_hint_note": "Title/heading heuristics only. Unclassified is not normal UI proof; complete HTTP DOM includes readable HTTP-error references.",
   "awwwards_linked_external_hosts_discovered": 483,
@@ -99,16 +100,16 @@
     "external.article": 2090,
     "external.artwork": 194,
     "external.careers": 139,
-    "external.collection": 997,
-    "external.contact": 18,
+    "external.collection": 563,
+    "external.contact": 17,
     "external.editorial-index": 178,
     "external.experiment": 12,
     "external.gallery": 34,
     "external.home": 27,
     "external.legal": 162,
-    "external.other": 8161,
+    "external.other": 8389,
     "external.pricing": 15,
-    "external.product": 2497,
+    "external.product": 2946,
     "external.project": 1098,
     "external.prompt-detail": 116,
     "external.service": 170,

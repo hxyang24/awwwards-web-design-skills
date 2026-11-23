@@ -1,0 +1,12 @@
+import {createHash} from 'node:crypto';
+// Record a bounded, inspected content region without distributing its text.
+export async function observeSourceRegion(page,selector,{maxUnits=16384,expectedText=null}={}){
+ if(typeof selector!=='string'||!selector||selector.length>160||!Number.isInteger(maxUnits)||maxUnits<1||maxUnits>32768||expectedText!==null&&(typeof expectedText!=='string'||!expectedText||expectedText.length>100))throw Error('Use a bounded inspected region and optional expected label');
+ const target=page.locator(selector).filter({visible:true});if(await target.count()!==1)throw Error('Source region must identify one visible inspected element');
+ const result=await target.evaluate((el,{maxUnits,expectedText})=>{const text=(el.innerText||'').trim().replace(/\s+/g,' '),r=el.getBoundingClientRect();return{text_prefix:text.slice(0,maxUnits),total_text_units:text.length,truncated:text.length>maxUnits,expected_text_present:expectedText===null?null:text.includes(expectedText),rect:{x:Math.round(r.x),y:Math.round(r.y),width:Math.round(r.width),height:Math.round(r.height)}};},{maxUnits,expectedText});
+ const text_sha256=createHash('sha256').update(result.text_prefix,'utf8').digest('hex');delete result.text_prefix;return{...result,text_sha256,hash_scope:result.truncated?'bounded_visible_text_prefix':'visible_text',not_claimed:'A text/geometry change alone does not establish graphics, backend, licensing or all source states'};
+}
+export async function observeSourceScroll(page,{limit=8}={}){
+ if(!Number.isInteger(limit)||limit<1||limit>32)throw Error('Scroll observation limit must be 1–32');
+ return page.evaluate(limit=>{const candidates=[...document.querySelectorAll('*')].filter(el=>{const s=getComputedStyle(el);return el.clientHeight>100&&el.scrollHeight>el.clientHeight+40&&['auto','scroll'].includes(s.overflowY)&&(!el.checkVisibility||el.checkVisibility({checkOpacity:true,checkVisibilityCSS:true}));});return{window:{x:Math.round(scrollX),y:Math.round(scrollY)},containers:candidates.slice(0,limit).map(el=>({tag:el.tagName.toLowerCase(),id:el.id.slice(0,120),class:typeof el.className==='string'?el.className.slice(0,160):'',x:Math.round(el.scrollLeft),y:Math.round(el.scrollTop),client_height:el.clientHeight,scroll_height:el.scrollHeight})),truncated:candidates.length>limit,not_claimed:'Window offset alone does not describe custom scroll containers; observing does not move any container'};},limit);
+}

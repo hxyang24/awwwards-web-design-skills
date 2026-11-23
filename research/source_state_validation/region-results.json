@@ -1,0 +1,43 @@
+{
+  "recorded_at": "2026-11-23T15:39:26.817Z",
+  "status": "passed",
+  "checks": [
+    {
+      "name": "Visible panel digest changes while full source text stays private",
+      "status": "passed"
+    },
+    {
+      "name": "Unchanged default panel is not falsely treated as a new interaction",
+      "status": "passed"
+    },
+    {
+      "name": "Wrong expected label remains an explicit negative observation",
+      "status": "passed"
+    },
+    {
+      "name": "Ambiguous and absent regions cannot choose the first source panel",
+      "status": "passed"
+    },
+    {
+      "name": "Region truncation and invalid bounds are explicit",
+      "status": "passed"
+    },
+    {
+      "name": "Nested scroll offset is observed even when window scroll is zero",
+      "status": "passed"
+    },
+    {
+      "name": "Tall non-scrollable and hidden elements do not become scroll roots",
+      "status": "passed"
+    },
+    {
+      "name": "Scroll root limits are bounded and truncation is recorded",
+      "status": "passed"
+    }
+  ],
+  "limitations": [
+    "Original fixtures, not all source-site interaction acceptance",
+    "Visible text hashes cannot establish non-text graphics or hidden-state correctness",
+    "Observed scroll movement alone does not prove the intended business action"
+  ]
+}

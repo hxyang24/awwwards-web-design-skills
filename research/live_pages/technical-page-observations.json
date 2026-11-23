@@ -1,0 +1,666 @@
+{
+  "schema_version": "1.0",
+  "purpose": "Bounded technical-panel evidence for a separately authored Skill",
+  "source_media_redistributed": false,
+  "source_screenshots_redistributed": false,
+  "observations": [
+    {
+      "id": "fluid-technical-confirmed-390",
+      "source_id": "6e67775aee2d10c0",
+      "url": "https://fluid.glass/collection/fluid-folding-door",
+      "source_sha256": "d0b26736eec7b3e4401ee4c588cec1a85cb1d7309c75e4b9a92d885c986c209e",
+      "viewport": {
+        "width": 390,
+        "height": 1000,
+        "device_scale_factor": 1
+      },
+      "observed_at": "2026-11-23T15:23:11.913Z",
+      "status": "rendered_observed",
+      "official_relationship": {
+        "url": "https://www.awwwards.com/sites/fluid-glass",
+        "label": "site_of_the_day",
+        "award_date": null,
+        "verification": "Official work-detail title and award label inspected; date not extracted. Current inner page is not independently awarded or certified as a historical version."
+      },
+      "page_identity": "Technical product detail: specification, performance, finish options and configuration diagrams. Not a product collection despite /collection/ URL.",
+      "navigation": "Four native buttons switch a single content area. Nested .scroll.lenis owns scrolling; window.scrollY remains zero. Initial Specification was already active, so an unchanged digest is expected.",
+      "region_selector": ".product-page .tabs > .container > .blocks",
+      "actions": [
+        {
+          "name": "Specification",
+          "status": "acted_and_observed",
+          "observable_state_changed": false,
+          "region_text_changed": false,
+          "intended_region_label_confirmed": true,
+          "before_region": {
+            "total_text_units": 484,
+            "truncated": false,
+            "expected_text_present": true,
+            "rect": {
+              "x": 0,
+              "y": 2262,
+              "width": 390,
+              "height": 862
+            },
+            "text_sha256": "14d0ae975b27028922375a73658ba0e1548db750211b627b67c456f7d1044a84",
+            "hash_scope": "visible_text",
+            "not_claimed": "A text/geometry change alone does not establish graphics, backend, licensing or all source states"
+          },
+          "after_region": {
+            "total_text_units": 484,
+            "truncated": false,
+            "expected_text_present": true,
+            "rect": {
+              "x": 0,
+              "y": 573,
+              "width": 390,
+              "height": 862
+            },
+            "text_sha256": "14d0ae975b27028922375a73658ba0e1548db750211b627b67c456f7d1044a84",
+            "hash_scope": "visible_text",
+            "not_claimed": "A text/geometry change alone does not establish graphics, backend, licensing or all source states"
+          },
+          "before_scroll": {
+            "window": {
+              "x": 0,
+              "y": 0
+            },
+            "containers": [
+              {
+                "tag": "div",
+                "id": "",
+                "class": "scroll lenis",
+                "x": 0,
+                "y": 0,
+                "client_height": 1000,
+                "scroll_height": 12910
+              }
+            ],
+            "truncated": false,
+            "not_claimed": "Window offset alone does not describe custom scroll containers; observing does not move any container"
+          },
+          "after_scroll": {
+            "window": {
+              "x": 0,
+              "y": 0
+            },
+            "containers": [
+              {
+                "tag": "div",
+                "id": "",
+                "class": "scroll lenis",
+                "x": 0,
+                "y": 1689,
+                "client_height": 1000,
+                "scroll_height": 12910
+              }
+            ],
+            "truncated": false,
+            "not_claimed": "Window offset alone does not describe custom scroll containers; observing does not move any container"
+          },
+          "after_screenshot_sha256": "b6a3c15476e46d8b33dc8ad8521126d5f1d7716ca6c3f2bf09d6f524f015019e"
+        },
+        {
+          "name": "Performance",
+          "status": "acted_and_observed",
+          "observable_state_changed": true,
+          "region_text_changed": true,
+          "intended_region_label_confirmed": true,
+          "before_region": {
+            "total_text_units": 484,
+            "truncated": false,
+            "expected_text_present": false,
+            "rect": {
+              "x": 0,
+              "y": 573,
+              "width": 390,
+              "height": 862
+            },
+            "text_sha256": "14d0ae975b27028922375a73658ba0e1548db750211b627b67c456f7d1044a84",
+            "hash_scope": "visible_text",
+            "not_claimed": "A text/geometry change alone does not establish graphics, backend, licensing or all source states"
+          },
+          "after_region": {
+            "total_text_units": 523,
+            "truncated": false,
+            "expected_text_present": true,
+            "rect": {
+              "x": 0,
+              "y": 573,
+              "width": 390,
+              "height": 816
+            },
+            "text_sha256": "07a840323b89065c24f690a6c4c6d700353596df30d704484ffe123f3fd50c3c",
+            "hash_scope": "visible_text",
+            "not_claimed": "A text/geometry change alone does not establish graphics, backend, licensing or all source states"
+          },
+          "before_scroll": {
+            "window": {
+              "x": 0,
+              "y": 0
+            },
+            "containers": [
+              {
+                "tag": "div",
+                "id": "",
+                "class": "scroll lenis",
+                "x": 0,
+                "y": 1689,
+                "client_height": 1000,
+                "scroll_height": 12910
+              }
+            ],
+            "truncated": false,
+            "not_claimed": "Window offset alone does not describe custom scroll containers; observing does not move any container"
+          },
+          "after_scroll": {
+            "window": {
+              "x": 0,
+              "y": 0
+            },
+            "containers": [
+              {
+                "tag": "div",
+                "id": "",
+                "class": "scroll lenis",
+                "x": 0,
+                "y": 1689,
+                "client_height": 1000,
+                "scroll_height": 12863
+              }
+            ],
+            "truncated": false,
+            "not_claimed": "Window offset alone does not describe custom scroll containers; observing does not move any container"
+          },
+          "after_screenshot_sha256": "f7b8b41efb6389390c34a38b39441fe0cad5da1d6ea38269cdaa7c698a867fbd"
+        },
+        {
+          "name": "Options",
+          "status": "acted_and_observed",
+          "observable_state_changed": true,
+          "region_text_changed": true,
+          "intended_region_label_confirmed": true,
+          "before_region": {
+            "total_text_units": 523,
+            "truncated": false,
+            "expected_text_present": false,
+            "rect": {
+              "x": 0,
+              "y": 573,
+              "width": 390,
+              "height": 816
+            },
+            "text_sha256": "07a840323b89065c24f690a6c4c6d700353596df30d704484ffe123f3fd50c3c",
+            "hash_scope": "visible_text",
+            "not_claimed": "A text/geometry change alone does not establish graphics, backend, licensing or all source states"
+          },
+          "after_region": {
+            "total_text_units": 365,
+            "truncated": false,
+            "expected_text_present": true,
+            "rect": {
+              "x": 0,
+              "y": 573,
+              "width": 390,
+              "height": 533
+            },
+            "text_sha256": "4fa07aa58de4e91608fd31dd3fec78dd84890804ef29934be2042bb05bcb8147",
+            "hash_scope": "visible_text",
+            "not_claimed": "A text/geometry change alone does not establish graphics, backend, licensing or all source states"
+          },
+          "before_scroll": {
+            "window": {
+              "x": 0,
+              "y": 0
+            },
+            "containers": [
+              {
+                "tag": "div",
+                "id": "",
+                "class": "scroll lenis",
+                "x": 0,
+                "y": 1689,
+                "client_height": 1000,
+                "scroll_height": 12863
+              }
+            ],
+            "truncated": false,
+            "not_claimed": "Window offset alone does not describe custom scroll containers; observing does not move any container"
+          },
+          "after_scroll": {
+            "window": {
+              "x": 0,
+              "y": 0
+            },
+            "containers": [
+              {
+                "tag": "div",
+                "id": "",
+                "class": "scroll lenis",
+                "x": 0,
+                "y": 1689,
+                "client_height": 1000,
+                "scroll_height": 12581
+              }
+            ],
+            "truncated": false,
+            "not_claimed": "Window offset alone does not describe custom scroll containers; observing does not move any container"
+          },
+          "after_screenshot_sha256": "b95db8df9dd13f234ab728194597df713260954038e3d7cb5963be7912be0ce9"
+        },
+        {
+          "name": "Configurations",
+          "status": "acted_and_observed",
+          "observable_state_changed": true,
+          "region_text_changed": true,
+          "intended_region_label_confirmed": true,
+          "before_region": {
+            "total_text_units": 365,
+            "truncated": false,
+            "expected_text_present": false,
+            "rect": {
+              "x": 0,
+              "y": 573,
+              "width": 390,
+              "height": 533
+            },
+            "text_sha256": "4fa07aa58de4e91608fd31dd3fec78dd84890804ef29934be2042bb05bcb8147",
+            "hash_scope": "visible_text",
+            "not_claimed": "A text/geometry change alone does not establish graphics, backend, licensing or all source states"
+          },
+          "after_region": {
+            "total_text_units": 170,
+            "truncated": false,
+            "expected_text_present": true,
+            "rect": {
+              "x": 0,
+              "y": 573,
+              "width": 390,
+              "height": 1181
+            },
+            "text_sha256": "2c64c6923f2f8d658130897dd115b4f6e2688faefdce4b6e72db0a1b370b084b",
+            "hash_scope": "visible_text",
+            "not_claimed": "A text/geometry change alone does not establish graphics, backend, licensing or all source states"
+          },
+          "before_scroll": {
+            "window": {
+              "x": 0,
+              "y": 0
+            },
+            "containers": [
+              {
+                "tag": "div",
+                "id": "",
+                "class": "scroll lenis",
+                "x": 0,
+                "y": 1689,
+                "client_height": 1000,
+                "scroll_height": 12581
+              }
+            ],
+            "truncated": false,
+            "not_claimed": "Window offset alone does not describe custom scroll containers; observing does not move any container"
+          },
+          "after_scroll": {
+            "window": {
+              "x": 0,
+              "y": 0
+            },
+            "containers": [
+              {
+                "tag": "div",
+                "id": "",
+                "class": "scroll lenis lenis-scrolling",
+                "x": 0,
+                "y": 1689,
+                "client_height": 1000,
+                "scroll_height": 13228
+              }
+            ],
+            "truncated": false,
+            "not_claimed": "Window offset alone does not describe custom scroll containers; observing does not move any container"
+          },
+          "after_screenshot_sha256": "b169250dbffa84fcd6e766c8fc1adff7e7a59b139721856500e5ad978e74e3a3"
+        }
+      ],
+      "source_observation_limits": [
+        "Only these four panel selections at two widths were acted and observed",
+        "Source video, quote form, all configuration diagrams, FAQ, other pages and error states not operated",
+        "Text digest and geometry evidence are not a pixel, media-content or backend audit",
+        "Read-only requests plus normal Cookie Deny click; no message, quotation or order submitted"
+      ],
+      "source_media_redistributed": false,
+      "source_screenshots_redistributed": false,
+      "original_blueprint_difference": "Fictional Folio display system with original text and illustrations, accessible tabs and local-only brief. No manufacturer specifications, certifications, drawings, images or video are reused."
+    },
+    {
+      "id": "fluid-technical-confirmed-1440",
+      "source_id": "6e67775aee2d10c0",
+      "url": "https://fluid.glass/collection/fluid-folding-door",
+      "source_sha256": "d0b26736eec7b3e4401ee4c588cec1a85cb1d7309c75e4b9a92d885c986c209e",
+      "viewport": {
+        "width": 1440,
+        "height": 1000,
+        "device_scale_factor": 1
+      },
+      "observed_at": "2026-11-23T15:23:48.317Z",
+      "status": "rendered_observed",
+      "official_relationship": {
+        "url": "https://www.awwwards.com/sites/fluid-glass",
+        "label": "site_of_the_day",
+        "award_date": null,
+        "verification": "Official work-detail title and award label inspected; date not extracted. Current inner page is not independently awarded or certified as a historical version."
+      },
+      "page_identity": "Technical product detail: specification, performance, finish options and configuration diagrams. Not a product collection despite /collection/ URL.",
+      "navigation": "Four native buttons switch a single content area. Nested .scroll.lenis owns scrolling; window.scrollY remains zero. Initial Specification was already active, so an unchanged digest is expected.",
+      "region_selector": ".product-page .tabs > .container > .blocks",
+      "actions": [
+        {
+          "name": "Specification",
+          "status": "acted_and_observed",
+          "observable_state_changed": false,
+          "region_text_changed": false,
+          "intended_region_label_confirmed": true,
+          "before_region": {
+            "total_text_units": 484,
+            "truncated": false,
+            "expected_text_present": true,
+            "rect": {
+              "x": 36,
+              "y": 2477,
+              "width": 1368,
+              "height": 805
+            },
+            "text_sha256": "14d0ae975b27028922375a73658ba0e1548db750211b627b67c456f7d1044a84",
+            "hash_scope": "visible_text",
+            "not_claimed": "A text/geometry change alone does not establish graphics, backend, licensing or all source states"
+          },
+          "after_region": {
+            "total_text_units": 484,
+            "truncated": false,
+            "expected_text_present": true,
+            "rect": {
+              "x": 36,
+              "y": 581,
+              "width": 1368,
+              "height": 805
+            },
+            "text_sha256": "14d0ae975b27028922375a73658ba0e1548db750211b627b67c456f7d1044a84",
+            "hash_scope": "visible_text",
+            "not_claimed": "A text/geometry change alone does not establish graphics, backend, licensing or all source states"
+          },
+          "before_scroll": {
+            "window": {
+              "x": 0,
+              "y": 0
+            },
+            "containers": [
+              {
+                "tag": "div",
+                "id": "",
+                "class": "scroll lenis",
+                "x": 0,
+                "y": 0,
+                "client_height": 1000,
+                "scroll_height": 12749
+              }
+            ],
+            "truncated": false,
+            "not_claimed": "Window offset alone does not describe custom scroll containers; observing does not move any container"
+          },
+          "after_scroll": {
+            "window": {
+              "x": 0,
+              "y": 0
+            },
+            "containers": [
+              {
+                "tag": "div",
+                "id": "",
+                "class": "scroll lenis",
+                "x": 0,
+                "y": 1896,
+                "client_height": 1000,
+                "scroll_height": 12749
+              }
+            ],
+            "truncated": false,
+            "not_claimed": "Window offset alone does not describe custom scroll containers; observing does not move any container"
+          },
+          "after_screenshot_sha256": "772034ff39de674c4ae78bccf8e3e2ef24f7c92aa9efbbe30a6316b9b632186e"
+        },
+        {
+          "name": "Performance",
+          "status": "acted_and_observed",
+          "observable_state_changed": true,
+          "region_text_changed": true,
+          "intended_region_label_confirmed": true,
+          "before_region": {
+            "total_text_units": 484,
+            "truncated": false,
+            "expected_text_present": false,
+            "rect": {
+              "x": 36,
+              "y": 581,
+              "width": 1368,
+              "height": 805
+            },
+            "text_sha256": "14d0ae975b27028922375a73658ba0e1548db750211b627b67c456f7d1044a84",
+            "hash_scope": "visible_text",
+            "not_claimed": "A text/geometry change alone does not establish graphics, backend, licensing or all source states"
+          },
+          "after_region": {
+            "total_text_units": 523,
+            "truncated": false,
+            "expected_text_present": true,
+            "rect": {
+              "x": 36,
+              "y": 581,
+              "width": 1368,
+              "height": 717
+            },
+            "text_sha256": "07a840323b89065c24f690a6c4c6d700353596df30d704484ffe123f3fd50c3c",
+            "hash_scope": "visible_text",
+            "not_claimed": "A text/geometry change alone does not establish graphics, backend, licensing or all source states"
+          },
+          "before_scroll": {
+            "window": {
+              "x": 0,
+              "y": 0
+            },
+            "containers": [
+              {
+                "tag": "div",
+                "id": "",
+                "class": "scroll lenis",
+                "x": 0,
+                "y": 1896,
+                "client_height": 1000,
+                "scroll_height": 12749
+              }
+            ],
+            "truncated": false,
+            "not_claimed": "Window offset alone does not describe custom scroll containers; observing does not move any container"
+          },
+          "after_scroll": {
+            "window": {
+              "x": 0,
+              "y": 0
+            },
+            "containers": [
+              {
+                "tag": "div",
+                "id": "",
+                "class": "scroll lenis",
+                "x": 0,
+                "y": 1896,
+                "client_height": 1000,
+                "scroll_height": 12661
+              }
+            ],
+            "truncated": false,
+            "not_claimed": "Window offset alone does not describe custom scroll containers; observing does not move any container"
+          },
+          "after_screenshot_sha256": "825b0faeec6e7f17a1cc69ad4c510a289f748b713e7cf19b5f2ef0d14022f1f1"
+        },
+        {
+          "name": "Options",
+          "status": "acted_and_observed",
+          "observable_state_changed": true,
+          "region_text_changed": true,
+          "intended_region_label_confirmed": true,
+          "before_region": {
+            "total_text_units": 523,
+            "truncated": false,
+            "expected_text_present": false,
+            "rect": {
+              "x": 36,
+              "y": 581,
+              "width": 1368,
+              "height": 717
+            },
+            "text_sha256": "07a840323b89065c24f690a6c4c6d700353596df30d704484ffe123f3fd50c3c",
+            "hash_scope": "visible_text",
+            "not_claimed": "A text/geometry change alone does not establish graphics, backend, licensing or all source states"
+          },
+          "after_region": {
+            "total_text_units": 365,
+            "truncated": false,
+            "expected_text_present": true,
+            "rect": {
+              "x": 36,
+              "y": 581,
+              "width": 1368,
+              "height": 476
+            },
+            "text_sha256": "4fa07aa58de4e91608fd31dd3fec78dd84890804ef29934be2042bb05bcb8147",
+            "hash_scope": "visible_text",
+            "not_claimed": "A text/geometry change alone does not establish graphics, backend, licensing or all source states"
+          },
+          "before_scroll": {
+            "window": {
+              "x": 0,
+              "y": 0
+            },
+            "containers": [
+              {
+                "tag": "div",
+                "id": "",
+                "class": "scroll lenis",
+                "x": 0,
+                "y": 1896,
+                "client_height": 1000,
+                "scroll_height": 12661
+              }
+            ],
+            "truncated": false,
+            "not_claimed": "Window offset alone does not describe custom scroll containers; observing does not move any container"
+          },
+          "after_scroll": {
+            "window": {
+              "x": 0,
+              "y": 0
+            },
+            "containers": [
+              {
+                "tag": "div",
+                "id": "",
+                "class": "scroll lenis",
+                "x": 0,
+                "y": 1896,
+                "client_height": 1000,
+                "scroll_height": 12420
+              }
+            ],
+            "truncated": false,
+            "not_claimed": "Window offset alone does not describe custom scroll containers; observing does not move any container"
+          },
+          "after_screenshot_sha256": "cee054aa8875e957897cc727bcea8d4eae9fa31e172a89f8385651557a00c8bf"
+        },
+        {
+          "name": "Configurations",
+          "status": "acted_and_observed",
+          "observable_state_changed": true,
+          "region_text_changed": true,
+          "intended_region_label_confirmed": true,
+          "before_region": {
+            "total_text_units": 365,
+            "truncated": false,
+            "expected_text_present": false,
+            "rect": {
+              "x": 36,
+              "y": 581,
+              "width": 1368,
+              "height": 476
+            },
+            "text_sha256": "4fa07aa58de4e91608fd31dd3fec78dd84890804ef29934be2042bb05bcb8147",
+            "hash_scope": "visible_text",
+            "not_claimed": "A text/geometry change alone does not establish graphics, backend, licensing or all source states"
+          },
+          "after_region": {
+            "total_text_units": 170,
+            "truncated": false,
+            "expected_text_present": true,
+            "rect": {
+              "x": 36,
+              "y": 581,
+              "width": 1368,
+              "height": 675
+            },
+            "text_sha256": "2c64c6923f2f8d658130897dd115b4f6e2688faefdce4b6e72db0a1b370b084b",
+            "hash_scope": "visible_text",
+            "not_claimed": "A text/geometry change alone does not establish graphics, backend, licensing or all source states"
+          },
+          "before_scroll": {
+            "window": {
+              "x": 0,
+              "y": 0
+            },
+            "containers": [
+              {
+                "tag": "div",
+                "id": "",
+                "class": "scroll lenis",
+                "x": 0,
+                "y": 1896,
+                "client_height": 1000,
+                "scroll_height": 12420
+              }
+            ],
+            "truncated": false,
+            "not_claimed": "Window offset alone does not describe custom scroll containers; observing does not move any container"
+          },
+          "after_scroll": {
+            "window": {
+              "x": 0,
+              "y": 0
+            },
+            "containers": [
+              {
+                "tag": "div",
+                "id": "",
+                "class": "scroll lenis lenis-scrolling",
+                "x": 0,
+                "y": 1896,
+                "client_height": 1000,
+                "scroll_height": 12619
+              }
+            ],
+            "truncated": false,
+            "not_claimed": "Window offset alone does not describe custom scroll containers; observing does not move any container"
+          },
+          "after_screenshot_sha256": "95fa1f6f4a8bb17766c26448257937c88b7de87124450eb84c2c6e3c8792e8c0"
+        }
+      ],
+      "source_observation_limits": [
+        "Only these four panel selections at two widths were acted and observed",
+        "Source video, quote form, all configuration diagrams, FAQ, other pages and error states not operated",
+        "Text digest and geometry evidence are not a pixel, media-content or backend audit",
+        "Read-only requests plus normal Cookie Deny click; no message, quotation or order submitted"
+      ],
+      "source_media_redistributed": false,
+      "source_screenshots_redistributed": false,
+      "original_blueprint_difference": "Fictional Folio display system with original text and illustrations, accessible tabs and local-only brief. No manufacturer specifications, certifications, drawings, images or video are reused."
+    }
+  ]
+}

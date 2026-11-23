@@ -1,0 +1,65 @@
+{
+  "status": "failed",
+  "checks": [
+    {
+      "name": "Unknown performance and dimensions survive parsing",
+      "status": "passed"
+    },
+    {
+      "name": "Original data is copied without extra injected fields",
+      "status": "passed"
+    },
+    {
+      "name": "Dimensions reject negatives, fractions, strings and unsafe limits",
+      "status": "failed",
+      "error": "Expected values to be strictly equal:\n+ actual - expected\n\n+ '90 cm 路 example'\n- '90 cm · example'\n         ^\n"
+    },
+    {
+      "name": "Unknown cannot silently become numeric zero",
+      "status": "failed",
+      "error": "Expected values to be strictly equal:\n+ actual - expected\n\n+ '0 路 example'\n- '0 · example'\n     ^\n"
+    },
+    {
+      "name": "Documented input requires a bounded safe link, not a certification claim",
+      "status": "failed",
+      "error": "Expected values to be strictly equal:\n+ actual - expected\n\n+ '12 路 documented input'\n- '12 · documented input'\n      ^\n"
+    },
+    {
+      "name": "Duplicate IDs and invalid geometry fail explicitly",
+      "status": "passed"
+    },
+    {
+      "name": "Bounded lists and original-study mode are enforced",
+      "status": "passed"
+    },
+    {
+      "name": "Default selection and exact URL round trip",
+      "status": "passed"
+    },
+    {
+      "name": "Repeated or unsupported route choices fall back with warnings",
+      "status": "passed"
+    },
+    {
+      "name": "Unrelated fragments retain the active information panel",
+      "status": "passed"
+    },
+    {
+      "name": "All symbolic plans stay finite and carry the selected panel count",
+      "status": "passed"
+    },
+    {
+      "name": "Brief is plain text with selected values and preserved unknowns",
+      "status": "failed",
+      "error": "The expression evaluated to a falsy value:\n\n  assert(b.includes('90 cm · example'))\n"
+    },
+    {
+      "name": "Brief rejects oversized fields and unsupported selections",
+      "status": "passed"
+    }
+  ],
+  "limitations": [
+    "Original fictional data and deterministic fixtures only",
+    "Document references are input provenance, not independently verified engineering evidence"
+  ]
+}

@@ -10,6 +10,18 @@ from install_all_skills import install
 def load(path,name):
  spec=importlib.util.spec_from_file_location(name,path);m=importlib.util.module_from_spec(spec);spec.loader.exec_module(m);return m
 class PageSkills(unittest.TestCase):
+ def test_technical_static_regeneration_updates_digest_and_preserves_four_sections(self):
+  import shutil
+  with tempfile.TemporaryDirectory() as t:
+   target=Path(t)/'technical';shutil.copytree(R/'page_skills/business/technical',target)
+   p=target/'product.json';d=json.loads(p.read_text(encoding='utf-8'));d['title']='<Folio fixture>';d['dimensions']['depth_mm']=None;p.write_text(json.dumps(d),encoding='utf-8')
+   module=load(target/'render_static.py','technical_static_fixture');self.assertEqual(module.render(target)['panels'],4)
+   text=(target/'index.html').read_text(encoding='utf-8');self.assertEqual(text.count('class="panel"'),4);self.assertIn('&lt;Folio fixture&gt;',text);self.assertIn(hashlib.sha256(p.read_bytes()).hexdigest(),text);self.assertIn('Not supplied',text)
+   sheet=(target/'concept-sheet.txt').read_text(encoding='utf-8');self.assertIn('LAYOUTS',sheet);self.assertIn('Fire classification: Not verified',sheet)
+ def test_technical_review_corrects_only_the_reviewed_product_url(self):
+  reviews=load_reviews(R);review=reviews['https://fluid.glass/collection/fluid-folding-door'];source={'url':review['url'],'id':review['source_id'],'source_sha256':review['source_sha256'],'inspection_level':'http_dom'}
+  result=assign_family(source,reviews);self.assertEqual(result['family'],'external.technical-product');self.assertEqual(result['heuristic'],'external.collection')
+  source['url']='https://fluid.glass/collection/another';self.assertEqual(assign_family(source,reviews)['family'],'external.collection')
  def test_shop_collection_and_product_candidates_are_separate(self):
   for url in ['https://example.com/shop/','https://example.com/products/','https://example.com/en/collections','https://example.com/collections/lighting?page=2','https://example.com/product-category/lamps']:
    self.assertEqual(family(url),'external.collection')

@@ -1,8 +1,8 @@
 {
   "schema_version": "3.0",
-  "generated_at": "2026-11-23T14:26:31.285403+00:00",
+  "generated_at": "2026-11-23T15:38:59.854085+00:00",
   "core_skills_preserved": 24,
-  "page_skills": 47,
+  "page_skills": 48,
   "status": "in_progress",
   "scope": "Awwwards main pages and awarded external-site inner pages, organized into reusable task-specific skills",
   "not_claimed": [
@@ -764,6 +764,22 @@
       "evidence_level": "rendered_source_observations",
       "path": "skills/awwwards-page-external-collection",
       "demo": "skills/awwwards-page-external-collection/assets/",
+      "browser_validation": "See validation evidence; not inferred from generation"
+    },
+    {
+      "id": "external-technical-product",
+      "skill": "awwwards-page-external-technical-product",
+      "title": "获奖来源外站技术产品详情与证据分级",
+      "kind": "technical-product",
+      "runtime_variant": "business-technical",
+      "source_families": [
+        "external.technical-product"
+      ],
+      "source_coverage": "observed_examples",
+      "source_count": 1,
+      "evidence_level": "rendered_source_observations",
+      "path": "skills/awwwards-page-external-technical-product",
+      "demo": "skills/awwwards-page-external-technical-product/assets/",
       "browser_validation": "See validation evidence; not inferred from generation"
     }
   ]
